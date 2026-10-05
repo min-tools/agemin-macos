@@ -13,3 +13,24 @@ func localized(_ english: String) -> String {
     Bundle.main.localizedString(forKey: english, value: english, table: nil)
     #endif
 }
+
+// localizedFormat(english, arguments...): Format a localized printf-style string with the user's
+// current number and date conventions.
+func localizedFormat(_ english: String, _ arguments: CVarArg...) -> String {
+    String(format: localized(english), locale: .current, arguments: arguments)
+}
+
+/// Locates bundled resources for both the Swift Package and Xcode layouts.
+enum AppResources {
+    /// The resource folder of the module bundle under SwiftPM, or of the main bundle in Xcode
+    /// builds; nil when the bundle has no resources.
+    static var resourcesURL: URL? {
+        #if AGEMIN_SWIFTPM
+        // SwiftPM packages processed resources in a separate module bundle.
+        Bundle.module.resourceURL
+        #else
+        // The Xcode target copies resources into the application bundle.
+        Bundle.main.resourceURL
+        #endif
+    }
+}
