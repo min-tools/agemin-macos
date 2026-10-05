@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "name": "Debug AgeminApp",
+            "target": "AgeminApp",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug AgeminApp"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "name": "Release AgeminApp",
+            "target": "AgeminApp",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release AgeminApp"
+        }
+    ]
+}
