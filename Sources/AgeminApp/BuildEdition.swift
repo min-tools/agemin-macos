@@ -41,3 +41,13 @@ enum AgeminEdition {
     static let isExpiredTrialPreview = false
     #endif
 }
+
+/// Pages the app links to. The release checker's online mode verifies that the website, privacy,
+/// terms, and support pages are reachable.
+enum AppLinks {
+    static let website = URL(string: "https://min.tools/agemin/")!
+    static let privacyPolicy = URL(string: "https://min.tools/agemin/privacy/")!
+    static let termsOfUse = URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!
+    static let support = URL(string: "https://min.tools/agemin/support/")!
+    static let ageProject = URL(string: "https://age-encryption.org/")!
+}
