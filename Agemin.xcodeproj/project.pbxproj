@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000101 /* AccessBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000201 /* AccessBanner.swift */; };
+		100000000000000000000102 /* AgeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000202 /* AgeEngine.swift */; };
+		100000000000000000000103 /* AgeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000203 /* AgeFormat.swift */; };
+		100000000000000000000104 /* AgeIdentities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000204 /* AgeIdentities.swift */; };
+		100000000000000000000105 /* AgeRecipients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000205 /* AgeRecipients.swift */; };
+		100000000000000000000106 /* AgeminApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000206 /* AgeminApp.swift */; };
+		100000000000000000000107 /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000207 /* AppIcon.swift */; };
+		100000000000000000000108 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000208 /* AppModel.swift */; };
+		100000000000000000000109 /* Bech32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000209 /* Bech32.swift */; };
+		10000000000000000000010A /* BigUInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000020A /* BigUInt.swift */; };
+		10000000000000000000010B /* Blowfish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000020B /* Blowfish.swift */; };
+		10000000000000000000010C /* BlowfishTables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000020C /* BlowfishTables.swift */; };
+		10000000000000000000010D /* BuildEdition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000020D /* BuildEdition.swift */; };
+		10000000000000000000010E /* ByteIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000020E /* ByteIO.swift */; };
+		10000000000000000000010F /* Curve25519Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000020F /* Curve25519Conversion.swift */; };
+		100000000000000000000110 /* DecryptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000210 /* DecryptView.swift */; };
+		100000000000000000000111 /* EditionSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000211 /* EditionSupport.swift */; };
+		100000000000000000000112 /* EncryptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000212 /* EncryptView.swift */; };
+		100000000000000000000113 /* IdentitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000213 /* IdentitiesView.swift */; };
+		100000000000000000000114 /* KeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000214 /* KeyStore.swift */; };
+		100000000000000000000115 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000215 /* Localization.swift */; };
+		100000000000000000000116 /* OpenSSHKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000216 /* OpenSSHKey.swift */; };
+		100000000000000000000117 /* OperationRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000217 /* OperationRunner.swift */; };
+		100000000000000000000118 /* PrivacyPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000218 /* PrivacyPolicy.swift */; };
+		100000000000000000000119 /* ProEntitlementLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000219 /* ProEntitlementLogic.swift */; };
+		10000000000000000000011A /* ProStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000021A /* ProStore.swift */; };
+		10000000000000000000011B /* RSAOAEP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000021B /* RSAOAEP.swift */; };
+		10000000000000000000011C /* RecipientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000021C /* RecipientsView.swift */; };
+		10000000000000000000011D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000021D /* RootView.swift */; };
+		10000000000000000000011E /* Scrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000021E /* Scrypt.swift */; };
+		10000000000000000000011F /* SharedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000021F /* SharedViews.swift */; };
+		100000000000000000000120 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000220 /* SidebarView.swift */; };
+		100000000000000000000121 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000221 /* Theme.swift */; };
+		100000000000000000000122 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000222 /* Avatar.swift */; };
+		100000000000000000000123 /* AvatarViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000223 /* AvatarViews.swift */; };
+		100000000000000000000180 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000280 /* PrivacyInfo.xcprivacy */; };
+		100000000000000000000181 /* PRIVACY.md in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000281 /* PRIVACY.md */; };
+		100000000000000000000182 /* AgeminIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000282 /* AgeminIcon.icns */; };
+		100000000000000000000130 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000900 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		100000000000000000000201 /* AccessBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/AccessBanner.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000202 /* AgeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/AgeEngine.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000203 /* AgeFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/AgeFormat.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000204 /* AgeIdentities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/AgeIdentities.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000205 /* AgeRecipients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/AgeRecipients.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000206 /* AgeminApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/AgeminApp.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000207 /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/AppIcon.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000208 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/AppModel.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000209 /* Bech32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/Bech32.swift; sourceTree = SOURCE_ROOT; };
+		10000000000000000000020A /* BigUInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/BigUInt.swift; sourceTree = SOURCE_ROOT; };
+		10000000000000000000020B /* Blowfish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/Blowfish.swift; sourceTree = SOURCE_ROOT; };
+		10000000000000000000020C /* BlowfishTables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/BlowfishTables.swift; sourceTree = SOURCE_ROOT; };
+		10000000000000000000020D /* BuildEdition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/BuildEdition.swift; sourceTree = SOURCE_ROOT; };
+		10000000000000000000020E /* ByteIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/ByteIO.swift; sourceTree = SOURCE_ROOT; };
+		10000000000000000000020F /* Curve25519Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/Curve25519Conversion.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000210 /* DecryptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/DecryptView.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000211 /* EditionSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/EditionSupport.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000212 /* EncryptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/EncryptView.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000213 /* IdentitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/IdentitiesView.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000214 /* KeyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/KeyStore.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000215 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/Localization.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000216 /* OpenSSHKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/OpenSSHKey.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000217 /* OperationRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/OperationRunner.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000218 /* PrivacyPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/PrivacyPolicy.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000219 /* ProEntitlementLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/ProEntitlementLogic.swift; sourceTree = SOURCE_ROOT; };
+		10000000000000000000021A /* ProStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/ProStore.swift; sourceTree = SOURCE_ROOT; };
+		10000000000000000000021B /* RSAOAEP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/RSAOAEP.swift; sourceTree = SOURCE_ROOT; };
+		10000000000000000000021C /* RecipientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/RecipientsView.swift; sourceTree = SOURCE_ROOT; };
+		10000000000000000000021D /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/RootView.swift; sourceTree = SOURCE_ROOT; };
+		10000000000000000000021E /* Scrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/Scrypt.swift; sourceTree = SOURCE_ROOT; };
+		10000000000000000000021F /* SharedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/SharedViews.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000220 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/SidebarView.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000221 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/Theme.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000222 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/Avatar.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000223 /* AvatarViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/AgeminApp/AvatarViews.swift; sourceTree = SOURCE_ROOT; };
+		100000000000000000000280 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Sources/AgeminApp/Resources/PrivacyInfo.xcprivacy; sourceTree = SOURCE_ROOT; };
+		100000000000000000000281 /* PRIVACY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Sources/AgeminApp/Resources/PRIVACY.md; sourceTree = SOURCE_ROOT; };
+		100000000000000000000282 /* AgeminIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Sources/AgeminApp/Resources/AgeminIcon.icns; sourceTree = SOURCE_ROOT; };
+		100000000000000000000200 /* Agemin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agemin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		100000000000000000000290 /* AgeminInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AgeminInfo.plist; sourceTree = SOURCE_ROOT; };
+		100000000000000000000291 /* AgeminApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AgeminApp.entitlements; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A00 /* en Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "Sources/AgeminApp/Resources/en.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A01 /* ru Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = "Sources/AgeminApp/Resources/ru.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A02 /* es Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = "Sources/AgeminApp/Resources/es.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A03 /* de Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "Sources/AgeminApp/Resources/de.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A04 /* fr Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = "Sources/AgeminApp/Resources/fr.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A05 /* it Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = "Sources/AgeminApp/Resources/it.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A06 /* pt Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = "Sources/AgeminApp/Resources/pt.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A07 /* zh-Hans Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "Sources/AgeminApp/Resources/zh-Hans.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A08 /* ja Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = "Sources/AgeminApp/Resources/ja.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A09 /* uk Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = "Sources/AgeminApp/Resources/uk.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A0A /* ko Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = "Sources/AgeminApp/Resources/ko.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A0B /* zh-Hant Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "Sources/AgeminApp/Resources/zh-Hant.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A0C /* tr Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = "Sources/AgeminApp/Resources/tr.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A0D /* pl Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = "Sources/AgeminApp/Resources/pl.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A0E /* nl Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = "Sources/AgeminApp/Resources/nl.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A0F /* id Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = "Sources/AgeminApp/Resources/id.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A10 /* vi Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = "Sources/AgeminApp/Resources/vi.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A11 /* hi Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = "Sources/AgeminApp/Resources/hi.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A12 /* sv Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = "Sources/AgeminApp/Resources/sv.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A13 /* da Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = "Sources/AgeminApp/Resources/da.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A14 /* nb Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = "Sources/AgeminApp/Resources/nb.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A15 /* fi Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = "Sources/AgeminApp/Resources/fi.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A16 /* cs Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = "Sources/AgeminApp/Resources/cs.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A17 /* hr Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = "Sources/AgeminApp/Resources/hr.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A18 /* th Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = "Sources/AgeminApp/Resources/th.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A19 /* sr Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sr; path = "Sources/AgeminApp/Resources/sr.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A1A /* sr-Latn Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "sr-Latn"; path = "Sources/AgeminApp/Resources/sr-Latn.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A1B /* el Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = "Sources/AgeminApp/Resources/el.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A1C /* hu Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = "Sources/AgeminApp/Resources/hu.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A1D /* ro Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = "Sources/AgeminApp/Resources/ro.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		100000000000000000000A1E /* sk Localizable */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = "Sources/AgeminApp/Resources/sk.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		100000000000000000000301 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100000000000000000000400 = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000401 /* Sources */,
+				100000000000000000000402 /* Resources */,
+				100000000000000000000290 /* AgeminInfo.plist */,
+				100000000000000000000291 /* AgeminApp.entitlements */,
+				100000000000000000000403 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		100000000000000000000401 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000201, 100000000000000000000202, 100000000000000000000203,
+				100000000000000000000204, 100000000000000000000205, 100000000000000000000206,
+				100000000000000000000207, 100000000000000000000208, 100000000000000000000209,
+				10000000000000000000020A, 10000000000000000000020B, 10000000000000000000020C,
+				10000000000000000000020D, 10000000000000000000020E, 10000000000000000000020F,
+				100000000000000000000210, 100000000000000000000211, 100000000000000000000212,
+				100000000000000000000213, 100000000000000000000214, 100000000000000000000215,
+				100000000000000000000216, 100000000000000000000217, 100000000000000000000218,
+				100000000000000000000219, 10000000000000000000021A, 10000000000000000000021B,
+				10000000000000000000021C, 10000000000000000000021D, 10000000000000000000021E,
+				10000000000000000000021F, 100000000000000000000220, 100000000000000000000221,
+				100000000000000000000222, 100000000000000000000223,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		100000000000000000000402 /* Resources */ = {
+			isa = PBXGroup;
+			children = (100000000000000000000280, 100000000000000000000281, 100000000000000000000282, 100000000000000000000900);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		100000000000000000000403 /* Products */ = {
+			isa = PBXGroup;
+			children = (100000000000000000000200 /* Agemin.app */);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		100000000000000000000500 /* Agemin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100000000000000000000803;
+			buildPhases = (100000000000000000000302, 100000000000000000000301, 100000000000000000000303);
+			buildRules = ();
+			dependencies = ();
+			name = Agemin;
+			productName = Agemin;
+			productReference = 100000000000000000000200;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		100000000000000000000600 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1600; LastUpgradeCheck = 1600; TargetAttributes = {100000000000000000000500 = {CreatedOnToolsVersion = 16.0;};};};
+			buildConfigurationList = 100000000000000000000800;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ru,
+				es,
+				de,
+				fr,
+				it,
+				pt,
+				"zh-Hans",
+				ja,
+				uk,
+				ko,
+				"zh-Hant",
+				tr,
+				pl,
+				nl,
+				id,
+				vi,
+				hi,
+				sv,
+				da,
+				nb,
+				fi,
+				cs,
+				hr,
+				th,
+				sr,
+				"sr-Latn",
+				el,
+				hu,
+				ro,
+				sk,
+				Base,
+			);
+			mainGroup = 100000000000000000000400;
+			productRefGroup = 100000000000000000000403;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (100000000000000000000500 /* Agemin */);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		100000000000000000000303 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (100000000000000000000180, 100000000000000000000181, 100000000000000000000182, 100000000000000000000130);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		100000000000000000000900 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				100000000000000000000A00 /* en Localizable */,
+				100000000000000000000A01 /* ru Localizable */,
+				100000000000000000000A02 /* es Localizable */,
+				100000000000000000000A03 /* de Localizable */,
+				100000000000000000000A04 /* fr Localizable */,
+				100000000000000000000A05 /* it Localizable */,
+				100000000000000000000A06 /* pt Localizable */,
+				100000000000000000000A07 /* zh-Hans Localizable */,
+				100000000000000000000A08 /* ja Localizable */,
+				100000000000000000000A09 /* uk Localizable */,
+				100000000000000000000A0A /* ko Localizable */,
+				100000000000000000000A0B /* zh-Hant Localizable */,
+				100000000000000000000A0C /* tr Localizable */,
+				100000000000000000000A0D /* pl Localizable */,
+				100000000000000000000A0E /* nl Localizable */,
+				100000000000000000000A0F /* id Localizable */,
+				100000000000000000000A10 /* vi Localizable */,
+				100000000000000000000A11 /* hi Localizable */,
+				100000000000000000000A12 /* sv Localizable */,
+				100000000000000000000A13 /* da Localizable */,
+				100000000000000000000A14 /* nb Localizable */,
+				100000000000000000000A15 /* fi Localizable */,
+				100000000000000000000A16 /* cs Localizable */,
+				100000000000000000000A17 /* hr Localizable */,
+				100000000000000000000A18 /* th Localizable */,
+				100000000000000000000A19 /* sr Localizable */,
+				100000000000000000000A1A /* sr-Latn Localizable */,
+				100000000000000000000A1B /* el Localizable */,
+				100000000000000000000A1C /* hu Localizable */,
+				100000000000000000000A1D /* ro Localizable */,
+				100000000000000000000A1E /* sk Localizable */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin PBXSourcesBuildPhase section */
+		100000000000000000000302 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000101, 100000000000000000000102, 100000000000000000000103,
+				100000000000000000000104, 100000000000000000000105, 100000000000000000000106,
+				100000000000000000000107, 100000000000000000000108, 100000000000000000000109,
+				10000000000000000000010A, 10000000000000000000010B, 10000000000000000000010C,
+				10000000000000000000010D, 10000000000000000000010E, 10000000000000000000010F,
+				100000000000000000000110, 100000000000000000000111, 100000000000000000000112,
+				100000000000000000000113, 100000000000000000000114, 100000000000000000000115,
+				100000000000000000000116, 100000000000000000000117, 100000000000000000000118,
+				100000000000000000000119, 10000000000000000000011A, 10000000000000000000011B,
+				10000000000000000000011C, 10000000000000000000011D, 10000000000000000000011E,
+				10000000000000000000011F, 100000000000000000000120, 100000000000000000000121,
+				100000000000000000000122, 100000000000000000000123,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		100000000000000000000801 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 14.0; SDKROOT = macosx; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; SWIFT_VERSION = 5.0;}; name = Debug;};
+		100000000000000000000802 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 14.0; SDKROOT = macosx; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_VERSION = 5.0;}; name = Release;};
+		100000000000000000000806 /* AppStore */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 14.0; SDKROOT = macosx; SWIFT_ACTIVE_COMPILATION_CONDITIONS = AGEMIN_APP_STORE; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_VERSION = 5.0;}; name = AppStore;};
+		100000000000000000000804 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {
+			ARCHS = arm64; CODE_SIGN_ENTITLEMENTS = AgeminApp.entitlements; CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 2026101504; ENABLE_HARDENED_RUNTIME = YES; EXECUTABLE_NAME = AgeminApp; GENERATE_INFOPLIST_FILE = NO;
+			INFOPLIST_FILE = AgeminInfo.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+			MACOSX_DEPLOYMENT_TARGET = 14.0; MARKETING_VERSION = "26.10"; AGEMIN_DISPLAY_NAME = Agemin; PRODUCT_BUNDLE_IDENTIFIER = tools.min.agemin;
+			PRODUCT_NAME = Agemin; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG";
+		}; name = Debug;};
+		100000000000000000000805 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {
+			ARCHS = arm64; CODE_SIGN_ENTITLEMENTS = AgeminApp.entitlements; CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 2026101504; ENABLE_HARDENED_RUNTIME = YES; EXECUTABLE_NAME = AgeminApp; GENERATE_INFOPLIST_FILE = NO;
+			INFOPLIST_FILE = AgeminInfo.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+			MACOSX_DEPLOYMENT_TARGET = 14.0; MARKETING_VERSION = "26.10"; AGEMIN_DISPLAY_NAME = Agemin; PRODUCT_BUNDLE_IDENTIFIER = tools.min.agemin;
+			PRODUCT_NAME = Agemin;
+		}; name = Release;};
+		100000000000000000000807 /* AppStore */ = {isa = XCBuildConfiguration; buildSettings = {
+			ARCHS = arm64; CODE_SIGN_ENTITLEMENTS = AgeminApp.entitlements; CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 2026101504; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_HARDENED_RUNTIME = YES; EXECUTABLE_NAME = AgeminApp; GENERATE_INFOPLIST_FILE = NO;
+			INFOPLIST_FILE = AgeminInfo.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+			MACOSX_DEPLOYMENT_TARGET = 14.0; MARKETING_VERSION = "26.10"; AGEMIN_DISPLAY_NAME = Agemin; PRODUCT_BUNDLE_IDENTIFIER = tools.min.agemin;
+			PRODUCT_NAME = Agemin; SWIFT_ACTIVE_COMPILATION_CONDITIONS = AGEMIN_APP_STORE;
+		}; name = AppStore;};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		100000000000000000000800 = {isa = XCConfigurationList; buildConfigurations = (100000000000000000000801, 100000000000000000000802, 100000000000000000000806); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+		100000000000000000000803 = {isa = XCConfigurationList; buildConfigurations = (100000000000000000000804, 100000000000000000000805, 100000000000000000000807); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
+/* End XCConfigurationList section */
+	};
+	rootObject = 100000000000000000000600 /* Project object */;
+}
