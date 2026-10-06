@@ -57,3 +57,22 @@ struct SSHWireReader {
         offset += count
     }
 }
+
+/// Builds SSH wire format.
+enum SSHWire {
+    // string(data): A length-prefixed byte string.
+    static func string(_ data: Data) -> Data {
+        var result = Data()
+        result.append(contentsOf: withUnsafeBytes(of: UInt32(data.count).bigEndian) { Data($0) })
+        result.append(data)
+        return result
+    }
+
+    // mpint(value): A length-prefixed big-endian integer with a leading zero when needed.
+    static func mpint(_ value: BigUInt) -> Data {
+        var bytes = value.bigEndianBytes
+        // Keep the number positive in two's complement.
+        if let first = bytes.first, first & 0x80 != 0 { bytes.insert(0, at: 0) }
+        return string(bytes)
+    }
+}
