@@ -117,3 +117,23 @@ enum Scrypt {
         }
     }
 }
+
+/// PBKDF2 with HMAC-SHA-256 and one iteration, which is all scrypt needs.
+enum PBKDF2 {
+    // sha256(passphrase, salt, keyLength): keyLength bytes of PBKDF2-HMAC-SHA-256 with c = 1.
+    static func sha256(passphrase: Data, salt: Data, keyLength: Int) -> Data {
+        let key = SymmetricKey(data: passphrase)
+        var output = Data()
+        output.reserveCapacity(keyLength + 32)
+        var block: UInt32 = 1
+        // Each block is the HMAC of the salt and a big-endian block index; with one iteration
+        // there is nothing further to fold in.
+        while output.count < keyLength {
+            var input = salt
+            input.append(contentsOf: withUnsafeBytes(of: block.bigEndian) { Data($0) })
+            output.append(contentsOf: HMAC<SHA256>.authenticationCode(for: input, using: key))
+            block += 1
+        }
+        return output.prefix(keyLength)
+    }
+}
