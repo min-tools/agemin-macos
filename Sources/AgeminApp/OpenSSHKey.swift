@@ -76,3 +76,31 @@ enum SSHWire {
         return string(bytes)
     }
 }
+
+/// Problems with an SSH key file, reported through the age identity errors.
+enum SSHKeyError: Error {
+    case truncated
+    case malformed
+    case unsupportedAlgorithm(String)
+    case unsupportedCipher(String)
+    case unsupportedKDF(String)
+    case encrypted
+    case wrongPassphrase
+    case legacyEncrypted
+    case tooManyRounds(Int)
+
+    /// The user-readable age error for this problem.
+    var ageError: AgeError {
+        switch self {
+        case .truncated: return .invalidIdentity(localized("The key file ends early."))
+        case .malformed: return .invalidIdentity(localized("The key file is malformed."))
+        case .tooManyRounds(let rounds): return .invalidIdentity(localizedFormat("The key uses %lld key derivation rounds. Agemin supports up to %lld.", Int64(rounds), Int64(OpenSSHPrivateKey.maximumRounds)))
+        case .unsupportedAlgorithm(let name): return .unsupportedKey(name)
+        case .unsupportedCipher(let name): return .invalidIdentity(localizedFormat("The key is protected with the %@ cipher, which is not supported.", name))
+        case .unsupportedKDF(let name): return .invalidIdentity(localizedFormat("The key uses the %@ key derivation, which is not supported.", name))
+        case .encrypted: return .passphraseRequired
+        case .wrongPassphrase: return .wrongPassphrase
+        case .legacyEncrypted: return .invalidIdentity(localized("This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy."))
+        }
+    }
+}
