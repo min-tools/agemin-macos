@@ -109,3 +109,84 @@ struct Blowfish {
         }
     }
 }
+
+/// bcrypt_pbkdf from OpenBSD, which OpenSSH uses to turn a passphrase into the key and IV that
+/// protect a private key file.
+enum BcryptPBKDF {
+    private static let hashSize = 32
+    private static let magic = Array("OxychromaticBlowfishSwatDynamite".utf8)
+
+    // derive(passphrase, salt, rounds, keyLength): keyLength bytes derived from the passphrase.
+    static func derive(passphrase: Data, salt: Data, rounds: Int, keyLength: Int) throws -> Data {
+        // OpenBSD's parameter checks; the output is capped at 32 hashes of 32 bytes.
+        guard rounds >= 1, !passphrase.isEmpty, !salt.isEmpty, keyLength > 0, keyLength <= hashSize * hashSize else {
+            throw AgeError.invalidIdentity(localized("The key file's passphrase settings are invalid."))
+        }
+        // Each hash contributes amount bytes, spread across the key at the stride.
+        let stride = (keyLength + hashSize - 1) / hashSize
+        let amount = (keyLength + stride - 1) / stride
+        let passphraseHash = Array(SHA512.hash(data: passphrase))
+        var key = [UInt8](repeating: 0, count: keyLength)
+        var remaining = keyLength
+        var count: UInt32 = 1
+        while remaining > 0 {
+            // The first round salts with the salt and the block counter.
+            var counted = salt
+            counted.append(contentsOf: withUnsafeBytes(of: count.bigEndian) { Data($0) })
+            var saltHash = Array(SHA512.hash(data: counted))
+            var latest = hash(passphraseHash, saltHash)
+            var output = latest
+            // Later rounds salt with the previous output and fold everything together.
+            for _ in 1..<rounds {
+                saltHash = Array(SHA512.hash(data: Data(latest)))
+                latest = hash(passphraseHash, saltHash)
+                for index in 0..<hashSize { output[index] ^= latest[index] }
+            }
+            // The output bytes are spread across the key with the given stride.
+            let take = min(amount, remaining)
+            var written = 0
+            for index in 0..<take {
+                let destination = index * stride + Int(count - 1)
+                // The last block can run past the end of the key.
+                if destination >= keyLength { break }
+                key[destination] = output[index]
+                written += 1
+            }
+            remaining -= written
+            count += 1
+        }
+        return Data(key)
+    }
+
+    // hash(passphraseHash, saltHash): One bcrypt hash: an expensive key schedule, then the magic
+    // block enciphered 64 times.
+    private static func hash(_ passphraseHash: [UInt8], _ saltHash: [UInt8]) -> [UInt8] {
+        var state = Blowfish()
+        state.expandState(data: saltHash, key: passphraseHash)
+        for _ in 0..<64 {
+            state.expand0State(key: saltHash)
+            state.expand0State(key: passphraseHash)
+        }
+        // Load the magic block as eight big-endian words, then encrypt it 64 times over.
+        var words = [UInt32](repeating: 0, count: 8)
+        var position = 0
+        for index in 0..<8 {
+            var word: UInt32 = 0
+            for _ in 0..<4 {
+                word = (word << 8) | UInt32(magic[position])
+                position += 1
+            }
+            words[index] = word
+        }
+        for _ in 0..<64 { state.encryptBlocks(&words) }
+        // The output is little-endian, unlike the big-endian input words.
+        var output = [UInt8](repeating: 0, count: hashSize)
+        for (index, word) in words.enumerated() {
+            output[4 * index] = UInt8(word & 0xFF)
+            output[4 * index + 1] = UInt8((word >> 8) & 0xFF)
+            output[4 * index + 2] = UInt8((word >> 16) & 0xFF)
+            output[4 * index + 3] = UInt8((word >> 24) & 0xFF)
+        }
+        return output
+    }
+}
