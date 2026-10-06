@@ -104,3 +104,80 @@ enum SSHKeyError: Error {
         }
     }
 }
+
+/// An SSH public key: its wire encoding plus the parts age needs.
+struct SSHPublicKey: Equatable {
+    /// OpenSSH refuses RSA keys above this size; the same limit keeps imported keys from
+    /// causing excessive arbitrary-precision work.
+    static let maximumRSABits = 16_384
+
+    let algorithm: String
+    /// The wire encoding, which SSH fingerprints and age tags are computed over.
+    let wire: Data
+    let comment: String
+
+    /// The 32-byte Ed25519 public key, for ssh-ed25519 keys.
+    var ed25519PublicKey: Data? {
+        guard algorithm == "ssh-ed25519" else { return nil }
+        var reader = SSHWireReader(wire)
+        guard (try? reader.readText()) == algorithm, let key = try? reader.readString(), key.count == 32 else { return nil }
+        return key
+    }
+
+    /// The public exponent and modulus, for ssh-rsa keys.
+    var rsaNumbers: (exponent: BigUInt, modulus: BigUInt)? {
+        guard algorithm == "ssh-rsa" else { return nil }
+        var reader = SSHWireReader(wire)
+        guard (try? reader.readText()) == algorithm, let e = try? reader.readMPInt(), let n = try? reader.readMPInt() else { return nil }
+        return (e, n)
+    }
+
+    /// The age recipient tag: the first four bytes of the SHA-256 fingerprint, in base64.
+    var tag: String {
+        AgeBase64.encode(Data(SHA256.hash(data: wire)).prefix(4))
+    }
+
+    /// The OpenSSH fingerprint, "SHA256:" followed by unpadded base64.
+    var fingerprint: String {
+        "SHA256:" + AgeBase64.encode(Data(SHA256.hash(data: wire)))
+    }
+
+    /// The authorized_keys line form: algorithm, base64 wire encoding, and the comment.
+    var line: String {
+        let parts = [algorithm, wire.base64EncodedString()] + (comment.isEmpty ? [] : [comment])
+        return parts.joined(separator: " ")
+    }
+
+    // parse(line): A public key from its authorized_keys line form.
+    static func parse(line: String) throws -> SSHPublicKey {
+        let fields = line.split(separator: " ", maxSplits: 2, omittingEmptySubsequences: true)
+        guard fields.count >= 2, let wire = Data(base64Encoded: String(fields[1])) else { throw SSHKeyError.malformed }
+        let key = try parse(wire: wire, comment: fields.count > 2 ? String(fields[2]).trimmingCharacters(in: .whitespaces) : "")
+        // The algorithm field must agree with the name inside the wire blob.
+        guard key.algorithm == String(fields[0]) else { throw SSHKeyError.malformed }
+        return key
+    }
+
+    // parse(wire, [comment = ""]): A public key from its wire encoding. A supported key must hold
+    // exactly its fields: trailing bytes would make the tag and fingerprint differ from the
+    // ones other tools compute for the same key.
+    static func parse(wire: Data, comment: String = "") throws -> SSHPublicKey {
+        var reader = SSHWireReader(wire)
+        let algorithm = try reader.readText()
+        guard !algorithm.isEmpty else { throw SSHKeyError.malformed }
+        switch algorithm {
+        case "ssh-ed25519":
+            guard try reader.readString().count == 32, reader.isAtEnd else { throw SSHKeyError.malformed }
+        case "ssh-rsa":
+            _ = try reader.readMPInt()
+            let modulus = try reader.readMPInt()
+            guard modulus.bitWidth <= maximumRSABits, reader.isAtEnd else {
+                throw SSHKeyError.malformed
+            }
+        default:
+            // Other kinds are reported as unsupported by their callers; their layout is not checked.
+            break
+        }
+        return SSHPublicKey(algorithm: algorithm, wire: wire, comment: comment)
+    }
+}
