@@ -418,3 +418,63 @@ enum LegacyRSAPrivateKey {
         return SSHRSAIdentity(publicKey: publicKey, numbers: numbers)
     }
 }
+
+/// Reads the little DER that a PKCS#1 key needs: sequences and integers.
+struct DERReader {
+    private let data: Data
+    private var offset: Int
+
+    // init(data): Start at the beginning of data.
+    init(_ data: Data) {
+        self.data = data
+        offset = data.startIndex
+    }
+
+    var isAtEnd: Bool { offset >= data.endIndex }
+
+    // readHeader(): The next element's tag and length.
+    private mutating func readHeader() throws -> (tag: UInt8, length: Int) {
+        guard data.endIndex - offset >= 2 else { throw SSHKeyError.truncated }
+        let tag = data[offset]
+        var length = Int(data[offset + 1])
+        offset += 2
+        // Long-form lengths give the number of length bytes that follow.
+        if length & 0x80 != 0 {
+            let count = length & 0x7F
+            guard count >= 1, count <= 4, data.endIndex - offset >= count else { throw SSHKeyError.malformed }
+            length = 0
+            for _ in 0..<count {
+                length = (length << 8) | Int(data[offset])
+                offset += 1
+            }
+        }
+        guard data.endIndex - offset >= length else { throw SSHKeyError.truncated }
+        return (tag, length)
+    }
+
+    // readSequence(): A reader over the contents of the next SEQUENCE.
+    mutating func readSequence() throws -> DERReader {
+        let (tag, length) = try readHeader()
+        guard tag == 0x30 else { throw SSHKeyError.malformed }
+        let inner = DERReader(data[offset..<(offset + length)])
+        offset += length
+        return inner
+    }
+
+    // readInteger(): The next non-negative INTEGER.
+    mutating func readInteger() throws -> BigUInt {
+        let (tag, length) = try readHeader()
+        guard tag == 0x02, length > 0 else { throw SSHKeyError.malformed }
+        let bytes = data[offset..<(offset + length)]
+        offset += length
+        // A set high bit would make the integer negative. A leading zero is permitted only when
+        // the following byte needs it to keep the value positive.
+        if let first = bytes.first, first & 0x80 != 0 { throw SSHKeyError.malformed }
+        // Refuse a redundant sign byte, which would be a non-minimal DER
+        // integer.
+        if bytes.count > 1, bytes.first == 0, bytes[bytes.index(after: bytes.startIndex)] & 0x80 == 0 {
+            throw SSHKeyError.malformed
+        }
+        return BigUInt(bigEndian: Data(bytes))
+    }
+}
