@@ -257,3 +257,93 @@ final class ArmorWriter: ByteWriter {
         try sink.write(output)
     }
 }
+
+/// Reads age armor back into bytes: the header line, base64 lines up to the footer, and
+/// nothing but whitespace after it. Line lengths are not enforced, so armor reflowed by a mail
+/// client or chat app still decodes.
+final class ArmorReader: ByteReader {
+    private let lines: BufferedReader
+    /// Base64 characters not yet decoded, fewer than four of them.
+    private var pendingText = ""
+    private var sawHeader = false
+    private var sawFooter = false
+
+    // init(source): Decode armored text from the given reader.
+    init(source: ByteReader) {
+        lines = BufferedReader(source)
+    }
+
+    // read(upTo count): Decode lines until at least count bytes are available or the footer is
+    // reached. Whole lines are decoded, so the result can exceed count; the buffered reader that
+    // always wraps this one keeps the surplus.
+    func read(upTo count: Int) throws -> Data {
+        var output = Data()
+        while output.count < count, !sawFooter {
+            guard let rawLine = try lines.readLine() else {
+                throw AgeError.invalidArmor(localized("The armored file ends before its footer."))
+            }
+            let line = rawLine.trimmingCharacters(in: .whitespacesAndNewlines)
+            // The header must come first; blank lines before it are tolerated.
+            if !sawHeader {
+                // Skip leading blank lines.
+                if line.isEmpty { continue }
+                guard line == AgeArmor.header else {
+                    throw AgeError.invalidArmor(localized("The armor header is missing."))
+                }
+                sawHeader = true
+                continue
+            }
+            // The footer ends the base64 text; anything after it must be whitespace only.
+            if line == AgeArmor.footer {
+                sawFooter = true
+                guard pendingText.isEmpty else {
+                    throw AgeError.invalidArmor(localized("The armored text is incomplete."))
+                }
+                try requireOnlyWhitespaceAfterFooter()
+                break
+            }
+            // Blank lines inside the body are tolerated.
+            if line.isEmpty { continue }
+            pendingText += line
+            // Decode whole groups of four characters; keep the remainder for the next line.
+            let whole = pendingText.count - pendingText.count % 4
+            // Padding ends a base64 string, so a run that contains it is decoded whole, and the
+            // padding may only be its last one or two characters.
+            if let padding = pendingText.firstIndex(of: "=") {
+                let decoded = decode(pendingText)
+                guard let decoded, pendingText.distance(from: padding, to: pendingText.endIndex) <= 2 else {
+                    throw AgeError.invalidArmor(localized("The armored text is not valid base64."))
+                }
+                output.append(decoded)
+                pendingText = ""
+                continue
+            }
+            // Without padding, decode the complete groups and keep the rest.
+            if whole > 0 {
+                let groups = String(pendingText.prefix(whole))
+                guard let decoded = decode(groups) else {
+                    throw AgeError.invalidArmor(localized("The armored text is not valid base64."))
+                }
+                output.append(decoded)
+                pendingText = String(pendingText.dropFirst(whole))
+            }
+        }
+        return output
+    }
+
+    // decode(text): Standard base64 with padding, rejecting characters outside the alphabet.
+    private func decode(_ text: String) -> Data? {
+        Data(base64Encoded: text, options: [])
+    }
+
+    // requireOnlyWhitespaceAfterFooter(): Trailing text after the footer means the file is not
+    // one armored message, so it is rejected rather than ignored.
+    private func requireOnlyWhitespaceAfterFooter() throws {
+        while let line = try lines.readLine() {
+            // Only blank lines may follow the footer.
+            if !line.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                throw AgeError.invalidArmor(localized("There is text after the armor footer."))
+            }
+        }
+    }
+}
