@@ -366,3 +366,55 @@ struct OpenSSHPrivateKey {
         return identity
     }
 }
+
+/// The legacy PEM form of an RSA private key, "BEGIN RSA PRIVATE KEY", as older ssh-keygen
+/// versions wrote it.
+enum LegacyRSAPrivateKey {
+    static let pemHeader = "-----BEGIN RSA PRIVATE KEY-----"
+    static let pemFooter = "-----END RSA PRIVATE KEY-----"
+
+    // looksLikeKey(text): Whether the text is a legacy RSA key file.
+    static func looksLikeKey(_ text: String) -> Bool {
+        text.trimmingCharacters(in: .whitespacesAndNewlines).hasPrefix(pemHeader)
+    }
+
+    // parse(pem): The age identity for an unprotected legacy key.
+    static func parse(pem: String) throws -> any AgeIdentity {
+        // Find the armored block; its payload is a PKCS#1 RSAPrivateKey in DER.
+        let lines = pem.split(whereSeparator: \.isNewline).map { $0.trimmingCharacters(in: .whitespaces) }
+        guard let start = lines.firstIndex(of: pemHeader), let end = lines.firstIndex(of: pemFooter), start < end else {
+            throw SSHKeyError.malformed
+        }
+        // Encrypted legacy keys announce themselves with PEM headers; they are not supported.
+        if lines[(start + 1)..<end].contains(where: { $0.hasPrefix("Proc-Type:") || $0.hasPrefix("DEK-Info:") }) {
+            throw SSHKeyError.legacyEncrypted
+        }
+        guard let der = Data(base64Encoded: lines[(start + 1)..<end].joined()) else { throw SSHKeyError.malformed }
+        // The sequence holds version 0, n, e, d, p, q, dp, dq, and qinv. The CRT exponents are
+        // recomputed from d at decryption time, so they are read and dropped.
+        var reader = DERReader(der)
+        var sequence = try reader.readSequence()
+        let version = try sequence.readInteger()
+        guard version.isZero else { throw SSHKeyError.malformed }
+        let n = try sequence.readInteger()
+        let e = try sequence.readInteger()
+        let d = try sequence.readInteger()
+        let p = try sequence.readInteger()
+        let q = try sequence.readInteger()
+        _ = try sequence.readInteger()
+        _ = try sequence.readInteger()
+        let qinv = try sequence.readInteger()
+        guard sequence.isAtEnd, reader.isAtEnd else { throw SSHKeyError.malformed }
+        // Rebuild the ssh-rsa wire form so the tag and fingerprint match other tools.
+        var wire = SSHWire.string(Data("ssh-rsa".utf8))
+        wire.append(SSHWire.mpint(e))
+        wire.append(SSHWire.mpint(n))
+        let publicKey = try SSHPublicKey.parse(wire: wire)
+        // The same consistency rules as for the OpenSSH container.
+        let one = BigUInt(1)
+        guard p > one, q > one, p * q == n, (qinv * q) % p == one,
+              !d.isZero, d < n else { throw SSHKeyError.malformed }
+        let numbers = RSAPrivateKeyNumbers(modulus: n, publicExponent: e, privateExponent: d, prime1: p, prime2: q, coefficient: qinv)
+        return SSHRSAIdentity(publicKey: publicKey, numbers: numbers)
+    }
+}
