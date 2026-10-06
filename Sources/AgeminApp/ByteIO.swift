@@ -188,3 +188,72 @@ enum AgeArmor {
         return text.drop(while: { $0.isWhitespace || $0.isNewline }).hasPrefix(header)
     }
 }
+
+/// Wraps binary output in age's PEM-style armor: the header line, standard base64 in lines of
+/// 64 characters, and the footer line.
+final class ArmorWriter: ByteWriter {
+    private let sink: ByteWriter
+    /// Bytes waiting for a complete base64 group of three.
+    private var pending = Data()
+    /// Characters already on the current output line.
+    private var column = 0
+    private var started = false
+    private var finished = false
+
+    // init(sink): Write armored text to the given writer.
+    init(sink: ByteWriter) {
+        self.sink = sink
+    }
+
+    // write(data): Encode as much as forms whole groups of three bytes and keep the rest.
+    func write(_ data: Data) throws {
+        try start()
+        pending.append(data)
+        let whole = pending.count - pending.count % 3
+        guard whole > 0 else { return }
+        try emit(pending.prefix(whole).base64EncodedString())
+        pending.removeFirst(whole)
+    }
+
+    // finish(): Encode the final partial group, end the line, and write the footer.
+    func finish() throws {
+        guard !finished else { return }
+        finished = true
+        try start()
+        // A trailing group of one or two bytes gets its padding here.
+        if !pending.isEmpty {
+            try emit(pending.base64EncodedString())
+            pending = Data()
+        }
+        // The footer starts on its own line, after the last base64 line is ended.
+        if column > 0 { try sink.write(Data("\n".utf8)) }
+        try sink.write(Data((AgeArmor.footer + "\n").utf8))
+        try sink.finish()
+    }
+
+    // start(): Write the header line once, before the first base64 text.
+    private func start() throws {
+        guard !started else { return }
+        started = true
+        try sink.write(Data((AgeArmor.header + "\n").utf8))
+    }
+
+    // emit(text): Write base64 characters, breaking lines at the armor's width.
+    private func emit(_ text: String) throws {
+        var output = Data()
+        var remaining = Substring(text)
+        while !remaining.isEmpty {
+            let room = AgeArmor.lineWidth - column
+            let piece = remaining.prefix(room)
+            output.append(Data(piece.utf8))
+            column += piece.count
+            remaining = remaining.dropFirst(piece.count)
+            // A full line ends with a newline; a partial one waits for more text.
+            if column == AgeArmor.lineWidth {
+                output.append(0x0A)
+                column = 0
+            }
+        }
+        try sink.write(output)
+    }
+}
