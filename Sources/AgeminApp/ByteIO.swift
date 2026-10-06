@@ -39,3 +39,43 @@ final class FileByteReader: ByteReader {
         try? handle.close()
     }
 }
+
+/// Writes a file through a file handle. The file is created with owner-only permissions, so an
+/// encrypted or decrypted file is never readable by other accounts, and truncated when it exists.
+final class FileByteWriter: ByteWriter {
+    private let handle: FileHandle
+    private var finished = false
+
+    // init(url): Create or truncate the file with mode 0600 and open it for writing. The file is
+    // opened with the POSIX call so the private mode applies from the moment it exists.
+    init(url: URL) throws {
+        // Replace any existing contents while keeping the chosen path; the panel already asked.
+        let descriptor = open(url.path, O_WRONLY | O_CREAT | O_TRUNC | O_CLOEXEC, 0o600)
+        guard descriptor >= 0 else { throw AgeError.cannotWrite(url.lastPathComponent) }
+        // A pre-existing file keeps its old mode; set the private one explicitly.
+        guard fchmod(descriptor, 0o600) == 0 else {
+            close(descriptor)
+            throw AgeError.cannotWrite(url.lastPathComponent)
+        }
+        handle = FileHandle(fileDescriptor: descriptor, closeOnDealloc: true)
+    }
+
+    // write(data): Append the bytes to the file.
+    func write(_ data: Data) throws {
+        guard !data.isEmpty else { return }
+        try handle.write(contentsOf: data)
+    }
+
+    // finish(): Close the file once.
+    func finish() throws {
+        guard !finished else { return }
+        finished = true
+        try handle.close()
+    }
+
+    // deinit(): Close the descriptor if finish() was never called.
+    deinit {
+        // An unfinished writer still closes its descriptor; a finished one is already closed.
+        if !finished { try? handle.close() }
+    }
+}
