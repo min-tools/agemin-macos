@@ -174,3 +174,17 @@ final class BufferedReader {
         return result
     }
 }
+
+/// The age ASCII armor markers.
+enum AgeArmor {
+    static let header = "-----BEGIN AGE ENCRYPTED FILE-----"
+    static let footer = "-----END AGE ENCRYPTED FILE-----"
+    static let lineWidth = 64
+
+    // looksArmored(prefix): Whether the start of a file is the armor header, after any leading
+    // whitespace or blank lines. A byte order mark is not whitespace, so it disqualifies a file.
+    static func looksArmored(_ prefix: Data) -> Bool {
+        guard let text = String(data: prefix, encoding: .utf8) else { return false }
+        return text.drop(while: { $0.isWhitespace || $0.isNewline }).hasPrefix(header)
+    }
+}
