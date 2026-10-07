@@ -106,3 +106,15 @@ enum AgeKDF {
         return opened
     }
 }
+
+/// Random bytes from the system's cryptographic generator.
+enum AgeRandom {
+    // bytes(count): count random bytes.
+    static func bytes(_ count: Int) -> Data {
+        var data = Data(count: count)
+        let status = data.withUnsafeMutableBytes { SecRandomCopyBytes(kSecRandomDefault, count, $0.baseAddress!) }
+        // Encrypting with weak randomness is worse than stopping, so a generator failure is fatal.
+        precondition(status == errSecSuccess, "The system random generator failed")
+        return data
+    }
+}
