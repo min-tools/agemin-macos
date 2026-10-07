@@ -45,3 +45,31 @@ struct AgeStanzaSummary: Identifiable, Equatable {
         }
     }
 }
+
+/// What the header of an encrypted file says, without any key.
+struct AgeFileInfo: Equatable {
+    let url: URL
+    let size: Int64
+    let isArmored: Bool
+    let stanzas: [AgeStanza]
+
+    /// One summary per stanza, in header order.
+    var recipients: [AgeStanzaSummary] {
+        stanzas.enumerated().map { AgeStanzaSummary(index: $0.offset, stanza: $0.element) }
+    }
+
+    var needsPassphrase: Bool { stanzas.contains { $0.type == "scrypt" } }
+}
+
+/// The result of an encryption.
+struct AgeEncryptOutcome: Equatable {
+    let inputSize: Int64
+    let outputSize: Int64
+}
+
+/// The result of a decryption.
+struct AgeDecryptOutcome: Equatable {
+    let outputSize: Int64
+    /// The SHA-256 of the decrypted bytes, in lowercase hex.
+    let sha256: String
+}
