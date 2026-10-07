@@ -50,3 +50,25 @@ struct AgeStanza: Equatable {
     var args: [String]
     var body: Data
 }
+
+/// Base64 as age uses it in headers and keys: the standard alphabet without padding, decoded
+/// strictly so a stanza cannot have two spellings.
+enum AgeBase64 {
+    // encode(data): Standard base64 without trailing padding.
+    static func encode(_ data: Data) -> String {
+        data.base64EncodedString().replacingOccurrences(of: "=", with: "")
+    }
+
+    // decode(text): The bytes of unpadded base64, or nil for padding, stray characters, or
+    // non-canonical trailing bits.
+    static func decode(_ text: String) -> Data? {
+        // Padding is never written, so its presence means the text came from somewhere else, and
+        // a length of 4n+1 cannot be base64 at all.
+        guard !text.contains("="), text.count % 4 != 1 else { return nil }
+        let padded = text + String(repeating: "=", count: (4 - text.count % 4) % 4)
+        guard let data = Data(base64Encoded: padded, options: []) else { return nil }
+        // Re-encoding must give the same text, which rejects nonzero unused bits.
+        guard encode(data) == text else { return nil }
+        return data
+    }
+}
