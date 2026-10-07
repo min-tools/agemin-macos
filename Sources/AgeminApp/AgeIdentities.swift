@@ -194,3 +194,67 @@ enum AgeIdentityFileContents {
     /// An identity file that was itself encrypted with a passphrase.
     case encryptedAgeFile
 }
+
+/// Classifies and parses identity files.
+enum AgeIdentityFile {
+    /// Identity files larger than this are not keys.
+    static let maximumSize = 1 << 20
+
+    // isEncryptedAgeFile(data): Whether the bytes start like an age file, binary or armored. A
+    // binary file has a text header but binary payload, so this is checked before decoding text.
+    static func isEncryptedAgeFile(_ data: Data) -> Bool {
+        let prefix = data.prefix(64)
+        return prefix.starts(with: Data(AgeHeaderCodec.intro.utf8)) || AgeArmor.looksArmored(prefix)
+    }
+
+    // classify(data): What the file holds.
+    static func classify(_ data: Data) throws -> AgeIdentityFileContents {
+        guard data.count <= maximumSize else { throw AgeError.invalidIdentity(localized("The file is too large to be a key.")) }
+        // An encrypted identity file is an age file; it needs a passphrase first.
+        if isEncryptedAgeFile(data) { return .encryptedAgeFile }
+        guard let text = String(data: data, encoding: .utf8) else { throw AgeError.invalidIdentity(localized("The file is not text.")) }
+        let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
+        // An OpenSSH key is parsed to its public half; the private half may need a passphrase.
+        if OpenSSHPrivateKey.looksLikeKey(text) {
+            // SSH parsing errors are reported in age terms; anything else passes through.
+            do {
+                return .sshKey(try OpenSSHPrivateKey.parse(pem: text))
+            } catch let error as SSHKeyError {
+                throw error.ageError
+            }
+        }
+        // A legacy PEM RSA key must be unprotected; the parser reports an encrypted one.
+        if LegacyRSAPrivateKey.looksLikeKey(text) {
+            // SSH parsing errors are reported in age terms; anything else passes through.
+            do {
+                return .legacyRSA(try LegacyRSAPrivateKey.parse(pem: text))
+            } catch let error as SSHKeyError {
+                throw error.ageError
+            }
+        }
+        // Other PEM keys, such as EC or PKCS#8 files, are named rather than mistaken for text.
+        if trimmed.hasPrefix("-----BEGIN") {
+            throw AgeError.invalidIdentity(localized("This key format is not supported. Use an OpenSSH private key or an age identity file."))
+        }
+        // Otherwise the file must be an age identity file: one secret key per line.
+        var identities: [X25519Identity] = []
+        for rawLine in text.split(whereSeparator: \.isNewline) {
+            let line = rawLine.trimmingCharacters(in: .whitespaces)
+            // Comments and blank lines are allowed between keys.
+            if line.isEmpty || line.hasPrefix("#") { continue }
+            identities.append(try X25519Identity(string: line))
+        }
+        guard !identities.isEmpty else { throw AgeError.invalidIdentity(localized("The file holds no age secret key.")) }
+        return .ageIdentities(identities)
+    }
+
+    // identityFileText(for identity, [createdAt = Date()]): The contents of a
+    // new identity file in the layout age-keygen writes.
+    static func identityFileText(for identity: X25519Identity, createdAt: Date = Date()) -> String {
+        // Readers ignore the comment lines, so the UTC timestamp is informational only.
+        let formatter = ISO8601DateFormatter()
+        formatter.formatOptions = [.withInternetDateTime]
+        let created = formatter.string(from: createdAt)
+        return "# created: \(created)\n# public key: \(identity.publicKeyLine)\n\(identity.line)\n"
+    }
+}
