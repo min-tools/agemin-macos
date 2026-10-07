@@ -182,3 +182,15 @@ struct ScryptIdentity: AgeIdentity {
         return nil
     }
 }
+
+/// What an identity file holds, before any passphrase is used.
+enum AgeIdentityFileContents {
+    /// One or more age secret keys.
+    case ageIdentities([X25519Identity])
+    /// An OpenSSH private key, possibly passphrase-protected.
+    case sshKey(OpenSSHPrivateKey)
+    /// A legacy PEM RSA key.
+    case legacyRSA(any AgeIdentity)
+    /// An identity file that was itself encrypted with a passphrase.
+    case encryptedAgeFile
+}
