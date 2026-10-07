@@ -147,3 +147,33 @@ struct SSHRSARecipient: AgeRecipient {
         return AgeStanza(type: "ssh-rsa", args: [publicKey.tag], body: body)
     }
 }
+
+/// A passphrase, stretched with scrypt. A passphrase recipient must be the only one in a file.
+struct ScryptRecipient: AgeRecipient {
+    static let label = "age-encryption.org/v1/scrypt"
+    static let defaultWorkFactor = 18
+    let passphrase: String
+    var workFactor = defaultWorkFactor
+
+    var kind: AgeKeyKind { .scrypt }
+    var line: String { localized("Passphrase") }
+
+    // init(passphrase, [workFactor = 18]): A recipient for the passphrase.
+    init(passphrase: String, workFactor: Int = defaultWorkFactor) {
+        self.passphrase = passphrase
+        self.workFactor = workFactor
+    }
+
+    // key(passphrase, salt, workFactor): The wrapping key for a salt and work factor. The salt is
+    // prefixed with the stanza label, as the format requires; N is 2^workFactor with r = 8, p = 1.
+    static func key(passphrase: String, salt: Data, workFactor: Int) -> Data {
+        Scrypt.derive(passphrase: Data(passphrase.utf8), salt: Data(label.utf8) + salt, logN: workFactor)
+    }
+
+    // wrap(fileKey): A fresh 16-byte salt and the stretched passphrase.
+    func wrap(fileKey: Data) throws -> AgeStanza {
+        let salt = AgeRandom.bytes(16)
+        let key = Self.key(passphrase: passphrase, salt: salt, workFactor: workFactor)
+        return AgeStanza(type: "scrypt", args: [AgeBase64.encode(salt), String(workFactor)], body: try AgeKDF.wrap(fileKey, with: key))
+    }
+}
