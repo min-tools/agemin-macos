@@ -121,3 +121,29 @@ struct SSHEd25519Recipient: AgeRecipient {
         return AgeStanza(type: "ssh-ed25519", args: [publicKey.tag, AgeBase64.encode(share)], body: try AgeKDF.wrap(fileKey, with: key))
     }
 }
+
+/// An SSH RSA public key used as an age recipient.
+struct SSHRSARecipient: AgeRecipient {
+    let publicKey: SSHPublicKey
+    let modulus: BigUInt
+    let exponent: BigUInt
+
+    var kind: AgeKeyKind { .sshRSA }
+    var line: String { publicKey.line }
+
+    // init(publicKey): From a parsed ssh-rsa public key.
+    init(publicKey: SSHPublicKey) throws {
+        guard let numbers = publicKey.rsaNumbers else {
+            throw AgeError.invalidRecipient(localized("The SSH key is not a valid RSA key."))
+        }
+        self.publicKey = publicKey
+        modulus = numbers.modulus
+        exponent = numbers.exponent
+    }
+
+    // wrap(fileKey): RSA-OAEP of the file key.
+    func wrap(fileKey: Data) throws -> AgeStanza {
+        let body = try RSAOAEP.encrypt(message: fileKey, modulus: modulus, exponent: exponent)
+        return AgeStanza(type: "ssh-rsa", args: [publicKey.tag], body: body)
+    }
+}
