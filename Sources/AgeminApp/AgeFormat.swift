@@ -118,3 +118,124 @@ enum AgeRandom {
         return data
     }
 }
+
+/// Reads and writes the age v1 header: the intro line, the stanzas, and the MAC line.
+enum AgeHeaderCodec {
+    static let intro = "age-encryption.org/v1"
+    static let fileKeySize = 16
+    static let macSize = 32
+    /// Preserve large recipient lists while bounding per-stanza allocation and matching work.
+    static let maximumStanzas = 65_536
+    /// The most header text a file may carry; real headers are a few kilobytes at most.
+    static let maximumHeaderSize = 16 * 1024 * 1024
+    /// Full body lines hold this many base64 characters; the last line is always shorter.
+    static let bodyLineWidth = 64
+
+    /// A parsed header plus the exact bytes the MAC covers.
+    struct Parsed {
+        var stanzas: [AgeStanza]
+        var mac: Data
+        /// The header text through "---", which the MAC authenticates.
+        var authenticated: Data
+    }
+
+    // serialize(stanzas): The header text through the "---" marker, which the MAC covers.
+    static func serialize(_ stanzas: [AgeStanza]) -> Data {
+        var text = intro + "\n"
+        for stanza in stanzas {
+            text += "-> " + ([stanza.type] + stanza.args).joined(separator: " ") + "\n"
+            text += bodyLines(stanza.body)
+        }
+        text += "---"
+        return Data(text.utf8)
+    }
+
+    // bodyLines(body): The body as base64 in lines of 64 characters. The last line is always
+    // shorter than 64 characters, which is how a reader knows the body has ended; a body whose
+    // text fills its lines exactly therefore ends with an empty line.
+    static func bodyLines(_ body: Data) -> String {
+        let text = AgeBase64.encode(body)
+        var lines: [String] = []
+        var remaining = Substring(text)
+        while remaining.count >= bodyLineWidth {
+            lines.append(String(remaining.prefix(bodyLineWidth)))
+            remaining = remaining.dropFirst(bodyLineWidth)
+        }
+        lines.append(String(remaining))
+        return lines.joined(separator: "\n") + "\n"
+    }
+
+    // mac(fileKey, over authenticated): HMAC-SHA-256 of the header text under the header key.
+    static func mac(fileKey: Data, over authenticated: Data) -> Data {
+        let key = AgeKDF.derive(ikm: fileKey, salt: Data(), info: "header")
+        return Data(HMAC<SHA256>.authenticationCode(for: authenticated, using: SymmetricKey(data: key)))
+    }
+
+    // encode(stanzas, fileKey): The complete header, MAC line included.
+    static func encode(_ stanzas: [AgeStanza], fileKey: Data) -> Data {
+        let authenticated = serialize(stanzas)
+        var header = authenticated
+        header.append(Data((" " + AgeBase64.encode(mac(fileKey: fileKey, over: authenticated)) + "\n").utf8))
+        return header
+    }
+
+    // parse(from reader): Read the header lines up to and including the MAC line.
+    static func parse(from reader: BufferedReader) throws -> Parsed {
+        // The intro line must match exactly; anything else is not an age v1 file.
+        guard let first = try reader.readLine() else { throw AgeError.truncated }
+        guard first == intro else {
+            throw AgeError.invalidHeader(localized("The first line is not the age version marker."))
+        }
+        var authenticated = Data((intro + "\n").utf8)
+        var stanzas: [AgeStanza] = []
+        // Each further line starts a stanza or is the MAC line that closes the header.
+        while true {
+            guard let line = try reader.readLine() else { throw AgeError.truncated }
+            // The MAC line closes the header.
+            if line.hasPrefix("---") {
+                let parts = line.split(separator: " ", omittingEmptySubsequences: false)
+                guard parts.count == 2, parts[0] == "---", let mac = AgeBase64.decode(String(parts[1])), mac.count == macSize else {
+                    throw AgeError.invalidHeader(localized("The header authentication line is malformed."))
+                }
+                authenticated.append(Data("---".utf8))
+                return Parsed(stanzas: stanzas, mac: mac, authenticated: authenticated)
+            }
+            // Anything else must start a stanza.
+            guard line.hasPrefix("-> ") else {
+                throw AgeError.invalidHeader(localized("A header line is neither a recipient nor the closing marker."))
+            }
+            // The byte cap bounds input, while this higher count cap also bounds object overhead.
+            guard stanzas.count < maximumStanzas else {
+                throw AgeError.invalidHeader(localized("The header lists too many recipients."))
+            }
+            let fields = line.dropFirst(3).split(separator: " ", omittingEmptySubsequences: false).map(String.init)
+            // The type and arguments are single-space separated, non-empty, printable ASCII.
+            guard let type = fields.first, !type.isEmpty,
+                  fields.allSatisfy({ !$0.isEmpty && $0.allSatisfy { $0.isASCII && !$0.isWhitespace && $0 != "\u{7F}" && $0.asciiValue! > 0x20 } }) else {
+                throw AgeError.invalidHeader(localized("A recipient line is malformed."))
+            }
+            authenticated.append(Data((line + "\n").utf8))
+            // The body follows: full lines of 64 characters, ended by a shorter line.
+            var bodyText = ""
+            while true {
+                guard let bodyLine = try reader.readLine() else { throw AgeError.truncated }
+                authenticated.append(Data((bodyLine + "\n").utf8))
+                guard bodyLine.count <= bodyLineWidth, bodyLine.allSatisfy({ $0.isASCII }) else {
+                    throw AgeError.invalidHeader(localized("A recipient body line is malformed."))
+                }
+                // A body that never ends would otherwise be collected until memory runs out.
+                guard authenticated.count <= maximumHeaderSize else {
+                    throw AgeError.invalidHeader(localized("The header is too large to be an age file."))
+                }
+                bodyText += bodyLine
+                // A short line, including an empty one, ends the body.
+                if bodyLine.count < bodyLineWidth { break }
+            }
+            // The body is one base64 string spread over the lines and is decoded as a whole.
+            guard let body = AgeBase64.decode(bodyText) else {
+                throw AgeError.invalidHeader(localized("A recipient body is not valid base64."))
+            }
+            stanzas.append(AgeStanza(type: type, args: Array(fields.dropFirst()), body: body))
+        }
+    }
+}
