@@ -144,3 +144,41 @@ struct SSHRSAIdentity: AgeIdentity {
         return nil
     }
 }
+
+/// A passphrase used to decrypt a passphrase-protected file.
+struct ScryptIdentity: AgeIdentity {
+    /// Work factors above this need gigabytes of memory and a long wait, so they are refused
+    /// rather than attempted. The age tool applies the same limit by default.
+    static let maximumWorkFactor = 22
+    let passphrase: String
+
+    var kind: AgeKeyKind { .scrypt }
+    var recipient: (any AgeRecipient)? { nil }
+
+    // init(passphrase): An identity for the passphrase.
+    init(passphrase: String) {
+        self.passphrase = passphrase
+    }
+
+    // unwrap(stanzas): Stretch the passphrase with the stanza's salt and work factor.
+    func unwrap(_ stanzas: [AgeStanza]) throws -> Data? {
+        for stanza in stanzas where stanza.type == "scrypt" {
+            // A malformed passphrase stanza is a format error.
+            guard stanza.args.count == 2, let salt = AgeBase64.decode(stanza.args[0]), salt.count == 16 else {
+                throw AgeError.invalidHeader(localized("The passphrase entry is malformed."))
+            }
+            // The work factor is a plain decimal without a sign or leading zeros.
+            let digits = stanza.args[1]
+            guard let workFactor = Int(digits), workFactor > 0, digits.allSatisfy(\.isNumber), !digits.hasPrefix("0") else {
+                throw AgeError.invalidHeader(localized("The passphrase work factor is malformed."))
+            }
+            // Refuse a work factor that would take too long before any stretching starts.
+            guard workFactor <= Self.maximumWorkFactor else { throw AgeError.workFactorTooHigh(workFactor) }
+            let key = ScryptRecipient.key(passphrase: passphrase, salt: salt, workFactor: workFactor)
+            // The only stanza is this one, so a body that does not open means a wrong passphrase.
+            guard let fileKey = AgeKDF.unwrap(stanza.body, with: key) else { throw AgeError.wrongPassphrase }
+            return fileKey
+        }
+        return nil
+    }
+}
