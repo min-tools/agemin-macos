@@ -27,3 +27,12 @@ enum AgeKeyKind: Equatable {
         return true
     }
 }
+
+/// Someone a file can be encrypted for.
+protocol AgeRecipient {
+    var kind: AgeKeyKind { get }
+    /// The public key in its line form, for display and for saving to a recipients file.
+    var line: String { get }
+    // wrap(fileKey): The stanza that lets this recipient recover the file key.
+    func wrap(fileKey: Data) throws -> AgeStanza
+}
