@@ -73,3 +73,49 @@ struct X25519Identity: AgeIdentity {
         return nil
     }
 }
+
+/// An SSH Ed25519 private key used as an age identity.
+struct SSHEd25519Identity: AgeIdentity {
+    let publicKey: SSHPublicKey
+    private let scalar: Data
+    private let curvePublicKey: Data
+
+    var kind: AgeKeyKind { .sshEd25519 }
+    var recipient: (any AgeRecipient)? { try? SSHEd25519Recipient(publicKey: publicKey) }
+
+    // init(publicKey, seed): From the public key and the 32-byte Ed25519 seed.
+    init(publicKey: SSHPublicKey, seed: Data) throws {
+        guard seed.count == 32, let edwards = publicKey.ed25519PublicKey,
+              let curve = Curve25519Conversion.montgomeryU(fromEdwardsPublicKey: edwards) else {
+            throw AgeError.invalidIdentity(localized("The SSH key is not a valid Ed25519 key."))
+        }
+        self.publicKey = publicKey
+        scalar = Curve25519Conversion.x25519Scalar(fromEdwardsSeed: seed)
+        curvePublicKey = curve
+    }
+
+    // unwrap(stanzas): Try the ssh-ed25519 stanzas whose tag names this key.
+    func unwrap(_ stanzas: [AgeStanza]) throws -> Data? {
+        let tag = publicKey.tag
+        for stanza in stanzas where stanza.type == "ssh-ed25519" {
+            // A malformed ssh-ed25519 stanza is a format error, whichever key it names.
+            guard stanza.args.count == 2 else {
+                throw AgeError.invalidHeader(localized("An ssh-ed25519 recipient entry is malformed."))
+            }
+            // The tag says which key the stanza is for.
+            guard stanza.args[0] == tag else { continue }
+            guard let share = AgeBase64.decode(stanza.args[1]), share.count == 32 else {
+                throw AgeError.invalidHeader(localized("An ssh-ed25519 recipient entry is malformed."))
+            }
+            // The tweak and the two agreements mirror the recipient side; a low-order share is
+            // skipped rather than reported.
+            let tweak = AgeKDF.derive(ikm: Data(), salt: publicKey.wire, info: SSHEd25519Recipient.label)
+            guard let inner = try? X25519.agree(scalar: scalar, point: share),
+                  let shared = try? X25519.agree(scalar: tweak, point: inner) else { continue }
+            let key = AgeKDF.derive(ikm: shared, salt: share + curvePublicKey, info: SSHEd25519Recipient.label)
+            // The first body that opens under this key holds the file key.
+            if let fileKey = AgeKDF.unwrap(stanza.body, with: key) { return fileKey }
+        }
+        return nil
+    }
+}
