@@ -73,3 +73,29 @@ struct AgeDecryptOutcome: Equatable {
     /// The SHA-256 of the decrypted bytes, in lowercase hex.
     let sha256: String
 }
+
+/// Reads bytes from memory.
+final class DataByteReader: ByteReader {
+    private var data: Data
+
+    // init(data): Read from the given bytes.
+    init(_ data: Data) { self.data = data }
+
+    // read(upTo count): The next bytes.
+    func read(upTo count: Int) throws -> Data {
+        let taken = data.prefix(count)
+        data.removeFirst(taken.count)
+        return Data(taken)
+    }
+}
+
+/// Collects bytes in memory.
+final class DataByteWriter: ByteWriter {
+    private(set) var data = Data()
+
+    // write(bytes): Append.
+    func write(_ bytes: Data) throws { data.append(bytes) }
+
+    // finish(): Nothing to flush.
+    func finish() throws {}
+}
