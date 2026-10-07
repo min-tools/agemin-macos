@@ -239,3 +239,47 @@ enum AgeHeaderCodec {
         }
     }
 }
+
+/// The STREAM payload: 64 KiB chunks under ChaCha20-Poly1305 with a counter nonce whose final
+/// byte marks the last chunk.
+enum AgePayload {
+    static let chunkSize = 65536
+    static let tagSize = 16
+    static let nonceSize = 16
+
+    // key(fileKey, nonce): The payload key derived from the file key and the 16-byte nonce.
+    static func key(fileKey: Data, nonce: Data) -> SymmetricKey {
+        SymmetricKey(data: AgeKDF.derive(ikm: fileKey, salt: nonce, info: "payload"))
+    }
+
+    // chunkNonce(counter, last): Eleven big-endian counter bytes and a final 0 or 1.
+    static func chunkNonce(counter: UInt64, last: Bool) -> ChaChaPoly.Nonce {
+        var bytes = Data(count: 12)
+        var value = counter
+        // Fill the counter from its low end; bytes 0-2 stay zero and byte 11 is the flag.
+        for index in stride(from: 10, through: 3, by: -1) {
+            bytes[index] = UInt8(value & 0xFF)
+            value >>= 8
+        }
+        bytes[11] = last ? 1 : 0
+        return try! ChaChaPoly.Nonce(data: bytes)
+    }
+
+    // seal(chunk, key, counter, last): Encrypt one chunk; the result is ciphertext then tag.
+    static func seal(_ chunk: Data, key: SymmetricKey, counter: UInt64, last: Bool) throws -> Data {
+        let sealed = try ChaChaPoly.seal(chunk, using: key, nonce: chunkNonce(counter: counter, last: last))
+        return sealed.ciphertext + sealed.tag
+    }
+
+    // open(chunk, key, counter, last): Decrypt one chunk, or nil when the tag does not verify.
+    static func open(_ chunk: Data, key: SymmetricKey, counter: UInt64, last: Bool) -> Data? {
+        guard chunk.count >= tagSize else { return nil }
+        let box = try? ChaChaPoly.SealedBox(
+            nonce: chunkNonce(counter: counter, last: last),
+            ciphertext: chunk.prefix(chunk.count - tagSize),
+            tag: chunk.suffix(tagSize)
+        )
+        guard let box else { return nil }
+        return try? ChaChaPoly.open(box, using: key)
+    }
+}
