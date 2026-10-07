@@ -70,3 +70,22 @@ struct X25519Recipient: AgeRecipient, Equatable {
         return AgeStanza(type: "X25519", args: [AgeBase64.encode(share)], body: try AgeKDF.wrap(fileKey, with: key))
     }
 }
+
+/// X25519 operations over raw byte strings, as the age stanzas need them.
+enum X25519 {
+    // agree(secret, point): The shared secret between a private key and a raw public value,
+    // rejecting the all-zero result of a low-order point.
+    static func agree(secret: Curve25519.KeyAgreement.PrivateKey, point: Data) throws -> Data {
+        let publicKey = try Curve25519.KeyAgreement.PublicKey(rawRepresentation: point)
+        let shared = try secret.sharedSecretFromKeyAgreement(with: publicKey).withUnsafeBytes { Data($0) }
+        guard shared.contains(where: { $0 != 0 }) else {
+            throw AgeError.invalidRecipient(localized("This key produces a weak shared secret and cannot be used."))
+        }
+        return shared
+    }
+
+    // agree(scalar, point): The same with a raw 32-byte scalar, which X25519 clamps itself.
+    static func agree(scalar: Data, point: Data) throws -> Data {
+        try agree(secret: try Curve25519.KeyAgreement.PrivateKey(rawRepresentation: scalar), point: point)
+    }
+}
