@@ -177,3 +177,53 @@ struct ScryptRecipient: AgeRecipient {
         return AgeStanza(type: "scrypt", args: [AgeBase64.encode(salt), String(workFactor)], body: try AgeKDF.wrap(fileKey, with: key))
     }
 }
+
+/// Turns a line of text into a recipient.
+enum AgeRecipientParser {
+    // kind(of line): What kind of key the line holds, or nil when it is not a key at all.
+    static func kind(of line: String) -> AgeKeyKind? {
+        let trimmed = line.trimmingCharacters(in: .whitespacesAndNewlines)
+        // age public keys are lowercase bech32 with the "age" prefix.
+        if trimmed.hasPrefix("age1") { return .x25519 }
+        // SSH keys name their algorithm first.
+        if let algorithm = trimmed.split(separator: " ").first.map(String.init), algorithm.contains("-") || algorithm.hasPrefix("ssh") {
+            switch algorithm {
+            case "ssh-ed25519": return .sshEd25519
+            case "ssh-rsa": return .sshRSA
+            default:
+                // Anything else from ssh-keygen is a real key that age cannot use.
+                return ["ssh-", "ecdsa-", "sk-"].contains(where: algorithm.hasPrefix) ? .unsupported(algorithm) : nil
+            }
+        }
+        return nil
+    }
+
+    // parse(line): The recipient for a public key line.
+    static func parse(_ line: String) throws -> any AgeRecipient {
+        let trimmed = line.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { throw AgeError.invalidRecipient(localized("The key is empty.")) }
+        // A pasted secret key is a common mistake worth naming.
+        if trimmed.uppercased().hasPrefix("AGE-SECRET-KEY-1") {
+            throw AgeError.invalidRecipient(localized("This is a secret key. Use the matching public key, which starts with age1."))
+        }
+        switch kind(of: trimmed) {
+        case .x25519:
+            return try X25519Recipient(string: trimmed)
+        case .sshEd25519, .sshRSA:
+            let key: SSHPublicKey
+            do {
+                key = try SSHPublicKey.parse(line: trimmed)
+            } catch {
+                throw AgeError.invalidRecipient(localized("The SSH public key is malformed."))
+            }
+            // The algorithm decides the stanza type.
+            if key.algorithm == "ssh-ed25519" { return try SSHEd25519Recipient(publicKey: key) }
+            return try SSHRSARecipient(publicKey: key)
+        case .unsupported(let algorithm):
+            throw AgeError.unsupportedKey(algorithm)
+        case .scrypt, nil:
+            // A passphrase is never written as a key line, so it reads as not a key at all.
+            throw AgeError.invalidRecipient(localized("Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa)."))
+        }
+    }
+}
