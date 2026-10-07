@@ -43,3 +43,10 @@ enum AgeError: LocalizedError, Equatable {
         }
     }
 }
+
+/// One recipient stanza of an age header: a type, its arguments, and a binary body.
+struct AgeStanza: Equatable {
+    var type: String
+    var args: [String]
+    var body: Data
+}
