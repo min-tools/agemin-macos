@@ -89,3 +89,35 @@ enum X25519 {
         try agree(secret: try Curve25519.KeyAgreement.PrivateKey(rawRepresentation: scalar), point: point)
     }
 }
+
+/// An SSH Ed25519 public key used as an age recipient.
+struct SSHEd25519Recipient: AgeRecipient {
+    static let label = "age-encryption.org/v1/ssh-ed25519"
+    let publicKey: SSHPublicKey
+    /// The key converted to its X25519 form.
+    let curvePublicKey: Data
+
+    var kind: AgeKeyKind { .sshEd25519 }
+    var line: String { publicKey.line }
+
+    // init(publicKey): From a parsed ssh-ed25519 public key.
+    init(publicKey: SSHPublicKey) throws {
+        guard let edwards = publicKey.ed25519PublicKey, let curve = Curve25519Conversion.montgomeryU(fromEdwardsPublicKey: edwards) else {
+            throw AgeError.invalidRecipient(localized("The SSH key is not a valid Ed25519 key."))
+        }
+        self.publicKey = publicKey
+        curvePublicKey = curve
+    }
+
+    // wrap(fileKey): The tweaked X25519 agreement that age defines for SSH keys.
+    func wrap(fileKey: Data) throws -> AgeStanza {
+        let ephemeral = Curve25519.KeyAgreement.PrivateKey()
+        let share = ephemeral.publicKey.rawRepresentation
+        // The tweak comes from the SSH wire key, so the stanza is bound to this exact key.
+        let tweak = AgeKDF.derive(ikm: Data(), salt: publicKey.wire, info: Self.label)
+        // Apply the tweak to the ephemeral agreement, then derive the wrap key as for X25519.
+        let shared = try X25519.agree(scalar: tweak, point: try X25519.agree(secret: ephemeral, point: curvePublicKey))
+        let key = AgeKDF.derive(ikm: shared, salt: share + curvePublicKey, info: Self.label)
+        return AgeStanza(type: "ssh-ed25519", args: [publicKey.tag, AgeBase64.encode(share)], body: try AgeKDF.wrap(fileKey, with: key))
+    }
+}
