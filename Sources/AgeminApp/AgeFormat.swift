@@ -72,3 +72,37 @@ enum AgeBase64 {
         return data
     }
 }
+
+/// HKDF-SHA-256 as the age format uses it for every derived key.
+enum AgeKDF {
+    // derive(ikm, salt, info, [count = 32]): count bytes of HKDF-SHA-256 output.
+    static func derive(ikm: Data, salt: Data, info: String, count: Int = 32) -> Data {
+        let key = HKDF<SHA256>.deriveKey(
+            inputKeyMaterial: SymmetricKey(data: ikm),
+            salt: salt,
+            info: Data(info.utf8),
+            outputByteCount: count
+        )
+        return key.withUnsafeBytes { Data($0) }
+    }
+
+    // wrap(fileKey, with key): ChaCha20-Poly1305 of the file key with a zero nonce, the way the
+    // X25519, ssh-ed25519, and scrypt stanza bodies wrap it; ssh-rsa uses RSA-OAEP instead.
+    static func wrap(_ fileKey: Data, with key: Data) throws -> Data {
+        let sealed = try ChaChaPoly.seal(fileKey, using: SymmetricKey(data: key), nonce: ChaChaPoly.Nonce(data: Data(count: 12)))
+        return sealed.ciphertext + sealed.tag
+    }
+
+    // unwrap(body, with key): The file key from a stanza body, or nil when the key does not fit.
+    static func unwrap(_ body: Data, with key: Data) -> Data? {
+        // A wrapped key is the 16-byte ciphertext followed by the 16-byte tag; nothing else fits.
+        guard body.count == AgeHeaderCodec.fileKeySize + 16 else { return nil }
+        let box = try? ChaChaPoly.SealedBox(
+            nonce: ChaChaPoly.Nonce(data: Data(count: 12)),
+            ciphertext: body.prefix(AgeHeaderCodec.fileKeySize),
+            tag: body.suffix(16)
+        )
+        guard let box, let opened = try? ChaChaPoly.open(box, using: SymmetricKey(data: key)) else { return nil }
+        return opened
+    }
+}
