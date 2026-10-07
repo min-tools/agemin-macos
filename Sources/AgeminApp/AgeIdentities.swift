@@ -119,3 +119,28 @@ struct SSHEd25519Identity: AgeIdentity {
         return nil
     }
 }
+
+/// An SSH RSA private key used as an age identity.
+struct SSHRSAIdentity: AgeIdentity {
+    let publicKey: SSHPublicKey
+    let numbers: RSAPrivateKeyNumbers
+
+    var kind: AgeKeyKind { .sshRSA }
+    var recipient: (any AgeRecipient)? { try? SSHRSARecipient(publicKey: publicKey) }
+
+    // unwrap(stanzas): Try the ssh-rsa stanzas whose tag names this key.
+    func unwrap(_ stanzas: [AgeStanza]) throws -> Data? {
+        let tag = publicKey.tag
+        for stanza in stanzas where stanza.type == "ssh-rsa" {
+            // A malformed ssh-rsa stanza is a format error; the tag decides if it is for this key.
+            guard stanza.args.count == 1 else {
+                throw AgeError.invalidHeader(localized("An ssh-rsa recipient entry is malformed."))
+            }
+            guard stanza.args[0] == tag else { continue }
+            // A body that does not decrypt to a 16-byte file key is not for this key after all.
+            guard let fileKey = RSAOAEP.decrypt(ciphertext: stanza.body, key: numbers), fileKey.count == AgeHeaderCodec.fileKeySize else { continue }
+            return fileKey
+        }
+        return nil
+    }
+}
