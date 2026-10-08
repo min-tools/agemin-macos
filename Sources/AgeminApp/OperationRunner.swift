@@ -110,3 +110,19 @@ final class OperationRunner: ObservableObject {
         bytesTotal = total
     }
 }
+
+/// Byte counts in words, as Finder shows them.
+enum ByteCountText {
+    /// Finder's file-size style, with digits for zero instead of the word.
+    private static let formatter: ByteCountFormatter = {
+        let formatter = ByteCountFormatter()
+        formatter.countStyle = .file
+        formatter.allowsNonnumericFormatting = false
+        return formatter
+    }()
+
+    // string(bytes): A human-readable size such as "1.2 MB".
+    static func string(_ bytes: Int64) -> String {
+        formatter.string(fromByteCount: bytes)
+    }
+}
