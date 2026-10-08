@@ -150,3 +150,24 @@ enum AvatarSymbol: String, Codable, CaseIterable {
         }
     }
 }
+
+/// The eight disc colors for initials.
+enum AvatarPalette {
+    static let colors: [Color] = [
+        AvatarSymbol.bolt.color, AvatarSymbol.chevron.color, AvatarSymbol.waves.color, AvatarSymbol.hex.color,
+        AvatarSymbol.diamond.color, AvatarSymbol.rings.color, AvatarSymbol.leaf.color, AvatarSymbol.spark.color,
+    ]
+
+    // color(at index): A palette color, wrapping out-of-range indexes.
+    static func color(at index: Int) -> Color {
+        colors[((index % colors.count) + colors.count) % colors.count]
+    }
+}
+
+/// What a key's avatar shows: a drawn symbol, the name's initials on a colored disc, or an image
+/// the user chose.
+enum AvatarChoice: Codable, Equatable {
+    case symbol(AvatarSymbol)
+    case initials(colorIndex: Int)
+    case image(fileName: String)
+}
