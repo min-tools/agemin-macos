@@ -88,3 +88,19 @@ struct AgeminEntitlement: Equatable {
     var isPro: Bool { kind != .none }
     static let free = AgeminEntitlement()
 }
+
+/// The status line the Pro panel shows, with the date it mentions. The trial cases describe a
+/// StoreKit introductory offer, which the products do not configure; the app's 30-day trial is
+/// reported separately by the store.
+enum AgeminStatusKind: Equatable {
+    case free
+    case active
+    case lifetime
+    case familyShared
+    case trialRenews(Date)
+    case trialEnds(Date)
+    case trialUntil(Date)
+    case renews(Date)
+    case ends(Date)
+    case activeUntil(Date)
+}
