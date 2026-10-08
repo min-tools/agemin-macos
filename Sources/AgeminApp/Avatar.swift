@@ -171,3 +171,172 @@ enum AvatarChoice: Codable, Equatable {
     case initials(colorIndex: Int)
     case image(fileName: String)
 }
+
+/// Remembers each key's avatar in the app container, keyed by the key's fingerprint, so a key
+/// looks the same wherever it appears and nothing in the key folders changes. Images are copied
+/// into the container, downscaled, and loaded on demand.
+@MainActor
+final class AvatarStore: ObservableObject {
+    @Published private(set) var choices: [String: AvatarChoice] = [:]
+    private var imageCache: [String: NSImage] = [:]
+    private let defaults = UserDefaults.standard
+    private static let choicesKey = "AgeminAvatars"
+    /// Imported images are square and at most this many pixels on a side.
+    private static let imageSide = 256
+
+    // init(): Load the saved choices.
+    init() {
+        // A corrupt or missing record starts empty.
+        if let data = defaults.data(forKey: Self.choicesKey), let saved = try? JSONDecoder().decode([String: AvatarChoice].self, from: data) {
+            choices = saved
+        }
+    }
+
+    /// The folder that holds imported images, inside the app container.
+    private var imageDirectory: URL {
+        let support = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first
+            ?? FileManager.default.temporaryDirectory
+        return support.appendingPathComponent("Agemin/Avatars", isDirectory: true)
+    }
+
+    // choice(for key): The avatar for a key: the saved choice, or initials in a color that the
+    // key itself determines, so the default is stable.
+    func choice(for key: String) -> AvatarChoice {
+        choices[key] ?? Self.defaultChoice(for: key)
+    }
+
+    // isCustom(for key): Whether the user chose this key's avatar.
+    func isCustom(for key: String) -> Bool {
+        choices[key] != nil
+    }
+
+    // defaultChoice(for key): Initials on a disc whose color comes from a hash of the key.
+    static func defaultChoice(for key: String) -> AvatarChoice {
+        let digest = SHA256.hash(data: Data(key.utf8))
+        return .initials(colorIndex: Int(Data(digest).first ?? 0) % AvatarPalette.colors.count)
+    }
+
+    // set(choice, for key): Save a choice, dropping the image file of a replaced image choice.
+    func set(_ choice: AvatarChoice, for key: String) {
+        // An image that is no longer referenced is deleted from the container.
+        if case .image(let fileName) = choices[key] ?? .initials(colorIndex: 0), choice != .image(fileName: fileName) {
+            removeImageFile(fileName)
+        }
+        choices[key] = choice
+        save()
+    }
+
+    // reset(for key): Return to the default initials.
+    func reset(for key: String) {
+        // A saved image is deleted along with its record.
+        if case .image(let fileName)? = choices[key] { removeImageFile(fileName) }
+        choices[key] = nil
+        save()
+    }
+
+    /// The largest image, in pixels per side, that an avatar is made from. Read from error text
+    /// too, so it is not tied to the main actor.
+    nonisolated static let maximumImageSide = 8192
+
+    // importImage(from url, for key): Copy an image into the container as a square PNG and use it.
+    // ImageIO decodes a reduced copy, so a huge image never fills memory.
+    func importImage(from url: URL, for key: String) throws {
+        // A file chosen in a panel or dropped from Finder may need its security scope opened.
+        let accessed = url.startAccessingSecurityScopedResource()
+        defer { if accessed { url.stopAccessingSecurityScopedResource() } }
+        guard let source = CGImageSourceCreateWithURL(url as CFURL, nil), CGImageSourceGetCount(source) > 0 else {
+            throw AvatarError.notAnImage
+        }
+        // The dimensions come from the header, before any pixels are decoded.
+        let properties = CGImageSourceCopyPropertiesAtIndex(source, 0, nil) as? [CFString: Any]
+        guard let width = properties?[kCGImagePropertyPixelWidth] as? Int,
+              let height = properties?[kCGImagePropertyPixelHeight] as? Int, width > 0, height > 0 else {
+            throw AvatarError.notAnImage
+        }
+        guard width <= Self.maximumImageSide, height <= Self.maximumImageSide else { throw AvatarError.tooLarge }
+        // Decode at twice the stored size so the downscale keeps detail; the transform applies the
+        // EXIF orientation.
+        let options: [CFString: Any] = [
+            kCGImageSourceCreateThumbnailFromImageAlways: true,
+            kCGImageSourceCreateThumbnailWithTransform: true,
+            kCGImageSourceThumbnailMaxPixelSize: Self.imageSide * 2,
+            kCGImageSourceShouldCache: false,
+        ]
+        guard let reduced = CGImageSourceCreateThumbnailAtIndex(source, 0, options as CFDictionary) else {
+            throw AvatarError.notAnImage
+        }
+        // Store the square PNG and switch the key to it, dropping any stale cached copy.
+        let png = try Self.squarePNG(from: reduced)
+        let fileName = Self.fileName(for: key)
+        try FileManager.default.createDirectory(at: imageDirectory, withIntermediateDirectories: true)
+        try png.write(to: imageDirectory.appendingPathComponent(fileName), options: [])
+        imageCache[fileName] = nil
+        choices[key] = .image(fileName: fileName)
+        save()
+    }
+
+    // image(named fileName): The imported image, loaded once. A name that is not one Agemin
+    // makes is ignored, so a corrupt record cannot reach outside the avatar folder.
+    func image(named fileName: String) -> NSImage? {
+        guard Self.isImageFileName(fileName) else { return nil }
+        // Serve the cached copy when there is one.
+        if let cached = imageCache[fileName] { return cached }
+        guard let image = NSImage(contentsOf: imageDirectory.appendingPathComponent(fileName)) else { return nil }
+        imageCache[fileName] = image
+        return image
+    }
+
+    // fileName(for key): The first 12 bytes of the key's SHA-256 as hex plus `.png`, so each key
+    // has one image file.
+    private static func fileName(for key: String) -> String {
+        SHA256.hash(data: Data(key.utf8)).prefix(12).map { String(format: "%02x", $0) }.joined() + ".png"
+    }
+
+    // isImageFileName(name): Whether the name has the exact shape fileName(for:) produces: 24
+    // lowercase hex digits and `.png`.
+    private static func isImageFileName(_ name: String) -> Bool {
+        name.count == 28 && name.hasSuffix(".png") && name.dropLast(4).allSatisfy { $0.isHexDigit && ($0.isNumber || $0.isLowercase) }
+    }
+
+    // squarePNG(from source): Center-crop the image to a square, scale it down, and encode PNG.
+    private static func squarePNG(from source: CGImage) throws -> Data {
+        let side = min(source.width, source.height)
+        let target = min(side, imageSide)
+        guard let context = CGContext(
+            data: nil, width: target, height: target, bitsPerComponent: 8, bytesPerRow: 0,
+            space: CGColorSpace(name: CGColorSpace.sRGB)!, bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue
+        ) else { throw AvatarError.notAnImage }
+        context.interpolationQuality = .high
+        // Draw the centered square of the source scaled into the target.
+        let crop = CGRect(x: (source.width - side) / 2, y: (source.height - side) / 2, width: side, height: side)
+        guard let cropped = source.cropping(to: crop) else { throw AvatarError.notAnImage }
+        context.draw(cropped, in: CGRect(x: 0, y: 0, width: target, height: target))
+        guard let result = context.makeImage() else { throw AvatarError.notAnImage }
+        let bitmap = NSBitmapImageRep(cgImage: result)
+        guard let png = bitmap.representation(using: .png, properties: [:]) else { throw AvatarError.notAnImage }
+        return png
+    }
+
+    // removeImageFile(fileName): Delete an imported image and forget its cached copy. Only a
+    // name Agemin makes is deleted, so a corrupt record cannot remove another file.
+    private func removeImageFile(_ fileName: String) {
+        imageCache[fileName] = nil
+        guard Self.isImageFileName(fileName) else { return }
+        try? FileManager.default.removeItem(at: imageDirectory.appendingPathComponent(fileName))
+    }
+
+    // save(): Write the choices to preferences.
+    private func save() {
+        // Encoding a dictionary of simple enums cannot fail in practice; a failure keeps the old record.
+        if let data = try? JSONEncoder().encode(choices) { defaults.set(data, forKey: Self.choicesKey) }
+    }
+
+    // initials(for name): Up to two letters: the first letters of the first two words, uppercased.
+    // Words are split on spaces, dashes, underscores, and dots.
+    static func initials(for name: String) -> String {
+        let words = name.split { $0 == " " || $0 == "-" || $0 == "_" || $0 == "." }.filter { !$0.isEmpty }
+        let letters = words.prefix(2).compactMap { $0.first }
+        guard !letters.isEmpty else { return "?" }
+        return String(letters).uppercased()
+    }
+}
