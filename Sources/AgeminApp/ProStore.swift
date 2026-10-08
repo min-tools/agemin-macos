@@ -599,3 +599,13 @@ private final class AgeminPaywallState: ObservableObject {
         }
     }
 }
+
+/// Carries the Pro view's measured height up to the window controller.
+private struct AgeminProPanelHeightKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+
+    // reduce(value, nextValue): Keep the tallest reported height.
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = max(value, nextValue())
+    }
+}
