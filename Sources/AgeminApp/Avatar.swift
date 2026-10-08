@@ -353,3 +353,19 @@ enum AvatarError: LocalizedError {
         }
     }
 }
+
+/// Which keys count as the same key, for avatars and the "you" badge: the key material without
+/// an SSH comment, or the age public key as written.
+enum KeyMaterial {
+    // normalized(line): The comparable form of a public key line.
+    static func normalized(_ line: String) -> String {
+        let trimmed = line.trimmingCharacters(in: .whitespacesAndNewlines)
+        let fields = trimmed.split(separator: " ")
+        // SSH keys: the algorithm and the key blob, without the comment.
+        if fields.count >= 2, let first = fields.first, first.hasPrefix("ssh-") || first.hasPrefix("ecdsa-") || first.hasPrefix("sk-") {
+            return fields[0] + " " + fields[1]
+        }
+        // Anything else, such as an age public key, compares without regard to case.
+        return trimmed.lowercased()
+    }
+}
