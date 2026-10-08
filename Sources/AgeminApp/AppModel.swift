@@ -777,3 +777,22 @@ private final class IdentityBox: @unchecked Sendable {
         self.identities = identities
     }
 }
+
+/// A modal passphrase prompt with a secure text field.
+enum PassphrasePrompt {
+    // ask(title, message, in window): The typed passphrase, or nil when canceled.
+    @MainActor static func ask(title: String, message: String, in window: NSWindow?) -> String? {
+        let alert = NSAlert()
+        alert.messageText = title
+        alert.informativeText = message
+        alert.addButton(withTitle: localized("Unlock"))
+        alert.addButton(withTitle: localized("Cancel"))
+        let field = NSSecureTextField(frame: NSRect(x: 0, y: 0, width: 280, height: 24))
+        field.placeholderString = localized("Passphrase")
+        alert.accessoryView = field
+        alert.window.initialFirstResponder = field
+        // Unlock is the first button.
+        guard alert.runModal() == .alertFirstButtonReturn else { return nil }
+        return field.stringValue
+    }
+}
