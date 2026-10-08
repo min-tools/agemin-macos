@@ -340,3 +340,16 @@ final class AvatarStore: ObservableObject {
         return String(letters).uppercased()
     }
 }
+
+/// Problems with an image chosen for an avatar.
+enum AvatarError: LocalizedError {
+    case notAnImage
+    case tooLarge
+
+    var errorDescription: String? {
+        switch self {
+        case .notAnImage: return localized("That file is not an image Agemin can read.")
+        case .tooLarge: return localizedFormat("The image is larger than %lld pixels on a side. Choose a smaller one.", Int64(AvatarStore.maximumImageSide))
+        }
+    }
+}
