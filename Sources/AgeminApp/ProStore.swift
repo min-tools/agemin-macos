@@ -514,3 +514,11 @@ final class AgeminProStore: ObservableObject {
         }
     }
 }
+
+/// A store error that carries a user-readable message.
+private struct StoreFailure: LocalizedError {
+    let message: String
+    // init(message): Wrap a user-readable message.
+    init(_ message: String) { self.message = message }
+    var errorDescription: String? { message }
+}
