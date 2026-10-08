@@ -766,3 +766,14 @@ final class AppModel: ObservableObject {
         selectedIdentityID = nil
     }
 }
+
+/// Carries loaded identities into the background task; the identities hold only key material
+/// and are not touched by the main thread while the task runs.
+private final class IdentityBox: @unchecked Sendable {
+    let identities: [any AgeIdentity]
+
+    // init(identities): Wrap the identities.
+    init(identities: [any AgeIdentity]) {
+        self.identities = identities
+    }
+}
