@@ -64,3 +64,27 @@ enum AgeminFreeAccessPolicy {
         return normalized + 1
     }
 }
+
+/// The fields of a StoreKit transaction that the entitlement decision needs, so tests can build
+/// them without StoreKit.
+struct AgeminTransactionSummary: Equatable {
+    var productID: String
+    var purchaseDate: Date
+    var expirationDate: Date?
+    var revocationDate: Date?
+    var isFamilyShared: Bool
+    var isIntroductoryOffer: Bool
+}
+
+/// The access a verified purchase grants. `willAutoRenew` stays nil until the renewal lookup
+/// answers; `isTrial` marks a StoreKit introductory offer, not the app's own trial.
+struct AgeminEntitlement: Equatable {
+    enum Kind: Equatable { case none, lifetime, subscription }
+    var kind: Kind = .none
+    var expirationDate: Date?
+    var isTrial = false
+    var isFamilyShared = false
+    var willAutoRenew: Bool?
+    var isPro: Bool { kind != .none }
+    static let free = AgeminEntitlement()
+}
