@@ -579,3 +579,23 @@ private final class AgeminProPanelController: NSWindowController, NSWindowDelega
         window.setFrame(frame, display: true, animate: animate && window.isVisible)
     }
 }
+
+/// Progress and message state shared by the purchase and restore actions, so only one runs at a
+/// time and both report into the same place.
+@MainActor
+private final class AgeminPaywallState: ObservableObject {
+    enum Operation { case purchasing, restoring }
+    /// The action in progress; nil while the panel is idle.
+    @Published var operation: Operation?
+    /// An error or the pending-approval note, shown under the purchase actions.
+    @Published var message: String?
+
+    /// The label shown while an action is running.
+    var progressText: String? {
+        switch operation {
+        case .purchasing: return localized("Contacting the App Store…")
+        case .restoring: return localized("Restoring…")
+        case nil: return nil
+        }
+    }
+}
