@@ -62,3 +62,29 @@ struct RecipientEntry: Identifiable, Equatable {
         try? AgeRecipientParser.parse(line)
     }
 }
+
+/// One private key file the app can decrypt with.
+struct IdentityEntry: Identifiable, Equatable {
+    let id: String
+    let url: URL
+    let name: String
+    let kind: AgeKeyKind?
+    /// Whether a passphrase is needed before the key can be used.
+    let isProtected: Bool
+    /// Why the key cannot be used, when it cannot.
+    let problem: String?
+    /// The matching public key line, for display and matching.
+    let publicKeyLine: String?
+    let fingerprint: String?
+    /// The age tag an SSH stanza would carry for this key.
+    let tag: String?
+    /// How many age identities the file holds, for identity files with several keys.
+    let count: Int
+    /// Whether the file was added individually rather than found in the identities folder.
+    let isExtra: Bool
+
+    var isUsable: Bool { problem == nil && (kind?.isSupported ?? false) }
+    var displayPath: String { KeyStore.abbreviate(url.path) }
+    /// What the avatar is stored under, the same value the matching recipient uses.
+    var avatarKey: String { fingerprint ?? publicKeyLine.map(KeyMaterial.normalized) ?? url.path }
+}
