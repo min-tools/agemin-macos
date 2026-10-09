@@ -1173,3 +1173,80 @@ final class StableInputTextView: NSTextView {
         removeSearchCommandObserver()
     }
 }
+
+// MARK: - Window
+
+/// Keep the main content below a separate, system-owned title bar. Newer SwiftUI runtimes create
+/// full-size content windows by default, so the AppKit mask must be removed after attachment.
+struct StandardWindowChrome: NSViewRepresentable {
+    // makeNSView(context): Attach an invisible view that configures whatever window it joins.
+    func makeNSView(context: Context) -> NSView { ChromeView() }
+    // updateNSView(nsView, context): Nothing to update; the window is configured on attachment.
+    func updateNSView(_ nsView: NSView, context: Context) {}
+
+    /// The attached view that strips the full-size content mask from its window.
+    private final class ChromeView: NSView {
+        /// Waits for the window to become key, for the final content fit.
+        private var keyWindowObserver: NSObjectProtocol?
+
+        // viewDidMoveToWindow(): Apply the standard title bar now, again after SwiftUI's deferred
+        // scene setup, and once more when the window becomes key.
+        override func viewDidMoveToWindow() {
+            super.viewDidMoveToWindow()
+            removeKeyWindowObserver()
+            guard let window else { return }
+            applyStandardTitleBar(to: window)
+            // SwiftUI can finish applying scene defaults after the representable enters the window.
+            DispatchQueue.main.async { [weak window] in
+                guard let window else { return }
+                self.applyStandardTitleBar(to: window)
+            }
+            // The window is placed and constrained to the screen as it is shown, so check the
+            // content fit one last time once it is key.
+            keyWindowObserver = NotificationCenter.default.addObserver(
+                forName: NSWindow.didBecomeKeyNotification, object: window, queue: .main
+            ) { [weak self, weak window] _ in
+                guard let self, let window else { return }
+                self.removeKeyWindowObserver()
+                self.applyStandardTitleBar(to: window)
+            }
+        }
+
+        // applyStandardTitleBar(to window): Give it a visible, opaque, system-owned title bar
+        // with a separator line, then refit the content under it.
+        private func applyStandardTitleBar(to window: NSWindow) {
+            window.styleMask.remove(.fullSizeContentView)
+            window.titleVisibility = .visible
+            window.titlebarAppearsTransparent = false
+            window.titlebarSeparatorStyle = .line
+            window.backgroundColor = .windowBackgroundColor
+            fitContent(in: window)
+        }
+
+        // fitContent(in window): Size the content view to the content rect at once. When the
+        // full-size mask goes, AppKit keeps the content size and grows the frame by the title bar
+        // instead; a frame that cannot grow, such as a maximized window, is clamped while the
+        // content view keeps its full height, and its top row sits under the title bar until the
+        // next resize.
+        private func fitContent(in window: NSWindow) {
+            guard let contentView = window.contentView else { return }
+            let size = window.contentRect(forFrameRect: window.frame).size
+            // Only touch the frame when it is stale, to avoid a needless layout pass.
+            if contentView.frame.size != size {
+                contentView.frame = NSRect(origin: .zero, size: size)
+            }
+        }
+
+        // removeKeyWindowObserver(): Stop waiting for the window to become key.
+        private func removeKeyWindowObserver() {
+            guard let keyWindowObserver else { return }
+            NotificationCenter.default.removeObserver(keyWindowObserver)
+            self.keyWindowObserver = nil
+        }
+
+        // deinit(): Drop the observer.
+        deinit {
+            removeKeyWindowObserver()
+        }
+    }
+}
