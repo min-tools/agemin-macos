@@ -475,3 +475,40 @@ struct IconTile: View {
             ))
     }
 }
+
+/// A message card for errors, warnings, and notes. Unlike the other controls it shows its title
+/// and detail as given, since callers pass localized text and error messages.
+struct NoticeCard: View {
+    let tone: Tone
+    let symbol: String
+    let title: String
+    var detail: String? = nil
+
+    var body: some View {
+        HStack(alignment: .top, spacing: 12) {
+            // The symbol takes the tone color; its fixed width keeps the text aligned across cards.
+            Image(systemName: symbol)
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(Theme.color(for: tone))
+                .frame(width: 18)
+            VStack(alignment: .leading, spacing: 3) {
+                Text(title)
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(Theme.textPrimary)
+                // The optional detail wraps under the title.
+                if let detail {
+                    Text(detail)
+                        .font(.system(size: 12.5))
+                        .foregroundStyle(Theme.textSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+            }
+            Spacer(minLength: 0)
+        }
+        // The fill and border take the tone color at low opacity.
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Theme.color(for: tone).opacity(0.08), in: RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous).stroke(Theme.color(for: tone).opacity(0.35), lineWidth: 1))
+    }
+}
