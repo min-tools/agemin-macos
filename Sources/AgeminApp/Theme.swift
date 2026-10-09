@@ -726,3 +726,39 @@ struct SearchField: View {
         .animation(.easeOut(duration: 0.15), value: isFocused)
     }
 }
+
+/// A single-line text field with custom chrome, used for names and keys.
+struct InputField: View {
+    let placeholder: String
+    @Binding var text: String
+    var mono = false
+    var onSubmit: (() -> Void)? = nil
+    /// Moves keyboard focus into the field when it turns true; see `StableTextInput`.
+    var requestedFocus = false
+    @State private var isFocused = false
+
+    /// The field outline, tighter than the shared radius to suit a small control.
+    private var shape: RoundedRectangle { RoundedRectangle(cornerRadius: 8, style: .continuous) }
+
+    var body: some View {
+        // A 20 pt text view sits in a field two points taller than a small control; keys take the
+        // monospaced font.
+        StableTextInput(
+            placeholder: localized(placeholder),
+            text: $text,
+            font: mono ? .monospacedSystemFont(ofSize: 12.5, weight: .regular) : .systemFont(ofSize: 13),
+            contentHeight: 20,
+            textVerticalOffset: -1,
+            requestedFocus: requestedFocus,
+            onFocusChange: { isFocused = $0 },
+            onSubmit: onSubmit
+        )
+        .frame(height: 20)
+        .padding(.horizontal, 10)
+        .frame(height: Theme.smallControlHeight + 2)
+        // Focus switches the border to the accent.
+        .background(Theme.inputBackground, in: shape)
+        .overlay(shape.stroke(isFocused ? Theme.accent : Theme.inputBorder, lineWidth: isFocused ? 1.5 : 1))
+        .animation(.easeOut(duration: 0.15), value: isFocused)
+    }
+}
