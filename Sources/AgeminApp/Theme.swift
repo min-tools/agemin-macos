@@ -108,3 +108,25 @@ enum Theme {
         }
     }
 }
+
+// MARK: - Buttons
+
+/// How a button is filled: `primary` is the accent call to action, `secondary` the default,
+/// `ghost` has no resting fill, `danger` is tinted red, `success` is tinted green for the buttons
+/// on a result card, and `link` reads as text.
+enum ButtonVariant { case primary, secondary, ghost, danger, success, link }
+/// Regular buttons are `Theme.controlHeight` tall, small ones `Theme.smallControlHeight`.
+enum ButtonSize { case regular, small }
+
+/// The single button style of the app. Hover changes the fill or glow but never the shape, and a
+/// button's own shortcut is printed on it as a chip.
+struct AgeminButtonStyle: ButtonStyle {
+    var variant: ButtonVariant = .secondary
+    var size: ButtonSize = .regular
+    var shortcut: String? = nil
+
+    // makeBody(configuration): Hand the label to AgeminButtonBody, a view that can track hover.
+    func makeBody(configuration: Configuration) -> some View {
+        AgeminButtonBody(configuration: configuration, variant: variant, size: size, shortcut: shortcut)
+    }
+}
