@@ -148,3 +148,17 @@ struct BareButtonStyle: ButtonStyle {
             .opacity(configuration.isPressed ? 0.75 : 1)
     }
 }
+
+extension ButtonStyle where Self == BareButtonStyle {
+    /// Dot-syntax access to the style, as in `.buttonStyle(.bare)`.
+    static var bare: BareButtonStyle { BareButtonStyle() }
+}
+
+extension View {
+    // keyboardFocusable(): Opt a custom control into macOS keyboard navigation even when the
+    // system preference only tabs between text fields. Buttons keep their native Space and Return
+    // activation behavior.
+    func keyboardFocusable() -> some View {
+        focusable(true, interactions: .activate)
+    }
+}
