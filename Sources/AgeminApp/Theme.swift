@@ -900,3 +900,72 @@ struct StableTextInput: NSViewRepresentable {
         }
     }
 }
+
+/// A borderless scroll view without scrollers that hosts one `StableInputTextView` at a fixed
+/// height. The SwiftUI chrome draws around it.
+final class StableInputScrollView: NSScrollView {
+    let textView = StableInputTextView(frame: .zero)
+
+    // init(font, contentHeight, textVerticalOffset): Set the text view up as a single clipped
+    // line centered in contentHeight, with every automatic text substitution turned off.
+    init(font: NSFont, contentHeight: CGFloat, textVerticalOffset: CGFloat) {
+        super.init(frame: .zero)
+        // No border, background, scrollers, or inset adjustment; the field chrome is SwiftUI's.
+        borderType = .noBorder
+        drawsBackground = false
+        hasHorizontalScroller = false
+        hasVerticalScroller = false
+        automaticallyAdjustsContentInsets = false
+
+        // Plain text that grows sideways only; the scroll view clips what does not fit.
+        textView.font = font
+        textView.textColor = .labelColor
+        textView.insertionPointColor = .controlAccentColor
+        textView.drawsBackground = false
+        textView.isRichText = false
+        textView.importsGraphics = false
+        textView.allowsUndo = true
+        textView.isVerticallyResizable = false
+        textView.isHorizontallyResizable = true
+        textView.autoresizingMask = [.height]
+        let lineHeight = ceil(font.ascender - font.descender + font.leading)
+        // Center the line in the content height, then apply the caller's optical nudge.
+        textView.textContainerInset = NSSize(
+            width: 0,
+            height: floor((contentHeight - lineHeight) / 2) + textVerticalOffset
+        )
+        // One unbounded line that never wraps: overflow is clipped instead.
+        textView.textContainer?.lineFragmentPadding = 0
+        textView.textContainer?.containerSize = NSSize(
+            width: CGFloat.greatestFiniteMagnitude,
+            height: CGFloat.greatestFiniteMagnitude
+        )
+        textView.textContainer?.widthTracksTextView = false
+        textView.textContainer?.maximumNumberOfLines = 1
+        textView.textContainer?.lineBreakMode = .byClipping
+        // These fields hold names, paths, and queries, so no spelling or substitution help.
+        textView.isContinuousSpellCheckingEnabled = false
+        textView.isGrammarCheckingEnabled = false
+        textView.isAutomaticSpellingCorrectionEnabled = false
+        textView.isAutomaticTextCompletionEnabled = false
+        textView.isAutomaticQuoteSubstitutionEnabled = false
+        textView.isAutomaticDashSubstitutionEnabled = false
+        textView.isAutomaticDataDetectionEnabled = false
+
+        // Pin the height so the intrinsic size below matches the content height exactly.
+        textView.minSize = NSSize(width: 0, height: contentHeight)
+        textView.maxSize = NSSize(width: CGFloat.greatestFiniteMagnitude, height: contentHeight)
+        textView.frame = NSRect(x: 0, y: 0, width: 1, height: contentHeight)
+        documentView = textView
+    }
+
+    /// Exactly the content height; the width comes from the SwiftUI frame.
+    override var intrinsicContentSize: NSSize {
+        NSSize(width: NSView.noIntrinsicMetric, height: textView.minSize.height)
+    }
+
+    // init(coder): Unsupported; the view is only ever built in code.
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
