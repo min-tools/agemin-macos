@@ -395,3 +395,33 @@ struct Chip: View {
         return emphasized ? Theme.badgeActiveBorder : Theme.badgeBorder
     }
 }
+
+/// Uppercase, tracked labels that head a group of controls or a card.
+struct SectionLabel: View {
+    let text: String
+    // init(text): Allow the label text as an unlabeled argument.
+    init(_ text: String) { self.text = text }
+
+    var body: some View {
+        Text(localized(text).uppercased())
+            .font(.system(size: 11, weight: .semibold))
+            .tracking(1.1)
+            .foregroundStyle(Theme.labelText)
+    }
+}
+
+// MARK: - Surfaces
+
+/// Card chrome: padding, a plain or sunken surface, and a hairline border.
+struct CardModifier: ViewModifier {
+    var padding: CGFloat
+    var sunken: Bool
+
+    // body(content): Pad the content, then draw the card surface and border behind it.
+    func body(content: Content) -> some View {
+        content
+            .padding(padding)
+            .background(sunken ? Theme.surfaceSunken : Theme.surface, in: RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous))
+            .overlay(RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous).stroke(Theme.border, lineWidth: 1))
+    }
+}
