@@ -425,3 +425,17 @@ struct CardModifier: ViewModifier {
             .overlay(RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous).stroke(Theme.border, lineWidth: 1))
     }
 }
+
+extension View {
+    // card([padding = 0], [sunken = false]): Wrap the view in card chrome; a sunken card uses the
+    // text background for inset areas.
+    func card(padding: CGFloat = 0, sunken: Bool = false) -> some View {
+        modifier(CardModifier(padding: padding, sunken: sunken))
+    }
+
+    // hoverHighlight([cornerRadius = 8]): The hover fill behind rows in the key lists and the
+    // Decrypt page's key choices.
+    func hoverHighlight(cornerRadius: CGFloat = 8) -> some View {
+        modifier(HoverHighlight(cornerRadius: cornerRadius))
+    }
+}
