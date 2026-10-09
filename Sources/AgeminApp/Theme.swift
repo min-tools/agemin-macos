@@ -277,3 +277,32 @@ private struct AgeminButtonBody: View {
         }
     }
 }
+
+/// A square icon button that lines up with text buttons of the same size: 34 pt regular, 28 pt
+/// small.
+struct IconButton: View {
+    let symbol: String
+    /// The tooltip and accessibility label, as English source text.
+    var help: String
+    var variant: ButtonVariant = .secondary
+    var size: ButtonSize = .regular
+    var action: () -> Void
+
+    /// The side of the square, equal to the height of a text button of the same size.
+    private var side: CGFloat { size == .small ? Theme.smallControlHeight : Theme.controlHeight }
+
+    var body: some View {
+        // The symbol sits in a fixed 18 pt box so symbols of different widths line up, and the
+        // button itself is forced square; the tooltip and accessibility label share one text.
+        Button(action: action) {
+            Image(systemName: symbol)
+                .font(.system(size: size == .small ? 12 : 13, weight: .semibold))
+                .frame(width: 18, height: 18)
+        }
+        .buttonStyle(.agemin(variant, size: size))
+        .keyboardFocusable()
+        .frame(width: side, height: side)
+        .help(localized(help))
+        .accessibilityLabel(localized(help))
+    }
+}
