@@ -631,3 +631,35 @@ struct CheckMark: View {
         .animation(.easeOut(duration: 0.12), value: checked)
     }
 }
+
+/// A labeled checkbox row.
+struct CheckRow: View {
+    let title: String
+    var subtitle: String? = nil
+    @Binding var isOn: Bool
+
+    var body: some View {
+        // The whole row is the button, so clicking the text toggles the box as well.
+        Button { isOn.toggle() } label: {
+            HStack(alignment: .top, spacing: 10) {
+                CheckMark(checked: isOn)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(localized(title))
+                        .font(.system(size: 13.5, weight: .medium))
+                        .foregroundStyle(Theme.textPrimary)
+                    // The optional subtitle wraps under the title.
+                    if let subtitle {
+                        Text(localized(subtitle))
+                            .font(.system(size: 12.5))
+                            .foregroundStyle(Theme.textSecondary)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+            }
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.bare)
+        .keyboardFocusable()
+        .accessibilityAddTraits(isOn ? .isSelected : [])
+    }
+}
