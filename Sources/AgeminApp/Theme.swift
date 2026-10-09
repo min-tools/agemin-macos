@@ -762,3 +762,141 @@ struct InputField: View {
         .animation(.easeOut(duration: 0.15), value: isFocused)
     }
 }
+
+/// A single-line input built on its own text view, used behind every custom field. Unlike a text
+/// field it never hands editing to the window's shared field editor, so text and placeholder keep
+/// one baseline whether focused or not.
+struct StableTextInput: NSViewRepresentable {
+    let placeholder: String
+    @Binding var text: String
+    let font: NSFont
+    /// The height of the text view itself; the SwiftUI chrome is padded around it.
+    let contentHeight: CGFloat
+    /// Nudge of the text from the mathematical center; most field chrome reads best 2 pt up.
+    var textVerticalOffset: CGFloat = -2
+    var focusOnWindowOpen = false
+    var handlesSidebarSearchCommand = false
+    /// Moves keyboard focus into the field on the update where it turns true. Only that rising
+    /// edge counts, so set it back to false before requesting focus again.
+    var requestedFocus = false
+    var onFocusChange: ((Bool) -> Void)?
+    var onSubmit: (() -> Void)?
+
+    // makeCoordinator(): The delegate that pushes edits into the binding.
+    func makeCoordinator() -> Coordinator { Coordinator(text: $text) }
+
+    // makeNSView(context): Build the scroll view and text view pair, then wire up the delegate,
+    // placeholder, focus options, callbacks, and accessibility.
+    func makeNSView(context: Context) -> StableInputScrollView {
+        let scrollView = StableInputScrollView(
+            font: font,
+            contentHeight: contentHeight,
+            textVerticalOffset: textVerticalOffset
+        )
+        let textView = scrollView.textView
+        textView.delegate = context.coordinator
+        textView.placeholderAttributedString = placeholderText
+        textView.focusOnWindowOpen = focusOnWindowOpen
+        textView.handlesSidebarSearchCommand = handlesSidebarSearchCommand
+        textView.onFocusChange = onFocusChange
+        textView.onSubmit = onSubmit
+        textView.setAccessibilityRole(.textField)
+        textView.setAccessibilityLabel(placeholder)
+        return scrollView
+    }
+
+    // updateNSView(scrollView, context): Push the latest binding, placeholder, options, and
+    // callbacks into the text view, and move focus in when requestedFocus rises.
+    func updateNSView(_ scrollView: StableInputScrollView, context: Context) {
+        context.coordinator.text = $text
+        let textView = scrollView.textView
+        textView.placeholderAttributedString = placeholderText
+        textView.focusOnWindowOpen = focusOnWindowOpen
+        textView.handlesSidebarSearchCommand = handlesSidebarSearchCommand
+        textView.onFocusChange = onFocusChange
+        textView.onSubmit = onSubmit
+        textView.setAccessibilityLabel(placeholder)
+        // Replace the text only when it differs, so typing is never interrupted; a change from
+        // outside puts the caret at the end and clears the field's undo history, whose ranges
+        // refer to the old text. Never while an input method is composing (marked text):
+        // replacing the text then would put the composed characters in the wrong place. The
+        // update that follows the end of the composition applies any difference that remains.
+        if textView.string != text, !textView.hasMarkedText() {
+            textView.string = text
+            context.coordinator.undoManager.removeAllActions()
+            textView.setSelectedRange(NSRange(location: (text as NSString).length, length: 0))
+            textView.needsDisplay = true
+        }
+        // Only a rising edge of requestedFocus moves focus, so one request cannot keep stealing
+        // it back on every later update.
+        let shouldRequestFocus = requestedFocus && !context.coordinator.lastRequestedFocus
+        context.coordinator.lastRequestedFocus = requestedFocus
+        // Skip a field that already has focus; defer the change so the view is in its window by
+        // the time it runs.
+        if shouldRequestFocus, textView.window?.firstResponder !== textView {
+            DispatchQueue.main.async { [weak textView] in
+                guard let textView, let window = textView.window else { return }
+                _ = window.makeFirstResponder(textView)
+            }
+        }
+    }
+
+    /// The placeholder in the field's font and the shared placeholder color.
+    private var placeholderText: NSAttributedString {
+        NSAttributedString(
+            string: placeholder,
+            attributes: [
+                .font: font,
+                .foregroundColor: Theme.inputPlaceholderNSColor
+            ]
+        )
+    }
+
+    /// Receives text view edits and writes them to the SwiftUI binding.
+    final class Coordinator: NSObject, NSTextViewDelegate {
+        var text: Binding<String>
+        /// The requestedFocus value seen on the last update, for edge detection.
+        var lastRequestedFocus = false
+        /// This field's own undo history. Sharing the window's would let ⌘Z replay typing from
+        /// another field, or from text the model has since replaced, and corrupt it.
+        let undoManager = UndoManager()
+
+        // init(text): Keep the binding; updateNSView replaces it when SwiftUI passes a new one.
+        init(text: Binding<String>) { self.text = text }
+
+        // undoManager(for view): Give the text view this field's own undo history.
+        func undoManager(for view: NSTextView) -> UndoManager? { undoManager }
+
+        // textDidChange(notification): Flatten line breaks to spaces, keep the caret after the same
+        // character, and push the text to the binding.
+        func textDidChange(_ notification: Notification) {
+            guard let textView = notification.object as? NSTextView else { return }
+            let normalized = Self.singleLine(textView.string)
+            // Pasted text can carry line breaks the single-line container cannot show; replace
+            // them and put the caret where the text before it now ends. Not while an input method
+            // is composing, which the replacement would break; its final edit comes back here.
+            if normalized != textView.string, !textView.hasMarkedText() {
+                let current = textView.string as NSString
+                let selection = textView.selectedRange()
+                let before = current.substring(to: min(selection.location, current.length))
+                let caret = (Self.singleLine(before) as NSString).length
+                textView.string = normalized
+                // The replacement is not undoable, so earlier steps would point at the old text.
+                undoManager.removeAllActions()
+                textView.setSelectedRange(NSRange(
+                    location: min(caret, (normalized as NSString).length),
+                    length: 0
+                ))
+            }
+            text.wrappedValue = normalized
+        }
+
+        // singleLine(text): The text with each line break, whether "\r\n", "\r", or "\n", replaced
+        // by one space. The pair goes first so a Windows line break becomes a single space.
+        static func singleLine(_ text: String) -> String {
+            text.replacingOccurrences(of: "\r\n", with: " ")
+                .replacingOccurrences(of: "\r", with: " ")
+                .replacingOccurrences(of: "\n", with: " ")
+        }
+    }
+}
