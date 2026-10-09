@@ -969,3 +969,207 @@ final class StableInputScrollView: NSScrollView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+/// The single-line text view behind every custom field. It draws its own placeholder, submits on
+/// Return, moves focus with Tab, and can take focus when its window opens or when the Find
+/// command fires.
+final class StableInputTextView: NSTextView {
+    /// Drawn in the text's place while the field is empty.
+    var placeholderAttributedString: NSAttributedString? {
+        didSet { needsDisplay = true }
+    }
+    /// Takes keyboard focus once, the first time its window is key.
+    var focusOnWindowOpen = false {
+        didSet {
+            guard focusOnWindowOpen != oldValue else { return }
+            configureInitialFocus()
+        }
+    }
+    /// Answers the Find command for its own window.
+    var handlesSidebarSearchCommand = false {
+        didSet {
+            guard handlesSidebarSearchCommand != oldValue else { return }
+            configureSearchCommand()
+        }
+    }
+    /// Called on the next run-loop turn after AppKit accepts a focus change.
+    var onFocusChange: ((Bool) -> Void)?
+    /// Called when Return or keypad Enter is pressed outside an input method composition.
+    var onSubmit: (() -> Void)?
+
+    /// Waits for the window to become key, for the one-time initial focus.
+    private var keyWindowObserver: NSObjectProtocol?
+    /// Answers the Find command for this view's window.
+    private var searchCommandObserver: NSObjectProtocol?
+    /// True while a deferred focus attempt is queued.
+    private var focusScheduled = false
+    /// Set once the initial focus has landed, so later key changes do not steal focus back.
+    private var appliedInitialFocus = false
+
+    // preferredTextAccessoryPlacement(): Hide the cursor accessory to avoid its empty
+    // translucent placeholder appearing beside the caret during cold launch.
+    override func preferredTextAccessoryPlacement() -> NSTextCursorAccessoryPlacement { .invisible }
+
+    // viewDidMoveToWindow(): Re-arm the window-bound observers for the new window, or drop them
+    // when the view is detached.
+    override func viewDidMoveToWindow() {
+        super.viewDidMoveToWindow()
+        configureInitialFocus()
+        configureSearchCommand()
+    }
+
+    // configureSearchCommand(): Observe the Find command for this view's window only. The
+    // command is posted with the key window as its object, so a field in any other window never
+    // takes the focus.
+    private func configureSearchCommand() {
+        removeSearchCommandObserver()
+        guard handlesSidebarSearchCommand, let window else { return }
+        searchCommandObserver = NotificationCenter.default.addObserver(
+            forName: .focusSidebarSearch,
+            object: window,
+            queue: .main
+        ) { [weak self] _ in
+            MainActor.assumeIsolated { self?.focusFromMenuCommand() }
+        }
+    }
+
+    // focusFromMenuCommand(): Focus the field and select the current query so typing replaces it.
+    private func focusFromMenuCommand() {
+        guard let window, window.isVisible, window.makeFirstResponder(self) else { return }
+        selectAll(nil)
+    }
+
+    // configureInitialFocus(): Arrange a one-time focus for when the window becomes key, and try
+    // right away in case it already is.
+    private func configureInitialFocus() {
+        removeKeyWindowObserver()
+        guard focusOnWindowOpen, !appliedInitialFocus, let window else { return }
+        keyWindowObserver = NotificationCenter.default.addObserver(
+            forName: NSWindow.didBecomeKeyNotification,
+            object: window,
+            queue: .main
+        ) { [weak self] _ in
+            MainActor.assumeIsolated { self?.focusWhenWindowIsReady() }
+        }
+        focusWhenWindowIsReady()
+    }
+
+    // focusWhenWindowIsReady(): Take first responder on the next run-loop turn once the window
+    // is visible and key. A call while an attempt is already queued does nothing.
+    private func focusWhenWindowIsReady() {
+        guard !focusScheduled,
+              !appliedInitialFocus,
+              let window,
+              window.isVisible,
+              window.isKeyWindow else { return }
+        focusScheduled = true
+        DispatchQueue.main.async { [weak self, weak window] in
+            guard let self else { return }
+            self.focusScheduled = false
+            // The view may have changed windows, or the window lost key status, while waiting.
+            guard let window,
+                  self.window === window,
+                  window.isVisible,
+                  window.isKeyWindow else { return }
+            // Once focus lands, stop listening so later key changes leave the user's focus alone.
+            if window.makeFirstResponder(self) {
+                self.appliedInitialFocus = true
+                self.removeKeyWindowObserver()
+            }
+        }
+    }
+
+    // keyDown(with event): Let Return submit and Tab move focus. Every other key, and every key
+    // while an input method is composing, goes to the text view.
+    override func keyDown(with event: NSEvent) {
+        // An input method is composing marked text, so Return and Tab belong to it.
+        if hasMarkedText() {
+            super.keyDown(with: event)
+            return
+        }
+
+        let modifiers = event.modifierFlags.intersection([.command, .option, .control, .shift])
+        switch event.keyCode {
+        case 36, 76:
+            // Return and keypad Enter submit instead of inserting a newline.
+            onSubmit?()
+            return
+        case 48 where modifiers.isEmpty || modifiers == .shift:
+            // Tab and Shift-Tab move between key views instead of inserting a tab character.
+            // Shift reverses the navigation direction.
+            if modifiers.contains(.shift) {
+                window?.selectPreviousKeyView(nil)
+            } else {
+                // Plain Tab walks forward.
+                window?.selectNextKeyView(nil)
+            }
+            return
+        default:
+            break
+        }
+        super.keyDown(with: event)
+    }
+
+    // becomeFirstResponder(): Report focus to SwiftUI once AppKit has accepted it.
+    override func becomeFirstResponder() -> Bool {
+        let accepted = super.becomeFirstResponder()
+        // Only a responder change AppKit actually made is worth reporting.
+        if accepted { reportFocus(true) }
+        return accepted
+    }
+
+    // resignFirstResponder(): Report the loss of focus to SwiftUI once AppKit has accepted it.
+    override func resignFirstResponder() -> Bool {
+        let resigned = super.resignFirstResponder()
+        // Only a responder change AppKit actually made is worth reporting.
+        if resigned { reportFocus(false) }
+        return resigned
+    }
+
+    // reportFocus(focused): Deliver the focus change on the next turn, so SwiftUI state is not
+    // changed in the middle of AppKit's responder change.
+    private func reportFocus(_ focused: Bool) {
+        guard let onFocusChange else { return }
+        DispatchQueue.main.async { onFocusChange(focused) }
+    }
+
+    // didChangeText(): Redraw so the placeholder appears or disappears with the text.
+    override func didChangeText() {
+        super.didChangeText()
+        needsDisplay = true
+    }
+
+    // draw(dirtyRect): After the text, draw the placeholder in an empty field, starting where
+    // the text itself would start.
+    override func draw(_ dirtyRect: NSRect) {
+        super.draw(dirtyRect)
+        guard string.isEmpty, let placeholderAttributedString else { return }
+        let origin = textContainerOrigin
+        placeholderAttributedString.draw(in: NSRect(
+            x: origin.x,
+            y: origin.y,
+            width: max(0, bounds.width - origin.x),
+            height: bounds.height - origin.y
+        ))
+    }
+
+    // removeKeyWindowObserver(): Stop waiting for the window to become key.
+    private func removeKeyWindowObserver() {
+        guard let keyWindowObserver else { return }
+        NotificationCenter.default.removeObserver(keyWindowObserver)
+        self.keyWindowObserver = nil
+    }
+
+    // removeSearchCommandObserver(): Stop answering the Find command.
+    private func removeSearchCommandObserver() {
+        guard let searchCommandObserver else { return }
+        NotificationCenter.default.removeObserver(searchCommandObserver)
+        self.searchCommandObserver = nil
+    }
+
+    // deinit(): Drop both observers.
+    deinit {
+        removeKeyWindowObserver()
+        removeSearchCommandObserver()
+    }
+}
