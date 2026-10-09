@@ -130,3 +130,21 @@ struct AgeminButtonStyle: ButtonStyle {
         AgeminButtonBody(configuration: configuration, variant: variant, size: size, shortcut: shortcut)
     }
 }
+
+extension ButtonStyle where Self == AgeminButtonStyle {
+    // agemin([variant = .secondary], [size = .regular], [shortcut = nil]): Dot-syntax access to the
+    // style, as in `.buttonStyle(.agemin(.primary))`.
+    static func agemin(_ variant: ButtonVariant = .secondary, size: ButtonSize = .regular, shortcut: String? = nil) -> AgeminButtonStyle {
+        AgeminButtonStyle(variant: variant, size: size, shortcut: shortcut)
+    }
+}
+
+/// A label-only style for rows, chips, and segments that draw their own states. Unlike the
+/// system's plain style it adds no hover capsule, so custom fills keep their exact shape.
+struct BareButtonStyle: ButtonStyle {
+    // makeBody(configuration): Show the label as is and only dim it while pressed.
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .opacity(configuration.isPressed ? 0.75 : 1)
+    }
+}
