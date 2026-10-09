@@ -663,3 +663,9 @@ struct CheckRow: View {
         .accessibilityAddTraits(isOn ? .isSelected : [])
     }
 }
+
+extension Notification.Name {
+    /// Posted by the Find menu command with the key window as the object; the search field in
+    /// that window that handles the command takes focus and selects its query.
+    static let focusSidebarSearch = Notification.Name("tools.min.agemin.focus-sidebar-search")
+}
