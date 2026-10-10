@@ -343,3 +343,24 @@ enum NamePrompt {
         return field.stringValue
     }
 }
+
+/// A secure field in the app's input chrome.
+struct PassphraseField: View {
+    let placeholder: String
+    @Binding var text: String
+    @FocusState private var isFocused: Bool
+
+    private var shape: RoundedRectangle { RoundedRectangle(cornerRadius: 8, style: .continuous) }
+
+    var body: some View {
+        SecureField(localized(placeholder), text: $text)
+            .textFieldStyle(.plain)
+            .font(.system(size: 13))
+            .focused($isFocused)
+            .padding(.horizontal, 10)
+            .frame(height: Theme.smallControlHeight + 2)
+            .background(Theme.inputBackground, in: shape)
+            .overlay(shape.stroke(isFocused ? Theme.accent : Theme.inputBorder, lineWidth: isFocused ? 1.5 : 1))
+            .animation(.easeOut(duration: 0.15), value: isFocused)
+    }
+}
