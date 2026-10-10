@@ -288,3 +288,37 @@ struct FolderPrompt: View {
         .card()
     }
 }
+
+/// The chosen folder's path with Change, Reveal, and Refresh.
+struct FolderRow: View {
+    let url: URL
+    let onChange: () -> Void
+    let onReveal: () -> Void
+    let onRefresh: () -> Void
+
+    var body: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "folder.fill")
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundStyle(Theme.textSecondary)
+            Text(KeyStore.abbreviate(url.path))
+                .font(Theme.mono(12, weight: .medium))
+                .foregroundStyle(Theme.textPrimary)
+                .lineLimit(1)
+                .truncationMode(.middle)
+                .help(url.path)
+            Spacer(minLength: 12)
+            Button(localized("Change")) { onChange() }
+                .buttonStyle(.agemin(.secondary, size: .small))
+                .keyboardFocusable()
+            Button(localized("Reveal")) { onReveal() }
+                .buttonStyle(.agemin(.secondary, size: .small))
+                .keyboardFocusable()
+            IconButton(symbol: "arrow.clockwise", help: "Read the folder again", size: .small, action: onRefresh)
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 12)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .card()
+    }
+}
