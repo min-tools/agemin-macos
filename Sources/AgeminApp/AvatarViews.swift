@@ -112,3 +112,144 @@ struct AvatarButton: View {
         return true
     }
 }
+
+/// The popover that chooses a key's avatar: the drawn symbols, initials in the palette colors,
+/// or an image.
+struct AvatarPicker: View {
+    let key: String
+    let name: String
+    @ObservedObject var store: AvatarStore
+    @Environment(\.dismiss) private var dismiss
+    @State private var importError: String?
+
+    private var current: AvatarChoice { store.choice(for: key) }
+    private let columns = Array(repeating: GridItem(.fixed(48), spacing: 10), count: 6)
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            // The current avatar and the key's name head the popover.
+            HStack(spacing: 10) {
+                AvatarView(choice: current, name: name, size: 34, store: store)
+                Text(localizedFormat("Avatar for %@", name))
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(Theme.textPrimary)
+                    .lineLimit(1)
+            }
+
+            // The drawn symbols, the chosen one ringed in the accent color.
+            LazyVGrid(columns: columns, spacing: 10) {
+                ForEach(AvatarSymbol.allCases, id: \.self) { symbol in
+                    choiceButton(.symbol(symbol), label: symbol.title) {
+                        AvatarView(choice: .symbol(symbol), name: name, size: 44, store: store)
+                    }
+                }
+            }
+
+            Rectangle().fill(Theme.border).frame(height: 1)
+
+            // Initials: a preview in the current color, then the palette.
+            HStack(spacing: 10) {
+                Text(localized("Initials"))
+                    .font(.system(size: 13, weight: .medium))
+                    .foregroundStyle(Theme.textPrimary)
+                choiceButton(.initials(colorIndex: initialsColorIndex), label: localized("Initials")) {
+                    AvatarView(choice: .initials(colorIndex: initialsColorIndex), name: name, size: 32, store: store)
+                }
+                ForEach(0..<AvatarPalette.colors.count, id: \.self) { index in
+                    Button {
+                        store.set(.initials(colorIndex: index), for: key)
+                    } label: {
+                        Circle()
+                            .fill(AvatarPalette.color(at: index))
+                            .frame(width: 20, height: 20)
+                            .overlay(Circle().stroke(Theme.accent, lineWidth: current == .initials(colorIndex: index) ? 2 : 0).padding(-3))
+                            .contentShape(Circle())
+                    }
+                    .buttonStyle(.bare)
+                    .keyboardFocusable()
+                    .accessibilityLabel(localizedFormat("Initials color %lld", Int64(index + 1)))
+                }
+                Spacer(minLength: 0)
+            }
+
+            Rectangle().fill(Theme.border).frame(height: 1)
+
+            // Choose Image imports a file; Use Initials drops the saved choice.
+            HStack(spacing: 10) {
+                Button {
+                    chooseImage()
+                } label: {
+                    HStack(spacing: 6) {
+                        Image(systemName: "photo")
+                        Text(localized("Choose Image"))
+                    }
+                    .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(.agemin(.secondary, size: .small))
+                .keyboardFocusable()
+                Button(localized("Use Initials")) {
+                    store.reset(for: key)
+                }
+                .buttonStyle(.agemin(.secondary, size: .small))
+                .keyboardFocusable()
+                .frame(maxWidth: .infinity)
+            }
+            // An image that could not be read is reported here.
+            if let importError {
+                Text(importError)
+                    .font(.system(size: 12))
+                    .foregroundStyle(Theme.danger)
+            }
+            Text(localized("Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed."))
+                .font(.system(size: 11.5))
+                .foregroundStyle(Theme.textTertiary)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(18)
+        .frame(width: 372)
+    }
+
+    /// The palette index of the current initials choice, or the key's default color.
+    private var initialsColorIndex: Int {
+        // A chosen initials color wins.
+        if case .initials(let index) = current { return index }
+        // Otherwise the color the key's hash picks, which is always initials.
+        if case .initials(let index) = AvatarStore.defaultChoice(for: key) { return index }
+        return 0
+    }
+
+    // choiceButton(choice, label, content): A ringed button that applies the choice.
+    private func choiceButton<Content: View>(_ choice: AvatarChoice, label: String, @ViewBuilder content: () -> Content) -> some View {
+        Button {
+            store.set(choice, for: key)
+        } label: {
+            content()
+                .overlay(Circle().stroke(Theme.accent, lineWidth: current == choice ? 2.5 : 0).padding(-4))
+                .contentShape(Circle())
+        }
+        .buttonStyle(.bare)
+        .keyboardFocusable()
+        .accessibilityLabel(label)
+        .accessibilityAddTraits(current == choice ? .isSelected : [])
+    }
+
+    // chooseImage(): Pick an image file and import it.
+    private func chooseImage() {
+        let panel = NSOpenPanel()
+        panel.canChooseFiles = true
+        panel.canChooseDirectories = false
+        panel.allowsMultipleSelection = false
+        panel.allowedContentTypes = [UTType.image]
+        panel.message = localized("Choose an image for this key's avatar")
+        panel.prompt = localized("Use Image")
+        // If the popover closes behind the panel, the result still applies, since the store is
+        // updated by key.
+        guard panel.runModal() == .OK, let url = panel.url else { return }
+        do {
+            try store.importImage(from: url, for: key)
+            importError = nil
+        } catch {
+            importError = error.localizedDescription
+        }
+    }
+}
