@@ -253,3 +253,62 @@ struct AvatarPicker: View {
         }
     }
 }
+
+/// A recipient on the Encrypt page: avatar, name, a "you" badge for the user's own key, and a
+/// check mark when selected.
+struct RecipientChip: View {
+    let entry: RecipientEntry
+    let selected: Bool
+    let isYou: Bool
+    @ObservedObject var avatars: AvatarStore
+    let action: () -> Void
+    @Environment(\.colorSchemeContrast) private var contrast
+    @State private var hovering = false
+
+    private var shape: Capsule { Capsule(style: .continuous) }
+
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 7) {
+                AvatarView(choice: avatars.choice(for: entry.avatarKey), name: entry.name, size: 22, store: avatars)
+                    .opacity(entry.isUsable ? 1 : 0.5)
+                Text(entry.name)
+                    .font(.system(size: 13, weight: .medium))
+                    .foregroundStyle(entry.isUsable ? Theme.textPrimary : Theme.textTertiary)
+                    .lineLimit(1)
+                // The user's own key is marked, so encrypting for oneself is a visible choice.
+                if isYou {
+                    Text(localized("you"))
+                        .font(.system(size: 11.5))
+                        .foregroundStyle(Theme.textTertiary)
+                }
+                // An unusable key shows a warning mark; a selected usable one shows a check.
+                if !entry.isUsable {
+                    Image(systemName: "exclamationmark.triangle.fill")
+                        .font(.system(size: 10, weight: .semibold))
+                        .foregroundStyle(Theme.warning)
+                } else if selected {
+                    // The check confirms the key is among the chosen recipients.
+                    Image(systemName: "checkmark")
+                        .font(.system(size: 10, weight: .bold))
+                        .foregroundStyle(Theme.accent)
+                }
+            }
+            .padding(.leading, 5)
+            .padding(.trailing, 11)
+            .frame(height: 32)
+            .background(selected ? Theme.badgeActiveBackground : hovering ? Theme.sidebarHover : Theme.badgeBackground, in: shape)
+            .overlay(shape.stroke(selected ? Theme.badgeActiveBorder : Theme.badgeBorder, lineWidth: contrast == .increased ? 1.5 : 1))
+            .contentShape(shape)
+        }
+        .buttonStyle(.bare)
+        .keyboardFocusable()
+        // An unusable key cannot be selected; its tooltip explains why.
+        .disabled(!entry.isUsable)
+        .onHover { hovering = $0 }
+        .help(entry.problem ?? entry.fingerprint ?? entry.line)
+        .accessibilityLabel(entry.name)
+        .accessibilityAddTraits(selected ? .isSelected : [])
+        .animation(.easeOut(duration: 0.12), value: selected)
+    }
+}
