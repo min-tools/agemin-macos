@@ -139,3 +139,36 @@ struct KeyKindChip: View {
         }
     }
 }
+
+/// One line of a result or information card: a label on the left, a value on the right.
+struct DetailRow<Trailing: View>: View {
+    let label: String
+    let value: String
+    var mono = false
+    @ViewBuilder let trailing: Trailing
+
+    // init(label, value, [mono = false], trailing): A row with optional controls after the value.
+    init(label: String, value: String, mono: Bool = false, @ViewBuilder trailing: () -> Trailing) {
+        self.label = label
+        self.value = value
+        self.mono = mono
+        self.trailing = trailing()
+    }
+
+    var body: some View {
+        HStack(alignment: .firstTextBaseline, spacing: 12) {
+            Text(localized(label))
+                .font(.system(size: 12.5))
+                .foregroundStyle(Theme.textSecondary)
+                .frame(width: 110, alignment: .leading)
+            Text(value)
+                .font(mono ? Theme.mono(12) : .system(size: 12.5, weight: .medium))
+                .foregroundStyle(Theme.textPrimary)
+                .textSelection(.enabled)
+                .lineLimit(2)
+                .truncationMode(.middle)
+            Spacer(minLength: 0)
+            trailing
+        }
+    }
+}
