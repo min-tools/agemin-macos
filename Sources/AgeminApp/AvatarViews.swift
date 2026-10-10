@@ -312,3 +312,33 @@ struct RecipientChip: View {
         .animation(.easeOut(duration: 0.12), value: selected)
     }
 }
+
+/// The dashed chip after the recipient chips; it opens the Recipients page with its add form.
+struct AddRecipientChip: View {
+    let action: () -> Void
+    @State private var hovering = false
+    @Environment(\.colorSchemeContrast) private var contrast
+
+    private var shape: Capsule { Capsule(style: .continuous) }
+
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 6) {
+                Image(systemName: "plus")
+                    .font(.system(size: 11, weight: .semibold))
+                Text(localized("Add Recipient"))
+                    .font(.system(size: 13, weight: .medium))
+            }
+            .foregroundStyle(Theme.textSecondary)
+            .padding(.horizontal, 12)
+            .frame(height: 32)
+            .background(hovering ? Theme.sidebarHover : Theme.surfaceSunken, in: shape)
+            .overlay(shape.strokeBorder(style: StrokeStyle(lineWidth: contrast == .increased ? 1.5 : 1, dash: [5, 4])).foregroundStyle(Theme.inputBorder))
+            .contentShape(shape)
+        }
+        .buttonStyle(.bare)
+        .keyboardFocusable()
+        .onHover { hovering = $0 }
+        .help(localized("Add a public key on the Recipients page"))
+    }
+}
