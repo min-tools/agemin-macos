@@ -206,3 +206,55 @@ extension CardHeading where Trailing == EmptyView {
         self.init(text) { EmptyView() }
     }
 }
+
+/// The run row of a page: the action button and its blocker while idle, the progress bar and
+/// Cancel while the runner works.
+struct ActionBar: View {
+    @ObservedObject var runner: OperationRunner
+    let title: String
+    let blocker: String?
+    let action: () -> Void
+
+    var body: some View {
+        HStack(spacing: 14) {
+            // The running state shows progress and lets the user stop between chunks.
+            if runner.isRunning {
+                VStack(alignment: .leading, spacing: 5) {
+                    ProgressView(value: runner.fraction ?? 0)
+                        .progressViewStyle(.linear)
+                    Text(progressText)
+                        .font(.system(size: 12))
+                        .foregroundStyle(Theme.textSecondary)
+                        .monospacedDigit()
+                }
+                Button(localized("Cancel")) { runner.cancel() }
+                    .buttonStyle(.agemin(.secondary, shortcut: "esc"))
+                    .keyboardFocusable()
+                    .keyboardShortcut(.cancelAction)
+            } else {
+                // Idle: the action button, disabled while something is still missing.
+                Button(localized(title)) { action() }
+                    .buttonStyle(.agemin(.primary, shortcut: "⌘⏎"))
+                    .keyboardFocusable()
+                    .disabled(blocker != nil)
+                    .keyboardShortcut(.return, modifiers: .command)
+                // The blocker says what is still missing.
+                if let blocker {
+                    Text(blocker)
+                        .font(.system(size: 12.5))
+                        .foregroundStyle(Theme.textSecondary)
+                }
+                Spacer(minLength: 0)
+            }
+        }
+        .frame(minHeight: Theme.controlHeight)
+    }
+
+    /// What the runner is doing and how far it got.
+    private var progressText: String {
+        let verb = runner.kind == .decrypt ? localized("Decrypting") : localized("Encrypting")
+        // Without a known total only the verb shows.
+        guard runner.bytesTotal > 0 else { return verb + "…" }
+        return localizedFormat("%@ %@ of %@", verb, ByteCountText.string(runner.bytesDone), ByteCountText.string(runner.bytesTotal))
+    }
+}
