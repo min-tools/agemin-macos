@@ -364,3 +364,23 @@ struct PassphraseField: View {
             .animation(.easeOut(duration: 0.15), value: isFocused)
     }
 }
+
+/// Random passphrases for the Encrypt page: six groups of four characters from an alphabet
+/// without look-alikes, about 120 bits.
+enum PassphraseGenerator {
+    private static let alphabet = Array("abcdefghjkmnpqrstuvwxyz23456789")
+
+    // make(): A new passphrase such as "k7mw-q2xz-…".
+    static func make() -> String {
+        var groups: [String] = []
+        // Int.random draws from the system's secure generator, so no seeding is needed.
+        for _ in 0..<6 {
+            var group = ""
+            for _ in 0..<4 {
+                group.append(alphabet[Int.random(in: 0..<alphabet.count)])
+            }
+            groups.append(group)
+        }
+        return groups.joined(separator: "-")
+    }
+}
