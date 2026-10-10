@@ -75,3 +75,48 @@ struct SidebarView: View {
         )
     }
 }
+
+/// One page in the list: an icon tile, the page name, and an optional count.
+private struct PageRow: View {
+    let symbol: String
+    let title: String
+    /// Items on the page; nil or zero shows nothing.
+    let count: Int?
+    let selected: Bool
+    /// Whether the pointer is over the row, for the hover fill.
+    @State private var hovering = false
+
+    /// The rounded fill shared by the background and the hit area.
+    private var shape: RoundedRectangle {
+        RoundedRectangle(cornerRadius: 9, style: .continuous)
+    }
+
+    var body: some View {
+        HStack(spacing: 11) {
+            IconTile(symbol: symbol, size: 28, tint: selected ? Theme.accent : Theme.textSecondary)
+            Text(localized(title))
+                .font(.system(size: 13.5, weight: selected ? .semibold : .regular))
+                .foregroundStyle(Theme.textPrimary)
+                .lineLimit(1)
+            Spacer(minLength: 0)
+            // Only a positive count is worth a number.
+            if let count, count > 0 {
+                Text(String(count))
+                    .font(Theme.mono(11, weight: .medium))
+                    .foregroundStyle(Theme.textSecondary)
+            }
+        }
+        .padding(.horizontal, 10)
+        .frame(height: 42)
+        // Rows draw their own selection and hover fill; the table's highlight is turned off.
+        .background(
+            selected ? Theme.sidebarSelection
+                : hovering ? Theme.sidebarHover : Color.clear,
+            in: shape
+        )
+        .contentShape(shape)
+        .onHover { hovering = $0 }
+        .animation(.easeOut(duration: 0.12), value: hovering)
+        .animation(.easeOut(duration: 0.12), value: selected)
+    }
+}
