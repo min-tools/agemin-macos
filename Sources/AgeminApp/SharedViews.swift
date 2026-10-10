@@ -120,3 +120,22 @@ struct FileDropZone: View {
         .animation(.easeOut(duration: 0.15), value: targeted)
     }
 }
+
+/// The chip that names a key's kind, or its problem.
+struct KeyKindChip: View {
+    let kind: AgeKeyKind?
+    var usable = true
+
+    var body: some View {
+        // Unsupported and unreadable keys are marked in amber; usable ones are neutral.
+        if let kind, kind.isSupported, usable {
+            Chip(text: kind.label, compact: true)
+        } else if let kind {
+            // A known kind that age cannot use, or one the caller marked unusable.
+            Chip(text: kind.label, tone: .warning, compact: true)
+        } else {
+            // No kind at all: the line or file is not a key.
+            Chip(text: localized("not a key"), mono: false, tone: .warning, compact: true)
+        }
+    }
+}
