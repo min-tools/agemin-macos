@@ -42,3 +42,81 @@ struct PageScroll<Content: View>: View {
         }
     }
 }
+
+/// Where a file lands: a dashed target while empty, the chosen file's details once one is set.
+/// Files can be dropped from Finder or picked with the button.
+struct FileDropZone: View {
+    let file: ChosenFile?
+    let prompt: String
+    let symbol: String
+    let onChoose: () -> Void
+    let onClear: () -> Void
+    let onDrop: ([NSItemProvider]) -> Bool
+    @State private var targeted = false
+    @Environment(\.colorSchemeContrast) private var contrast
+
+    private var shape: RoundedRectangle { RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous) }
+
+    var body: some View {
+        Group {
+            // A chosen file shows its name, path, and size with Change and Clear.
+            if let file {
+                HStack(spacing: 14) {
+                    IconTile(symbol: "doc.fill", size: 40, tint: Theme.textSecondary)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(file.name)
+                            .font(.system(size: 14, weight: .semibold))
+                            .foregroundStyle(Theme.textPrimary)
+                            .lineLimit(1)
+                            .truncationMode(.middle)
+                        Text(file.displayPath)
+                            .font(Theme.mono(11.5))
+                            .foregroundStyle(Theme.textSecondary)
+                            .lineLimit(1)
+                            .truncationMode(.middle)
+                            .help(file.url.path)
+                    }
+                    Spacer(minLength: 12)
+                    Text(file.sizeText)
+                        .font(.system(size: 12.5, weight: .medium))
+                        .foregroundStyle(Theme.textSecondary)
+                        .monospacedDigit()
+                    Button(localized("Change")) { onChoose() }
+                        .buttonStyle(.agemin(.secondary, size: .small))
+                        .keyboardFocusable()
+                    IconButton(symbol: "xmark", help: "Clear the file", size: .small, action: onClear)
+                }
+                .padding(16)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(Theme.surface, in: shape)
+                .overlay(shape.stroke(targeted ? Theme.accent : Theme.border, lineWidth: targeted ? 2 : 1))
+            } else {
+                // Empty: a dashed target with the prompt and a Choose button.
+                VStack(spacing: 10) {
+                    Image(systemName: symbol)
+                        .font(.system(size: 26, weight: .medium))
+                        .foregroundStyle(targeted ? Theme.accent : Theme.textTertiary)
+                    Text(localized(prompt))
+                        .font(.system(size: 13.5, weight: .medium))
+                        .foregroundStyle(Theme.textSecondary)
+                    Button(localized("Choose File")) { onChoose() }
+                        .buttonStyle(.agemin(.secondary, shortcut: "⌘O"))
+                        .keyboardFocusable()
+                        .padding(.top, 2)
+                }
+                .frame(maxWidth: .infinity)
+                .frame(minHeight: 150)
+                .background(targeted ? Theme.accent.opacity(0.06) : Theme.surfaceSunken, in: shape)
+                .overlay(
+                    shape.strokeBorder(
+                        style: StrokeStyle(lineWidth: targeted || contrast == .increased ? 2 : 1.5, dash: [7, 5])
+                    )
+                    .foregroundStyle(targeted ? Theme.accent : Theme.inputBorder)
+                )
+            }
+        }
+        .contentShape(shape)
+        .onDrop(of: [UTType.fileURL], isTargeted: $targeted) { providers in onDrop(providers) }
+        .animation(.easeOut(duration: 0.15), value: targeted)
+    }
+}
