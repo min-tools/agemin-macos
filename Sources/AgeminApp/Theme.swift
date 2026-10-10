@@ -1250,3 +1250,21 @@ struct StandardWindowChrome: NSViewRepresentable {
         }
     }
 }
+
+/// The main window's content sizes, shared by the scene and the memory: the size before the user
+/// has resized it, and the smallest size the layout allows.
+enum AgeminWindow {
+    static let defaultSize = CGSize(width: 1180, height: 760)
+    static let minimumSize = CGSize(width: 980, height: 600)
+}
+
+extension View {
+    // zoomsWindowOnDoubleClick(): Zoom the window on a double click, as a title bar does, for a
+    // header row that should behave like one. Controls inside keep their own clicks.
+    func zoomsWindowOnDoubleClick() -> some View {
+        contentShape(Rectangle())
+            .onTapGesture(count: 2) {
+                NSApp.keyWindow?.performZoom(nil)
+            }
+    }
+}
