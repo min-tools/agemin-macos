@@ -172,3 +172,37 @@ struct DetailRow<Trailing: View>: View {
         }
     }
 }
+
+extension DetailRow where Trailing == EmptyView {
+    // init(label, value, [mono = false]): A row without trailing controls.
+    init(label: String, value: String, mono: Bool = false) {
+        self.init(label: label, value: value, mono: mono) { EmptyView() }
+    }
+}
+
+/// A card's heading row: a section label and optional controls on the right.
+struct CardHeading<Trailing: View>: View {
+    let text: String
+    @ViewBuilder let trailing: Trailing
+
+    // init(text, trailing): A heading with controls after it.
+    init(_ text: String, @ViewBuilder trailing: () -> Trailing) {
+        self.text = text
+        self.trailing = trailing()
+    }
+
+    var body: some View {
+        HStack {
+            SectionLabel(text)
+            Spacer(minLength: 0)
+            trailing
+        }
+    }
+}
+
+extension CardHeading where Trailing == EmptyView {
+    // init(text): A plain heading.
+    init(_ text: String) {
+        self.init(text) { EmptyView() }
+    }
+}
