@@ -24,3 +24,21 @@ struct PageHeader: View {
         }
     }
 }
+
+/// A scrolling page with the standard margins.
+struct PageScroll<Content: View>: View {
+    @ViewBuilder let content: Content
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 18) {
+                content
+            }
+            .padding(.horizontal, 28)
+            .padding(.vertical, 24)
+            // The content column is capped and stays left-aligned in wider windows.
+            .frame(maxWidth: 820, alignment: .leading)
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
+    }
+}
