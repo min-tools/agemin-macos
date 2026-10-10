@@ -322,3 +322,24 @@ struct FolderRow: View {
         .card()
     }
 }
+
+/// A modal prompt for a short name, such as a recipient's file name.
+enum NamePrompt {
+    // ask(title, message, placeholder, [initial = ""], in window): The typed name, or nil.
+    @MainActor static func ask(title: String, message: String, placeholder: String, initial: String = "", in window: NSWindow?) -> String? {
+        let alert = NSAlert()
+        alert.messageText = title
+        alert.informativeText = message
+        alert.addButton(withTitle: localized("Save"))
+        alert.addButton(withTitle: localized("Cancel"))
+        // A text field is the alert's accessory and takes focus when the alert opens.
+        let field = NSTextField(frame: NSRect(x: 0, y: 0, width: 280, height: 24))
+        field.placeholderString = placeholder
+        field.stringValue = initial
+        alert.accessoryView = field
+        alert.window.initialFirstResponder = field
+        // Save is the first button.
+        guard alert.runModal() == .alertFirstButtonReturn else { return nil }
+        return field.stringValue
+    }
+}
