@@ -258,3 +258,33 @@ struct ActionBar: View {
         return localizedFormat("%@ %@ of %@", verb, ByteCountText.string(runner.bytesDone), ByteCountText.string(runner.bytesTotal))
     }
 }
+
+/// A row that explains a missing folder and offers to choose it.
+struct FolderPrompt: View {
+    let title: String
+    let detail: String
+    let buttonTitle: String
+    let action: () -> Void
+
+    var body: some View {
+        HStack(alignment: .top, spacing: 14) {
+            IconTile(symbol: "folder.badge.questionmark", size: 36, tint: Theme.warning)
+            VStack(alignment: .leading, spacing: 3) {
+                Text(localized(title))
+                    .font(.system(size: 13.5, weight: .semibold))
+                    .foregroundStyle(Theme.textPrimary)
+                Text(localized(detail))
+                    .font(.system(size: 12.5))
+                    .foregroundStyle(Theme.textSecondary)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            Spacer(minLength: 12)
+            Button(localized(buttonTitle)) { action() }
+                .buttonStyle(.agemin(.primary))
+                .keyboardFocusable()
+        }
+        .padding(16)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .card()
+    }
+}
