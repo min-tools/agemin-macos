@@ -248,3 +248,17 @@ struct EncryptView: View {
         .overlay(RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous).stroke(Theme.success.opacity(0.35), lineWidth: 1))
     }
 }
+
+/// Chips laid out in rows, wrapping as needed.
+struct FlowChips: View {
+    let items: [String]
+
+    var body: some View {
+        // A simple wrapping layout: chips flow left to right and wrap at the available width.
+        FlowLayout(spacing: 6) {
+            ForEach(Array(items.enumerated()), id: \.offset) { _, item in
+                Chip(text: item, mono: false, compact: true)
+            }
+        }
+    }
+}
