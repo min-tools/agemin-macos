@@ -225,3 +225,71 @@ struct RecipientsView: View {
         }
     }
 }
+
+/// One recipient in the list: avatar, name, kind, fingerprint or problem, and its actions.
+private struct RecipientRow: View {
+    let entry: RecipientEntry
+    @ObservedObject var avatars: AvatarStore
+    let isYou: Bool
+    let onCopy: () -> Void
+    let onReveal: () -> Void
+    let onDelete: () -> Void
+    @State private var hovering = false
+
+    var body: some View {
+        HStack(spacing: 10) {
+            // Unusable keys show a warning tile instead of an avatar.
+            if entry.isUsable {
+                AvatarButton(key: entry.avatarKey, name: entry.name, size: 34, store: avatars)
+            } else {
+                // A line that is not a usable key.
+                IconTile(symbol: "person.fill.questionmark", size: 34, tint: Theme.warning)
+            }
+            VStack(alignment: .leading, spacing: 2) {
+                HStack(spacing: 8) {
+                    Text(entry.name)
+                        .font(.system(size: 13.5, weight: .medium))
+                        .foregroundStyle(Theme.textPrimary)
+                        .lineLimit(1)
+                    // The user's own key is marked.
+                    if isYou {
+                        Text(localized("you"))
+                            .font(.system(size: 12))
+                            .foregroundStyle(Theme.textTertiary)
+                    }
+                    KeyKindChip(kind: entry.kind, usable: entry.isUsable)
+                }
+                // The fingerprint identifies the key; a problem replaces it.
+                if let problem = entry.problem {
+                    Text(problem)
+                        .font(.system(size: 11.5))
+                        .foregroundStyle(Theme.warning)
+                        .lineLimit(2)
+                } else if let fingerprint = entry.fingerprint {
+                    // The SSH fingerprint, or the age public key itself.
+                    Text(fingerprint)
+                        .font(Theme.mono(11))
+                        .foregroundStyle(Theme.textSecondary)
+                        .lineLimit(1)
+                        .truncationMode(.middle)
+                        .textSelection(.enabled)
+                }
+            }
+            Spacer(minLength: 8)
+            // The actions dim until the row is hovered but stay clickable and keyboard focusable.
+            HStack(spacing: 4) {
+                Button(localized("Copy Key")) { onCopy() }
+                    .buttonStyle(.agemin(.ghost, size: .small))
+                    .keyboardFocusable()
+                    .disabled(entry.line.isEmpty)
+                IconButton(symbol: "magnifyingglass", help: "Reveal in Finder", variant: .ghost, size: .small, action: onReveal)
+                IconButton(symbol: "trash", help: "Delete the .pub file", variant: .ghost, size: .small, action: onDelete)
+            }
+            .opacity(hovering ? 1 : 0.55)
+        }
+        .padding(.horizontal, 8)
+        .padding(.vertical, 6)
+        .hoverHighlight()
+        .onHover { hovering = $0 }
+    }
+}
