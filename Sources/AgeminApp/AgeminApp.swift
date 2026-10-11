@@ -268,3 +268,35 @@ private struct FileCommands: View {
             .keyboardShortcut("n", modifiers: .command)
     }
 }
+
+/// The Action menu: run the current page's operation or cancel it.
+private struct ActionCommands: View {
+    @ObservedObject var model: AppModel
+    @ObservedObject private var runner: OperationRunner
+
+    // init(model): Observe the model and the runner, so the items follow the running state.
+    init(model: AppModel) {
+        self.model = model
+        _runner = ObservedObject(wrappedValue: model.runner)
+    }
+
+    var body: some View {
+        // Running an operation also shows its page, so the result lands in view.
+        Button(localized("Encrypt…")) {
+            model.page = .encrypt
+            model.encrypt(in: keyWindow)
+        }
+            .keyboardShortcut(.return, modifiers: [.command, .option])
+            .disabled(!model.canEncrypt)
+        Button(localized("Decrypt…")) {
+            model.page = .decrypt
+            model.decrypt(in: keyWindow)
+        }
+            .keyboardShortcut(.return, modifiers: [.command, .shift])
+            .disabled(!model.canDecrypt)
+        Divider()
+        Button(localized("Cancel")) { runner.cancel() }
+            .keyboardShortcut(".", modifiers: .command)
+            .disabled(!runner.isRunning)
+    }
+}
