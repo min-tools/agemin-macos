@@ -261,3 +261,65 @@ private struct StanzaRow: View {
         .padding(.vertical, 5)
     }
 }
+
+/// One choice of key on the Decrypt page, drawn as a radio row.
+private struct IdentityChoiceRow: View {
+    let title: String
+    let detail: String
+    let kind: AgeKeyKind?
+    let protected: Bool
+    let matches: Bool
+    let selected: Bool
+    let action: () -> Void
+    @Environment(\.colorSchemeContrast) private var contrast
+
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 10) {
+                // The radio ring, drawn thicker when the system asks for more contrast.
+                ZStack {
+                    Circle()
+                        .stroke(selected ? Theme.accentDeep : Theme.checkboxBorder, lineWidth: contrast == .increased ? 2 : 1.5)
+                        .frame(width: 18, height: 18)
+                    // The filled dot marks the chosen row.
+                    if selected {
+                        Circle().fill(Theme.accentGradient).frame(width: 10, height: 10)
+                    }
+                }
+                VStack(alignment: .leading, spacing: 2) {
+                    HStack(spacing: 8) {
+                        Text(title)
+                            .font(.system(size: 13.5, weight: .medium))
+                            .foregroundStyle(Theme.textPrimary)
+                            .lineLimit(1)
+                        // Keys show their kind; the "try every key" row has none.
+                        if let kind {
+                            KeyKindChip(kind: kind)
+                        }
+                        // Protected keys ask for their passphrase when used.
+                        if protected {
+                            Chip(text: localized("passphrase"), mono: false, tone: .warning, compact: true)
+                        }
+                        // Keys whose tag or kind fits the file's header.
+                        if matches {
+                            Chip(text: localized("matches"), mono: false, tone: .positive, compact: true)
+                        }
+                    }
+                    Text(detail)
+                        .font(Theme.mono(11))
+                        .foregroundStyle(Theme.textSecondary)
+                        .lineLimit(1)
+                        .truncationMode(.middle)
+                }
+                Spacer(minLength: 0)
+            }
+            .padding(.horizontal, 8)
+            .padding(.vertical, 6)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.bare)
+        .keyboardFocusable()
+        .hoverHighlight()
+        .accessibilityAddTraits(selected ? .isSelected : [])
+    }
+}
