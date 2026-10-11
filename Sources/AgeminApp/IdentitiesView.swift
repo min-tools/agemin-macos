@@ -163,3 +163,88 @@ struct IdentitiesView: View {
         return localizedFormat("%lld identities · %lld usable", Int64(total), Int64(usable))
     }
 }
+
+/// One identity in the list: avatar, name, kind, protection, fingerprint or problem, and its
+/// actions. The avatar is shared with the matching recipient, since both are stored under the
+/// key's fingerprint.
+private struct IdentityRow: View {
+    let entry: IdentityEntry
+    @ObservedObject var avatars: AvatarStore
+    let onCopy: () -> Void
+    let onReveal: () -> Void
+    let onRemove: () -> Void
+    @State private var hovering = false
+
+    var body: some View {
+        HStack(spacing: 10) {
+            // A key whose public half is known gets an avatar; others keep a key tile.
+            if entry.isUsable, entry.publicKeyLine != nil {
+                AvatarButton(key: entry.avatarKey, name: entry.name, size: 34, store: avatars)
+            } else {
+                // A key tile, slashed when the file cannot be used.
+                IconTile(symbol: entry.isUsable ? "key.fill" : "key.slash", size: 34, tint: entry.isUsable ? Theme.textSecondary : Theme.warning)
+            }
+            VStack(alignment: .leading, spacing: 2) {
+                HStack(spacing: 8) {
+                    Text(entry.name)
+                        .font(.system(size: 13.5, weight: .medium))
+                        .foregroundStyle(Theme.textPrimary)
+                        .lineLimit(1)
+                    KeyKindChip(kind: entry.kind, usable: entry.isUsable)
+                    // Protected keys ask for their passphrase when used.
+                    if entry.isProtected {
+                        Chip(text: localized("passphrase"), mono: false, tone: .warning, compact: true)
+                    }
+                    // Files with several age keys say so.
+                    if entry.count > 1 {
+                        Chip(text: localizedFormat("%lld keys", Int64(entry.count)), mono: false, compact: true)
+                    }
+                    // Files added individually are marked, since only those can be removed.
+                    if entry.isExtra {
+                        Chip(text: localized("added"), mono: false, tone: .accent, compact: true)
+                    }
+                }
+                // The fingerprint identifies the key; a problem replaces it.
+                if let problem = entry.problem {
+                    Text(problem)
+                        .font(.system(size: 11.5))
+                        .foregroundStyle(Theme.warning)
+                        .lineLimit(2)
+                } else if let fingerprint = entry.fingerprint {
+                    // The SSH fingerprint, or the age public key itself.
+                    Text(fingerprint)
+                        .font(Theme.mono(11))
+                        .foregroundStyle(Theme.textSecondary)
+                        .lineLimit(1)
+                        .truncationMode(.middle)
+                        .textSelection(.enabled)
+                } else {
+                    // A protected age identity file has no known public key, so its path stands in.
+                    Text(entry.displayPath)
+                        .font(Theme.mono(11))
+                        .foregroundStyle(Theme.textSecondary)
+                        .lineLimit(1)
+                        .truncationMode(.middle)
+                }
+            }
+            Spacer(minLength: 8)
+            // The actions dim until the row is hovered but stay clickable and keyboard focusable.
+            HStack(spacing: 4) {
+                Button(localized("Copy Public Key")) { onCopy() }
+                    .buttonStyle(.agemin(.ghost, size: .small))
+                    .keyboardFocusable()
+                    .disabled(entry.publicKeyLine == nil)
+                IconButton(symbol: "magnifyingglass", help: "Reveal in Finder", variant: .ghost, size: .small, action: onReveal)
+                // Only files added individually can be removed from the list.
+                if entry.isExtra {
+                    IconButton(symbol: "minus.circle", help: "Remove from the list", variant: .ghost, size: .small, action: onRemove)
+                }
+            }
+            .opacity(hovering ? 1 : 0.55)
+        }
+        .padding(.horizontal, 8)
+        .padding(.vertical, 6)
+        .hoverHighlight()
+        .onHover { hovering = $0 }
+    }
+}
