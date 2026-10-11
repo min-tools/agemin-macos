@@ -82,3 +82,13 @@ private final class PrivacyPolicyBackgroundView: NSView {
         hairline.topAnchor.constraint(equalTo: titlebarBottom).isActive = true
     }
 }
+
+// privacyPolicyContentSize(size, in window): Add the title bar height to a document size. The window
+// runs its content under the title bar, so this keeps the visible document at the given size.
+private func privacyPolicyContentSize(_ size: NSSize, in window: NSWindow) -> NSSize {
+    let titlebarHeight = max(
+        0,
+        (window.contentView?.bounds.height ?? 0) - window.contentLayoutRect.height
+    )
+    return NSSize(width: size.width, height: size.height + titlebarHeight)
+}
