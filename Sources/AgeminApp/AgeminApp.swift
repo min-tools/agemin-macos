@@ -253,3 +253,18 @@ final class AgeminAppDelegate: NSObject, NSApplicationDelegate {
 
 /// The window panels attach to as sheets; any window will do when none is key.
 private var keyWindow: NSWindow? { NSApp.keyWindow ?? NSApp.windows.first }
+
+/// The File menu's file and key commands, replacing the standard New group.
+private struct FileCommands: View {
+    @ObservedObject var model: AppModel
+
+    var body: some View {
+        Button(localized("Choose File to Encrypt…")) { model.chooseEncryptInput(in: keyWindow) }
+            .keyboardShortcut("o", modifiers: .command)
+        Button(localized("Choose File to Decrypt…")) { model.chooseDecryptInput(in: keyWindow) }
+            .keyboardShortcut("o", modifiers: [.command, .shift])
+        Divider()
+        Button(localized("New age Key…")) { model.generateIdentity(in: keyWindow) }
+            .keyboardShortcut("n", modifiers: .command)
+    }
+}
