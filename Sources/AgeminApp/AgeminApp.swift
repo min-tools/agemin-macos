@@ -300,3 +300,37 @@ private struct ActionCommands: View {
             .disabled(!runner.isRunning)
     }
 }
+
+/// The Keys menu: adding keys, choosing folders, and a rescan.
+private struct KeysCommands: View {
+    @ObservedObject var model: AppModel
+    @ObservedObject private var store: KeyStore
+
+    // init(model): Observe the model and its key store.
+    init(model: AppModel) {
+        self.model = model
+        _store = ObservedObject(wrappedValue: model.store)
+    }
+
+    var body: some View {
+        Button(localized("Add Recipient…")) { model.requestAddRecipient() }
+            .disabled(model.isPreparingDecryption)
+        Button(localized("Choose Recipients Folder…")) { store.chooseRecipientsFolder(in: keyWindow) }
+            .disabled(model.isPreparingDecryption)
+        Divider()
+        Button(localized("Add Key File…")) { store.addIdentityFile(in: keyWindow) }
+            .disabled(model.isPreparingDecryption)
+        Button(localized("Choose Identities Folder…")) { store.chooseIdentitiesFolder(in: keyWindow) }
+            .disabled(model.isPreparingDecryption)
+        Divider()
+        Button(localized("Refresh Keys")) { store.refresh() }
+            .keyboardShortcut("r", modifiers: .command)
+            .disabled(model.isPreparingDecryption)
+        Button(localized("Find…")) {
+            // The filter fields live on the key pages; switch there when needed.
+            if model.page != .recipients, model.page != .identities { model.page = .recipients }
+            NotificationCenter.default.post(name: .focusSidebarSearch, object: keyWindow)
+        }
+            .keyboardShortcut("f", modifiers: .command)
+    }
+}
