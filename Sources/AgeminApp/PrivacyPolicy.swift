@@ -92,3 +92,32 @@ private func privacyPolicyContentSize(_ size: NSSize, in window: NSWindow) -> NS
     )
     return NSSize(width: size.width, height: size.height + titlebarHeight)
 }
+
+// installPrivacyPolicyContent(in window): Make the title bar transparent with content running
+// under it, install the shared surface, and return a container pinned below the title bar for
+// the document and the button.
+private func installPrivacyPolicyContent(in window: NSWindow) -> NSView {
+    // Hide the native title bar chrome and let the content extend under it.
+    window.titlebarAppearsTransparent = true
+    window.titlebarSeparatorStyle = .none
+    window.styleMask.insert(.fullSizeContentView)
+
+    let surface = PrivacyPolicyBackgroundView(frame: window.contentView?.bounds ?? .zero)
+    window.contentView = surface
+
+    // The container starts where the title bar ends, so the document never slides under it.
+    let content = NSView(frame: window.contentLayoutRect)
+    content.translatesAutoresizingMaskIntoConstraints = false
+    surface.addSubview(content)
+    // contentLayoutGuide tracks the area below the title bar; it is typed as Any, hence the cast.
+    if let guide = window.contentLayoutGuide as? NSLayoutGuide {
+        NSLayoutConstraint.activate([
+            content.topAnchor.constraint(equalTo: guide.topAnchor),
+            content.leadingAnchor.constraint(equalTo: surface.leadingAnchor),
+            content.trailingAnchor.constraint(equalTo: surface.trailingAnchor),
+            content.bottomAnchor.constraint(equalTo: surface.bottomAnchor)
+        ])
+        surface.pinHairline(to: content.topAnchor)
+    }
+    return content
+}
