@@ -195,3 +195,69 @@ struct DecryptView: View {
         .overlay(RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous).stroke(Theme.success.opacity(0.35), lineWidth: 1))
     }
 }
+
+/// One recipient entry of a file's header and the keys that fit it.
+private struct StanzaRow: View {
+    let summary: AgeStanzaSummary
+    let matches: [String]
+
+    /// What the entry is, in words.
+    private var title: String {
+        switch summary.kind {
+        case .x25519: return localized("age key")
+        case .sshEd25519: return localized("SSH key (Ed25519)")
+        case .sshRSA: return localized("SSH key (RSA)")
+        case .scrypt(let workFactor):
+            guard let workFactor else { return localized("Passphrase") }
+            return localizedFormat("Passphrase · work factor %lld", Int64(workFactor))
+        case .other(let type): return localizedFormat("Unknown recipient type “%@”", type)
+        }
+    }
+
+    /// The icon for the entry's kind.
+    private var symbol: String {
+        switch summary.kind {
+        case .x25519: return "key.horizontal.fill"
+        case .sshEd25519, .sshRSA: return "terminal.fill"
+        case .scrypt: return "textformat.abc"
+        case .other: return "questionmark.circle"
+        }
+    }
+
+    var body: some View {
+        HStack(spacing: 10) {
+            IconTile(symbol: symbol, size: 28, tint: Theme.textSecondary)
+            VStack(alignment: .leading, spacing: 2) {
+                HStack(spacing: 8) {
+                    Text(title)
+                        .font(.system(size: 13, weight: .medium))
+                        .foregroundStyle(Theme.textPrimary)
+                    // SSH entries carry a short tag that identifies the key.
+                    if let tag = summary.sshTag {
+                        Chip(text: tag, compact: true)
+                    }
+                }
+                // Which of the user's keys fit, if any.
+                if !matches.isEmpty {
+                    Text(localizedFormat("Matches %@", matches.joined(separator: ", ")))
+                        .font(.system(size: 11.5))
+                        .foregroundStyle(Theme.success)
+                        .lineLimit(1)
+                } else if case .scrypt = summary.kind {
+                    // A passphrase entry has no key to match; the field below takes it.
+                    Text(localized("Enter the passphrase below"))
+                        .font(.system(size: 11.5))
+                        .foregroundStyle(Theme.textSecondary)
+                } else {
+                    // A key entry that none of the user's identities fits.
+                    Text(localized("No matching key"))
+                        .font(.system(size: 11.5))
+                        .foregroundStyle(Theme.textTertiary)
+                }
+            }
+            Spacer(minLength: 0)
+        }
+        .padding(.horizontal, 8)
+        .padding(.vertical, 5)
+    }
+}
