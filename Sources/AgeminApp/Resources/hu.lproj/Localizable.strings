@@ -1,0 +1,904 @@
+/* Agemin — hu localization. Each comment shows the English source text. */
+
+/*  and armor */
+" and armor" = " és ASCII armor";
+
+/* %@ %@ of %@ */
+"%@ %@ of %@" = "%@ %@ / %@";
+
+/* %@ could not be read. */
+"%@ could not be read." = "A(z) %@ nem olvasható.";
+
+/* %@ could not be written. */
+"%@ could not be written." = "A(z) %@ nem írható.";
+
+/* %@ is protected with a passphrase. */
+"%@ is protected with a passphrase." = "A(z) %@ kulcsot jelmondat védi.";
+
+/* %@ keys are not supported by age. */
+"%@ keys are not supported by age." = "A(z) %@ kulcsokat az age nem támogatja.";
+
+/* %@ per year */
+"%@ per year" = "%@ évente";
+
+/* %@ · %@ more than the original for the header%@ */
+"%@ · %@ more than the original for the header%@" = "%@ · %@ többlet az eredetihez képest (fejléc%@)";
+
+/* %@.pub already exists in the recipients folder. */
+"%@.pub already exists in the recipients folder." = "A(z) %@.pub már létezik a címzettek mappájában.";
+
+/* %lld identities */
+"%lld identities" = "%lld identitás";
+
+/* %lld identities · %lld usable */
+"%lld identities · %lld usable" = "%lld identitás · %lld használható";
+
+/* %lld keys */
+"%lld keys" = "%lld kulcs";
+
+/* %lld keys tried */
+"%lld keys tried" = "%lld kulcs kipróbálva";
+
+/* %lld of %lld recipients selected */
+"%lld of %lld recipients selected" = "%lld / %lld címzett kiválasztva";
+
+/* %lld recipients */
+"%lld recipients" = "%lld címzett";
+
+/* %lld recipients · %lld usable */
+"%lld recipients · %lld usable" = "%lld címzett · %lld használható";
+
+/* 1 identity */
+"1 identity" = "1 identitás";
+
+/* 1 recipient */
+"1 recipient" = "1 címzett";
+
+/* 30 days of full access */
+"30 days of full access" = "30 nap teljes hozzáférés";
+
+/* A file is still being processed. */
+"A file is still being processed." = "Egy fájl feldolgozása még folyamatban van.";
+
+/* A header line is neither a recipient nor the closing marker. */
+"A header line is neither a recipient nor the closing marker." = "A fejléc egy sora nem címzett és nem is záró jelölő.";
+
+/* A header line is too long. */
+"A header line is too long." = "A fejléc egy sora túl hosszú.";
+
+/* A passphrase cannot be combined with other recipients. */
+"A passphrase cannot be combined with other recipients." = "A jelmondat nem kombinálható más címzettekkel.";
+
+/* A passphrase entry must be the only recipient. */
+"A passphrase entry must be the only recipient." = "A jelmondat-bejegyzésnek az egyetlen címzettnek kell lennie.";
+
+/* A recipient body is not valid base64. */
+"A recipient body is not valid base64." = "Egy címzett törzse nem érvényes base64.";
+
+/* A recipient body line is malformed. */
+"A recipient body line is malformed." = "Egy címzett törzsének egyik sora hibás formátumú.";
+
+/* A recipient line is malformed. */
+"A recipient line is malformed." = "Egy címzettsor hibás formátumú.";
+
+/* About Agemin */
+"About Agemin" = "Az Agemin névjegye";
+
+/* Action */
+"Action" = "Művelet";
+
+/* Add */
+"Add" = "Hozzáadás";
+
+/* Add a public key on the Recipients page */
+"Add a public key on the Recipients page" = "Adjon hozzá egy nyilvános kulcsot a Címzettek oldalon";
+
+/* Add an identity that can decrypt this file. */
+"Add an identity that can decrypt this file." = "Adjon hozzá egy identitást, amely vissza tudja fejteni ezt a fájlt.";
+
+/* Add Key File */
+"Add Key File" = "Kulcsfájl hozzáadása";
+
+/* Add Key File… */
+"Add Key File…" = "Kulcsfájl hozzáadása…";
+
+/* Add Recipient */
+"Add Recipient" = "Címzett hozzáadása";
+
+/* Add Recipient… */
+"Add Recipient…" = "Címzett hozzáadása…";
+
+/* Add to Recipients */
+"Add to Recipients" = "Hozzáadás a címzettekhez";
+
+/* added */
+"added" = "hozzáadva";
+
+/* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
+"After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "A próbaidőszak után továbbra is naponta egy fájlt titkosíthat vagy fejthet vissza. A kulcsok olvasása, a fájlok vizsgálata és a kulcsok létrehozása korlátlan marad.";
+
+/* age encryption, without the terminal. */
+"age encryption, without the terminal." = "age-titkosítás terminál nélkül.";
+
+/* age key */
+"age key" = "age-kulcs";
+
+/* age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA… */
+"age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA…" = "age1… vagy ssh-ed25519 AAAA… vagy ssh-rsa AAAA…";
+
+/* Agemin could not use that folder */
+"Agemin could not use that folder" = "Az Agemin nem tudta használni ezt a mappát";
+
+/* Agemin encrypts files, not folders. */
+"Agemin encrypts files, not folders." = "Az Agemin fájlokat titkosít, nem mappákat.";
+
+/* Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged. */
+"Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged." = "Az Agemin az első 30 napban teljesen fel van oldva. Nem indul előfizetés, és nem kell fizetnie.";
+
+/* Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice. */
+"Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice." = "Az Agemin felsorolja az ott található .pub fájlokat, és újakat is hozzáadhat. Bármelyik mappa megfelel; a ~/.age gyakori választás.";
+
+/* Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually. */
+"Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually." = "Az Agemin felsorolja az ott, általában a ~/.ssh mappában talált privát kulcsokat, és azokkal fejt vissza. A máshol tárolt kulcsok egyenként adhatók hozzá.";
+
+/* Agemin Pro */
+"Agemin Pro" = "Agemin Pro";
+
+/* Agemin Pro Lifetime · %@ */
+"Agemin Pro Lifetime · %@" = "Agemin Pro – életre szóló · %@";
+
+/* Agemin Pro Yearly */
+"Agemin Pro Yearly" = "Agemin Pro – éves";
+
+/* Agemin Pro… */
+"Agemin Pro…" = "Agemin Pro…";
+
+/* Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them. */
+"Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them." = "Az Agemin eltávolítja a címzettek mappájához, az identitások mappájához és a külön hozzáadott kulcsfájlokhoz mentett engedélyeit. Semmi sem törlődik. A további használathoz válassza ki őket újra.";
+
+/* Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed. */
+"Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed." = "Az Agemin az avatart a kulcs ujjlenyomata alatt tárolja. A kulcsmappákban semmi sem változik.";
+
+/* alice */
+"alice" = "alice";
+
+/* All */
+"All" = "Összes";
+
+/* An age public key has 32 bytes. */
+"An age public key has 32 bytes." = "Az age nyilvános kulcsa 32 bájt hosszú.";
+
+/* An age secret key has 32 bytes. */
+"An age secret key has 32 bytes." = "Az age titkos kulcsa 32 bájt hosszú.";
+
+/* An ssh-ed25519 recipient entry is malformed. */
+"An ssh-ed25519 recipient entry is malformed." = "Egy ssh-ed25519 címzettbejegyzés hibás formátumú.";
+
+/* An ssh-rsa recipient entry is malformed. */
+"An ssh-rsa recipient entry is malformed." = "Egy ssh-rsa címzettbejegyzés hibás formátumú.";
+
+/* An X25519 recipient entry has the wrong size. */
+"An X25519 recipient entry has the wrong size." = "Egy X25519 címzettbejegyzés mérete hibás.";
+
+/* An X25519 recipient entry is malformed. */
+"An X25519 recipient entry is malformed." = "Egy X25519 címzettbejegyzés hibás formátumú.";
+
+/* Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one. */
+"Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one." = "A fájlt bárki megnyithatja, aki ismeri a jelmondatot. Az age az scrypt algoritmuson futtatja át, ezért a hosszú jelmondat többet ér, mint a bonyolult.";
+
+/* ASCII armor */
+"ASCII armor" = "ASCII armor";
+
+/* Avatar for %@ */
+"Avatar for %@" = "%@ avatarja";
+
+/* Cancel */
+"Cancel" = "Mégse";
+
+/* Change */
+"Change" = "Módosítás";
+
+/* Choose */
+"Choose" = "Kiválasztás";
+
+/* Choose a file to encrypt. */
+"Choose a file to encrypt." = "Válasszon ki egy titkosítandó fájlt.";
+
+/* Choose a yearly subscription or lifetime purchase at any time to remove the daily limit. */
+"Choose a yearly subscription or lifetime purchase at any time to remove the daily limit." = "A napi korlát megszüntetéséhez bármikor választhat éves előfizetést vagy életre szóló vásárlást.";
+
+/* Choose an age identity file or an SSH private key */
+"Choose an age identity file or an SSH private key" = "Válasszon ki egy age identitásfájlt vagy egy SSH privát kulcsot";
+
+/* Choose an encrypted file. */
+"Choose an encrypted file." = "Válasszon ki egy titkosított fájlt.";
+
+/* Choose an image for this key's avatar */
+"Choose an image for this key's avatar" = "Válasszon képet a kulcs avatarjához";
+
+/* Choose File */
+"Choose File" = "Fájl kiválasztása";
+
+/* Choose File to Decrypt… */
+"Choose File to Decrypt…" = "Visszafejtendő fájl kiválasztása…";
+
+/* Choose File to Encrypt… */
+"Choose File to Encrypt…" = "Titkosítandó fájl kiválasztása…";
+
+/* Choose Folder */
+"Choose Folder" = "Mappa kiválasztása";
+
+/* Choose Identities Folder… */
+"Choose Identities Folder…" = "Identitások mappájának kiválasztása…";
+
+/* Choose Image */
+"Choose Image" = "Kép kiválasztása";
+
+/* Choose Recipients Folder… */
+"Choose Recipients Folder…" = "Címzettek mappájának kiválasztása…";
+
+/* Choose the encrypted file, usually ending in .age */
+"Choose the encrypted file, usually ending in .age" = "Válassza ki a titkosított fájlt, amely általában .age végződésű";
+
+/* Choose the file to encrypt */
+"Choose the file to encrypt" = "Válassza ki a titkosítandó fájlt";
+
+/* Choose the folder with the .pub files of the people you encrypt for, usually ~/.age. */
+"Choose the folder with the .pub files of the people you encrypt for, usually ~/.age." = "Válassza ki azt a mappát, amelyben azoknak a .pub fájljai vannak, akiknek titkosít; ez általában a ~/.age.";
+
+/* Choose the folder with the .pub files you encrypt for, usually ~/.age */
+"Choose the folder with the .pub files you encrypt for, usually ~/.age" = "Válassza ki a mappát a .pub fájlokkal, amelyeknek titkosít; ez általában a ~/.age";
+
+/* Choose the folder with your private keys, usually ~/.ssh */
+"Choose the folder with your private keys, usually ~/.ssh" = "Válassza ki a privát kulcsait tartalmazó mappát; ez általában a ~/.ssh";
+
+/* Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page. */
+"Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page." = "Válassza ki az SSH-kulcsait tartalmazó mappát (általában ~/.ssh), vagy adjon hozzá egy age identitásfájlt az Identitások oldalon.";
+
+/* Choose where to save the decrypted file */
+"Choose where to save the decrypted file" = "Válassza ki, hová mentse a visszafejtett fájlt";
+
+/* Choose where to save the encrypted file */
+"Choose where to save the encrypted file" = "Válassza ki, hová mentse a titkosított fájlt";
+
+/* Choose your recipients folder */
+"Choose your recipients folder" = "Válassza ki a címzettek mappáját";
+
+/* Choose your SSH folder */
+"Choose your SSH folder" = "Válassza ki az SSH-mappáját";
+
+/* Clear search */
+"Clear search" = "Keresés törlése";
+
+/* Clear the file */
+"Clear the file" = "Fájl kiválasztásának törlése";
+
+/* Click an avatar to change it, or drop an image onto it. */
+"Click an avatar to change it, or drop an image onto it." = "Kattintson egy avatarra a módosításához, vagy húzzon rá egy képet.";
+
+/* Click to change the avatar, or drop an image on it */
+"Click to change the avatar, or drop an image on it" = "Kattintson az avatar módosításához, vagy húzzon rá egy képet";
+
+/* Compress the folder into an archive first, then open the archive. */
+"Compress the folder into an archive first, then open the archive." = "Először tömörítse a mappát archívumba, majd nyissa meg az archívumot.";
+
+/* Confirm passphrase */
+"Confirm passphrase" = "Jelmondat megerősítése";
+
+/* Contacting the App Store… */
+"Contacting the App Store…" = "Kapcsolódás az App Store-hoz…";
+
+/* Continue */
+"Continue" = "Folytatás";
+
+/* Copy */
+"Copy" = "Másolás";
+
+/* Copy Key */
+"Copy Key" = "Kulcs másolása";
+
+/* Copy Path */
+"Copy Path" = "Elérési út másolása";
+
+/* Copy Public Key */
+"Copy Public Key" = "Nyilvános kulcs másolása";
+
+/* Decrypt */
+"Decrypt" = "Visszafejtés";
+
+/* Decrypt This File */
+"Decrypt This File" = "Fájl visszafejtése";
+
+/* Decrypt with */
+"Decrypt with" = "Visszafejtés ezzel";
+
+/* Decrypted */
+"Decrypted" = "Visszafejtve";
+
+/* Decrypting */
+"Decrypting" = "Visszafejtés";
+
+/* Decryption failed */
+"Decryption failed" = "A visszafejtés nem sikerült";
+
+/* Decrypt… */
+"Decrypt…" = "Visszafejtés…";
+
+/* Delete */
+"Delete" = "Törlés";
+
+/* Delete %@? */
+"Delete %@?" = "Törli a(z) %@ fájlt?";
+
+/* Delete the .pub file */
+"Delete the .pub file" = "A .pub fájl törlése";
+
+/* Drop a file here to encrypt it */
+"Drop a file here to encrypt it" = "Húzzon ide egy fájlt a titkosításhoz";
+
+/* Drop a file, not a folder. Compress the folder first, then drop the archive. */
+"Drop a file, not a folder. Compress the folder first, then drop the archive." = "Fájlt húzzon ide, ne mappát. Először tömörítse a mappát, majd húzza ide az archívumot.";
+
+/* Drop an age file here to decrypt it */
+"Drop an age file here to decrypt it" = "Húzzon ide egy age-fájlt a visszafejtéshez";
+
+/* Encrypt */
+"Encrypt" = "Titkosítás";
+
+/* Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file. */
+"Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file." = "Titkosítson egy fájlt azok nyilvános kulcsaival, akik megnyithatják, vagy egy jelmondattal. Az eredmény egy szabványos age-fájl.";
+
+/* Encrypt for */
+"Encrypt for" = "Titkosítás ezeknek";
+
+/* Encrypted */
+"Encrypted" = "Titkosítva";
+
+/* Encrypted for */
+"Encrypted for" = "Titkosítva ezeknek";
+
+/* Encrypting */
+"Encrypting" = "Titkosítás";
+
+/* Encryption failed */
+"Encryption failed" = "A titkosítás nem sikerült";
+
+/* Encrypt… */
+"Encrypt…" = "Titkosítás…";
+
+/* Enter a passphrase. */
+"Enter a passphrase." = "Adjon meg egy jelmondatot.";
+
+/* Enter the file's passphrase. */
+"Enter the file's passphrase." = "Adja meg a fájl jelmondatát.";
+
+/* Enter the passphrase below */
+"Enter the passphrase below" = "Adja meg lent a jelmondatot";
+
+/* Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa). */
+"Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa)." = "age nyilvános kulcs (age1…) vagy SSH nyilvános kulcs (ssh-ed25519 vagy ssh-rsa) szükséges.";
+
+/* Expires %@ */
+"Expires %@" = "Lejár: %@";
+
+/* Files */
+"Files" = "Fájlok";
+
+/* Fill both fields with a random passphrase and show it once */
+"Fill both fields with a random passphrase and show it once" = "Mindkét mező kitöltése véletlenszerű jelmondattal, és egyszeri megjelenítése";
+
+/* Filter identities */
+"Filter identities" = "Identitások szűrése";
+
+/* Filter recipients */
+"Filter recipients" = "Címzettek szűrése";
+
+/* Find… */
+"Find…" = "Keresés…";
+
+/* Forget Access */
+"Forget Access" = "Hozzáférés elfelejtése";
+
+/* Forget access to the key folders? */
+"Forget access to the key folders?" = "Elfelejti a kulcsmappákhoz való hozzáférést?";
+
+/* Forget Folder Access… */
+"Forget Folder Access…" = "Mappahozzáférés elfelejtése…";
+
+/* Free · Available today: %lld */
+"Free · Available today: %lld" = "Ingyenes · Ma elérhető: %lld";
+
+/* Generate */
+"Generate" = "Generálás";
+
+/* Give the recipient a name. */
+"Give the recipient a name." = "Adjon nevet a címzettnek.";
+
+/* Hide this card */
+"Hide this card" = "Kártya elrejtése";
+
+/* Identities */
+"Identities" = "Identitások";
+
+/* Identity file */
+"Identity file" = "Identitásfájl";
+
+/* Initials */
+"Initials" = "Monogram";
+
+/* Initials color %lld */
+"Initials color %lld" = "Monogram színe: %lld";
+
+/* Keep Working */
+"Keep Working" = "Munka folytatása";
+
+/* Key */
+"Key" = "Kulcs";
+
+/* Keys */
+"Keys" = "Kulcsok";
+
+/* Lifetime */
+"Lifetime" = "Életre szóló";
+
+/* Loading App Store products… */
+"Loading App Store products…" = "App Store-termékek betöltése…";
+
+/* Loading keys… */
+"Loading keys…" = "Kulcsok betöltése…";
+
+/* macOS did not grant lasting access to that folder. Choose it again, or choose another folder. */
+"macOS did not grant lasting access to that folder. Choose it again, or choose another folder." = "A macOS nem adott tartós hozzáférést ehhez a mappához. Válassza ki újra, vagy válasszon másik mappát.";
+
+/* Manage Subscription */
+"Manage Subscription" = "Előfizetés kezelése";
+
+/* matches */
+"matches" = "egyezik";
+
+/* Matches %@ */
+"Matches %@" = "Egyezik: %@";
+
+/* Matching keys first. Protected keys ask for their passphrase. */
+"Matching keys first. Protected keys ask for their passphrase." = "Az egyező kulcsok elöl vannak. A védett kulcsok kérik a jelmondatukat.";
+
+/* Name */
+"Name" = "Név";
+
+/* New age Key */
+"New age Key" = "Új age-kulcs";
+
+/* New age key saved */
+"New age key saved" = "Új age-kulcs mentve";
+
+/* New age Key… */
+"New age Key…" = "Új age-kulcs…";
+
+/* New recipient */
+"New recipient" = "Új címzett";
+
+/* No active purchase was found. */
+"No active purchase was found." = "Nem található aktív vásárlás.";
+
+/* No Agemin Pro purchase was found for this Apple Account. */
+"No Agemin Pro purchase was found for this Apple Account." = "Ehhez az Apple-fiókhoz nem található Agemin Pro-vásárlás.";
+
+/* No identities yet */
+"No identities yet" = "Még nincsenek identitások";
+
+/* No matching key */
+"No matching key" = "Nincs egyező kulcs";
+
+/* No recipients folder yet */
+"No recipients folder yet" = "Még nincs címzettek mappája";
+
+/* None */
+"None" = "Egyik sem";
+
+/* None of the identities can decrypt this file. */
+"None of the identities can decrypt this file." = "Egyik identitás sem tudja visszafejteni ezt a fájlt.";
+
+/* None of your identities matches this file. Add the key it was encrypted for on the Identities page. */
+"None of your identities matches this file. Add the key it was encrypted for on the Identities page." = "Egyik identitása sem egyezik ezzel a fájllal. Adja hozzá az Identitások oldalon azt a kulcsot, amelyhez titkosították.";
+
+/* not a key */
+"not a key" = "nem kulcs";
+
+/* OK */
+"OK" = "OK";
+
+/* Open an age file with one of your keys, or with the passphrase it was encrypted with. */
+"Open an age file with one of your keys, or with the passphrase it was encrypted with." = "Nyisson meg egy age-fájlt valamelyik kulcsával, vagy azzal a jelmondattal, amellyel titkosították.";
+
+/* Options */
+"Options" = "Beállítások";
+
+/* Output */
+"Output" = "Kimenet";
+
+/* Pages */
+"Pages" = "Oldalak";
+
+/* Passphrase */
+"Passphrase" = "Jelmondat";
+
+/* passphrase */
+"passphrase" = "jelmondat";
+
+/* Passphrase · work factor %lld */
+"Passphrase · work factor %lld" = "Jelmondat · munkatényező: %lld";
+
+/* Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends. */
+"Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends." = "A fizetés az Apple-fiókját terheli. Az éves előfizetés automatikusan megújul, hacsak nem mondja le az App Store beállításaiban legalább egy nappal az aktuális időszak vége előtt.";
+
+/* Privacy Policy */
+"Privacy Policy" = "Adatvédelmi irányelvek";
+
+/* Privacy Policy… */
+"Privacy Policy…" = "Adatvédelmi irányelvek…";
+
+/* Pro */
+"Pro" = "Pro";
+
+/* Pro purchases are unavailable right now. Try again later. */
+"Pro purchases are unavailable right now. Try again later." = "A Pro-vásárlások jelenleg nem érhetők el. Próbálja újra később.";
+
+/* Pro trial · %lld days remaining */
+"Pro trial · %lld days remaining" = "Pro próbaidőszak · %lld nap van hátra";
+
+/* Pro trial · 1 day remaining */
+"Pro trial · 1 day remaining" = "Pro próbaidőszak · 1 nap van hátra";
+
+/* Pro trial · ends %@ */
+"Pro trial · ends %@" = "Pro próbaidőszak · vége: %@";
+
+/* Pro trial · first payment %@ */
+"Pro trial · first payment %@" = "Pro próbaidőszak · első fizetés: %@";
+
+/* Pro trial · until %@ */
+"Pro trial · until %@" = "Pro próbaidőszak · eddig: %@";
+
+/* Public key */
+"Public key" = "Nyilvános kulcs";
+
+/* Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file. */
+"Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file." = "A nyilvános kulcsok, amelyeknek titkosít. A mappa minden .pub fájlja egy címzett, amely a fájlról kapja a nevét.";
+
+/* Purchase */
+"Purchase" = "Vásárlás";
+
+/* Quit Anyway */
+"Quit Anyway" = "Kilépés mindenképp";
+
+/* Quitting now cancels it and removes the partial output. */
+"Quitting now cancels it and removes the partial output." = "Ha most kilép, a művelet megszakad, és a részleges kimenet törlődik.";
+
+/* Read the folder again */
+"Read the folder again" = "Mappa újraolvasása";
+
+/* Recipients */
+"Recipients" = "Címzettek";
+
+/* Refresh Keys */
+"Refresh Keys" = "Kulcsok frissítése";
+
+/* Remove from the list */
+"Remove from the list" = "Eltávolítás a listából";
+
+/* Renews %@ */
+"Renews %@" = "Megújul: %@";
+
+/* Restore Purchases */
+"Restore Purchases" = "Vásárlások visszaállítása";
+
+/* Restoring… */
+"Restoring…" = "Visszaállítás…";
+
+/* Reveal */
+"Reveal" = "Megjelenítés";
+
+/* Reveal in Finder */
+"Reveal in Finder" = "Megjelenítés a Finderben";
+
+/* Save */
+"Save" = "Mentés";
+
+/* Save Key */
+"Save Key" = "Kulcs mentése";
+
+/* Save Recipient */
+"Save Recipient" = "Címzett mentése";
+
+/* Save the new identity file somewhere private because it holds the secret key */
+"Save the new identity file somewhere private because it holds the secret key" = "Mentse az új identitásfájlt egy privát helyre; a titkos kulcsot tartalmazza";
+
+/* Saved as */
+"Saved as" = "Mentve mint";
+
+/* Saved as <name>.pub in the recipients folder. */
+"Saved as <name>.pub in the recipients folder." = "Mentve <name>.pub néven a címzettek mappájába.";
+
+/* Select at least one recipient. */
+"Select at least one recipient." = "Válasszon ki legalább egy címzettet.";
+
+/* SHA-256 */
+"SHA-256" = "SHA-256";
+
+/* Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it. */
+"Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it." = "Ossza meg a nyilvános kulcsot azokkal, akiknek Önnek kell titkosítaniuk. Az identitásfájlt tartsa privátan; csak az Ön fiókja olvashatja.";
+
+/* Shared with your family */
+"Shared with your family" = "Megosztva a családjával";
+
+/* Size */
+"Size" = "Méret";
+
+/* SSH key (Ed25519) */
+"SSH key (Ed25519)" = "SSH-kulcs (Ed25519)";
+
+/* SSH key (RSA) */
+"SSH key (RSA)" = "SSH-kulcs (RSA)";
+
+/* Terms of Use (EULA) */
+"Terms of Use (EULA)" = "Használati feltételek (EULA)";
+
+/* That file is not an image Agemin can read. */
+"That file is not an image Agemin can read." = "Ez a fájl nem olyan kép, amelyet az Agemin be tud olvasni.";
+
+/* The App Store could not verify this purchase. */
+"The App Store could not verify this purchase." = "Az App Store nem tudta ellenőrizni ezt a vásárlást.";
+
+/* The armor header is missing. */
+"The armor header is missing." = "Hiányzik az ASCII armor fejléce.";
+
+/* The armored file could not be read. %@ */
+"The armored file could not be read. %@" = "Az ASCII armor fájl nem olvasható. %@";
+
+/* The armored file ends before its footer. */
+"The armored file ends before its footer." = "Az ASCII armor fájl a lábléce előtt véget ér.";
+
+/* The armored text is incomplete. */
+"The armored text is incomplete." = "Az ASCII armor szöveg hiányos.";
+
+/* The armored text is not valid base64. */
+"The armored text is not valid base64." = "Az ASCII armor szöveg nem érvényes base64.";
+
+/* The decrypted file cannot replace the encrypted file. Choose a different name. */
+"The decrypted file cannot replace the encrypted file. Choose a different name." = "A visszafejtett fájl nem helyettesítheti a titkosított fájlt. Válasszon másik nevet.";
+
+/* The decrypted file does not hold an age secret key. */
+"The decrypted file does not hold an age secret key." = "A visszafejtett fájl nem tartalmaz age titkos kulcsot.";
+
+/* The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one. */
+"The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one." = "A visszafejtett fájlt csak az Ön felhasználói fiókja olvashatja. Ha a feladó megadta az ellenőrző összeget, hasonlítsa össze vele.";
+
+/* The encrypted data is corrupt or was modified. */
+"The encrypted data is corrupt or was modified." = "A titkosított adatok sérültek vagy módosultak.";
+
+/* The encrypted file cannot replace the original. Choose a different name. */
+"The encrypted file cannot replace the original. Choose a different name." = "A titkosított fájl nem helyettesítheti az eredetit. Válasszon másik nevet.";
+
+/* The file could not be read. */
+"The file could not be read." = "A fájl nem olvasható.";
+
+/* The file ends early. It may be incomplete. */
+"The file ends early. It may be incomplete." = "A fájl idő előtt véget ér. Lehet, hogy hiányos.";
+
+/* The file header was modified or the key is wrong. */
+"The file header was modified or the key is wrong." = "A fájl fejléce módosult, vagy a kulcs hibás.";
+
+/* The file holds no age secret key. */
+"The file holds no age secret key." = "A fájl nem tartalmaz age titkos kulcsot.";
+
+/* The file is being read. */
+"The file is being read." = "A fájl beolvasása folyamatban van.";
+
+/* The file is not text. */
+"The file is not text." = "A fájl nem szöveg.";
+
+/* The file is too large to be a key. */
+"The file is too large to be a key." = "A fájl túl nagy ahhoz, hogy kulcs legyen.";
+
+/* The first line is not the age version marker. */
+"The first line is not the age version marker." = "Az első sor nem az age verziójelölője.";
+
+/* The header authentication line is malformed. */
+"The header authentication line is malformed." = "A fejléc hitelesítő sora hibás formátumú.";
+
+/* The header is not valid text. */
+"The header is not valid text." = "A fejléc nem érvényes szöveg.";
+
+/* The header is too large to be an age file. */
+"The header is too large to be an age file." = "A fejléc túl nagy ahhoz, hogy age-fájl legyen.";
+
+/* The header lists too many recipients. */
+"The header lists too many recipients." = "A fejléc túl sok címzettet sorol fel.";
+
+/* The identity could not be read. %@ */
+"The identity could not be read. %@" = "Az identitás nem olvasható. %@";
+
+/* The identity file could not be saved. */
+"The identity file could not be saved." = "Az identitásfájl nem menthető.";
+
+/* The image could not be used */
+"The image could not be used" = "A kép nem használható";
+
+/* The image is larger than %lld pixels on a side. Choose a smaller one. */
+"The image is larger than %lld pixels on a side. Choose a smaller one." = "A kép oldala nagyobb %lld képpontnál. Válasszon kisebbet.";
+
+/* The input is larger than expected. */
+"The input is larger than expected." = "A bemenet nagyobb a vártnál.";
+
+/* The key file ends early. */
+"The key file ends early." = "A kulcsfájl idő előtt véget ér.";
+
+/* The key file is malformed. */
+"The key file is malformed." = "A kulcsfájl hibás formátumú.";
+
+/* The key file's passphrase settings are invalid. */
+"The key file's passphrase settings are invalid." = "A kulcsfájl jelmondat-beállításai érvénytelenek.";
+
+/* The key is empty. */
+"The key is empty." = "A kulcs üres.";
+
+/* The key is protected with the %@ cipher, which is not supported. */
+"The key is protected with the %@ cipher, which is not supported." = "A kulcsot a(z) %@ titkosító védi, amely nem támogatott.";
+
+/* The key is saved as <name>.pub in the recipients folder. */
+"The key is saved as <name>.pub in the recipients folder." = "A kulcs <name>.pub néven kerül a címzettek mappájába.";
+
+/* The key uses %lld key derivation rounds. Agemin supports up to %lld. */
+"The key uses %lld key derivation rounds. Agemin supports up to %lld." = "A kulcs %lld kulcsszármaztatási kört használ; az Agemin legfeljebb %lld kört támogat.";
+
+/* The key uses the %@ key derivation, which is not supported. */
+"The key uses the %@ key derivation, which is not supported." = "A kulcs a(z) %@ kulcsszármaztatást használja, amely nem támogatott.";
+
+/* The operation was canceled. */
+"The operation was canceled." = "A műveletet megszakították.";
+
+/* The passphrase entry is malformed. */
+"The passphrase entry is malformed." = "A jelmondat-bejegyzés hibás formátumú.";
+
+/* The passphrase for %@ is incorrect. Try again. */
+"The passphrase for %@ is incorrect. Try again." = "A(z) %@ jelmondata helytelen. Próbálja újra.";
+
+/* The passphrase is incorrect. */
+"The passphrase is incorrect." = "A jelmondat helytelen.";
+
+/* The passphrase work factor %lld is too high to try safely. */
+"The passphrase work factor %lld is too high to try safely." = "A jelmondat %lld munkatényezője túl magas a biztonságos kipróbáláshoz.";
+
+/* The passphrase work factor is malformed. */
+"The passphrase work factor is malformed." = "A jelmondat munkatényezője hibás formátumú.";
+
+/* The passphrases do not match. */
+"The passphrases do not match." = "A jelmondatok nem egyeznek.";
+
+/* The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them. */
+"The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them." = "Az Önnek titkosított fájlokat megnyitó privát kulcsok: SSH-kulcsok a ~/.ssh mappából és age identitásfájlok. Az Agemin olvassa, de soha nem módosítja őket.";
+
+/* The purchase is awaiting approval. */
+"The purchase is awaiting approval." = "A vásárlás jóváhagyásra vár.";
+
+/* The recipient could not be deleted. */
+"The recipient could not be deleted." = "A címzett nem törölhető.";
+
+/* The recipient could not be saved. */
+"The recipient could not be saved." = "A címzett nem menthető.";
+
+/* The recipient key could not be read. %@ */
+"The recipient key could not be read. %@" = "A címzett kulcsa nem olvasható. %@";
+
+/* The recipients folder */
+"The recipients folder" = "A címzettek mappája";
+
+/* The recipients folder holds no .pub files yet. */
+"The recipients folder holds no .pub files yet." = "A címzettek mappája még nem tartalmaz .pub fájlokat.";
+
+/* The RSA key is malformed. */
+"The RSA key is malformed." = "Az RSA-kulcs hibás formátumú.";
+
+/* The RSA key is too small or malformed. */
+"The RSA key is too small or malformed." = "Az RSA-kulcs túl kicsi vagy hibás formátumú.";
+
+/* The SSH key is not a valid Ed25519 key. */
+"The SSH key is not a valid Ed25519 key." = "Az SSH-kulcs nem érvényes Ed25519-kulcs.";
+
+/* The SSH key is not a valid RSA key. */
+"The SSH key is not a valid RSA key." = "Az SSH-kulcs nem érvényes RSA-kulcs.";
+
+/* The SSH public key is malformed. */
+"The SSH public key is malformed." = "Az SSH nyilvános kulcs hibás formátumú.";
+
+/* There is text after the armor footer. */
+"There is text after the armor footer." = "Az ASCII armor lábléce után szöveg található.";
+
+/* This deletes the file from the recipients folder. Files already encrypted for this key are not affected. */
+"This deletes the file from the recipients folder. Files already encrypted for this key are not affected." = "A fájl törlődik a címzettek mappájából. Az ehhez a kulcshoz már titkosított fájlokat ez nem érinti.";
+
+/* This file cannot be read as an age file */
+"This file cannot be read as an age file" = "Ez a fájl nem olvasható age-fájlként";
+
+/* This file is not a key. */
+"This file is not a key." = "Ez a fájl nem kulcs.";
+
+/* This file needs a passphrase. */
+"This file needs a passphrase." = "Ehhez a fájlhoz jelmondat szükséges.";
+
+/* This is a secret key. Use the matching public key, which starts with age1. */
+"This is a secret key. Use the matching public key, which starts with age1." = "Ez egy titkos kulcs. Használja a hozzá tartozó nyilvános kulcsot, amely age1-gyel kezdődik.";
+
+/* This is not a valid age public key. */
+"This is not a valid age public key." = "Ez nem érvényes age nyilvános kulcs.";
+
+/* This is not a valid age secret key. */
+"This is not a valid age secret key." = "Ez nem érvényes age titkos kulcs.";
+
+/* This is not an age file. %@ */
+"This is not an age file. %@" = "Ez nem age-fájl. %@";
+
+/* This key format is not supported. Use an OpenSSH private key or an age identity file. */
+"This key format is not supported. Use an OpenSSH private key or an age identity file." = "Ez a kulcsformátum nem támogatott. Használjon OpenSSH privát kulcsot vagy age identitásfájlt.";
+
+/* This key produces a weak shared secret and cannot be used. */
+"This key produces a weak shared secret and cannot be used." = "Ez a kulcs gyenge megosztott titkot állít elő, ezért nem használható.";
+
+/* This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy. */
+"This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy." = "Ez a jelmondattal védett kulcs a régi PEM formátumot használja. Alakítsa át az ssh-keygen -p -o paranccsal, vagy használjon védelem nélküli másolatot.";
+
+/* Trial ended */
+"Trial ended" = "A próbaidőszak véget ért";
+
+/* Try Again */
+"Try Again" = "Újra";
+
+/* Try every usable key */
+"Try every usable key" = "Minden használható kulcs kipróbálása";
+
+/* Unknown recipient type “%@” */
+"Unknown recipient type “%@”" = "Ismeretlen címzettípus: „%@”";
+
+/* Unlock */
+"Unlock" = "Feloldás";
+
+/* Unlock %@ */
+"Unlock %@" = "%@ feloldása";
+
+/* Unlock %@ with Agemin Pro. */
+"Unlock %@ with Agemin Pro." = "%@ feloldása az Agemin Pro segítségével.";
+
+/* Until %@ */
+"Until %@" = "Eddig: %@";
+
+/* Use Image */
+"Use Image" = "Kép használata";
+
+/* Use Initials */
+"Use Initials" = "Monogram használata";
+
+/* Valid %@ key */
+"Valid %@ key" = "Érvényes %@ kulcs";
+
+/* Wait for the current operation to finish. */
+"Wait for the current operation to finish." = "Várja meg, amíg az aktuális művelet befejeződik.";
+
+/* Write it down or store it in a password manager. Agemin does not keep it. */
+"Write it down or store it in a password manager. Agemin does not keep it." = "Írja le, vagy tárolja jelszókezelőben. Az Agemin nem őrzi meg.";
+
+/* Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both. */
+"Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both." = "A titkosított fájl szövegként, nem binárisként való kiírása e-mailhez, csevegéshez és konfigurációs fájlokhoz. Az age mindkettőt olvassa.";
+
+/* you */
+"you" = "Ön";
+
+/* You can still encrypt or decrypt one file per day. Available today: %lld. */
+"You can still encrypt or decrypt one file per day. Available today: %lld." = "Továbbra is naponta egy fájlt titkosíthat vagy fejthet vissza. Ma elérhető: %lld.";
+
+/* You have Agemin Pro. */
+"You have Agemin Pro." = "Ön rendelkezik Agemin Pro-val.";
+
+/* Your Pro trial is active. */
+"Your Pro trial is active." = "A Pro próbaidőszaka aktív.";
+
+/* · you choose the folder when you encrypt */
+"· you choose the folder when you encrypt" = "· a mappát a titkosításkor választja ki";
