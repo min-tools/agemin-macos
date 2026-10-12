@@ -1,0 +1,904 @@
+/* Agemin — nl localization. Each comment shows the English source text. */
+
+/*  and armor */
+" and armor" = " en ASCII armor";
+
+/* %@ %@ of %@ */
+"%@ %@ of %@" = "%@ %@ van %@";
+
+/* %@ could not be read. */
+"%@ could not be read." = "%@ kan niet worden gelezen.";
+
+/* %@ could not be written. */
+"%@ could not be written." = "%@ kan niet worden geschreven.";
+
+/* %@ is protected with a passphrase. */
+"%@ is protected with a passphrase." = "%@ is beveiligd met een wachtwoordzin.";
+
+/* %@ keys are not supported by age. */
+"%@ keys are not supported by age." = "%@-sleutels worden niet ondersteund door age.";
+
+/* %@ per year */
+"%@ per year" = "%@ per jaar";
+
+/* %@ · %@ more than the original for the header%@ */
+"%@ · %@ more than the original for the header%@" = "%@ · %@ meer dan het origineel voor de header%@";
+
+/* %@.pub already exists in the recipients folder. */
+"%@.pub already exists in the recipients folder." = "%@.pub bestaat al in de ontvangersmap.";
+
+/* %lld identities */
+"%lld identities" = "%lld identiteiten";
+
+/* %lld identities · %lld usable */
+"%lld identities · %lld usable" = "%lld identiteiten · %lld bruikbaar";
+
+/* %lld keys */
+"%lld keys" = "%lld sleutels";
+
+/* %lld keys tried */
+"%lld keys tried" = "%lld sleutels geprobeerd";
+
+/* %lld of %lld recipients selected */
+"%lld of %lld recipients selected" = "%lld van %lld ontvangers geselecteerd";
+
+/* %lld recipients */
+"%lld recipients" = "%lld ontvangers";
+
+/* %lld recipients · %lld usable */
+"%lld recipients · %lld usable" = "%lld ontvangers · %lld bruikbaar";
+
+/* 1 identity */
+"1 identity" = "1 identiteit";
+
+/* 1 recipient */
+"1 recipient" = "1 ontvanger";
+
+/* 30 days of full access */
+"30 days of full access" = "30 dagen volledige toegang";
+
+/* A file is still being processed. */
+"A file is still being processed." = "Er wordt nog een bestand verwerkt.";
+
+/* A header line is neither a recipient nor the closing marker. */
+"A header line is neither a recipient nor the closing marker." = "Een headerregel is geen ontvanger en ook niet de afsluitende markering.";
+
+/* A header line is too long. */
+"A header line is too long." = "Een headerregel is te lang.";
+
+/* A passphrase cannot be combined with other recipients. */
+"A passphrase cannot be combined with other recipients." = "Een wachtwoordzin kan niet worden gecombineerd met andere ontvangers.";
+
+/* A passphrase entry must be the only recipient. */
+"A passphrase entry must be the only recipient." = "Een wachtwoordzinvermelding moet de enige ontvanger zijn.";
+
+/* A recipient body is not valid base64. */
+"A recipient body is not valid base64." = "De inhoud van een ontvangervermelding is geen geldige base64.";
+
+/* A recipient body line is malformed. */
+"A recipient body line is malformed." = "Een inhoudsregel van een ontvangervermelding is ongeldig.";
+
+/* A recipient line is malformed. */
+"A recipient line is malformed." = "Een ontvangerregel is ongeldig.";
+
+/* About Agemin */
+"About Agemin" = "Over Agemin";
+
+/* Action */
+"Action" = "Actie";
+
+/* Add */
+"Add" = "Voeg toe";
+
+/* Add a public key on the Recipients page */
+"Add a public key on the Recipients page" = "Voeg een publieke sleutel toe op de pagina 'Ontvangers'";
+
+/* Add an identity that can decrypt this file. */
+"Add an identity that can decrypt this file." = "Voeg een identiteit toe die dit bestand kan ontsleutelen.";
+
+/* Add Key File */
+"Add Key File" = "Voeg sleutelbestand toe";
+
+/* Add Key File… */
+"Add Key File…" = "Voeg sleutelbestand toe…";
+
+/* Add Recipient */
+"Add Recipient" = "Voeg ontvanger toe";
+
+/* Add Recipient… */
+"Add Recipient…" = "Voeg ontvanger toe…";
+
+/* Add to Recipients */
+"Add to Recipients" = "Voeg toe aan ontvangers";
+
+/* added */
+"added" = "toegevoegd";
+
+/* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
+"After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "Na de proefperiode kunt u nog steeds één bestand per dag versleutelen of ontsleutelen. Sleutels lezen, bestanden controleren en sleutels maken blijven onbeperkt.";
+
+/* age encryption, without the terminal. */
+"age encryption, without the terminal." = "age-versleuteling, zonder de terminal.";
+
+/* age key */
+"age key" = "age-sleutel";
+
+/* age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA… */
+"age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA…" = "age1… of ssh-ed25519 AAAA… of ssh-rsa AAAA…";
+
+/* Agemin could not use that folder */
+"Agemin could not use that folder" = "Agemin kan die map niet gebruiken";
+
+/* Agemin encrypts files, not folders. */
+"Agemin encrypts files, not folders." = "Agemin versleutelt bestanden, geen mappen.";
+
+/* Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged. */
+"Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged." = "Agemin is je eerste 30 dagen volledig ontgrendeld. Er start geen abonnement en er worden geen kosten in rekening gebracht.";
+
+/* Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice. */
+"Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice." = "Agemin toont de .pub-bestanden in die map en laat je nieuwe toevoegen. Elke map werkt; ~/.age is een gangbare keuze.";
+
+/* Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually. */
+"Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually." = "Agemin toont de privésleutels die het daar vindt, meestal in ~/.ssh, en ontsleutelt ermee. Sleutels die elders staan, kunnen een voor een worden toegevoegd.";
+
+/* Agemin Pro */
+"Agemin Pro" = "Agemin Pro";
+
+/* Agemin Pro Lifetime · %@ */
+"Agemin Pro Lifetime · %@" = "Agemin Pro Levenslang · %@";
+
+/* Agemin Pro Yearly */
+"Agemin Pro Yearly" = "Agemin Pro Jaarlijks";
+
+/* Agemin Pro… */
+"Agemin Pro…" = "Agemin Pro…";
+
+/* Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them. */
+"Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them." = "Agemin verwijdert zijn bewaarde toestemmingen voor de ontvangersmap, de identiteitenmap en alle los toegevoegde sleutelbestanden. Er wordt niets gewist. Kies ze opnieuw om ze te blijven gebruiken.";
+
+/* Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed. */
+"Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed." = "Agemin bewaart de avatar onder de vingerafdruk van deze sleutel. Er verandert niets in je sleutelmappen.";
+
+/* alice */
+"alice" = "alice";
+
+/* All */
+"All" = "Alle";
+
+/* An age public key has 32 bytes. */
+"An age public key has 32 bytes." = "Een publieke age-sleutel heeft 32 bytes.";
+
+/* An age secret key has 32 bytes. */
+"An age secret key has 32 bytes." = "Een geheime age-sleutel heeft 32 bytes.";
+
+/* An ssh-ed25519 recipient entry is malformed. */
+"An ssh-ed25519 recipient entry is malformed." = "Een ssh-ed25519-ontvangervermelding is ongeldig.";
+
+/* An ssh-rsa recipient entry is malformed. */
+"An ssh-rsa recipient entry is malformed." = "Een ssh-rsa-ontvangervermelding is ongeldig.";
+
+/* An X25519 recipient entry has the wrong size. */
+"An X25519 recipient entry has the wrong size." = "Een X25519-ontvangervermelding heeft de verkeerde grootte.";
+
+/* An X25519 recipient entry is malformed. */
+"An X25519 recipient entry is malformed." = "Een X25519-ontvangervermelding is ongeldig.";
+
+/* Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one. */
+"Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one." = "Iedereen met de wachtwoordzin kan het bestand openen. age haalt de wachtwoordzin door scrypt, dus een lange wachtwoordzin is belangrijker dan een complexe.";
+
+/* ASCII armor */
+"ASCII armor" = "ASCII armor";
+
+/* Avatar for %@ */
+"Avatar for %@" = "Avatar voor %@";
+
+/* Cancel */
+"Cancel" = "Annuleer";
+
+/* Change */
+"Change" = "Wijzig";
+
+/* Choose */
+"Choose" = "Kies";
+
+/* Choose a file to encrypt. */
+"Choose a file to encrypt." = "Kies een bestand om te versleutelen.";
+
+/* Choose a yearly subscription or lifetime purchase at any time to remove the daily limit. */
+"Choose a yearly subscription or lifetime purchase at any time to remove the daily limit." = "Kies op elk moment een jaarabonnement of een levenslange aankoop om de daglimiet op te heffen.";
+
+/* Choose an age identity file or an SSH private key */
+"Choose an age identity file or an SSH private key" = "Kies een age-identiteitsbestand of een SSH-privésleutel";
+
+/* Choose an encrypted file. */
+"Choose an encrypted file." = "Kies een versleuteld bestand.";
+
+/* Choose an image for this key's avatar */
+"Choose an image for this key's avatar" = "Kies een afbeelding voor de avatar van deze sleutel";
+
+/* Choose File */
+"Choose File" = "Kies bestand";
+
+/* Choose File to Decrypt… */
+"Choose File to Decrypt…" = "Kies bestand om te ontsleutelen…";
+
+/* Choose File to Encrypt… */
+"Choose File to Encrypt…" = "Kies bestand om te versleutelen…";
+
+/* Choose Folder */
+"Choose Folder" = "Kies map";
+
+/* Choose Identities Folder… */
+"Choose Identities Folder…" = "Kies identiteitenmap…";
+
+/* Choose Image */
+"Choose Image" = "Kies afbeelding";
+
+/* Choose Recipients Folder… */
+"Choose Recipients Folder…" = "Kies ontvangersmap…";
+
+/* Choose the encrypted file, usually ending in .age */
+"Choose the encrypted file, usually ending in .age" = "Kies het versleutelde bestand, meestal eindigend op .age";
+
+/* Choose the file to encrypt */
+"Choose the file to encrypt" = "Kies het bestand om te versleutelen";
+
+/* Choose the folder with the .pub files of the people you encrypt for, usually ~/.age. */
+"Choose the folder with the .pub files of the people you encrypt for, usually ~/.age." = "Kies de map met de .pub-bestanden van de mensen voor wie je versleutelt, meestal ~/.age.";
+
+/* Choose the folder with the .pub files you encrypt for, usually ~/.age */
+"Choose the folder with the .pub files you encrypt for, usually ~/.age" = "Kies de map met de .pub-bestanden waarvoor je versleutelt, meestal ~/.age";
+
+/* Choose the folder with your private keys, usually ~/.ssh */
+"Choose the folder with your private keys, usually ~/.ssh" = "Kies de map met je privésleutels, meestal ~/.ssh";
+
+/* Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page. */
+"Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page." = "Kies de map met je SSH-sleutels, meestal ~/.ssh, of voeg een age-identiteitsbestand toe op de pagina 'Identiteiten'.";
+
+/* Choose where to save the decrypted file */
+"Choose where to save the decrypted file" = "Kies waar het ontsleutelde bestand wordt bewaard";
+
+/* Choose where to save the encrypted file */
+"Choose where to save the encrypted file" = "Kies waar het versleutelde bestand wordt bewaard";
+
+/* Choose your recipients folder */
+"Choose your recipients folder" = "Kies je ontvangersmap";
+
+/* Choose your SSH folder */
+"Choose your SSH folder" = "Kies je SSH-map";
+
+/* Clear search */
+"Clear search" = "Wis zoekopdracht";
+
+/* Clear the file */
+"Clear the file" = "Haal het bestand weg";
+
+/* Click an avatar to change it, or drop an image onto it. */
+"Click an avatar to change it, or drop an image onto it." = "Klik op een avatar om die te wijzigen, of sleep er een afbeelding op.";
+
+/* Click to change the avatar, or drop an image on it */
+"Click to change the avatar, or drop an image on it" = "Klik om de avatar te wijzigen, of sleep er een afbeelding op";
+
+/* Compress the folder into an archive first, then open the archive. */
+"Compress the folder into an archive first, then open the archive." = "Comprimeer de map eerst tot een archief en open daarna het archief.";
+
+/* Confirm passphrase */
+"Confirm passphrase" = "Bevestig wachtwoordzin";
+
+/* Contacting the App Store… */
+"Contacting the App Store…" = "Verbinden met de App Store…";
+
+/* Continue */
+"Continue" = "Ga door";
+
+/* Copy */
+"Copy" = "Kopieer";
+
+/* Copy Key */
+"Copy Key" = "Kopieer sleutel";
+
+/* Copy Path */
+"Copy Path" = "Kopieer pad";
+
+/* Copy Public Key */
+"Copy Public Key" = "Kopieer publieke sleutel";
+
+/* Decrypt */
+"Decrypt" = "Ontsleutel";
+
+/* Decrypt This File */
+"Decrypt This File" = "Ontsleutel dit bestand";
+
+/* Decrypt with */
+"Decrypt with" = "Ontsleutel met";
+
+/* Decrypted */
+"Decrypted" = "Ontsleuteld";
+
+/* Decrypting */
+"Decrypting" = "Bezig met ontsleutelen";
+
+/* Decryption failed */
+"Decryption failed" = "Ontsleutelen mislukt";
+
+/* Decrypt… */
+"Decrypt…" = "Ontsleutel…";
+
+/* Delete */
+"Delete" = "Verwijder";
+
+/* Delete %@? */
+"Delete %@?" = "%@ verwijderen?";
+
+/* Delete the .pub file */
+"Delete the .pub file" = "Verwijder het .pub-bestand";
+
+/* Drop a file here to encrypt it */
+"Drop a file here to encrypt it" = "Sleep hier een bestand naartoe om het te versleutelen";
+
+/* Drop a file, not a folder. Compress the folder first, then drop the archive. */
+"Drop a file, not a folder. Compress the folder first, then drop the archive." = "Sleep een bestand, geen map. Comprimeer de map eerst en sleep daarna het archief.";
+
+/* Drop an age file here to decrypt it */
+"Drop an age file here to decrypt it" = "Sleep hier een age-bestand naartoe om het te ontsleutelen";
+
+/* Encrypt */
+"Encrypt" = "Versleutel";
+
+/* Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file. */
+"Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file." = "Versleutel een bestand voor de publieke sleutels van de mensen die het mogen openen, of met een wachtwoordzin. Het resultaat is een standaard age-bestand.";
+
+/* Encrypt for */
+"Encrypt for" = "Versleutel voor";
+
+/* Encrypted */
+"Encrypted" = "Versleuteld";
+
+/* Encrypted for */
+"Encrypted for" = "Versleuteld voor";
+
+/* Encrypting */
+"Encrypting" = "Bezig met versleutelen";
+
+/* Encryption failed */
+"Encryption failed" = "Versleutelen mislukt";
+
+/* Encrypt… */
+"Encrypt…" = "Versleutel…";
+
+/* Enter a passphrase. */
+"Enter a passphrase." = "Voer een wachtwoordzin in.";
+
+/* Enter the file's passphrase. */
+"Enter the file's passphrase." = "Voer de wachtwoordzin van het bestand in.";
+
+/* Enter the passphrase below */
+"Enter the passphrase below" = "Voer hieronder de wachtwoordzin in";
+
+/* Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa). */
+"Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa)." = "Verwacht werd een publieke age-sleutel (age1…) of een publieke SSH-sleutel (ssh-ed25519 of ssh-rsa).";
+
+/* Expires %@ */
+"Expires %@" = "Eindigt op %@";
+
+/* Files */
+"Files" = "Bestanden";
+
+/* Fill both fields with a random passphrase and show it once */
+"Fill both fields with a random passphrase and show it once" = "Vul beide velden met een willekeurige wachtwoordzin en toon die eenmalig";
+
+/* Filter identities */
+"Filter identities" = "Filter identiteiten";
+
+/* Filter recipients */
+"Filter recipients" = "Filter ontvangers";
+
+/* Find… */
+"Find…" = "Zoek…";
+
+/* Forget Access */
+"Forget Access" = "Vergeet toegang";
+
+/* Forget access to the key folders? */
+"Forget access to the key folders?" = "Toegang tot de sleutelmappen vergeten?";
+
+/* Forget Folder Access… */
+"Forget Folder Access…" = "Vergeet maptoegang…";
+
+/* Free · Available today: %lld */
+"Free · Available today: %lld" = "Gratis · Vandaag beschikbaar: %lld";
+
+/* Generate */
+"Generate" = "Genereer";
+
+/* Give the recipient a name. */
+"Give the recipient a name." = "Geef de ontvanger een naam.";
+
+/* Hide this card */
+"Hide this card" = "Verberg deze kaart";
+
+/* Identities */
+"Identities" = "Identiteiten";
+
+/* Identity file */
+"Identity file" = "Identiteitsbestand";
+
+/* Initials */
+"Initials" = "Initialen";
+
+/* Initials color %lld */
+"Initials color %lld" = "Initialenkleur %lld";
+
+/* Keep Working */
+"Keep Working" = "Werk verder";
+
+/* Key */
+"Key" = "Sleutel";
+
+/* Keys */
+"Keys" = "Sleutels";
+
+/* Lifetime */
+"Lifetime" = "Levenslang";
+
+/* Loading App Store products… */
+"Loading App Store products…" = "App Store-producten laden…";
+
+/* Loading keys… */
+"Loading keys…" = "Sleutels laden…";
+
+/* macOS did not grant lasting access to that folder. Choose it again, or choose another folder. */
+"macOS did not grant lasting access to that folder. Choose it again, or choose another folder." = "macOS heeft geen blijvende toegang tot die map gegeven. Kies de map opnieuw of kies een andere map.";
+
+/* Manage Subscription */
+"Manage Subscription" = "Beheer abonnement";
+
+/* matches */
+"matches" = "komt overeen";
+
+/* Matches %@ */
+"Matches %@" = "Komt overeen met %@";
+
+/* Matching keys first. Protected keys ask for their passphrase. */
+"Matching keys first. Protected keys ask for their passphrase." = "Overeenkomende sleutels eerst. Beveiligde sleutels vragen om hun wachtwoordzin.";
+
+/* Name */
+"Name" = "Naam";
+
+/* New age Key */
+"New age Key" = "Nieuwe age-sleutel";
+
+/* New age key saved */
+"New age key saved" = "Nieuwe age-sleutel bewaard";
+
+/* New age Key… */
+"New age Key…" = "Nieuwe age-sleutel…";
+
+/* New recipient */
+"New recipient" = "Nieuwe ontvanger";
+
+/* No active purchase was found. */
+"No active purchase was found." = "Er is geen actieve Agemin-aankoop gevonden.";
+
+/* No Agemin Pro purchase was found for this Apple Account. */
+"No Agemin Pro purchase was found for this Apple Account." = "Er is geen Agemin Pro-aankoop gevonden voor dit Apple-account.";
+
+/* No identities yet */
+"No identities yet" = "Nog geen identiteiten";
+
+/* No matching key */
+"No matching key" = "Geen overeenkomende sleutel";
+
+/* No recipients folder yet */
+"No recipients folder yet" = "Nog geen ontvangersmap";
+
+/* None */
+"None" = "Geen";
+
+/* None of the identities can decrypt this file. */
+"None of the identities can decrypt this file." = "Geen van de identiteiten kan dit bestand ontsleutelen.";
+
+/* None of your identities matches this file. Add the key it was encrypted for on the Identities page. */
+"None of your identities matches this file. Add the key it was encrypted for on the Identities page." = "Geen van je identiteiten komt overeen met dit bestand. Voeg de sleutel waarvoor het is versleuteld toe op de pagina 'Identiteiten'.";
+
+/* not a key */
+"not a key" = "geen sleutel";
+
+/* OK */
+"OK" = "OK";
+
+/* Open an age file with one of your keys, or with the passphrase it was encrypted with. */
+"Open an age file with one of your keys, or with the passphrase it was encrypted with." = "Open een age-bestand met een van je sleutels, of met de wachtwoordzin waarmee het is versleuteld.";
+
+/* Options */
+"Options" = "Opties";
+
+/* Output */
+"Output" = "Uitvoer";
+
+/* Pages */
+"Pages" = "Pagina's";
+
+/* Passphrase */
+"Passphrase" = "Wachtwoordzin";
+
+/* passphrase */
+"passphrase" = "wachtwoordzin";
+
+/* Passphrase · work factor %lld */
+"Passphrase · work factor %lld" = "Wachtwoordzin · werkfactor %lld";
+
+/* Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends. */
+"Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends." = "De betaling wordt in rekening gebracht via je Apple-account. Het jaarabonnement wordt automatisch verlengd, tenzij je het minstens een dag voor het einde van de huidige periode opzegt in de App Store-instellingen.";
+
+/* Privacy Policy */
+"Privacy Policy" = "Privacybeleid";
+
+/* Privacy Policy… */
+"Privacy Policy…" = "Privacybeleid…";
+
+/* Pro */
+"Pro" = "Pro";
+
+/* Pro purchases are unavailable right now. Try again later. */
+"Pro purchases are unavailable right now. Try again later." = "Pro-aankopen zijn op dit moment niet beschikbaar. Probeer het later opnieuw.";
+
+/* Pro trial · %lld days remaining */
+"Pro trial · %lld days remaining" = "Pro-proefperiode · nog %lld dagen";
+
+/* Pro trial · 1 day remaining */
+"Pro trial · 1 day remaining" = "Pro-proefperiode · nog 1 dag";
+
+/* Pro trial · ends %@ */
+"Pro trial · ends %@" = "Pro-proefperiode · eindigt %@";
+
+/* Pro trial · first payment %@ */
+"Pro trial · first payment %@" = "Pro-proefperiode · eerste betaling %@";
+
+/* Pro trial · until %@ */
+"Pro trial · until %@" = "Pro-proefperiode · tot %@";
+
+/* Public key */
+"Public key" = "Publieke sleutel";
+
+/* Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file. */
+"Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file." = "De publieke sleutels waarvoor je versleutelt. Elk .pub-bestand in de map is één ontvanger, genoemd naar het bestand.";
+
+/* Purchase */
+"Purchase" = "Koop";
+
+/* Quit Anyway */
+"Quit Anyway" = "Stop toch";
+
+/* Quitting now cancels it and removes the partial output. */
+"Quitting now cancels it and removes the partial output." = "Als je nu stopt, wordt de bewerking geannuleerd en de gedeeltelijke uitvoer verwijderd.";
+
+/* Read the folder again */
+"Read the folder again" = "Lees de map opnieuw";
+
+/* Recipients */
+"Recipients" = "Ontvangers";
+
+/* Refresh Keys */
+"Refresh Keys" = "Ververs sleutels";
+
+/* Remove from the list */
+"Remove from the list" = "Verwijder uit de lijst";
+
+/* Renews %@ */
+"Renews %@" = "Verlengt op %@";
+
+/* Restore Purchases */
+"Restore Purchases" = "Herstel aankopen";
+
+/* Restoring… */
+"Restoring…" = "Herstellen…";
+
+/* Reveal */
+"Reveal" = "Toon";
+
+/* Reveal in Finder */
+"Reveal in Finder" = "Toon in Finder";
+
+/* Save */
+"Save" = "Bewaar";
+
+/* Save Key */
+"Save Key" = "Bewaar sleutel";
+
+/* Save Recipient */
+"Save Recipient" = "Bewaar ontvanger";
+
+/* Save the new identity file somewhere private because it holds the secret key */
+"Save the new identity file somewhere private because it holds the secret key" = "Bewaar het nieuwe identiteitsbestand op een privéplek; het bevat de geheime sleutel";
+
+/* Saved as */
+"Saved as" = "Bewaard als";
+
+/* Saved as <name>.pub in the recipients folder. */
+"Saved as <name>.pub in the recipients folder." = "Bewaard als <name>.pub in de ontvangersmap.";
+
+/* Select at least one recipient. */
+"Select at least one recipient." = "Selecteer minstens één ontvanger.";
+
+/* SHA-256 */
+"SHA-256" = "SHA-256";
+
+/* Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it. */
+"Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it." = "Deel de publieke sleutel met mensen die voor jou moeten versleutelen. Houd het identiteitsbestand privé; alleen jouw account kan het lezen.";
+
+/* Shared with your family */
+"Shared with your family" = "Gedeeld met je gezin";
+
+/* Size */
+"Size" = "Grootte";
+
+/* SSH key (Ed25519) */
+"SSH key (Ed25519)" = "SSH-sleutel (Ed25519)";
+
+/* SSH key (RSA) */
+"SSH key (RSA)" = "SSH-sleutel (RSA)";
+
+/* Terms of Use (EULA) */
+"Terms of Use (EULA)" = "Gebruiksvoorwaarden (EULA)";
+
+/* That file is not an image Agemin can read. */
+"That file is not an image Agemin can read." = "Dat bestand is geen afbeelding die Agemin kan lezen.";
+
+/* The App Store could not verify this purchase. */
+"The App Store could not verify this purchase." = "De App Store kon deze aankoop niet verifiëren.";
+
+/* The armor header is missing. */
+"The armor header is missing." = "De ASCII armor-header ontbreekt.";
+
+/* The armored file could not be read. %@ */
+"The armored file could not be read. %@" = "Het bestand met ASCII armor kan niet worden gelezen. %@";
+
+/* The armored file ends before its footer. */
+"The armored file ends before its footer." = "Het bestand met ASCII armor eindigt vóór de footer.";
+
+/* The armored text is incomplete. */
+"The armored text is incomplete." = "De ASCII armor-tekst is onvolledig.";
+
+/* The armored text is not valid base64. */
+"The armored text is not valid base64." = "De ASCII armor-tekst is geen geldige base64.";
+
+/* The decrypted file cannot replace the encrypted file. Choose a different name. */
+"The decrypted file cannot replace the encrypted file. Choose a different name." = "Het ontsleutelde bestand kan het versleutelde bestand niet vervangen. Kies een andere naam.";
+
+/* The decrypted file does not hold an age secret key. */
+"The decrypted file does not hold an age secret key." = "Het ontsleutelde bestand bevat geen geheime age-sleutel.";
+
+/* The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one. */
+"The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one." = "Het ontsleutelde bestand kan alleen door jouw gebruikersaccount worden gelezen. Vergelijk de controlesom met die van de afzender als je er een hebt gekregen.";
+
+/* The encrypted data is corrupt or was modified. */
+"The encrypted data is corrupt or was modified." = "De versleutelde gegevens zijn beschadigd of gewijzigd.";
+
+/* The encrypted file cannot replace the original. Choose a different name. */
+"The encrypted file cannot replace the original. Choose a different name." = "Het versleutelde bestand kan het origineel niet vervangen. Kies een andere naam.";
+
+/* The file could not be read. */
+"The file could not be read." = "Het bestand kan niet worden gelezen.";
+
+/* The file ends early. It may be incomplete. */
+"The file ends early. It may be incomplete." = "Het bestand eindigt te vroeg. Het is mogelijk onvolledig.";
+
+/* The file header was modified or the key is wrong. */
+"The file header was modified or the key is wrong." = "De header van het bestand is gewijzigd of de sleutel is verkeerd.";
+
+/* The file holds no age secret key. */
+"The file holds no age secret key." = "Het bestand bevat geen geheime age-sleutel.";
+
+/* The file is being read. */
+"The file is being read." = "Het bestand wordt gelezen.";
+
+/* The file is not text. */
+"The file is not text." = "Het bestand is geen tekst.";
+
+/* The file is too large to be a key. */
+"The file is too large to be a key." = "Het bestand is te groot om een sleutel te zijn.";
+
+/* The first line is not the age version marker. */
+"The first line is not the age version marker." = "De eerste regel is niet de age-versiemarkering.";
+
+/* The header authentication line is malformed. */
+"The header authentication line is malformed." = "De authenticatieregel van de header is ongeldig.";
+
+/* The header is not valid text. */
+"The header is not valid text." = "De header is geen geldige tekst.";
+
+/* The header is too large to be an age file. */
+"The header is too large to be an age file." = "De header is te groot voor een age-bestand.";
+
+/* The header lists too many recipients. */
+"The header lists too many recipients." = "De header bevat te veel ontvangers.";
+
+/* The identity could not be read. %@ */
+"The identity could not be read. %@" = "De identiteit kan niet worden gelezen. %@";
+
+/* The identity file could not be saved. */
+"The identity file could not be saved." = "Het identiteitsbestand kan niet worden bewaard.";
+
+/* The image could not be used */
+"The image could not be used" = "De afbeelding kan niet worden gebruikt";
+
+/* The image is larger than %lld pixels on a side. Choose a smaller one. */
+"The image is larger than %lld pixels on a side. Choose a smaller one." = "De afbeelding is aan een zijde groter dan %lld pixels. Kies een kleinere.";
+
+/* The input is larger than expected. */
+"The input is larger than expected." = "De invoer is groter dan verwacht.";
+
+/* The key file ends early. */
+"The key file ends early." = "Het sleutelbestand eindigt te vroeg.";
+
+/* The key file is malformed. */
+"The key file is malformed." = "Het sleutelbestand is ongeldig.";
+
+/* The key file's passphrase settings are invalid. */
+"The key file's passphrase settings are invalid." = "De wachtwoordzininstellingen van het sleutelbestand zijn ongeldig.";
+
+/* The key is empty. */
+"The key is empty." = "De sleutel is leeg.";
+
+/* The key is protected with the %@ cipher, which is not supported. */
+"The key is protected with the %@ cipher, which is not supported." = "De sleutel is beveiligd met het versleutelingsalgoritme %@, dat niet wordt ondersteund.";
+
+/* The key is saved as <name>.pub in the recipients folder. */
+"The key is saved as <name>.pub in the recipients folder." = "De sleutel wordt bewaard als <name>.pub in de ontvangersmap.";
+
+/* The key uses %lld key derivation rounds. Agemin supports up to %lld. */
+"The key uses %lld key derivation rounds. Agemin supports up to %lld." = "De sleutel gebruikt %lld sleutelafleidingsronden; Agemin ondersteunt er maximaal %lld.";
+
+/* The key uses the %@ key derivation, which is not supported. */
+"The key uses the %@ key derivation, which is not supported." = "De sleutel gebruikt de sleutelafleiding %@, die niet wordt ondersteund.";
+
+/* The operation was canceled. */
+"The operation was canceled." = "De bewerking is geannuleerd.";
+
+/* The passphrase entry is malformed. */
+"The passphrase entry is malformed." = "De wachtwoordzinvermelding is ongeldig.";
+
+/* The passphrase for %@ is incorrect. Try again. */
+"The passphrase for %@ is incorrect. Try again." = "De wachtwoordzin voor %@ is onjuist. Probeer het opnieuw.";
+
+/* The passphrase is incorrect. */
+"The passphrase is incorrect." = "De wachtwoordzin is onjuist.";
+
+/* The passphrase work factor %lld is too high to try safely. */
+"The passphrase work factor %lld is too high to try safely." = "De werkfactor %lld van de wachtwoordzin is te hoog om veilig te proberen.";
+
+/* The passphrase work factor is malformed. */
+"The passphrase work factor is malformed." = "De werkfactor van de wachtwoordzin is ongeldig.";
+
+/* The passphrases do not match. */
+"The passphrases do not match." = "De wachtwoordzinnen komen niet overeen.";
+
+/* The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them. */
+"The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them." = "De privésleutels die bestanden openen die voor jou zijn versleuteld: SSH-sleutels uit ~/.ssh en age-identiteitsbestanden. Agemin leest ze en wijzigt ze nooit.";
+
+/* The purchase is awaiting approval. */
+"The purchase is awaiting approval." = "De aankoop wacht op goedkeuring.";
+
+/* The recipient could not be deleted. */
+"The recipient could not be deleted." = "De ontvanger kan niet worden verwijderd.";
+
+/* The recipient could not be saved. */
+"The recipient could not be saved." = "De ontvanger kan niet worden bewaard.";
+
+/* The recipient key could not be read. %@ */
+"The recipient key could not be read. %@" = "De sleutel van de ontvanger kan niet worden gelezen. %@";
+
+/* The recipients folder */
+"The recipients folder" = "De ontvangersmap";
+
+/* The recipients folder holds no .pub files yet. */
+"The recipients folder holds no .pub files yet." = "De ontvangersmap bevat nog geen .pub-bestanden.";
+
+/* The RSA key is malformed. */
+"The RSA key is malformed." = "De RSA-sleutel is ongeldig.";
+
+/* The RSA key is too small or malformed. */
+"The RSA key is too small or malformed." = "De RSA-sleutel is te klein of ongeldig.";
+
+/* The SSH key is not a valid Ed25519 key. */
+"The SSH key is not a valid Ed25519 key." = "De SSH-sleutel is geen geldige Ed25519-sleutel.";
+
+/* The SSH key is not a valid RSA key. */
+"The SSH key is not a valid RSA key." = "De SSH-sleutel is geen geldige RSA-sleutel.";
+
+/* The SSH public key is malformed. */
+"The SSH public key is malformed." = "De publieke SSH-sleutel is ongeldig.";
+
+/* There is text after the armor footer. */
+"There is text after the armor footer." = "Er staat tekst na de ASCII armor-footer.";
+
+/* This deletes the file from the recipients folder. Files already encrypted for this key are not affected. */
+"This deletes the file from the recipients folder. Files already encrypted for this key are not affected." = "Het bestand wordt uit de ontvangersmap verwijderd. Bestanden die al voor deze sleutel zijn versleuteld, worden niet beïnvloed.";
+
+/* This file cannot be read as an age file */
+"This file cannot be read as an age file" = "Dit bestand kan niet als age-bestand worden gelezen";
+
+/* This file is not a key. */
+"This file is not a key." = "Dit bestand is geen sleutel.";
+
+/* This file needs a passphrase. */
+"This file needs a passphrase." = "Dit bestand heeft een wachtwoordzin nodig.";
+
+/* This is a secret key. Use the matching public key, which starts with age1. */
+"This is a secret key. Use the matching public key, which starts with age1." = "Dit is een geheime sleutel. Gebruik de bijbehorende publieke sleutel, die begint met age1.";
+
+/* This is not a valid age public key. */
+"This is not a valid age public key." = "Dit is geen geldige publieke age-sleutel.";
+
+/* This is not a valid age secret key. */
+"This is not a valid age secret key." = "Dit is geen geldige geheime age-sleutel.";
+
+/* This is not an age file. %@ */
+"This is not an age file. %@" = "Dit is geen age-bestand. %@";
+
+/* This key format is not supported. Use an OpenSSH private key or an age identity file. */
+"This key format is not supported. Use an OpenSSH private key or an age identity file." = "Deze sleutelindeling wordt niet ondersteund. Gebruik een OpenSSH-privésleutel of een age-identiteitsbestand.";
+
+/* This key produces a weak shared secret and cannot be used. */
+"This key produces a weak shared secret and cannot be used." = "Deze sleutel levert een zwak gedeeld geheim op en kan niet worden gebruikt.";
+
+/* This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy. */
+"This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy." = "Deze met een wachtwoordzin beveiligde sleutel gebruikt de verouderde PEM-indeling. Converteer de sleutel met ssh-keygen -p -o of gebruik een onbeveiligde kopie.";
+
+/* Trial ended */
+"Trial ended" = "Proefperiode afgelopen";
+
+/* Try Again */
+"Try Again" = "Probeer het nog eens";
+
+/* Try every usable key */
+"Try every usable key" = "Probeer elke bruikbare sleutel";
+
+/* Unknown recipient type “%@” */
+"Unknown recipient type “%@”" = "Onbekend ontvangertype '%@'";
+
+/* Unlock */
+"Unlock" = "Ontgrendel";
+
+/* Unlock %@ */
+"Unlock %@" = "Ontgrendel %@";
+
+/* Unlock %@ with Agemin Pro. */
+"Unlock %@ with Agemin Pro." = "Ontgrendel %@ met Agemin Pro.";
+
+/* Until %@ */
+"Until %@" = "Tot %@";
+
+/* Use Image */
+"Use Image" = "Gebruik afbeelding";
+
+/* Use Initials */
+"Use Initials" = "Gebruik initialen";
+
+/* Valid %@ key */
+"Valid %@ key" = "Geldige %@-sleutel";
+
+/* Wait for the current operation to finish. */
+"Wait for the current operation to finish." = "Wacht tot de huidige bewerking is voltooid.";
+
+/* Write it down or store it in a password manager. Agemin does not keep it. */
+"Write it down or store it in a password manager. Agemin does not keep it." = "Schrijf de wachtwoordzin op of bewaar die in een wachtwoordmanager. Agemin bewaart die niet.";
+
+/* Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both. */
+"Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both." = "Schrijf het versleutelde bestand als tekst in plaats van binair, voor e-mail, chat en configuratiebestanden. age leest beide.";
+
+/* you */
+"you" = "jij";
+
+/* You can still encrypt or decrypt one file per day. Available today: %lld. */
+"You can still encrypt or decrypt one file per day. Available today: %lld." = "U kunt nog steeds één bestand per dag versleutelen of ontsleutelen. Vandaag beschikbaar: %lld.";
+
+/* You have Agemin Pro. */
+"You have Agemin Pro." = "Je hebt Agemin Pro.";
+
+/* Your Pro trial is active. */
+"Your Pro trial is active." = "Je Pro-proefperiode is actief.";
+
+/* · you choose the folder when you encrypt */
+"· you choose the folder when you encrypt" = "· je kiest de map bij het versleutelen";
