@@ -1,0 +1,904 @@
+/* Agemin — hi localization. Each comment shows the English source text. */
+
+/*  and armor */
+" and armor" = " और ASCII armor";
+
+/* %@ %@ of %@ */
+"%@ %@ of %@" = "%@ %@, कुल %@";
+
+/* %@ could not be read. */
+"%@ could not be read." = "%@ पढ़ी नहीं जा सकी।";
+
+/* %@ could not be written. */
+"%@ could not be written." = "%@ लिखी नहीं जा सकी।";
+
+/* %@ is protected with a passphrase. */
+"%@ is protected with a passphrase." = "%@ पासफ़्रेज़ से सुरक्षित है।";
+
+/* %@ keys are not supported by age. */
+"%@ keys are not supported by age." = "age %@ कुंजियों का समर्थन नहीं करता।";
+
+/* %@ per year */
+"%@ per year" = "%@ प्रति वर्ष";
+
+/* %@ · %@ more than the original for the header%@ */
+"%@ · %@ more than the original for the header%@" = "%@ · मूल फ़ाइल से %@ अधिक, कारण: हेडर%@";
+
+/* %@.pub already exists in the recipients folder. */
+"%@.pub already exists in the recipients folder." = "प्राप्तकर्ता फ़ोल्डर में %@.pub पहले से मौजूद है।";
+
+/* %lld identities */
+"%lld identities" = "%lld पहचानें";
+
+/* %lld identities · %lld usable */
+"%lld identities · %lld usable" = "%lld पहचानें · %lld उपयोग योग्य";
+
+/* %lld keys */
+"%lld keys" = "%lld कुंजियां";
+
+/* %lld keys tried */
+"%lld keys tried" = "आज़माई गई कुंजियां: %lld";
+
+/* %lld of %lld recipients selected */
+"%lld of %lld recipients selected" = "%lld प्राप्तकर्ता चुने गए, कुल %lld";
+
+/* %lld recipients */
+"%lld recipients" = "%lld प्राप्तकर्ता";
+
+/* %lld recipients · %lld usable */
+"%lld recipients · %lld usable" = "%lld प्राप्तकर्ता · %lld उपयोग योग्य";
+
+/* 1 identity */
+"1 identity" = "1 पहचान";
+
+/* 1 recipient */
+"1 recipient" = "1 प्राप्तकर्ता";
+
+/* 30 days of full access */
+"30 days of full access" = "30 दिनों की पूर्ण ऐक्सेस";
+
+/* A file is still being processed. */
+"A file is still being processed." = "एक फ़ाइल अभी भी प्रोसेस हो रही है।";
+
+/* A header line is neither a recipient nor the closing marker. */
+"A header line is neither a recipient nor the closing marker." = "हेडर की एक पंक्ति न तो प्राप्तकर्ता है और न ही समापन चिह्न।";
+
+/* A header line is too long. */
+"A header line is too long." = "हेडर की एक पंक्ति बहुत लंबी है।";
+
+/* A passphrase cannot be combined with other recipients. */
+"A passphrase cannot be combined with other recipients." = "पासफ़्रेज़ को अन्य प्राप्तकर्ताओं के साथ नहीं मिलाया जा सकता।";
+
+/* A passphrase entry must be the only recipient. */
+"A passphrase entry must be the only recipient." = "पासफ़्रेज़ प्रविष्टि ही एकमात्र प्राप्तकर्ता होनी चाहिए।";
+
+/* A recipient body is not valid base64. */
+"A recipient body is not valid base64." = "एक प्राप्तकर्ता की बॉडी मान्य base64 नहीं है।";
+
+/* A recipient body line is malformed. */
+"A recipient body line is malformed." = "एक प्राप्तकर्ता की बॉडी पंक्ति का फ़ॉर्मैट ग़लत है।";
+
+/* A recipient line is malformed. */
+"A recipient line is malformed." = "एक प्राप्तकर्ता पंक्ति का फ़ॉर्मैट ग़लत है।";
+
+/* About Agemin */
+"About Agemin" = "Agemin के बारे में";
+
+/* Action */
+"Action" = "कार्रवाई";
+
+/* Add */
+"Add" = "जोड़ें";
+
+/* Add a public key on the Recipients page */
+"Add a public key on the Recipients page" = "प्राप्तकर्ता पेज पर सार्वजनिक कुंजी जोड़ें";
+
+/* Add an identity that can decrypt this file. */
+"Add an identity that can decrypt this file." = "ऐसी पहचान जोड़ें जो इस फ़ाइल को डिक्रिप्ट कर सके।";
+
+/* Add Key File */
+"Add Key File" = "कुंजी फ़ाइल जोड़ें";
+
+/* Add Key File… */
+"Add Key File…" = "कुंजी फ़ाइल जोड़ें…";
+
+/* Add Recipient */
+"Add Recipient" = "प्राप्तकर्ता जोड़ें";
+
+/* Add Recipient… */
+"Add Recipient…" = "प्राप्तकर्ता जोड़ें…";
+
+/* Add to Recipients */
+"Add to Recipients" = "प्राप्तकर्ताओं में जोड़ें";
+
+/* added */
+"added" = "जोड़ा गया";
+
+/* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
+"After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "परीक्षण अवधि के बाद भी आप प्रतिदिन एक फ़ाइल एन्क्रिप्ट या डिक्रिप्ट कर सकते हैं। कुंजियां पढ़ना, फ़ाइलें जांचना और कुंजियां बनाना असीमित रहता है।";
+
+/* age encryption, without the terminal. */
+"age encryption, without the terminal." = "age एन्क्रिप्शन, बिना टर्मिनल के।";
+
+/* age key */
+"age key" = "age कुंजी";
+
+/* age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA… */
+"age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA…" = "age1… या ssh-ed25519 AAAA… या ssh-rsa AAAA…";
+
+/* Agemin could not use that folder */
+"Agemin could not use that folder" = "Agemin उस फ़ोल्डर का उपयोग नहीं कर सका";
+
+/* Agemin encrypts files, not folders. */
+"Agemin encrypts files, not folders." = "Agemin फ़ाइलें एन्क्रिप्ट करता है, फ़ोल्डर नहीं।";
+
+/* Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged. */
+"Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged." = "आपके पहले 30 दिनों के लिए Agemin पूरी तरह अनलॉक है। कोई सदस्यता शुरू नहीं होती और आपसे कोई शुल्क नहीं लिया जाएगा।";
+
+/* Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice. */
+"Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice." = "Agemin वहां मौजूद .pub फ़ाइलों की सूची दिखाता है और आपको नई फ़ाइलें जोड़ने देता है। कोई भी फ़ोल्डर चलेगा; ~/.age एक आम विकल्प है।";
+
+/* Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually. */
+"Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually." = "Agemin वहां (आमतौर पर ~/.ssh) मिलने वाली निजी कुंजियों की सूची दिखाता है और उनसे डिक्रिप्ट करता है। कहीं और रखी कुंजियां एक-एक करके जोड़ी जा सकती हैं।";
+
+/* Agemin Pro */
+"Agemin Pro" = "Agemin Pro";
+
+/* Agemin Pro Lifetime · %@ */
+"Agemin Pro Lifetime · %@" = "Agemin Pro आजीवन · %@";
+
+/* Agemin Pro Yearly */
+"Agemin Pro Yearly" = "Agemin Pro वार्षिक";
+
+/* Agemin Pro… */
+"Agemin Pro…" = "Agemin Pro…";
+
+/* Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them. */
+"Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them." = "Agemin प्राप्तकर्ता फ़ोल्डर, पहचान फ़ोल्डर और अलग से जोड़ी गई कुंजी फ़ाइलों के लिए अपनी सहेजी गई अनुमतियां हटा देता है। कुछ भी मिटाया नहीं जाता। उनका उपयोग जारी रखने के लिए उन्हें फिर से चुनें।";
+
+/* Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed. */
+"Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed." = "Agemin अवतार को इस कुंजी के फ़िंगरप्रिंट के अंतर्गत संग्रहीत करता है। आपके कुंजी फ़ोल्डरों में कुछ भी नहीं बदलता।";
+
+/* alice */
+"alice" = "alice";
+
+/* All */
+"All" = "सभी";
+
+/* An age public key has 32 bytes. */
+"An age public key has 32 bytes." = "age सार्वजनिक कुंजी 32 बाइट की होती है।";
+
+/* An age secret key has 32 bytes. */
+"An age secret key has 32 bytes." = "age निजी कुंजी 32 बाइट की होती है।";
+
+/* An ssh-ed25519 recipient entry is malformed. */
+"An ssh-ed25519 recipient entry is malformed." = "एक ssh-ed25519 प्राप्तकर्ता प्रविष्टि का फ़ॉर्मैट ग़लत है।";
+
+/* An ssh-rsa recipient entry is malformed. */
+"An ssh-rsa recipient entry is malformed." = "एक ssh-rsa प्राप्तकर्ता प्रविष्टि का फ़ॉर्मैट ग़लत है।";
+
+/* An X25519 recipient entry has the wrong size. */
+"An X25519 recipient entry has the wrong size." = "एक X25519 प्राप्तकर्ता प्रविष्टि का आकार ग़लत है।";
+
+/* An X25519 recipient entry is malformed. */
+"An X25519 recipient entry is malformed." = "एक X25519 प्राप्तकर्ता प्रविष्टि का फ़ॉर्मैट ग़लत है।";
+
+/* Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one. */
+"Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one." = "पासफ़्रेज़ जानने वाला कोई भी व्यक्ति फ़ाइल खोल सकता है। age इसे scrypt से प्रोसेस करता है, इसलिए जटिल पासफ़्रेज़ से ज़्यादा लंबा पासफ़्रेज़ मायने रखता है।";
+
+/* ASCII armor */
+"ASCII armor" = "ASCII armor";
+
+/* Avatar for %@ */
+"Avatar for %@" = "%@ का अवतार";
+
+/* Cancel */
+"Cancel" = "रद्द करें";
+
+/* Change */
+"Change" = "बदलें";
+
+/* Choose */
+"Choose" = "चुनें";
+
+/* Choose a file to encrypt. */
+"Choose a file to encrypt." = "एन्क्रिप्ट करने के लिए फ़ाइल चुनें।";
+
+/* Choose a yearly subscription or lifetime purchase at any time to remove the daily limit. */
+"Choose a yearly subscription or lifetime purchase at any time to remove the daily limit." = "दैनिक सीमा हटाने के लिए किसी भी समय वार्षिक सदस्यता या आजीवन खरीद चुनें।";
+
+/* Choose an age identity file or an SSH private key */
+"Choose an age identity file or an SSH private key" = "age पहचान फ़ाइल या SSH निजी कुंजी चुनें";
+
+/* Choose an encrypted file. */
+"Choose an encrypted file." = "एक एन्क्रिप्टेड फ़ाइल चुनें।";
+
+/* Choose an image for this key's avatar */
+"Choose an image for this key's avatar" = "इस कुंजी के अवतार के लिए छवि चुनें";
+
+/* Choose File */
+"Choose File" = "फ़ाइल चुनें";
+
+/* Choose File to Decrypt… */
+"Choose File to Decrypt…" = "डिक्रिप्ट करने के लिए फ़ाइल चुनें…";
+
+/* Choose File to Encrypt… */
+"Choose File to Encrypt…" = "एन्क्रिप्ट करने के लिए फ़ाइल चुनें…";
+
+/* Choose Folder */
+"Choose Folder" = "फ़ोल्डर चुनें";
+
+/* Choose Identities Folder… */
+"Choose Identities Folder…" = "पहचान फ़ोल्डर चुनें…";
+
+/* Choose Image */
+"Choose Image" = "छवि चुनें";
+
+/* Choose Recipients Folder… */
+"Choose Recipients Folder…" = "प्राप्तकर्ता फ़ोल्डर चुनें…";
+
+/* Choose the encrypted file, usually ending in .age */
+"Choose the encrypted file, usually ending in .age" = "एन्क्रिप्टेड फ़ाइल चुनें, जो आमतौर पर .age पर समाप्त होती है";
+
+/* Choose the file to encrypt */
+"Choose the file to encrypt" = "एन्क्रिप्ट करने के लिए फ़ाइल चुनें";
+
+/* Choose the folder with the .pub files of the people you encrypt for, usually ~/.age. */
+"Choose the folder with the .pub files of the people you encrypt for, usually ~/.age." = "वह फ़ोल्डर चुनें जिसमें उन लोगों की .pub फ़ाइलें हैं जिनके लिए आप एन्क्रिप्ट करते हैं, आमतौर पर ~/.age।";
+
+/* Choose the folder with the .pub files you encrypt for, usually ~/.age */
+"Choose the folder with the .pub files you encrypt for, usually ~/.age" = "वह फ़ोल्डर चुनें जिसमें वे .pub फ़ाइलें हैं जिनके लिए आप एन्क्रिप्ट करते हैं, आमतौर पर ~/.age";
+
+/* Choose the folder with your private keys, usually ~/.ssh */
+"Choose the folder with your private keys, usually ~/.ssh" = "वह फ़ोल्डर चुनें जिसमें आपकी निजी कुंजियां हैं, आमतौर पर ~/.ssh";
+
+/* Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page. */
+"Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page." = "वह फ़ोल्डर चुनें जिसमें आपकी SSH कुंजियां हैं (आमतौर पर ~/.ssh), या पहचान पेज पर age पहचान फ़ाइल जोड़ें।";
+
+/* Choose where to save the decrypted file */
+"Choose where to save the decrypted file" = "चुनें कि डिक्रिप्टेड फ़ाइल कहां सेव करनी है";
+
+/* Choose where to save the encrypted file */
+"Choose where to save the encrypted file" = "चुनें कि एन्क्रिप्टेड फ़ाइल कहां सेव करनी है";
+
+/* Choose your recipients folder */
+"Choose your recipients folder" = "अपना प्राप्तकर्ता फ़ोल्डर चुनें";
+
+/* Choose your SSH folder */
+"Choose your SSH folder" = "अपना SSH फ़ोल्डर चुनें";
+
+/* Clear search */
+"Clear search" = "खोज साफ़ करें";
+
+/* Clear the file */
+"Clear the file" = "फ़ाइल हटाएं";
+
+/* Click an avatar to change it, or drop an image onto it. */
+"Click an avatar to change it, or drop an image onto it." = "अवतार बदलने के लिए उस पर क्लिक करें, या उस पर कोई छवि ड्रॉप करें।";
+
+/* Click to change the avatar, or drop an image on it */
+"Click to change the avatar, or drop an image on it" = "अवतार बदलने के लिए क्लिक करें, या उस पर कोई छवि ड्रॉप करें";
+
+/* Compress the folder into an archive first, then open the archive. */
+"Compress the folder into an archive first, then open the archive." = "पहले फ़ोल्डर को कंप्रेस करके आर्काइव बनाएं, फिर आर्काइव खोलें।";
+
+/* Confirm passphrase */
+"Confirm passphrase" = "पासफ़्रेज़ की पुष्टि करें";
+
+/* Contacting the App Store… */
+"Contacting the App Store…" = "App Store से संपर्क किया जा रहा है…";
+
+/* Continue */
+"Continue" = "जारी रखें";
+
+/* Copy */
+"Copy" = "कॉपी करें";
+
+/* Copy Key */
+"Copy Key" = "कुंजी कॉपी करें";
+
+/* Copy Path */
+"Copy Path" = "पाथ कॉपी करें";
+
+/* Copy Public Key */
+"Copy Public Key" = "सार्वजनिक कुंजी कॉपी करें";
+
+/* Decrypt */
+"Decrypt" = "डिक्रिप्ट करें";
+
+/* Decrypt This File */
+"Decrypt This File" = "यह फ़ाइल डिक्रिप्ट करें";
+
+/* Decrypt with */
+"Decrypt with" = "इससे डिक्रिप्ट करें";
+
+/* Decrypted */
+"Decrypted" = "डिक्रिप्ट हो गई";
+
+/* Decrypting */
+"Decrypting" = "डिक्रिप्ट हो रहा है";
+
+/* Decryption failed */
+"Decryption failed" = "डिक्रिप्शन विफल";
+
+/* Decrypt… */
+"Decrypt…" = "डिक्रिप्ट करें…";
+
+/* Delete */
+"Delete" = "मिटाएं";
+
+/* Delete %@? */
+"Delete %@?" = "%@ मिटाएं?";
+
+/* Delete the .pub file */
+"Delete the .pub file" = ".pub फ़ाइल मिटाएं";
+
+/* Drop a file here to encrypt it */
+"Drop a file here to encrypt it" = "एन्क्रिप्ट करने के लिए यहां फ़ाइल ड्रॉप करें";
+
+/* Drop a file, not a folder. Compress the folder first, then drop the archive. */
+"Drop a file, not a folder. Compress the folder first, then drop the archive." = "फ़ाइल ड्रॉप करें, फ़ोल्डर नहीं। पहले फ़ोल्डर को कंप्रेस करें, फिर आर्काइव ड्रॉप करें।";
+
+/* Drop an age file here to decrypt it */
+"Drop an age file here to decrypt it" = "डिक्रिप्ट करने के लिए यहां age फ़ाइल ड्रॉप करें";
+
+/* Encrypt */
+"Encrypt" = "एन्क्रिप्ट करें";
+
+/* Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file. */
+"Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file." = "फ़ाइल को उन लोगों की सार्वजनिक कुंजियों के लिए एन्क्रिप्ट करें जिन्हें उसे खोलना चाहिए, या पासफ़्रेज़ से। परिणाम एक मानक age फ़ाइल होती है।";
+
+/* Encrypt for */
+"Encrypt for" = "इनके लिए एन्क्रिप्ट करें";
+
+/* Encrypted */
+"Encrypted" = "एन्क्रिप्ट हो गई";
+
+/* Encrypted for */
+"Encrypted for" = "इनके लिए एन्क्रिप्टेड";
+
+/* Encrypting */
+"Encrypting" = "एन्क्रिप्ट हो रहा है";
+
+/* Encryption failed */
+"Encryption failed" = "एन्क्रिप्शन विफल";
+
+/* Encrypt… */
+"Encrypt…" = "एन्क्रिप्ट करें…";
+
+/* Enter a passphrase. */
+"Enter a passphrase." = "पासफ़्रेज़ दर्ज करें।";
+
+/* Enter the file's passphrase. */
+"Enter the file's passphrase." = "फ़ाइल का पासफ़्रेज़ दर्ज करें।";
+
+/* Enter the passphrase below */
+"Enter the passphrase below" = "नीचे पासफ़्रेज़ दर्ज करें";
+
+/* Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa). */
+"Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa)." = "age सार्वजनिक कुंजी (age1…) या SSH सार्वजनिक कुंजी (ssh-ed25519 या ssh-rsa) अपेक्षित थी।";
+
+/* Expires %@ */
+"Expires %@" = "%@ को समाप्त";
+
+/* Files */
+"Files" = "फ़ाइलें";
+
+/* Fill both fields with a random passphrase and show it once */
+"Fill both fields with a random passphrase and show it once" = "दोनों फ़ील्ड में एक रैंडम पासफ़्रेज़ भरें और उसे एक बार दिखाएं";
+
+/* Filter identities */
+"Filter identities" = "पहचानें फ़िल्टर करें";
+
+/* Filter recipients */
+"Filter recipients" = "प्राप्तकर्ता फ़िल्टर करें";
+
+/* Find… */
+"Find…" = "ढूंढें…";
+
+/* Forget Access */
+"Forget Access" = "ऐक्सेस भूल जाएं";
+
+/* Forget access to the key folders? */
+"Forget access to the key folders?" = "कुंजी फ़ोल्डरों का ऐक्सेस भूल जाएं?";
+
+/* Forget Folder Access… */
+"Forget Folder Access…" = "फ़ोल्डर ऐक्सेस भूल जाएं…";
+
+/* Free · Available today: %lld */
+"Free · Available today: %lld" = "मुफ़्त · आज उपलब्ध: %lld";
+
+/* Generate */
+"Generate" = "जनरेट करें";
+
+/* Give the recipient a name. */
+"Give the recipient a name." = "प्राप्तकर्ता को एक नाम दें।";
+
+/* Hide this card */
+"Hide this card" = "यह कार्ड छिपाएं";
+
+/* Identities */
+"Identities" = "पहचान";
+
+/* Identity file */
+"Identity file" = "पहचान फ़ाइल";
+
+/* Initials */
+"Initials" = "आद्याक्षर";
+
+/* Initials color %lld */
+"Initials color %lld" = "आद्याक्षर रंग %lld";
+
+/* Keep Working */
+"Keep Working" = "काम जारी रखें";
+
+/* Key */
+"Key" = "कुंजी";
+
+/* Keys */
+"Keys" = "कुंजियां";
+
+/* Lifetime */
+"Lifetime" = "आजीवन";
+
+/* Loading App Store products… */
+"Loading App Store products…" = "App Store उत्पाद लोड हो रहे हैं…";
+
+/* Loading keys… */
+"Loading keys…" = "कुंजियां लोड हो रही हैं…";
+
+/* macOS did not grant lasting access to that folder. Choose it again, or choose another folder. */
+"macOS did not grant lasting access to that folder. Choose it again, or choose another folder." = "macOS ने उस फ़ोल्डर का स्थायी ऐक्सेस नहीं दिया। उसे फिर से चुनें, या कोई दूसरा फ़ोल्डर चुनें।";
+
+/* Manage Subscription */
+"Manage Subscription" = "सदस्यता प्रबंधित करें";
+
+/* matches */
+"matches" = "मेल खाती है";
+
+/* Matches %@ */
+"Matches %@" = "%@ से मेल खाती है";
+
+/* Matching keys first. Protected keys ask for their passphrase. */
+"Matching keys first. Protected keys ask for their passphrase." = "मेल खाने वाली कुंजियां पहले। सुरक्षित कुंजियां अपना पासफ़्रेज़ मांगती हैं।";
+
+/* Name */
+"Name" = "नाम";
+
+/* New age Key */
+"New age Key" = "नई age कुंजी";
+
+/* New age key saved */
+"New age key saved" = "नई age कुंजी सेव हो गई";
+
+/* New age Key… */
+"New age Key…" = "नई age कुंजी…";
+
+/* New recipient */
+"New recipient" = "नया प्राप्तकर्ता";
+
+/* No active purchase was found. */
+"No active purchase was found." = "कोई सक्रिय खरीद नहीं मिली।";
+
+/* No Agemin Pro purchase was found for this Apple Account. */
+"No Agemin Pro purchase was found for this Apple Account." = "इस Apple खाते के लिए कोई Agemin Pro खरीद नहीं मिली।";
+
+/* No identities yet */
+"No identities yet" = "अभी कोई पहचान नहीं";
+
+/* No matching key */
+"No matching key" = "कोई मेल खाती कुंजी नहीं";
+
+/* No recipients folder yet */
+"No recipients folder yet" = "अभी कोई प्राप्तकर्ता फ़ोल्डर नहीं";
+
+/* None */
+"None" = "कोई नहीं";
+
+/* None of the identities can decrypt this file. */
+"None of the identities can decrypt this file." = "कोई भी पहचान इस फ़ाइल को डिक्रिप्ट नहीं कर सकती।";
+
+/* None of your identities matches this file. Add the key it was encrypted for on the Identities page. */
+"None of your identities matches this file. Add the key it was encrypted for on the Identities page." = "आपकी कोई भी पहचान इस फ़ाइल से मेल नहीं खाती। पहचान पेज पर वह कुंजी जोड़ें जिसके लिए इसे एन्क्रिप्ट किया गया था।";
+
+/* not a key */
+"not a key" = "कुंजी नहीं";
+
+/* OK */
+"OK" = "OK";
+
+/* Open an age file with one of your keys, or with the passphrase it was encrypted with. */
+"Open an age file with one of your keys, or with the passphrase it was encrypted with." = "age फ़ाइल को अपनी किसी कुंजी से खोलें, या उस पासफ़्रेज़ से जिससे उसे एन्क्रिप्ट किया गया था।";
+
+/* Options */
+"Options" = "विकल्प";
+
+/* Output */
+"Output" = "आउटपुट";
+
+/* Pages */
+"Pages" = "पेज";
+
+/* Passphrase */
+"Passphrase" = "पासफ़्रेज़";
+
+/* passphrase */
+"passphrase" = "पासफ़्रेज़";
+
+/* Passphrase · work factor %lld */
+"Passphrase · work factor %lld" = "पासफ़्रेज़ · वर्क फ़ैक्टर %lld";
+
+/* Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends. */
+"Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends." = "भुगतान आपके Apple खाते से लिया जाता है। वार्षिक सदस्यता अपने आप नवीनीकृत होती है, जब तक आप मौजूदा अवधि समाप्त होने से कम से कम एक दिन पहले App Store सेटिंग्ज़ में उसे रद्द न कर दें।";
+
+/* Privacy Policy */
+"Privacy Policy" = "गोपनीयता नीति";
+
+/* Privacy Policy… */
+"Privacy Policy…" = "गोपनीयता नीति…";
+
+/* Pro */
+"Pro" = "Pro";
+
+/* Pro purchases are unavailable right now. Try again later. */
+"Pro purchases are unavailable right now. Try again later." = "Pro खरीद अभी उपलब्ध नहीं है। बाद में पुन: प्रयास करें।";
+
+/* Pro trial · %lld days remaining */
+"Pro trial · %lld days remaining" = "Pro ट्रायल · %lld दिन शेष";
+
+/* Pro trial · 1 day remaining */
+"Pro trial · 1 day remaining" = "Pro ट्रायल · 1 दिन शेष";
+
+/* Pro trial · ends %@ */
+"Pro trial · ends %@" = "Pro ट्रायल · %@ को समाप्त";
+
+/* Pro trial · first payment %@ */
+"Pro trial · first payment %@" = "Pro ट्रायल · पहला भुगतान %@";
+
+/* Pro trial · until %@ */
+"Pro trial · until %@" = "Pro ट्रायल · %@ तक";
+
+/* Public key */
+"Public key" = "सार्वजनिक कुंजी";
+
+/* Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file. */
+"Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file." = "वे सार्वजनिक कुंजियां जिनके लिए आप एन्क्रिप्ट करते हैं। फ़ोल्डर की हर .pub फ़ाइल एक प्राप्तकर्ता है, जिसका नाम फ़ाइल के नाम पर है।";
+
+/* Purchase */
+"Purchase" = "खरीदें";
+
+/* Quit Anyway */
+"Quit Anyway" = "फिर भी छोड़ें";
+
+/* Quitting now cancels it and removes the partial output. */
+"Quitting now cancels it and removes the partial output." = "अभी छोड़ने से यह रद्द हो जाएगा और अधूरा आउटपुट हटा दिया जाएगा।";
+
+/* Read the folder again */
+"Read the folder again" = "फ़ोल्डर फिर से पढ़ें";
+
+/* Recipients */
+"Recipients" = "प्राप्तकर्ता";
+
+/* Refresh Keys */
+"Refresh Keys" = "कुंजियां रीफ़्रेश करें";
+
+/* Remove from the list */
+"Remove from the list" = "सूची से हटाएं";
+
+/* Renews %@ */
+"Renews %@" = "%@ को नवीनीकरण";
+
+/* Restore Purchases */
+"Restore Purchases" = "खरीदारी पुनर्स्थापित करें";
+
+/* Restoring… */
+"Restoring…" = "बहाल किया जा रहा है…";
+
+/* Reveal */
+"Reveal" = "दिखाएं";
+
+/* Reveal in Finder */
+"Reveal in Finder" = "Finder में दिखाएं";
+
+/* Save */
+"Save" = "सेव करें";
+
+/* Save Key */
+"Save Key" = "कुंजी सेव करें";
+
+/* Save Recipient */
+"Save Recipient" = "प्राप्तकर्ता सेव करें";
+
+/* Save the new identity file somewhere private because it holds the secret key */
+"Save the new identity file somewhere private because it holds the secret key" = "नई पहचान फ़ाइल को किसी निजी स्थान पर सेव करें; इसमें निजी कुंजी है";
+
+/* Saved as */
+"Saved as" = "इस नाम से सेव की गई";
+
+/* Saved as <name>.pub in the recipients folder. */
+"Saved as <name>.pub in the recipients folder." = "प्राप्तकर्ता फ़ोल्डर में <name>.pub के रूप में सेव की गई।";
+
+/* Select at least one recipient. */
+"Select at least one recipient." = "कम से कम एक प्राप्तकर्ता चुनें।";
+
+/* SHA-256 */
+"SHA-256" = "SHA-256";
+
+/* Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it. */
+"Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it." = "सार्वजनिक कुंजी उन लोगों के साथ साझा करें जिन्हें आपके लिए एन्क्रिप्ट करना चाहिए। पहचान फ़ाइल को निजी रखें; इसे केवल आपका खाता पढ़ सकता है।";
+
+/* Shared with your family */
+"Shared with your family" = "आपके परिवार के साथ साझा";
+
+/* Size */
+"Size" = "आकार";
+
+/* SSH key (Ed25519) */
+"SSH key (Ed25519)" = "SSH कुंजी (Ed25519)";
+
+/* SSH key (RSA) */
+"SSH key (RSA)" = "SSH कुंजी (RSA)";
+
+/* Terms of Use (EULA) */
+"Terms of Use (EULA)" = "उपयोग की शर्तें (EULA)";
+
+/* That file is not an image Agemin can read. */
+"That file is not an image Agemin can read." = "वह फ़ाइल ऐसी छवि नहीं है जिसे Agemin पढ़ सके।";
+
+/* The App Store could not verify this purchase. */
+"The App Store could not verify this purchase." = "App Store इस खरीद को सत्यापित नहीं कर सका।";
+
+/* The armor header is missing. */
+"The armor header is missing." = "ASCII armor हेडर मौजूद नहीं है।";
+
+/* The armored file could not be read. %@ */
+"The armored file could not be read. %@" = "ASCII armor फ़ाइल पढ़ी नहीं जा सकी। %@";
+
+/* The armored file ends before its footer. */
+"The armored file ends before its footer." = "ASCII armor फ़ाइल अपने फ़ुटर से पहले ही समाप्त हो जाती है।";
+
+/* The armored text is incomplete. */
+"The armored text is incomplete." = "ASCII armor टेक्स्ट अधूरा है।";
+
+/* The armored text is not valid base64. */
+"The armored text is not valid base64." = "ASCII armor टेक्स्ट मान्य base64 नहीं है।";
+
+/* The decrypted file cannot replace the encrypted file. Choose a different name. */
+"The decrypted file cannot replace the encrypted file. Choose a different name." = "डिक्रिप्टेड फ़ाइल एन्क्रिप्टेड फ़ाइल की जगह नहीं ले सकती। कोई दूसरा नाम चुनें।";
+
+/* The decrypted file does not hold an age secret key. */
+"The decrypted file does not hold an age secret key." = "डिक्रिप्टेड फ़ाइल में age निजी कुंजी नहीं है।";
+
+/* The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one. */
+"The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one." = "डिक्रिप्टेड फ़ाइल को केवल आपका उपयोगकर्ता खाता पढ़ सकता है। यदि भेजने वाले ने आपको चेकसम दिया है, तो उससे मिलान करें।";
+
+/* The encrypted data is corrupt or was modified. */
+"The encrypted data is corrupt or was modified." = "एन्क्रिप्टेड डेटा दूषित है या उसे बदला गया है।";
+
+/* The encrypted file cannot replace the original. Choose a different name. */
+"The encrypted file cannot replace the original. Choose a different name." = "एन्क्रिप्टेड फ़ाइल मूल फ़ाइल की जगह नहीं ले सकती। कोई दूसरा नाम चुनें।";
+
+/* The file could not be read. */
+"The file could not be read." = "फ़ाइल पढ़ी नहीं जा सकी।";
+
+/* The file ends early. It may be incomplete. */
+"The file ends early. It may be incomplete." = "फ़ाइल समय से पहले समाप्त हो जाती है। यह अधूरी हो सकती है।";
+
+/* The file header was modified or the key is wrong. */
+"The file header was modified or the key is wrong." = "फ़ाइल हेडर बदला गया है या कुंजी ग़लत है।";
+
+/* The file holds no age secret key. */
+"The file holds no age secret key." = "फ़ाइल में कोई age निजी कुंजी नहीं है।";
+
+/* The file is being read. */
+"The file is being read." = "फ़ाइल पढ़ी जा रही है।";
+
+/* The file is not text. */
+"The file is not text." = "फ़ाइल टेक्स्ट नहीं है।";
+
+/* The file is too large to be a key. */
+"The file is too large to be a key." = "फ़ाइल कुंजी होने के लिए बहुत बड़ी है।";
+
+/* The first line is not the age version marker. */
+"The first line is not the age version marker." = "पहली पंक्ति age संस्करण चिह्न नहीं है।";
+
+/* The header authentication line is malformed. */
+"The header authentication line is malformed." = "हेडर प्रमाणीकरण पंक्ति का फ़ॉर्मैट ग़लत है।";
+
+/* The header is not valid text. */
+"The header is not valid text." = "हेडर मान्य टेक्स्ट नहीं है।";
+
+/* The header is too large to be an age file. */
+"The header is too large to be an age file." = "हेडर age फ़ाइल होने के लिए बहुत बड़ा है।";
+
+/* The header lists too many recipients. */
+"The header lists too many recipients." = "हेडर में बहुत अधिक प्राप्तकर्ता सूचीबद्ध हैं।";
+
+/* The identity could not be read. %@ */
+"The identity could not be read. %@" = "पहचान पढ़ी नहीं जा सकी। %@";
+
+/* The identity file could not be saved. */
+"The identity file could not be saved." = "पहचान फ़ाइल सेव नहीं की जा सकी।";
+
+/* The image could not be used */
+"The image could not be used" = "छवि का उपयोग नहीं किया जा सका";
+
+/* The image is larger than %lld pixels on a side. Choose a smaller one. */
+"The image is larger than %lld pixels on a side. Choose a smaller one." = "छवि की एक भुजा %lld पिक्सेल से बड़ी है। कोई छोटी छवि चुनें।";
+
+/* The input is larger than expected. */
+"The input is larger than expected." = "इनपुट अपेक्षा से बड़ा है।";
+
+/* The key file ends early. */
+"The key file ends early." = "कुंजी फ़ाइल समय से पहले समाप्त हो जाती है।";
+
+/* The key file is malformed. */
+"The key file is malformed." = "कुंजी फ़ाइल का फ़ॉर्मैट ग़लत है।";
+
+/* The key file's passphrase settings are invalid. */
+"The key file's passphrase settings are invalid." = "कुंजी फ़ाइल की पासफ़्रेज़ सेटिंग्ज़ अमान्य हैं।";
+
+/* The key is empty. */
+"The key is empty." = "कुंजी खाली है।";
+
+/* The key is protected with the %@ cipher, which is not supported. */
+"The key is protected with the %@ cipher, which is not supported." = "कुंजी %@ सिफ़र से सुरक्षित है, जो समर्थित नहीं है।";
+
+/* The key is saved as <name>.pub in the recipients folder. */
+"The key is saved as <name>.pub in the recipients folder." = "कुंजी प्राप्तकर्ता फ़ोल्डर में <name>.pub के रूप में सेव की जाती है।";
+
+/* The key uses %lld key derivation rounds. Agemin supports up to %lld. */
+"The key uses %lld key derivation rounds. Agemin supports up to %lld." = "कुंजी %lld कुंजी डेरिवेशन राउंड उपयोग करती है; Agemin अधिकतम %lld का समर्थन करता है।";
+
+/* The key uses the %@ key derivation, which is not supported. */
+"The key uses the %@ key derivation, which is not supported." = "कुंजी %@ कुंजी डेरिवेशन उपयोग करती है, जो समर्थित नहीं है।";
+
+/* The operation was canceled. */
+"The operation was canceled." = "कार्रवाई रद्द कर दी गई।";
+
+/* The passphrase entry is malformed. */
+"The passphrase entry is malformed." = "पासफ़्रेज़ प्रविष्टि का फ़ॉर्मैट ग़लत है।";
+
+/* The passphrase for %@ is incorrect. Try again. */
+"The passphrase for %@ is incorrect. Try again." = "%@ का पासफ़्रेज़ ग़लत है। पुन: प्रयास करें।";
+
+/* The passphrase is incorrect. */
+"The passphrase is incorrect." = "पासफ़्रेज़ ग़लत है।";
+
+/* The passphrase work factor %lld is too high to try safely. */
+"The passphrase work factor %lld is too high to try safely." = "पासफ़्रेज़ का वर्क फ़ैक्टर %lld सुरक्षित रूप से आज़माने के लिए बहुत अधिक है।";
+
+/* The passphrase work factor is malformed. */
+"The passphrase work factor is malformed." = "पासफ़्रेज़ के वर्क फ़ैक्टर का फ़ॉर्मैट ग़लत है।";
+
+/* The passphrases do not match. */
+"The passphrases do not match." = "पासफ़्रेज़ मेल नहीं खाते।";
+
+/* The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them. */
+"The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them." = "वे निजी कुंजियां जो आपके लिए एन्क्रिप्ट की गई फ़ाइलें खोलती हैं: ~/.ssh की SSH कुंजियां और age पहचान फ़ाइलें। Agemin उन्हें पढ़ता है और कभी नहीं बदलता।";
+
+/* The purchase is awaiting approval. */
+"The purchase is awaiting approval." = "खरीद अनुमोदन की प्रतीक्षा कर रही है।";
+
+/* The recipient could not be deleted. */
+"The recipient could not be deleted." = "प्राप्तकर्ता मिटाया नहीं जा सका।";
+
+/* The recipient could not be saved. */
+"The recipient could not be saved." = "प्राप्तकर्ता सेव नहीं किया जा सका।";
+
+/* The recipient key could not be read. %@ */
+"The recipient key could not be read. %@" = "प्राप्तकर्ता कुंजी पढ़ी नहीं जा सकी। %@";
+
+/* The recipients folder */
+"The recipients folder" = "प्राप्तकर्ता फ़ोल्डर";
+
+/* The recipients folder holds no .pub files yet. */
+"The recipients folder holds no .pub files yet." = "प्राप्तकर्ता फ़ोल्डर में अभी कोई .pub फ़ाइल नहीं है।";
+
+/* The RSA key is malformed. */
+"The RSA key is malformed." = "RSA कुंजी का फ़ॉर्मैट ग़लत है।";
+
+/* The RSA key is too small or malformed. */
+"The RSA key is too small or malformed." = "RSA कुंजी बहुत छोटी है या उसका फ़ॉर्मैट ग़लत है।";
+
+/* The SSH key is not a valid Ed25519 key. */
+"The SSH key is not a valid Ed25519 key." = "SSH कुंजी मान्य Ed25519 कुंजी नहीं है।";
+
+/* The SSH key is not a valid RSA key. */
+"The SSH key is not a valid RSA key." = "SSH कुंजी मान्य RSA कुंजी नहीं है।";
+
+/* The SSH public key is malformed. */
+"The SSH public key is malformed." = "SSH सार्वजनिक कुंजी का फ़ॉर्मैट ग़लत है।";
+
+/* There is text after the armor footer. */
+"There is text after the armor footer." = "ASCII armor फ़ुटर के बाद टेक्स्ट मौजूद है।";
+
+/* This deletes the file from the recipients folder. Files already encrypted for this key are not affected. */
+"This deletes the file from the recipients folder. Files already encrypted for this key are not affected." = "फ़ाइल प्राप्तकर्ता फ़ोल्डर से मिटा दी जाती है। इस कुंजी के लिए पहले से एन्क्रिप्ट की गई फ़ाइलें प्रभावित नहीं होतीं।";
+
+/* This file cannot be read as an age file */
+"This file cannot be read as an age file" = "यह फ़ाइल age फ़ाइल के रूप में नहीं पढ़ी जा सकती";
+
+/* This file is not a key. */
+"This file is not a key." = "यह फ़ाइल कुंजी नहीं है।";
+
+/* This file needs a passphrase. */
+"This file needs a passphrase." = "इस फ़ाइल के लिए पासफ़्रेज़ चाहिए।";
+
+/* This is a secret key. Use the matching public key, which starts with age1. */
+"This is a secret key. Use the matching public key, which starts with age1." = "यह एक निजी कुंजी है। इससे मेल खाती सार्वजनिक कुंजी का उपयोग करें, जो age1 से शुरू होती है।";
+
+/* This is not a valid age public key. */
+"This is not a valid age public key." = "यह मान्य age सार्वजनिक कुंजी नहीं है।";
+
+/* This is not a valid age secret key. */
+"This is not a valid age secret key." = "यह मान्य age निजी कुंजी नहीं है।";
+
+/* This is not an age file. %@ */
+"This is not an age file. %@" = "यह age फ़ाइल नहीं है। %@";
+
+/* This key format is not supported. Use an OpenSSH private key or an age identity file. */
+"This key format is not supported. Use an OpenSSH private key or an age identity file." = "यह कुंजी फ़ॉर्मैट समर्थित नहीं है। OpenSSH निजी कुंजी या age पहचान फ़ाइल का उपयोग करें।";
+
+/* This key produces a weak shared secret and cannot be used. */
+"This key produces a weak shared secret and cannot be used." = "यह कुंजी एक कमज़ोर साझा रहस्य उत्पन्न करती है और इसका उपयोग नहीं किया जा सकता।";
+
+/* This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy. */
+"This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy." = "पासफ़्रेज़ से सुरक्षित यह कुंजी पुराने PEM फ़ॉर्मैट में है। इसे ssh-keygen -p -o से बदलें, या असुरक्षित प्रति का उपयोग करें।";
+
+/* Trial ended */
+"Trial ended" = "ट्रायल समाप्त";
+
+/* Try Again */
+"Try Again" = "पुन: प्रयास करें";
+
+/* Try every usable key */
+"Try every usable key" = "हर उपयोग योग्य कुंजी आज़माएं";
+
+/* Unknown recipient type “%@” */
+"Unknown recipient type “%@”" = "अज्ञात प्राप्तकर्ता प्रकार “%@”";
+
+/* Unlock */
+"Unlock" = "अनलॉक करें";
+
+/* Unlock %@ */
+"Unlock %@" = "%@ अनलॉक करें";
+
+/* Unlock %@ with Agemin Pro. */
+"Unlock %@ with Agemin Pro." = "Agemin Pro से %@ अनलॉक करें।";
+
+/* Until %@ */
+"Until %@" = "%@ तक";
+
+/* Use Image */
+"Use Image" = "छवि का उपयोग करें";
+
+/* Use Initials */
+"Use Initials" = "आद्याक्षर का उपयोग करें";
+
+/* Valid %@ key */
+"Valid %@ key" = "मान्य %@ कुंजी";
+
+/* Wait for the current operation to finish. */
+"Wait for the current operation to finish." = "मौजूदा कार्रवाई पूरी होने की प्रतीक्षा करें।";
+
+/* Write it down or store it in a password manager. Agemin does not keep it. */
+"Write it down or store it in a password manager. Agemin does not keep it." = "इसे लिख लें या पासवर्ड मैनेजर में रखें। Agemin इसे नहीं रखता।";
+
+/* Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both. */
+"Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both." = "एन्क्रिप्टेड फ़ाइल को बाइनरी के बजाय टेक्स्ट के रूप में लिखें, ईमेल, चैट और कॉन्फ़िगरेशन फ़ाइलों के लिए। age दोनों पढ़ता है।";
+
+/* you */
+"you" = "आप";
+
+/* You can still encrypt or decrypt one file per day. Available today: %lld. */
+"You can still encrypt or decrypt one file per day. Available today: %lld." = "आप अब भी प्रतिदिन एक फ़ाइल एन्क्रिप्ट या डिक्रिप्ट कर सकते हैं। आज उपलब्ध: %lld।";
+
+/* You have Agemin Pro. */
+"You have Agemin Pro." = "आपके पास Agemin Pro है।";
+
+/* Your Pro trial is active. */
+"Your Pro trial is active." = "आपका Pro ट्रायल सक्रिय है।";
+
+/* · you choose the folder when you encrypt */
+"· you choose the folder when you encrypt" = "· एन्क्रिप्ट करते समय आप फ़ोल्डर चुनते हैं";
