@@ -334,3 +334,30 @@ private struct KeysCommands: View {
             .keyboardShortcut("f", modifiers: .command)
     }
 }
+
+/// The View menu's page toggles, one per page, on ⌘1 to ⌘4.
+private struct ViewCommands: View {
+    @ObservedObject var model: AppModel
+
+    // pageToggle(title, page, key): A checkmarked menu item that shows the page on ⌘ plus the key.
+    private func pageToggle(_ title: String, _ page: AppModel.Page, key: KeyEquivalent) -> some View {
+        Toggle(localized(title), isOn: Binding(
+            get: { model.page == page },
+            set: { selected in
+                // Clicking the current page must not leave every page unselected.
+                guard selected else { return }
+                model.page = page
+            }
+        ))
+        .keyboardShortcut(key, modifiers: .command)
+        .disabled(model.isPreparingDecryption)
+    }
+
+    var body: some View {
+        pageToggle("Encrypt", .encrypt, key: "1")
+        pageToggle("Decrypt", .decrypt, key: "2")
+        pageToggle("Recipients", .recipients, key: "3")
+        pageToggle("Identities", .identities, key: "4")
+        Divider()
+    }
+}
