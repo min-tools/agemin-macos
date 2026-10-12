@@ -1,0 +1,904 @@
+/* Agemin — ja localization. Each comment shows the English source text. */
+
+/*  and armor */
+" and armor" = "とASCII armor";
+
+/* %@ %@ of %@ */
+"%@ %@ of %@" = "%@ %@ / %@";
+
+/* %@ could not be read. */
+"%@ could not be read." = "%@を読み込めませんでした。";
+
+/* %@ could not be written. */
+"%@ could not be written." = "%@を書き込めませんでした。";
+
+/* %@ is protected with a passphrase. */
+"%@ is protected with a passphrase." = "%@はパスフレーズで保護されています。";
+
+/* %@ keys are not supported by age. */
+"%@ keys are not supported by age." = "%@鍵はageでサポートされていません。";
+
+/* %@ per year */
+"%@ per year" = "%@ / 年";
+
+/* %@ · %@ more than the original for the header%@ */
+"%@ · %@ more than the original for the header%@" = "%@ · 元のファイルより%@大きい（ヘッダ%@の分）";
+
+/* %@.pub already exists in the recipients folder. */
+"%@.pub already exists in the recipients folder." = "%@.pubはすでに受信者フォルダにあります。";
+
+/* %lld identities */
+"%lld identities" = "%lld個のアイデンティティ";
+
+/* %lld identities · %lld usable */
+"%lld identities · %lld usable" = "%lld個のアイデンティティ · %lld個が使用可能";
+
+/* %lld keys */
+"%lld keys" = "%lld個の鍵";
+
+/* %lld keys tried */
+"%lld keys tried" = "%lld個の鍵を試行";
+
+/* %lld of %lld recipients selected */
+"%lld of %lld recipients selected" = "%lld/%lld人の受信者を選択中";
+
+/* %lld recipients */
+"%lld recipients" = "%lld人の受信者";
+
+/* %lld recipients · %lld usable */
+"%lld recipients · %lld usable" = "%lld人の受信者 · %lld人が使用可能";
+
+/* 1 identity */
+"1 identity" = "1個のアイデンティティ";
+
+/* 1 recipient */
+"1 recipient" = "1人の受信者";
+
+/* 30 days of full access */
+"30 days of full access" = "30日間のフルアクセス";
+
+/* A file is still being processed. */
+"A file is still being processed." = "ファイルの処理がまだ進行中です。";
+
+/* A header line is neither a recipient nor the closing marker. */
+"A header line is neither a recipient nor the closing marker." = "ヘッダの行が受信者でも終了マーカーでもありません。";
+
+/* A header line is too long. */
+"A header line is too long." = "ヘッダの行が長すぎます。";
+
+/* A passphrase cannot be combined with other recipients. */
+"A passphrase cannot be combined with other recipients." = "パスフレーズはほかの受信者と組み合わせられません。";
+
+/* A passphrase entry must be the only recipient. */
+"A passphrase entry must be the only recipient." = "パスフレーズのエントリは唯一の受信者でなければなりません。";
+
+/* A recipient body is not valid base64. */
+"A recipient body is not valid base64." = "受信者の本文が有効なbase64ではありません。";
+
+/* A recipient body line is malformed. */
+"A recipient body line is malformed." = "受信者の本文の行の形式が正しくありません。";
+
+/* A recipient line is malformed. */
+"A recipient line is malformed." = "受信者の行の形式が正しくありません。";
+
+/* About Agemin */
+"About Agemin" = "Ageminについて";
+
+/* Action */
+"Action" = "アクション";
+
+/* Add */
+"Add" = "追加";
+
+/* Add a public key on the Recipients page */
+"Add a public key on the Recipients page" = "受信者ページで公開鍵を追加";
+
+/* Add an identity that can decrypt this file. */
+"Add an identity that can decrypt this file." = "このファイルを復号できるアイデンティティを追加してください。";
+
+/* Add Key File */
+"Add Key File" = "鍵ファイルを追加";
+
+/* Add Key File… */
+"Add Key File…" = "鍵ファイルを追加…";
+
+/* Add Recipient */
+"Add Recipient" = "受信者を追加";
+
+/* Add Recipient… */
+"Add Recipient…" = "受信者を追加…";
+
+/* Add to Recipients */
+"Add to Recipients" = "受信者に追加";
+
+/* added */
+"added" = "追加済み";
+
+/* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
+"After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "トライアル終了後も、1日につき1個のファイルを暗号化または復号できます。鍵の読み込み、ファイルの確認、鍵の作成は引き続き無制限です。";
+
+/* age encryption, without the terminal. */
+"age encryption, without the terminal." = "ターミナルを使わないage暗号化。";
+
+/* age key */
+"age key" = "age鍵";
+
+/* age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA… */
+"age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA…" = "age1…、ssh-ed25519 AAAA…、またはssh-rsa AAAA…";
+
+/* Agemin could not use that folder */
+"Agemin could not use that folder" = "Ageminはそのフォルダを使用できませんでした";
+
+/* Agemin encrypts files, not folders. */
+"Agemin encrypts files, not folders." = "Ageminが暗号化できるのはファイルで、フォルダは暗号化できません。";
+
+/* Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged. */
+"Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged." = "最初の30日間は、Ageminのすべての機能を利用できます。サブスクリプションは開始されず、料金も請求されません。";
+
+/* Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice. */
+"Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice." = "Ageminはそこにある.pubファイルを一覧表示し、新しいファイルを追加できるようにします。どのフォルダでも構いませんが、~/.ageが一般的です。";
+
+/* Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually. */
+"Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually." = "Ageminはそこ（通常は~/.ssh）で見つかった秘密鍵を一覧表示し、それらを使って復号します。ほかの場所にある鍵は1つずつ追加できます。";
+
+/* Agemin Pro */
+"Agemin Pro" = "Agemin Pro";
+
+/* Agemin Pro Lifetime · %@ */
+"Agemin Pro Lifetime · %@" = "Agemin Pro 買い切り · %@";
+
+/* Agemin Pro Yearly */
+"Agemin Pro Yearly" = "Agemin Pro 年間";
+
+/* Agemin Pro… */
+"Agemin Pro…" = "Agemin Pro…";
+
+/* Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them. */
+"Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them." = "Ageminは、受信者フォルダ、アイデンティティフォルダ、および個別に追加した鍵ファイルに対して保存されているアクセス権を解除します。何も削除されません。引き続き使用するには、もう一度選択してください。";
+
+/* Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed. */
+"Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed." = "Ageminはこの鍵のフィンガープリントに紐づけてアバターを保存します。鍵フォルダの内容は変更されません。";
+
+/* alice */
+"alice" = "alice";
+
+/* All */
+"All" = "すべて";
+
+/* An age public key has 32 bytes. */
+"An age public key has 32 bytes." = "ageの公開鍵は32バイトです。";
+
+/* An age secret key has 32 bytes. */
+"An age secret key has 32 bytes." = "ageの秘密鍵は32バイトです。";
+
+/* An ssh-ed25519 recipient entry is malformed. */
+"An ssh-ed25519 recipient entry is malformed." = "ssh-ed25519の受信者エントリの形式が正しくありません。";
+
+/* An ssh-rsa recipient entry is malformed. */
+"An ssh-rsa recipient entry is malformed." = "ssh-rsaの受信者エントリの形式が正しくありません。";
+
+/* An X25519 recipient entry has the wrong size. */
+"An X25519 recipient entry has the wrong size." = "X25519の受信者エントリのサイズが正しくありません。";
+
+/* An X25519 recipient entry is malformed. */
+"An X25519 recipient entry is malformed." = "X25519の受信者エントリの形式が正しくありません。";
+
+/* Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one. */
+"Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one." = "パスフレーズを知っている人は誰でもファイルを開けます。ageはパスフレーズをscryptで処理するため、複雑さよりも長さのほうが重要です。";
+
+/* ASCII armor */
+"ASCII armor" = "ASCII armor";
+
+/* Avatar for %@ */
+"Avatar for %@" = "%@のアバター";
+
+/* Cancel */
+"Cancel" = "キャンセル";
+
+/* Change */
+"Change" = "変更";
+
+/* Choose */
+"Choose" = "選択";
+
+/* Choose a file to encrypt. */
+"Choose a file to encrypt." = "暗号化するファイルを選択してください。";
+
+/* Choose a yearly subscription or lifetime purchase at any time to remove the daily limit. */
+"Choose a yearly subscription or lifetime purchase at any time to remove the daily limit." = "年間サブスクリプションまたは買い切りをいつでも選択して、1日の制限を解除できます。";
+
+/* Choose an age identity file or an SSH private key */
+"Choose an age identity file or an SSH private key" = "ageアイデンティティファイルまたはSSH秘密鍵を選択";
+
+/* Choose an encrypted file. */
+"Choose an encrypted file." = "暗号化されたファイルを選択してください。";
+
+/* Choose an image for this key's avatar */
+"Choose an image for this key's avatar" = "この鍵のアバターに使う画像を選択";
+
+/* Choose File */
+"Choose File" = "ファイルを選択";
+
+/* Choose File to Decrypt… */
+"Choose File to Decrypt…" = "復号するファイルを選択…";
+
+/* Choose File to Encrypt… */
+"Choose File to Encrypt…" = "暗号化するファイルを選択…";
+
+/* Choose Folder */
+"Choose Folder" = "フォルダを選択";
+
+/* Choose Identities Folder… */
+"Choose Identities Folder…" = "アイデンティティフォルダを選択…";
+
+/* Choose Image */
+"Choose Image" = "画像を選択";
+
+/* Choose Recipients Folder… */
+"Choose Recipients Folder…" = "受信者フォルダを選択…";
+
+/* Choose the encrypted file, usually ending in .age */
+"Choose the encrypted file, usually ending in .age" = "暗号化されたファイル（通常は末尾が.age）を選択";
+
+/* Choose the file to encrypt */
+"Choose the file to encrypt" = "暗号化するファイルを選択";
+
+/* Choose the folder with the .pub files of the people you encrypt for, usually ~/.age. */
+"Choose the folder with the .pub files of the people you encrypt for, usually ~/.age." = "暗号化の相手の.pubファイルがあるフォルダ（通常は~/.age）を選択してください。";
+
+/* Choose the folder with the .pub files you encrypt for, usually ~/.age */
+"Choose the folder with the .pub files you encrypt for, usually ~/.age" = "暗号化の宛先となる.pubファイルがあるフォルダ（通常は~/.age）を選択";
+
+/* Choose the folder with your private keys, usually ~/.ssh */
+"Choose the folder with your private keys, usually ~/.ssh" = "秘密鍵があるフォルダ（通常は~/.ssh）を選択";
+
+/* Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page. */
+"Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page." = "SSH鍵があるフォルダ（通常は~/.ssh）を選択するか、アイデンティティページでageアイデンティティファイルを追加してください。";
+
+/* Choose where to save the decrypted file */
+"Choose where to save the decrypted file" = "復号したファイルの保存先を選択";
+
+/* Choose where to save the encrypted file */
+"Choose where to save the encrypted file" = "暗号化したファイルの保存先を選択";
+
+/* Choose your recipients folder */
+"Choose your recipients folder" = "受信者フォルダを選択";
+
+/* Choose your SSH folder */
+"Choose your SSH folder" = "SSHフォルダを選択";
+
+/* Clear search */
+"Clear search" = "検索をクリア";
+
+/* Clear the file */
+"Clear the file" = "ファイルをクリア";
+
+/* Click an avatar to change it, or drop an image onto it. */
+"Click an avatar to change it, or drop an image onto it." = "アバターをクリックして変更するか、画像をドロップしてください。";
+
+/* Click to change the avatar, or drop an image on it */
+"Click to change the avatar, or drop an image on it" = "クリックしてアバターを変更するか、画像をドロップ";
+
+/* Compress the folder into an archive first, then open the archive. */
+"Compress the folder into an archive first, then open the archive." = "まずフォルダを圧縮してアーカイブにし、そのアーカイブを開いてください。";
+
+/* Confirm passphrase */
+"Confirm passphrase" = "パスフレーズを確認";
+
+/* Contacting the App Store… */
+"Contacting the App Store…" = "App Storeに接続中…";
+
+/* Continue */
+"Continue" = "続ける";
+
+/* Copy */
+"Copy" = "コピー";
+
+/* Copy Key */
+"Copy Key" = "鍵をコピー";
+
+/* Copy Path */
+"Copy Path" = "パスをコピー";
+
+/* Copy Public Key */
+"Copy Public Key" = "公開鍵をコピー";
+
+/* Decrypt */
+"Decrypt" = "復号";
+
+/* Decrypt This File */
+"Decrypt This File" = "このファイルを復号";
+
+/* Decrypt with */
+"Decrypt with" = "復号に使う鍵";
+
+/* Decrypted */
+"Decrypted" = "復号完了";
+
+/* Decrypting */
+"Decrypting" = "復号中";
+
+/* Decryption failed */
+"Decryption failed" = "復号に失敗しました";
+
+/* Decrypt… */
+"Decrypt…" = "復号…";
+
+/* Delete */
+"Delete" = "削除";
+
+/* Delete %@? */
+"Delete %@?" = "%@を削除しますか？";
+
+/* Delete the .pub file */
+"Delete the .pub file" = ".pubファイルを削除";
+
+/* Drop a file here to encrypt it */
+"Drop a file here to encrypt it" = "ここにファイルをドロップして暗号化";
+
+/* Drop a file, not a folder. Compress the folder first, then drop the archive. */
+"Drop a file, not a folder. Compress the folder first, then drop the archive." = "フォルダではなくファイルをドロップしてください。まずフォルダを圧縮してから、そのアーカイブをドロップしてください。";
+
+/* Drop an age file here to decrypt it */
+"Drop an age file here to decrypt it" = "ここにageファイルをドロップして復号";
+
+/* Encrypt */
+"Encrypt" = "暗号化";
+
+/* Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file. */
+"Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file." = "ファイルを、開くべき相手の公開鍵に対して、またはパスフレーズで暗号化します。結果は標準のageファイルです。";
+
+/* Encrypt for */
+"Encrypt for" = "暗号化する相手";
+
+/* Encrypted */
+"Encrypted" = "暗号化完了";
+
+/* Encrypted for */
+"Encrypted for" = "暗号化された相手";
+
+/* Encrypting */
+"Encrypting" = "暗号化中";
+
+/* Encryption failed */
+"Encryption failed" = "暗号化に失敗しました";
+
+/* Encrypt… */
+"Encrypt…" = "暗号化…";
+
+/* Enter a passphrase. */
+"Enter a passphrase." = "パスフレーズを入力してください。";
+
+/* Enter the file's passphrase. */
+"Enter the file's passphrase." = "ファイルのパスフレーズを入力してください。";
+
+/* Enter the passphrase below */
+"Enter the passphrase below" = "下にパスフレーズを入力";
+
+/* Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa). */
+"Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa)." = "ageの公開鍵（age1…）またはSSHの公開鍵（ssh-ed25519またはssh-rsa）が必要です。";
+
+/* Expires %@ */
+"Expires %@" = "%@に終了";
+
+/* Files */
+"Files" = "ファイル";
+
+/* Fill both fields with a random passphrase and show it once */
+"Fill both fields with a random passphrase and show it once" = "両方のフィールドにランダムなパスフレーズを入力し、一度だけ表示";
+
+/* Filter identities */
+"Filter identities" = "アイデンティティを絞り込む";
+
+/* Filter recipients */
+"Filter recipients" = "受信者を絞り込む";
+
+/* Find… */
+"Find…" = "検索…";
+
+/* Forget Access */
+"Forget Access" = "アクセスを解除";
+
+/* Forget access to the key folders? */
+"Forget access to the key folders?" = "鍵フォルダへのアクセスを解除しますか？";
+
+/* Forget Folder Access… */
+"Forget Folder Access…" = "フォルダへのアクセスを解除…";
+
+/* Free · Available today: %lld */
+"Free · Available today: %lld" = "無料 · 本日利用可能: %lld";
+
+/* Generate */
+"Generate" = "生成";
+
+/* Give the recipient a name. */
+"Give the recipient a name." = "受信者に名前を付けてください。";
+
+/* Hide this card */
+"Hide this card" = "このカードを隠す";
+
+/* Identities */
+"Identities" = "アイデンティティ";
+
+/* Identity file */
+"Identity file" = "アイデンティティファイル";
+
+/* Initials */
+"Initials" = "イニシャル";
+
+/* Initials color %lld */
+"Initials color %lld" = "イニシャルの色%lld";
+
+/* Keep Working */
+"Keep Working" = "作業を続ける";
+
+/* Key */
+"Key" = "鍵";
+
+/* Keys */
+"Keys" = "鍵";
+
+/* Lifetime */
+"Lifetime" = "買い切り";
+
+/* Loading App Store products… */
+"Loading App Store products…" = "App Storeの商品を読み込み中…";
+
+/* Loading keys… */
+"Loading keys…" = "鍵を読み込み中…";
+
+/* macOS did not grant lasting access to that folder. Choose it again, or choose another folder. */
+"macOS did not grant lasting access to that folder. Choose it again, or choose another folder." = "macOSがそのフォルダへの継続的なアクセスを許可しませんでした。もう一度選択するか、別のフォルダを選択してください。";
+
+/* Manage Subscription */
+"Manage Subscription" = "サブスクリプションを管理";
+
+/* matches */
+"matches" = "一致";
+
+/* Matches %@ */
+"Matches %@" = "%@に一致";
+
+/* Matching keys first. Protected keys ask for their passphrase. */
+"Matching keys first. Protected keys ask for their passphrase." = "一致する鍵から順に試します。保護された鍵はパスフレーズを求めます。";
+
+/* Name */
+"Name" = "名前";
+
+/* New age Key */
+"New age Key" = "新規age鍵";
+
+/* New age key saved */
+"New age key saved" = "新しいage鍵を保存しました";
+
+/* New age Key… */
+"New age Key…" = "新規age鍵…";
+
+/* New recipient */
+"New recipient" = "新規受信者";
+
+/* No active purchase was found. */
+"No active purchase was found." = "有効な購入が見つかりませんでした。";
+
+/* No Agemin Pro purchase was found for this Apple Account. */
+"No Agemin Pro purchase was found for this Apple Account." = "このAppleアカウントでAgemin Proの購入は見つかりませんでした。";
+
+/* No identities yet */
+"No identities yet" = "アイデンティティはまだありません";
+
+/* No matching key */
+"No matching key" = "一致する鍵がありません";
+
+/* No recipients folder yet */
+"No recipients folder yet" = "受信者フォルダはまだ選択されていません";
+
+/* None */
+"None" = "なし";
+
+/* None of the identities can decrypt this file. */
+"None of the identities can decrypt this file." = "このファイルを復号できるアイデンティティがありません。";
+
+/* None of your identities matches this file. Add the key it was encrypted for on the Identities page. */
+"None of your identities matches this file. Add the key it was encrypted for on the Identities page." = "このファイルに一致するアイデンティティがありません。アイデンティティページで、このファイルの暗号化に使われた鍵を追加してください。";
+
+/* not a key */
+"not a key" = "鍵ではありません";
+
+/* OK */
+"OK" = "OK";
+
+/* Open an age file with one of your keys, or with the passphrase it was encrypted with. */
+"Open an age file with one of your keys, or with the passphrase it was encrypted with." = "ageファイルを、自分の鍵のいずれか、または暗号化に使われたパスフレーズで開きます。";
+
+/* Options */
+"Options" = "オプション";
+
+/* Output */
+"Output" = "出力";
+
+/* Pages */
+"Pages" = "ページ";
+
+/* Passphrase */
+"Passphrase" = "パスフレーズ";
+
+/* passphrase */
+"passphrase" = "パスフレーズ";
+
+/* Passphrase · work factor %lld */
+"Passphrase · work factor %lld" = "パスフレーズ · ワークファクタ%lld";
+
+/* Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends. */
+"Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends." = "料金はAppleアカウントに請求されます。年間サブスクリプションは、現在の期間が終了する1日以上前にApp Storeの設定でキャンセルしない限り、自動的に更新されます。";
+
+/* Privacy Policy */
+"Privacy Policy" = "プライバシーポリシー";
+
+/* Privacy Policy… */
+"Privacy Policy…" = "プライバシーポリシー…";
+
+/* Pro */
+"Pro" = "Pro";
+
+/* Pro purchases are unavailable right now. Try again later. */
+"Pro purchases are unavailable right now. Try again later." = "Proの購入は現在利用できません。後でもう一度お試しください。";
+
+/* Pro trial · %lld days remaining */
+"Pro trial · %lld days remaining" = "Proトライアル · 残り%lld日";
+
+/* Pro trial · 1 day remaining */
+"Pro trial · 1 day remaining" = "Proトライアル · 残り1日";
+
+/* Pro trial · ends %@ */
+"Pro trial · ends %@" = "Proトライアル · %@に終了";
+
+/* Pro trial · first payment %@ */
+"Pro trial · first payment %@" = "Proトライアル · 初回支払いは%@";
+
+/* Pro trial · until %@ */
+"Pro trial · until %@" = "Proトライアル · %@まで";
+
+/* Public key */
+"Public key" = "公開鍵";
+
+/* Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file. */
+"Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file." = "暗号化の宛先となる公開鍵です。フォルダ内の各.pubファイルが1人の受信者で、ファイル名が受信者名になります。";
+
+/* Purchase */
+"Purchase" = "購入";
+
+/* Quit Anyway */
+"Quit Anyway" = "そのまま終了";
+
+/* Quitting now cancels it and removes the partial output. */
+"Quitting now cancels it and removes the partial output." = "今終了すると処理はキャンセルされ、未完成の出力は削除されます。";
+
+/* Read the folder again */
+"Read the folder again" = "フォルダを再読み込み";
+
+/* Recipients */
+"Recipients" = "受信者";
+
+/* Refresh Keys */
+"Refresh Keys" = "鍵を更新";
+
+/* Remove from the list */
+"Remove from the list" = "リストから削除";
+
+/* Renews %@ */
+"Renews %@" = "%@に更新";
+
+/* Restore Purchases */
+"Restore Purchases" = "購入項目を復元";
+
+/* Restoring… */
+"Restoring…" = "復元中…";
+
+/* Reveal */
+"Reveal" = "表示";
+
+/* Reveal in Finder */
+"Reveal in Finder" = "Finderに表示";
+
+/* Save */
+"Save" = "保存";
+
+/* Save Key */
+"Save Key" = "鍵を保存";
+
+/* Save Recipient */
+"Save Recipient" = "受信者を保存";
+
+/* Save the new identity file somewhere private because it holds the secret key */
+"Save the new identity file somewhere private because it holds the secret key" = "新しいアイデンティティファイルは秘密鍵を含むため、ほかの人がアクセスできない場所に保存してください";
+
+/* Saved as */
+"Saved as" = "保存名";
+
+/* Saved as <name>.pub in the recipients folder. */
+"Saved as <name>.pub in the recipients folder." = "受信者フォルダに<名前>.pubとして保存されます。";
+
+/* Select at least one recipient. */
+"Select at least one recipient." = "受信者を1人以上選択してください。";
+
+/* SHA-256 */
+"SHA-256" = "SHA-256";
+
+/* Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it. */
+"Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it." = "あなた宛てに暗号化する人に公開鍵を共有してください。アイデンティティファイルは非公開にしてください。このファイルはあなたのアカウントでのみ読み取れます。";
+
+/* Shared with your family */
+"Shared with your family" = "ファミリーと共有中";
+
+/* Size */
+"Size" = "サイズ";
+
+/* SSH key (Ed25519) */
+"SSH key (Ed25519)" = "SSH鍵（Ed25519）";
+
+/* SSH key (RSA) */
+"SSH key (RSA)" = "SSH鍵（RSA）";
+
+/* Terms of Use (EULA) */
+"Terms of Use (EULA)" = "利用規約（EULA）";
+
+/* That file is not an image Agemin can read. */
+"That file is not an image Agemin can read." = "そのファイルはAgeminが読み込める画像ではありません。";
+
+/* The App Store could not verify this purchase. */
+"The App Store could not verify this purchase." = "App Storeはこの購入を確認できませんでした。";
+
+/* The armor header is missing. */
+"The armor header is missing." = "ASCII armorのヘッダがありません。";
+
+/* The armored file could not be read. %@ */
+"The armored file could not be read. %@" = "ASCII armor形式のファイルを読み込めませんでした。%@";
+
+/* The armored file ends before its footer. */
+"The armored file ends before its footer." = "ASCII armor形式のファイルがフッタの前で終わっています。";
+
+/* The armored text is incomplete. */
+"The armored text is incomplete." = "ASCII armor形式のテキストが不完全です。";
+
+/* The armored text is not valid base64. */
+"The armored text is not valid base64." = "ASCII armor形式のテキストが有効なbase64ではありません。";
+
+/* The decrypted file cannot replace the encrypted file. Choose a different name. */
+"The decrypted file cannot replace the encrypted file. Choose a different name." = "復号したファイルで暗号化されたファイルを置き換えることはできません。別の名前を選択してください。";
+
+/* The decrypted file does not hold an age secret key. */
+"The decrypted file does not hold an age secret key." = "復号したファイルにはageの秘密鍵が含まれていません。";
+
+/* The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one. */
+"The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one." = "復号したファイルは、あなたのユーザアカウントでのみ読み取れます。送信者からチェックサムを受け取っている場合は、照合してください。";
+
+/* The encrypted data is corrupt or was modified. */
+"The encrypted data is corrupt or was modified." = "暗号化されたデータが破損しているか、変更されています。";
+
+/* The encrypted file cannot replace the original. Choose a different name. */
+"The encrypted file cannot replace the original. Choose a different name." = "暗号化したファイルで元のファイルを置き換えることはできません。別の名前を選択してください。";
+
+/* The file could not be read. */
+"The file could not be read." = "ファイルを読み込めませんでした。";
+
+/* The file ends early. It may be incomplete. */
+"The file ends early. It may be incomplete." = "ファイルが途中で終わっています。不完全である可能性があります。";
+
+/* The file header was modified or the key is wrong. */
+"The file header was modified or the key is wrong." = "ファイルのヘッダが変更されているか、鍵が間違っています。";
+
+/* The file holds no age secret key. */
+"The file holds no age secret key." = "ファイルにageの秘密鍵が含まれていません。";
+
+/* The file is being read. */
+"The file is being read." = "ファイルを読み込み中です。";
+
+/* The file is not text. */
+"The file is not text." = "ファイルがテキストではありません。";
+
+/* The file is too large to be a key. */
+"The file is too large to be a key." = "ファイルが大きすぎるため、鍵ではありません。";
+
+/* The first line is not the age version marker. */
+"The first line is not the age version marker." = "最初の行がageのバージョンマーカーではありません。";
+
+/* The header authentication line is malformed. */
+"The header authentication line is malformed." = "ヘッダの認証行の形式が正しくありません。";
+
+/* The header is not valid text. */
+"The header is not valid text." = "ヘッダが有効なテキストではありません。";
+
+/* The header is too large to be an age file. */
+"The header is too large to be an age file." = "ヘッダが大きすぎるため、ageファイルではありません。";
+
+/* The header lists too many recipients. */
+"The header lists too many recipients." = "ヘッダに含まれる受信者が多すぎます。";
+
+/* The identity could not be read. %@ */
+"The identity could not be read. %@" = "アイデンティティを読み込めませんでした。%@";
+
+/* The identity file could not be saved. */
+"The identity file could not be saved." = "アイデンティティファイルを保存できませんでした。";
+
+/* The image could not be used */
+"The image could not be used" = "画像を使用できませんでした";
+
+/* The image is larger than %lld pixels on a side. Choose a smaller one. */
+"The image is larger than %lld pixels on a side. Choose a smaller one." = "画像の一辺が%lldピクセルを超えています。もっと小さい画像を選択してください。";
+
+/* The input is larger than expected. */
+"The input is larger than expected." = "入力が想定よりも大きくなっています。";
+
+/* The key file ends early. */
+"The key file ends early." = "鍵ファイルが途中で終わっています。";
+
+/* The key file is malformed. */
+"The key file is malformed." = "鍵ファイルの形式が正しくありません。";
+
+/* The key file's passphrase settings are invalid. */
+"The key file's passphrase settings are invalid." = "鍵ファイルのパスフレーズ設定が無効です。";
+
+/* The key is empty. */
+"The key is empty." = "鍵が空です。";
+
+/* The key is protected with the %@ cipher, which is not supported. */
+"The key is protected with the %@ cipher, which is not supported." = "鍵は%@暗号で保護されていますが、この暗号はサポートされていません。";
+
+/* The key is saved as <name>.pub in the recipients folder. */
+"The key is saved as <name>.pub in the recipients folder." = "鍵は受信者フォルダに<名前>.pubとして保存されます。";
+
+/* The key uses %lld key derivation rounds. Agemin supports up to %lld. */
+"The key uses %lld key derivation rounds. Agemin supports up to %lld." = "鍵の鍵導出ラウンド数は%lldですが、Ageminがサポートするのは最大%lldです。";
+
+/* The key uses the %@ key derivation, which is not supported. */
+"The key uses the %@ key derivation, which is not supported." = "鍵は%@鍵導出を使用していますが、これはサポートされていません。";
+
+/* The operation was canceled. */
+"The operation was canceled." = "操作はキャンセルされました。";
+
+/* The passphrase entry is malformed. */
+"The passphrase entry is malformed." = "パスフレーズのエントリの形式が正しくありません。";
+
+/* The passphrase for %@ is incorrect. Try again. */
+"The passphrase for %@ is incorrect. Try again." = "%@のパスフレーズが正しくありません。もう一度お試しください。";
+
+/* The passphrase is incorrect. */
+"The passphrase is incorrect." = "パスフレーズが正しくありません。";
+
+/* The passphrase work factor %lld is too high to try safely. */
+"The passphrase work factor %lld is too high to try safely." = "パスフレーズのワークファクタ%lldは高すぎるため、安全に試行できません。";
+
+/* The passphrase work factor is malformed. */
+"The passphrase work factor is malformed." = "パスフレーズのワークファクタの形式が正しくありません。";
+
+/* The passphrases do not match. */
+"The passphrases do not match." = "パスフレーズが一致しません。";
+
+/* The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them. */
+"The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them." = "あなた宛てに暗号化されたファイルを開く秘密鍵です。~/.sshのSSH鍵とageアイデンティティファイルが含まれます。Ageminはこれらを読み取るだけで、変更することはありません。";
+
+/* The purchase is awaiting approval. */
+"The purchase is awaiting approval." = "購入は承認待ちです。";
+
+/* The recipient could not be deleted. */
+"The recipient could not be deleted." = "受信者を削除できませんでした。";
+
+/* The recipient could not be saved. */
+"The recipient could not be saved." = "受信者を保存できませんでした。";
+
+/* The recipient key could not be read. %@ */
+"The recipient key could not be read. %@" = "受信者の鍵を読み込めませんでした。%@";
+
+/* The recipients folder */
+"The recipients folder" = "受信者フォルダ";
+
+/* The recipients folder holds no .pub files yet. */
+"The recipients folder holds no .pub files yet." = "受信者フォルダにはまだ.pubファイルがありません。";
+
+/* The RSA key is malformed. */
+"The RSA key is malformed." = "RSA鍵の形式が正しくありません。";
+
+/* The RSA key is too small or malformed. */
+"The RSA key is too small or malformed." = "RSA鍵が小さすぎるか、形式が正しくありません。";
+
+/* The SSH key is not a valid Ed25519 key. */
+"The SSH key is not a valid Ed25519 key." = "SSH鍵が有効なEd25519鍵ではありません。";
+
+/* The SSH key is not a valid RSA key. */
+"The SSH key is not a valid RSA key." = "SSH鍵が有効なRSA鍵ではありません。";
+
+/* The SSH public key is malformed. */
+"The SSH public key is malformed." = "SSH公開鍵の形式が正しくありません。";
+
+/* There is text after the armor footer. */
+"There is text after the armor footer." = "ASCII armorのフッタの後にテキストがあります。";
+
+/* This deletes the file from the recipients folder. Files already encrypted for this key are not affected. */
+"This deletes the file from the recipients folder. Files already encrypted for this key are not affected." = "ファイルは受信者フォルダから削除されます。この鍵ですでに暗号化されたファイルには影響しません。";
+
+/* This file cannot be read as an age file */
+"This file cannot be read as an age file" = "このファイルはageファイルとして読み込めません";
+
+/* This file is not a key. */
+"This file is not a key." = "このファイルは鍵ではありません。";
+
+/* This file needs a passphrase. */
+"This file needs a passphrase." = "このファイルにはパスフレーズが必要です。";
+
+/* This is a secret key. Use the matching public key, which starts with age1. */
+"This is a secret key. Use the matching public key, which starts with age1." = "これは秘密鍵です。age1で始まる、対応する公開鍵を使用してください。";
+
+/* This is not a valid age public key. */
+"This is not a valid age public key." = "これは有効なageの公開鍵ではありません。";
+
+/* This is not a valid age secret key. */
+"This is not a valid age secret key." = "これは有効なageの秘密鍵ではありません。";
+
+/* This is not an age file. %@ */
+"This is not an age file. %@" = "これはageファイルではありません。%@";
+
+/* This key format is not supported. Use an OpenSSH private key or an age identity file. */
+"This key format is not supported. Use an OpenSSH private key or an age identity file." = "この鍵の形式はサポートされていません。OpenSSH秘密鍵またはageアイデンティティファイルを使用してください。";
+
+/* This key produces a weak shared secret and cannot be used. */
+"This key produces a weak shared secret and cannot be used." = "この鍵は弱い共有秘密を生成するため、使用できません。";
+
+/* This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy. */
+"This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy." = "このパスフレーズで保護された鍵は、古いPEM形式を使用しています。ssh-keygen -p -oで変換するか、保護されていないコピーを使用してください。";
+
+/* Trial ended */
+"Trial ended" = "トライアル終了";
+
+/* Try Again */
+"Try Again" = "再試行";
+
+/* Try every usable key */
+"Try every usable key" = "使用可能なすべての鍵を試す";
+
+/* Unknown recipient type “%@” */
+"Unknown recipient type “%@”" = "不明な受信者タイプ「%@」";
+
+/* Unlock */
+"Unlock" = "ロック解除";
+
+/* Unlock %@ */
+"Unlock %@" = "%@のロックを解除";
+
+/* Unlock %@ with Agemin Pro. */
+"Unlock %@ with Agemin Pro." = "Agemin Proで%@を利用できます。";
+
+/* Until %@ */
+"Until %@" = "%@まで";
+
+/* Use Image */
+"Use Image" = "画像を使用";
+
+/* Use Initials */
+"Use Initials" = "イニシャルを使用";
+
+/* Valid %@ key */
+"Valid %@ key" = "有効な%@鍵";
+
+/* Wait for the current operation to finish. */
+"Wait for the current operation to finish." = "現在の操作が完了するまでお待ちください。";
+
+/* Write it down or store it in a password manager. Agemin does not keep it. */
+"Write it down or store it in a password manager. Agemin does not keep it." = "書き留めるか、パスワードマネージャに保存してください。Ageminはパスフレーズを保持しません。";
+
+/* Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both. */
+"Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both." = "暗号化したファイルをバイナリではなくテキストとして書き出します。メール、チャット、設定ファイル向けです。ageはどちらも読み込めます。";
+
+/* you */
+"you" = "自分";
+
+/* You can still encrypt or decrypt one file per day. Available today: %lld. */
+"You can still encrypt or decrypt one file per day. Available today: %lld." = "引き続き1日につき1個のファイルを暗号化または復号できます。本日利用可能: %lld。";
+
+/* You have Agemin Pro. */
+"You have Agemin Pro." = "Agemin Proを使っています。";
+
+/* Your Pro trial is active. */
+"Your Pro trial is active." = "Proトライアル期間中です。";
+
+/* · you choose the folder when you encrypt */
+"· you choose the folder when you encrypt" = "· フォルダは暗号化時に選択します";
