@@ -361,3 +361,53 @@ private struct ViewCommands: View {
         Divider()
     }
 }
+
+/// The SwiftUI scene: one main window and the menu bar commands.
+@main
+struct AgeminApplication: App {
+    @NSApplicationDelegateAdaptor(AgeminAppDelegate.self) private var appDelegate
+
+    var body: some Scene {
+        // A single main window; the root view restores its last frame.
+        Window("Agemin", id: "main") {
+            RootView(model: appDelegate.model)
+                .frame(minWidth: AgeminWindow.minimumSize.width, minHeight: AgeminWindow.minimumSize.height)
+        }
+        .defaultSize(AgeminWindow.defaultSize)
+        .windowStyle(.titleBar)
+        .commands {
+            // The app menu's own About, Pro, privacy, and forget-access items replace the standard
+            // About item.
+            CommandGroup(replacing: .appInfo) {
+                Button(localized("About Agemin")) {
+                    appDelegate.showAbout()
+                }
+                Divider()
+                Button(localized("Agemin Pro…")) {
+                    AgeminProStore.shared.present()
+                }
+                Button(localized("Privacy Policy…")) {
+                    appDelegate.showPrivacyPolicy(nil)
+                }
+                Button(localized("Forget Folder Access…")) {
+                    appDelegate.forgetAccess()
+                }
+            }
+            // The File menu's file and key commands take the standard New group's place.
+            CommandGroup(replacing: .newItem) {
+                FileCommands(model: appDelegate.model)
+            }
+            // Action and Keys are the app's own menus.
+            CommandMenu(localized("Action")) {
+                ActionCommands(model: appDelegate.model)
+            }
+            CommandMenu(localized("Keys")) {
+                KeysCommands(model: appDelegate.model)
+            }
+            // The page toggles sit at the top of the View menu.
+            CommandGroup(before: .toolbar) {
+                ViewCommands(model: appDelegate.model)
+            }
+        }
+    }
+}
