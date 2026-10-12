@@ -1,0 +1,904 @@
+/* Agemin — fi localization. Each comment shows the English source text. */
+
+/*  and armor */
+" and armor" = " ja armor";
+
+/* %@ %@ of %@ */
+"%@ %@ of %@" = "%@ %@ / %@";
+
+/* %@ could not be read. */
+"%@ could not be read." = "Kohdetta %@ ei voitu lukea.";
+
+/* %@ could not be written. */
+"%@ could not be written." = "Kohdetta %@ ei voitu kirjoittaa.";
+
+/* %@ is protected with a passphrase. */
+"%@ is protected with a passphrase." = "%@ on suojattu salalauseella.";
+
+/* %@ keys are not supported by age. */
+"%@ keys are not supported by age." = "age ei tue %@-avaimia.";
+
+/* %@ per year */
+"%@ per year" = "%@ vuodessa";
+
+/* %@ · %@ more than the original for the header%@ */
+"%@ · %@ more than the original for the header%@" = "%@ · %@ enemmän kuin alkuperäinen, syynä otsake%@";
+
+/* %@.pub already exists in the recipients folder. */
+"%@.pub already exists in the recipients folder." = "%@.pub on jo vastaanottajakansiossa.";
+
+/* %lld identities */
+"%lld identities" = "%lld identiteettiä";
+
+/* %lld identities · %lld usable */
+"%lld identities · %lld usable" = "%lld identiteettiä · %lld käytettävissä";
+
+/* %lld keys */
+"%lld keys" = "%lld avainta";
+
+/* %lld keys tried */
+"%lld keys tried" = "%lld avainta kokeiltu";
+
+/* %lld of %lld recipients selected */
+"%lld of %lld recipients selected" = "%lld/%lld vastaanottajaa valittu";
+
+/* %lld recipients */
+"%lld recipients" = "%lld vastaanottajaa";
+
+/* %lld recipients · %lld usable */
+"%lld recipients · %lld usable" = "%lld vastaanottajaa · %lld käytettävissä";
+
+/* 1 identity */
+"1 identity" = "1 identiteetti";
+
+/* 1 recipient */
+"1 recipient" = "1 vastaanottaja";
+
+/* 30 days of full access */
+"30 days of full access" = "Täysi käyttöoikeus 30 päiväksi";
+
+/* A file is still being processed. */
+"A file is still being processed." = "Tiedostoa käsitellään yhä.";
+
+/* A header line is neither a recipient nor the closing marker. */
+"A header line is neither a recipient nor the closing marker." = "Otsakerivi ei ole vastaanottaja eikä lopetusmerkki.";
+
+/* A header line is too long. */
+"A header line is too long." = "Otsakerivi on liian pitkä.";
+
+/* A passphrase cannot be combined with other recipients. */
+"A passphrase cannot be combined with other recipients." = "Salalausetta ei voi yhdistää muihin vastaanottajiin.";
+
+/* A passphrase entry must be the only recipient. */
+"A passphrase entry must be the only recipient." = "Salalausemerkinnän on oltava ainoa vastaanottaja.";
+
+/* A recipient body is not valid base64. */
+"A recipient body is not valid base64." = "Vastaanottajamerkinnän sisältö ei ole kelvollista base64-muotoa.";
+
+/* A recipient body line is malformed. */
+"A recipient body line is malformed." = "Vastaanottajamerkinnän sisältörivi on muodoltaan virheellinen.";
+
+/* A recipient line is malformed. */
+"A recipient line is malformed." = "Vastaanottajarivi on muodoltaan virheellinen.";
+
+/* About Agemin */
+"About Agemin" = "Tietoja Ageminista";
+
+/* Action */
+"Action" = "Toiminto";
+
+/* Add */
+"Add" = "Lisää";
+
+/* Add a public key on the Recipients page */
+"Add a public key on the Recipients page" = "Lisää julkinen avain Vastaanottajat-sivulla";
+
+/* Add an identity that can decrypt this file. */
+"Add an identity that can decrypt this file." = "Lisää identiteetti, joka voi purkaa tämän tiedoston salauksen.";
+
+/* Add Key File */
+"Add Key File" = "Lisää avaintiedosto";
+
+/* Add Key File… */
+"Add Key File…" = "Lisää avaintiedosto…";
+
+/* Add Recipient */
+"Add Recipient" = "Lisää vastaanottaja";
+
+/* Add Recipient… */
+"Add Recipient…" = "Lisää vastaanottaja…";
+
+/* Add to Recipients */
+"Add to Recipients" = "Lisää vastaanottajiin";
+
+/* added */
+"added" = "lisätty";
+
+/* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
+"After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "Kokeilujakson jälkeen voit edelleen salata tai purkaa yhden tiedoston päivässä. Avainten lukeminen, tiedostojen tarkastaminen ja avainten luominen ovat edelleen rajoittamattomia.";
+
+/* age encryption, without the terminal. */
+"age encryption, without the terminal." = "age-salaus ilman päätettä.";
+
+/* age key */
+"age key" = "age-avain";
+
+/* age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA… */
+"age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA…" = "age1… tai ssh-ed25519 AAAA… tai ssh-rsa AAAA…";
+
+/* Agemin could not use that folder */
+"Agemin could not use that folder" = "Agemin ei voinut käyttää kansiota";
+
+/* Agemin encrypts files, not folders. */
+"Agemin encrypts files, not folders." = "Agemin salaa tiedostoja, ei kansioita.";
+
+/* Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged. */
+"Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged." = "Agemin on kokonaan käytettävissä ensimmäiset 30 päivää. Mitään tilausta ei aloiteta, eikä sinua veloiteta.";
+
+/* Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice. */
+"Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice." = "Agemin luettelee siellä olevat .pub-tiedostot ja antaa lisätä uusia. Mikä tahansa kansio käy; ~/.age on yleinen valinta.";
+
+/* Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually. */
+"Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually." = "Agemin luettelee sieltä löytämänsä yksityiset avaimet, yleensä kansiosta ~/.ssh, ja purkaa salauksen niillä. Muualla säilytettävät avaimet voi lisätä yksitellen.";
+
+/* Agemin Pro */
+"Agemin Pro" = "Agemin Pro";
+
+/* Agemin Pro Lifetime · %@ */
+"Agemin Pro Lifetime · %@" = "Agemin Pro Elinikäinen · %@";
+
+/* Agemin Pro Yearly */
+"Agemin Pro Yearly" = "Agemin Pro Vuosittainen";
+
+/* Agemin Pro… */
+"Agemin Pro…" = "Agemin Pro…";
+
+/* Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them. */
+"Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them." = "Agemin poistaa tallentamansa käyttöoikeudet vastaanottajakansioon, identiteettikansioon ja erikseen lisättyihin avaintiedostoihin. Mitään tiedostoja ei poisteta. Valitse ne uudelleen jatkaaksesi niiden käyttöä.";
+
+/* Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed. */
+"Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed." = "Agemin tallentaa avatarin tämän avaimen sormenjäljen alle. Avainkansioihisi ei tehdä muutoksia.";
+
+/* alice */
+"alice" = "alice";
+
+/* All */
+"All" = "Kaikki";
+
+/* An age public key has 32 bytes. */
+"An age public key has 32 bytes." = "Julkisessa age-avaimessa on 32 tavua.";
+
+/* An age secret key has 32 bytes. */
+"An age secret key has 32 bytes." = "Salaisessa age-avaimessa on 32 tavua.";
+
+/* An ssh-ed25519 recipient entry is malformed. */
+"An ssh-ed25519 recipient entry is malformed." = "ssh-ed25519-vastaanottajamerkintä on muodoltaan virheellinen.";
+
+/* An ssh-rsa recipient entry is malformed. */
+"An ssh-rsa recipient entry is malformed." = "ssh-rsa-vastaanottajamerkintä on muodoltaan virheellinen.";
+
+/* An X25519 recipient entry has the wrong size. */
+"An X25519 recipient entry has the wrong size." = "X25519-vastaanottajamerkintä on väärän kokoinen.";
+
+/* An X25519 recipient entry is malformed. */
+"An X25519 recipient entry is malformed." = "X25519-vastaanottajamerkintä on muodoltaan virheellinen.";
+
+/* Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one. */
+"Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one." = "Kuka tahansa, jolla on salalause, voi avata tiedoston. age käsittelee sen scrypt-funktiolla, joten pitkä salalause on tärkeämpi kuin monimutkainen.";
+
+/* ASCII armor */
+"ASCII armor" = "ASCII armor";
+
+/* Avatar for %@ */
+"Avatar for %@" = "Avaimen %@ avatar";
+
+/* Cancel */
+"Cancel" = "Peruuta";
+
+/* Change */
+"Change" = "Vaihda";
+
+/* Choose */
+"Choose" = "Valitse";
+
+/* Choose a file to encrypt. */
+"Choose a file to encrypt." = "Valitse salattava tiedosto.";
+
+/* Choose a yearly subscription or lifetime purchase at any time to remove the daily limit. */
+"Choose a yearly subscription or lifetime purchase at any time to remove the daily limit." = "Voit milloin tahansa poistaa päivärajan valitsemalla vuositilauksen tai elinikäisen oston.";
+
+/* Choose an age identity file or an SSH private key */
+"Choose an age identity file or an SSH private key" = "Valitse age-identiteettitiedosto tai yksityinen SSH-avain";
+
+/* Choose an encrypted file. */
+"Choose an encrypted file." = "Valitse salattu tiedosto.";
+
+/* Choose an image for this key's avatar */
+"Choose an image for this key's avatar" = "Valitse kuva tämän avaimen avatariksi";
+
+/* Choose File */
+"Choose File" = "Valitse tiedosto";
+
+/* Choose File to Decrypt… */
+"Choose File to Decrypt…" = "Valitse purettava tiedosto…";
+
+/* Choose File to Encrypt… */
+"Choose File to Encrypt…" = "Valitse salattava tiedosto…";
+
+/* Choose Folder */
+"Choose Folder" = "Valitse kansio";
+
+/* Choose Identities Folder… */
+"Choose Identities Folder…" = "Valitse identiteettikansio…";
+
+/* Choose Image */
+"Choose Image" = "Valitse kuva";
+
+/* Choose Recipients Folder… */
+"Choose Recipients Folder…" = "Valitse vastaanottajakansio…";
+
+/* Choose the encrypted file, usually ending in .age */
+"Choose the encrypted file, usually ending in .age" = "Valitse salattu tiedosto, jonka pääte on yleensä .age";
+
+/* Choose the file to encrypt */
+"Choose the file to encrypt" = "Valitse salattava tiedosto";
+
+/* Choose the folder with the .pub files of the people you encrypt for, usually ~/.age. */
+"Choose the folder with the .pub files of the people you encrypt for, usually ~/.age." = "Valitse kansio, jossa ovat niiden henkilöiden .pub-tiedostot, joille salaat, yleensä ~/.age.";
+
+/* Choose the folder with the .pub files you encrypt for, usually ~/.age */
+"Choose the folder with the .pub files you encrypt for, usually ~/.age" = "Valitse kansio, jossa ovat .pub-tiedostot, joille salaat, yleensä ~/.age";
+
+/* Choose the folder with your private keys, usually ~/.ssh */
+"Choose the folder with your private keys, usually ~/.ssh" = "Valitse kansio, jossa yksityiset avaimesi ovat, yleensä ~/.ssh";
+
+/* Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page. */
+"Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page." = "Valitse kansio, jossa SSH-avaimesi ovat, yleensä ~/.ssh, tai lisää age-identiteettitiedosto Identiteetit-sivulla.";
+
+/* Choose where to save the decrypted file */
+"Choose where to save the decrypted file" = "Valitse, mihin salauksesta purettu tiedosto tallennetaan";
+
+/* Choose where to save the encrypted file */
+"Choose where to save the encrypted file" = "Valitse, mihin salattu tiedosto tallennetaan";
+
+/* Choose your recipients folder */
+"Choose your recipients folder" = "Valitse vastaanottajakansiosi";
+
+/* Choose your SSH folder */
+"Choose your SSH folder" = "Valitse SSH-kansiosi";
+
+/* Clear search */
+"Clear search" = "Tyhjennä haku";
+
+/* Clear the file */
+"Clear the file" = "Poista tiedoston valinta";
+
+/* Click an avatar to change it, or drop an image onto it. */
+"Click an avatar to change it, or drop an image onto it." = "Vaihda avatar klikkaamalla sitä tai pudota kuva sen päälle.";
+
+/* Click to change the avatar, or drop an image on it */
+"Click to change the avatar, or drop an image on it" = "Vaihda avatar klikkaamalla tai pudota kuva sen päälle";
+
+/* Compress the folder into an archive first, then open the archive. */
+"Compress the folder into an archive first, then open the archive." = "Pakkaa kansio ensin arkistoksi ja avaa sitten arkisto.";
+
+/* Confirm passphrase */
+"Confirm passphrase" = "Vahvista salalause";
+
+/* Contacting the App Store… */
+"Contacting the App Store…" = "Yhdistetään App Storeen…";
+
+/* Continue */
+"Continue" = "Jatka";
+
+/* Copy */
+"Copy" = "Kopioi";
+
+/* Copy Key */
+"Copy Key" = "Kopioi avain";
+
+/* Copy Path */
+"Copy Path" = "Kopioi polku";
+
+/* Copy Public Key */
+"Copy Public Key" = "Kopioi julkinen avain";
+
+/* Decrypt */
+"Decrypt" = "Pura salaus";
+
+/* Decrypt This File */
+"Decrypt This File" = "Pura tämän tiedoston salaus";
+
+/* Decrypt with */
+"Decrypt with" = "Pura salaus käyttäen";
+
+/* Decrypted */
+"Decrypted" = "Salaus purettu";
+
+/* Decrypting */
+"Decrypting" = "Puretaan salausta";
+
+/* Decryption failed */
+"Decryption failed" = "Salauksen purku epäonnistui";
+
+/* Decrypt… */
+"Decrypt…" = "Pura salaus…";
+
+/* Delete */
+"Delete" = "Poista";
+
+/* Delete %@? */
+"Delete %@?" = "Poistetaanko %@?";
+
+/* Delete the .pub file */
+"Delete the .pub file" = "Poista .pub-tiedosto";
+
+/* Drop a file here to encrypt it */
+"Drop a file here to encrypt it" = "Pudota tiedosto tähän salataksesi sen";
+
+/* Drop a file, not a folder. Compress the folder first, then drop the archive. */
+"Drop a file, not a folder. Compress the folder first, then drop the archive." = "Pudota tiedosto, ei kansiota. Pakkaa kansio ensin ja pudota sitten arkisto.";
+
+/* Drop an age file here to decrypt it */
+"Drop an age file here to decrypt it" = "Pudota age-tiedosto tähän purkaaksesi sen salauksen";
+
+/* Encrypt */
+"Encrypt" = "Salaa";
+
+/* Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file. */
+"Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file." = "Salaa tiedosto niiden henkilöiden julkisille avaimille, joiden pitää voida avata se, tai salalauseella. Tuloksena on tavallinen age-tiedosto.";
+
+/* Encrypt for */
+"Encrypt for" = "Salaa vastaanottajille";
+
+/* Encrypted */
+"Encrypted" = "Salattu";
+
+/* Encrypted for */
+"Encrypted for" = "Salattu vastaanottajille";
+
+/* Encrypting */
+"Encrypting" = "Salataan";
+
+/* Encryption failed */
+"Encryption failed" = "Salaus epäonnistui";
+
+/* Encrypt… */
+"Encrypt…" = "Salaa…";
+
+/* Enter a passphrase. */
+"Enter a passphrase." = "Anna salalause.";
+
+/* Enter the file's passphrase. */
+"Enter the file's passphrase." = "Anna tiedoston salalause.";
+
+/* Enter the passphrase below */
+"Enter the passphrase below" = "Anna salalause alla";
+
+/* Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa). */
+"Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa)." = "Odotettiin julkista age-avainta (age1…) tai julkista SSH-avainta (ssh-ed25519 tai ssh-rsa).";
+
+/* Expires %@ */
+"Expires %@" = "Päättyy %@";
+
+/* Files */
+"Files" = "Tiedostot";
+
+/* Fill both fields with a random passphrase and show it once */
+"Fill both fields with a random passphrase and show it once" = "Täytä molemmat kentät satunnaisella salalauseella ja näytä se kerran";
+
+/* Filter identities */
+"Filter identities" = "Suodata identiteettejä";
+
+/* Filter recipients */
+"Filter recipients" = "Suodata vastaanottajia";
+
+/* Find… */
+"Find…" = "Etsi…";
+
+/* Forget Access */
+"Forget Access" = "Unohda käyttöoikeus";
+
+/* Forget access to the key folders? */
+"Forget access to the key folders?" = "Unohdetaanko avainkansioiden käyttöoikeus?";
+
+/* Forget Folder Access… */
+"Forget Folder Access…" = "Unohda kansioiden käyttöoikeus…";
+
+/* Free · Available today: %lld */
+"Free · Available today: %lld" = "Ilmainen · Käytettävissä tänään: %lld";
+
+/* Generate */
+"Generate" = "Luo";
+
+/* Give the recipient a name. */
+"Give the recipient a name." = "Anna vastaanottajalle nimi.";
+
+/* Hide this card */
+"Hide this card" = "Kätke tämä kortti";
+
+/* Identities */
+"Identities" = "Identiteetit";
+
+/* Identity file */
+"Identity file" = "Identiteettitiedosto";
+
+/* Initials */
+"Initials" = "Nimikirjaimet";
+
+/* Initials color %lld */
+"Initials color %lld" = "Nimikirjainten väri %lld";
+
+/* Keep Working */
+"Keep Working" = "Jatka työskentelyä";
+
+/* Key */
+"Key" = "Avain";
+
+/* Keys */
+"Keys" = "Avaimet";
+
+/* Lifetime */
+"Lifetime" = "Elinikäinen";
+
+/* Loading App Store products… */
+"Loading App Store products…" = "Ladataan App Storen tuotteita…";
+
+/* Loading keys… */
+"Loading keys…" = "Ladataan avaimia…";
+
+/* macOS did not grant lasting access to that folder. Choose it again, or choose another folder. */
+"macOS did not grant lasting access to that folder. Choose it again, or choose another folder." = "macOS ei myöntänyt pysyvää käyttöoikeutta kansioon. Valitse se uudelleen tai valitse toinen kansio.";
+
+/* Manage Subscription */
+"Manage Subscription" = "Hallinnoi tilausta";
+
+/* matches */
+"matches" = "täsmää";
+
+/* Matches %@ */
+"Matches %@" = "Täsmää: %@";
+
+/* Matching keys first. Protected keys ask for their passphrase. */
+"Matching keys first. Protected keys ask for their passphrase." = "Täsmäävät avaimet ensin. Suojatut avaimet kysyvät salalausettaan.";
+
+/* Name */
+"Name" = "Nimi";
+
+/* New age Key */
+"New age Key" = "Uusi age-avain";
+
+/* New age key saved */
+"New age key saved" = "Uusi age-avain tallennettu";
+
+/* New age Key… */
+"New age Key…" = "Uusi age-avain…";
+
+/* New recipient */
+"New recipient" = "Uusi vastaanottaja";
+
+/* No active purchase was found. */
+"No active purchase was found." = "Aktiivista Agemin-ostosta ei löytynyt.";
+
+/* No Agemin Pro purchase was found for this Apple Account. */
+"No Agemin Pro purchase was found for this Apple Account." = "Tälle Apple-tilille ei löytynyt Agemin Pro -ostosta.";
+
+/* No identities yet */
+"No identities yet" = "Ei vielä identiteettejä";
+
+/* No matching key */
+"No matching key" = "Ei täsmäävää avainta";
+
+/* No recipients folder yet */
+"No recipients folder yet" = "Ei vielä vastaanottajakansiota";
+
+/* None */
+"None" = "Ei mitään";
+
+/* None of the identities can decrypt this file. */
+"None of the identities can decrypt this file." = "Mikään identiteeteistä ei voi purkaa tämän tiedoston salausta.";
+
+/* None of your identities matches this file. Add the key it was encrypted for on the Identities page. */
+"None of your identities matches this file. Add the key it was encrypted for on the Identities page." = "Mikään identiteeteistäsi ei täsmää tähän tiedostoon. Lisää avain, jolle se salattiin, Identiteetit-sivulla.";
+
+/* not a key */
+"not a key" = "ei avain";
+
+/* OK */
+"OK" = "OK";
+
+/* Open an age file with one of your keys, or with the passphrase it was encrypted with. */
+"Open an age file with one of your keys, or with the passphrase it was encrypted with." = "Avaa age-tiedosto jollakin avaimistasi tai salalauseella, jolla se salattiin.";
+
+/* Options */
+"Options" = "Vaihtoehdot";
+
+/* Output */
+"Output" = "Tulos";
+
+/* Pages */
+"Pages" = "Sivut";
+
+/* Passphrase */
+"Passphrase" = "Salalause";
+
+/* passphrase */
+"passphrase" = "salalause";
+
+/* Passphrase · work factor %lld */
+"Passphrase · work factor %lld" = "Salalause · työkerroin %lld";
+
+/* Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends. */
+"Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends." = "Maksu veloitetaan Apple-tililtäsi. Vuositilaus uusiutuu automaattisesti, ellet peruuta sitä App Storen asetuksissa vähintään päivää ennen nykyisen jakson päättymistä.";
+
+/* Privacy Policy */
+"Privacy Policy" = "Tietosuojakäytäntö";
+
+/* Privacy Policy… */
+"Privacy Policy…" = "Tietosuojakäytäntö…";
+
+/* Pro */
+"Pro" = "Pro";
+
+/* Pro purchases are unavailable right now. Try again later. */
+"Pro purchases are unavailable right now. Try again later." = "Pro-ostot eivät ole nyt saatavilla. Yritä myöhemmin uudestaan.";
+
+/* Pro trial · %lld days remaining */
+"Pro trial · %lld days remaining" = "Pro-kokeilujakso · %lld päivää jäljellä";
+
+/* Pro trial · 1 day remaining */
+"Pro trial · 1 day remaining" = "Pro-kokeilujakso · 1 päivä jäljellä";
+
+/* Pro trial · ends %@ */
+"Pro trial · ends %@" = "Pro-kokeilujakso · päättyy %@";
+
+/* Pro trial · first payment %@ */
+"Pro trial · first payment %@" = "Pro-kokeilujakso · ensimmäinen maksu %@";
+
+/* Pro trial · until %@ */
+"Pro trial · until %@" = "Pro-kokeilujakso · %@ asti";
+
+/* Public key */
+"Public key" = "Julkinen avain";
+
+/* Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file. */
+"Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file." = "Julkiset avaimet, joille salaat. Jokainen kansion .pub-tiedosto on yksi vastaanottaja, joka on nimetty tiedoston mukaan.";
+
+/* Purchase */
+"Purchase" = "Osta";
+
+/* Quit Anyway */
+"Quit Anyway" = "Lopeta silti";
+
+/* Quitting now cancels it and removes the partial output. */
+"Quitting now cancels it and removes the partial output." = "Jos lopetat nyt, se peruutetaan ja keskeneräinen tulos poistetaan.";
+
+/* Read the folder again */
+"Read the folder again" = "Lue kansio uudelleen";
+
+/* Recipients */
+"Recipients" = "Vastaanottajat";
+
+/* Refresh Keys */
+"Refresh Keys" = "Päivitä avaimet";
+
+/* Remove from the list */
+"Remove from the list" = "Poista luettelosta";
+
+/* Renews %@ */
+"Renews %@" = "Uusiutuu %@";
+
+/* Restore Purchases */
+"Restore Purchases" = "Palauta ostot";
+
+/* Restoring… */
+"Restoring…" = "Palautetaan…";
+
+/* Reveal */
+"Reveal" = "Näytä";
+
+/* Reveal in Finder */
+"Reveal in Finder" = "Näytä Finderissa";
+
+/* Save */
+"Save" = "Tallenna";
+
+/* Save Key */
+"Save Key" = "Tallenna avain";
+
+/* Save Recipient */
+"Save Recipient" = "Tallenna vastaanottaja";
+
+/* Save the new identity file somewhere private because it holds the secret key */
+"Save the new identity file somewhere private because it holds the secret key" = "Tallenna uusi identiteettitiedosto yksityiseen paikkaan; se sisältää salaisen avaimen";
+
+/* Saved as */
+"Saved as" = "Tallennetaan nimellä";
+
+/* Saved as <name>.pub in the recipients folder. */
+"Saved as <name>.pub in the recipients folder." = "Tallennettu nimellä <nimi>.pub vastaanottajakansioon.";
+
+/* Select at least one recipient. */
+"Select at least one recipient." = "Valitse vähintään yksi vastaanottaja.";
+
+/* SHA-256 */
+"SHA-256" = "SHA-256";
+
+/* Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it. */
+"Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it." = "Jaa julkinen avain henkilöille, joiden pitää voida salata sinulle. Pidä identiteettitiedosto yksityisenä; vain tilisi voi lukea sitä.";
+
+/* Shared with your family */
+"Shared with your family" = "Jaettu perheesi kanssa";
+
+/* Size */
+"Size" = "Koko";
+
+/* SSH key (Ed25519) */
+"SSH key (Ed25519)" = "SSH-avain (Ed25519)";
+
+/* SSH key (RSA) */
+"SSH key (RSA)" = "SSH-avain (RSA)";
+
+/* Terms of Use (EULA) */
+"Terms of Use (EULA)" = "Käyttöehdot (EULA)";
+
+/* That file is not an image Agemin can read. */
+"That file is not an image Agemin can read." = "Tiedosto ei ole kuva, jonka Agemin voi lukea.";
+
+/* The App Store could not verify this purchase. */
+"The App Store could not verify this purchase." = "App Store ei pystynyt vahvistamaan tätä ostosta.";
+
+/* The armor header is missing. */
+"The armor header is missing." = "Armor-otsake puuttuu.";
+
+/* The armored file could not be read. %@ */
+"The armored file could not be read. %@" = "Armor-tiedostoa ei voitu lukea. %@";
+
+/* The armored file ends before its footer. */
+"The armored file ends before its footer." = "Armor-tiedosto päättyy ennen loppuriviä.";
+
+/* The armored text is incomplete. */
+"The armored text is incomplete." = "Armor-teksti on epätäydellinen.";
+
+/* The armored text is not valid base64. */
+"The armored text is not valid base64." = "Armor-teksti ei ole kelvollista base64-muotoa.";
+
+/* The decrypted file cannot replace the encrypted file. Choose a different name. */
+"The decrypted file cannot replace the encrypted file. Choose a different name." = "Salauksesta purettu tiedosto ei voi korvata salattua tiedostoa. Valitse toinen nimi.";
+
+/* The decrypted file does not hold an age secret key. */
+"The decrypted file does not hold an age secret key." = "Salauksesta puretussa tiedostossa ei ole salaista age-avainta.";
+
+/* The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one. */
+"The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one." = "Salauksesta purettua tiedostoa voi lukea vain oma käyttäjätilisi. Vertaa tarkistussummaa lähettäjän antamaan, jos sait sellaisen.";
+
+/* The encrypted data is corrupt or was modified. */
+"The encrypted data is corrupt or was modified." = "Salatut tiedot ovat vioittuneet tai niitä on muokattu.";
+
+/* The encrypted file cannot replace the original. Choose a different name. */
+"The encrypted file cannot replace the original. Choose a different name." = "Salattu tiedosto ei voi korvata alkuperäistä. Valitse toinen nimi.";
+
+/* The file could not be read. */
+"The file could not be read." = "Tiedostoa ei voitu lukea.";
+
+/* The file ends early. It may be incomplete. */
+"The file ends early. It may be incomplete." = "Tiedosto päättyy liian aikaisin. Se voi olla epätäydellinen.";
+
+/* The file header was modified or the key is wrong. */
+"The file header was modified or the key is wrong." = "Tiedoston otsaketta on muokattu tai avain on väärä.";
+
+/* The file holds no age secret key. */
+"The file holds no age secret key." = "Tiedostossa ei ole salaista age-avainta.";
+
+/* The file is being read. */
+"The file is being read." = "Tiedostoa luetaan.";
+
+/* The file is not text. */
+"The file is not text." = "Tiedosto ei ole tekstiä.";
+
+/* The file is too large to be a key. */
+"The file is too large to be a key." = "Tiedosto on liian suuri ollakseen avain.";
+
+/* The first line is not the age version marker. */
+"The first line is not the age version marker." = "Ensimmäinen rivi ei ole age-versiomerkki.";
+
+/* The header authentication line is malformed. */
+"The header authentication line is malformed." = "Otsakkeen todennusrivi on muodoltaan virheellinen.";
+
+/* The header is not valid text. */
+"The header is not valid text." = "Otsake ei ole kelvollista tekstiä.";
+
+/* The header is too large to be an age file. */
+"The header is too large to be an age file." = "Otsake on liian suuri age-tiedostoksi.";
+
+/* The header lists too many recipients. */
+"The header lists too many recipients." = "Otsakkeessa on liian monta vastaanottajaa.";
+
+/* The identity could not be read. %@ */
+"The identity could not be read. %@" = "Identiteettiä ei voitu lukea. %@";
+
+/* The identity file could not be saved. */
+"The identity file could not be saved." = "Identiteettitiedostoa ei voitu tallentaa.";
+
+/* The image could not be used */
+"The image could not be used" = "Kuvaa ei voitu käyttää";
+
+/* The image is larger than %lld pixels on a side. Choose a smaller one. */
+"The image is larger than %lld pixels on a side. Choose a smaller one." = "Kuva on sivultaan suurempi kuin %lld pikseliä. Valitse pienempi kuva.";
+
+/* The input is larger than expected. */
+"The input is larger than expected." = "Syöte on odotettua suurempi.";
+
+/* The key file ends early. */
+"The key file ends early." = "Avaintiedosto päättyy liian aikaisin.";
+
+/* The key file is malformed. */
+"The key file is malformed." = "Avaintiedosto on muodoltaan virheellinen.";
+
+/* The key file's passphrase settings are invalid. */
+"The key file's passphrase settings are invalid." = "Avaintiedoston salalauseasetukset ovat virheelliset.";
+
+/* The key is empty. */
+"The key is empty." = "Avain on tyhjä.";
+
+/* The key is protected with the %@ cipher, which is not supported. */
+"The key is protected with the %@ cipher, which is not supported." = "Avain on suojattu salausmenetelmällä %@, jota ei tueta.";
+
+/* The key is saved as <name>.pub in the recipients folder. */
+"The key is saved as <name>.pub in the recipients folder." = "Avain tallennetaan nimellä <nimi>.pub vastaanottajakansioon.";
+
+/* The key uses %lld key derivation rounds. Agemin supports up to %lld. */
+"The key uses %lld key derivation rounds. Agemin supports up to %lld." = "Avain käyttää %lld avaimenjohtokierrosta; Agemin tukee enintään %lld kierrosta.";
+
+/* The key uses the %@ key derivation, which is not supported. */
+"The key uses the %@ key derivation, which is not supported." = "Avain käyttää avaimenjohtoa %@, jota ei tueta.";
+
+/* The operation was canceled. */
+"The operation was canceled." = "Toiminto peruutettiin.";
+
+/* The passphrase entry is malformed. */
+"The passphrase entry is malformed." = "Salalausemerkintä on muodoltaan virheellinen.";
+
+/* The passphrase for %@ is incorrect. Try again. */
+"The passphrase for %@ is incorrect. Try again." = "Avaimen %@ salalause on väärä. Yritä uudestaan.";
+
+/* The passphrase is incorrect. */
+"The passphrase is incorrect." = "Salalause on väärä.";
+
+/* The passphrase work factor %lld is too high to try safely. */
+"The passphrase work factor %lld is too high to try safely." = "Salalauseen työkerroin %lld on liian suuri kokeiltavaksi turvallisesti.";
+
+/* The passphrase work factor is malformed. */
+"The passphrase work factor is malformed." = "Salalauseen työkerroin on muodoltaan virheellinen.";
+
+/* The passphrases do not match. */
+"The passphrases do not match." = "Salalauseet eivät täsmää.";
+
+/* The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them. */
+"The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them." = "Yksityiset avaimet, jotka avaavat sinulle salatut tiedostot: SSH-avaimet kansiosta ~/.ssh ja age-identiteettitiedostot. Agemin lukee ne eikä koskaan muuta niitä.";
+
+/* The purchase is awaiting approval. */
+"The purchase is awaiting approval." = "Ostos odottaa hyväksyntää.";
+
+/* The recipient could not be deleted. */
+"The recipient could not be deleted." = "Vastaanottajaa ei voitu poistaa.";
+
+/* The recipient could not be saved. */
+"The recipient could not be saved." = "Vastaanottajaa ei voitu tallentaa.";
+
+/* The recipient key could not be read. %@ */
+"The recipient key could not be read. %@" = "Vastaanottajan avainta ei voitu lukea. %@";
+
+/* The recipients folder */
+"The recipients folder" = "Vastaanottajakansio";
+
+/* The recipients folder holds no .pub files yet. */
+"The recipients folder holds no .pub files yet." = "Vastaanottajakansiossa ei ole vielä .pub-tiedostoja.";
+
+/* The RSA key is malformed. */
+"The RSA key is malformed." = "RSA-avain on muodoltaan virheellinen.";
+
+/* The RSA key is too small or malformed. */
+"The RSA key is too small or malformed." = "RSA-avain on liian pieni tai muodoltaan virheellinen.";
+
+/* The SSH key is not a valid Ed25519 key. */
+"The SSH key is not a valid Ed25519 key." = "SSH-avain ei ole kelvollinen Ed25519-avain.";
+
+/* The SSH key is not a valid RSA key. */
+"The SSH key is not a valid RSA key." = "SSH-avain ei ole kelvollinen RSA-avain.";
+
+/* The SSH public key is malformed. */
+"The SSH public key is malformed." = "Julkinen SSH-avain on muodoltaan virheellinen.";
+
+/* There is text after the armor footer. */
+"There is text after the armor footer." = "Armor-loppurivin jälkeen on tekstiä.";
+
+/* This deletes the file from the recipients folder. Files already encrypted for this key are not affected. */
+"This deletes the file from the recipients folder. Files already encrypted for this key are not affected." = "Tiedosto poistetaan vastaanottajakansiosta. Tämä ei vaikuta tiedostoihin, jotka on jo salattu tälle avaimelle.";
+
+/* This file cannot be read as an age file */
+"This file cannot be read as an age file" = "Tätä tiedostoa ei voi lukea age-tiedostona";
+
+/* This file is not a key. */
+"This file is not a key." = "Tämä tiedosto ei ole avain.";
+
+/* This file needs a passphrase. */
+"This file needs a passphrase." = "Tämä tiedosto vaatii salalauseen.";
+
+/* This is a secret key. Use the matching public key, which starts with age1. */
+"This is a secret key. Use the matching public key, which starts with age1." = "Tämä on salainen avain. Käytä sitä vastaavaa julkista avainta, joka alkaa age1.";
+
+/* This is not a valid age public key. */
+"This is not a valid age public key." = "Tämä ei ole kelvollinen julkinen age-avain.";
+
+/* This is not a valid age secret key. */
+"This is not a valid age secret key." = "Tämä ei ole kelvollinen salainen age-avain.";
+
+/* This is not an age file. %@ */
+"This is not an age file. %@" = "Tämä ei ole age-tiedosto. %@";
+
+/* This key format is not supported. Use an OpenSSH private key or an age identity file. */
+"This key format is not supported. Use an OpenSSH private key or an age identity file." = "Tätä avainmuotoa ei tueta. Käytä yksityistä OpenSSH-avainta tai age-identiteettitiedostoa.";
+
+/* This key produces a weak shared secret and cannot be used. */
+"This key produces a weak shared secret and cannot be used." = "Tämä avain tuottaa heikon jaetun salaisuuden, eikä sitä voi käyttää.";
+
+/* This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy. */
+"This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy." = "Tämä salalauseella suojattu avain käyttää vanhaa PEM-muotoa. Muunna se komennolla ssh-keygen -p -o tai käytä suojaamatonta kopiota.";
+
+/* Trial ended */
+"Trial ended" = "Kokeilujakso on päättynyt";
+
+/* Try Again */
+"Try Again" = "Yritä uudestaan";
+
+/* Try every usable key */
+"Try every usable key" = "Kokeile kaikkia käytettävissä olevia avaimia";
+
+/* Unknown recipient type “%@” */
+"Unknown recipient type “%@”" = "Tuntematon vastaanottajatyyppi “%@”";
+
+/* Unlock */
+"Unlock" = "Avaa lukitus";
+
+/* Unlock %@ */
+"Unlock %@" = "Avaa lukitus: %@";
+
+/* Unlock %@ with Agemin Pro. */
+"Unlock %@ with Agemin Pro." = "Avaa %@ Agemin Pron avulla.";
+
+/* Until %@ */
+"Until %@" = "%@ asti";
+
+/* Use Image */
+"Use Image" = "Käytä kuvaa";
+
+/* Use Initials */
+"Use Initials" = "Käytä nimikirjaimia";
+
+/* Valid %@ key */
+"Valid %@ key" = "Kelvollinen %@-avain";
+
+/* Wait for the current operation to finish. */
+"Wait for the current operation to finish." = "Odota, että nykyinen toiminto valmistuu.";
+
+/* Write it down or store it in a password manager. Agemin does not keep it. */
+"Write it down or store it in a password manager. Agemin does not keep it." = "Kirjoita se muistiin tai tallenna se salasanojen hallintaan. Agemin ei säilytä sitä.";
+
+/* Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both. */
+"Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both." = "Kirjoita salattu tiedosto tekstinä binaarin sijaan sähköpostia, keskusteluja ja asetustiedostoja varten. age lukee molempia.";
+
+/* you */
+"you" = "sinä";
+
+/* You can still encrypt or decrypt one file per day. Available today: %lld. */
+"You can still encrypt or decrypt one file per day. Available today: %lld." = "Voit edelleen salata tai purkaa yhden tiedoston päivässä. Käytettävissä tänään: %lld.";
+
+/* You have Agemin Pro. */
+"You have Agemin Pro." = "Sinulla on Agemin Pro.";
+
+/* Your Pro trial is active. */
+"Your Pro trial is active." = "Pro-kokeilujaksosi on aktiivinen.";
+
+/* · you choose the folder when you encrypt */
+"· you choose the folder when you encrypt" = "· valitset kansion salauksen yhteydessä";
