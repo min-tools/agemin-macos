@@ -1,0 +1,904 @@
+/* Agemin — id localization. Each comment shows the English source text. */
+
+/*  and armor */
+" and armor" = " dan armor";
+
+/* %@ %@ of %@ */
+"%@ %@ of %@" = "%@ %@ dari %@";
+
+/* %@ could not be read. */
+"%@ could not be read." = "%@ tidak dapat dibaca.";
+
+/* %@ could not be written. */
+"%@ could not be written." = "%@ tidak dapat ditulis.";
+
+/* %@ is protected with a passphrase. */
+"%@ is protected with a passphrase." = "%@ dilindungi dengan frasa sandi.";
+
+/* %@ keys are not supported by age. */
+"%@ keys are not supported by age." = "Kunci %@ tidak didukung oleh age.";
+
+/* %@ per year */
+"%@ per year" = "%@ per tahun";
+
+/* %@ · %@ more than the original for the header%@ */
+"%@ · %@ more than the original for the header%@" = "%@ · %@ lebih besar dari aslinya untuk header%@";
+
+/* %@.pub already exists in the recipients folder. */
+"%@.pub already exists in the recipients folder." = "%@.pub sudah ada di folder penerima.";
+
+/* %lld identities */
+"%lld identities" = "%lld identitas";
+
+/* %lld identities · %lld usable */
+"%lld identities · %lld usable" = "%lld identitas · %lld dapat digunakan";
+
+/* %lld keys */
+"%lld keys" = "%lld kunci";
+
+/* %lld keys tried */
+"%lld keys tried" = "%lld kunci dicoba";
+
+/* %lld of %lld recipients selected */
+"%lld of %lld recipients selected" = "%lld dari %lld penerima dipilih";
+
+/* %lld recipients */
+"%lld recipients" = "%lld penerima";
+
+/* %lld recipients · %lld usable */
+"%lld recipients · %lld usable" = "%lld penerima · %lld dapat digunakan";
+
+/* 1 identity */
+"1 identity" = "1 identitas";
+
+/* 1 recipient */
+"1 recipient" = "1 penerima";
+
+/* 30 days of full access */
+"30 days of full access" = "Akses penuh selama 30 hari";
+
+/* A file is still being processed. */
+"A file is still being processed." = "Sebuah file masih diproses.";
+
+/* A header line is neither a recipient nor the closing marker. */
+"A header line is neither a recipient nor the closing marker." = "Sebuah baris header bukan penerima dan bukan penanda penutup.";
+
+/* A header line is too long. */
+"A header line is too long." = "Sebuah baris header terlalu panjang.";
+
+/* A passphrase cannot be combined with other recipients. */
+"A passphrase cannot be combined with other recipients." = "Frasa sandi tidak dapat digabungkan dengan penerima lain.";
+
+/* A passphrase entry must be the only recipient. */
+"A passphrase entry must be the only recipient." = "Entri frasa sandi harus menjadi satu-satunya penerima.";
+
+/* A recipient body is not valid base64. */
+"A recipient body is not valid base64." = "Sebuah isi penerima bukan base64 yang valid.";
+
+/* A recipient body line is malformed. */
+"A recipient body line is malformed." = "Sebuah baris isi penerima rusak.";
+
+/* A recipient line is malformed. */
+"A recipient line is malformed." = "Sebuah baris penerima rusak.";
+
+/* About Agemin */
+"About Agemin" = "Tentang Agemin";
+
+/* Action */
+"Action" = "Tindakan";
+
+/* Add */
+"Add" = "Tambah";
+
+/* Add a public key on the Recipients page */
+"Add a public key on the Recipients page" = "Tambahkan kunci publik di halaman Penerima";
+
+/* Add an identity that can decrypt this file. */
+"Add an identity that can decrypt this file." = "Tambahkan identitas yang dapat mendekripsi file ini.";
+
+/* Add Key File */
+"Add Key File" = "Tambah File Kunci";
+
+/* Add Key File… */
+"Add Key File…" = "Tambah File Kunci…";
+
+/* Add Recipient */
+"Add Recipient" = "Tambah Penerima";
+
+/* Add Recipient… */
+"Add Recipient…" = "Tambah Penerima…";
+
+/* Add to Recipients */
+"Add to Recipients" = "Tambah ke Penerima";
+
+/* added */
+"added" = "ditambahkan";
+
+/* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
+"After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "Setelah masa uji coba, Anda masih dapat mengenkripsi atau mendekripsi satu file per hari. Membaca kunci, memeriksa file, dan membuat kunci tetap tanpa batas.";
+
+/* age encryption, without the terminal. */
+"age encryption, without the terminal." = "Enkripsi age, tanpa terminal.";
+
+/* age key */
+"age key" = "kunci age";
+
+/* age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA… */
+"age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA…" = "age1… atau ssh-ed25519 AAAA… atau ssh-rsa AAAA…";
+
+/* Agemin could not use that folder */
+"Agemin could not use that folder" = "Agemin tidak dapat menggunakan folder tersebut";
+
+/* Agemin encrypts files, not folders. */
+"Agemin encrypts files, not folders." = "Agemin mengenkripsi file, bukan folder.";
+
+/* Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged. */
+"Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged." = "Agemin terbuka sepenuhnya selama 30 hari pertama Anda. Tidak ada langganan yang dimulai, dan Anda tidak akan ditagih.";
+
+/* Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice. */
+"Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice." = "Agemin mencantumkan file .pub di sana dan memungkinkan Anda menambahkan yang baru. Folder apa pun bisa digunakan; ~/.age adalah pilihan yang umum.";
+
+/* Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually. */
+"Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually." = "Agemin mencantumkan kunci privat yang ditemukannya di sana, biasanya ~/.ssh, dan mendekripsi dengan kunci tersebut. Kunci yang disimpan di tempat lain dapat ditambahkan satu per satu.";
+
+/* Agemin Pro */
+"Agemin Pro" = "Agemin Pro";
+
+/* Agemin Pro Lifetime · %@ */
+"Agemin Pro Lifetime · %@" = "Agemin Pro Seumur Hidup · %@";
+
+/* Agemin Pro Yearly */
+"Agemin Pro Yearly" = "Agemin Pro Tahunan";
+
+/* Agemin Pro… */
+"Agemin Pro…" = "Agemin Pro…";
+
+/* Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them. */
+"Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them." = "Agemin mencabut izin yang disimpannya untuk folder penerima, folder identitas, dan file kunci apa pun yang ditambahkan secara terpisah. Tidak ada yang dihapus. Pilih lagi untuk terus menggunakannya.";
+
+/* Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed. */
+"Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed." = "Agemin menyimpan avatar berdasarkan sidik jari kunci ini. Tidak ada yang berubah di folder kunci Anda.";
+
+/* alice */
+"alice" = "budi";
+
+/* All */
+"All" = "Semua";
+
+/* An age public key has 32 bytes. */
+"An age public key has 32 bytes." = "Kunci publik age memiliki 32 byte.";
+
+/* An age secret key has 32 bytes. */
+"An age secret key has 32 bytes." = "Kunci rahasia age memiliki 32 byte.";
+
+/* An ssh-ed25519 recipient entry is malformed. */
+"An ssh-ed25519 recipient entry is malformed." = "Sebuah entri penerima ssh-ed25519 rusak.";
+
+/* An ssh-rsa recipient entry is malformed. */
+"An ssh-rsa recipient entry is malformed." = "Sebuah entri penerima ssh-rsa rusak.";
+
+/* An X25519 recipient entry has the wrong size. */
+"An X25519 recipient entry has the wrong size." = "Sebuah entri penerima X25519 memiliki ukuran yang salah.";
+
+/* An X25519 recipient entry is malformed. */
+"An X25519 recipient entry is malformed." = "Sebuah entri penerima X25519 rusak.";
+
+/* Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one. */
+"Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one." = "Siapa pun yang memiliki frasa sandi dapat membuka file. age memprosesnya melalui scrypt, jadi frasa sandi yang panjang lebih penting daripada yang rumit.";
+
+/* ASCII armor */
+"ASCII armor" = "ASCII armor";
+
+/* Avatar for %@ */
+"Avatar for %@" = "Avatar untuk %@";
+
+/* Cancel */
+"Cancel" = "Batal";
+
+/* Change */
+"Change" = "Ubah";
+
+/* Choose */
+"Choose" = "Pilih";
+
+/* Choose a file to encrypt. */
+"Choose a file to encrypt." = "Pilih file untuk dienkripsi.";
+
+/* Choose a yearly subscription or lifetime purchase at any time to remove the daily limit. */
+"Choose a yearly subscription or lifetime purchase at any time to remove the daily limit." = "Pilih langganan tahunan atau pembelian seumur hidup kapan saja untuk menghapus batas harian.";
+
+/* Choose an age identity file or an SSH private key */
+"Choose an age identity file or an SSH private key" = "Pilih file identitas age atau kunci privat SSH";
+
+/* Choose an encrypted file. */
+"Choose an encrypted file." = "Pilih file terenkripsi.";
+
+/* Choose an image for this key's avatar */
+"Choose an image for this key's avatar" = "Pilih gambar untuk avatar kunci ini";
+
+/* Choose File */
+"Choose File" = "Pilih File";
+
+/* Choose File to Decrypt… */
+"Choose File to Decrypt…" = "Pilih File untuk Didekripsi…";
+
+/* Choose File to Encrypt… */
+"Choose File to Encrypt…" = "Pilih File untuk Dienkripsi…";
+
+/* Choose Folder */
+"Choose Folder" = "Pilih Folder";
+
+/* Choose Identities Folder… */
+"Choose Identities Folder…" = "Pilih Folder Identitas…";
+
+/* Choose Image */
+"Choose Image" = "Pilih Gambar";
+
+/* Choose Recipients Folder… */
+"Choose Recipients Folder…" = "Pilih Folder Penerima…";
+
+/* Choose the encrypted file, usually ending in .age */
+"Choose the encrypted file, usually ending in .age" = "Pilih file terenkripsi, biasanya berakhiran .age";
+
+/* Choose the file to encrypt */
+"Choose the file to encrypt" = "Pilih file yang akan dienkripsi";
+
+/* Choose the folder with the .pub files of the people you encrypt for, usually ~/.age. */
+"Choose the folder with the .pub files of the people you encrypt for, usually ~/.age." = "Pilih folder berisi file .pub milik orang-orang yang Anda tuju saat mengenkripsi, biasanya ~/.age.";
+
+/* Choose the folder with the .pub files you encrypt for, usually ~/.age */
+"Choose the folder with the .pub files you encrypt for, usually ~/.age" = "Pilih folder berisi file .pub yang Anda gunakan untuk mengenkripsi, biasanya ~/.age";
+
+/* Choose the folder with your private keys, usually ~/.ssh */
+"Choose the folder with your private keys, usually ~/.ssh" = "Pilih folder berisi kunci privat Anda, biasanya ~/.ssh";
+
+/* Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page. */
+"Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page." = "Pilih folder berisi kunci SSH Anda, biasanya ~/.ssh, atau tambahkan file identitas age di halaman Identitas.";
+
+/* Choose where to save the decrypted file */
+"Choose where to save the decrypted file" = "Pilih tempat menyimpan file yang didekripsi";
+
+/* Choose where to save the encrypted file */
+"Choose where to save the encrypted file" = "Pilih tempat menyimpan file terenkripsi";
+
+/* Choose your recipients folder */
+"Choose your recipients folder" = "Pilih folder penerima Anda";
+
+/* Choose your SSH folder */
+"Choose your SSH folder" = "Pilih folder SSH Anda";
+
+/* Clear search */
+"Clear search" = "Bersihkan pencarian";
+
+/* Clear the file */
+"Clear the file" = "Kosongkan file";
+
+/* Click an avatar to change it, or drop an image onto it. */
+"Click an avatar to change it, or drop an image onto it." = "Klik avatar untuk mengubahnya, atau seret gambar ke atasnya.";
+
+/* Click to change the avatar, or drop an image on it */
+"Click to change the avatar, or drop an image on it" = "Klik untuk mengubah avatar, atau seret gambar ke atasnya";
+
+/* Compress the folder into an archive first, then open the archive. */
+"Compress the folder into an archive first, then open the archive." = "Kompres folder menjadi arsip terlebih dahulu, lalu buka arsipnya.";
+
+/* Confirm passphrase */
+"Confirm passphrase" = "Konfirmasi frasa sandi";
+
+/* Contacting the App Store… */
+"Contacting the App Store…" = "Menghubungi App Store…";
+
+/* Continue */
+"Continue" = "Lanjutkan";
+
+/* Copy */
+"Copy" = "Salin";
+
+/* Copy Key */
+"Copy Key" = "Salin Kunci";
+
+/* Copy Path */
+"Copy Path" = "Salin Path";
+
+/* Copy Public Key */
+"Copy Public Key" = "Salin Kunci Publik";
+
+/* Decrypt */
+"Decrypt" = "Dekripsi";
+
+/* Decrypt This File */
+"Decrypt This File" = "Dekripsi File Ini";
+
+/* Decrypt with */
+"Decrypt with" = "Dekripsi dengan";
+
+/* Decrypted */
+"Decrypted" = "Didekripsi";
+
+/* Decrypting */
+"Decrypting" = "Mendekripsi";
+
+/* Decryption failed */
+"Decryption failed" = "Dekripsi gagal";
+
+/* Decrypt… */
+"Decrypt…" = "Dekripsi…";
+
+/* Delete */
+"Delete" = "Hapus";
+
+/* Delete %@? */
+"Delete %@?" = "Hapus %@?";
+
+/* Delete the .pub file */
+"Delete the .pub file" = "Hapus file .pub";
+
+/* Drop a file here to encrypt it */
+"Drop a file here to encrypt it" = "Seret file ke sini untuk mengenkripsinya";
+
+/* Drop a file, not a folder. Compress the folder first, then drop the archive. */
+"Drop a file, not a folder. Compress the folder first, then drop the archive." = "Seret file, bukan folder. Kompres folder terlebih dahulu, lalu seret arsipnya.";
+
+/* Drop an age file here to decrypt it */
+"Drop an age file here to decrypt it" = "Seret file age ke sini untuk mendekripsinya";
+
+/* Encrypt */
+"Encrypt" = "Enkripsi";
+
+/* Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file. */
+"Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file." = "Enkripsi file untuk kunci publik orang-orang yang boleh membukanya, atau dengan frasa sandi. Hasilnya adalah file age standar.";
+
+/* Encrypt for */
+"Encrypt for" = "Enkripsi untuk";
+
+/* Encrypted */
+"Encrypted" = "Terenkripsi";
+
+/* Encrypted for */
+"Encrypted for" = "Dienkripsi untuk";
+
+/* Encrypting */
+"Encrypting" = "Mengenkripsi";
+
+/* Encryption failed */
+"Encryption failed" = "Enkripsi gagal";
+
+/* Encrypt… */
+"Encrypt…" = "Enkripsi…";
+
+/* Enter a passphrase. */
+"Enter a passphrase." = "Masukkan frasa sandi.";
+
+/* Enter the file's passphrase. */
+"Enter the file's passphrase." = "Masukkan frasa sandi file ini.";
+
+/* Enter the passphrase below */
+"Enter the passphrase below" = "Masukkan frasa sandi di bawah";
+
+/* Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa). */
+"Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa)." = "Diharapkan kunci publik age (age1…) atau kunci publik SSH (ssh-ed25519 atau ssh-rsa).";
+
+/* Expires %@ */
+"Expires %@" = "Berakhir %@";
+
+/* Files */
+"Files" = "File";
+
+/* Fill both fields with a random passphrase and show it once */
+"Fill both fields with a random passphrase and show it once" = "Isi kedua kolom dengan frasa sandi acak dan tampilkan sekali";
+
+/* Filter identities */
+"Filter identities" = "Filter identitas";
+
+/* Filter recipients */
+"Filter recipients" = "Filter penerima";
+
+/* Find… */
+"Find…" = "Cari…";
+
+/* Forget Access */
+"Forget Access" = "Lupakan Akses";
+
+/* Forget access to the key folders? */
+"Forget access to the key folders?" = "Lupakan akses ke folder kunci?";
+
+/* Forget Folder Access… */
+"Forget Folder Access…" = "Lupakan Akses Folder…";
+
+/* Free · Available today: %lld */
+"Free · Available today: %lld" = "Gratis · Tersedia hari ini: %lld";
+
+/* Generate */
+"Generate" = "Buat";
+
+/* Give the recipient a name. */
+"Give the recipient a name." = "Beri nama penerima.";
+
+/* Hide this card */
+"Hide this card" = "Sembunyikan kartu ini";
+
+/* Identities */
+"Identities" = "Identitas";
+
+/* Identity file */
+"Identity file" = "File identitas";
+
+/* Initials */
+"Initials" = "Inisial";
+
+/* Initials color %lld */
+"Initials color %lld" = "Warna inisial %lld";
+
+/* Keep Working */
+"Keep Working" = "Lanjutkan Bekerja";
+
+/* Key */
+"Key" = "Kunci";
+
+/* Keys */
+"Keys" = "Kunci";
+
+/* Lifetime */
+"Lifetime" = "Seumur hidup";
+
+/* Loading App Store products… */
+"Loading App Store products…" = "Memuat produk App Store…";
+
+/* Loading keys… */
+"Loading keys…" = "Memuat kunci…";
+
+/* macOS did not grant lasting access to that folder. Choose it again, or choose another folder. */
+"macOS did not grant lasting access to that folder. Choose it again, or choose another folder." = "macOS tidak memberikan akses permanen ke folder tersebut. Pilih lagi, atau pilih folder lain.";
+
+/* Manage Subscription */
+"Manage Subscription" = "Kelola Langganan";
+
+/* matches */
+"matches" = "cocok";
+
+/* Matches %@ */
+"Matches %@" = "Cocok dengan %@";
+
+/* Matching keys first. Protected keys ask for their passphrase. */
+"Matching keys first. Protected keys ask for their passphrase." = "Kunci yang cocok ditampilkan lebih dulu. Kunci yang dilindungi akan meminta frasa sandinya.";
+
+/* Name */
+"Name" = "Nama";
+
+/* New age Key */
+"New age Key" = "Kunci age Baru";
+
+/* New age key saved */
+"New age key saved" = "Kunci age baru disimpan";
+
+/* New age Key… */
+"New age Key…" = "Kunci age Baru…";
+
+/* New recipient */
+"New recipient" = "Penerima baru";
+
+/* No active purchase was found. */
+"No active purchase was found." = "Tidak ditemukan pembelian Agemin aktif.";
+
+/* No Agemin Pro purchase was found for this Apple Account. */
+"No Agemin Pro purchase was found for this Apple Account." = "Tidak ditemukan pembelian Agemin Pro untuk Akun Apple ini.";
+
+/* No identities yet */
+"No identities yet" = "Belum ada identitas";
+
+/* No matching key */
+"No matching key" = "Tidak ada kunci yang cocok";
+
+/* No recipients folder yet */
+"No recipients folder yet" = "Belum ada folder penerima";
+
+/* None */
+"None" = "Tidak ada";
+
+/* None of the identities can decrypt this file. */
+"None of the identities can decrypt this file." = "Tidak ada identitas yang dapat mendekripsi file ini.";
+
+/* None of your identities matches this file. Add the key it was encrypted for on the Identities page. */
+"None of your identities matches this file. Add the key it was encrypted for on the Identities page." = "Tidak ada identitas Anda yang cocok dengan file ini. Tambahkan kunci yang digunakan untuk mengenkripsinya di halaman Identitas.";
+
+/* not a key */
+"not a key" = "bukan kunci";
+
+/* OK */
+"OK" = "OK";
+
+/* Open an age file with one of your keys, or with the passphrase it was encrypted with. */
+"Open an age file with one of your keys, or with the passphrase it was encrypted with." = "Buka file age dengan salah satu kunci Anda, atau dengan frasa sandi yang digunakan untuk mengenkripsinya.";
+
+/* Options */
+"Options" = "Opsi";
+
+/* Output */
+"Output" = "Output";
+
+/* Pages */
+"Pages" = "Halaman";
+
+/* Passphrase */
+"Passphrase" = "Frasa sandi";
+
+/* passphrase */
+"passphrase" = "frasa sandi";
+
+/* Passphrase · work factor %lld */
+"Passphrase · work factor %lld" = "Frasa sandi · faktor kerja %lld";
+
+/* Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends. */
+"Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends." = "Pembayaran ditagihkan ke Akun Apple Anda. Langganan tahunan diperpanjang secara otomatis kecuali Anda membatalkannya di pengaturan App Store setidaknya sehari sebelum periode saat ini berakhir.";
+
+/* Privacy Policy */
+"Privacy Policy" = "Kebijakan Privasi";
+
+/* Privacy Policy… */
+"Privacy Policy…" = "Kebijakan Privasi…";
+
+/* Pro */
+"Pro" = "Pro";
+
+/* Pro purchases are unavailable right now. Try again later. */
+"Pro purchases are unavailable right now. Try again later." = "Pembelian Pro tidak tersedia saat ini. Coba lagi nanti.";
+
+/* Pro trial · %lld days remaining */
+"Pro trial · %lld days remaining" = "Uji coba Pro · sisa %lld hari";
+
+/* Pro trial · 1 day remaining */
+"Pro trial · 1 day remaining" = "Uji coba Pro · sisa 1 hari";
+
+/* Pro trial · ends %@ */
+"Pro trial · ends %@" = "Uji coba Pro · berakhir %@";
+
+/* Pro trial · first payment %@ */
+"Pro trial · first payment %@" = "Uji coba Pro · pembayaran pertama %@";
+
+/* Pro trial · until %@ */
+"Pro trial · until %@" = "Uji coba Pro · sampai %@";
+
+/* Public key */
+"Public key" = "Kunci publik";
+
+/* Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file. */
+"Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file." = "Kunci publik yang Anda gunakan untuk mengenkripsi. Setiap file .pub di folder adalah satu penerima, dinamai sesuai file-nya.";
+
+/* Purchase */
+"Purchase" = "Pembelian";
+
+/* Quit Anyway */
+"Quit Anyway" = "Tetap Keluar";
+
+/* Quitting now cancels it and removes the partial output. */
+"Quitting now cancels it and removes the partial output." = "Keluar sekarang akan membatalkannya dan menghapus output yang belum selesai.";
+
+/* Read the folder again */
+"Read the folder again" = "Baca folder lagi";
+
+/* Recipients */
+"Recipients" = "Penerima";
+
+/* Refresh Keys */
+"Refresh Keys" = "Segarkan Kunci";
+
+/* Remove from the list */
+"Remove from the list" = "Hapus dari daftar";
+
+/* Renews %@ */
+"Renews %@" = "Diperpanjang %@";
+
+/* Restore Purchases */
+"Restore Purchases" = "Pulihkan Pembelian";
+
+/* Restoring… */
+"Restoring…" = "Memulihkan…";
+
+/* Reveal */
+"Reveal" = "Tampilkan";
+
+/* Reveal in Finder */
+"Reveal in Finder" = "Tampilkan di Finder";
+
+/* Save */
+"Save" = "Simpan";
+
+/* Save Key */
+"Save Key" = "Simpan Kunci";
+
+/* Save Recipient */
+"Save Recipient" = "Simpan Penerima";
+
+/* Save the new identity file somewhere private because it holds the secret key */
+"Save the new identity file somewhere private because it holds the secret key" = "Simpan file identitas baru di tempat yang privat; file ini berisi kunci rahasia";
+
+/* Saved as */
+"Saved as" = "Disimpan sebagai";
+
+/* Saved as <name>.pub in the recipients folder. */
+"Saved as <name>.pub in the recipients folder." = "Disimpan sebagai <name>.pub di folder penerima.";
+
+/* Select at least one recipient. */
+"Select at least one recipient." = "Pilih setidaknya satu penerima.";
+
+/* SHA-256 */
+"SHA-256" = "SHA-256";
+
+/* Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it. */
+"Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it." = "Bagikan kunci publik kepada orang-orang yang perlu mengenkripsi untuk Anda. Jaga kerahasiaan file identitas; file ini hanya dapat dibaca oleh akun Anda.";
+
+/* Shared with your family */
+"Shared with your family" = "Dibagikan dengan keluarga";
+
+/* Size */
+"Size" = "Ukuran";
+
+/* SSH key (Ed25519) */
+"SSH key (Ed25519)" = "Kunci SSH (Ed25519)";
+
+/* SSH key (RSA) */
+"SSH key (RSA)" = "Kunci SSH (RSA)";
+
+/* Terms of Use (EULA) */
+"Terms of Use (EULA)" = "Ketentuan Penggunaan (EULA)";
+
+/* That file is not an image Agemin can read. */
+"That file is not an image Agemin can read." = "File tersebut bukan gambar yang dapat dibaca Agemin.";
+
+/* The App Store could not verify this purchase. */
+"The App Store could not verify this purchase." = "App Store tidak dapat memverifikasi pembelian ini.";
+
+/* The armor header is missing. */
+"The armor header is missing." = "Header armor tidak ada.";
+
+/* The armored file could not be read. %@ */
+"The armored file could not be read. %@" = "File armor tidak dapat dibaca. %@";
+
+/* The armored file ends before its footer. */
+"The armored file ends before its footer." = "File armor berakhir sebelum footer-nya.";
+
+/* The armored text is incomplete. */
+"The armored text is incomplete." = "Teks armor tidak lengkap.";
+
+/* The armored text is not valid base64. */
+"The armored text is not valid base64." = "Teks armor bukan base64 yang valid.";
+
+/* The decrypted file cannot replace the encrypted file. Choose a different name. */
+"The decrypted file cannot replace the encrypted file. Choose a different name." = "File yang didekripsi tidak dapat menggantikan file terenkripsi. Pilih nama lain.";
+
+/* The decrypted file does not hold an age secret key. */
+"The decrypted file does not hold an age secret key." = "File yang didekripsi tidak berisi kunci rahasia age.";
+
+/* The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one. */
+"The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one." = "File yang didekripsi hanya dapat dibaca oleh akun pengguna Anda. Bandingkan checksum dengan milik pengirim jika mereka memberikannya.";
+
+/* The encrypted data is corrupt or was modified. */
+"The encrypted data is corrupt or was modified." = "Data terenkripsi rusak atau telah diubah.";
+
+/* The encrypted file cannot replace the original. Choose a different name. */
+"The encrypted file cannot replace the original. Choose a different name." = "File terenkripsi tidak dapat menggantikan file aslinya. Pilih nama lain.";
+
+/* The file could not be read. */
+"The file could not be read." = "File tidak dapat dibaca.";
+
+/* The file ends early. It may be incomplete. */
+"The file ends early. It may be incomplete." = "File berakhir terlalu awal. File mungkin tidak lengkap.";
+
+/* The file header was modified or the key is wrong. */
+"The file header was modified or the key is wrong." = "Header file telah diubah atau kuncinya salah.";
+
+/* The file holds no age secret key. */
+"The file holds no age secret key." = "File tidak berisi kunci rahasia age.";
+
+/* The file is being read. */
+"The file is being read." = "File sedang dibaca.";
+
+/* The file is not text. */
+"The file is not text." = "File bukan teks.";
+
+/* The file is too large to be a key. */
+"The file is too large to be a key." = "File terlalu besar untuk menjadi kunci.";
+
+/* The first line is not the age version marker. */
+"The first line is not the age version marker." = "Baris pertama bukan penanda versi age.";
+
+/* The header authentication line is malformed. */
+"The header authentication line is malformed." = "Baris autentikasi header rusak.";
+
+/* The header is not valid text. */
+"The header is not valid text." = "Header bukan teks yang valid.";
+
+/* The header is too large to be an age file. */
+"The header is too large to be an age file." = "Header terlalu besar untuk menjadi file age.";
+
+/* The header lists too many recipients. */
+"The header lists too many recipients." = "Header mencantumkan terlalu banyak penerima.";
+
+/* The identity could not be read. %@ */
+"The identity could not be read. %@" = "Identitas tidak dapat dibaca. %@";
+
+/* The identity file could not be saved. */
+"The identity file could not be saved." = "File identitas tidak dapat disimpan.";
+
+/* The image could not be used */
+"The image could not be used" = "Gambar tidak dapat digunakan";
+
+/* The image is larger than %lld pixels on a side. Choose a smaller one. */
+"The image is larger than %lld pixels on a side. Choose a smaller one." = "Gambar lebih besar dari %lld piksel pada satu sisi. Pilih yang lebih kecil.";
+
+/* The input is larger than expected. */
+"The input is larger than expected." = "Input lebih besar dari yang diharapkan.";
+
+/* The key file ends early. */
+"The key file ends early." = "File kunci berakhir terlalu awal.";
+
+/* The key file is malformed. */
+"The key file is malformed." = "File kunci rusak.";
+
+/* The key file's passphrase settings are invalid. */
+"The key file's passphrase settings are invalid." = "Pengaturan frasa sandi file kunci tidak valid.";
+
+/* The key is empty. */
+"The key is empty." = "Kunci kosong.";
+
+/* The key is protected with the %@ cipher, which is not supported. */
+"The key is protected with the %@ cipher, which is not supported." = "Kunci dilindungi dengan cipher %@, yang tidak didukung.";
+
+/* The key is saved as <name>.pub in the recipients folder. */
+"The key is saved as <name>.pub in the recipients folder." = "Kunci disimpan sebagai <name>.pub di folder penerima.";
+
+/* The key uses %lld key derivation rounds. Agemin supports up to %lld. */
+"The key uses %lld key derivation rounds. Agemin supports up to %lld." = "Kunci menggunakan %lld putaran derivasi kunci; Agemin mendukung hingga %lld.";
+
+/* The key uses the %@ key derivation, which is not supported. */
+"The key uses the %@ key derivation, which is not supported." = "Kunci menggunakan derivasi kunci %@, yang tidak didukung.";
+
+/* The operation was canceled. */
+"The operation was canceled." = "Operasi dibatalkan.";
+
+/* The passphrase entry is malformed. */
+"The passphrase entry is malformed." = "Entri frasa sandi rusak.";
+
+/* The passphrase for %@ is incorrect. Try again. */
+"The passphrase for %@ is incorrect. Try again." = "Frasa sandi untuk %@ salah. Coba lagi.";
+
+/* The passphrase is incorrect. */
+"The passphrase is incorrect." = "Frasa sandi salah.";
+
+/* The passphrase work factor %lld is too high to try safely. */
+"The passphrase work factor %lld is too high to try safely." = "Faktor kerja frasa sandi %lld terlalu tinggi untuk dicoba dengan aman.";
+
+/* The passphrase work factor is malformed. */
+"The passphrase work factor is malformed." = "Faktor kerja frasa sandi rusak.";
+
+/* The passphrases do not match. */
+"The passphrases do not match." = "Frasa sandi tidak cocok.";
+
+/* The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them. */
+"The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them." = "Kunci privat yang membuka file yang dienkripsi untuk Anda: kunci SSH dari ~/.ssh dan file identitas age. Agemin membacanya dan tidak pernah mengubahnya.";
+
+/* The purchase is awaiting approval. */
+"The purchase is awaiting approval." = "Pembelian ini sedang menunggu persetujuan.";
+
+/* The recipient could not be deleted. */
+"The recipient could not be deleted." = "Penerima tidak dapat dihapus.";
+
+/* The recipient could not be saved. */
+"The recipient could not be saved." = "Penerima tidak dapat disimpan.";
+
+/* The recipient key could not be read. %@ */
+"The recipient key could not be read. %@" = "Kunci penerima tidak dapat dibaca. %@";
+
+/* The recipients folder */
+"The recipients folder" = "Folder penerima";
+
+/* The recipients folder holds no .pub files yet. */
+"The recipients folder holds no .pub files yet." = "Folder penerima belum berisi file .pub.";
+
+/* The RSA key is malformed. */
+"The RSA key is malformed." = "Kunci RSA rusak.";
+
+/* The RSA key is too small or malformed. */
+"The RSA key is too small or malformed." = "Kunci RSA terlalu kecil atau rusak.";
+
+/* The SSH key is not a valid Ed25519 key. */
+"The SSH key is not a valid Ed25519 key." = "Kunci SSH bukan kunci Ed25519 yang valid.";
+
+/* The SSH key is not a valid RSA key. */
+"The SSH key is not a valid RSA key." = "Kunci SSH bukan kunci RSA yang valid.";
+
+/* The SSH public key is malformed. */
+"The SSH public key is malformed." = "Kunci publik SSH rusak.";
+
+/* There is text after the armor footer. */
+"There is text after the armor footer." = "Ada teks setelah footer armor.";
+
+/* This deletes the file from the recipients folder. Files already encrypted for this key are not affected. */
+"This deletes the file from the recipients folder. Files already encrypted for this key are not affected." = "File dihapus dari folder penerima. File yang sudah dienkripsi untuk kunci ini tidak terpengaruh.";
+
+/* This file cannot be read as an age file */
+"This file cannot be read as an age file" = "File ini tidak dapat dibaca sebagai file age";
+
+/* This file is not a key. */
+"This file is not a key." = "File ini bukan kunci.";
+
+/* This file needs a passphrase. */
+"This file needs a passphrase." = "File ini memerlukan frasa sandi.";
+
+/* This is a secret key. Use the matching public key, which starts with age1. */
+"This is a secret key. Use the matching public key, which starts with age1." = "Ini adalah kunci rahasia. Gunakan kunci publik pasangannya, yang diawali dengan age1.";
+
+/* This is not a valid age public key. */
+"This is not a valid age public key." = "Ini bukan kunci publik age yang valid.";
+
+/* This is not a valid age secret key. */
+"This is not a valid age secret key." = "Ini bukan kunci rahasia age yang valid.";
+
+/* This is not an age file. %@ */
+"This is not an age file. %@" = "Ini bukan file age. %@";
+
+/* This key format is not supported. Use an OpenSSH private key or an age identity file. */
+"This key format is not supported. Use an OpenSSH private key or an age identity file." = "Format kunci ini tidak didukung. Gunakan kunci privat OpenSSH atau file identitas age.";
+
+/* This key produces a weak shared secret and cannot be used. */
+"This key produces a weak shared secret and cannot be used." = "Kunci ini menghasilkan rahasia bersama yang lemah dan tidak dapat digunakan.";
+
+/* This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy. */
+"This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy." = "Kunci yang dilindungi frasa sandi ini menggunakan format PEM lama. Konversi dengan ssh-keygen -p -o, atau gunakan salinan yang tidak dilindungi.";
+
+/* Trial ended */
+"Trial ended" = "Uji coba berakhir";
+
+/* Try Again */
+"Try Again" = "Coba Lagi";
+
+/* Try every usable key */
+"Try every usable key" = "Coba setiap kunci yang dapat digunakan";
+
+/* Unknown recipient type “%@” */
+"Unknown recipient type “%@”" = "Jenis penerima tidak dikenal “%@”";
+
+/* Unlock */
+"Unlock" = "Buka Kunci";
+
+/* Unlock %@ */
+"Unlock %@" = "Buka Kunci %@";
+
+/* Unlock %@ with Agemin Pro. */
+"Unlock %@ with Agemin Pro." = "Buka kunci %@ dengan Agemin Pro.";
+
+/* Until %@ */
+"Until %@" = "Hingga %@";
+
+/* Use Image */
+"Use Image" = "Gunakan Gambar";
+
+/* Use Initials */
+"Use Initials" = "Gunakan Inisial";
+
+/* Valid %@ key */
+"Valid %@ key" = "Kunci %@ valid";
+
+/* Wait for the current operation to finish. */
+"Wait for the current operation to finish." = "Tunggu hingga operasi saat ini selesai.";
+
+/* Write it down or store it in a password manager. Agemin does not keep it. */
+"Write it down or store it in a password manager. Agemin does not keep it." = "Catat atau simpan di pengelola kata sandi. Agemin tidak menyimpannya.";
+
+/* Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both. */
+"Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both." = "Tulis file terenkripsi sebagai teks, bukan biner, untuk email, chat, dan file konfigurasi. age dapat membaca keduanya.";
+
+/* you */
+"you" = "Anda";
+
+/* You can still encrypt or decrypt one file per day. Available today: %lld. */
+"You can still encrypt or decrypt one file per day. Available today: %lld." = "Anda masih dapat mengenkripsi atau mendekripsi satu file per hari. Tersedia hari ini: %lld.";
+
+/* You have Agemin Pro. */
+"You have Agemin Pro." = "Anda punya Agemin Pro.";
+
+/* Your Pro trial is active. */
+"Your Pro trial is active." = "Masa uji coba Pro Anda aktif.";
+
+/* · you choose the folder when you encrypt */
+"· you choose the folder when you encrypt" = "· Anda memilih folder saat mengenkripsi";
