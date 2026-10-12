@@ -1,0 +1,904 @@
+/* Agemin — da localization. Each comment shows the English source text. */
+
+/*  and armor */
+" and armor" = " og armor";
+
+/* %@ %@ of %@ */
+"%@ %@ of %@" = "%@ %@ af %@";
+
+/* %@ could not be read. */
+"%@ could not be read." = "%@ kunne ikke læses.";
+
+/* %@ could not be written. */
+"%@ could not be written." = "%@ kunne ikke skrives.";
+
+/* %@ is protected with a passphrase. */
+"%@ is protected with a passphrase." = "%@ er beskyttet med en adgangssætning.";
+
+/* %@ keys are not supported by age. */
+"%@ keys are not supported by age." = "%@-nøgler understøttes ikke af age.";
+
+/* %@ per year */
+"%@ per year" = "%@ pr. år";
+
+/* %@ · %@ more than the original for the header%@ */
+"%@ · %@ more than the original for the header%@" = "%@ · %@ mere end originalen på grund af headeren%@";
+
+/* %@.pub already exists in the recipients folder. */
+"%@.pub already exists in the recipients folder." = "%@.pub findes allerede i modtagermappen.";
+
+/* %lld identities */
+"%lld identities" = "%lld identiteter";
+
+/* %lld identities · %lld usable */
+"%lld identities · %lld usable" = "%lld identiteter · %lld brugbare";
+
+/* %lld keys */
+"%lld keys" = "%lld nøgler";
+
+/* %lld keys tried */
+"%lld keys tried" = "%lld nøgler prøvet";
+
+/* %lld of %lld recipients selected */
+"%lld of %lld recipients selected" = "%lld af %lld modtagere valgt";
+
+/* %lld recipients */
+"%lld recipients" = "%lld modtagere";
+
+/* %lld recipients · %lld usable */
+"%lld recipients · %lld usable" = "%lld modtagere · %lld brugbare";
+
+/* 1 identity */
+"1 identity" = "1 identitet";
+
+/* 1 recipient */
+"1 recipient" = "1 modtager";
+
+/* 30 days of full access */
+"30 days of full access" = "30 dages fuld adgang";
+
+/* A file is still being processed. */
+"A file is still being processed." = "En fil behandles stadig.";
+
+/* A header line is neither a recipient nor the closing marker. */
+"A header line is neither a recipient nor the closing marker." = "En headerlinje er hverken en modtager eller slutmarkøren.";
+
+/* A header line is too long. */
+"A header line is too long." = "En headerlinje er for lang.";
+
+/* A passphrase cannot be combined with other recipients. */
+"A passphrase cannot be combined with other recipients." = "En adgangssætning kan ikke kombineres med andre modtagere.";
+
+/* A passphrase entry must be the only recipient. */
+"A passphrase entry must be the only recipient." = "En adgangssætningspost skal være den eneste modtager.";
+
+/* A recipient body is not valid base64. */
+"A recipient body is not valid base64." = "Indholdet i en modtagerpost er ikke gyldig base64.";
+
+/* A recipient body line is malformed. */
+"A recipient body line is malformed." = "En indholdslinje i en modtagerpost har forkert format.";
+
+/* A recipient line is malformed. */
+"A recipient line is malformed." = "En modtagerlinje har forkert format.";
+
+/* About Agemin */
+"About Agemin" = "Om Agemin";
+
+/* Action */
+"Action" = "Handling";
+
+/* Add */
+"Add" = "Tilføj";
+
+/* Add a public key on the Recipients page */
+"Add a public key on the Recipients page" = "Tilføj en offentlig nøgle på siden Modtagere";
+
+/* Add an identity that can decrypt this file. */
+"Add an identity that can decrypt this file." = "Tilføj en identitet, der kan dekryptere denne fil.";
+
+/* Add Key File */
+"Add Key File" = "Tilføj nøglefil";
+
+/* Add Key File… */
+"Add Key File…" = "Tilføj nøglefil…";
+
+/* Add Recipient */
+"Add Recipient" = "Tilføj modtager";
+
+/* Add Recipient… */
+"Add Recipient…" = "Tilføj modtager…";
+
+/* Add to Recipients */
+"Add to Recipients" = "Føj til modtagere";
+
+/* added */
+"added" = "tilføjet";
+
+/* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
+"After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "Efter prøveperioden kan du stadig kryptere eller dekryptere én fil om dagen. Læsning af nøgler, inspektion af filer og oprettelse af nøgler er fortsat ubegrænset.";
+
+/* age encryption, without the terminal. */
+"age encryption, without the terminal." = "age-kryptering uden terminalen.";
+
+/* age key */
+"age key" = "age-nøgle";
+
+/* age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA… */
+"age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA…" = "age1… eller ssh-ed25519 AAAA… eller ssh-rsa AAAA…";
+
+/* Agemin could not use that folder */
+"Agemin could not use that folder" = "Agemin kunne ikke bruge den mappe";
+
+/* Agemin encrypts files, not folders. */
+"Agemin encrypts files, not folders." = "Agemin krypterer filer, ikke mapper.";
+
+/* Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged. */
+"Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged." = "Agemin er helt låst op i dine første 30 dage. Der starter intet abonnement, og du bliver ikke opkrævet.";
+
+/* Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice. */
+"Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice." = "Agemin viser .pub-filerne der og lader dig tilføje nye. Enhver mappe kan bruges; ~/.age er et almindeligt valg.";
+
+/* Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually. */
+"Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually." = "Agemin viser de private nøgler, den finder der, normalt ~/.ssh, og dekrypterer med dem. Nøgler, der ligger andre steder, kan tilføjes en ad gangen.";
+
+/* Agemin Pro */
+"Agemin Pro" = "Agemin Pro";
+
+/* Agemin Pro Lifetime · %@ */
+"Agemin Pro Lifetime · %@" = "Agemin Pro Livstid · %@";
+
+/* Agemin Pro Yearly */
+"Agemin Pro Yearly" = "Agemin Pro Årligt";
+
+/* Agemin Pro… */
+"Agemin Pro…" = "Agemin Pro…";
+
+/* Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them. */
+"Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them." = "Agemin fjerner sine gemte tilladelser til modtagermappen, identitetsmappen og alle nøglefiler, der er tilføjet enkeltvis. Intet slettes. Vælg dem igen for at bruge dem fortsat.";
+
+/* Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed. */
+"Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed." = "Agemin gemmer avataren under denne nøgles fingeraftryk. Intet i dine nøglemapper ændres.";
+
+/* alice */
+"alice" = "alice";
+
+/* All */
+"All" = "Alle";
+
+/* An age public key has 32 bytes. */
+"An age public key has 32 bytes." = "En offentlig age-nøgle har 32 byte.";
+
+/* An age secret key has 32 bytes. */
+"An age secret key has 32 bytes." = "En hemmelig age-nøgle har 32 byte.";
+
+/* An ssh-ed25519 recipient entry is malformed. */
+"An ssh-ed25519 recipient entry is malformed." = "En ssh-ed25519-modtagerpost har forkert format.";
+
+/* An ssh-rsa recipient entry is malformed. */
+"An ssh-rsa recipient entry is malformed." = "En ssh-rsa-modtagerpost har forkert format.";
+
+/* An X25519 recipient entry has the wrong size. */
+"An X25519 recipient entry has the wrong size." = "En X25519-modtagerpost har forkert størrelse.";
+
+/* An X25519 recipient entry is malformed. */
+"An X25519 recipient entry is malformed." = "En X25519-modtagerpost har forkert format.";
+
+/* Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one. */
+"Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one." = "Alle med adgangssætningen kan åbne filen. age kører den gennem scrypt, så en lang adgangssætning betyder mere end en kompleks.";
+
+/* ASCII armor */
+"ASCII armor" = "ASCII armor";
+
+/* Avatar for %@ */
+"Avatar for %@" = "Avatar for %@";
+
+/* Cancel */
+"Cancel" = "Annuller";
+
+/* Change */
+"Change" = "Skift";
+
+/* Choose */
+"Choose" = "Vælg";
+
+/* Choose a file to encrypt. */
+"Choose a file to encrypt." = "Vælg en fil, der skal krypteres.";
+
+/* Choose a yearly subscription or lifetime purchase at any time to remove the daily limit. */
+"Choose a yearly subscription or lifetime purchase at any time to remove the daily limit." = "Vælg når som helst et årligt abonnement eller et livstidskøb for at fjerne den daglige grænse.";
+
+/* Choose an age identity file or an SSH private key */
+"Choose an age identity file or an SSH private key" = "Vælg en age-identitetsfil eller en privat SSH-nøgle";
+
+/* Choose an encrypted file. */
+"Choose an encrypted file." = "Vælg en krypteret fil.";
+
+/* Choose an image for this key's avatar */
+"Choose an image for this key's avatar" = "Vælg et billede til denne nøgles avatar";
+
+/* Choose File */
+"Choose File" = "Vælg fil";
+
+/* Choose File to Decrypt… */
+"Choose File to Decrypt…" = "Vælg fil til dekryptering…";
+
+/* Choose File to Encrypt… */
+"Choose File to Encrypt…" = "Vælg fil til kryptering…";
+
+/* Choose Folder */
+"Choose Folder" = "Vælg mappe";
+
+/* Choose Identities Folder… */
+"Choose Identities Folder…" = "Vælg identitetsmappe…";
+
+/* Choose Image */
+"Choose Image" = "Vælg billede";
+
+/* Choose Recipients Folder… */
+"Choose Recipients Folder…" = "Vælg modtagermappe…";
+
+/* Choose the encrypted file, usually ending in .age */
+"Choose the encrypted file, usually ending in .age" = "Vælg den krypterede fil, som normalt ender på .age";
+
+/* Choose the file to encrypt */
+"Choose the file to encrypt" = "Vælg den fil, der skal krypteres";
+
+/* Choose the folder with the .pub files of the people you encrypt for, usually ~/.age. */
+"Choose the folder with the .pub files of the people you encrypt for, usually ~/.age." = "Vælg mappen med .pub-filerne for de personer, du krypterer til, normalt ~/.age.";
+
+/* Choose the folder with the .pub files you encrypt for, usually ~/.age */
+"Choose the folder with the .pub files you encrypt for, usually ~/.age" = "Vælg mappen med de .pub-filer, du krypterer til, normalt ~/.age";
+
+/* Choose the folder with your private keys, usually ~/.ssh */
+"Choose the folder with your private keys, usually ~/.ssh" = "Vælg mappen med dine private nøgler, normalt ~/.ssh";
+
+/* Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page. */
+"Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page." = "Vælg mappen med dine SSH-nøgler, normalt ~/.ssh, eller tilføj en age-identitetsfil på siden Identiteter.";
+
+/* Choose where to save the decrypted file */
+"Choose where to save the decrypted file" = "Vælg, hvor den dekrypterede fil skal arkiveres";
+
+/* Choose where to save the encrypted file */
+"Choose where to save the encrypted file" = "Vælg, hvor den krypterede fil skal arkiveres";
+
+/* Choose your recipients folder */
+"Choose your recipients folder" = "Vælg din modtagermappe";
+
+/* Choose your SSH folder */
+"Choose your SSH folder" = "Vælg din SSH-mappe";
+
+/* Clear search */
+"Clear search" = "Ryd søgning";
+
+/* Clear the file */
+"Clear the file" = "Fjern filen";
+
+/* Click an avatar to change it, or drop an image onto it. */
+"Click an avatar to change it, or drop an image onto it." = "Klik på en avatar for at skifte den, eller slip et billede på den.";
+
+/* Click to change the avatar, or drop an image on it */
+"Click to change the avatar, or drop an image on it" = "Klik for at skifte avataren, eller slip et billede på den";
+
+/* Compress the folder into an archive first, then open the archive. */
+"Compress the folder into an archive first, then open the archive." = "Komprimer først mappen til et arkiv, og åbn derefter arkivet.";
+
+/* Confirm passphrase */
+"Confirm passphrase" = "Bekræft adgangssætning";
+
+/* Contacting the App Store… */
+"Contacting the App Store…" = "Kontakter App Store…";
+
+/* Continue */
+"Continue" = "Fortsæt";
+
+/* Copy */
+"Copy" = "Kopier";
+
+/* Copy Key */
+"Copy Key" = "Kopier nøgle";
+
+/* Copy Path */
+"Copy Path" = "Kopier sti";
+
+/* Copy Public Key */
+"Copy Public Key" = "Kopier offentlig nøgle";
+
+/* Decrypt */
+"Decrypt" = "Dekrypter";
+
+/* Decrypt This File */
+"Decrypt This File" = "Dekrypter denne fil";
+
+/* Decrypt with */
+"Decrypt with" = "Dekrypter med";
+
+/* Decrypted */
+"Decrypted" = "Dekrypteret";
+
+/* Decrypting */
+"Decrypting" = "Dekrypterer";
+
+/* Decryption failed */
+"Decryption failed" = "Dekryptering mislykkedes";
+
+/* Decrypt… */
+"Decrypt…" = "Dekrypter…";
+
+/* Delete */
+"Delete" = "Slet";
+
+/* Delete %@? */
+"Delete %@?" = "Vil du slette %@?";
+
+/* Delete the .pub file */
+"Delete the .pub file" = "Slet .pub-filen";
+
+/* Drop a file here to encrypt it */
+"Drop a file here to encrypt it" = "Slip en fil her for at kryptere den";
+
+/* Drop a file, not a folder. Compress the folder first, then drop the archive. */
+"Drop a file, not a folder. Compress the folder first, then drop the archive." = "Slip en fil, ikke en mappe. Komprimer først mappen, og slip derefter arkivet.";
+
+/* Drop an age file here to decrypt it */
+"Drop an age file here to decrypt it" = "Slip en age-fil her for at dekryptere den";
+
+/* Encrypt */
+"Encrypt" = "Krypter";
+
+/* Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file. */
+"Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file." = "Krypter en fil til de offentlige nøgler for de personer, der skal kunne åbne den, eller med en adgangssætning. Resultatet er en standard age-fil.";
+
+/* Encrypt for */
+"Encrypt for" = "Krypter til";
+
+/* Encrypted */
+"Encrypted" = "Krypteret";
+
+/* Encrypted for */
+"Encrypted for" = "Krypteret til";
+
+/* Encrypting */
+"Encrypting" = "Krypterer";
+
+/* Encryption failed */
+"Encryption failed" = "Kryptering mislykkedes";
+
+/* Encrypt… */
+"Encrypt…" = "Krypter…";
+
+/* Enter a passphrase. */
+"Enter a passphrase." = "Indtast en adgangssætning.";
+
+/* Enter the file's passphrase. */
+"Enter the file's passphrase." = "Indtast filens adgangssætning.";
+
+/* Enter the passphrase below */
+"Enter the passphrase below" = "Indtast adgangssætningen nedenfor";
+
+/* Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa). */
+"Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa)." = "Forventede en offentlig age-nøgle (age1…) eller en offentlig SSH-nøgle (ssh-ed25519 eller ssh-rsa).";
+
+/* Expires %@ */
+"Expires %@" = "Slutter %@";
+
+/* Files */
+"Files" = "Filer";
+
+/* Fill both fields with a random passphrase and show it once */
+"Fill both fields with a random passphrase and show it once" = "Udfyld begge felter med en tilfældig adgangssætning, og vis den én gang";
+
+/* Filter identities */
+"Filter identities" = "Filtrer identiteter";
+
+/* Filter recipients */
+"Filter recipients" = "Filtrer modtagere";
+
+/* Find… */
+"Find…" = "Find…";
+
+/* Forget Access */
+"Forget Access" = "Glem adgang";
+
+/* Forget access to the key folders? */
+"Forget access to the key folders?" = "Vil du glemme adgangen til nøglemapperne?";
+
+/* Forget Folder Access… */
+"Forget Folder Access…" = "Glem mappeadgang…";
+
+/* Free · Available today: %lld */
+"Free · Available today: %lld" = "Gratis · Tilgængelig i dag: %lld";
+
+/* Generate */
+"Generate" = "Generer";
+
+/* Give the recipient a name. */
+"Give the recipient a name." = "Giv modtageren et navn.";
+
+/* Hide this card */
+"Hide this card" = "Skjul dette kort";
+
+/* Identities */
+"Identities" = "Identiteter";
+
+/* Identity file */
+"Identity file" = "Identitetsfil";
+
+/* Initials */
+"Initials" = "Initialer";
+
+/* Initials color %lld */
+"Initials color %lld" = "Initialfarve %lld";
+
+/* Keep Working */
+"Keep Working" = "Fortsæt arbejdet";
+
+/* Key */
+"Key" = "Nøgle";
+
+/* Keys */
+"Keys" = "Nøgler";
+
+/* Lifetime */
+"Lifetime" = "Livstid";
+
+/* Loading App Store products… */
+"Loading App Store products…" = "Indlæser App Store-produkter…";
+
+/* Loading keys… */
+"Loading keys…" = "Indlæser nøgler…";
+
+/* macOS did not grant lasting access to that folder. Choose it again, or choose another folder. */
+"macOS did not grant lasting access to that folder. Choose it again, or choose another folder." = "macOS gav ikke varig adgang til den mappe. Vælg den igen, eller vælg en anden mappe.";
+
+/* Manage Subscription */
+"Manage Subscription" = "Administrer abonnement";
+
+/* matches */
+"matches" = "matcher";
+
+/* Matches %@ */
+"Matches %@" = "Matcher %@";
+
+/* Matching keys first. Protected keys ask for their passphrase. */
+"Matching keys first. Protected keys ask for their passphrase." = "Matchende nøgler først. Beskyttede nøgler beder om deres adgangssætning.";
+
+/* Name */
+"Name" = "Navn";
+
+/* New age Key */
+"New age Key" = "Ny age-nøgle";
+
+/* New age key saved */
+"New age key saved" = "Ny age-nøgle arkiveret";
+
+/* New age Key… */
+"New age Key…" = "Ny age-nøgle…";
+
+/* New recipient */
+"New recipient" = "Ny modtager";
+
+/* No active purchase was found. */
+"No active purchase was found." = "Der blev ikke fundet noget aktivt Agemin-køb.";
+
+/* No Agemin Pro purchase was found for this Apple Account. */
+"No Agemin Pro purchase was found for this Apple Account." = "Der blev ikke fundet noget Agemin Pro-køb for denne Apple-konto.";
+
+/* No identities yet */
+"No identities yet" = "Ingen identiteter endnu";
+
+/* No matching key */
+"No matching key" = "Ingen matchende nøgle";
+
+/* No recipients folder yet */
+"No recipients folder yet" = "Ingen modtagermappe endnu";
+
+/* None */
+"None" = "Ingen";
+
+/* None of the identities can decrypt this file. */
+"None of the identities can decrypt this file." = "Ingen af identiteterne kan dekryptere denne fil.";
+
+/* None of your identities matches this file. Add the key it was encrypted for on the Identities page. */
+"None of your identities matches this file. Add the key it was encrypted for on the Identities page." = "Ingen af dine identiteter matcher denne fil. Tilføj den nøgle, den blev krypteret til, på siden Identiteter.";
+
+/* not a key */
+"not a key" = "ikke en nøgle";
+
+/* OK */
+"OK" = "OK";
+
+/* Open an age file with one of your keys, or with the passphrase it was encrypted with. */
+"Open an age file with one of your keys, or with the passphrase it was encrypted with." = "Åbn en age-fil med en af dine nøgler eller med den adgangssætning, den blev krypteret med.";
+
+/* Options */
+"Options" = "Muligheder";
+
+/* Output */
+"Output" = "Output";
+
+/* Pages */
+"Pages" = "Sider";
+
+/* Passphrase */
+"Passphrase" = "Adgangssætning";
+
+/* passphrase */
+"passphrase" = "adgangssætning";
+
+/* Passphrase · work factor %lld */
+"Passphrase · work factor %lld" = "Adgangssætning · arbejdsfaktor %lld";
+
+/* Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends. */
+"Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends." = "Betalingen trækkes via din Apple-konto. Det årlige abonnement fornyes automatisk, medmindre du opsiger det i App Store-indstillingerne mindst en dag, før den aktuelle periode udløber.";
+
+/* Privacy Policy */
+"Privacy Policy" = "Privatlivspolitik";
+
+/* Privacy Policy… */
+"Privacy Policy…" = "Privatlivspolitik…";
+
+/* Pro */
+"Pro" = "Pro";
+
+/* Pro purchases are unavailable right now. Try again later. */
+"Pro purchases are unavailable right now. Try again later." = "Pro-køb er ikke tilgængelige lige nu. Prøv igen senere.";
+
+/* Pro trial · %lld days remaining */
+"Pro trial · %lld days remaining" = "Pro-prøveperiode · %lld dage tilbage";
+
+/* Pro trial · 1 day remaining */
+"Pro trial · 1 day remaining" = "Pro-prøveperiode · 1 dag tilbage";
+
+/* Pro trial · ends %@ */
+"Pro trial · ends %@" = "Pro-prøveperiode · slutter %@";
+
+/* Pro trial · first payment %@ */
+"Pro trial · first payment %@" = "Pro-prøveperiode · første betaling %@";
+
+/* Pro trial · until %@ */
+"Pro trial · until %@" = "Pro-prøveperiode · indtil %@";
+
+/* Public key */
+"Public key" = "Offentlig nøgle";
+
+/* Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file. */
+"Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file." = "De offentlige nøgler, du krypterer til. Hver .pub-fil i mappen er én modtager, navngivet efter filen.";
+
+/* Purchase */
+"Purchase" = "Køb";
+
+/* Quit Anyway */
+"Quit Anyway" = "Slut alligevel";
+
+/* Quitting now cancels it and removes the partial output. */
+"Quitting now cancels it and removes the partial output." = "Hvis du slutter nu, annulleres den, og det ufuldstændige output fjernes.";
+
+/* Read the folder again */
+"Read the folder again" = "Læs mappen igen";
+
+/* Recipients */
+"Recipients" = "Modtagere";
+
+/* Refresh Keys */
+"Refresh Keys" = "Opdater nøgler";
+
+/* Remove from the list */
+"Remove from the list" = "Fjern fra listen";
+
+/* Renews %@ */
+"Renews %@" = "Fornyes %@";
+
+/* Restore Purchases */
+"Restore Purchases" = "Genopret køb";
+
+/* Restoring… */
+"Restoring…" = "Gendanner…";
+
+/* Reveal */
+"Reveal" = "Vis";
+
+/* Reveal in Finder */
+"Reveal in Finder" = "Vis i Finder";
+
+/* Save */
+"Save" = "Arkiver";
+
+/* Save Key */
+"Save Key" = "Arkiver nøgle";
+
+/* Save Recipient */
+"Save Recipient" = "Arkiver modtager";
+
+/* Save the new identity file somewhere private because it holds the secret key */
+"Save the new identity file somewhere private because it holds the secret key" = "Arkiver den nye identitetsfil et privat sted; den indeholder den hemmelige nøgle";
+
+/* Saved as */
+"Saved as" = "Arkiveres som";
+
+/* Saved as <name>.pub in the recipients folder. */
+"Saved as <name>.pub in the recipients folder." = "Arkiveret som <navn>.pub i modtagermappen.";
+
+/* Select at least one recipient. */
+"Select at least one recipient." = "Vælg mindst én modtager.";
+
+/* SHA-256 */
+"SHA-256" = "SHA-256";
+
+/* Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it. */
+"Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it." = "Del den offentlige nøgle med de personer, der skal kryptere til dig. Hold identitetsfilen privat; den kan kun læses af din konto.";
+
+/* Shared with your family */
+"Shared with your family" = "Delt med din familie";
+
+/* Size */
+"Size" = "Størrelse";
+
+/* SSH key (Ed25519) */
+"SSH key (Ed25519)" = "SSH-nøgle (Ed25519)";
+
+/* SSH key (RSA) */
+"SSH key (RSA)" = "SSH-nøgle (RSA)";
+
+/* Terms of Use (EULA) */
+"Terms of Use (EULA)" = "Brugsvilkår (EULA)";
+
+/* That file is not an image Agemin can read. */
+"That file is not an image Agemin can read." = "Den fil er ikke et billede, Agemin kan læse.";
+
+/* The App Store could not verify this purchase. */
+"The App Store could not verify this purchase." = "App Store kunne ikke verificere dette køb.";
+
+/* The armor header is missing. */
+"The armor header is missing." = "Armor-headeren mangler.";
+
+/* The armored file could not be read. %@ */
+"The armored file could not be read. %@" = "Armor-filen kunne ikke læses. %@";
+
+/* The armored file ends before its footer. */
+"The armored file ends before its footer." = "Armor-filen slutter før sin slutlinje.";
+
+/* The armored text is incomplete. */
+"The armored text is incomplete." = "Armor-teksten er ufuldstændig.";
+
+/* The armored text is not valid base64. */
+"The armored text is not valid base64." = "Armor-teksten er ikke gyldig base64.";
+
+/* The decrypted file cannot replace the encrypted file. Choose a different name. */
+"The decrypted file cannot replace the encrypted file. Choose a different name." = "Den dekrypterede fil kan ikke erstatte den krypterede fil. Vælg et andet navn.";
+
+/* The decrypted file does not hold an age secret key. */
+"The decrypted file does not hold an age secret key." = "Den dekrypterede fil indeholder ikke en hemmelig age-nøgle.";
+
+/* The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one. */
+"The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one." = "Den dekrypterede fil kan kun læses af din brugerkonto. Sammenlign kontrolsummen med afsenderens, hvis du har fået en.";
+
+/* The encrypted data is corrupt or was modified. */
+"The encrypted data is corrupt or was modified." = "De krypterede data er beskadigede eller er blevet ændret.";
+
+/* The encrypted file cannot replace the original. Choose a different name. */
+"The encrypted file cannot replace the original. Choose a different name." = "Den krypterede fil kan ikke erstatte originalen. Vælg et andet navn.";
+
+/* The file could not be read. */
+"The file could not be read." = "Filen kunne ikke læses.";
+
+/* The file ends early. It may be incomplete. */
+"The file ends early. It may be incomplete." = "Filen slutter for tidligt. Den er muligvis ufuldstændig.";
+
+/* The file header was modified or the key is wrong. */
+"The file header was modified or the key is wrong." = "Filens header er blevet ændret, eller nøglen er forkert.";
+
+/* The file holds no age secret key. */
+"The file holds no age secret key." = "Filen indeholder ingen hemmelig age-nøgle.";
+
+/* The file is being read. */
+"The file is being read." = "Filen læses.";
+
+/* The file is not text. */
+"The file is not text." = "Filen er ikke tekst.";
+
+/* The file is too large to be a key. */
+"The file is too large to be a key." = "Filen er for stor til at være en nøgle.";
+
+/* The first line is not the age version marker. */
+"The first line is not the age version marker." = "Den første linje er ikke age-versionsmarkøren.";
+
+/* The header authentication line is malformed. */
+"The header authentication line is malformed." = "Headerens godkendelseslinje har forkert format.";
+
+/* The header is not valid text. */
+"The header is not valid text." = "Headeren er ikke gyldig tekst.";
+
+/* The header is too large to be an age file. */
+"The header is too large to be an age file." = "Headeren er for stor til at være en age-fil.";
+
+/* The header lists too many recipients. */
+"The header lists too many recipients." = "Headeren angiver for mange modtagere.";
+
+/* The identity could not be read. %@ */
+"The identity could not be read. %@" = "Identiteten kunne ikke læses. %@";
+
+/* The identity file could not be saved. */
+"The identity file could not be saved." = "Identitetsfilen kunne ikke arkiveres.";
+
+/* The image could not be used */
+"The image could not be used" = "Billedet kunne ikke bruges";
+
+/* The image is larger than %lld pixels on a side. Choose a smaller one. */
+"The image is larger than %lld pixels on a side. Choose a smaller one." = "Billedet er større end %lld pixels på en side. Vælg et mindre.";
+
+/* The input is larger than expected. */
+"The input is larger than expected." = "Inputtet er større end forventet.";
+
+/* The key file ends early. */
+"The key file ends early." = "Nøglefilen slutter for tidligt.";
+
+/* The key file is malformed. */
+"The key file is malformed." = "Nøglefilen har forkert format.";
+
+/* The key file's passphrase settings are invalid. */
+"The key file's passphrase settings are invalid." = "Nøglefilens adgangssætningsindstillinger er ugyldige.";
+
+/* The key is empty. */
+"The key is empty." = "Nøglen er tom.";
+
+/* The key is protected with the %@ cipher, which is not supported. */
+"The key is protected with the %@ cipher, which is not supported." = "Nøglen er beskyttet med chifferet %@, som ikke understøttes.";
+
+/* The key is saved as <name>.pub in the recipients folder. */
+"The key is saved as <name>.pub in the recipients folder." = "Nøglen arkiveres som <navn>.pub i modtagermappen.";
+
+/* The key uses %lld key derivation rounds. Agemin supports up to %lld. */
+"The key uses %lld key derivation rounds. Agemin supports up to %lld." = "Nøglen bruger %lld nøgleafledningsrunder; Agemin understøtter op til %lld.";
+
+/* The key uses the %@ key derivation, which is not supported. */
+"The key uses the %@ key derivation, which is not supported." = "Nøglen bruger nøgleafledningen %@, som ikke understøttes.";
+
+/* The operation was canceled. */
+"The operation was canceled." = "Handlingen blev annulleret.";
+
+/* The passphrase entry is malformed. */
+"The passphrase entry is malformed." = "Adgangssætningsposten har forkert format.";
+
+/* The passphrase for %@ is incorrect. Try again. */
+"The passphrase for %@ is incorrect. Try again." = "Adgangssætningen til %@ er forkert. Prøv igen.";
+
+/* The passphrase is incorrect. */
+"The passphrase is incorrect." = "Adgangssætningen er forkert.";
+
+/* The passphrase work factor %lld is too high to try safely. */
+"The passphrase work factor %lld is too high to try safely." = "Adgangssætningens arbejdsfaktor %lld er for høj til at kunne prøves sikkert.";
+
+/* The passphrase work factor is malformed. */
+"The passphrase work factor is malformed." = "Adgangssætningens arbejdsfaktor har forkert format.";
+
+/* The passphrases do not match. */
+"The passphrases do not match." = "Adgangssætningerne er ikke ens.";
+
+/* The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them. */
+"The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them." = "De private nøgler, der åbner filer krypteret til dig: SSH-nøgler fra ~/.ssh og age-identitetsfiler. Agemin læser dem og ændrer dem aldrig.";
+
+/* The purchase is awaiting approval. */
+"The purchase is awaiting approval." = "Købet afventer godkendelse.";
+
+/* The recipient could not be deleted. */
+"The recipient could not be deleted." = "Modtageren kunne ikke slettes.";
+
+/* The recipient could not be saved. */
+"The recipient could not be saved." = "Modtageren kunne ikke arkiveres.";
+
+/* The recipient key could not be read. %@ */
+"The recipient key could not be read. %@" = "Modtagernøglen kunne ikke læses. %@";
+
+/* The recipients folder */
+"The recipients folder" = "Modtagermappen";
+
+/* The recipients folder holds no .pub files yet. */
+"The recipients folder holds no .pub files yet." = "Modtagermappen indeholder ingen .pub-filer endnu.";
+
+/* The RSA key is malformed. */
+"The RSA key is malformed." = "RSA-nøglen har forkert format.";
+
+/* The RSA key is too small or malformed. */
+"The RSA key is too small or malformed." = "RSA-nøglen er for lille eller har forkert format.";
+
+/* The SSH key is not a valid Ed25519 key. */
+"The SSH key is not a valid Ed25519 key." = "SSH-nøglen er ikke en gyldig Ed25519-nøgle.";
+
+/* The SSH key is not a valid RSA key. */
+"The SSH key is not a valid RSA key." = "SSH-nøglen er ikke en gyldig RSA-nøgle.";
+
+/* The SSH public key is malformed. */
+"The SSH public key is malformed." = "Den offentlige SSH-nøgle har forkert format.";
+
+/* There is text after the armor footer. */
+"There is text after the armor footer." = "Der er tekst efter armor-slutlinjen.";
+
+/* This deletes the file from the recipients folder. Files already encrypted for this key are not affected. */
+"This deletes the file from the recipients folder. Files already encrypted for this key are not affected." = "Filen slettes fra modtagermappen. Filer, der allerede er krypteret til denne nøgle, påvirkes ikke.";
+
+/* This file cannot be read as an age file */
+"This file cannot be read as an age file" = "Denne fil kan ikke læses som en age-fil";
+
+/* This file is not a key. */
+"This file is not a key." = "Denne fil er ikke en nøgle.";
+
+/* This file needs a passphrase. */
+"This file needs a passphrase." = "Denne fil kræver en adgangssætning.";
+
+/* This is a secret key. Use the matching public key, which starts with age1. */
+"This is a secret key. Use the matching public key, which starts with age1." = "Dette er en hemmelig nøgle. Brug den tilhørende offentlige nøgle, som begynder med age1.";
+
+/* This is not a valid age public key. */
+"This is not a valid age public key." = "Dette er ikke en gyldig offentlig age-nøgle.";
+
+/* This is not a valid age secret key. */
+"This is not a valid age secret key." = "Dette er ikke en gyldig hemmelig age-nøgle.";
+
+/* This is not an age file. %@ */
+"This is not an age file. %@" = "Dette er ikke en age-fil. %@";
+
+/* This key format is not supported. Use an OpenSSH private key or an age identity file. */
+"This key format is not supported. Use an OpenSSH private key or an age identity file." = "Dette nøgleformat understøttes ikke. Brug en privat OpenSSH-nøgle eller en age-identitetsfil.";
+
+/* This key produces a weak shared secret and cannot be used. */
+"This key produces a weak shared secret and cannot be used." = "Denne nøgle giver en svag delt hemmelighed og kan ikke bruges.";
+
+/* This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy. */
+"This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy." = "Denne adgangssætningsbeskyttede nøgle bruger det ældre PEM-format. Konverter den med ssh-keygen -p -o, eller brug en ubeskyttet kopi.";
+
+/* Trial ended */
+"Trial ended" = "Prøveperioden er slut";
+
+/* Try Again */
+"Try Again" = "Prøv igen";
+
+/* Try every usable key */
+"Try every usable key" = "Prøv alle brugbare nøgler";
+
+/* Unknown recipient type “%@” */
+"Unknown recipient type “%@”" = "Ukendt modtagertype “%@”";
+
+/* Unlock */
+"Unlock" = "Lås op";
+
+/* Unlock %@ */
+"Unlock %@" = "Lås %@ op";
+
+/* Unlock %@ with Agemin Pro. */
+"Unlock %@ with Agemin Pro." = "Lås op for %@ med Agemin Pro.";
+
+/* Until %@ */
+"Until %@" = "Indtil %@";
+
+/* Use Image */
+"Use Image" = "Brug billede";
+
+/* Use Initials */
+"Use Initials" = "Brug initialer";
+
+/* Valid %@ key */
+"Valid %@ key" = "Gyldig %@-nøgle";
+
+/* Wait for the current operation to finish. */
+"Wait for the current operation to finish." = "Vent, til den aktuelle handling er færdig.";
+
+/* Write it down or store it in a password manager. Agemin does not keep it. */
+"Write it down or store it in a password manager. Agemin does not keep it." = "Skriv den ned, eller gem den i en adgangskodeadministrator. Agemin gemmer den ikke.";
+
+/* Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both. */
+"Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both." = "Skriv den krypterede fil som tekst i stedet for binært, til e-mail, chat og konfigurationsfiler. age læser begge dele.";
+
+/* you */
+"you" = "dig";
+
+/* You can still encrypt or decrypt one file per day. Available today: %lld. */
+"You can still encrypt or decrypt one file per day. Available today: %lld." = "Du kan stadig kryptere eller dekryptere én fil om dagen. Tilgængelig i dag: %lld.";
+
+/* You have Agemin Pro. */
+"You have Agemin Pro." = "Du har Agemin Pro.";
+
+/* Your Pro trial is active. */
+"Your Pro trial is active." = "Din Pro-prøveperiode er aktiv.";
+
+/* · you choose the folder when you encrypt */
+"· you choose the folder when you encrypt" = "· du vælger mappen, når du krypterer";
