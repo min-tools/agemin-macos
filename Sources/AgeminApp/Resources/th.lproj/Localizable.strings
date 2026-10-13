@@ -1,0 +1,904 @@
+/* Agemin — th localization. Each comment shows the English source text. */
+
+/*  and armor */
+" and armor" = "และ ASCII armor";
+
+/* %@ %@ of %@ */
+"%@ %@ of %@" = "%@ %@ จาก %@";
+
+/* %@ could not be read. */
+"%@ could not be read." = "ไม่สามารถอ่าน %@ ได้";
+
+/* %@ could not be written. */
+"%@ could not be written." = "ไม่สามารถเขียน %@ ได้";
+
+/* %@ is protected with a passphrase. */
+"%@ is protected with a passphrase." = "%@ ได้รับการปกป้องด้วยวลีรหัสผ่าน";
+
+/* %@ keys are not supported by age. */
+"%@ keys are not supported by age." = "age ไม่รองรับกุญแจ %@";
+
+/* %@ per year */
+"%@ per year" = "%@ ต่อปี";
+
+/* %@ · %@ more than the original for the header%@ */
+"%@ · %@ more than the original for the header%@" = "%@ · ใหญ่กว่าไฟล์ต้นฉบับ %@ สำหรับส่วนหัว%@";
+
+/* %@.pub already exists in the recipients folder. */
+"%@.pub already exists in the recipients folder." = "มี %@.pub อยู่ในโฟลเดอร์ผู้รับแล้ว";
+
+/* %lld identities */
+"%lld identities" = "ข้อมูลประจำตัว %lld รายการ";
+
+/* %lld identities · %lld usable */
+"%lld identities · %lld usable" = "ข้อมูลประจำตัว %lld รายการ · ใช้ได้ %lld รายการ";
+
+/* %lld keys */
+"%lld keys" = "กุญแจ %lld ดอก";
+
+/* %lld keys tried */
+"%lld keys tried" = "ลองกุญแจแล้ว %lld ดอก";
+
+/* %lld of %lld recipients selected */
+"%lld of %lld recipients selected" = "เลือกผู้รับแล้ว %lld จาก %lld คน";
+
+/* %lld recipients */
+"%lld recipients" = "ผู้รับ %lld คน";
+
+/* %lld recipients · %lld usable */
+"%lld recipients · %lld usable" = "ผู้รับ %lld คน · ใช้ได้ %lld คน";
+
+/* 1 identity */
+"1 identity" = "ข้อมูลประจำตัว 1 รายการ";
+
+/* 1 recipient */
+"1 recipient" = "ผู้รับ 1 คน";
+
+/* 30 days of full access */
+"30 days of full access" = "ใช้งานได้เต็มรูปแบบ 30 วัน";
+
+/* A file is still being processed. */
+"A file is still being processed." = "ยังมีไฟล์ที่กำลังประมวลผลอยู่";
+
+/* A header line is neither a recipient nor the closing marker. */
+"A header line is neither a recipient nor the closing marker." = "บรรทัดในส่วนหัวไม่ใช่ทั้งผู้รับและเครื่องหมายปิด";
+
+/* A header line is too long. */
+"A header line is too long." = "บรรทัดในส่วนหัวยาวเกินไป";
+
+/* A passphrase cannot be combined with other recipients. */
+"A passphrase cannot be combined with other recipients." = "ไม่สามารถใช้วลีรหัสผ่านร่วมกับผู้รับอื่นได้";
+
+/* A passphrase entry must be the only recipient. */
+"A passphrase entry must be the only recipient." = "รายการวลีรหัสผ่านต้องเป็นผู้รับเพียงรายการเดียว";
+
+/* A recipient body is not valid base64. */
+"A recipient body is not valid base64." = "เนื้อหาของผู้รับไม่ใช่ base64 ที่ถูกต้อง";
+
+/* A recipient body line is malformed. */
+"A recipient body line is malformed." = "บรรทัดเนื้อหาของผู้รับมีรูปแบบไม่ถูกต้อง";
+
+/* A recipient line is malformed. */
+"A recipient line is malformed." = "บรรทัดผู้รับมีรูปแบบไม่ถูกต้อง";
+
+/* About Agemin */
+"About Agemin" = "เกี่ยวกับ Agemin";
+
+/* Action */
+"Action" = "การกระทำ";
+
+/* Add */
+"Add" = "เพิ่ม";
+
+/* Add a public key on the Recipients page */
+"Add a public key on the Recipients page" = "เพิ่มกุญแจสาธารณะในหน้าผู้รับ";
+
+/* Add an identity that can decrypt this file. */
+"Add an identity that can decrypt this file." = "เพิ่มข้อมูลประจำตัวที่สามารถถอดรหัสไฟล์นี้ได้";
+
+/* Add Key File */
+"Add Key File" = "เพิ่มไฟล์กุญแจ";
+
+/* Add Key File… */
+"Add Key File…" = "เพิ่มไฟล์กุญแจ…";
+
+/* Add Recipient */
+"Add Recipient" = "เพิ่มผู้รับ";
+
+/* Add Recipient… */
+"Add Recipient…" = "เพิ่มผู้รับ…";
+
+/* Add to Recipients */
+"Add to Recipients" = "เพิ่มในผู้รับ";
+
+/* added */
+"added" = "เพิ่มแล้ว";
+
+/* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
+"After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "หลังจากสิ้นสุดการทดลองใช้ คุณยังคงเข้ารหัสหรือถอดรหัสได้วันละหนึ่งไฟล์ การอ่านกุญแจ การตรวจสอบไฟล์ และการสร้างกุญแจยังคงใช้ได้ไม่จำกัด";
+
+/* age encryption, without the terminal. */
+"age encryption, without the terminal." = "การเข้ารหัสแบบ age โดยไม่ต้องใช้เทอร์มินัล";
+
+/* age key */
+"age key" = "กุญแจ age";
+
+/* age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA… */
+"age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA…" = "age1… หรือ ssh-ed25519 AAAA… หรือ ssh-rsa AAAA…";
+
+/* Agemin could not use that folder */
+"Agemin could not use that folder" = "Agemin ไม่สามารถใช้โฟลเดอร์นั้นได้";
+
+/* Agemin encrypts files, not folders. */
+"Agemin encrypts files, not folders." = "Agemin เข้ารหัสไฟล์ ไม่ใช่โฟลเดอร์";
+
+/* Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged. */
+"Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged." = "Agemin ปลดล็อคทุกฟีเจอร์ให้คุณใช้ใน 30 วันแรก ไม่มีการเริ่มสมัครรับ และคุณจะไม่ถูกเรียกเก็บเงิน";
+
+/* Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice. */
+"Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice." = "Agemin จะแสดงรายการไฟล์ .pub ในโฟลเดอร์นั้นและให้คุณเพิ่มไฟล์ใหม่ได้ ใช้โฟลเดอร์ใดก็ได้ โดยทั่วไปนิยมใช้ ~/.age";
+
+/* Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually. */
+"Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually." = "Agemin จะแสดงรายการกุญแจส่วนตัวที่พบในโฟลเดอร์นั้น (โดยทั่วไปคือ ~/.ssh) และใช้กุญแจเหล่านั้นในการถอดรหัส กุญแจที่เก็บไว้ที่อื่นสามารถเพิ่มได้ทีละดอก";
+
+/* Agemin Pro */
+"Agemin Pro" = "Agemin Pro";
+
+/* Agemin Pro Lifetime · %@ */
+"Agemin Pro Lifetime · %@" = "Agemin Pro ตลอดชีพ · %@";
+
+/* Agemin Pro Yearly */
+"Agemin Pro Yearly" = "Agemin Pro รายปี";
+
+/* Agemin Pro… */
+"Agemin Pro…" = "Agemin Pro…";
+
+/* Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them. */
+"Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them." = "Agemin จะลบสิทธิ์เข้าถึงที่บันทึกไว้สำหรับโฟลเดอร์ผู้รับ โฟลเดอร์ข้อมูลประจำตัว และไฟล์กุญแจที่เพิ่มแยกไว้ จะไม่มีการลบไฟล์ใดๆ เลือกโฟลเดอร์และไฟล์เหล่านั้นอีกครั้งเพื่อใช้งานต่อ";
+
+/* Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed. */
+"Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed." = "Agemin จัดเก็บอวาตาร์ไว้ตามลายนิ้วมือของกุญแจนี้ จะไม่มีการเปลี่ยนแปลงใดๆ ในโฟลเดอร์กุญแจของคุณ";
+
+/* alice */
+"alice" = "alice";
+
+/* All */
+"All" = "ทั้งหมด";
+
+/* An age public key has 32 bytes. */
+"An age public key has 32 bytes." = "กุญแจสาธารณะ age มีขนาด 32 ไบต์";
+
+/* An age secret key has 32 bytes. */
+"An age secret key has 32 bytes." = "กุญแจลับ age มีขนาด 32 ไบต์";
+
+/* An ssh-ed25519 recipient entry is malformed. */
+"An ssh-ed25519 recipient entry is malformed." = "รายการผู้รับ ssh-ed25519 มีรูปแบบไม่ถูกต้อง";
+
+/* An ssh-rsa recipient entry is malformed. */
+"An ssh-rsa recipient entry is malformed." = "รายการผู้รับ ssh-rsa มีรูปแบบไม่ถูกต้อง";
+
+/* An X25519 recipient entry has the wrong size. */
+"An X25519 recipient entry has the wrong size." = "รายการผู้รับ X25519 มีขนาดไม่ถูกต้อง";
+
+/* An X25519 recipient entry is malformed. */
+"An X25519 recipient entry is malformed." = "รายการผู้รับ X25519 มีรูปแบบไม่ถูกต้อง";
+
+/* Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one. */
+"Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one." = "ทุกคนที่มีวลีรหัสผ่านสามารถเปิดไฟล์ได้ age ประมวลผลวลีรหัสผ่านด้วย scrypt ดังนั้นวลีรหัสผ่านที่ยาวจึงสำคัญกว่าวลีที่ซับซ้อน";
+
+/* ASCII armor */
+"ASCII armor" = "ASCII armor";
+
+/* Avatar for %@ */
+"Avatar for %@" = "อวาตาร์ของ %@";
+
+/* Cancel */
+"Cancel" = "ยกเลิก";
+
+/* Change */
+"Change" = "เปลี่ยน";
+
+/* Choose */
+"Choose" = "เลือก";
+
+/* Choose a file to encrypt. */
+"Choose a file to encrypt." = "เลือกไฟล์ที่จะเข้ารหัส";
+
+/* Choose a yearly subscription or lifetime purchase at any time to remove the daily limit. */
+"Choose a yearly subscription or lifetime purchase at any time to remove the daily limit." = "เลือกการสมัครรับรายปีหรือการซื้อแบบตลอดชีพได้ทุกเมื่อเพื่อยกเลิกขีดจำกัดรายวัน";
+
+/* Choose an age identity file or an SSH private key */
+"Choose an age identity file or an SSH private key" = "เลือกไฟล์ข้อมูลประจำตัว age หรือกุญแจส่วนตัว SSH";
+
+/* Choose an encrypted file. */
+"Choose an encrypted file." = "เลือกไฟล์ที่เข้ารหัสไว้";
+
+/* Choose an image for this key's avatar */
+"Choose an image for this key's avatar" = "เลือกรูปภาพสำหรับอวาตาร์ของกุญแจนี้";
+
+/* Choose File */
+"Choose File" = "เลือกไฟล์";
+
+/* Choose File to Decrypt… */
+"Choose File to Decrypt…" = "เลือกไฟล์ที่จะถอดรหัส…";
+
+/* Choose File to Encrypt… */
+"Choose File to Encrypt…" = "เลือกไฟล์ที่จะเข้ารหัส…";
+
+/* Choose Folder */
+"Choose Folder" = "เลือกโฟลเดอร์";
+
+/* Choose Identities Folder… */
+"Choose Identities Folder…" = "เลือกโฟลเดอร์ข้อมูลประจำตัว…";
+
+/* Choose Image */
+"Choose Image" = "เลือกรูปภาพ";
+
+/* Choose Recipients Folder… */
+"Choose Recipients Folder…" = "เลือกโฟลเดอร์ผู้รับ…";
+
+/* Choose the encrypted file, usually ending in .age */
+"Choose the encrypted file, usually ending in .age" = "เลือกไฟล์ที่เข้ารหัสไว้ โดยทั่วไปลงท้ายด้วย .age";
+
+/* Choose the file to encrypt */
+"Choose the file to encrypt" = "เลือกไฟล์ที่จะเข้ารหัส";
+
+/* Choose the folder with the .pub files of the people you encrypt for, usually ~/.age. */
+"Choose the folder with the .pub files of the people you encrypt for, usually ~/.age." = "เลือกโฟลเดอร์ที่มีไฟล์ .pub ของผู้ที่คุณเข้ารหัสให้ โดยทั่วไปคือ ~/.age";
+
+/* Choose the folder with the .pub files you encrypt for, usually ~/.age */
+"Choose the folder with the .pub files you encrypt for, usually ~/.age" = "เลือกโฟลเดอร์ที่มีไฟล์ .pub ที่คุณเข้ารหัสให้ โดยทั่วไปคือ ~/.age";
+
+/* Choose the folder with your private keys, usually ~/.ssh */
+"Choose the folder with your private keys, usually ~/.ssh" = "เลือกโฟลเดอร์ที่มีกุญแจส่วนตัวของคุณ โดยทั่วไปคือ ~/.ssh";
+
+/* Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page. */
+"Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page." = "เลือกโฟลเดอร์ที่มีกุญแจ SSH ของคุณ (โดยทั่วไปคือ ~/.ssh) หรือเพิ่มไฟล์ข้อมูลประจำตัว age ในหน้าข้อมูลประจำตัว";
+
+/* Choose where to save the decrypted file */
+"Choose where to save the decrypted file" = "เลือกตำแหน่งที่จะบันทึกไฟล์ที่ถอดรหัสแล้ว";
+
+/* Choose where to save the encrypted file */
+"Choose where to save the encrypted file" = "เลือกตำแหน่งที่จะบันทึกไฟล์ที่เข้ารหัสแล้ว";
+
+/* Choose your recipients folder */
+"Choose your recipients folder" = "เลือกโฟลเดอร์ผู้รับของคุณ";
+
+/* Choose your SSH folder */
+"Choose your SSH folder" = "เลือกโฟลเดอร์ SSH ของคุณ";
+
+/* Clear search */
+"Clear search" = "ล้างการค้นหา";
+
+/* Clear the file */
+"Clear the file" = "ล้างไฟล์";
+
+/* Click an avatar to change it, or drop an image onto it. */
+"Click an avatar to change it, or drop an image onto it." = "คลิกอวาตาร์เพื่อเปลี่ยน หรือวางรูปภาพลงบนอวาตาร์";
+
+/* Click to change the avatar, or drop an image on it */
+"Click to change the avatar, or drop an image on it" = "คลิกเพื่อเปลี่ยนอวาตาร์ หรือวางรูปภาพลงบนอวาตาร์";
+
+/* Compress the folder into an archive first, then open the archive. */
+"Compress the folder into an archive first, then open the archive." = "บีบอัดโฟลเดอร์เป็นไฟล์บีบอัดก่อน แล้วจึงเปิดไฟล์บีบอัดนั้น";
+
+/* Confirm passphrase */
+"Confirm passphrase" = "ยืนยันวลีรหัสผ่าน";
+
+/* Contacting the App Store… */
+"Contacting the App Store…" = "กำลังติดต่อ App Store…";
+
+/* Continue */
+"Continue" = "ดำเนินการต่อ";
+
+/* Copy */
+"Copy" = "คัดลอก";
+
+/* Copy Key */
+"Copy Key" = "คัดลอกกุญแจ";
+
+/* Copy Path */
+"Copy Path" = "คัดลอกเส้นทาง";
+
+/* Copy Public Key */
+"Copy Public Key" = "คัดลอกกุญแจสาธารณะ";
+
+/* Decrypt */
+"Decrypt" = "ถอดรหัส";
+
+/* Decrypt This File */
+"Decrypt This File" = "ถอดรหัสไฟล์นี้";
+
+/* Decrypt with */
+"Decrypt with" = "ถอดรหัสด้วย";
+
+/* Decrypted */
+"Decrypted" = "ถอดรหัสแล้ว";
+
+/* Decrypting */
+"Decrypting" = "กำลังถอดรหัส";
+
+/* Decryption failed */
+"Decryption failed" = "การถอดรหัสล้มเหลว";
+
+/* Decrypt… */
+"Decrypt…" = "ถอดรหัส…";
+
+/* Delete */
+"Delete" = "ลบ";
+
+/* Delete %@? */
+"Delete %@?" = "ลบ %@ หรือไม่";
+
+/* Delete the .pub file */
+"Delete the .pub file" = "ลบไฟล์ .pub";
+
+/* Drop a file here to encrypt it */
+"Drop a file here to encrypt it" = "วางไฟล์ที่นี่เพื่อเข้ารหัส";
+
+/* Drop a file, not a folder. Compress the folder first, then drop the archive. */
+"Drop a file, not a folder. Compress the folder first, then drop the archive." = "วางไฟล์ ไม่ใช่โฟลเดอร์ บีบอัดโฟลเดอร์ก่อน แล้วจึงวางไฟล์บีบอัดนั้น";
+
+/* Drop an age file here to decrypt it */
+"Drop an age file here to decrypt it" = "วางไฟล์ age ที่นี่เพื่อถอดรหัส";
+
+/* Encrypt */
+"Encrypt" = "เข้ารหัส";
+
+/* Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file. */
+"Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file." = "เข้ารหัสไฟล์สำหรับกุญแจสาธารณะของผู้ที่ควรเปิดไฟล์ได้ หรือด้วยวลีรหัสผ่าน ผลลัพธ์คือไฟล์ age มาตรฐาน";
+
+/* Encrypt for */
+"Encrypt for" = "เข้ารหัสสำหรับ";
+
+/* Encrypted */
+"Encrypted" = "เข้ารหัสแล้ว";
+
+/* Encrypted for */
+"Encrypted for" = "เข้ารหัสไว้สำหรับ";
+
+/* Encrypting */
+"Encrypting" = "กำลังเข้ารหัส";
+
+/* Encryption failed */
+"Encryption failed" = "การเข้ารหัสล้มเหลว";
+
+/* Encrypt… */
+"Encrypt…" = "เข้ารหัส…";
+
+/* Enter a passphrase. */
+"Enter a passphrase." = "ป้อนวลีรหัสผ่าน";
+
+/* Enter the file's passphrase. */
+"Enter the file's passphrase." = "ป้อนวลีรหัสผ่านของไฟล์";
+
+/* Enter the passphrase below */
+"Enter the passphrase below" = "ป้อนวลีรหัสผ่านด้านล่าง";
+
+/* Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa). */
+"Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa)." = "ต้องเป็นกุญแจสาธารณะ age (age1…) หรือกุญแจสาธารณะ SSH (ssh-ed25519 หรือ ssh-rsa)";
+
+/* Expires %@ */
+"Expires %@" = "สิ้นสุด %@";
+
+/* Files */
+"Files" = "ไฟล์";
+
+/* Fill both fields with a random passphrase and show it once */
+"Fill both fields with a random passphrase and show it once" = "กรอกวลีรหัสผ่านแบบสุ่มในทั้งสองช่องและแสดงหนึ่งครั้ง";
+
+/* Filter identities */
+"Filter identities" = "กรองข้อมูลประจำตัว";
+
+/* Filter recipients */
+"Filter recipients" = "กรองผู้รับ";
+
+/* Find… */
+"Find…" = "ค้นหา…";
+
+/* Forget Access */
+"Forget Access" = "ยกเลิกสิทธิ์เข้าถึง";
+
+/* Forget access to the key folders? */
+"Forget access to the key folders?" = "ยกเลิกสิทธิ์เข้าถึงโฟลเดอร์กุญแจหรือไม่";
+
+/* Forget Folder Access… */
+"Forget Folder Access…" = "ยกเลิกสิทธิ์เข้าถึงโฟลเดอร์…";
+
+/* Free · Available today: %lld */
+"Free · Available today: %lld" = "ฟรี · วันนี้ใช้ได้: %lld";
+
+/* Generate */
+"Generate" = "สร้าง";
+
+/* Give the recipient a name. */
+"Give the recipient a name." = "ตั้งชื่อให้ผู้รับ";
+
+/* Hide this card */
+"Hide this card" = "ซ่อนการ์ดนี้";
+
+/* Identities */
+"Identities" = "ข้อมูลประจำตัว";
+
+/* Identity file */
+"Identity file" = "ไฟล์ข้อมูลประจำตัว";
+
+/* Initials */
+"Initials" = "อักษรย่อ";
+
+/* Initials color %lld */
+"Initials color %lld" = "สีอักษรย่อ %lld";
+
+/* Keep Working */
+"Keep Working" = "ทำงานต่อ";
+
+/* Key */
+"Key" = "กุญแจ";
+
+/* Keys */
+"Keys" = "กุญแจ";
+
+/* Lifetime */
+"Lifetime" = "ตลอดชีพ";
+
+/* Loading App Store products… */
+"Loading App Store products…" = "กำลังโหลดสินค้าจาก App Store…";
+
+/* Loading keys… */
+"Loading keys…" = "กำลังโหลดกุญแจ…";
+
+/* macOS did not grant lasting access to that folder. Choose it again, or choose another folder. */
+"macOS did not grant lasting access to that folder. Choose it again, or choose another folder." = "macOS ไม่ได้ให้สิทธิ์เข้าถึงโฟลเดอร์นั้นแบบถาวร เลือกโฟลเดอร์นั้นอีกครั้ง หรือเลือกโฟลเดอร์อื่น";
+
+/* Manage Subscription */
+"Manage Subscription" = "จัดการการสมัครรับ";
+
+/* matches */
+"matches" = "ตรงกัน";
+
+/* Matches %@ */
+"Matches %@" = "ตรงกับ %@";
+
+/* Matching keys first. Protected keys ask for their passphrase. */
+"Matching keys first. Protected keys ask for their passphrase." = "ลองกุญแจที่ตรงกันก่อน กุญแจที่ได้รับการปกป้องจะขอวลีรหัสผ่าน";
+
+/* Name */
+"Name" = "ชื่อ";
+
+/* New age Key */
+"New age Key" = "กุญแจ age ใหม่";
+
+/* New age key saved */
+"New age key saved" = "บันทึกกุญแจ age ใหม่แล้ว";
+
+/* New age Key… */
+"New age Key…" = "กุญแจ age ใหม่…";
+
+/* New recipient */
+"New recipient" = "ผู้รับใหม่";
+
+/* No active purchase was found. */
+"No active purchase was found." = "ไม่พบการซื้อที่ใช้งานอยู่";
+
+/* No Agemin Pro purchase was found for this Apple Account. */
+"No Agemin Pro purchase was found for this Apple Account." = "ไม่พบการซื้อ Agemin Pro สำหรับบัญชี Apple นี้";
+
+/* No identities yet */
+"No identities yet" = "ยังไม่มีข้อมูลประจำตัว";
+
+/* No matching key */
+"No matching key" = "ไม่มีกุญแจที่ตรงกัน";
+
+/* No recipients folder yet */
+"No recipients folder yet" = "ยังไม่มีโฟลเดอร์ผู้รับ";
+
+/* None */
+"None" = "ไม่มี";
+
+/* None of the identities can decrypt this file. */
+"None of the identities can decrypt this file." = "ไม่มีข้อมูลประจำตัวใดที่สามารถถอดรหัสไฟล์นี้ได้";
+
+/* None of your identities matches this file. Add the key it was encrypted for on the Identities page. */
+"None of your identities matches this file. Add the key it was encrypted for on the Identities page." = "ไม่มีข้อมูลประจำตัวของคุณที่ตรงกับไฟล์นี้ เพิ่มกุญแจที่ใช้เข้ารหัสไฟล์นี้ในหน้าข้อมูลประจำตัว";
+
+/* not a key */
+"not a key" = "ไม่ใช่กุญแจ";
+
+/* OK */
+"OK" = "OK";
+
+/* Open an age file with one of your keys, or with the passphrase it was encrypted with. */
+"Open an age file with one of your keys, or with the passphrase it was encrypted with." = "เปิดไฟล์ age ด้วยกุญแจของคุณ หรือด้วยวลีรหัสผ่านที่ใช้เข้ารหัสไฟล์นั้น";
+
+/* Options */
+"Options" = "ตัวเลือก";
+
+/* Output */
+"Output" = "ผลลัพธ์";
+
+/* Pages */
+"Pages" = "หน้า";
+
+/* Passphrase */
+"Passphrase" = "วลีรหัสผ่าน";
+
+/* passphrase */
+"passphrase" = "วลีรหัสผ่าน";
+
+/* Passphrase · work factor %lld */
+"Passphrase · work factor %lld" = "วลีรหัสผ่าน · ปัจจัยการทำงาน %lld";
+
+/* Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends. */
+"Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends." = "การชำระเงินจะเรียกเก็บผ่านบัญชี Apple ของคุณ การสมัครรับรายปีจะต่ออายุโดยอัตโนมัติ เว้นแต่คุณจะยกเลิกในการตั้งค่า App Store อย่างน้อยหนึ่งวันก่อนสิ้นสุดรอบปัจจุบัน";
+
+/* Privacy Policy */
+"Privacy Policy" = "นโยบายความเป็นส่วนตัว";
+
+/* Privacy Policy… */
+"Privacy Policy…" = "นโยบายความเป็นส่วนตัว…";
+
+/* Pro */
+"Pro" = "Pro";
+
+/* Pro purchases are unavailable right now. Try again later. */
+"Pro purchases are unavailable right now. Try again later." = "ไม่สามารถซื้อ Pro ได้ในขณะนี้ โปรดลองอีกครั้งในภายหลัง";
+
+/* Pro trial · %lld days remaining */
+"Pro trial · %lld days remaining" = "ทดลองใช้ Pro · เหลืออีก %lld วัน";
+
+/* Pro trial · 1 day remaining */
+"Pro trial · 1 day remaining" = "ทดลองใช้ Pro · เหลืออีก 1 วัน";
+
+/* Pro trial · ends %@ */
+"Pro trial · ends %@" = "ทดลองใช้ Pro · สิ้นสุด %@";
+
+/* Pro trial · first payment %@ */
+"Pro trial · first payment %@" = "ทดลองใช้ Pro · ชำระเงินครั้งแรก %@";
+
+/* Pro trial · until %@ */
+"Pro trial · until %@" = "ทดลองใช้ Pro · จนถึง %@";
+
+/* Public key */
+"Public key" = "กุญแจสาธารณะ";
+
+/* Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file. */
+"Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file." = "กุญแจสาธารณะที่คุณเข้ารหัสให้ ไฟล์ .pub แต่ละไฟล์ในโฟลเดอร์คือผู้รับหนึ่งคน โดยใช้ชื่อตามชื่อไฟล์";
+
+/* Purchase */
+"Purchase" = "ซื้อ";
+
+/* Quit Anyway */
+"Quit Anyway" = "ออกเลย";
+
+/* Quitting now cancels it and removes the partial output. */
+"Quitting now cancels it and removes the partial output." = "การออกตอนนี้จะยกเลิกการทำงานและลบผลลัพธ์ที่ยังไม่สมบูรณ์";
+
+/* Read the folder again */
+"Read the folder again" = "อ่านโฟลเดอร์อีกครั้ง";
+
+/* Recipients */
+"Recipients" = "ผู้รับ";
+
+/* Refresh Keys */
+"Refresh Keys" = "รีเฟรชกุญแจ";
+
+/* Remove from the list */
+"Remove from the list" = "เอาออกจากรายการ";
+
+/* Renews %@ */
+"Renews %@" = "ต่ออายุ %@";
+
+/* Restore Purchases */
+"Restore Purchases" = "กู้คืนการซื้อ";
+
+/* Restoring… */
+"Restoring…" = "กำลังกู้คืน…";
+
+/* Reveal */
+"Reveal" = "แสดง";
+
+/* Reveal in Finder */
+"Reveal in Finder" = "แสดงใน Finder";
+
+/* Save */
+"Save" = "บันทึก";
+
+/* Save Key */
+"Save Key" = "บันทึกกุญแจ";
+
+/* Save Recipient */
+"Save Recipient" = "บันทึกผู้รับ";
+
+/* Save the new identity file somewhere private because it holds the secret key */
+"Save the new identity file somewhere private because it holds the secret key" = "บันทึกไฟล์ข้อมูลประจำตัวใหม่ไว้ในที่ส่วนตัว เนื่องจากไฟล์นี้มีกุญแจลับอยู่";
+
+/* Saved as */
+"Saved as" = "บันทึกเป็น";
+
+/* Saved as <name>.pub in the recipients folder. */
+"Saved as <name>.pub in the recipients folder." = "บันทึกเป็น <ชื่อ>.pub ในโฟลเดอร์ผู้รับ";
+
+/* Select at least one recipient. */
+"Select at least one recipient." = "เลือกผู้รับอย่างน้อยหนึ่งคน";
+
+/* SHA-256 */
+"SHA-256" = "SHA-256";
+
+/* Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it. */
+"Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it." = "แชร์กุญแจสาธารณะให้ผู้ที่จะเข้ารหัสไฟล์ให้คุณ เก็บไฟล์ข้อมูลประจำตัวไว้เป็นส่วนตัว ไฟล์นี้อ่านได้เฉพาะบัญชีของคุณเท่านั้น";
+
+/* Shared with your family */
+"Shared with your family" = "แชร์กับครอบครัวของคุณ";
+
+/* Size */
+"Size" = "ขนาด";
+
+/* SSH key (Ed25519) */
+"SSH key (Ed25519)" = "กุญแจ SSH (Ed25519)";
+
+/* SSH key (RSA) */
+"SSH key (RSA)" = "กุญแจ SSH (RSA)";
+
+/* Terms of Use (EULA) */
+"Terms of Use (EULA)" = "ข้อกำหนดการใช้งาน (EULA)";
+
+/* That file is not an image Agemin can read. */
+"That file is not an image Agemin can read." = "ไฟล์นั้นไม่ใช่รูปภาพที่ Agemin สามารถอ่านได้";
+
+/* The App Store could not verify this purchase. */
+"The App Store could not verify this purchase." = "App Store ไม่สามารถยืนยันการซื้อนี้ได้";
+
+/* The armor header is missing. */
+"The armor header is missing." = "ไม่มีส่วนหัว ASCII armor";
+
+/* The armored file could not be read. %@ */
+"The armored file could not be read. %@" = "ไม่สามารถอ่านไฟล์ ASCII armor ได้ %@";
+
+/* The armored file ends before its footer. */
+"The armored file ends before its footer." = "ไฟล์ ASCII armor สิ้นสุดก่อนถึงส่วนท้าย";
+
+/* The armored text is incomplete. */
+"The armored text is incomplete." = "ข้อความ ASCII armor ไม่สมบูรณ์";
+
+/* The armored text is not valid base64. */
+"The armored text is not valid base64." = "ข้อความ ASCII armor ไม่ใช่ base64 ที่ถูกต้อง";
+
+/* The decrypted file cannot replace the encrypted file. Choose a different name. */
+"The decrypted file cannot replace the encrypted file. Choose a different name." = "ไฟล์ที่ถอดรหัสแล้วไม่สามารถแทนที่ไฟล์ที่เข้ารหัสไว้ได้ เลือกชื่ออื่น";
+
+/* The decrypted file does not hold an age secret key. */
+"The decrypted file does not hold an age secret key." = "ไฟล์ที่ถอดรหัสแล้วไม่มีกุญแจลับ age";
+
+/* The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one. */
+"The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one." = "ไฟล์ที่ถอดรหัสแล้วอ่านได้เฉพาะบัญชีผู้ใช้ของคุณเท่านั้น หากผู้ส่งให้เช็คซัมมาด้วย ให้เปรียบเทียบเช็คซัมกับของผู้ส่ง";
+
+/* The encrypted data is corrupt or was modified. */
+"The encrypted data is corrupt or was modified." = "ข้อมูลที่เข้ารหัสเสียหายหรือถูกแก้ไข";
+
+/* The encrypted file cannot replace the original. Choose a different name. */
+"The encrypted file cannot replace the original. Choose a different name." = "ไฟล์ที่เข้ารหัสแล้วไม่สามารถแทนที่ไฟล์ต้นฉบับได้ เลือกชื่ออื่น";
+
+/* The file could not be read. */
+"The file could not be read." = "ไม่สามารถอ่านไฟล์ได้";
+
+/* The file ends early. It may be incomplete. */
+"The file ends early. It may be incomplete." = "ไฟล์สิ้นสุดก่อนกำหนด ไฟล์อาจไม่สมบูรณ์";
+
+/* The file header was modified or the key is wrong. */
+"The file header was modified or the key is wrong." = "ส่วนหัวของไฟล์ถูกแก้ไขหรือกุญแจไม่ถูกต้อง";
+
+/* The file holds no age secret key. */
+"The file holds no age secret key." = "ไฟล์ไม่มีกุญแจลับ age";
+
+/* The file is being read. */
+"The file is being read." = "กำลังอ่านไฟล์";
+
+/* The file is not text. */
+"The file is not text." = "ไฟล์ไม่ใช่ข้อความ";
+
+/* The file is too large to be a key. */
+"The file is too large to be a key." = "ไฟล์ใหญ่เกินกว่าจะเป็นกุญแจ";
+
+/* The first line is not the age version marker. */
+"The first line is not the age version marker." = "บรรทัดแรกไม่ใช่เครื่องหมายเวอร์ชันของ age";
+
+/* The header authentication line is malformed. */
+"The header authentication line is malformed." = "บรรทัดตรวจสอบสิทธิ์ของส่วนหัวมีรูปแบบไม่ถูกต้อง";
+
+/* The header is not valid text. */
+"The header is not valid text." = "ส่วนหัวไม่ใช่ข้อความที่ถูกต้อง";
+
+/* The header is too large to be an age file. */
+"The header is too large to be an age file." = "ส่วนหัวใหญ่เกินกว่าจะเป็นไฟล์ age";
+
+/* The header lists too many recipients. */
+"The header lists too many recipients." = "ส่วนหัวมีรายการผู้รับมากเกินไป";
+
+/* The identity could not be read. %@ */
+"The identity could not be read. %@" = "ไม่สามารถอ่านข้อมูลประจำตัวได้ %@";
+
+/* The identity file could not be saved. */
+"The identity file could not be saved." = "ไม่สามารถบันทึกไฟล์ข้อมูลประจำตัวได้";
+
+/* The image could not be used */
+"The image could not be used" = "ไม่สามารถใช้รูปภาพได้";
+
+/* The image is larger than %lld pixels on a side. Choose a smaller one. */
+"The image is larger than %lld pixels on a side. Choose a smaller one." = "รูปภาพมีด้านที่ใหญ่กว่า %lld พิกเซล เลือกรูปภาพที่เล็กกว่า";
+
+/* The input is larger than expected. */
+"The input is larger than expected." = "ข้อมูลเข้าใหญ่กว่าที่คาดไว้";
+
+/* The key file ends early. */
+"The key file ends early." = "ไฟล์กุญแจสิ้นสุดก่อนกำหนด";
+
+/* The key file is malformed. */
+"The key file is malformed." = "ไฟล์กุญแจมีรูปแบบไม่ถูกต้อง";
+
+/* The key file's passphrase settings are invalid. */
+"The key file's passphrase settings are invalid." = "การตั้งค่าวลีรหัสผ่านของไฟล์กุญแจไม่ถูกต้อง";
+
+/* The key is empty. */
+"The key is empty." = "กุญแจว่างเปล่า";
+
+/* The key is protected with the %@ cipher, which is not supported. */
+"The key is protected with the %@ cipher, which is not supported." = "กุญแจได้รับการปกป้องด้วยการเข้ารหัสแบบ %@ ซึ่งไม่รองรับ";
+
+/* The key is saved as <name>.pub in the recipients folder. */
+"The key is saved as <name>.pub in the recipients folder." = "กุญแจจะถูกบันทึกเป็น <ชื่อ>.pub ในโฟลเดอร์ผู้รับ";
+
+/* The key uses %lld key derivation rounds. Agemin supports up to %lld. */
+"The key uses %lld key derivation rounds. Agemin supports up to %lld." = "กุญแจใช้รอบการอนุพันธ์กุญแจ %lld รอบ แต่ Agemin รองรับสูงสุด %lld รอบ";
+
+/* The key uses the %@ key derivation, which is not supported. */
+"The key uses the %@ key derivation, which is not supported." = "กุญแจใช้การอนุพันธ์กุญแจแบบ %@ ซึ่งไม่รองรับ";
+
+/* The operation was canceled. */
+"The operation was canceled." = "การดำเนินการถูกยกเลิก";
+
+/* The passphrase entry is malformed. */
+"The passphrase entry is malformed." = "รายการวลีรหัสผ่านมีรูปแบบไม่ถูกต้อง";
+
+/* The passphrase for %@ is incorrect. Try again. */
+"The passphrase for %@ is incorrect. Try again." = "วลีรหัสผ่านของ %@ ไม่ถูกต้อง ลองอีกครั้ง";
+
+/* The passphrase is incorrect. */
+"The passphrase is incorrect." = "วลีรหัสผ่านไม่ถูกต้อง";
+
+/* The passphrase work factor %lld is too high to try safely. */
+"The passphrase work factor %lld is too high to try safely." = "ปัจจัยการทำงานของวลีรหัสผ่าน %lld สูงเกินกว่าจะลองได้อย่างปลอดภัย";
+
+/* The passphrase work factor is malformed. */
+"The passphrase work factor is malformed." = "ปัจจัยการทำงานของวลีรหัสผ่านมีรูปแบบไม่ถูกต้อง";
+
+/* The passphrases do not match. */
+"The passphrases do not match." = "วลีรหัสผ่านไม่ตรงกัน";
+
+/* The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them. */
+"The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them." = "กุญแจส่วนตัวที่ใช้เปิดไฟล์ที่เข้ารหัสให้คุณ ได้แก่ กุญแจ SSH จาก ~/.ssh และไฟล์ข้อมูลประจำตัว age Agemin จะอ่านกุญแจเหล่านี้และไม่เปลี่ยนแปลงกุญแจเหล่านี้เลย";
+
+/* The purchase is awaiting approval. */
+"The purchase is awaiting approval." = "การซื้อกำลังรอการอนุมัติ";
+
+/* The recipient could not be deleted. */
+"The recipient could not be deleted." = "ไม่สามารถลบผู้รับได้";
+
+/* The recipient could not be saved. */
+"The recipient could not be saved." = "ไม่สามารถบันทึกผู้รับได้";
+
+/* The recipient key could not be read. %@ */
+"The recipient key could not be read. %@" = "ไม่สามารถอ่านกุญแจของผู้รับได้ %@";
+
+/* The recipients folder */
+"The recipients folder" = "โฟลเดอร์ผู้รับ";
+
+/* The recipients folder holds no .pub files yet. */
+"The recipients folder holds no .pub files yet." = "โฟลเดอร์ผู้รับยังไม่มีไฟล์ .pub";
+
+/* The RSA key is malformed. */
+"The RSA key is malformed." = "กุญแจ RSA มีรูปแบบไม่ถูกต้อง";
+
+/* The RSA key is too small or malformed. */
+"The RSA key is too small or malformed." = "กุญแจ RSA เล็กเกินไปหรือมีรูปแบบไม่ถูกต้อง";
+
+/* The SSH key is not a valid Ed25519 key. */
+"The SSH key is not a valid Ed25519 key." = "กุญแจ SSH ไม่ใช่กุญแจ Ed25519 ที่ถูกต้อง";
+
+/* The SSH key is not a valid RSA key. */
+"The SSH key is not a valid RSA key." = "กุญแจ SSH ไม่ใช่กุญแจ RSA ที่ถูกต้อง";
+
+/* The SSH public key is malformed. */
+"The SSH public key is malformed." = "กุญแจสาธารณะ SSH มีรูปแบบไม่ถูกต้อง";
+
+/* There is text after the armor footer. */
+"There is text after the armor footer." = "มีข้อความอยู่หลังส่วนท้าย ASCII armor";
+
+/* This deletes the file from the recipients folder. Files already encrypted for this key are not affected. */
+"This deletes the file from the recipients folder. Files already encrypted for this key are not affected." = "ไฟล์จะถูกลบออกจากโฟลเดอร์ผู้รับ ไฟล์ที่เข้ารหัสไว้สำหรับกุญแจนี้แล้วจะไม่ได้รับผลกระทบ";
+
+/* This file cannot be read as an age file */
+"This file cannot be read as an age file" = "ไม่สามารถอ่านไฟล์นี้เป็นไฟล์ age ได้";
+
+/* This file is not a key. */
+"This file is not a key." = "ไฟล์นี้ไม่ใช่กุญแจ";
+
+/* This file needs a passphrase. */
+"This file needs a passphrase." = "ไฟล์นี้ต้องใช้วลีรหัสผ่าน";
+
+/* This is a secret key. Use the matching public key, which starts with age1. */
+"This is a secret key. Use the matching public key, which starts with age1." = "นี่คือกุญแจลับ ให้ใช้กุญแจสาธารณะที่คู่กัน ซึ่งขึ้นต้นด้วย age1";
+
+/* This is not a valid age public key. */
+"This is not a valid age public key." = "นี่ไม่ใช่กุญแจสาธารณะ age ที่ถูกต้อง";
+
+/* This is not a valid age secret key. */
+"This is not a valid age secret key." = "นี่ไม่ใช่กุญแจลับ age ที่ถูกต้อง";
+
+/* This is not an age file. %@ */
+"This is not an age file. %@" = "นี่ไม่ใช่ไฟล์ age %@";
+
+/* This key format is not supported. Use an OpenSSH private key or an age identity file. */
+"This key format is not supported. Use an OpenSSH private key or an age identity file." = "ไม่รองรับรูปแบบกุญแจนี้ ให้ใช้กุญแจส่วนตัว OpenSSH หรือไฟล์ข้อมูลประจำตัว age";
+
+/* This key produces a weak shared secret and cannot be used. */
+"This key produces a weak shared secret and cannot be used." = "กุญแจนี้สร้างความลับที่ใช้ร่วมกันที่อ่อนแอและไม่สามารถใช้ได้";
+
+/* This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy. */
+"This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy." = "กุญแจที่ปกป้องด้วยวลีรหัสผ่านนี้ใช้รูปแบบ PEM แบบเก่า ให้แปลงด้วย ssh-keygen -p -o หรือใช้สำเนาที่ไม่ได้ปกป้อง";
+
+/* Trial ended */
+"Trial ended" = "การทดลองใช้สิ้นสุดแล้ว";
+
+/* Try Again */
+"Try Again" = "ลองอีกครั้ง";
+
+/* Try every usable key */
+"Try every usable key" = "ลองกุญแจที่ใช้ได้ทุกดอก";
+
+/* Unknown recipient type “%@” */
+"Unknown recipient type “%@”" = "ประเภทผู้รับที่ไม่รู้จัก “%@”";
+
+/* Unlock */
+"Unlock" = "ปลดล็อค";
+
+/* Unlock %@ */
+"Unlock %@" = "ปลดล็อค %@";
+
+/* Unlock %@ with Agemin Pro. */
+"Unlock %@ with Agemin Pro." = "ปลดล็อค%@ด้วย Agemin Pro";
+
+/* Until %@ */
+"Until %@" = "ถึง %@";
+
+/* Use Image */
+"Use Image" = "ใช้รูปภาพ";
+
+/* Use Initials */
+"Use Initials" = "ใช้อักษรย่อ";
+
+/* Valid %@ key */
+"Valid %@ key" = "กุญแจ %@ ที่ถูกต้อง";
+
+/* Wait for the current operation to finish. */
+"Wait for the current operation to finish." = "รอให้การดำเนินการปัจจุบันเสร็จสิ้น";
+
+/* Write it down or store it in a password manager. Agemin does not keep it. */
+"Write it down or store it in a password manager. Agemin does not keep it." = "จดไว้หรือเก็บไว้ในตัวจัดการรหัสผ่าน Agemin จะไม่เก็บวลีรหัสผ่านไว้";
+
+/* Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both. */
+"Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both." = "เขียนไฟล์ที่เข้ารหัสเป็นข้อความแทนไบนารี สำหรับอีเมล แชท และไฟล์การกำหนดค่า age อ่านได้ทั้งสองแบบ";
+
+/* you */
+"you" = "คุณ";
+
+/* You can still encrypt or decrypt one file per day. Available today: %lld. */
+"You can still encrypt or decrypt one file per day. Available today: %lld." = "คุณยังคงเข้ารหัสหรือถอดรหัสได้วันละหนึ่งไฟล์ วันนี้ใช้ได้: %lld";
+
+/* You have Agemin Pro. */
+"You have Agemin Pro." = "คุณมี Agemin Pro";
+
+/* Your Pro trial is active. */
+"Your Pro trial is active." = "ช่วงทดลองใช้ Pro ของคุณยังใช้งานอยู่";
+
+/* · you choose the folder when you encrypt */
+"· you choose the folder when you encrypt" = "· คุณเลือกโฟลเดอร์เมื่อเข้ารหัส";
