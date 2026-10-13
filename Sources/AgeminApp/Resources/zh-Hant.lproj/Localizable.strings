@@ -1,0 +1,904 @@
+/* Agemin — zh-Hant localization. Each comment shows the English source text. */
+
+/*  and armor */
+" and armor" = " 和 ASCII armor";
+
+/* %@ %@ of %@ */
+"%@ %@ of %@" = "%@ %@，共 %@";
+
+/* %@ could not be read. */
+"%@ could not be read." = "無法讀取 %@。";
+
+/* %@ could not be written. */
+"%@ could not be written." = "無法寫入 %@。";
+
+/* %@ is protected with a passphrase. */
+"%@ is protected with a passphrase." = "%@ 受密語保護。";
+
+/* %@ keys are not supported by age. */
+"%@ keys are not supported by age." = "age 不支援 %@ 金鑰。";
+
+/* %@ per year */
+"%@ per year" = "每年 %@";
+
+/* %@ · %@ more than the original for the header%@ */
+"%@ · %@ more than the original for the header%@" = "%@ · 比原始檔案多 %@，用於檔案標頭%@";
+
+/* %@.pub already exists in the recipients folder. */
+"%@.pub already exists in the recipients folder." = "接收者檔案夾中已有 %@.pub。";
+
+/* %lld identities */
+"%lld identities" = "%lld 個身分";
+
+/* %lld identities · %lld usable */
+"%lld identities · %lld usable" = "%lld 個身分 · %lld 個可用";
+
+/* %lld keys */
+"%lld keys" = "%lld 個金鑰";
+
+/* %lld keys tried */
+"%lld keys tried" = "已嘗試 %lld 個金鑰";
+
+/* %lld of %lld recipients selected */
+"%lld of %lld recipients selected" = "已選擇 %lld 個接收者，共 %lld 個";
+
+/* %lld recipients */
+"%lld recipients" = "%lld 個接收者";
+
+/* %lld recipients · %lld usable */
+"%lld recipients · %lld usable" = "%lld 個接收者 · %lld 個可用";
+
+/* 1 identity */
+"1 identity" = "1 個身分";
+
+/* 1 recipient */
+"1 recipient" = "1 個接收者";
+
+/* 30 days of full access */
+"30 days of full access" = "30 天完整使用權限";
+
+/* A file is still being processed. */
+"A file is still being processed." = "仍有檔案正在處理中。";
+
+/* A header line is neither a recipient nor the closing marker. */
+"A header line is neither a recipient nor the closing marker." = "檔案標頭中有一行既不是接收者，也不是結束標記。";
+
+/* A header line is too long. */
+"A header line is too long." = "檔案標頭中有一行過長。";
+
+/* A passphrase cannot be combined with other recipients. */
+"A passphrase cannot be combined with other recipients." = "密語不能與其他接收者一起使用。";
+
+/* A passphrase entry must be the only recipient. */
+"A passphrase entry must be the only recipient." = "密語項目必須是唯一的接收者。";
+
+/* A recipient body is not valid base64. */
+"A recipient body is not valid base64." = "某個接收者內容不是有效的 base64。";
+
+/* A recipient body line is malformed. */
+"A recipient body line is malformed." = "某個接收者內容行格式錯誤。";
+
+/* A recipient line is malformed. */
+"A recipient line is malformed." = "某個接收者行格式錯誤。";
+
+/* About Agemin */
+"About Agemin" = "關於 Agemin";
+
+/* Action */
+"Action" = "動作";
+
+/* Add */
+"Add" = "新增";
+
+/* Add a public key on the Recipients page */
+"Add a public key on the Recipients page" = "在「接收者」頁面新增公鑰";
+
+/* Add an identity that can decrypt this file. */
+"Add an identity that can decrypt this file." = "請新增可以解密此檔案的身分。";
+
+/* Add Key File */
+"Add Key File" = "新增金鑰檔案";
+
+/* Add Key File… */
+"Add Key File…" = "新增金鑰檔案…";
+
+/* Add Recipient */
+"Add Recipient" = "新增接收者";
+
+/* Add Recipient… */
+"Add Recipient…" = "新增接收者…";
+
+/* Add to Recipients */
+"Add to Recipients" = "加入接收者";
+
+/* added */
+"added" = "已新增";
+
+/* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
+"After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "試用期結束後，你每天仍可加密或解密一個檔案。讀取金鑰、檢視檔案和製作金鑰仍不受限制。";
+
+/* age encryption, without the terminal. */
+"age encryption, without the terminal." = "age 加密，不必使用終端機。";
+
+/* age key */
+"age key" = "age 金鑰";
+
+/* age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA… */
+"age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA…" = "age1… 或 ssh-ed25519 AAAA… 或 ssh-rsa AAAA…";
+
+/* Agemin could not use that folder */
+"Agemin could not use that folder" = "Agemin 無法使用該檔案夾";
+
+/* Agemin encrypts files, not folders. */
+"Agemin encrypts files, not folders." = "Agemin 只加密檔案，不加密檔案夾。";
+
+/* Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged. */
+"Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged." = "前 30 天 Agemin 的全部功能均已解鎖。不會開始任何訂閱，也不會向你收費。";
+
+/* Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice. */
+"Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice." = "Agemin 會列出其中的 .pub 檔案，並讓你新增檔案。任何檔案夾都可以，常見的選擇是 ~/.age。";
+
+/* Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually. */
+"Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually." = "Agemin 會列出在其中（通常為 ~/.ssh）找到的私鑰，並用它們解密。存放在其他位置的金鑰可以逐一新增。";
+
+/* Agemin Pro */
+"Agemin Pro" = "Agemin Pro";
+
+/* Agemin Pro Lifetime · %@ */
+"Agemin Pro Lifetime · %@" = "Agemin Pro 永久版 · %@";
+
+/* Agemin Pro Yearly */
+"Agemin Pro Yearly" = "Agemin Pro 年度版";
+
+/* Agemin Pro… */
+"Agemin Pro…" = "Agemin Pro…";
+
+/* Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them. */
+"Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them." = "Agemin 會移除已儲存的接收者檔案夾、身分檔案夾以及個別新增的金鑰檔案的取用權限。不會刪除任何內容。重新選擇它們即可繼續使用。";
+
+/* Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed. */
+"Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed." = "Agemin 會依此金鑰的指紋儲存頭像。金鑰檔案夾中的內容不會更改。";
+
+/* alice */
+"alice" = "alice";
+
+/* All */
+"All" = "全選";
+
+/* An age public key has 32 bytes. */
+"An age public key has 32 bytes." = "age 公鑰應為 32 位元組。";
+
+/* An age secret key has 32 bytes. */
+"An age secret key has 32 bytes." = "age 私鑰應為 32 位元組。";
+
+/* An ssh-ed25519 recipient entry is malformed. */
+"An ssh-ed25519 recipient entry is malformed." = "某個 ssh-ed25519 接收者項目格式錯誤。";
+
+/* An ssh-rsa recipient entry is malformed. */
+"An ssh-rsa recipient entry is malformed." = "某個 ssh-rsa 接收者項目格式錯誤。";
+
+/* An X25519 recipient entry has the wrong size. */
+"An X25519 recipient entry has the wrong size." = "某個 X25519 接收者項目的大小不正確。";
+
+/* An X25519 recipient entry is malformed. */
+"An X25519 recipient entry is malformed." = "某個 X25519 接收者項目格式錯誤。";
+
+/* Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one. */
+"Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one." = "任何知道密語的人都能打開該檔案。age 會用 scrypt 處理密語，因此長度比複雜度更重要。";
+
+/* ASCII armor */
+"ASCII armor" = "ASCII armor";
+
+/* Avatar for %@ */
+"Avatar for %@" = "%@ 的頭像";
+
+/* Cancel */
+"Cancel" = "取消";
+
+/* Change */
+"Change" = "更改";
+
+/* Choose */
+"Choose" = "選擇";
+
+/* Choose a file to encrypt. */
+"Choose a file to encrypt." = "請選擇要加密的檔案。";
+
+/* Choose a yearly subscription or lifetime purchase at any time to remove the daily limit. */
+"Choose a yearly subscription or lifetime purchase at any time to remove the daily limit." = "隨時選擇年度訂閱或永久購買，即可解除每日限制。";
+
+/* Choose an age identity file or an SSH private key */
+"Choose an age identity file or an SSH private key" = "選擇 age 身分檔案或 SSH 私鑰";
+
+/* Choose an encrypted file. */
+"Choose an encrypted file." = "請選擇已加密的檔案。";
+
+/* Choose an image for this key's avatar */
+"Choose an image for this key's avatar" = "為此金鑰的頭像選擇影像";
+
+/* Choose File */
+"Choose File" = "選擇檔案";
+
+/* Choose File to Decrypt… */
+"Choose File to Decrypt…" = "選擇要解密的檔案…";
+
+/* Choose File to Encrypt… */
+"Choose File to Encrypt…" = "選擇要加密的檔案…";
+
+/* Choose Folder */
+"Choose Folder" = "選擇檔案夾";
+
+/* Choose Identities Folder… */
+"Choose Identities Folder…" = "選擇身分檔案夾…";
+
+/* Choose Image */
+"Choose Image" = "選擇影像";
+
+/* Choose Recipients Folder… */
+"Choose Recipients Folder…" = "選擇接收者檔案夾…";
+
+/* Choose the encrypted file, usually ending in .age */
+"Choose the encrypted file, usually ending in .age" = "選擇已加密的檔案，通常以 .age 結尾";
+
+/* Choose the file to encrypt */
+"Choose the file to encrypt" = "選擇要加密的檔案";
+
+/* Choose the folder with the .pub files of the people you encrypt for, usually ~/.age. */
+"Choose the folder with the .pub files of the people you encrypt for, usually ~/.age." = "選擇存放接收者 .pub 檔案的檔案夾，通常為 ~/.age。";
+
+/* Choose the folder with the .pub files you encrypt for, usually ~/.age */
+"Choose the folder with the .pub files you encrypt for, usually ~/.age" = "選擇存放加密所用 .pub 檔案的檔案夾，通常為 ~/.age";
+
+/* Choose the folder with your private keys, usually ~/.ssh */
+"Choose the folder with your private keys, usually ~/.ssh" = "選擇存放你的私鑰的檔案夾，通常為 ~/.ssh";
+
+/* Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page. */
+"Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page." = "選擇存放 SSH 金鑰的檔案夾（通常為 ~/.ssh），或在「身分」頁面新增 age 身分檔案。";
+
+/* Choose where to save the decrypted file */
+"Choose where to save the decrypted file" = "選擇解密後檔案的儲存位置";
+
+/* Choose where to save the encrypted file */
+"Choose where to save the encrypted file" = "選擇加密後檔案的儲存位置";
+
+/* Choose your recipients folder */
+"Choose your recipients folder" = "選擇接收者檔案夾";
+
+/* Choose your SSH folder */
+"Choose your SSH folder" = "選擇 SSH 檔案夾";
+
+/* Clear search */
+"Clear search" = "清除搜尋";
+
+/* Clear the file */
+"Clear the file" = "清除檔案";
+
+/* Click an avatar to change it, or drop an image onto it. */
+"Click an avatar to change it, or drop an image onto it." = "按一下頭像即可更改，也可將影像拖放到頭像上。";
+
+/* Click to change the avatar, or drop an image on it */
+"Click to change the avatar, or drop an image on it" = "按一下即可更改頭像，也可將影像拖放到此處";
+
+/* Compress the folder into an archive first, then open the archive. */
+"Compress the folder into an archive first, then open the archive." = "請先將檔案夾壓縮成壓縮檔，再打開該壓縮檔。";
+
+/* Confirm passphrase */
+"Confirm passphrase" = "確認密語";
+
+/* Contacting the App Store… */
+"Contacting the App Store…" = "正在連接 App Store…";
+
+/* Continue */
+"Continue" = "繼續";
+
+/* Copy */
+"Copy" = "拷貝";
+
+/* Copy Key */
+"Copy Key" = "拷貝金鑰";
+
+/* Copy Path */
+"Copy Path" = "拷貝路徑";
+
+/* Copy Public Key */
+"Copy Public Key" = "拷貝公鑰";
+
+/* Decrypt */
+"Decrypt" = "解密";
+
+/* Decrypt This File */
+"Decrypt This File" = "解密此檔案";
+
+/* Decrypt with */
+"Decrypt with" = "解密方式";
+
+/* Decrypted */
+"Decrypted" = "已解密";
+
+/* Decrypting */
+"Decrypting" = "正在解密";
+
+/* Decryption failed */
+"Decryption failed" = "解密失敗";
+
+/* Decrypt… */
+"Decrypt…" = "解密…";
+
+/* Delete */
+"Delete" = "刪除";
+
+/* Delete %@? */
+"Delete %@?" = "要刪除 %@ 嗎？";
+
+/* Delete the .pub file */
+"Delete the .pub file" = "刪除 .pub 檔案";
+
+/* Drop a file here to encrypt it */
+"Drop a file here to encrypt it" = "將檔案拖放到此處以加密";
+
+/* Drop a file, not a folder. Compress the folder first, then drop the archive. */
+"Drop a file, not a folder. Compress the folder first, then drop the archive." = "請拖放檔案，而不是檔案夾。請先壓縮檔案夾，再拖放壓縮檔。";
+
+/* Drop an age file here to decrypt it */
+"Drop an age file here to decrypt it" = "將 age 檔案拖放到此處以解密";
+
+/* Encrypt */
+"Encrypt" = "加密";
+
+/* Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file. */
+"Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file." = "用有權打開檔案的人的公鑰加密檔案，或使用密語加密。產生的是標準 age 檔案。";
+
+/* Encrypt for */
+"Encrypt for" = "加密對象";
+
+/* Encrypted */
+"Encrypted" = "已加密";
+
+/* Encrypted for */
+"Encrypted for" = "此檔案的加密對象";
+
+/* Encrypting */
+"Encrypting" = "正在加密";
+
+/* Encryption failed */
+"Encryption failed" = "加密失敗";
+
+/* Encrypt… */
+"Encrypt…" = "加密…";
+
+/* Enter a passphrase. */
+"Enter a passphrase." = "請輸入密語。";
+
+/* Enter the file's passphrase. */
+"Enter the file's passphrase." = "請輸入該檔案的密語。";
+
+/* Enter the passphrase below */
+"Enter the passphrase below" = "請在下方輸入密語";
+
+/* Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa). */
+"Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa)." = "需要 age 公鑰（age1…）或 SSH 公鑰（ssh-ed25519 或 ssh-rsa）。";
+
+/* Expires %@ */
+"Expires %@" = "%@ 到期";
+
+/* Files */
+"Files" = "檔案";
+
+/* Fill both fields with a random passphrase and show it once */
+"Fill both fields with a random passphrase and show it once" = "在兩個欄位填入隨機密語，並顯示一次";
+
+/* Filter identities */
+"Filter identities" = "過濾身分";
+
+/* Filter recipients */
+"Filter recipients" = "過濾接收者";
+
+/* Find… */
+"Find…" = "尋找…";
+
+/* Forget Access */
+"Forget Access" = "忘記取用權限";
+
+/* Forget access to the key folders? */
+"Forget access to the key folders?" = "要忘記金鑰檔案夾的取用權限嗎？";
+
+/* Forget Folder Access… */
+"Forget Folder Access…" = "忘記檔案夾取用權限…";
+
+/* Free · Available today: %lld */
+"Free · Available today: %lld" = "免費 · 今天可用：%lld";
+
+/* Generate */
+"Generate" = "產生";
+
+/* Give the recipient a name. */
+"Give the recipient a name." = "請為接收者輸入名稱。";
+
+/* Hide this card */
+"Hide this card" = "隱藏此卡片";
+
+/* Identities */
+"Identities" = "身分";
+
+/* Identity file */
+"Identity file" = "身分檔案";
+
+/* Initials */
+"Initials" = "姓名縮寫";
+
+/* Initials color %lld */
+"Initials color %lld" = "姓名縮寫顏色 %lld";
+
+/* Keep Working */
+"Keep Working" = "繼續處理";
+
+/* Key */
+"Key" = "金鑰";
+
+/* Keys */
+"Keys" = "金鑰";
+
+/* Lifetime */
+"Lifetime" = "永久";
+
+/* Loading App Store products… */
+"Loading App Store products…" = "正在載入 App Store 產品…";
+
+/* Loading keys… */
+"Loading keys…" = "正在載入金鑰…";
+
+/* macOS did not grant lasting access to that folder. Choose it again, or choose another folder. */
+"macOS did not grant lasting access to that folder. Choose it again, or choose another folder." = "macOS 未授予該檔案夾的持久取用權限。請重新選擇該檔案夾，或選擇其他檔案夾。";
+
+/* Manage Subscription */
+"Manage Subscription" = "管理訂閱";
+
+/* matches */
+"matches" = "符合";
+
+/* Matches %@ */
+"Matches %@" = "符合 %@";
+
+/* Matching keys first. Protected keys ask for their passphrase. */
+"Matching keys first. Protected keys ask for their passphrase." = "符合的金鑰排在前面。受保護的金鑰會要求輸入密語。";
+
+/* Name */
+"Name" = "名稱";
+
+/* New age Key */
+"New age Key" = "新增 age 金鑰";
+
+/* New age key saved */
+"New age key saved" = "新 age 金鑰已儲存";
+
+/* New age Key… */
+"New age Key…" = "新增 age 金鑰…";
+
+/* New recipient */
+"New recipient" = "新接收者";
+
+/* No active purchase was found. */
+"No active purchase was found." = "找不到有效的購買項目。";
+
+/* No Agemin Pro purchase was found for this Apple Account. */
+"No Agemin Pro purchase was found for this Apple Account." = "這個 Apple 帳戶沒有找到 Agemin Pro 的購買紀錄。";
+
+/* No identities yet */
+"No identities yet" = "尚無身分";
+
+/* No matching key */
+"No matching key" = "沒有符合的金鑰";
+
+/* No recipients folder yet */
+"No recipients folder yet" = "尚未選擇接收者檔案夾";
+
+/* None */
+"None" = "全部不選";
+
+/* None of the identities can decrypt this file. */
+"None of the identities can decrypt this file." = "沒有任何身分可以解密此檔案。";
+
+/* None of your identities matches this file. Add the key it was encrypted for on the Identities page. */
+"None of your identities matches this file. Add the key it was encrypted for on the Identities page." = "你的身分都不符合此檔案。請在「身分」頁面新增該檔案加密所用的金鑰。";
+
+/* not a key */
+"not a key" = "不是金鑰";
+
+/* OK */
+"OK" = "OK";
+
+/* Open an age file with one of your keys, or with the passphrase it was encrypted with. */
+"Open an age file with one of your keys, or with the passphrase it was encrypted with." = "用你的金鑰或加密時使用的密語打開 age 檔案。";
+
+/* Options */
+"Options" = "選項";
+
+/* Output */
+"Output" = "輸出";
+
+/* Pages */
+"Pages" = "頁面";
+
+/* Passphrase */
+"Passphrase" = "密語";
+
+/* passphrase */
+"passphrase" = "密語";
+
+/* Passphrase · work factor %lld */
+"Passphrase · work factor %lld" = "密語 · 工作因子 %lld";
+
+/* Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends. */
+"Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends." = "費用將透過你的 Apple 帳戶收取。年度訂閱會自動續訂，除非你在目前週期結束前至少一天於 App Store 設定中取消。";
+
+/* Privacy Policy */
+"Privacy Policy" = "隱私權政策";
+
+/* Privacy Policy… */
+"Privacy Policy…" = "隱私權政策…";
+
+/* Pro */
+"Pro" = "Pro";
+
+/* Pro purchases are unavailable right now. Try again later. */
+"Pro purchases are unavailable right now. Try again later." = "目前無法購買 Pro。請稍後再試。";
+
+/* Pro trial · %lld days remaining */
+"Pro trial · %lld days remaining" = "Pro 試用 · 還剩 %lld 天";
+
+/* Pro trial · 1 day remaining */
+"Pro trial · 1 day remaining" = "Pro 試用 · 還剩 1 天";
+
+/* Pro trial · ends %@ */
+"Pro trial · ends %@" = "Pro 試用 · %@ 結束";
+
+/* Pro trial · first payment %@ */
+"Pro trial · first payment %@" = "Pro 試用 · 首次付款 %@";
+
+/* Pro trial · until %@ */
+"Pro trial · until %@" = "Pro 試用 · 至 %@";
+
+/* Public key */
+"Public key" = "公鑰";
+
+/* Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file. */
+"Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file." = "你加密所用的公鑰。檔案夾中的每個 .pub 檔案都是一個接收者，以檔案名稱命名。";
+
+/* Purchase */
+"Purchase" = "購買";
+
+/* Quit Anyway */
+"Quit Anyway" = "仍要結束";
+
+/* Quitting now cancels it and removes the partial output. */
+"Quitting now cancels it and removes the partial output." = "現在結束將取消該操作並移除未完成的輸出。";
+
+/* Read the folder again */
+"Read the folder again" = "重新讀取檔案夾";
+
+/* Recipients */
+"Recipients" = "接收者";
+
+/* Refresh Keys */
+"Refresh Keys" = "重新整理金鑰";
+
+/* Remove from the list */
+"Remove from the list" = "從列表中移除";
+
+/* Renews %@ */
+"Renews %@" = "%@ 續訂";
+
+/* Restore Purchases */
+"Restore Purchases" = "回復購買";
+
+/* Restoring… */
+"Restoring…" = "正在回復…";
+
+/* Reveal */
+"Reveal" = "顯示";
+
+/* Reveal in Finder */
+"Reveal in Finder" = "在 Finder 中顯示";
+
+/* Save */
+"Save" = "儲存";
+
+/* Save Key */
+"Save Key" = "儲存金鑰";
+
+/* Save Recipient */
+"Save Recipient" = "儲存接收者";
+
+/* Save the new identity file somewhere private because it holds the secret key */
+"Save the new identity file somewhere private because it holds the secret key" = "請將新的身分檔案儲存在私密位置，它包含私鑰";
+
+/* Saved as */
+"Saved as" = "已儲存為";
+
+/* Saved as <name>.pub in the recipients folder. */
+"Saved as <name>.pub in the recipients folder." = "已儲存為接收者檔案夾中的 <name>.pub。";
+
+/* Select at least one recipient. */
+"Select at least one recipient." = "請至少選擇一個接收者。";
+
+/* SHA-256 */
+"SHA-256" = "SHA-256";
+
+/* Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it. */
+"Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it." = "將公鑰分享給需要為你加密的人。請妥善保管身分檔案，只有你的帳戶可以讀取。";
+
+/* Shared with your family */
+"Shared with your family" = "與家人共享";
+
+/* Size */
+"Size" = "大小";
+
+/* SSH key (Ed25519) */
+"SSH key (Ed25519)" = "SSH 金鑰（Ed25519）";
+
+/* SSH key (RSA) */
+"SSH key (RSA)" = "SSH 金鑰（RSA）";
+
+/* Terms of Use (EULA) */
+"Terms of Use (EULA)" = "使用條款（EULA）";
+
+/* That file is not an image Agemin can read. */
+"That file is not an image Agemin can read." = "該檔案不是 Agemin 可讀取的影像。";
+
+/* The App Store could not verify this purchase. */
+"The App Store could not verify this purchase." = "App Store 無法驗證此購買。";
+
+/* The armor header is missing. */
+"The armor header is missing." = "缺少 ASCII armor 標頭。";
+
+/* The armored file could not be read. %@ */
+"The armored file could not be read. %@" = "無法讀取 ASCII armor 檔案。%@";
+
+/* The armored file ends before its footer. */
+"The armored file ends before its footer." = "ASCII armor 檔案在結尾標記之前就結束了。";
+
+/* The armored text is incomplete. */
+"The armored text is incomplete." = "ASCII armor 文字不完整。";
+
+/* The armored text is not valid base64. */
+"The armored text is not valid base64." = "ASCII armor 文字不是有效的 base64。";
+
+/* The decrypted file cannot replace the encrypted file. Choose a different name. */
+"The decrypted file cannot replace the encrypted file. Choose a different name." = "解密後的檔案不能取代已加密的檔案。請選擇其他名稱。";
+
+/* The decrypted file does not hold an age secret key. */
+"The decrypted file does not hold an age secret key." = "解密後的檔案不包含 age 私鑰。";
+
+/* The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one. */
+"The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one." = "解密後的檔案只有你的使用者帳戶可以讀取。如果寄件者提供了校驗和，請與之比對。";
+
+/* The encrypted data is corrupt or was modified. */
+"The encrypted data is corrupt or was modified." = "加密資料已損毀或遭到修改。";
+
+/* The encrypted file cannot replace the original. Choose a different name. */
+"The encrypted file cannot replace the original. Choose a different name." = "加密後的檔案不能取代原始檔案。請選擇其他名稱。";
+
+/* The file could not be read. */
+"The file could not be read." = "無法讀取該檔案。";
+
+/* The file ends early. It may be incomplete. */
+"The file ends early. It may be incomplete." = "檔案提前結束，可能不完整。";
+
+/* The file header was modified or the key is wrong. */
+"The file header was modified or the key is wrong." = "檔案標頭已遭修改，或金鑰不正確。";
+
+/* The file holds no age secret key. */
+"The file holds no age secret key." = "該檔案不包含 age 私鑰。";
+
+/* The file is being read. */
+"The file is being read." = "正在讀取檔案。";
+
+/* The file is not text. */
+"The file is not text." = "該檔案不是文字。";
+
+/* The file is too large to be a key. */
+"The file is too large to be a key." = "該檔案太大，不可能是金鑰。";
+
+/* The first line is not the age version marker. */
+"The first line is not the age version marker." = "第一行不是 age 版本標記。";
+
+/* The header authentication line is malformed. */
+"The header authentication line is malformed." = "檔案標頭的認證行格式錯誤。";
+
+/* The header is not valid text. */
+"The header is not valid text." = "檔案標頭不是有效的文字。";
+
+/* The header is too large to be an age file. */
+"The header is too large to be an age file." = "檔案標頭太大，不可能是 age 檔案。";
+
+/* The header lists too many recipients. */
+"The header lists too many recipients." = "檔案標頭列出的接收者過多。";
+
+/* The identity could not be read. %@ */
+"The identity could not be read. %@" = "無法讀取該身分。%@";
+
+/* The identity file could not be saved. */
+"The identity file could not be saved." = "無法儲存身分檔案。";
+
+/* The image could not be used */
+"The image could not be used" = "無法使用該影像";
+
+/* The image is larger than %lld pixels on a side. Choose a smaller one. */
+"The image is larger than %lld pixels on a side. Choose a smaller one." = "影像的邊長超過 %lld 像素。請選擇較小的影像。";
+
+/* The input is larger than expected. */
+"The input is larger than expected." = "輸入比預期的大。";
+
+/* The key file ends early. */
+"The key file ends early." = "金鑰檔案提前結束。";
+
+/* The key file is malformed. */
+"The key file is malformed." = "金鑰檔案格式錯誤。";
+
+/* The key file's passphrase settings are invalid. */
+"The key file's passphrase settings are invalid." = "金鑰檔案的密語設定無效。";
+
+/* The key is empty. */
+"The key is empty." = "金鑰為空。";
+
+/* The key is protected with the %@ cipher, which is not supported. */
+"The key is protected with the %@ cipher, which is not supported." = "該金鑰使用 %@ 加密演算法保護，不受支援。";
+
+/* The key is saved as <name>.pub in the recipients folder. */
+"The key is saved as <name>.pub in the recipients folder." = "金鑰將儲存為接收者檔案夾中的 <name>.pub。";
+
+/* The key uses %lld key derivation rounds. Agemin supports up to %lld. */
+"The key uses %lld key derivation rounds. Agemin supports up to %lld." = "該金鑰使用 %lld 輪金鑰衍生，Agemin 最多支援 %lld 輪。";
+
+/* The key uses the %@ key derivation, which is not supported. */
+"The key uses the %@ key derivation, which is not supported." = "該金鑰使用 %@ 金鑰衍生，不受支援。";
+
+/* The operation was canceled. */
+"The operation was canceled." = "操作已取消。";
+
+/* The passphrase entry is malformed. */
+"The passphrase entry is malformed." = "密語項目格式錯誤。";
+
+/* The passphrase for %@ is incorrect. Try again. */
+"The passphrase for %@ is incorrect. Try again." = "%@ 的密語不正確。請再試一次。";
+
+/* The passphrase is incorrect. */
+"The passphrase is incorrect." = "密語不正確。";
+
+/* The passphrase work factor %lld is too high to try safely. */
+"The passphrase work factor %lld is too high to try safely." = "密語的工作因子 %lld 過高，無法安全嘗試。";
+
+/* The passphrase work factor is malformed. */
+"The passphrase work factor is malformed." = "密語的工作因子格式錯誤。";
+
+/* The passphrases do not match. */
+"The passphrases do not match." = "兩次輸入的密語不相符。";
+
+/* The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them. */
+"The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them." = "用於打開為你加密的檔案的私鑰：~/.ssh 中的 SSH 金鑰和 age 身分檔案。Agemin 只會讀取它們，絕不會更改。";
+
+/* The purchase is awaiting approval. */
+"The purchase is awaiting approval." = "購買正在等待批准。";
+
+/* The recipient could not be deleted. */
+"The recipient could not be deleted." = "無法刪除該接收者。";
+
+/* The recipient could not be saved. */
+"The recipient could not be saved." = "無法儲存該接收者。";
+
+/* The recipient key could not be read. %@ */
+"The recipient key could not be read. %@" = "無法讀取接收者金鑰。%@";
+
+/* The recipients folder */
+"The recipients folder" = "接收者檔案夾";
+
+/* The recipients folder holds no .pub files yet. */
+"The recipients folder holds no .pub files yet." = "接收者檔案夾中尚無 .pub 檔案。";
+
+/* The RSA key is malformed. */
+"The RSA key is malformed." = "RSA 金鑰格式錯誤。";
+
+/* The RSA key is too small or malformed. */
+"The RSA key is too small or malformed." = "RSA 金鑰太小或格式錯誤。";
+
+/* The SSH key is not a valid Ed25519 key. */
+"The SSH key is not a valid Ed25519 key." = "該 SSH 金鑰不是有效的 Ed25519 金鑰。";
+
+/* The SSH key is not a valid RSA key. */
+"The SSH key is not a valid RSA key." = "該 SSH 金鑰不是有效的 RSA 金鑰。";
+
+/* The SSH public key is malformed. */
+"The SSH public key is malformed." = "SSH 公鑰格式錯誤。";
+
+/* There is text after the armor footer. */
+"There is text after the armor footer." = "ASCII armor 結尾標記之後還有文字。";
+
+/* This deletes the file from the recipients folder. Files already encrypted for this key are not affected. */
+"This deletes the file from the recipients folder. Files already encrypted for this key are not affected." = "該檔案將從接收者檔案夾中刪除。已用此金鑰加密的檔案不受影響。";
+
+/* This file cannot be read as an age file */
+"This file cannot be read as an age file" = "無法將此檔案作為 age 檔案讀取";
+
+/* This file is not a key. */
+"This file is not a key." = "此檔案不是金鑰。";
+
+/* This file needs a passphrase. */
+"This file needs a passphrase." = "此檔案需要密語。";
+
+/* This is a secret key. Use the matching public key, which starts with age1. */
+"This is a secret key. Use the matching public key, which starts with age1." = "這是私鑰。請使用對應的公鑰，它以 age1 開頭。";
+
+/* This is not a valid age public key. */
+"This is not a valid age public key." = "這不是有效的 age 公鑰。";
+
+/* This is not a valid age secret key. */
+"This is not a valid age secret key." = "這不是有效的 age 私鑰。";
+
+/* This is not an age file. %@ */
+"This is not an age file. %@" = "這不是 age 檔案。%@";
+
+/* This key format is not supported. Use an OpenSSH private key or an age identity file. */
+"This key format is not supported. Use an OpenSSH private key or an age identity file." = "不支援此金鑰格式。請使用 OpenSSH 私鑰或 age 身分檔案。";
+
+/* This key produces a weak shared secret and cannot be used. */
+"This key produces a weak shared secret and cannot be used." = "此金鑰會產生弱共享密鑰，無法使用。";
+
+/* This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy. */
+"This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy." = "此受密語保護的金鑰使用舊版 PEM 格式。請用 ssh-keygen -p -o 轉換，或使用未受保護的副本。";
+
+/* Trial ended */
+"Trial ended" = "試用已結束";
+
+/* Try Again */
+"Try Again" = "再試一次";
+
+/* Try every usable key */
+"Try every usable key" = "嘗試每個可用的金鑰";
+
+/* Unknown recipient type “%@” */
+"Unknown recipient type “%@”" = "未知的接收者類型「%@」";
+
+/* Unlock */
+"Unlock" = "解鎖";
+
+/* Unlock %@ */
+"Unlock %@" = "解鎖 %@";
+
+/* Unlock %@ with Agemin Pro. */
+"Unlock %@ with Agemin Pro." = "使用 Agemin Pro 解鎖%@。";
+
+/* Until %@ */
+"Until %@" = "至 %@";
+
+/* Use Image */
+"Use Image" = "使用影像";
+
+/* Use Initials */
+"Use Initials" = "使用姓名縮寫";
+
+/* Valid %@ key */
+"Valid %@ key" = "有效的 %@ 金鑰";
+
+/* Wait for the current operation to finish. */
+"Wait for the current operation to finish." = "請等待目前的操作完成。";
+
+/* Write it down or store it in a password manager. Agemin does not keep it. */
+"Write it down or store it in a password manager. Agemin does not keep it." = "請記下它或存入密碼管理程式。Agemin 不會保留它。";
+
+/* Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both. */
+"Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both." = "將加密檔案寫成文字而非二進位，方便用於電子郵件、聊天和設定檔。age 兩種都能讀取。";
+
+/* you */
+"you" = "你";
+
+/* You can still encrypt or decrypt one file per day. Available today: %lld. */
+"You can still encrypt or decrypt one file per day. Available today: %lld." = "你每天仍可加密或解密一個檔案。今天可用：%lld。";
+
+/* You have Agemin Pro. */
+"You have Agemin Pro." = "你已擁有 Agemin Pro。";
+
+/* Your Pro trial is active. */
+"Your Pro trial is active." = "你的 Pro 試用已生效。";
+
+/* · you choose the folder when you encrypt */
+"· you choose the folder when you encrypt" = "· 加密時由你選擇檔案夾";
