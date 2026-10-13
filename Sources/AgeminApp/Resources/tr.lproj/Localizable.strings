@@ -1,0 +1,904 @@
+/* Agemin — tr localization. Each comment shows the English source text. */
+
+/*  and armor */
+" and armor" = " ve armor";
+
+/* %@ %@ of %@ */
+"%@ %@ of %@" = "%@ %@ / %@";
+
+/* %@ could not be read. */
+"%@ could not be read." = "%@ okunamadı.";
+
+/* %@ could not be written. */
+"%@ could not be written." = "%@ yazılamadı.";
+
+/* %@ is protected with a passphrase. */
+"%@ is protected with a passphrase." = "%@ bir parolayla korunuyor.";
+
+/* %@ keys are not supported by age. */
+"%@ keys are not supported by age." = "%@ anahtarları age tarafından desteklenmiyor.";
+
+/* %@ per year */
+"%@ per year" = "%@ yılda";
+
+/* %@ · %@ more than the original for the header%@ */
+"%@ · %@ more than the original for the header%@" = "%@ · özgün dosyadan %@ fazla, üstbilgi%@ için";
+
+/* %@.pub already exists in the recipients folder. */
+"%@.pub already exists in the recipients folder." = "%@.pub alıcılar klasöründe zaten var.";
+
+/* %lld identities */
+"%lld identities" = "%lld kimlik";
+
+/* %lld identities · %lld usable */
+"%lld identities · %lld usable" = "%lld kimlik · %lld kullanılabilir";
+
+/* %lld keys */
+"%lld keys" = "%lld anahtar";
+
+/* %lld keys tried */
+"%lld keys tried" = "%lld anahtar denendi";
+
+/* %lld of %lld recipients selected */
+"%lld of %lld recipients selected" = "%lld / %lld alıcı seçildi";
+
+/* %lld recipients */
+"%lld recipients" = "%lld alıcı";
+
+/* %lld recipients · %lld usable */
+"%lld recipients · %lld usable" = "%lld alıcı · %lld kullanılabilir";
+
+/* 1 identity */
+"1 identity" = "1 kimlik";
+
+/* 1 recipient */
+"1 recipient" = "1 alıcı";
+
+/* 30 days of full access */
+"30 days of full access" = "30 gün tam erişim";
+
+/* A file is still being processed. */
+"A file is still being processed." = "Bir dosya hâlâ işleniyor.";
+
+/* A header line is neither a recipient nor the closing marker. */
+"A header line is neither a recipient nor the closing marker." = "Bir üstbilgi satırı ne alıcı ne de kapanış işareti.";
+
+/* A header line is too long. */
+"A header line is too long." = "Bir üstbilgi satırı çok uzun.";
+
+/* A passphrase cannot be combined with other recipients. */
+"A passphrase cannot be combined with other recipients." = "Parola, diğer alıcılarla birleştirilemez.";
+
+/* A passphrase entry must be the only recipient. */
+"A passphrase entry must be the only recipient." = "Parola girdisi tek alıcı olmalıdır.";
+
+/* A recipient body is not valid base64. */
+"A recipient body is not valid base64." = "Bir alıcı gövdesi geçerli base64 değil.";
+
+/* A recipient body line is malformed. */
+"A recipient body line is malformed." = "Bir alıcı gövde satırı bozuk.";
+
+/* A recipient line is malformed. */
+"A recipient line is malformed." = "Bir alıcı satırı bozuk.";
+
+/* About Agemin */
+"About Agemin" = "Agemin Hakkında";
+
+/* Action */
+"Action" = "İşlem";
+
+/* Add */
+"Add" = "Ekle";
+
+/* Add a public key on the Recipients page */
+"Add a public key on the Recipients page" = "Alıcılar sayfasında bir açık anahtar ekleyin";
+
+/* Add an identity that can decrypt this file. */
+"Add an identity that can decrypt this file." = "Bu dosyanın şifresini çözebilecek bir kimlik ekleyin.";
+
+/* Add Key File */
+"Add Key File" = "Anahtar Dosyası Ekle";
+
+/* Add Key File… */
+"Add Key File…" = "Anahtar Dosyası Ekle…";
+
+/* Add Recipient */
+"Add Recipient" = "Alıcı Ekle";
+
+/* Add Recipient… */
+"Add Recipient…" = "Alıcı Ekle…";
+
+/* Add to Recipients */
+"Add to Recipients" = "Alıcılara Ekle";
+
+/* added */
+"added" = "eklendi";
+
+/* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
+"After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "Deneme süresinden sonra da günde bir dosyayı şifreleyebilir veya şifresini çözebilirsiniz. Anahtarları okuma, dosyaları inceleme ve anahtar oluşturma sınırsız kalır.";
+
+/* age encryption, without the terminal. */
+"age encryption, without the terminal." = "Terminal olmadan age şifreleme.";
+
+/* age key */
+"age key" = "age anahtarı";
+
+/* age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA… */
+"age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA…" = "age1… veya ssh-ed25519 AAAA… veya ssh-rsa AAAA…";
+
+/* Agemin could not use that folder */
+"Agemin could not use that folder" = "Agemin bu klasörü kullanamadı";
+
+/* Agemin encrypts files, not folders. */
+"Agemin encrypts files, not folders." = "Agemin klasörleri değil, dosyaları şifreler.";
+
+/* Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged. */
+"Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged." = "İlk 30 gününüz boyunca Agemin'in tüm özellikleri açıktır. Hiçbir abonelik başlamaz ve sizden ücret alınmaz.";
+
+/* Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice. */
+"Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice." = "Agemin oradaki .pub dosyalarını listeler ve yenilerini eklemenize izin verir. Herhangi bir klasör olabilir; ~/.age yaygın bir seçimdir.";
+
+/* Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually. */
+"Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually." = "Agemin orada (genellikle ~/.ssh) bulduğu özel anahtarları listeler ve onlarla şifre çözer. Başka yerde tutulan anahtarlar tek tek eklenebilir.";
+
+/* Agemin Pro */
+"Agemin Pro" = "Agemin Pro";
+
+/* Agemin Pro Lifetime · %@ */
+"Agemin Pro Lifetime · %@" = "Agemin Pro Ömür Boyu · %@";
+
+/* Agemin Pro Yearly */
+"Agemin Pro Yearly" = "Agemin Pro Yıllık";
+
+/* Agemin Pro… */
+"Agemin Pro…" = "Agemin Pro…";
+
+/* Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them. */
+"Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them." = "Agemin; alıcılar klasörü, kimlikler klasörü ve tek tek eklenen anahtar dosyaları için kaydettiği izinleri kaldırır. Hiçbir şey silinmez. Kullanmaya devam etmek için onları yeniden seçin.";
+
+/* Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed. */
+"Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed." = "Agemin avatarı bu anahtarın parmak izi altında saklar. Anahtar klasörlerinizde hiçbir şey değişmez.";
+
+/* alice */
+"alice" = "ayşe";
+
+/* All */
+"All" = "Tümü";
+
+/* An age public key has 32 bytes. */
+"An age public key has 32 bytes." = "Bir age açık anahtarı 32 bayttır.";
+
+/* An age secret key has 32 bytes. */
+"An age secret key has 32 bytes." = "Bir age gizli anahtarı 32 bayttır.";
+
+/* An ssh-ed25519 recipient entry is malformed. */
+"An ssh-ed25519 recipient entry is malformed." = "Bir ssh-ed25519 alıcı girdisi bozuk.";
+
+/* An ssh-rsa recipient entry is malformed. */
+"An ssh-rsa recipient entry is malformed." = "Bir ssh-rsa alıcı girdisi bozuk.";
+
+/* An X25519 recipient entry has the wrong size. */
+"An X25519 recipient entry has the wrong size." = "Bir X25519 alıcı girdisinin boyutu yanlış.";
+
+/* An X25519 recipient entry is malformed. */
+"An X25519 recipient entry is malformed." = "Bir X25519 alıcı girdisi bozuk.";
+
+/* Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one. */
+"Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one." = "Parolayı bilen herkes dosyayı açabilir. age parolayı scrypt'ten geçirir; bu yüzden uzun bir parola, karmaşık bir paroladan daha önemlidir.";
+
+/* ASCII armor */
+"ASCII armor" = "ASCII armor";
+
+/* Avatar for %@ */
+"Avatar for %@" = "%@ için avatar";
+
+/* Cancel */
+"Cancel" = "İptal et";
+
+/* Change */
+"Change" = "Değiştir";
+
+/* Choose */
+"Choose" = "Seç";
+
+/* Choose a file to encrypt. */
+"Choose a file to encrypt." = "Şifrelenecek bir dosya seçin.";
+
+/* Choose a yearly subscription or lifetime purchase at any time to remove the daily limit. */
+"Choose a yearly subscription or lifetime purchase at any time to remove the daily limit." = "Günlük sınırı kaldırmak için istediğiniz zaman yıllık abonelik veya ömür boyu satın alma seçin.";
+
+/* Choose an age identity file or an SSH private key */
+"Choose an age identity file or an SSH private key" = "Bir age kimlik dosyası veya SSH özel anahtarı seçin";
+
+/* Choose an encrypted file. */
+"Choose an encrypted file." = "Şifrelenmiş bir dosya seçin.";
+
+/* Choose an image for this key's avatar */
+"Choose an image for this key's avatar" = "Bu anahtarın avatarı için bir görüntü seçin";
+
+/* Choose File */
+"Choose File" = "Dosya Seç";
+
+/* Choose File to Decrypt… */
+"Choose File to Decrypt…" = "Şifresi Çözülecek Dosyayı Seç…";
+
+/* Choose File to Encrypt… */
+"Choose File to Encrypt…" = "Şifrelenecek Dosyayı Seç…";
+
+/* Choose Folder */
+"Choose Folder" = "Klasör Seç";
+
+/* Choose Identities Folder… */
+"Choose Identities Folder…" = "Kimlikler Klasörünü Seç…";
+
+/* Choose Image */
+"Choose Image" = "Görüntü Seç";
+
+/* Choose Recipients Folder… */
+"Choose Recipients Folder…" = "Alıcılar Klasörünü Seç…";
+
+/* Choose the encrypted file, usually ending in .age */
+"Choose the encrypted file, usually ending in .age" = "Şifrelenmiş dosyayı seçin, genellikle .age ile biter";
+
+/* Choose the file to encrypt */
+"Choose the file to encrypt" = "Şifrelenecek dosyayı seçin";
+
+/* Choose the folder with the .pub files of the people you encrypt for, usually ~/.age. */
+"Choose the folder with the .pub files of the people you encrypt for, usually ~/.age." = "Şifrelediğiniz kişilerin .pub dosyalarının bulunduğu klasörü seçin, genellikle ~/.age.";
+
+/* Choose the folder with the .pub files you encrypt for, usually ~/.age */
+"Choose the folder with the .pub files you encrypt for, usually ~/.age" = "Şifrelerken kullandığınız .pub dosyalarının bulunduğu klasörü seçin, genellikle ~/.age";
+
+/* Choose the folder with your private keys, usually ~/.ssh */
+"Choose the folder with your private keys, usually ~/.ssh" = "Özel anahtarlarınızın bulunduğu klasörü seçin, genellikle ~/.ssh";
+
+/* Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page. */
+"Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page." = "SSH anahtarlarınızın bulunduğu klasörü (genellikle ~/.ssh) seçin ya da Kimlikler sayfasında bir age kimlik dosyası ekleyin.";
+
+/* Choose where to save the decrypted file */
+"Choose where to save the decrypted file" = "Şifresi çözülmüş dosyanın nereye kaydedileceğini seçin";
+
+/* Choose where to save the encrypted file */
+"Choose where to save the encrypted file" = "Şifrelenmiş dosyanın nereye kaydedileceğini seçin";
+
+/* Choose your recipients folder */
+"Choose your recipients folder" = "Alıcılar klasörünüzü seçin";
+
+/* Choose your SSH folder */
+"Choose your SSH folder" = "SSH klasörünüzü seçin";
+
+/* Clear search */
+"Clear search" = "Aramayı temizle";
+
+/* Clear the file */
+"Clear the file" = "Dosyayı kaldır";
+
+/* Click an avatar to change it, or drop an image onto it. */
+"Click an avatar to change it, or drop an image onto it." = "Değiştirmek için bir avatara tıklayın veya üzerine bir görüntü bırakın.";
+
+/* Click to change the avatar, or drop an image on it */
+"Click to change the avatar, or drop an image on it" = "Avatarı değiştirmek için tıklayın veya üzerine bir görüntü bırakın";
+
+/* Compress the folder into an archive first, then open the archive. */
+"Compress the folder into an archive first, then open the archive." = "Önce klasörü bir arşive sıkıştırın, sonra arşivi açın.";
+
+/* Confirm passphrase */
+"Confirm passphrase" = "Parolayı doğrulayın";
+
+/* Contacting the App Store… */
+"Contacting the App Store…" = "App Store'a bağlanılıyor…";
+
+/* Continue */
+"Continue" = "Sürdür";
+
+/* Copy */
+"Copy" = "Kopyala";
+
+/* Copy Key */
+"Copy Key" = "Anahtarı Kopyala";
+
+/* Copy Path */
+"Copy Path" = "Yolu Kopyala";
+
+/* Copy Public Key */
+"Copy Public Key" = "Açık Anahtarı Kopyala";
+
+/* Decrypt */
+"Decrypt" = "Şifreyi Çöz";
+
+/* Decrypt This File */
+"Decrypt This File" = "Bu Dosyanın Şifresini Çöz";
+
+/* Decrypt with */
+"Decrypt with" = "Şununla çöz";
+
+/* Decrypted */
+"Decrypted" = "Şifresi çözüldü";
+
+/* Decrypting */
+"Decrypting" = "Şifre çözülüyor";
+
+/* Decryption failed */
+"Decryption failed" = "Şifre çözme başarısız oldu";
+
+/* Decrypt… */
+"Decrypt…" = "Şifreyi Çöz…";
+
+/* Delete */
+"Delete" = "Sil";
+
+/* Delete %@? */
+"Delete %@?" = "%@ silinsin mi?";
+
+/* Delete the .pub file */
+"Delete the .pub file" = ".pub dosyasını sil";
+
+/* Drop a file here to encrypt it */
+"Drop a file here to encrypt it" = "Şifrelemek için bir dosyayı buraya bırakın";
+
+/* Drop a file, not a folder. Compress the folder first, then drop the archive. */
+"Drop a file, not a folder. Compress the folder first, then drop the archive." = "Klasör değil, dosya bırakın. Önce klasörü sıkıştırın, sonra arşivi bırakın.";
+
+/* Drop an age file here to decrypt it */
+"Drop an age file here to decrypt it" = "Şifresini çözmek için bir age dosyasını buraya bırakın";
+
+/* Encrypt */
+"Encrypt" = "Şifrele";
+
+/* Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file. */
+"Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file." = "Bir dosyayı, onu açması gereken kişilerin açık anahtarları için veya bir parolayla şifreleyin. Sonuç standart bir age dosyasıdır.";
+
+/* Encrypt for */
+"Encrypt for" = "Şunlar için şifrele";
+
+/* Encrypted */
+"Encrypted" = "Şifrelendi";
+
+/* Encrypted for */
+"Encrypted for" = "Şunlar için şifrelendi";
+
+/* Encrypting */
+"Encrypting" = "Şifreleniyor";
+
+/* Encryption failed */
+"Encryption failed" = "Şifreleme başarısız oldu";
+
+/* Encrypt… */
+"Encrypt…" = "Şifrele…";
+
+/* Enter a passphrase. */
+"Enter a passphrase." = "Bir parola girin.";
+
+/* Enter the file's passphrase. */
+"Enter the file's passphrase." = "Dosyanın parolasını girin.";
+
+/* Enter the passphrase below */
+"Enter the passphrase below" = "Parolayı aşağıya girin";
+
+/* Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa). */
+"Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa)." = "Bir age açık anahtarı (age1…) veya SSH açık anahtarı (ssh-ed25519 ya da ssh-rsa) bekleniyordu.";
+
+/* Expires %@ */
+"Expires %@" = "%@ tarihinde sona erer";
+
+/* Files */
+"Files" = "Dosyalar";
+
+/* Fill both fields with a random passphrase and show it once */
+"Fill both fields with a random passphrase and show it once" = "Her iki alanı rastgele bir parolayla doldur ve bir kez göster";
+
+/* Filter identities */
+"Filter identities" = "Kimlikleri filtrele";
+
+/* Filter recipients */
+"Filter recipients" = "Alıcıları filtrele";
+
+/* Find… */
+"Find…" = "Bul…";
+
+/* Forget Access */
+"Forget Access" = "Erişimi Unut";
+
+/* Forget access to the key folders? */
+"Forget access to the key folders?" = "Anahtar klasörlerine erişim unutulsun mu?";
+
+/* Forget Folder Access… */
+"Forget Folder Access…" = "Klasör Erişimini Unut…";
+
+/* Free · Available today: %lld */
+"Free · Available today: %lld" = "Ücretsiz · Bugün kullanılabilir: %lld";
+
+/* Generate */
+"Generate" = "Oluştur";
+
+/* Give the recipient a name. */
+"Give the recipient a name." = "Alıcıya bir ad verin.";
+
+/* Hide this card */
+"Hide this card" = "Bu kartı gizle";
+
+/* Identities */
+"Identities" = "Kimlikler";
+
+/* Identity file */
+"Identity file" = "Kimlik dosyası";
+
+/* Initials */
+"Initials" = "Baş harfler";
+
+/* Initials color %lld */
+"Initials color %lld" = "Baş harf rengi %lld";
+
+/* Keep Working */
+"Keep Working" = "Çalışmaya Devam Et";
+
+/* Key */
+"Key" = "Anahtar";
+
+/* Keys */
+"Keys" = "Anahtarlar";
+
+/* Lifetime */
+"Lifetime" = "Ömür boyu";
+
+/* Loading App Store products… */
+"Loading App Store products…" = "App Store ürünleri yükleniyor…";
+
+/* Loading keys… */
+"Loading keys…" = "Anahtarlar yükleniyor…";
+
+/* macOS did not grant lasting access to that folder. Choose it again, or choose another folder. */
+"macOS did not grant lasting access to that folder. Choose it again, or choose another folder." = "macOS bu klasöre kalıcı erişim vermedi. Klasörü yeniden seçin veya başka bir klasör seçin.";
+
+/* Manage Subscription */
+"Manage Subscription" = "Aboneliği Yönetin";
+
+/* matches */
+"matches" = "eşleşiyor";
+
+/* Matches %@ */
+"Matches %@" = "%@ ile eşleşiyor";
+
+/* Matching keys first. Protected keys ask for their passphrase. */
+"Matching keys first. Protected keys ask for their passphrase." = "Önce eşleşen anahtarlar. Korumalı anahtarlar parolasını sorar.";
+
+/* Name */
+"Name" = "İsim";
+
+/* New age Key */
+"New age Key" = "Yeni age Anahtarı";
+
+/* New age key saved */
+"New age key saved" = "Yeni age anahtarı kaydedildi";
+
+/* New age Key… */
+"New age Key…" = "Yeni age Anahtarı…";
+
+/* New recipient */
+"New recipient" = "Yeni alıcı";
+
+/* No active purchase was found. */
+"No active purchase was found." = "Etkin bir Agemin satın alımı bulunamadı.";
+
+/* No Agemin Pro purchase was found for this Apple Account. */
+"No Agemin Pro purchase was found for this Apple Account." = "Bu Apple Hesabı için Agemin Pro satın alma bulunamadı.";
+
+/* No identities yet */
+"No identities yet" = "Henüz kimlik yok";
+
+/* No matching key */
+"No matching key" = "Eşleşen anahtar yok";
+
+/* No recipients folder yet */
+"No recipients folder yet" = "Henüz alıcılar klasörü yok";
+
+/* None */
+"None" = "Hiçbiri";
+
+/* None of the identities can decrypt this file. */
+"None of the identities can decrypt this file." = "Kimliklerin hiçbiri bu dosyanın şifresini çözemiyor.";
+
+/* None of your identities matches this file. Add the key it was encrypted for on the Identities page. */
+"None of your identities matches this file. Add the key it was encrypted for on the Identities page." = "Kimliklerinizin hiçbiri bu dosyayla eşleşmiyor. Dosyanın şifrelendiği anahtarı Kimlikler sayfasında ekleyin.";
+
+/* not a key */
+"not a key" = "anahtar değil";
+
+/* OK */
+"OK" = "OK";
+
+/* Open an age file with one of your keys, or with the passphrase it was encrypted with. */
+"Open an age file with one of your keys, or with the passphrase it was encrypted with." = "Bir age dosyasını anahtarlarınızdan biriyle veya şifrelenirken kullanılan parolayla açın.";
+
+/* Options */
+"Options" = "Seçenekler";
+
+/* Output */
+"Output" = "Çıktı";
+
+/* Pages */
+"Pages" = "Sayfalar";
+
+/* Passphrase */
+"Passphrase" = "Parola";
+
+/* passphrase */
+"passphrase" = "parola";
+
+/* Passphrase · work factor %lld */
+"Passphrase · work factor %lld" = "Parola · iş faktörü %lld";
+
+/* Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends. */
+"Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends." = "Ödeme Apple Hesabınızdan alınır. Yıllık abonelik, geçerli dönem bitmeden en az bir gün önce App Store ayarlarından iptal etmediğiniz sürece otomatik olarak yenilenir.";
+
+/* Privacy Policy */
+"Privacy Policy" = "Gizlilik Politikası";
+
+/* Privacy Policy… */
+"Privacy Policy…" = "Gizlilik Politikası…";
+
+/* Pro */
+"Pro" = "Pro";
+
+/* Pro purchases are unavailable right now. Try again later. */
+"Pro purchases are unavailable right now. Try again later." = "Pro satın alma şu anda kullanılamıyor. Daha sonra yeniden deneyin.";
+
+/* Pro trial · %lld days remaining */
+"Pro trial · %lld days remaining" = "Pro deneme · %lld gün kaldı";
+
+/* Pro trial · 1 day remaining */
+"Pro trial · 1 day remaining" = "Pro deneme · 1 gün kaldı";
+
+/* Pro trial · ends %@ */
+"Pro trial · ends %@" = "Pro deneme · %@ tarihinde biter";
+
+/* Pro trial · first payment %@ */
+"Pro trial · first payment %@" = "Pro deneme · ilk ödeme %@";
+
+/* Pro trial · until %@ */
+"Pro trial · until %@" = "Pro deneme · %@ tarihine kadar";
+
+/* Public key */
+"Public key" = "Açık anahtar";
+
+/* Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file. */
+"Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file." = "Şifrelerken kullandığınız açık anahtarlar. Klasördeki her .pub dosyası, dosyanın adını taşıyan bir alıcıdır.";
+
+/* Purchase */
+"Purchase" = "Satın alma";
+
+/* Quit Anyway */
+"Quit Anyway" = "Yine de Çık";
+
+/* Quitting now cancels it and removes the partial output. */
+"Quitting now cancels it and removes the partial output." = "Şimdi çıkmak işlemi iptal eder ve yarım kalan çıktıyı siler.";
+
+/* Read the folder again */
+"Read the folder again" = "Klasörü yeniden oku";
+
+/* Recipients */
+"Recipients" = "Alıcılar";
+
+/* Refresh Keys */
+"Refresh Keys" = "Anahtarları Yenile";
+
+/* Remove from the list */
+"Remove from the list" = "Listeden kaldır";
+
+/* Renews %@ */
+"Renews %@" = "%@ tarihinde yenilenir";
+
+/* Restore Purchases */
+"Restore Purchases" = "Satın Alınanları Geri Yükle";
+
+/* Restoring… */
+"Restoring…" = "Geri yükleniyor…";
+
+/* Reveal */
+"Reveal" = "Göster";
+
+/* Reveal in Finder */
+"Reveal in Finder" = "Finder'da Göster";
+
+/* Save */
+"Save" = "Kaydet";
+
+/* Save Key */
+"Save Key" = "Anahtarı Kaydet";
+
+/* Save Recipient */
+"Save Recipient" = "Alıcıyı Kaydet";
+
+/* Save the new identity file somewhere private because it holds the secret key */
+"Save the new identity file somewhere private because it holds the secret key" = "Yeni kimlik dosyasını özel bir yere kaydedin; gizli anahtarı içerir";
+
+/* Saved as */
+"Saved as" = "Şu adla kaydedildi";
+
+/* Saved as <name>.pub in the recipients folder. */
+"Saved as <name>.pub in the recipients folder." = "Alıcılar klasörüne <name>.pub olarak kaydedilir.";
+
+/* Select at least one recipient. */
+"Select at least one recipient." = "En az bir alıcı seçin.";
+
+/* SHA-256 */
+"SHA-256" = "SHA-256";
+
+/* Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it. */
+"Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it." = "Açık anahtarı sizin için şifreleme yapacak kişilerle paylaşın. Kimlik dosyasını gizli tutun; yalnızca sizin hesabınız okuyabilir.";
+
+/* Shared with your family */
+"Shared with your family" = "Ailenizle paylaşılıyor";
+
+/* Size */
+"Size" = "Boyut";
+
+/* SSH key (Ed25519) */
+"SSH key (Ed25519)" = "SSH anahtarı (Ed25519)";
+
+/* SSH key (RSA) */
+"SSH key (RSA)" = "SSH anahtarı (RSA)";
+
+/* Terms of Use (EULA) */
+"Terms of Use (EULA)" = "Kullanım Koşulları (EULA)";
+
+/* That file is not an image Agemin can read. */
+"That file is not an image Agemin can read." = "Bu dosya Agemin'in okuyabileceği bir görüntü değil.";
+
+/* The App Store could not verify this purchase. */
+"The App Store could not verify this purchase." = "App Store bu satın alımı doğrulayamadı.";
+
+/* The armor header is missing. */
+"The armor header is missing." = "Armor üstbilgisi eksik.";
+
+/* The armored file could not be read. %@ */
+"The armored file could not be read. %@" = "Armor biçimli dosya okunamadı. %@";
+
+/* The armored file ends before its footer. */
+"The armored file ends before its footer." = "Armor biçimli dosya altbilgisinden önce bitiyor.";
+
+/* The armored text is incomplete. */
+"The armored text is incomplete." = "Armor metni eksik.";
+
+/* The armored text is not valid base64. */
+"The armored text is not valid base64." = "Armor metni geçerli base64 değil.";
+
+/* The decrypted file cannot replace the encrypted file. Choose a different name. */
+"The decrypted file cannot replace the encrypted file. Choose a different name." = "Şifresi çözülmüş dosya şifrelenmiş dosyanın yerini alamaz. Farklı bir ad seçin.";
+
+/* The decrypted file does not hold an age secret key. */
+"The decrypted file does not hold an age secret key." = "Şifresi çözülmüş dosya bir age gizli anahtarı içermiyor.";
+
+/* The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one. */
+"The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one." = "Şifresi çözülmüş dosyayı yalnızca sizin kullanıcı hesabınız okuyabilir. Gönderen size bir sağlama toplamı verdiyse onunla karşılaştırın.";
+
+/* The encrypted data is corrupt or was modified. */
+"The encrypted data is corrupt or was modified." = "Şifrelenmiş veri bozuk veya değiştirilmiş.";
+
+/* The encrypted file cannot replace the original. Choose a different name. */
+"The encrypted file cannot replace the original. Choose a different name." = "Şifrelenmiş dosya özgün dosyanın yerini alamaz. Farklı bir ad seçin.";
+
+/* The file could not be read. */
+"The file could not be read." = "Dosya okunamadı.";
+
+/* The file ends early. It may be incomplete. */
+"The file ends early. It may be incomplete." = "Dosya erken bitiyor. Eksik olabilir.";
+
+/* The file header was modified or the key is wrong. */
+"The file header was modified or the key is wrong." = "Dosya üstbilgisi değiştirilmiş veya anahtar yanlış.";
+
+/* The file holds no age secret key. */
+"The file holds no age secret key." = "Dosya age gizli anahtarı içermiyor.";
+
+/* The file is being read. */
+"The file is being read." = "Dosya okunuyor.";
+
+/* The file is not text. */
+"The file is not text." = "Dosya metin değil.";
+
+/* The file is too large to be a key. */
+"The file is too large to be a key." = "Dosya bir anahtar olamayacak kadar büyük.";
+
+/* The first line is not the age version marker. */
+"The first line is not the age version marker." = "İlk satır age sürüm işareti değil.";
+
+/* The header authentication line is malformed. */
+"The header authentication line is malformed." = "Üstbilgi doğrulama satırı bozuk.";
+
+/* The header is not valid text. */
+"The header is not valid text." = "Üstbilgi geçerli metin değil.";
+
+/* The header is too large to be an age file. */
+"The header is too large to be an age file." = "Üstbilgi bir age dosyası olamayacak kadar büyük.";
+
+/* The header lists too many recipients. */
+"The header lists too many recipients." = "Üstbilgi çok fazla alıcı listeliyor.";
+
+/* The identity could not be read. %@ */
+"The identity could not be read. %@" = "Kimlik okunamadı. %@";
+
+/* The identity file could not be saved. */
+"The identity file could not be saved." = "Kimlik dosyası kaydedilemedi.";
+
+/* The image could not be used */
+"The image could not be used" = "Görüntü kullanılamadı";
+
+/* The image is larger than %lld pixels on a side. Choose a smaller one. */
+"The image is larger than %lld pixels on a side. Choose a smaller one." = "Görüntünün bir kenarı %lld pikselden büyük. Daha küçük bir görüntü seçin.";
+
+/* The input is larger than expected. */
+"The input is larger than expected." = "Girdi beklenenden büyük.";
+
+/* The key file ends early. */
+"The key file ends early." = "Anahtar dosyası erken bitiyor.";
+
+/* The key file is malformed. */
+"The key file is malformed." = "Anahtar dosyası bozuk.";
+
+/* The key file's passphrase settings are invalid. */
+"The key file's passphrase settings are invalid." = "Anahtar dosyasının parola ayarları geçersiz.";
+
+/* The key is empty. */
+"The key is empty." = "Anahtar boş.";
+
+/* The key is protected with the %@ cipher, which is not supported. */
+"The key is protected with the %@ cipher, which is not supported." = "Anahtar, desteklenmeyen %@ şifreleme algoritmasıyla korunuyor.";
+
+/* The key is saved as <name>.pub in the recipients folder. */
+"The key is saved as <name>.pub in the recipients folder." = "Anahtar, alıcılar klasörüne <name>.pub olarak kaydedilir.";
+
+/* The key uses %lld key derivation rounds. Agemin supports up to %lld. */
+"The key uses %lld key derivation rounds. Agemin supports up to %lld." = "Anahtar %lld anahtar türetme turu kullanıyor; Agemin en fazla %lld destekler.";
+
+/* The key uses the %@ key derivation, which is not supported. */
+"The key uses the %@ key derivation, which is not supported." = "Anahtar, desteklenmeyen %@ anahtar türetme yöntemini kullanıyor.";
+
+/* The operation was canceled. */
+"The operation was canceled." = "İşlem iptal edildi.";
+
+/* The passphrase entry is malformed. */
+"The passphrase entry is malformed." = "Parola girdisi bozuk.";
+
+/* The passphrase for %@ is incorrect. Try again. */
+"The passphrase for %@ is incorrect. Try again." = "%@ için parola yanlış. Yeniden deneyin.";
+
+/* The passphrase is incorrect. */
+"The passphrase is incorrect." = "Parola yanlış.";
+
+/* The passphrase work factor %lld is too high to try safely. */
+"The passphrase work factor %lld is too high to try safely." = "Parola iş faktörü %lld güvenle denenemeyecek kadar yüksek.";
+
+/* The passphrase work factor is malformed. */
+"The passphrase work factor is malformed." = "Parola iş faktörü bozuk.";
+
+/* The passphrases do not match. */
+"The passphrases do not match." = "Parolalar eşleşmiyor.";
+
+/* The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them. */
+"The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them." = "Sizin için şifrelenmiş dosyaları açan özel anahtarlar: ~/.ssh içindeki SSH anahtarları ve age kimlik dosyaları. Agemin bunları okur ve asla değiştirmez.";
+
+/* The purchase is awaiting approval. */
+"The purchase is awaiting approval." = "Satın alma onay bekliyor.";
+
+/* The recipient could not be deleted. */
+"The recipient could not be deleted." = "Alıcı silinemedi.";
+
+/* The recipient could not be saved. */
+"The recipient could not be saved." = "Alıcı kaydedilemedi.";
+
+/* The recipient key could not be read. %@ */
+"The recipient key could not be read. %@" = "Alıcı anahtarı okunamadı. %@";
+
+/* The recipients folder */
+"The recipients folder" = "Alıcılar klasörü";
+
+/* The recipients folder holds no .pub files yet. */
+"The recipients folder holds no .pub files yet." = "Alıcılar klasöründe henüz .pub dosyası yok.";
+
+/* The RSA key is malformed. */
+"The RSA key is malformed." = "RSA anahtarı bozuk.";
+
+/* The RSA key is too small or malformed. */
+"The RSA key is too small or malformed." = "RSA anahtarı çok küçük veya bozuk.";
+
+/* The SSH key is not a valid Ed25519 key. */
+"The SSH key is not a valid Ed25519 key." = "SSH anahtarı geçerli bir Ed25519 anahtarı değil.";
+
+/* The SSH key is not a valid RSA key. */
+"The SSH key is not a valid RSA key." = "SSH anahtarı geçerli bir RSA anahtarı değil.";
+
+/* The SSH public key is malformed. */
+"The SSH public key is malformed." = "SSH açık anahtarı bozuk.";
+
+/* There is text after the armor footer. */
+"There is text after the armor footer." = "Armor altbilgisinden sonra metin var.";
+
+/* This deletes the file from the recipients folder. Files already encrypted for this key are not affected. */
+"This deletes the file from the recipients folder. Files already encrypted for this key are not affected." = "Dosya alıcılar klasöründen silinir. Bu anahtar için önceden şifrelenmiş dosyalar etkilenmez.";
+
+/* This file cannot be read as an age file */
+"This file cannot be read as an age file" = "Bu dosya bir age dosyası olarak okunamıyor";
+
+/* This file is not a key. */
+"This file is not a key." = "Bu dosya bir anahtar değil.";
+
+/* This file needs a passphrase. */
+"This file needs a passphrase." = "Bu dosya için parola gerekiyor.";
+
+/* This is a secret key. Use the matching public key, which starts with age1. */
+"This is a secret key. Use the matching public key, which starts with age1." = "Bu bir gizli anahtar. age1 ile başlayan eşleşen açık anahtarı kullanın.";
+
+/* This is not a valid age public key. */
+"This is not a valid age public key." = "Bu geçerli bir age açık anahtarı değil.";
+
+/* This is not a valid age secret key. */
+"This is not a valid age secret key." = "Bu geçerli bir age gizli anahtarı değil.";
+
+/* This is not an age file. %@ */
+"This is not an age file. %@" = "Bu bir age dosyası değil. %@";
+
+/* This key format is not supported. Use an OpenSSH private key or an age identity file. */
+"This key format is not supported. Use an OpenSSH private key or an age identity file." = "Bu anahtar biçimi desteklenmiyor. Bir OpenSSH özel anahtarı veya age kimlik dosyası kullanın.";
+
+/* This key produces a weak shared secret and cannot be used. */
+"This key produces a weak shared secret and cannot be used." = "Bu anahtar zayıf bir paylaşılan gizli anahtar üretiyor ve kullanılamaz.";
+
+/* This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy. */
+"This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy." = "Parolayla korunan bu anahtar eski PEM biçimini kullanıyor. ssh-keygen -p -o ile dönüştürün veya korumasız bir kopyasını kullanın.";
+
+/* Trial ended */
+"Trial ended" = "Deneme sona erdi";
+
+/* Try Again */
+"Try Again" = "Tekrar Deneyin";
+
+/* Try every usable key */
+"Try every usable key" = "Kullanılabilir her anahtarı dene";
+
+/* Unknown recipient type “%@” */
+"Unknown recipient type “%@”" = "Bilinmeyen alıcı türü “%@”";
+
+/* Unlock */
+"Unlock" = "Kilidi Aç";
+
+/* Unlock %@ */
+"Unlock %@" = "%@ Kilidini Aç";
+
+/* Unlock %@ with Agemin Pro. */
+"Unlock %@ with Agemin Pro." = "Agemin Pro ile %@ kilidini açın.";
+
+/* Until %@ */
+"Until %@" = "%@ tarihine kadar";
+
+/* Use Image */
+"Use Image" = "Görüntü Kullan";
+
+/* Use Initials */
+"Use Initials" = "Baş Harfleri Kullan";
+
+/* Valid %@ key */
+"Valid %@ key" = "Geçerli %@ anahtarı";
+
+/* Wait for the current operation to finish. */
+"Wait for the current operation to finish." = "Geçerli işlemin bitmesini bekleyin.";
+
+/* Write it down or store it in a password manager. Agemin does not keep it. */
+"Write it down or store it in a password manager. Agemin does not keep it." = "Bir yere yazın veya bir parola yöneticisinde saklayın. Agemin parolayı saklamaz.";
+
+/* Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both. */
+"Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both." = "Şifrelenmiş dosyayı ikili yerine metin olarak yaz; e-posta, sohbet ve yapılandırma dosyaları için. age ikisini de okur.";
+
+/* you */
+"you" = "siz";
+
+/* You can still encrypt or decrypt one file per day. Available today: %lld. */
+"You can still encrypt or decrypt one file per day. Available today: %lld." = "Günde bir dosyayı yine de şifreleyebilir veya şifresini çözebilirsiniz. Bugün kullanılabilir: %lld.";
+
+/* You have Agemin Pro. */
+"You have Agemin Pro." = "Agemin Pro var.";
+
+/* Your Pro trial is active. */
+"Your Pro trial is active." = "Pro deneme süreniz etkin.";
+
+/* · you choose the folder when you encrypt */
+"· you choose the folder when you encrypt" = "· klasörü şifrelerken siz seçersiniz";
