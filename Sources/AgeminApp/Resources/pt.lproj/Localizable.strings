@@ -1,0 +1,904 @@
+/* Agemin — pt localization. Each comment shows the English source text. */
+
+/*  and armor */
+" and armor" = " e armor";
+
+/* %@ %@ of %@ */
+"%@ %@ of %@" = "%@ %@ de %@";
+
+/* %@ could not be read. */
+"%@ could not be read." = "Não foi possível ler %@.";
+
+/* %@ could not be written. */
+"%@ could not be written." = "Não foi possível gravar %@.";
+
+/* %@ is protected with a passphrase. */
+"%@ is protected with a passphrase." = "%@ está protegido com uma frase secreta.";
+
+/* %@ keys are not supported by age. */
+"%@ keys are not supported by age." = "Chaves %@ não são compatíveis com o age.";
+
+/* %@ per year */
+"%@ per year" = "%@ por ano";
+
+/* %@ · %@ more than the original for the header%@ */
+"%@ · %@ more than the original for the header%@" = "%@ · %@ a mais que o original para o cabeçalho%@";
+
+/* %@.pub already exists in the recipients folder. */
+"%@.pub already exists in the recipients folder." = "%@.pub já existe na pasta de destinatários.";
+
+/* %lld identities */
+"%lld identities" = "%lld identidades";
+
+/* %lld identities · %lld usable */
+"%lld identities · %lld usable" = "%lld identidades · %lld utilizáveis";
+
+/* %lld keys */
+"%lld keys" = "%lld chaves";
+
+/* %lld keys tried */
+"%lld keys tried" = "%lld chaves testadas";
+
+/* %lld of %lld recipients selected */
+"%lld of %lld recipients selected" = "%lld de %lld destinatários selecionados";
+
+/* %lld recipients */
+"%lld recipients" = "%lld destinatários";
+
+/* %lld recipients · %lld usable */
+"%lld recipients · %lld usable" = "%lld destinatários · %lld utilizáveis";
+
+/* 1 identity */
+"1 identity" = "1 identidade";
+
+/* 1 recipient */
+"1 recipient" = "1 destinatário";
+
+/* 30 days of full access */
+"30 days of full access" = "30 dias de acesso completo";
+
+/* A file is still being processed. */
+"A file is still being processed." = "Um arquivo ainda está sendo processado.";
+
+/* A header line is neither a recipient nor the closing marker. */
+"A header line is neither a recipient nor the closing marker." = "Uma linha do cabeçalho não é nem um destinatário nem o marcador de fechamento.";
+
+/* A header line is too long. */
+"A header line is too long." = "Uma linha do cabeçalho é longa demais.";
+
+/* A passphrase cannot be combined with other recipients. */
+"A passphrase cannot be combined with other recipients." = "Uma frase secreta não pode ser combinada com outros destinatários.";
+
+/* A passphrase entry must be the only recipient. */
+"A passphrase entry must be the only recipient." = "Uma entrada de frase secreta deve ser o único destinatário.";
+
+/* A recipient body is not valid base64. */
+"A recipient body is not valid base64." = "O corpo de um destinatário não é base64 válido.";
+
+/* A recipient body line is malformed. */
+"A recipient body line is malformed." = "Uma linha do corpo de um destinatário está malformada.";
+
+/* A recipient line is malformed. */
+"A recipient line is malformed." = "Uma linha de destinatário está malformada.";
+
+/* About Agemin */
+"About Agemin" = "Sobre o Agemin";
+
+/* Action */
+"Action" = "Ação";
+
+/* Add */
+"Add" = "Adicionar";
+
+/* Add a public key on the Recipients page */
+"Add a public key on the Recipients page" = "Adicione uma chave pública na página Destinatários";
+
+/* Add an identity that can decrypt this file. */
+"Add an identity that can decrypt this file." = "Adicione uma identidade que possa descriptografar este arquivo.";
+
+/* Add Key File */
+"Add Key File" = "Adicionar Arquivo de Chave";
+
+/* Add Key File… */
+"Add Key File…" = "Adicionar Arquivo de Chave…";
+
+/* Add Recipient */
+"Add Recipient" = "Adicionar Destinatário";
+
+/* Add Recipient… */
+"Add Recipient…" = "Adicionar Destinatário…";
+
+/* Add to Recipients */
+"Add to Recipients" = "Adicionar aos Destinatários";
+
+/* added */
+"added" = "adicionado";
+
+/* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
+"After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "Após o teste, você ainda pode criptografar ou descriptografar um arquivo por dia. Ler chaves, inspecionar arquivos e criar chaves continuam ilimitados.";
+
+/* age encryption, without the terminal. */
+"age encryption, without the terminal." = "Criptografia age, sem o terminal.";
+
+/* age key */
+"age key" = "chave age";
+
+/* age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA… */
+"age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA…" = "age1… ou ssh-ed25519 AAAA… ou ssh-rsa AAAA…";
+
+/* Agemin could not use that folder */
+"Agemin could not use that folder" = "O Agemin não conseguiu usar essa pasta";
+
+/* Agemin encrypts files, not folders. */
+"Agemin encrypts files, not folders." = "O Agemin criptografa arquivos, não pastas.";
+
+/* Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged. */
+"Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged." = "O Agemin fica totalmente desbloqueado nos seus primeiros 30 dias. Nenhuma assinatura é iniciada e você não será cobrado.";
+
+/* Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice. */
+"Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice." = "O Agemin lista os arquivos .pub dessa pasta e permite adicionar novos. Qualquer pasta serve; ~/.age é uma escolha comum.";
+
+/* Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually. */
+"Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually." = "O Agemin lista as chaves privadas que encontra nessa pasta, geralmente ~/.ssh, e descriptografa com elas. Chaves guardadas em outros lugares podem ser adicionadas uma a uma.";
+
+/* Agemin Pro */
+"Agemin Pro" = "Agemin Pro";
+
+/* Agemin Pro Lifetime · %@ */
+"Agemin Pro Lifetime · %@" = "Agemin Pro Vitalício · %@";
+
+/* Agemin Pro Yearly */
+"Agemin Pro Yearly" = "Agemin Pro Anual";
+
+/* Agemin Pro… */
+"Agemin Pro…" = "Agemin Pro…";
+
+/* Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them. */
+"Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them." = "O Agemin remove as permissões salvas para a pasta de destinatários, a pasta de identidades e quaisquer arquivos de chave adicionados individualmente. Nada é apagado. Escolha-os novamente para continuar usando.";
+
+/* Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed. */
+"Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed." = "O Agemin armazena o avatar sob a impressão digital desta chave. Nada nas suas pastas de chaves é alterado.";
+
+/* alice */
+"alice" = "alice";
+
+/* All */
+"All" = "Todos";
+
+/* An age public key has 32 bytes. */
+"An age public key has 32 bytes." = "Uma chave pública age tem 32 bytes.";
+
+/* An age secret key has 32 bytes. */
+"An age secret key has 32 bytes." = "Uma chave secreta age tem 32 bytes.";
+
+/* An ssh-ed25519 recipient entry is malformed. */
+"An ssh-ed25519 recipient entry is malformed." = "Uma entrada de destinatário ssh-ed25519 está malformada.";
+
+/* An ssh-rsa recipient entry is malformed. */
+"An ssh-rsa recipient entry is malformed." = "Uma entrada de destinatário ssh-rsa está malformada.";
+
+/* An X25519 recipient entry has the wrong size. */
+"An X25519 recipient entry has the wrong size." = "Uma entrada de destinatário X25519 tem o tamanho errado.";
+
+/* An X25519 recipient entry is malformed. */
+"An X25519 recipient entry is malformed." = "Uma entrada de destinatário X25519 está malformada.";
+
+/* Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one. */
+"Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one." = "Qualquer pessoa com a frase secreta pode abrir o arquivo. O age a processa com scrypt, então uma frase secreta longa importa mais do que uma complexa.";
+
+/* ASCII armor */
+"ASCII armor" = "ASCII armor";
+
+/* Avatar for %@ */
+"Avatar for %@" = "Avatar de %@";
+
+/* Cancel */
+"Cancel" = "Cancelar";
+
+/* Change */
+"Change" = "Alterar";
+
+/* Choose */
+"Choose" = "Escolher";
+
+/* Choose a file to encrypt. */
+"Choose a file to encrypt." = "Escolha um arquivo para criptografar.";
+
+/* Choose a yearly subscription or lifetime purchase at any time to remove the daily limit. */
+"Choose a yearly subscription or lifetime purchase at any time to remove the daily limit." = "Escolha uma assinatura anual ou uma compra vitalícia a qualquer momento para remover o limite diário.";
+
+/* Choose an age identity file or an SSH private key */
+"Choose an age identity file or an SSH private key" = "Escolha um arquivo de identidade age ou uma chave privada SSH";
+
+/* Choose an encrypted file. */
+"Choose an encrypted file." = "Escolha um arquivo criptografado.";
+
+/* Choose an image for this key's avatar */
+"Choose an image for this key's avatar" = "Escolha uma imagem para o avatar desta chave";
+
+/* Choose File */
+"Choose File" = "Escolher Arquivo";
+
+/* Choose File to Decrypt… */
+"Choose File to Decrypt…" = "Escolher Arquivo para Descriptografar…";
+
+/* Choose File to Encrypt… */
+"Choose File to Encrypt…" = "Escolher Arquivo para Criptografar…";
+
+/* Choose Folder */
+"Choose Folder" = "Escolher Pasta";
+
+/* Choose Identities Folder… */
+"Choose Identities Folder…" = "Escolher Pasta de Identidades…";
+
+/* Choose Image */
+"Choose Image" = "Escolher Imagem";
+
+/* Choose Recipients Folder… */
+"Choose Recipients Folder…" = "Escolher Pasta de Destinatários…";
+
+/* Choose the encrypted file, usually ending in .age */
+"Choose the encrypted file, usually ending in .age" = "Escolha o arquivo criptografado, geralmente terminado em .age";
+
+/* Choose the file to encrypt */
+"Choose the file to encrypt" = "Escolha o arquivo para criptografar";
+
+/* Choose the folder with the .pub files of the people you encrypt for, usually ~/.age. */
+"Choose the folder with the .pub files of the people you encrypt for, usually ~/.age." = "Escolha a pasta com os arquivos .pub das pessoas para quem você criptografa, geralmente ~/.age.";
+
+/* Choose the folder with the .pub files you encrypt for, usually ~/.age */
+"Choose the folder with the .pub files you encrypt for, usually ~/.age" = "Escolha a pasta com os arquivos .pub para os quais você criptografa, geralmente ~/.age";
+
+/* Choose the folder with your private keys, usually ~/.ssh */
+"Choose the folder with your private keys, usually ~/.ssh" = "Escolha a pasta com suas chaves privadas, geralmente ~/.ssh";
+
+/* Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page. */
+"Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page." = "Escolha a pasta com suas chaves SSH, geralmente ~/.ssh, ou adicione um arquivo de identidade age na página Identidades.";
+
+/* Choose where to save the decrypted file */
+"Choose where to save the decrypted file" = "Escolha onde salvar o arquivo descriptografado";
+
+/* Choose where to save the encrypted file */
+"Choose where to save the encrypted file" = "Escolha onde salvar o arquivo criptografado";
+
+/* Choose your recipients folder */
+"Choose your recipients folder" = "Escolha sua pasta de destinatários";
+
+/* Choose your SSH folder */
+"Choose your SSH folder" = "Escolha sua pasta SSH";
+
+/* Clear search */
+"Clear search" = "Limpar busca";
+
+/* Clear the file */
+"Clear the file" = "Limpar o arquivo";
+
+/* Click an avatar to change it, or drop an image onto it. */
+"Click an avatar to change it, or drop an image onto it." = "Clique em um avatar para alterá-lo ou arraste uma imagem sobre ele.";
+
+/* Click to change the avatar, or drop an image on it */
+"Click to change the avatar, or drop an image on it" = "Clique para alterar o avatar ou arraste uma imagem sobre ele";
+
+/* Compress the folder into an archive first, then open the archive. */
+"Compress the folder into an archive first, then open the archive." = "Comprima a pasta primeiro e depois abra o arquivo compactado.";
+
+/* Confirm passphrase */
+"Confirm passphrase" = "Confirmar frase secreta";
+
+/* Contacting the App Store… */
+"Contacting the App Store…" = "Conectando à App Store…";
+
+/* Continue */
+"Continue" = "Continuar";
+
+/* Copy */
+"Copy" = "Copiar";
+
+/* Copy Key */
+"Copy Key" = "Copiar Chave";
+
+/* Copy Path */
+"Copy Path" = "Copiar Caminho";
+
+/* Copy Public Key */
+"Copy Public Key" = "Copiar Chave Pública";
+
+/* Decrypt */
+"Decrypt" = "Descriptografar";
+
+/* Decrypt This File */
+"Decrypt This File" = "Descriptografar Este Arquivo";
+
+/* Decrypt with */
+"Decrypt with" = "Descriptografar com";
+
+/* Decrypted */
+"Decrypted" = "Descriptografado";
+
+/* Decrypting */
+"Decrypting" = "Descriptografando";
+
+/* Decryption failed */
+"Decryption failed" = "Falha ao descriptografar";
+
+/* Decrypt… */
+"Decrypt…" = "Descriptografar…";
+
+/* Delete */
+"Delete" = "Apagar";
+
+/* Delete %@? */
+"Delete %@?" = "Apagar %@?";
+
+/* Delete the .pub file */
+"Delete the .pub file" = "Apagar o arquivo .pub";
+
+/* Drop a file here to encrypt it */
+"Drop a file here to encrypt it" = "Solte um arquivo aqui para criptografá-lo";
+
+/* Drop a file, not a folder. Compress the folder first, then drop the archive. */
+"Drop a file, not a folder. Compress the folder first, then drop the archive." = "Solte um arquivo, não uma pasta. Comprima a pasta primeiro e depois solte o arquivo compactado.";
+
+/* Drop an age file here to decrypt it */
+"Drop an age file here to decrypt it" = "Solte um arquivo age aqui para descriptografá-lo";
+
+/* Encrypt */
+"Encrypt" = "Criptografar";
+
+/* Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file. */
+"Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file." = "Criptografe um arquivo para as chaves públicas das pessoas que devem abri-lo, ou com uma frase secreta. O resultado é um arquivo age padrão.";
+
+/* Encrypt for */
+"Encrypt for" = "Criptografar para";
+
+/* Encrypted */
+"Encrypted" = "Criptografado";
+
+/* Encrypted for */
+"Encrypted for" = "Criptografado para";
+
+/* Encrypting */
+"Encrypting" = "Criptografando";
+
+/* Encryption failed */
+"Encryption failed" = "Falha ao criptografar";
+
+/* Encrypt… */
+"Encrypt…" = "Criptografar…";
+
+/* Enter a passphrase. */
+"Enter a passphrase." = "Digite uma frase secreta.";
+
+/* Enter the file's passphrase. */
+"Enter the file's passphrase." = "Digite a frase secreta do arquivo.";
+
+/* Enter the passphrase below */
+"Enter the passphrase below" = "Digite a frase secreta abaixo";
+
+/* Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa). */
+"Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa)." = "Era esperada uma chave pública age (age1…) ou uma chave pública SSH (ssh-ed25519 ou ssh-rsa).";
+
+/* Expires %@ */
+"Expires %@" = "Termina em %@";
+
+/* Files */
+"Files" = "Arquivos";
+
+/* Fill both fields with a random passphrase and show it once */
+"Fill both fields with a random passphrase and show it once" = "Preencher os dois campos com uma frase secreta aleatória e mostrá-la uma vez";
+
+/* Filter identities */
+"Filter identities" = "Filtrar identidades";
+
+/* Filter recipients */
+"Filter recipients" = "Filtrar destinatários";
+
+/* Find… */
+"Find…" = "Buscar…";
+
+/* Forget Access */
+"Forget Access" = "Esquecer Acesso";
+
+/* Forget access to the key folders? */
+"Forget access to the key folders?" = "Esquecer o acesso às pastas de chaves?";
+
+/* Forget Folder Access… */
+"Forget Folder Access…" = "Esquecer Acesso às Pastas…";
+
+/* Free · Available today: %lld */
+"Free · Available today: %lld" = "Grátis · Disponível hoje: %lld";
+
+/* Generate */
+"Generate" = "Gerar";
+
+/* Give the recipient a name. */
+"Give the recipient a name." = "Dê um nome ao destinatário.";
+
+/* Hide this card */
+"Hide this card" = "Ocultar este cartão";
+
+/* Identities */
+"Identities" = "Identidades";
+
+/* Identity file */
+"Identity file" = "Arquivo de identidade";
+
+/* Initials */
+"Initials" = "Iniciais";
+
+/* Initials color %lld */
+"Initials color %lld" = "Cor das iniciais %lld";
+
+/* Keep Working */
+"Keep Working" = "Continuar Trabalhando";
+
+/* Key */
+"Key" = "Chave";
+
+/* Keys */
+"Keys" = "Chaves";
+
+/* Lifetime */
+"Lifetime" = "Vitalício";
+
+/* Loading App Store products… */
+"Loading App Store products…" = "Carregando produtos da App Store…";
+
+/* Loading keys… */
+"Loading keys…" = "Carregando chaves…";
+
+/* macOS did not grant lasting access to that folder. Choose it again, or choose another folder. */
+"macOS did not grant lasting access to that folder. Choose it again, or choose another folder." = "O macOS não concedeu acesso permanente a essa pasta. Escolha-a novamente ou escolha outra pasta.";
+
+/* Manage Subscription */
+"Manage Subscription" = "Gerenciar Assinatura";
+
+/* matches */
+"matches" = "compatível";
+
+/* Matches %@ */
+"Matches %@" = "Compatível com %@";
+
+/* Matching keys first. Protected keys ask for their passphrase. */
+"Matching keys first. Protected keys ask for their passphrase." = "Chaves compatíveis primeiro. Chaves protegidas pedem sua frase secreta.";
+
+/* Name */
+"Name" = "Nome";
+
+/* New age Key */
+"New age Key" = "Nova Chave age";
+
+/* New age key saved */
+"New age key saved" = "Nova chave age salva";
+
+/* New age Key… */
+"New age Key…" = "Nova Chave age…";
+
+/* New recipient */
+"New recipient" = "Novo destinatário";
+
+/* No active purchase was found. */
+"No active purchase was found." = "Nenhuma compra ativa do Agemin foi encontrada.";
+
+/* No Agemin Pro purchase was found for this Apple Account. */
+"No Agemin Pro purchase was found for this Apple Account." = "Nenhuma compra do Agemin Pro foi encontrada para esta Conta Apple.";
+
+/* No identities yet */
+"No identities yet" = "Nenhuma identidade ainda";
+
+/* No matching key */
+"No matching key" = "Nenhuma chave compatível";
+
+/* No recipients folder yet */
+"No recipients folder yet" = "Nenhuma pasta de destinatários ainda";
+
+/* None */
+"None" = "Nenhum";
+
+/* None of the identities can decrypt this file. */
+"None of the identities can decrypt this file." = "Nenhuma das identidades pode descriptografar este arquivo.";
+
+/* None of your identities matches this file. Add the key it was encrypted for on the Identities page. */
+"None of your identities matches this file. Add the key it was encrypted for on the Identities page." = "Nenhuma das suas identidades é compatível com este arquivo. Adicione a chave para a qual ele foi criptografado na página Identidades.";
+
+/* not a key */
+"not a key" = "não é uma chave";
+
+/* OK */
+"OK" = "OK";
+
+/* Open an age file with one of your keys, or with the passphrase it was encrypted with. */
+"Open an age file with one of your keys, or with the passphrase it was encrypted with." = "Abra um arquivo age com uma das suas chaves ou com a frase secreta usada para criptografá-lo.";
+
+/* Options */
+"Options" = "Opções";
+
+/* Output */
+"Output" = "Saída";
+
+/* Pages */
+"Pages" = "Páginas";
+
+/* Passphrase */
+"Passphrase" = "Frase secreta";
+
+/* passphrase */
+"passphrase" = "frase secreta";
+
+/* Passphrase · work factor %lld */
+"Passphrase · work factor %lld" = "Frase secreta · fator de trabalho %lld";
+
+/* Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends. */
+"Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends." = "O pagamento é cobrado da sua Conta Apple. A assinatura anual é renovada automaticamente, a menos que você a cancele nos ajustes da App Store pelo menos um dia antes do fim do período atual.";
+
+/* Privacy Policy */
+"Privacy Policy" = "Política de Privacidade";
+
+/* Privacy Policy… */
+"Privacy Policy…" = "Política de Privacidade…";
+
+/* Pro */
+"Pro" = "Pro";
+
+/* Pro purchases are unavailable right now. Try again later. */
+"Pro purchases are unavailable right now. Try again later." = "As compras do Pro estão indisponíveis no momento. Tente novamente mais tarde.";
+
+/* Pro trial · %lld days remaining */
+"Pro trial · %lld days remaining" = "Teste do Pro · %lld dias restantes";
+
+/* Pro trial · 1 day remaining */
+"Pro trial · 1 day remaining" = "Teste do Pro · 1 dia restante";
+
+/* Pro trial · ends %@ */
+"Pro trial · ends %@" = "Teste do Pro · termina em %@";
+
+/* Pro trial · first payment %@ */
+"Pro trial · first payment %@" = "Teste do Pro · primeiro pagamento %@";
+
+/* Pro trial · until %@ */
+"Pro trial · until %@" = "Teste do Pro · até %@";
+
+/* Public key */
+"Public key" = "Chave pública";
+
+/* Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file. */
+"Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file." = "As chaves públicas para as quais você criptografa. Cada arquivo .pub na pasta é um destinatário, com o nome do arquivo.";
+
+/* Purchase */
+"Purchase" = "Comprar";
+
+/* Quit Anyway */
+"Quit Anyway" = "Encerrar Mesmo Assim";
+
+/* Quitting now cancels it and removes the partial output. */
+"Quitting now cancels it and removes the partial output." = "Encerrar agora cancela a operação e remove a saída parcial.";
+
+/* Read the folder again */
+"Read the folder again" = "Ler a pasta novamente";
+
+/* Recipients */
+"Recipients" = "Destinatários";
+
+/* Refresh Keys */
+"Refresh Keys" = "Atualizar Chaves";
+
+/* Remove from the list */
+"Remove from the list" = "Remover da lista";
+
+/* Renews %@ */
+"Renews %@" = "Renova em %@";
+
+/* Restore Purchases */
+"Restore Purchases" = "Restaurar Compras";
+
+/* Restoring… */
+"Restoring…" = "Restaurando…";
+
+/* Reveal */
+"Reveal" = "Mostrar";
+
+/* Reveal in Finder */
+"Reveal in Finder" = "Mostrar no Finder";
+
+/* Save */
+"Save" = "Salvar";
+
+/* Save Key */
+"Save Key" = "Salvar Chave";
+
+/* Save Recipient */
+"Save Recipient" = "Salvar Destinatário";
+
+/* Save the new identity file somewhere private because it holds the secret key */
+"Save the new identity file somewhere private because it holds the secret key" = "Salve o novo arquivo de identidade em um local privado; ele contém a chave secreta";
+
+/* Saved as */
+"Saved as" = "Salvo como";
+
+/* Saved as <name>.pub in the recipients folder. */
+"Saved as <name>.pub in the recipients folder." = "Salvo como <nome>.pub na pasta de destinatários.";
+
+/* Select at least one recipient. */
+"Select at least one recipient." = "Selecione pelo menos um destinatário.";
+
+/* SHA-256 */
+"SHA-256" = "SHA-256";
+
+/* Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it. */
+"Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it." = "Compartilhe a chave pública com as pessoas que devem criptografar para você. Mantenha o arquivo de identidade privado; ele só pode ser lido pela sua conta.";
+
+/* Shared with your family */
+"Shared with your family" = "Compartilhado com a família";
+
+/* Size */
+"Size" = "Tamanho";
+
+/* SSH key (Ed25519) */
+"SSH key (Ed25519)" = "Chave SSH (Ed25519)";
+
+/* SSH key (RSA) */
+"SSH key (RSA)" = "Chave SSH (RSA)";
+
+/* Terms of Use (EULA) */
+"Terms of Use (EULA)" = "Termos de Uso (EULA)";
+
+/* That file is not an image Agemin can read. */
+"That file is not an image Agemin can read." = "Esse arquivo não é uma imagem que o Agemin consiga ler.";
+
+/* The App Store could not verify this purchase. */
+"The App Store could not verify this purchase." = "A App Store não conseguiu verificar essa compra.";
+
+/* The armor header is missing. */
+"The armor header is missing." = "O cabeçalho do armor está ausente.";
+
+/* The armored file could not be read. %@ */
+"The armored file could not be read. %@" = "Não foi possível ler o arquivo com armor. %@";
+
+/* The armored file ends before its footer. */
+"The armored file ends before its footer." = "O arquivo com armor termina antes da linha final.";
+
+/* The armored text is incomplete. */
+"The armored text is incomplete." = "O texto com armor está incompleto.";
+
+/* The armored text is not valid base64. */
+"The armored text is not valid base64." = "O texto com armor não é base64 válido.";
+
+/* The decrypted file cannot replace the encrypted file. Choose a different name. */
+"The decrypted file cannot replace the encrypted file. Choose a different name." = "O arquivo descriptografado não pode substituir o arquivo criptografado. Escolha outro nome.";
+
+/* The decrypted file does not hold an age secret key. */
+"The decrypted file does not hold an age secret key." = "O arquivo descriptografado não contém uma chave secreta age.";
+
+/* The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one. */
+"The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one." = "O arquivo descriptografado só pode ser lido pela sua conta de usuário. Compare a soma de verificação com a do remetente, se ele tiver fornecido uma.";
+
+/* The encrypted data is corrupt or was modified. */
+"The encrypted data is corrupt or was modified." = "Os dados criptografados estão corrompidos ou foram modificados.";
+
+/* The encrypted file cannot replace the original. Choose a different name. */
+"The encrypted file cannot replace the original. Choose a different name." = "O arquivo criptografado não pode substituir o original. Escolha outro nome.";
+
+/* The file could not be read. */
+"The file could not be read." = "Não foi possível ler o arquivo.";
+
+/* The file ends early. It may be incomplete. */
+"The file ends early. It may be incomplete." = "O arquivo termina antes do esperado. Ele pode estar incompleto.";
+
+/* The file header was modified or the key is wrong. */
+"The file header was modified or the key is wrong." = "O cabeçalho do arquivo foi modificado ou a chave está errada.";
+
+/* The file holds no age secret key. */
+"The file holds no age secret key." = "O arquivo não contém uma chave secreta age.";
+
+/* The file is being read. */
+"The file is being read." = "O arquivo está sendo lido.";
+
+/* The file is not text. */
+"The file is not text." = "O arquivo não é texto.";
+
+/* The file is too large to be a key. */
+"The file is too large to be a key." = "O arquivo é grande demais para ser uma chave.";
+
+/* The first line is not the age version marker. */
+"The first line is not the age version marker." = "A primeira linha não é o marcador de versão do age.";
+
+/* The header authentication line is malformed. */
+"The header authentication line is malformed." = "A linha de autenticação do cabeçalho está malformada.";
+
+/* The header is not valid text. */
+"The header is not valid text." = "O cabeçalho não é texto válido.";
+
+/* The header is too large to be an age file. */
+"The header is too large to be an age file." = "O cabeçalho é grande demais para ser um arquivo age.";
+
+/* The header lists too many recipients. */
+"The header lists too many recipients." = "O cabeçalho lista destinatários demais.";
+
+/* The identity could not be read. %@ */
+"The identity could not be read. %@" = "Não foi possível ler a identidade. %@";
+
+/* The identity file could not be saved. */
+"The identity file could not be saved." = "Não foi possível salvar o arquivo de identidade.";
+
+/* The image could not be used */
+"The image could not be used" = "Não foi possível usar a imagem";
+
+/* The image is larger than %lld pixels on a side. Choose a smaller one. */
+"The image is larger than %lld pixels on a side. Choose a smaller one." = "A imagem tem mais de %lld pixels de lado. Escolha uma menor.";
+
+/* The input is larger than expected. */
+"The input is larger than expected." = "A entrada é maior que o esperado.";
+
+/* The key file ends early. */
+"The key file ends early." = "O arquivo de chave termina antes do esperado.";
+
+/* The key file is malformed. */
+"The key file is malformed." = "O arquivo de chave está malformado.";
+
+/* The key file's passphrase settings are invalid. */
+"The key file's passphrase settings are invalid." = "Os ajustes de frase secreta do arquivo de chave são inválidos.";
+
+/* The key is empty. */
+"The key is empty." = "A chave está vazia.";
+
+/* The key is protected with the %@ cipher, which is not supported. */
+"The key is protected with the %@ cipher, which is not supported." = "A chave está protegida com a cifra %@, que não é compatível.";
+
+/* The key is saved as <name>.pub in the recipients folder. */
+"The key is saved as <name>.pub in the recipients folder." = "A chave é salva como <nome>.pub na pasta de destinatários.";
+
+/* The key uses %lld key derivation rounds. Agemin supports up to %lld. */
+"The key uses %lld key derivation rounds. Agemin supports up to %lld." = "A chave usa %lld rodadas de derivação de chave; o Agemin aceita até %lld.";
+
+/* The key uses the %@ key derivation, which is not supported. */
+"The key uses the %@ key derivation, which is not supported." = "A chave usa a derivação de chave %@, que não é compatível.";
+
+/* The operation was canceled. */
+"The operation was canceled." = "A operação foi cancelada.";
+
+/* The passphrase entry is malformed. */
+"The passphrase entry is malformed." = "A entrada de frase secreta está malformada.";
+
+/* The passphrase for %@ is incorrect. Try again. */
+"The passphrase for %@ is incorrect. Try again." = "A frase secreta de %@ está incorreta. Tente novamente.";
+
+/* The passphrase is incorrect. */
+"The passphrase is incorrect." = "A frase secreta está incorreta.";
+
+/* The passphrase work factor %lld is too high to try safely. */
+"The passphrase work factor %lld is too high to try safely." = "O fator de trabalho %lld da frase secreta é alto demais para ser testado com segurança.";
+
+/* The passphrase work factor is malformed. */
+"The passphrase work factor is malformed." = "O fator de trabalho da frase secreta está malformado.";
+
+/* The passphrases do not match. */
+"The passphrases do not match." = "As frases secretas não coincidem.";
+
+/* The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them. */
+"The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them." = "As chaves privadas que abrem arquivos criptografados para você: chaves SSH de ~/.ssh e arquivos de identidade age. O Agemin as lê e nunca as altera.";
+
+/* The purchase is awaiting approval. */
+"The purchase is awaiting approval." = "A compra está aguardando aprovação.";
+
+/* The recipient could not be deleted. */
+"The recipient could not be deleted." = "Não foi possível apagar o destinatário.";
+
+/* The recipient could not be saved. */
+"The recipient could not be saved." = "Não foi possível salvar o destinatário.";
+
+/* The recipient key could not be read. %@ */
+"The recipient key could not be read. %@" = "Não foi possível ler a chave do destinatário. %@";
+
+/* The recipients folder */
+"The recipients folder" = "A pasta de destinatários";
+
+/* The recipients folder holds no .pub files yet. */
+"The recipients folder holds no .pub files yet." = "A pasta de destinatários ainda não contém arquivos .pub.";
+
+/* The RSA key is malformed. */
+"The RSA key is malformed." = "A chave RSA está malformada.";
+
+/* The RSA key is too small or malformed. */
+"The RSA key is too small or malformed." = "A chave RSA é pequena demais ou está malformada.";
+
+/* The SSH key is not a valid Ed25519 key. */
+"The SSH key is not a valid Ed25519 key." = "A chave SSH não é uma chave Ed25519 válida.";
+
+/* The SSH key is not a valid RSA key. */
+"The SSH key is not a valid RSA key." = "A chave SSH não é uma chave RSA válida.";
+
+/* The SSH public key is malformed. */
+"The SSH public key is malformed." = "A chave pública SSH está malformada.";
+
+/* There is text after the armor footer. */
+"There is text after the armor footer." = "Há texto após a linha final do armor.";
+
+/* This deletes the file from the recipients folder. Files already encrypted for this key are not affected. */
+"This deletes the file from the recipients folder. Files already encrypted for this key are not affected." = "O arquivo é apagado da pasta de destinatários. Arquivos já criptografados para esta chave não são afetados.";
+
+/* This file cannot be read as an age file */
+"This file cannot be read as an age file" = "Este arquivo não pode ser lido como um arquivo age";
+
+/* This file is not a key. */
+"This file is not a key." = "Este arquivo não é uma chave.";
+
+/* This file needs a passphrase. */
+"This file needs a passphrase." = "Este arquivo precisa de uma frase secreta.";
+
+/* This is a secret key. Use the matching public key, which starts with age1. */
+"This is a secret key. Use the matching public key, which starts with age1." = "Esta é uma chave secreta. Use a chave pública correspondente, que começa com age1.";
+
+/* This is not a valid age public key. */
+"This is not a valid age public key." = "Esta não é uma chave pública age válida.";
+
+/* This is not a valid age secret key. */
+"This is not a valid age secret key." = "Esta não é uma chave secreta age válida.";
+
+/* This is not an age file. %@ */
+"This is not an age file. %@" = "Este não é um arquivo age. %@";
+
+/* This key format is not supported. Use an OpenSSH private key or an age identity file. */
+"This key format is not supported. Use an OpenSSH private key or an age identity file." = "Este formato de chave não é compatível. Use uma chave privada OpenSSH ou um arquivo de identidade age.";
+
+/* This key produces a weak shared secret and cannot be used. */
+"This key produces a weak shared secret and cannot be used." = "Esta chave produz um segredo compartilhado fraco e não pode ser usada.";
+
+/* This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy. */
+"This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy." = "Esta chave protegida por frase secreta usa o formato PEM antigo. Converta-a com ssh-keygen -p -o ou use uma cópia sem proteção.";
+
+/* Trial ended */
+"Trial ended" = "Teste encerrado";
+
+/* Try Again */
+"Try Again" = "Tentar Novamente";
+
+/* Try every usable key */
+"Try every usable key" = "Tentar todas as chaves utilizáveis";
+
+/* Unknown recipient type “%@” */
+"Unknown recipient type “%@”" = "Tipo de destinatário desconhecido “%@”";
+
+/* Unlock */
+"Unlock" = "Desbloquear";
+
+/* Unlock %@ */
+"Unlock %@" = "Desbloquear %@";
+
+/* Unlock %@ with Agemin Pro. */
+"Unlock %@ with Agemin Pro." = "Desbloqueie %@ com o Agemin Pro.";
+
+/* Until %@ */
+"Until %@" = "Até %@";
+
+/* Use Image */
+"Use Image" = "Usar Imagem";
+
+/* Use Initials */
+"Use Initials" = "Usar Iniciais";
+
+/* Valid %@ key */
+"Valid %@ key" = "Chave %@ válida";
+
+/* Wait for the current operation to finish. */
+"Wait for the current operation to finish." = "Aguarde a conclusão da operação atual.";
+
+/* Write it down or store it in a password manager. Agemin does not keep it. */
+"Write it down or store it in a password manager. Agemin does not keep it." = "Anote-a ou guarde-a em um gerenciador de senhas. O Agemin não a guarda.";
+
+/* Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both. */
+"Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both." = "Grave o arquivo criptografado como texto em vez de binário, para e-mail, chat e arquivos de configuração. O age lê os dois.";
+
+/* you */
+"you" = "você";
+
+/* You can still encrypt or decrypt one file per day. Available today: %lld. */
+"You can still encrypt or decrypt one file per day. Available today: %lld." = "Você ainda pode criptografar ou descriptografar um arquivo por dia. Disponível hoje: %lld.";
+
+/* You have Agemin Pro. */
+"You have Agemin Pro." = "Você tem Agemin Pro.";
+
+/* Your Pro trial is active. */
+"Your Pro trial is active." = "Seu teste do Pro está ativo.";
+
+/* · you choose the folder when you encrypt */
+"· you choose the folder when you encrypt" = "· você escolhe a pasta ao criptografar";
