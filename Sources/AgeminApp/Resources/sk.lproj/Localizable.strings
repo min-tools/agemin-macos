@@ -1,0 +1,904 @@
+/* Agemin — sk localization. Each comment shows the English source text. */
+
+/*  and armor */
+" and armor" = " a ASCII armor";
+
+/* %@ %@ of %@ */
+"%@ %@ of %@" = "%@ %@ z %@";
+
+/* %@ could not be read. */
+"%@ could not be read." = "%@ sa nepodarilo prečítať.";
+
+/* %@ could not be written. */
+"%@ could not be written." = "%@ sa nepodarilo zapísať.";
+
+/* %@ is protected with a passphrase. */
+"%@ is protected with a passphrase." = "Kľúč %@ je chránený prístupovou frázou.";
+
+/* %@ keys are not supported by age. */
+"%@ keys are not supported by age." = "Kľúče %@ nie sú v age podporované.";
+
+/* %@ per year */
+"%@ per year" = "%@ ročne";
+
+/* %@ · %@ more than the original for the header%@ */
+"%@ · %@ more than the original for the header%@" = "%@ · o %@ viac než originál (hlavička%@)";
+
+/* %@.pub already exists in the recipients folder. */
+"%@.pub already exists in the recipients folder." = "%@.pub už v priečinku príjemcov existuje.";
+
+/* %lld identities */
+"%lld identities" = "Identít: %lld";
+
+/* %lld identities · %lld usable */
+"%lld identities · %lld usable" = "Identít: %lld · použiteľných: %lld";
+
+/* %lld keys */
+"%lld keys" = "Kľúčov: %lld";
+
+/* %lld keys tried */
+"%lld keys tried" = "Vyskúšaných kľúčov: %lld";
+
+/* %lld of %lld recipients selected */
+"%lld of %lld recipients selected" = "Vybraní príjemcovia: %lld z %lld";
+
+/* %lld recipients */
+"%lld recipients" = "Príjemcov: %lld";
+
+/* %lld recipients · %lld usable */
+"%lld recipients · %lld usable" = "Príjemcov: %lld · použiteľných: %lld";
+
+/* 1 identity */
+"1 identity" = "1 identita";
+
+/* 1 recipient */
+"1 recipient" = "1 príjemca";
+
+/* 30 days of full access */
+"30 days of full access" = "30 dní plného prístupu";
+
+/* A file is still being processed. */
+"A file is still being processed." = "Súbor sa stále spracováva.";
+
+/* A header line is neither a recipient nor the closing marker. */
+"A header line is neither a recipient nor the closing marker." = "Riadok hlavičky nie je ani príjemca, ani ukončovacia značka.";
+
+/* A header line is too long. */
+"A header line is too long." = "Riadok hlavičky je príliš dlhý.";
+
+/* A passphrase cannot be combined with other recipients. */
+"A passphrase cannot be combined with other recipients." = "Prístupovú frázu nie je možné kombinovať s ďalšími príjemcami.";
+
+/* A passphrase entry must be the only recipient. */
+"A passphrase entry must be the only recipient." = "Záznam prístupovej frázy musí byť jediným príjemcom.";
+
+/* A recipient body is not valid base64. */
+"A recipient body is not valid base64." = "Telo príjemcu nie je platný base64.";
+
+/* A recipient body line is malformed. */
+"A recipient body line is malformed." = "Riadok tela príjemcu má chybný formát.";
+
+/* A recipient line is malformed. */
+"A recipient line is malformed." = "Riadok príjemcu má chybný formát.";
+
+/* About Agemin */
+"About Agemin" = "O aplikácii Agemin";
+
+/* Action */
+"Action" = "Akcia";
+
+/* Add */
+"Add" = "Pridať";
+
+/* Add a public key on the Recipients page */
+"Add a public key on the Recipients page" = "Pridajte verejný kľúč na stránke Príjemcovia";
+
+/* Add an identity that can decrypt this file. */
+"Add an identity that can decrypt this file." = "Pridajte identitu, ktorá dokáže tento súbor dešifrovať.";
+
+/* Add Key File */
+"Add Key File" = "Pridať súbor kľúča";
+
+/* Add Key File… */
+"Add Key File…" = "Pridať súbor kľúča…";
+
+/* Add Recipient */
+"Add Recipient" = "Pridať príjemcu";
+
+/* Add Recipient… */
+"Add Recipient…" = "Pridať príjemcu…";
+
+/* Add to Recipients */
+"Add to Recipients" = "Pridať k príjemcom";
+
+/* added */
+"added" = "pridané";
+
+/* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
+"After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "Po skončení skúšobného obdobia môžete stále zašifrovať alebo dešifrovať jeden súbor denne. Čítanie kľúčov, kontrola súborov a vytváranie kľúčov zostávajú bez obmedzenia.";
+
+/* age encryption, without the terminal. */
+"age encryption, without the terminal." = "Šifrovanie age bez terminálu.";
+
+/* age key */
+"age key" = "kľúč age";
+
+/* age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA… */
+"age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA…" = "age1… alebo ssh-ed25519 AAAA… alebo ssh-rsa AAAA…";
+
+/* Agemin could not use that folder */
+"Agemin could not use that folder" = "Agemin nemohol tento priečinok použiť";
+
+/* Agemin encrypts files, not folders. */
+"Agemin encrypts files, not folders." = "Agemin šifruje súbory, nie priečinky.";
+
+/* Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged. */
+"Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged." = "Prvých 30 dní je Agemin plne odomknutý. Nezačína žiadne predplatné a nič vám nebude účtované.";
+
+/* Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice. */
+"Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice." = "Agemin tu zobrazí súbory .pub a umožní vám pridať nové. Vyhovuje akýkoľvek priečinok; bežnou voľbou je ~/.age.";
+
+/* Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually. */
+"Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually." = "Agemin zobrazí súkromné kľúče, ktoré tam nájde, zvyčajne v ~/.ssh, a dešifruje pomocou nich. Kľúče uložené inde je možné pridať jednotlivo.";
+
+/* Agemin Pro */
+"Agemin Pro" = "Agemin Pro";
+
+/* Agemin Pro Lifetime · %@ */
+"Agemin Pro Lifetime · %@" = "Agemin Pro Doživotné · %@";
+
+/* Agemin Pro Yearly */
+"Agemin Pro Yearly" = "Agemin Pro Ročné";
+
+/* Agemin Pro… */
+"Agemin Pro…" = "Agemin Pro…";
+
+/* Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them. */
+"Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them." = "Agemin odstráni svoje uložené povolenia pre priečinok príjemcov, priečinok identít a všetky samostatne pridané súbory kľúčov. Nič sa nevymaže. Ak ich chcete používať ďalej, vyberte ich znova.";
+
+/* Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed. */
+"Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed." = "Agemin ukladá avatar pod odtlačkom tohto kľúča. V priečinkoch s kľúčmi sa nič nemení.";
+
+/* alice */
+"alice" = "alice";
+
+/* All */
+"All" = "Všetko";
+
+/* An age public key has 32 bytes. */
+"An age public key has 32 bytes." = "Verejný kľúč age má 32 bajtov.";
+
+/* An age secret key has 32 bytes. */
+"An age secret key has 32 bytes." = "Tajný kľúč age má 32 bajtov.";
+
+/* An ssh-ed25519 recipient entry is malformed. */
+"An ssh-ed25519 recipient entry is malformed." = "Záznam príjemcu ssh-ed25519 má chybný formát.";
+
+/* An ssh-rsa recipient entry is malformed. */
+"An ssh-rsa recipient entry is malformed." = "Záznam príjemcu ssh-rsa má chybný formát.";
+
+/* An X25519 recipient entry has the wrong size. */
+"An X25519 recipient entry has the wrong size." = "Záznam príjemcu X25519 má nesprávnu veľkosť.";
+
+/* An X25519 recipient entry is malformed. */
+"An X25519 recipient entry is malformed." = "Záznam príjemcu X25519 má chybný formát.";
+
+/* Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one. */
+"Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one." = "Súbor otvorí každý, kto pozná prístupovú frázu. age ju spracúva pomocou scrypt, takže dĺžka frázy je dôležitejšia než jej zložitosť.";
+
+/* ASCII armor */
+"ASCII armor" = "ASCII armor";
+
+/* Avatar for %@ */
+"Avatar for %@" = "Avatar pre %@";
+
+/* Cancel */
+"Cancel" = "Zrušiť";
+
+/* Change */
+"Change" = "Zmeniť";
+
+/* Choose */
+"Choose" = "Vybrať";
+
+/* Choose a file to encrypt. */
+"Choose a file to encrypt." = "Vyberte súbor na zašifrovanie.";
+
+/* Choose a yearly subscription or lifetime purchase at any time to remove the daily limit. */
+"Choose a yearly subscription or lifetime purchase at any time to remove the daily limit." = "Denný limit môžete kedykoľvek zrušiť ročným predplatným alebo doživotným nákupom.";
+
+/* Choose an age identity file or an SSH private key */
+"Choose an age identity file or an SSH private key" = "Vyberte súbor identity age alebo súkromný kľúč SSH";
+
+/* Choose an encrypted file. */
+"Choose an encrypted file." = "Vyberte zašifrovaný súbor.";
+
+/* Choose an image for this key's avatar */
+"Choose an image for this key's avatar" = "Vyberte obrázok pre avatar tohto kľúča";
+
+/* Choose File */
+"Choose File" = "Vybrať súbor";
+
+/* Choose File to Decrypt… */
+"Choose File to Decrypt…" = "Vybrať súbor na dešifrovanie…";
+
+/* Choose File to Encrypt… */
+"Choose File to Encrypt…" = "Vybrať súbor na zašifrovanie…";
+
+/* Choose Folder */
+"Choose Folder" = "Vybrať priečinok";
+
+/* Choose Identities Folder… */
+"Choose Identities Folder…" = "Vybrať priečinok identít…";
+
+/* Choose Image */
+"Choose Image" = "Vybrať obrázok";
+
+/* Choose Recipients Folder… */
+"Choose Recipients Folder…" = "Vybrať priečinok príjemcov…";
+
+/* Choose the encrypted file, usually ending in .age */
+"Choose the encrypted file, usually ending in .age" = "Vyberte zašifrovaný súbor, zvyčajne s príponou .age";
+
+/* Choose the file to encrypt */
+"Choose the file to encrypt" = "Vyberte súbor na zašifrovanie";
+
+/* Choose the folder with the .pub files of the people you encrypt for, usually ~/.age. */
+"Choose the folder with the .pub files of the people you encrypt for, usually ~/.age." = "Vyberte priečinok so súbormi .pub ľudí, pre ktorých šifrujete, zvyčajne ~/.age.";
+
+/* Choose the folder with the .pub files you encrypt for, usually ~/.age */
+"Choose the folder with the .pub files you encrypt for, usually ~/.age" = "Vyberte priečinok so súbormi .pub, pre ktoré šifrujete, zvyčajne ~/.age";
+
+/* Choose the folder with your private keys, usually ~/.ssh */
+"Choose the folder with your private keys, usually ~/.ssh" = "Vyberte priečinok so svojimi súkromnými kľúčmi, zvyčajne ~/.ssh";
+
+/* Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page. */
+"Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page." = "Vyberte priečinok so svojimi kľúčmi SSH, zvyčajne ~/.ssh, alebo pridajte súbor identity age na stránke Identity.";
+
+/* Choose where to save the decrypted file */
+"Choose where to save the decrypted file" = "Vyberte, kam uložiť dešifrovaný súbor";
+
+/* Choose where to save the encrypted file */
+"Choose where to save the encrypted file" = "Vyberte, kam uložiť zašifrovaný súbor";
+
+/* Choose your recipients folder */
+"Choose your recipients folder" = "Vyberte svoj priečinok príjemcov";
+
+/* Choose your SSH folder */
+"Choose your SSH folder" = "Vyberte svoj priečinok SSH";
+
+/* Clear search */
+"Clear search" = "Vymazať hľadanie";
+
+/* Clear the file */
+"Clear the file" = "Zrušiť výber súboru";
+
+/* Click an avatar to change it, or drop an image onto it. */
+"Click an avatar to change it, or drop an image onto it." = "Kliknutím na avatar ho zmeníte, alebo naň presuňte obrázok.";
+
+/* Click to change the avatar, or drop an image on it */
+"Click to change the avatar, or drop an image on it" = "Kliknutím zmeníte avatar, alebo naň presuňte obrázok";
+
+/* Compress the folder into an archive first, then open the archive. */
+"Compress the folder into an archive first, then open the archive." = "Najprv priečinok skomprimujte do archívu a potom otvorte archív.";
+
+/* Confirm passphrase */
+"Confirm passphrase" = "Potvrďte prístupovú frázu";
+
+/* Contacting the App Store… */
+"Contacting the App Store…" = "Pripája sa k App Store…";
+
+/* Continue */
+"Continue" = "Pokračovať";
+
+/* Copy */
+"Copy" = "Kopírovať";
+
+/* Copy Key */
+"Copy Key" = "Kopírovať kľúč";
+
+/* Copy Path */
+"Copy Path" = "Kopírovať cestu";
+
+/* Copy Public Key */
+"Copy Public Key" = "Kopírovať verejný kľúč";
+
+/* Decrypt */
+"Decrypt" = "Dešifrovať";
+
+/* Decrypt This File */
+"Decrypt This File" = "Dešifrovať tento súbor";
+
+/* Decrypt with */
+"Decrypt with" = "Dešifrovať pomocou";
+
+/* Decrypted */
+"Decrypted" = "Dešifrované";
+
+/* Decrypting */
+"Decrypting" = "Dešifrovanie";
+
+/* Decryption failed */
+"Decryption failed" = "Dešifrovanie zlyhalo";
+
+/* Decrypt… */
+"Decrypt…" = "Dešifrovať…";
+
+/* Delete */
+"Delete" = "Vymazať";
+
+/* Delete %@? */
+"Delete %@?" = "Vymazať %@?";
+
+/* Delete the .pub file */
+"Delete the .pub file" = "Vymazať súbor .pub";
+
+/* Drop a file here to encrypt it */
+"Drop a file here to encrypt it" = "Presuňte sem súbor, ktorý chcete zašifrovať";
+
+/* Drop a file, not a folder. Compress the folder first, then drop the archive. */
+"Drop a file, not a folder. Compress the folder first, then drop the archive." = "Presuňte súbor, nie priečinok. Priečinok najprv skomprimujte a potom presuňte archív.";
+
+/* Drop an age file here to decrypt it */
+"Drop an age file here to decrypt it" = "Presuňte sem súbor age, ktorý chcete dešifrovať";
+
+/* Encrypt */
+"Encrypt" = "Šifrovať";
+
+/* Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file. */
+"Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file." = "Zašifrujte súbor pre verejné kľúče ľudí, ktorí ho majú otvoriť, alebo pomocou prístupovej frázy. Výsledkom je štandardný súbor age.";
+
+/* Encrypt for */
+"Encrypt for" = "Šifrovať pre";
+
+/* Encrypted */
+"Encrypted" = "Zašifrované";
+
+/* Encrypted for */
+"Encrypted for" = "Zašifrované pre";
+
+/* Encrypting */
+"Encrypting" = "Šifrovanie";
+
+/* Encryption failed */
+"Encryption failed" = "Šifrovanie zlyhalo";
+
+/* Encrypt… */
+"Encrypt…" = "Šifrovať…";
+
+/* Enter a passphrase. */
+"Enter a passphrase." = "Zadajte prístupovú frázu.";
+
+/* Enter the file's passphrase. */
+"Enter the file's passphrase." = "Zadajte prístupovú frázu súboru.";
+
+/* Enter the passphrase below */
+"Enter the passphrase below" = "Nižšie zadajte prístupovú frázu";
+
+/* Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa). */
+"Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa)." = "Očakáva sa verejný kľúč age (age1…) alebo verejný kľúč SSH (ssh-ed25519 alebo ssh-rsa).";
+
+/* Expires %@ */
+"Expires %@" = "Končí %@";
+
+/* Files */
+"Files" = "Súbory";
+
+/* Fill both fields with a random passphrase and show it once */
+"Fill both fields with a random passphrase and show it once" = "Vyplniť obe polia náhodnou prístupovou frázou a raz ju zobraziť";
+
+/* Filter identities */
+"Filter identities" = "Filtrovať identity";
+
+/* Filter recipients */
+"Filter recipients" = "Filtrovať príjemcov";
+
+/* Find… */
+"Find…" = "Nájsť…";
+
+/* Forget Access */
+"Forget Access" = "Zabudnúť prístup";
+
+/* Forget access to the key folders? */
+"Forget access to the key folders?" = "Zabudnúť prístup k priečinkom s kľúčmi?";
+
+/* Forget Folder Access… */
+"Forget Folder Access…" = "Zabudnúť prístup k priečinkom…";
+
+/* Free · Available today: %lld */
+"Free · Available today: %lld" = "Bezplatne · Dnes k dispozícii: %lld";
+
+/* Generate */
+"Generate" = "Vygenerovať";
+
+/* Give the recipient a name. */
+"Give the recipient a name." = "Pomenujte príjemcu.";
+
+/* Hide this card */
+"Hide this card" = "Skryť túto kartu";
+
+/* Identities */
+"Identities" = "Identity";
+
+/* Identity file */
+"Identity file" = "Súbor identity";
+
+/* Initials */
+"Initials" = "Iniciály";
+
+/* Initials color %lld */
+"Initials color %lld" = "Farba iniciál %lld";
+
+/* Keep Working */
+"Keep Working" = "Pokračovať v práci";
+
+/* Key */
+"Key" = "Kľúč";
+
+/* Keys */
+"Keys" = "Kľúče";
+
+/* Lifetime */
+"Lifetime" = "Doživotne";
+
+/* Loading App Store products… */
+"Loading App Store products…" = "Načítavajú sa produkty z App Store…";
+
+/* Loading keys… */
+"Loading keys…" = "Načítavanie kľúčov…";
+
+/* macOS did not grant lasting access to that folder. Choose it again, or choose another folder. */
+"macOS did not grant lasting access to that folder. Choose it again, or choose another folder." = "macOS neudelil trvalý prístup k tomuto priečinku. Vyberte ho znova alebo vyberte iný priečinok.";
+
+/* Manage Subscription */
+"Manage Subscription" = "Spravovať predplatné";
+
+/* matches */
+"matches" = "zodpovedá";
+
+/* Matches %@ */
+"Matches %@" = "Zodpovedá: %@";
+
+/* Matching keys first. Protected keys ask for their passphrase. */
+"Matching keys first. Protected keys ask for their passphrase." = "Zodpovedajúce kľúče sú prvé. Chránené kľúče si vyžiadajú prístupovú frázu.";
+
+/* Name */
+"Name" = "Meno";
+
+/* New age Key */
+"New age Key" = "Nový kľúč age";
+
+/* New age key saved */
+"New age key saved" = "Nový kľúč age uložený";
+
+/* New age Key… */
+"New age Key…" = "Nový kľúč age…";
+
+/* New recipient */
+"New recipient" = "Nový príjemca";
+
+/* No active purchase was found. */
+"No active purchase was found." = "Nenašiel sa žiadny aktívny nákup.";
+
+/* No Agemin Pro purchase was found for this Apple Account. */
+"No Agemin Pro purchase was found for this Apple Account." = "Pre tento účet Apple sa nenašiel žiadny nákup Agemin Pro.";
+
+/* No identities yet */
+"No identities yet" = "Zatiaľ žiadne identity";
+
+/* No matching key */
+"No matching key" = "Žiadny zodpovedajúci kľúč";
+
+/* No recipients folder yet */
+"No recipients folder yet" = "Zatiaľ žiadny priečinok príjemcov";
+
+/* None */
+"None" = "Žiadny";
+
+/* None of the identities can decrypt this file. */
+"None of the identities can decrypt this file." = "Žiadna z identít nedokáže tento súbor dešifrovať.";
+
+/* None of your identities matches this file. Add the key it was encrypted for on the Identities page. */
+"None of your identities matches this file. Add the key it was encrypted for on the Identities page." = "Žiadna z vašich identít tomuto súboru nezodpovedá. Pridajte kľúč, pre ktorý bol zašifrovaný, na stránke Identity.";
+
+/* not a key */
+"not a key" = "nie je kľúč";
+
+/* OK */
+"OK" = "OK";
+
+/* Open an age file with one of your keys, or with the passphrase it was encrypted with. */
+"Open an age file with one of your keys, or with the passphrase it was encrypted with." = "Otvorte súbor age jedným zo svojich kľúčov alebo prístupovou frázou, ktorou bol zašifrovaný.";
+
+/* Options */
+"Options" = "Možnosti";
+
+/* Output */
+"Output" = "Výstup";
+
+/* Pages */
+"Pages" = "Stránky";
+
+/* Passphrase */
+"Passphrase" = "Prístupová fráza";
+
+/* passphrase */
+"passphrase" = "prístupová fráza";
+
+/* Passphrase · work factor %lld */
+"Passphrase · work factor %lld" = "Prístupová fráza · pracovný faktor %lld";
+
+/* Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends. */
+"Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends." = "Platba sa účtuje na váš účet Apple. Ročné predplatné sa automaticky obnovuje, pokiaľ ho nezrušíte v nastaveniach App Store aspoň deň pred koncom aktuálneho obdobia.";
+
+/* Privacy Policy */
+"Privacy Policy" = "Zásady ochrany osobných údajov";
+
+/* Privacy Policy… */
+"Privacy Policy…" = "Zásady ochrany osobných údajov…";
+
+/* Pro */
+"Pro" = "Pro";
+
+/* Pro purchases are unavailable right now. Try again later. */
+"Pro purchases are unavailable right now. Try again later." = "Nákupy Pro nie sú momentálne k dispozícii. Skúste to neskôr.";
+
+/* Pro trial · %lld days remaining */
+"Pro trial · %lld days remaining" = "Skúšobné obdobie Pro · zostávajúce dni: %lld";
+
+/* Pro trial · 1 day remaining */
+"Pro trial · 1 day remaining" = "Skúšobné obdobie Pro · zostáva 1 deň";
+
+/* Pro trial · ends %@ */
+"Pro trial · ends %@" = "Skúšobné obdobie Pro · končí %@";
+
+/* Pro trial · first payment %@ */
+"Pro trial · first payment %@" = "Skúšobné obdobie Pro · prvá platba %@";
+
+/* Pro trial · until %@ */
+"Pro trial · until %@" = "Skúšobné obdobie Pro · do %@";
+
+/* Public key */
+"Public key" = "Verejný kľúč";
+
+/* Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file. */
+"Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file." = "Verejné kľúče, pre ktoré šifrujete. Každý súbor .pub v priečinku je jeden príjemca pomenovaný podľa súboru.";
+
+/* Purchase */
+"Purchase" = "Kúpiť";
+
+/* Quit Anyway */
+"Quit Anyway" = "Aj tak ukončiť";
+
+/* Quitting now cancels it and removes the partial output. */
+"Quitting now cancels it and removes the partial output." = "Ak aplikáciu teraz ukončíte, operácia sa zruší a čiastočný výstup sa odstráni.";
+
+/* Read the folder again */
+"Read the folder again" = "Znova načítať priečinok";
+
+/* Recipients */
+"Recipients" = "Príjemcovia";
+
+/* Refresh Keys */
+"Refresh Keys" = "Obnoviť kľúče";
+
+/* Remove from the list */
+"Remove from the list" = "Odstrániť zo zoznamu";
+
+/* Renews %@ */
+"Renews %@" = "Obnoví sa %@";
+
+/* Restore Purchases */
+"Restore Purchases" = "Obnoviť nákupy";
+
+/* Restoring… */
+"Restoring…" = "Obnovuje sa…";
+
+/* Reveal */
+"Reveal" = "Zobraziť";
+
+/* Reveal in Finder */
+"Reveal in Finder" = "Zobraziť vo Finderi";
+
+/* Save */
+"Save" = "Uložiť";
+
+/* Save Key */
+"Save Key" = "Uložiť kľúč";
+
+/* Save Recipient */
+"Save Recipient" = "Uložiť príjemcu";
+
+/* Save the new identity file somewhere private because it holds the secret key */
+"Save the new identity file somewhere private because it holds the secret key" = "Uložte nový súbor identity na súkromné miesto; obsahuje tajný kľúč";
+
+/* Saved as */
+"Saved as" = "Uložené ako";
+
+/* Saved as <name>.pub in the recipients folder. */
+"Saved as <name>.pub in the recipients folder." = "Uložené ako <name>.pub v priečinku príjemcov.";
+
+/* Select at least one recipient. */
+"Select at least one recipient." = "Vyberte aspoň jedného príjemcu.";
+
+/* SHA-256 */
+"SHA-256" = "SHA-256";
+
+/* Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it. */
+"Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it." = "Verejný kľúč zdieľajte s ľuďmi, ktorí majú pre vás šifrovať. Súbor identity uchovávajte v súkromí; môže ho čítať iba váš účet.";
+
+/* Shared with your family */
+"Shared with your family" = "Zdieľané s rodinou";
+
+/* Size */
+"Size" = "Veľkosť";
+
+/* SSH key (Ed25519) */
+"SSH key (Ed25519)" = "Kľúč SSH (Ed25519)";
+
+/* SSH key (RSA) */
+"SSH key (RSA)" = "Kľúč SSH (RSA)";
+
+/* Terms of Use (EULA) */
+"Terms of Use (EULA)" = "Podmienky používania (EULA)";
+
+/* That file is not an image Agemin can read. */
+"That file is not an image Agemin can read." = "Tento súbor nie je obrázok, ktorý Agemin dokáže prečítať.";
+
+/* The App Store could not verify this purchase. */
+"The App Store could not verify this purchase." = "App Store nemohol tento nákup overiť.";
+
+/* The armor header is missing. */
+"The armor header is missing." = "Chýba hlavička ASCII armor.";
+
+/* The armored file could not be read. %@ */
+"The armored file could not be read. %@" = "Súbor s ASCII armor sa nepodarilo prečítať. %@";
+
+/* The armored file ends before its footer. */
+"The armored file ends before its footer." = "Súbor s ASCII armor končí pred svojou pätičkou.";
+
+/* The armored text is incomplete. */
+"The armored text is incomplete." = "Text ASCII armor je neúplný.";
+
+/* The armored text is not valid base64. */
+"The armored text is not valid base64." = "Text ASCII armor nie je platný base64.";
+
+/* The decrypted file cannot replace the encrypted file. Choose a different name. */
+"The decrypted file cannot replace the encrypted file. Choose a different name." = "Dešifrovaný súbor nemôže nahradiť zašifrovaný súbor. Zvoľte iný názov.";
+
+/* The decrypted file does not hold an age secret key. */
+"The decrypted file does not hold an age secret key." = "Dešifrovaný súbor neobsahuje tajný kľúč age.";
+
+/* The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one. */
+"The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one." = "Dešifrovaný súbor môže čítať iba váš používateľský účet. Ak vám odosielateľ poskytol kontrolný súčet, porovnajte ho.";
+
+/* The encrypted data is corrupt or was modified. */
+"The encrypted data is corrupt or was modified." = "Zašifrované údaje sú poškodené alebo boli zmenené.";
+
+/* The encrypted file cannot replace the original. Choose a different name. */
+"The encrypted file cannot replace the original. Choose a different name." = "Zašifrovaný súbor nemôže nahradiť originál. Zvoľte iný názov.";
+
+/* The file could not be read. */
+"The file could not be read." = "Súbor sa nepodarilo prečítať.";
+
+/* The file ends early. It may be incomplete. */
+"The file ends early. It may be incomplete." = "Súbor končí predčasne. Môže byť neúplný.";
+
+/* The file header was modified or the key is wrong. */
+"The file header was modified or the key is wrong." = "Hlavička súboru bola zmenená alebo je kľúč nesprávny.";
+
+/* The file holds no age secret key. */
+"The file holds no age secret key." = "Súbor neobsahuje tajný kľúč age.";
+
+/* The file is being read. */
+"The file is being read." = "Súbor sa načítava.";
+
+/* The file is not text. */
+"The file is not text." = "Súbor nie je text.";
+
+/* The file is too large to be a key. */
+"The file is too large to be a key." = "Súbor je na kľúč príliš veľký.";
+
+/* The first line is not the age version marker. */
+"The first line is not the age version marker." = "Prvý riadok nie je značka verzie age.";
+
+/* The header authentication line is malformed. */
+"The header authentication line is malformed." = "Riadok overenia hlavičky má chybný formát.";
+
+/* The header is not valid text. */
+"The header is not valid text." = "Hlavička nie je platný text.";
+
+/* The header is too large to be an age file. */
+"The header is too large to be an age file." = "Hlavička je na súbor age príliš veľká.";
+
+/* The header lists too many recipients. */
+"The header lists too many recipients." = "Hlavička uvádza príliš veľa príjemcov.";
+
+/* The identity could not be read. %@ */
+"The identity could not be read. %@" = "Identitu sa nepodarilo prečítať. %@";
+
+/* The identity file could not be saved. */
+"The identity file could not be saved." = "Súbor identity sa nepodarilo uložiť.";
+
+/* The image could not be used */
+"The image could not be used" = "Obrázok nie je možné použiť";
+
+/* The image is larger than %lld pixels on a side. Choose a smaller one. */
+"The image is larger than %lld pixels on a side. Choose a smaller one." = "Obrázok má stranu dlhšiu než %lld pixelov. Vyberte menší.";
+
+/* The input is larger than expected. */
+"The input is larger than expected." = "Vstup je väčší, než sa očakávalo.";
+
+/* The key file ends early. */
+"The key file ends early." = "Súbor kľúča končí predčasne.";
+
+/* The key file is malformed. */
+"The key file is malformed." = "Súbor kľúča má chybný formát.";
+
+/* The key file's passphrase settings are invalid. */
+"The key file's passphrase settings are invalid." = "Nastavenie prístupovej frázy súboru kľúča je neplatné.";
+
+/* The key is empty. */
+"The key is empty." = "Kľúč je prázdny.";
+
+/* The key is protected with the %@ cipher, which is not supported. */
+"The key is protected with the %@ cipher, which is not supported." = "Kľúč je chránený šifrou %@, ktorá nie je podporovaná.";
+
+/* The key is saved as <name>.pub in the recipients folder. */
+"The key is saved as <name>.pub in the recipients folder." = "Kľúč sa uloží ako <name>.pub do priečinka príjemcov.";
+
+/* The key uses %lld key derivation rounds. Agemin supports up to %lld. */
+"The key uses %lld key derivation rounds. Agemin supports up to %lld." = "Kľúč používa %lld kôl odvodenia kľúča; Agemin podporuje najviac %lld.";
+
+/* The key uses the %@ key derivation, which is not supported. */
+"The key uses the %@ key derivation, which is not supported." = "Kľúč používa odvodenie kľúča %@, ktoré nie je podporované.";
+
+/* The operation was canceled. */
+"The operation was canceled." = "Operácia bola zrušená.";
+
+/* The passphrase entry is malformed. */
+"The passphrase entry is malformed." = "Záznam prístupovej frázy má chybný formát.";
+
+/* The passphrase for %@ is incorrect. Try again. */
+"The passphrase for %@ is incorrect. Try again." = "Prístupová fráza pre %@ je nesprávna. Skúste to znova.";
+
+/* The passphrase is incorrect. */
+"The passphrase is incorrect." = "Prístupová fráza je nesprávna.";
+
+/* The passphrase work factor %lld is too high to try safely. */
+"The passphrase work factor %lld is too high to try safely." = "Pracovný faktor prístupovej frázy %lld je príliš vysoký na bezpečné vyskúšanie.";
+
+/* The passphrase work factor is malformed. */
+"The passphrase work factor is malformed." = "Pracovný faktor prístupovej frázy má chybný formát.";
+
+/* The passphrases do not match. */
+"The passphrases do not match." = "Prístupové frázy sa nezhodujú.";
+
+/* The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them. */
+"The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them." = "Súkromné kľúče, ktoré otvárajú súbory zašifrované pre vás: kľúče SSH z ~/.ssh a súbory identity age. Agemin ich číta a nikdy ich nemení.";
+
+/* The purchase is awaiting approval. */
+"The purchase is awaiting approval." = "Nákup čaká na schválenie.";
+
+/* The recipient could not be deleted. */
+"The recipient could not be deleted." = "Príjemcu sa nepodarilo vymazať.";
+
+/* The recipient could not be saved. */
+"The recipient could not be saved." = "Príjemcu sa nepodarilo uložiť.";
+
+/* The recipient key could not be read. %@ */
+"The recipient key could not be read. %@" = "Kľúč príjemcu sa nepodarilo prečítať. %@";
+
+/* The recipients folder */
+"The recipients folder" = "Priečinok príjemcov";
+
+/* The recipients folder holds no .pub files yet. */
+"The recipients folder holds no .pub files yet." = "Priečinok príjemcov zatiaľ neobsahuje žiadne súbory .pub.";
+
+/* The RSA key is malformed. */
+"The RSA key is malformed." = "Kľúč RSA má chybný formát.";
+
+/* The RSA key is too small or malformed. */
+"The RSA key is too small or malformed." = "Kľúč RSA je príliš malý alebo má chybný formát.";
+
+/* The SSH key is not a valid Ed25519 key. */
+"The SSH key is not a valid Ed25519 key." = "Kľúč SSH nie je platný kľúč Ed25519.";
+
+/* The SSH key is not a valid RSA key. */
+"The SSH key is not a valid RSA key." = "Kľúč SSH nie je platný kľúč RSA.";
+
+/* The SSH public key is malformed. */
+"The SSH public key is malformed." = "Verejný kľúč SSH má chybný formát.";
+
+/* There is text after the armor footer. */
+"There is text after the armor footer." = "Za pätičkou ASCII armor nasleduje ďalší text.";
+
+/* This deletes the file from the recipients folder. Files already encrypted for this key are not affected. */
+"This deletes the file from the recipients folder. Files already encrypted for this key are not affected." = "Súbor bude vymazaný z priečinka príjemcov. Súbory už zašifrované pre tento kľúč to neovplyvní.";
+
+/* This file cannot be read as an age file */
+"This file cannot be read as an age file" = "Tento súbor nie je možné prečítať ako súbor age";
+
+/* This file is not a key. */
+"This file is not a key." = "Tento súbor nie je kľúč.";
+
+/* This file needs a passphrase. */
+"This file needs a passphrase." = "Tento súbor vyžaduje prístupovú frázu.";
+
+/* This is a secret key. Use the matching public key, which starts with age1. */
+"This is a secret key. Use the matching public key, which starts with age1." = "Toto je tajný kľúč. Použite zodpovedajúci verejný kľúč, ktorý začína na age1.";
+
+/* This is not a valid age public key. */
+"This is not a valid age public key." = "Toto nie je platný verejný kľúč age.";
+
+/* This is not a valid age secret key. */
+"This is not a valid age secret key." = "Toto nie je platný tajný kľúč age.";
+
+/* This is not an age file. %@ */
+"This is not an age file. %@" = "Toto nie je súbor age. %@";
+
+/* This key format is not supported. Use an OpenSSH private key or an age identity file. */
+"This key format is not supported. Use an OpenSSH private key or an age identity file." = "Tento formát kľúča nie je podporovaný. Použite súkromný kľúč OpenSSH alebo súbor identity age.";
+
+/* This key produces a weak shared secret and cannot be used. */
+"This key produces a weak shared secret and cannot be used." = "Tento kľúč vytvára slabé zdieľané tajomstvo a nie je možné ho použiť.";
+
+/* This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy. */
+"This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy." = "Tento kľúč chránený prístupovou frázou používa starší formát PEM. Preveďte ho pomocou ssh-keygen -p -o alebo použite nechránenú kópiu.";
+
+/* Trial ended */
+"Trial ended" = "Skúšobné obdobie skončilo";
+
+/* Try Again */
+"Try Again" = "Skúsiť znova";
+
+/* Try every usable key */
+"Try every usable key" = "Vyskúšať všetky použiteľné kľúče";
+
+/* Unknown recipient type “%@” */
+"Unknown recipient type “%@”" = "Neznámy typ príjemcu „%@“";
+
+/* Unlock */
+"Unlock" = "Odomknúť";
+
+/* Unlock %@ */
+"Unlock %@" = "Odomknúť %@";
+
+/* Unlock %@ with Agemin Pro. */
+"Unlock %@ with Agemin Pro." = "Odomknite %@ s Agemin Pro.";
+
+/* Until %@ */
+"Until %@" = "Do %@";
+
+/* Use Image */
+"Use Image" = "Použiť obrázok";
+
+/* Use Initials */
+"Use Initials" = "Použiť iniciály";
+
+/* Valid %@ key */
+"Valid %@ key" = "Platný kľúč %@";
+
+/* Wait for the current operation to finish. */
+"Wait for the current operation to finish." = "Počkajte na dokončenie aktuálnej operácie.";
+
+/* Write it down or store it in a password manager. Agemin does not keep it. */
+"Write it down or store it in a password manager. Agemin does not keep it." = "Zapíšte si ju alebo ju uložte do správcu hesiel. Agemin ju neuchováva.";
+
+/* Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both. */
+"Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both." = "Zapísať zašifrovaný súbor ako text namiesto binárnych údajov, pre e-mail, chat a konfiguračné súbory. age číta oboje.";
+
+/* you */
+"you" = "vy";
+
+/* You can still encrypt or decrypt one file per day. Available today: %lld. */
+"You can still encrypt or decrypt one file per day. Available today: %lld." = "Stále môžete zašifrovať alebo dešifrovať jeden súbor denne. Dnes k dispozícii: %lld.";
+
+/* You have Agemin Pro. */
+"You have Agemin Pro." = "Máte Agemin Pro.";
+
+/* Your Pro trial is active. */
+"Your Pro trial is active." = "Vaše skúšobné obdobie Pro je aktívne.";
+
+/* · you choose the folder when you encrypt */
+"· you choose the folder when you encrypt" = "· priečinok vyberiete pri šifrovaní";
