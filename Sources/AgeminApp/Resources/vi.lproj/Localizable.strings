@@ -1,0 +1,904 @@
+/* Agemin — vi localization. Each comment shows the English source text. */
+
+/*  and armor */
+" and armor" = " và armor";
+
+/* %@ %@ of %@ */
+"%@ %@ of %@" = "%@ %@ trên %@";
+
+/* %@ could not be read. */
+"%@ could not be read." = "Không thể đọc %@.";
+
+/* %@ could not be written. */
+"%@ could not be written." = "Không thể ghi %@.";
+
+/* %@ is protected with a passphrase. */
+"%@ is protected with a passphrase." = "%@ được bảo vệ bằng cụm mật khẩu.";
+
+/* %@ keys are not supported by age. */
+"%@ keys are not supported by age." = "Khóa %@ không được age hỗ trợ.";
+
+/* %@ per year */
+"%@ per year" = "%@ mỗi năm";
+
+/* %@ · %@ more than the original for the header%@ */
+"%@ · %@ more than the original for the header%@" = "%@ · lớn hơn bản gốc %@ cho phần đầu%@";
+
+/* %@.pub already exists in the recipients folder. */
+"%@.pub already exists in the recipients folder." = "%@.pub đã tồn tại trong thư mục người nhận.";
+
+/* %lld identities */
+"%lld identities" = "%lld danh tính";
+
+/* %lld identities · %lld usable */
+"%lld identities · %lld usable" = "%lld danh tính · %lld dùng được";
+
+/* %lld keys */
+"%lld keys" = "%lld khóa";
+
+/* %lld keys tried */
+"%lld keys tried" = "Đã thử %lld khóa";
+
+/* %lld of %lld recipients selected */
+"%lld of %lld recipients selected" = "Đã chọn %lld trên %lld người nhận";
+
+/* %lld recipients */
+"%lld recipients" = "%lld người nhận";
+
+/* %lld recipients · %lld usable */
+"%lld recipients · %lld usable" = "%lld người nhận · %lld dùng được";
+
+/* 1 identity */
+"1 identity" = "1 danh tính";
+
+/* 1 recipient */
+"1 recipient" = "1 người nhận";
+
+/* 30 days of full access */
+"30 days of full access" = "30 ngày truy cập đầy đủ";
+
+/* A file is still being processed. */
+"A file is still being processed." = "Một tệp vẫn đang được xử lý.";
+
+/* A header line is neither a recipient nor the closing marker. */
+"A header line is neither a recipient nor the closing marker." = "Một dòng trong phần đầu không phải là người nhận cũng không phải là dấu kết thúc.";
+
+/* A header line is too long. */
+"A header line is too long." = "Một dòng trong phần đầu quá dài.";
+
+/* A passphrase cannot be combined with other recipients. */
+"A passphrase cannot be combined with other recipients." = "Không thể kết hợp cụm mật khẩu với người nhận khác.";
+
+/* A passphrase entry must be the only recipient. */
+"A passphrase entry must be the only recipient." = "Mục cụm mật khẩu phải là người nhận duy nhất.";
+
+/* A recipient body is not valid base64. */
+"A recipient body is not valid base64." = "Phần thân của một người nhận không phải là base64 hợp lệ.";
+
+/* A recipient body line is malformed. */
+"A recipient body line is malformed." = "Một dòng thân người nhận bị sai định dạng.";
+
+/* A recipient line is malformed. */
+"A recipient line is malformed." = "Một dòng người nhận bị sai định dạng.";
+
+/* About Agemin */
+"About Agemin" = "Giới thiệu Agemin";
+
+/* Action */
+"Action" = "Hành động";
+
+/* Add */
+"Add" = "Thêm";
+
+/* Add a public key on the Recipients page */
+"Add a public key on the Recipients page" = "Thêm khóa công khai trên trang Người nhận";
+
+/* Add an identity that can decrypt this file. */
+"Add an identity that can decrypt this file." = "Thêm danh tính có thể giải mã tệp này.";
+
+/* Add Key File */
+"Add Key File" = "Thêm tệp khóa";
+
+/* Add Key File… */
+"Add Key File…" = "Thêm tệp khóa…";
+
+/* Add Recipient */
+"Add Recipient" = "Thêm người nhận";
+
+/* Add Recipient… */
+"Add Recipient…" = "Thêm người nhận…";
+
+/* Add to Recipients */
+"Add to Recipients" = "Thêm vào người nhận";
+
+/* added */
+"added" = "đã thêm";
+
+/* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
+"After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "Sau thời gian dùng thử, bạn vẫn có thể mã hóa hoặc giải mã một tệp mỗi ngày. Việc đọc khóa, kiểm tra tệp và tạo khóa vẫn không bị giới hạn.";
+
+/* age encryption, without the terminal. */
+"age encryption, without the terminal." = "Mã hóa age, không cần terminal.";
+
+/* age key */
+"age key" = "khóa age";
+
+/* age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA… */
+"age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA…" = "age1… hoặc ssh-ed25519 AAAA… hoặc ssh-rsa AAAA…";
+
+/* Agemin could not use that folder */
+"Agemin could not use that folder" = "Agemin không thể sử dụng thư mục đó";
+
+/* Agemin encrypts files, not folders. */
+"Agemin encrypts files, not folders." = "Agemin mã hóa tệp, không mã hóa thư mục.";
+
+/* Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged. */
+"Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged." = "Agemin được mở khóa hoàn toàn trong 30 ngày đầu của bạn. Không có đăng ký nào bắt đầu và bạn sẽ không bị tính phí.";
+
+/* Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice. */
+"Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice." = "Agemin liệt kê các tệp .pub ở đó và cho phép bạn thêm tệp mới. Thư mục nào cũng được; ~/.age là lựa chọn phổ biến.";
+
+/* Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually. */
+"Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually." = "Agemin liệt kê các khóa riêng tư tìm thấy ở đó, thường là ~/.ssh, và dùng chúng để giải mã. Khóa lưu ở nơi khác có thể được thêm từng khóa một.";
+
+/* Agemin Pro */
+"Agemin Pro" = "Agemin Pro";
+
+/* Agemin Pro Lifetime · %@ */
+"Agemin Pro Lifetime · %@" = "Agemin Pro Trọn đời · %@";
+
+/* Agemin Pro Yearly */
+"Agemin Pro Yearly" = "Agemin Pro hàng năm";
+
+/* Agemin Pro… */
+"Agemin Pro…" = "Agemin Pro…";
+
+/* Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them. */
+"Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them." = "Agemin gỡ bỏ quyền truy cập đã lưu cho thư mục người nhận, thư mục danh tính và mọi tệp khóa được thêm riêng. Không tệp nào bị xóa. Hãy chọn lại chúng để tiếp tục sử dụng.";
+
+/* Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed. */
+"Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed." = "Agemin lưu ảnh đại diện theo vân tay của khóa này. Không có gì trong thư mục khóa của bạn bị thay đổi.";
+
+/* alice */
+"alice" = "lan";
+
+/* All */
+"All" = "Tất cả";
+
+/* An age public key has 32 bytes. */
+"An age public key has 32 bytes." = "Khóa công khai age có 32 byte.";
+
+/* An age secret key has 32 bytes. */
+"An age secret key has 32 bytes." = "Khóa bí mật age có 32 byte.";
+
+/* An ssh-ed25519 recipient entry is malformed. */
+"An ssh-ed25519 recipient entry is malformed." = "Một mục người nhận ssh-ed25519 bị sai định dạng.";
+
+/* An ssh-rsa recipient entry is malformed. */
+"An ssh-rsa recipient entry is malformed." = "Một mục người nhận ssh-rsa bị sai định dạng.";
+
+/* An X25519 recipient entry has the wrong size. */
+"An X25519 recipient entry has the wrong size." = "Một mục người nhận X25519 có kích thước sai.";
+
+/* An X25519 recipient entry is malformed. */
+"An X25519 recipient entry is malformed." = "Một mục người nhận X25519 bị sai định dạng.";
+
+/* Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one. */
+"Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one." = "Bất kỳ ai có cụm mật khẩu đều có thể mở tệp. age xử lý cụm mật khẩu bằng scrypt, nên cụm mật khẩu dài quan trọng hơn cụm mật khẩu phức tạp.";
+
+/* ASCII armor */
+"ASCII armor" = "ASCII armor";
+
+/* Avatar for %@ */
+"Avatar for %@" = "Ảnh đại diện cho %@";
+
+/* Cancel */
+"Cancel" = "Hủy";
+
+/* Change */
+"Change" = "Thay đổi";
+
+/* Choose */
+"Choose" = "Chọn";
+
+/* Choose a file to encrypt. */
+"Choose a file to encrypt." = "Chọn tệp để mã hóa.";
+
+/* Choose a yearly subscription or lifetime purchase at any time to remove the daily limit. */
+"Choose a yearly subscription or lifetime purchase at any time to remove the daily limit." = "Chọn đăng ký hàng năm hoặc mua trọn đời bất cứ lúc nào để bỏ giới hạn hằng ngày.";
+
+/* Choose an age identity file or an SSH private key */
+"Choose an age identity file or an SSH private key" = "Chọn tệp danh tính age hoặc khóa riêng tư SSH";
+
+/* Choose an encrypted file. */
+"Choose an encrypted file." = "Chọn tệp đã mã hóa.";
+
+/* Choose an image for this key's avatar */
+"Choose an image for this key's avatar" = "Chọn hình ảnh làm ảnh đại diện cho khóa này";
+
+/* Choose File */
+"Choose File" = "Chọn tệp";
+
+/* Choose File to Decrypt… */
+"Choose File to Decrypt…" = "Chọn tệp để giải mã…";
+
+/* Choose File to Encrypt… */
+"Choose File to Encrypt…" = "Chọn tệp để mã hóa…";
+
+/* Choose Folder */
+"Choose Folder" = "Chọn thư mục";
+
+/* Choose Identities Folder… */
+"Choose Identities Folder…" = "Chọn thư mục danh tính…";
+
+/* Choose Image */
+"Choose Image" = "Chọn hình ảnh";
+
+/* Choose Recipients Folder… */
+"Choose Recipients Folder…" = "Chọn thư mục người nhận…";
+
+/* Choose the encrypted file, usually ending in .age */
+"Choose the encrypted file, usually ending in .age" = "Chọn tệp đã mã hóa, thường có đuôi .age";
+
+/* Choose the file to encrypt */
+"Choose the file to encrypt" = "Chọn tệp cần mã hóa";
+
+/* Choose the folder with the .pub files of the people you encrypt for, usually ~/.age. */
+"Choose the folder with the .pub files of the people you encrypt for, usually ~/.age." = "Chọn thư mục chứa các tệp .pub của những người bạn mã hóa cho, thường là ~/.age.";
+
+/* Choose the folder with the .pub files you encrypt for, usually ~/.age */
+"Choose the folder with the .pub files you encrypt for, usually ~/.age" = "Chọn thư mục chứa các tệp .pub bạn mã hóa cho, thường là ~/.age";
+
+/* Choose the folder with your private keys, usually ~/.ssh */
+"Choose the folder with your private keys, usually ~/.ssh" = "Chọn thư mục chứa khóa riêng tư của bạn, thường là ~/.ssh";
+
+/* Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page. */
+"Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page." = "Chọn thư mục chứa khóa SSH của bạn, thường là ~/.ssh, hoặc thêm tệp danh tính age trên trang Danh tính.";
+
+/* Choose where to save the decrypted file */
+"Choose where to save the decrypted file" = "Chọn nơi lưu tệp đã giải mã";
+
+/* Choose where to save the encrypted file */
+"Choose where to save the encrypted file" = "Chọn nơi lưu tệp đã mã hóa";
+
+/* Choose your recipients folder */
+"Choose your recipients folder" = "Chọn thư mục người nhận của bạn";
+
+/* Choose your SSH folder */
+"Choose your SSH folder" = "Chọn thư mục SSH của bạn";
+
+/* Clear search */
+"Clear search" = "Xóa tìm kiếm";
+
+/* Clear the file */
+"Clear the file" = "Bỏ tệp";
+
+/* Click an avatar to change it, or drop an image onto it. */
+"Click an avatar to change it, or drop an image onto it." = "Bấm vào ảnh đại diện để thay đổi, hoặc kéo thả hình ảnh vào đó.";
+
+/* Click to change the avatar, or drop an image on it */
+"Click to change the avatar, or drop an image on it" = "Bấm để thay đổi ảnh đại diện, hoặc kéo thả hình ảnh vào đó";
+
+/* Compress the folder into an archive first, then open the archive. */
+"Compress the folder into an archive first, then open the archive." = "Hãy nén thư mục thành tệp lưu trữ trước, rồi mở tệp lưu trữ đó.";
+
+/* Confirm passphrase */
+"Confirm passphrase" = "Xác nhận cụm mật khẩu";
+
+/* Contacting the App Store… */
+"Contacting the App Store…" = "Đang kết nối với App Store…";
+
+/* Continue */
+"Continue" = "Tiếp tục";
+
+/* Copy */
+"Copy" = "Sao chép";
+
+/* Copy Key */
+"Copy Key" = "Sao chép khóa";
+
+/* Copy Path */
+"Copy Path" = "Sao chép đường dẫn";
+
+/* Copy Public Key */
+"Copy Public Key" = "Sao chép khóa công khai";
+
+/* Decrypt */
+"Decrypt" = "Giải mã";
+
+/* Decrypt This File */
+"Decrypt This File" = "Giải mã tệp này";
+
+/* Decrypt with */
+"Decrypt with" = "Giải mã bằng";
+
+/* Decrypted */
+"Decrypted" = "Đã giải mã";
+
+/* Decrypting */
+"Decrypting" = "Đang giải mã";
+
+/* Decryption failed */
+"Decryption failed" = "Giải mã thất bại";
+
+/* Decrypt… */
+"Decrypt…" = "Giải mã…";
+
+/* Delete */
+"Delete" = "Xóa";
+
+/* Delete %@? */
+"Delete %@?" = "Xóa %@?";
+
+/* Delete the .pub file */
+"Delete the .pub file" = "Xóa tệp .pub";
+
+/* Drop a file here to encrypt it */
+"Drop a file here to encrypt it" = "Kéo thả tệp vào đây để mã hóa";
+
+/* Drop a file, not a folder. Compress the folder first, then drop the archive. */
+"Drop a file, not a folder. Compress the folder first, then drop the archive." = "Hãy thả tệp, không phải thư mục. Nén thư mục trước, rồi thả tệp lưu trữ.";
+
+/* Drop an age file here to decrypt it */
+"Drop an age file here to decrypt it" = "Kéo thả tệp age vào đây để giải mã";
+
+/* Encrypt */
+"Encrypt" = "Mã hóa";
+
+/* Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file. */
+"Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file." = "Mã hóa tệp cho khóa công khai của những người được phép mở, hoặc bằng cụm mật khẩu. Kết quả là một tệp age chuẩn.";
+
+/* Encrypt for */
+"Encrypt for" = "Mã hóa cho";
+
+/* Encrypted */
+"Encrypted" = "Đã mã hóa";
+
+/* Encrypted for */
+"Encrypted for" = "Đã mã hóa cho";
+
+/* Encrypting */
+"Encrypting" = "Đang mã hóa";
+
+/* Encryption failed */
+"Encryption failed" = "Mã hóa thất bại";
+
+/* Encrypt… */
+"Encrypt…" = "Mã hóa…";
+
+/* Enter a passphrase. */
+"Enter a passphrase." = "Nhập cụm mật khẩu.";
+
+/* Enter the file's passphrase. */
+"Enter the file's passphrase." = "Nhập cụm mật khẩu của tệp.";
+
+/* Enter the passphrase below */
+"Enter the passphrase below" = "Nhập cụm mật khẩu bên dưới";
+
+/* Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa). */
+"Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa)." = "Cần khóa công khai age (age1…) hoặc khóa công khai SSH (ssh-ed25519 hoặc ssh-rsa).";
+
+/* Expires %@ */
+"Expires %@" = "Kết thúc %@";
+
+/* Files */
+"Files" = "Tệp";
+
+/* Fill both fields with a random passphrase and show it once */
+"Fill both fields with a random passphrase and show it once" = "Điền cụm mật khẩu ngẫu nhiên vào cả hai ô và hiển thị một lần";
+
+/* Filter identities */
+"Filter identities" = "Lọc danh tính";
+
+/* Filter recipients */
+"Filter recipients" = "Lọc người nhận";
+
+/* Find… */
+"Find…" = "Tìm…";
+
+/* Forget Access */
+"Forget Access" = "Quên quyền truy cập";
+
+/* Forget access to the key folders? */
+"Forget access to the key folders?" = "Quên quyền truy cập vào các thư mục khóa?";
+
+/* Forget Folder Access… */
+"Forget Folder Access…" = "Quên quyền truy cập thư mục…";
+
+/* Free · Available today: %lld */
+"Free · Available today: %lld" = "Miễn phí · Hôm nay còn: %lld";
+
+/* Generate */
+"Generate" = "Tạo";
+
+/* Give the recipient a name. */
+"Give the recipient a name." = "Đặt tên cho người nhận.";
+
+/* Hide this card */
+"Hide this card" = "Ẩn thẻ này";
+
+/* Identities */
+"Identities" = "Danh tính";
+
+/* Identity file */
+"Identity file" = "Tệp danh tính";
+
+/* Initials */
+"Initials" = "Chữ cái đầu";
+
+/* Initials color %lld */
+"Initials color %lld" = "Màu chữ cái đầu %lld";
+
+/* Keep Working */
+"Keep Working" = "Tiếp tục làm việc";
+
+/* Key */
+"Key" = "Khóa";
+
+/* Keys */
+"Keys" = "Khóa";
+
+/* Lifetime */
+"Lifetime" = "Trọn đời";
+
+/* Loading App Store products… */
+"Loading App Store products…" = "Đang tải các sản phẩm trên App Store…";
+
+/* Loading keys… */
+"Loading keys…" = "Đang tải khóa…";
+
+/* macOS did not grant lasting access to that folder. Choose it again, or choose another folder. */
+"macOS did not grant lasting access to that folder. Choose it again, or choose another folder." = "macOS không cấp quyền truy cập lâu dài vào thư mục đó. Hãy chọn lại, hoặc chọn thư mục khác.";
+
+/* Manage Subscription */
+"Manage Subscription" = "Quản lý Đăng ký";
+
+/* matches */
+"matches" = "khớp";
+
+/* Matches %@ */
+"Matches %@" = "Khớp với %@";
+
+/* Matching keys first. Protected keys ask for their passphrase. */
+"Matching keys first. Protected keys ask for their passphrase." = "Khóa khớp hiển thị trước. Khóa được bảo vệ sẽ yêu cầu cụm mật khẩu.";
+
+/* Name */
+"Name" = "Tên gọi";
+
+/* New age Key */
+"New age Key" = "Khóa age mới";
+
+/* New age key saved */
+"New age key saved" = "Đã lưu khóa age mới";
+
+/* New age Key… */
+"New age Key…" = "Khóa age mới…";
+
+/* New recipient */
+"New recipient" = "Người nhận mới";
+
+/* No active purchase was found. */
+"No active purchase was found." = "Không tìm thấy hoạt động mua Agemin nào.";
+
+/* No Agemin Pro purchase was found for this Apple Account. */
+"No Agemin Pro purchase was found for this Apple Account." = "Không tìm thấy giao dịch Agemin Pro nào cho Tài khoản Apple này.";
+
+/* No identities yet */
+"No identities yet" = "Chưa có danh tính";
+
+/* No matching key */
+"No matching key" = "Không có khóa khớp";
+
+/* No recipients folder yet */
+"No recipients folder yet" = "Chưa có thư mục người nhận";
+
+/* None */
+"None" = "Không có";
+
+/* None of the identities can decrypt this file. */
+"None of the identities can decrypt this file." = "Không danh tính nào có thể giải mã tệp này.";
+
+/* None of your identities matches this file. Add the key it was encrypted for on the Identities page. */
+"None of your identities matches this file. Add the key it was encrypted for on the Identities page." = "Không danh tính nào của bạn khớp với tệp này. Hãy thêm khóa mà tệp được mã hóa cho trên trang Danh tính.";
+
+/* not a key */
+"not a key" = "không phải khóa";
+
+/* OK */
+"OK" = "OK";
+
+/* Open an age file with one of your keys, or with the passphrase it was encrypted with. */
+"Open an age file with one of your keys, or with the passphrase it was encrypted with." = "Mở tệp age bằng một trong các khóa của bạn, hoặc bằng cụm mật khẩu đã dùng để mã hóa.";
+
+/* Options */
+"Options" = "Tùy chọn";
+
+/* Output */
+"Output" = "Đầu ra";
+
+/* Pages */
+"Pages" = "Trang";
+
+/* Passphrase */
+"Passphrase" = "Cụm mật khẩu";
+
+/* passphrase */
+"passphrase" = "cụm mật khẩu";
+
+/* Passphrase · work factor %lld */
+"Passphrase · work factor %lld" = "Cụm mật khẩu · hệ số công việc %lld";
+
+/* Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends. */
+"Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends." = "Thanh toán được tính vào Tài khoản Apple của bạn. Đăng ký hàng năm tự động gia hạn trừ khi bạn hủy trong cài đặt App Store ít nhất một ngày trước khi kỳ hiện tại kết thúc.";
+
+/* Privacy Policy */
+"Privacy Policy" = "Chính sách quyền riêng tư";
+
+/* Privacy Policy… */
+"Privacy Policy…" = "Chính sách quyền riêng tư…";
+
+/* Pro */
+"Pro" = "Pro";
+
+/* Pro purchases are unavailable right now. Try again later. */
+"Pro purchases are unavailable right now. Try again later." = "Hiện không thể mua Pro. Hãy thử lại sau.";
+
+/* Pro trial · %lld days remaining */
+"Pro trial · %lld days remaining" = "Dùng thử Pro · còn %lld ngày";
+
+/* Pro trial · 1 day remaining */
+"Pro trial · 1 day remaining" = "Dùng thử Pro · còn 1 ngày";
+
+/* Pro trial · ends %@ */
+"Pro trial · ends %@" = "Dùng thử Pro · kết thúc %@";
+
+/* Pro trial · first payment %@ */
+"Pro trial · first payment %@" = "Dùng thử Pro · thanh toán lần đầu %@";
+
+/* Pro trial · until %@ */
+"Pro trial · until %@" = "Dùng thử Pro · đến %@";
+
+/* Public key */
+"Public key" = "Khóa công khai";
+
+/* Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file. */
+"Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file." = "Các khóa công khai bạn mã hóa cho. Mỗi tệp .pub trong thư mục là một người nhận, được đặt tên theo tệp.";
+
+/* Purchase */
+"Purchase" = "Mua";
+
+/* Quit Anyway */
+"Quit Anyway" = "Vẫn thoát";
+
+/* Quitting now cancels it and removes the partial output. */
+"Quitting now cancels it and removes the partial output." = "Thoát ngay bây giờ sẽ hủy thao tác và xóa phần đầu ra chưa hoàn tất.";
+
+/* Read the folder again */
+"Read the folder again" = "Đọc lại thư mục";
+
+/* Recipients */
+"Recipients" = "Người nhận";
+
+/* Refresh Keys */
+"Refresh Keys" = "Làm mới khóa";
+
+/* Remove from the list */
+"Remove from the list" = "Xóa khỏi danh sách";
+
+/* Renews %@ */
+"Renews %@" = "Gia hạn %@";
+
+/* Restore Purchases */
+"Restore Purchases" = "Khôi phục các giao dịch mua hàng";
+
+/* Restoring… */
+"Restoring…" = "Đang khôi phục…";
+
+/* Reveal */
+"Reveal" = "Hiển thị";
+
+/* Reveal in Finder */
+"Reveal in Finder" = "Hiển thị trong Finder";
+
+/* Save */
+"Save" = "Lưu";
+
+/* Save Key */
+"Save Key" = "Lưu khóa";
+
+/* Save Recipient */
+"Save Recipient" = "Lưu người nhận";
+
+/* Save the new identity file somewhere private because it holds the secret key */
+"Save the new identity file somewhere private because it holds the secret key" = "Lưu tệp danh tính mới ở nơi riêng tư; tệp này chứa khóa bí mật";
+
+/* Saved as */
+"Saved as" = "Đã lưu thành";
+
+/* Saved as <name>.pub in the recipients folder. */
+"Saved as <name>.pub in the recipients folder." = "Đã lưu thành <name>.pub trong thư mục người nhận.";
+
+/* Select at least one recipient. */
+"Select at least one recipient." = "Chọn ít nhất một người nhận.";
+
+/* SHA-256 */
+"SHA-256" = "SHA-256";
+
+/* Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it. */
+"Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it." = "Chia sẻ khóa công khai với những người cần mã hóa cho bạn. Giữ kín tệp danh tính; chỉ tài khoản của bạn đọc được tệp này.";
+
+/* Shared with your family */
+"Shared with your family" = "Chia sẻ với gia đình";
+
+/* Size */
+"Size" = "Kích thước";
+
+/* SSH key (Ed25519) */
+"SSH key (Ed25519)" = "Khóa SSH (Ed25519)";
+
+/* SSH key (RSA) */
+"SSH key (RSA)" = "Khóa SSH (RSA)";
+
+/* Terms of Use (EULA) */
+"Terms of Use (EULA)" = "Điều khoản sử dụng (EULA)";
+
+/* That file is not an image Agemin can read. */
+"That file is not an image Agemin can read." = "Tệp đó không phải là hình ảnh mà Agemin có thể đọc.";
+
+/* The App Store could not verify this purchase. */
+"The App Store could not verify this purchase." = "App Store không thể xác minh giao dịch mua này.";
+
+/* The armor header is missing. */
+"The armor header is missing." = "Thiếu phần đầu armor.";
+
+/* The armored file could not be read. %@ */
+"The armored file could not be read. %@" = "Không thể đọc tệp armor. %@";
+
+/* The armored file ends before its footer. */
+"The armored file ends before its footer." = "Tệp armor kết thúc trước phần cuối.";
+
+/* The armored text is incomplete. */
+"The armored text is incomplete." = "Văn bản armor không đầy đủ.";
+
+/* The armored text is not valid base64. */
+"The armored text is not valid base64." = "Văn bản armor không phải là base64 hợp lệ.";
+
+/* The decrypted file cannot replace the encrypted file. Choose a different name. */
+"The decrypted file cannot replace the encrypted file. Choose a different name." = "Tệp đã giải mã không thể thay thế tệp đã mã hóa. Hãy chọn tên khác.";
+
+/* The decrypted file does not hold an age secret key. */
+"The decrypted file does not hold an age secret key." = "Tệp đã giải mã không chứa khóa bí mật age.";
+
+/* The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one. */
+"The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one." = "Chỉ tài khoản người dùng của bạn đọc được tệp đã giải mã. Hãy so sánh tổng kiểm với tổng kiểm của người gửi nếu họ cung cấp.";
+
+/* The encrypted data is corrupt or was modified. */
+"The encrypted data is corrupt or was modified." = "Dữ liệu đã mã hóa bị hỏng hoặc đã bị sửa đổi.";
+
+/* The encrypted file cannot replace the original. Choose a different name. */
+"The encrypted file cannot replace the original. Choose a different name." = "Tệp đã mã hóa không thể thay thế tệp gốc. Hãy chọn tên khác.";
+
+/* The file could not be read. */
+"The file could not be read." = "Không thể đọc tệp.";
+
+/* The file ends early. It may be incomplete. */
+"The file ends early. It may be incomplete." = "Tệp kết thúc sớm. Tệp có thể không đầy đủ.";
+
+/* The file header was modified or the key is wrong. */
+"The file header was modified or the key is wrong." = "Phần đầu tệp đã bị sửa đổi hoặc khóa không đúng.";
+
+/* The file holds no age secret key. */
+"The file holds no age secret key." = "Tệp không chứa khóa bí mật age.";
+
+/* The file is being read. */
+"The file is being read." = "Tệp đang được đọc.";
+
+/* The file is not text. */
+"The file is not text." = "Tệp không phải là văn bản.";
+
+/* The file is too large to be a key. */
+"The file is too large to be a key." = "Tệp quá lớn để là một khóa.";
+
+/* The first line is not the age version marker. */
+"The first line is not the age version marker." = "Dòng đầu tiên không phải là dấu phiên bản age.";
+
+/* The header authentication line is malformed. */
+"The header authentication line is malformed." = "Dòng xác thực phần đầu bị sai định dạng.";
+
+/* The header is not valid text. */
+"The header is not valid text." = "Phần đầu không phải là văn bản hợp lệ.";
+
+/* The header is too large to be an age file. */
+"The header is too large to be an age file." = "Phần đầu quá lớn để là tệp age.";
+
+/* The header lists too many recipients. */
+"The header lists too many recipients." = "Phần đầu liệt kê quá nhiều người nhận.";
+
+/* The identity could not be read. %@ */
+"The identity could not be read. %@" = "Không thể đọc danh tính. %@";
+
+/* The identity file could not be saved. */
+"The identity file could not be saved." = "Không thể lưu tệp danh tính.";
+
+/* The image could not be used */
+"The image could not be used" = "Không thể sử dụng hình ảnh";
+
+/* The image is larger than %lld pixels on a side. Choose a smaller one. */
+"The image is larger than %lld pixels on a side. Choose a smaller one." = "Hình ảnh có một cạnh lớn hơn %lld pixel. Hãy chọn hình ảnh nhỏ hơn.";
+
+/* The input is larger than expected. */
+"The input is larger than expected." = "Dữ liệu đầu vào lớn hơn dự kiến.";
+
+/* The key file ends early. */
+"The key file ends early." = "Tệp khóa kết thúc sớm.";
+
+/* The key file is malformed. */
+"The key file is malformed." = "Tệp khóa bị sai định dạng.";
+
+/* The key file's passphrase settings are invalid. */
+"The key file's passphrase settings are invalid." = "Cài đặt cụm mật khẩu của tệp khóa không hợp lệ.";
+
+/* The key is empty. */
+"The key is empty." = "Khóa trống.";
+
+/* The key is protected with the %@ cipher, which is not supported. */
+"The key is protected with the %@ cipher, which is not supported." = "Khóa được bảo vệ bằng thuật toán mã hóa %@, vốn không được hỗ trợ.";
+
+/* The key is saved as <name>.pub in the recipients folder. */
+"The key is saved as <name>.pub in the recipients folder." = "Khóa được lưu thành <name>.pub trong thư mục người nhận.";
+
+/* The key uses %lld key derivation rounds. Agemin supports up to %lld. */
+"The key uses %lld key derivation rounds. Agemin supports up to %lld." = "Khóa sử dụng %lld vòng dẫn xuất khóa; Agemin hỗ trợ tối đa %lld.";
+
+/* The key uses the %@ key derivation, which is not supported. */
+"The key uses the %@ key derivation, which is not supported." = "Khóa sử dụng phương pháp dẫn xuất khóa %@, vốn không được hỗ trợ.";
+
+/* The operation was canceled. */
+"The operation was canceled." = "Thao tác đã bị hủy.";
+
+/* The passphrase entry is malformed. */
+"The passphrase entry is malformed." = "Mục cụm mật khẩu bị sai định dạng.";
+
+/* The passphrase for %@ is incorrect. Try again. */
+"The passphrase for %@ is incorrect. Try again." = "Cụm mật khẩu cho %@ không đúng. Hãy thử lại.";
+
+/* The passphrase is incorrect. */
+"The passphrase is incorrect." = "Cụm mật khẩu không đúng.";
+
+/* The passphrase work factor %lld is too high to try safely. */
+"The passphrase work factor %lld is too high to try safely." = "Hệ số công việc %lld của cụm mật khẩu quá cao để thử một cách an toàn.";
+
+/* The passphrase work factor is malformed. */
+"The passphrase work factor is malformed." = "Hệ số công việc của cụm mật khẩu bị sai định dạng.";
+
+/* The passphrases do not match. */
+"The passphrases do not match." = "Các cụm mật khẩu không khớp.";
+
+/* The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them. */
+"The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them." = "Các khóa riêng tư dùng để mở tệp được mã hóa cho bạn: khóa SSH từ ~/.ssh và tệp danh tính age. Agemin chỉ đọc và không bao giờ thay đổi chúng.";
+
+/* The purchase is awaiting approval. */
+"The purchase is awaiting approval." = "Việc mua bán đang chờ phê duyệt.";
+
+/* The recipient could not be deleted. */
+"The recipient could not be deleted." = "Không thể xóa người nhận.";
+
+/* The recipient could not be saved. */
+"The recipient could not be saved." = "Không thể lưu người nhận.";
+
+/* The recipient key could not be read. %@ */
+"The recipient key could not be read. %@" = "Không thể đọc khóa người nhận. %@";
+
+/* The recipients folder */
+"The recipients folder" = "Thư mục người nhận";
+
+/* The recipients folder holds no .pub files yet. */
+"The recipients folder holds no .pub files yet." = "Thư mục người nhận chưa có tệp .pub nào.";
+
+/* The RSA key is malformed. */
+"The RSA key is malformed." = "Khóa RSA bị sai định dạng.";
+
+/* The RSA key is too small or malformed. */
+"The RSA key is too small or malformed." = "Khóa RSA quá nhỏ hoặc bị sai định dạng.";
+
+/* The SSH key is not a valid Ed25519 key. */
+"The SSH key is not a valid Ed25519 key." = "Khóa SSH không phải là khóa Ed25519 hợp lệ.";
+
+/* The SSH key is not a valid RSA key. */
+"The SSH key is not a valid RSA key." = "Khóa SSH không phải là khóa RSA hợp lệ.";
+
+/* The SSH public key is malformed. */
+"The SSH public key is malformed." = "Khóa công khai SSH bị sai định dạng.";
+
+/* There is text after the armor footer. */
+"There is text after the armor footer." = "Có văn bản sau phần cuối armor.";
+
+/* This deletes the file from the recipients folder. Files already encrypted for this key are not affected. */
+"This deletes the file from the recipients folder. Files already encrypted for this key are not affected." = "Tệp sẽ bị xóa khỏi thư mục người nhận. Các tệp đã mã hóa cho khóa này không bị ảnh hưởng.";
+
+/* This file cannot be read as an age file */
+"This file cannot be read as an age file" = "Không thể đọc tệp này dưới dạng tệp age";
+
+/* This file is not a key. */
+"This file is not a key." = "Tệp này không phải là khóa.";
+
+/* This file needs a passphrase. */
+"This file needs a passphrase." = "Tệp này cần cụm mật khẩu.";
+
+/* This is a secret key. Use the matching public key, which starts with age1. */
+"This is a secret key. Use the matching public key, which starts with age1." = "Đây là khóa bí mật. Hãy dùng khóa công khai tương ứng, bắt đầu bằng age1.";
+
+/* This is not a valid age public key. */
+"This is not a valid age public key." = "Đây không phải là khóa công khai age hợp lệ.";
+
+/* This is not a valid age secret key. */
+"This is not a valid age secret key." = "Đây không phải là khóa bí mật age hợp lệ.";
+
+/* This is not an age file. %@ */
+"This is not an age file. %@" = "Đây không phải là tệp age. %@";
+
+/* This key format is not supported. Use an OpenSSH private key or an age identity file. */
+"This key format is not supported. Use an OpenSSH private key or an age identity file." = "Định dạng khóa này không được hỗ trợ. Hãy dùng khóa riêng tư OpenSSH hoặc tệp danh tính age.";
+
+/* This key produces a weak shared secret and cannot be used. */
+"This key produces a weak shared secret and cannot be used." = "Khóa này tạo ra bí mật chia sẻ yếu và không thể sử dụng.";
+
+/* This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy. */
+"This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy." = "Khóa được bảo vệ bằng cụm mật khẩu này dùng định dạng PEM cũ. Hãy chuyển đổi bằng ssh-keygen -p -o, hoặc dùng bản sao không được bảo vệ.";
+
+/* Trial ended */
+"Trial ended" = "Đã hết thời gian dùng thử";
+
+/* Try Again */
+"Try Again" = "Thử lại";
+
+/* Try every usable key */
+"Try every usable key" = "Thử mọi khóa dùng được";
+
+/* Unknown recipient type “%@” */
+"Unknown recipient type “%@”" = "Loại người nhận không xác định “%@”";
+
+/* Unlock */
+"Unlock" = "Mở khóa";
+
+/* Unlock %@ */
+"Unlock %@" = "Mở khóa %@";
+
+/* Unlock %@ with Agemin Pro. */
+"Unlock %@ with Agemin Pro." = "Mở khóa %@ với Agemin Pro.";
+
+/* Until %@ */
+"Until %@" = "Đến %@";
+
+/* Use Image */
+"Use Image" = "Dùng hình ảnh";
+
+/* Use Initials */
+"Use Initials" = "Dùng chữ cái đầu";
+
+/* Valid %@ key */
+"Valid %@ key" = "Khóa %@ hợp lệ";
+
+/* Wait for the current operation to finish. */
+"Wait for the current operation to finish." = "Hãy đợi thao tác hiện tại hoàn tất.";
+
+/* Write it down or store it in a password manager. Agemin does not keep it. */
+"Write it down or store it in a password manager. Agemin does not keep it." = "Hãy ghi lại hoặc lưu vào trình quản lý mật khẩu. Agemin không lưu cụm mật khẩu này.";
+
+/* Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both. */
+"Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both." = "Ghi tệp đã mã hóa dưới dạng văn bản thay vì nhị phân, dành cho email, chat và tệp cấu hình. age đọc được cả hai.";
+
+/* you */
+"you" = "bạn";
+
+/* You can still encrypt or decrypt one file per day. Available today: %lld. */
+"You can still encrypt or decrypt one file per day. Available today: %lld." = "Bạn vẫn có thể mã hóa hoặc giải mã một tệp mỗi ngày. Hôm nay còn: %lld.";
+
+/* You have Agemin Pro. */
+"You have Agemin Pro." = "Bạn có Agemin Pro.";
+
+/* Your Pro trial is active. */
+"Your Pro trial is active." = "Thời gian dùng thử Pro của bạn đang hoạt động.";
+
+/* · you choose the folder when you encrypt */
+"· you choose the folder when you encrypt" = "· bạn chọn thư mục khi mã hóa";
