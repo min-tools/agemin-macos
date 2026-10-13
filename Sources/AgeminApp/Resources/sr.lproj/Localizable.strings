@@ -1,0 +1,904 @@
+/* Agemin — sr localization. Each comment shows the English source text. */
+
+/*  and armor */
+" and armor" = " и ASCII armor";
+
+/* %@ %@ of %@ */
+"%@ %@ of %@" = "%@ %@ од %@";
+
+/* %@ could not be read. */
+"%@ could not be read." = "Није могуће прочитати %@.";
+
+/* %@ could not be written. */
+"%@ could not be written." = "Није могуће записати %@.";
+
+/* %@ is protected with a passphrase. */
+"%@ is protected with a passphrase." = "%@ је заштићен лозинком.";
+
+/* %@ keys are not supported by age. */
+"%@ keys are not supported by age." = "age не подржава %@ кључеве.";
+
+/* %@ per year */
+"%@ per year" = "%@ годишње";
+
+/* %@ · %@ more than the original for the header%@ */
+"%@ · %@ more than the original for the header%@" = "%@ · %@ више од оригинала за заглавље%@";
+
+/* %@.pub already exists in the recipients folder. */
+"%@.pub already exists in the recipients folder." = "%@.pub већ постоји у фасцикли прималаца.";
+
+/* %lld identities */
+"%lld identities" = "Идентитета: %lld";
+
+/* %lld identities · %lld usable */
+"%lld identities · %lld usable" = "Идентитета: %lld · употребљивих: %lld";
+
+/* %lld keys */
+"%lld keys" = "Кључева: %lld";
+
+/* %lld keys tried */
+"%lld keys tried" = "Испробаних кључева: %lld";
+
+/* %lld of %lld recipients selected */
+"%lld of %lld recipients selected" = "Изабраних прималаца: %lld од %lld";
+
+/* %lld recipients */
+"%lld recipients" = "Прималаца: %lld";
+
+/* %lld recipients · %lld usable */
+"%lld recipients · %lld usable" = "Прималаца: %lld · употребљивих: %lld";
+
+/* 1 identity */
+"1 identity" = "1 идентитет";
+
+/* 1 recipient */
+"1 recipient" = "1 прималац";
+
+/* 30 days of full access */
+"30 days of full access" = "30 дана пуног приступа";
+
+/* A file is still being processed. */
+"A file is still being processed." = "Датотека се још обрађује.";
+
+/* A header line is neither a recipient nor the closing marker. */
+"A header line is neither a recipient nor the closing marker." = "Ред заглавља није ни прималац ни завршна ознака.";
+
+/* A header line is too long. */
+"A header line is too long." = "Ред заглавља је предугачак.";
+
+/* A passphrase cannot be combined with other recipients. */
+"A passphrase cannot be combined with other recipients." = "Лозинка се не може комбиновати са другим примаоцима.";
+
+/* A passphrase entry must be the only recipient. */
+"A passphrase entry must be the only recipient." = "Унос лозинке мора бити једини прималац.";
+
+/* A recipient body is not valid base64. */
+"A recipient body is not valid base64." = "Тело примаоца није исправан base64.";
+
+/* A recipient body line is malformed. */
+"A recipient body line is malformed." = "Ред тела примаоца је неисправно обликован.";
+
+/* A recipient line is malformed. */
+"A recipient line is malformed." = "Ред примаоца је неисправно обликован.";
+
+/* About Agemin */
+"About Agemin" = "О апликацији Agemin";
+
+/* Action */
+"Action" = "Радња";
+
+/* Add */
+"Add" = "Додајте";
+
+/* Add a public key on the Recipients page */
+"Add a public key on the Recipients page" = "Додајте јавни кључ на страници Примаоци";
+
+/* Add an identity that can decrypt this file. */
+"Add an identity that can decrypt this file." = "Додајте идентитет који може да дешифрује ову датотеку.";
+
+/* Add Key File */
+"Add Key File" = "Додајте датотеку кључа";
+
+/* Add Key File… */
+"Add Key File…" = "Додајте датотеку кључа…";
+
+/* Add Recipient */
+"Add Recipient" = "Додајте примаоца";
+
+/* Add Recipient… */
+"Add Recipient…" = "Додајте примаоца…";
+
+/* Add to Recipients */
+"Add to Recipients" = "Додајте у примаоце";
+
+/* added */
+"added" = "додато";
+
+/* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
+"After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "Након пробног периода и даље можете да шифрујете или дешифрујете једну датотеку дневно. Читање кључева, преглед датотека и креирање кључева остају неограничени.";
+
+/* age encryption, without the terminal. */
+"age encryption, without the terminal." = "age шифровање, без терминала.";
+
+/* age key */
+"age key" = "age кључ";
+
+/* age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA… */
+"age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA…" = "age1… или ssh-ed25519 AAAA… или ssh-rsa AAAA…";
+
+/* Agemin could not use that folder */
+"Agemin could not use that folder" = "Agemin не може да користи ту фасциклу";
+
+/* Agemin encrypts files, not folders. */
+"Agemin encrypts files, not folders." = "Agemin шифрује датотеке, а не фасцикле.";
+
+/* Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged. */
+"Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged." = "Agemin је потпуно откључан првих 30 дана. Претплата не почиње и ништа вам се не наплаћује.";
+
+/* Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice. */
+"Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice." = "Agemin тамо приказује .pub датотеке и омогућава додавање нових. Одговара било која фасцикла; ~/.age је уобичајен избор.";
+
+/* Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually. */
+"Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually." = "Agemin приказује приватне кључеве које тамо пронађе, обично у ~/.ssh, и њима дешифрује. Кључеви који се чувају на другом месту могу се додати један по један.";
+
+/* Agemin Pro */
+"Agemin Pro" = "Agemin Pro";
+
+/* Agemin Pro Lifetime · %@ */
+"Agemin Pro Lifetime · %@" = "Agemin Pro Доживотно · %@";
+
+/* Agemin Pro Yearly */
+"Agemin Pro Yearly" = "Agemin Pro Годишње";
+
+/* Agemin Pro… */
+"Agemin Pro…" = "Agemin Pro…";
+
+/* Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them. */
+"Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them." = "Agemin уклања сачуване дозволе за фасциклу прималаца, фасциклу идентитета и све засебно додате датотеке кључева. Ништа се не брише. Изаберите их поново да бисте наставили да их користите.";
+
+/* Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed. */
+"Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed." = "Agemin чува аватар под отиском овог кључа. Ништа у вашим фасциклама кључева се не мења.";
+
+/* alice */
+"alice" = "alice";
+
+/* All */
+"All" = "Све";
+
+/* An age public key has 32 bytes. */
+"An age public key has 32 bytes." = "age јавни кључ има 32 бајта.";
+
+/* An age secret key has 32 bytes. */
+"An age secret key has 32 bytes." = "age тајни кључ има 32 бајта.";
+
+/* An ssh-ed25519 recipient entry is malformed. */
+"An ssh-ed25519 recipient entry is malformed." = "Унос ssh-ed25519 примаоца је неисправно обликован.";
+
+/* An ssh-rsa recipient entry is malformed. */
+"An ssh-rsa recipient entry is malformed." = "Унос ssh-rsa примаоца је неисправно обликован.";
+
+/* An X25519 recipient entry has the wrong size. */
+"An X25519 recipient entry has the wrong size." = "Унос X25519 примаоца има погрешну величину.";
+
+/* An X25519 recipient entry is malformed. */
+"An X25519 recipient entry is malformed." = "Унос X25519 примаоца је неисправно обликован.";
+
+/* Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one. */
+"Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one." = "Свако ко зна лозинку може да отвори датотеку. age је провлачи кроз scrypt, па је дуга лозинка важнија од сложене.";
+
+/* ASCII armor */
+"ASCII armor" = "ASCII armor";
+
+/* Avatar for %@ */
+"Avatar for %@" = "Аватар за %@";
+
+/* Cancel */
+"Cancel" = "Откажите";
+
+/* Change */
+"Change" = "Промените";
+
+/* Choose */
+"Choose" = "Изаберите";
+
+/* Choose a file to encrypt. */
+"Choose a file to encrypt." = "Изаберите датотеку за шифровање.";
+
+/* Choose a yearly subscription or lifetime purchase at any time to remove the daily limit. */
+"Choose a yearly subscription or lifetime purchase at any time to remove the daily limit." = "У било ком тренутку изаберите годишњу претплату или доживотну куповину да бисте уклонили дневно ограничење.";
+
+/* Choose an age identity file or an SSH private key */
+"Choose an age identity file or an SSH private key" = "Изаберите age датотеку идентитета или SSH приватни кључ";
+
+/* Choose an encrypted file. */
+"Choose an encrypted file." = "Изаберите шифровану датотеку.";
+
+/* Choose an image for this key's avatar */
+"Choose an image for this key's avatar" = "Изаберите слику за аватар овог кључа";
+
+/* Choose File */
+"Choose File" = "Изаберите датотеку";
+
+/* Choose File to Decrypt… */
+"Choose File to Decrypt…" = "Изаберите датотеку за дешифровање…";
+
+/* Choose File to Encrypt… */
+"Choose File to Encrypt…" = "Изаберите датотеку за шифровање…";
+
+/* Choose Folder */
+"Choose Folder" = "Изаберите фасциклу";
+
+/* Choose Identities Folder… */
+"Choose Identities Folder…" = "Изаберите фасциклу идентитета…";
+
+/* Choose Image */
+"Choose Image" = "Изаберите слику";
+
+/* Choose Recipients Folder… */
+"Choose Recipients Folder…" = "Изаберите фасциклу прималаца…";
+
+/* Choose the encrypted file, usually ending in .age */
+"Choose the encrypted file, usually ending in .age" = "Изаберите шифровану датотеку, обично са наставком .age";
+
+/* Choose the file to encrypt */
+"Choose the file to encrypt" = "Изаберите датотеку за шифровање";
+
+/* Choose the folder with the .pub files of the people you encrypt for, usually ~/.age. */
+"Choose the folder with the .pub files of the people you encrypt for, usually ~/.age." = "Изаберите фасциклу са .pub датотекама особа за које шифрујете, обично ~/.age.";
+
+/* Choose the folder with the .pub files you encrypt for, usually ~/.age */
+"Choose the folder with the .pub files you encrypt for, usually ~/.age" = "Изаберите фасциклу са .pub датотекама за које шифрујете, обично ~/.age";
+
+/* Choose the folder with your private keys, usually ~/.ssh */
+"Choose the folder with your private keys, usually ~/.ssh" = "Изаберите фасциклу са својим приватним кључевима, обично ~/.ssh";
+
+/* Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page. */
+"Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page." = "Изаберите фасциклу са својим SSH кључевима, обично ~/.ssh, или додајте age датотеку идентитета на страници Идентитети.";
+
+/* Choose where to save the decrypted file */
+"Choose where to save the decrypted file" = "Изаберите где да сачувате дешифровану датотеку";
+
+/* Choose where to save the encrypted file */
+"Choose where to save the encrypted file" = "Изаберите где да сачувате шифровану датотеку";
+
+/* Choose your recipients folder */
+"Choose your recipients folder" = "Изаберите фасциклу прималаца";
+
+/* Choose your SSH folder */
+"Choose your SSH folder" = "Изаберите своју SSH фасциклу";
+
+/* Clear search */
+"Clear search" = "Обриши претрагу";
+
+/* Clear the file */
+"Clear the file" = "Уклоните датотеку";
+
+/* Click an avatar to change it, or drop an image onto it. */
+"Click an avatar to change it, or drop an image onto it." = "Кликните на аватар да бисте га променили или превуците слику на њега.";
+
+/* Click to change the avatar, or drop an image on it */
+"Click to change the avatar, or drop an image on it" = "Кликните да бисте променили аватар или превуците слику на њега";
+
+/* Compress the folder into an archive first, then open the archive. */
+"Compress the folder into an archive first, then open the archive." = "Прво компримујте фасциклу у архиву, а затим отворите архиву.";
+
+/* Confirm passphrase */
+"Confirm passphrase" = "Потврдите лозинку";
+
+/* Contacting the App Store… */
+"Contacting the App Store…" = "Повезивање са App Store-ом…";
+
+/* Continue */
+"Continue" = "Наставите";
+
+/* Copy */
+"Copy" = "Копирајте";
+
+/* Copy Key */
+"Copy Key" = "Копирајте кључ";
+
+/* Copy Path */
+"Copy Path" = "Копирајте путању";
+
+/* Copy Public Key */
+"Copy Public Key" = "Копирајте јавни кључ";
+
+/* Decrypt */
+"Decrypt" = "Дешифрујте";
+
+/* Decrypt This File */
+"Decrypt This File" = "Дешифрујте ову датотеку";
+
+/* Decrypt with */
+"Decrypt with" = "Дешифрујте помоћу";
+
+/* Decrypted */
+"Decrypted" = "Дешифровано";
+
+/* Decrypting */
+"Decrypting" = "Дешифровање";
+
+/* Decryption failed */
+"Decryption failed" = "Дешифровање није успело";
+
+/* Decrypt… */
+"Decrypt…" = "Дешифрујте…";
+
+/* Delete */
+"Delete" = "Избришите";
+
+/* Delete %@? */
+"Delete %@?" = "Избрисати %@?";
+
+/* Delete the .pub file */
+"Delete the .pub file" = "Избришите .pub датотеку";
+
+/* Drop a file here to encrypt it */
+"Drop a file here to encrypt it" = "Превуците датотеку овде да бисте је шифровали";
+
+/* Drop a file, not a folder. Compress the folder first, then drop the archive. */
+"Drop a file, not a folder. Compress the folder first, then drop the archive." = "Превуците датотеку, а не фасциклу. Прво компримујте фасциклу, а затим превуците архиву.";
+
+/* Drop an age file here to decrypt it */
+"Drop an age file here to decrypt it" = "Превуците age датотеку овде да бисте је дешифровали";
+
+/* Encrypt */
+"Encrypt" = "Шифрујте";
+
+/* Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file. */
+"Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file." = "Шифрујте датотеку за јавне кључеве особа које треба да је отворе или лозинком. Резултат је стандардна age датотека.";
+
+/* Encrypt for */
+"Encrypt for" = "Шифрујте за";
+
+/* Encrypted */
+"Encrypted" = "Шифровано";
+
+/* Encrypted for */
+"Encrypted for" = "Шифровано за";
+
+/* Encrypting */
+"Encrypting" = "Шифровање";
+
+/* Encryption failed */
+"Encryption failed" = "Шифровање није успело";
+
+/* Encrypt… */
+"Encrypt…" = "Шифрујте…";
+
+/* Enter a passphrase. */
+"Enter a passphrase." = "Унесите лозинку.";
+
+/* Enter the file's passphrase. */
+"Enter the file's passphrase." = "Унесите лозинку датотеке.";
+
+/* Enter the passphrase below */
+"Enter the passphrase below" = "Унесите лозинку испод";
+
+/* Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa). */
+"Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa)." = "Очекиван је age јавни кључ (age1…) или SSH јавни кључ (ssh-ed25519 или ssh-rsa).";
+
+/* Expires %@ */
+"Expires %@" = "Истиче %@";
+
+/* Files */
+"Files" = "Датотеке";
+
+/* Fill both fields with a random passphrase and show it once */
+"Fill both fields with a random passphrase and show it once" = "Попуните оба поља насумичном лозинком и прикажите је једном";
+
+/* Filter identities */
+"Filter identities" = "Филтрирајте идентитете";
+
+/* Filter recipients */
+"Filter recipients" = "Филтрирајте примаоце";
+
+/* Find… */
+"Find…" = "Пронађите…";
+
+/* Forget Access */
+"Forget Access" = "Заборавите приступ";
+
+/* Forget access to the key folders? */
+"Forget access to the key folders?" = "Заборавити приступ фасциклама кључева?";
+
+/* Forget Folder Access… */
+"Forget Folder Access…" = "Заборавите приступ фасциклама…";
+
+/* Free · Available today: %lld */
+"Free · Available today: %lld" = "Бесплатно · Данас доступно: %lld";
+
+/* Generate */
+"Generate" = "Генеришите";
+
+/* Give the recipient a name. */
+"Give the recipient a name." = "Дајте примаоцу име.";
+
+/* Hide this card */
+"Hide this card" = "Сакријте ову картицу";
+
+/* Identities */
+"Identities" = "Идентитети";
+
+/* Identity file */
+"Identity file" = "Датотека идентитета";
+
+/* Initials */
+"Initials" = "Иницијали";
+
+/* Initials color %lld */
+"Initials color %lld" = "Боја иницијала %lld";
+
+/* Keep Working */
+"Keep Working" = "Наставите рад";
+
+/* Key */
+"Key" = "Кључ";
+
+/* Keys */
+"Keys" = "Кључеви";
+
+/* Lifetime */
+"Lifetime" = "Доживотно";
+
+/* Loading App Store products… */
+"Loading App Store products…" = "Учитавање производа из App Store-а…";
+
+/* Loading keys… */
+"Loading keys…" = "Учитавање кључева…";
+
+/* macOS did not grant lasting access to that folder. Choose it again, or choose another folder. */
+"macOS did not grant lasting access to that folder. Choose it again, or choose another folder." = "macOS није одобрио трајни приступ тој фасцикли. Изаберите је поново или изаберите другу фасциклу.";
+
+/* Manage Subscription */
+"Manage Subscription" = "Управљање претплатом";
+
+/* matches */
+"matches" = "одговара";
+
+/* Matches %@ */
+"Matches %@" = "Одговара %@";
+
+/* Matching keys first. Protected keys ask for their passphrase. */
+"Matching keys first. Protected keys ask for their passphrase." = "Прво одговарајући кључеви. Заштићени кључеви траже своју лозинку.";
+
+/* Name */
+"Name" = "Име";
+
+/* New age Key */
+"New age Key" = "Нови age кључ";
+
+/* New age key saved */
+"New age key saved" = "Нови age кључ је сачуван";
+
+/* New age Key… */
+"New age Key…" = "Нови age кључ…";
+
+/* New recipient */
+"New recipient" = "Нови прималац";
+
+/* No active purchase was found. */
+"No active purchase was found." = "Није пронађена активна куповина.";
+
+/* No Agemin Pro purchase was found for this Apple Account. */
+"No Agemin Pro purchase was found for this Apple Account." = "За овај Apple налог није пронађена куповина Agemin Pro-а.";
+
+/* No identities yet */
+"No identities yet" = "Још нема идентитета";
+
+/* No matching key */
+"No matching key" = "Нема одговарајућег кључа";
+
+/* No recipients folder yet */
+"No recipients folder yet" = "Још нема фасцикле прималаца";
+
+/* None */
+"None" = "Ниједан";
+
+/* None of the identities can decrypt this file. */
+"None of the identities can decrypt this file." = "Ниједан идентитет не може да дешифрује ову датотеку.";
+
+/* None of your identities matches this file. Add the key it was encrypted for on the Identities page. */
+"None of your identities matches this file. Add the key it was encrypted for on the Identities page." = "Ниједан од ваших идентитета не одговара овој датотеци. Додајте кључ за који је шифрована на страници Идентитети.";
+
+/* not a key */
+"not a key" = "није кључ";
+
+/* OK */
+"OK" = "OK";
+
+/* Open an age file with one of your keys, or with the passphrase it was encrypted with. */
+"Open an age file with one of your keys, or with the passphrase it was encrypted with." = "Отворите age датотеку једним од својих кључева или лозинком којом је шифрована.";
+
+/* Options */
+"Options" = "Опције";
+
+/* Output */
+"Output" = "Излаз";
+
+/* Pages */
+"Pages" = "Странице";
+
+/* Passphrase */
+"Passphrase" = "Лозинка";
+
+/* passphrase */
+"passphrase" = "лозинка";
+
+/* Passphrase · work factor %lld */
+"Passphrase · work factor %lld" = "Лозинка · фактор рада %lld";
+
+/* Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends. */
+"Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends." = "Плаћање се наплаћује преко вашег Apple налога. Годишња претплата се аутоматски обнавља ако је не откажете у подешавањима App Store-а најмање један дан пре краја текућег периода.";
+
+/* Privacy Policy */
+"Privacy Policy" = "Политика приватности";
+
+/* Privacy Policy… */
+"Privacy Policy…" = "Политика приватности…";
+
+/* Pro */
+"Pro" = "Pro";
+
+/* Pro purchases are unavailable right now. Try again later. */
+"Pro purchases are unavailable right now. Try again later." = "Куповине Pro верзије тренутно нису доступне. Покушајте поново касније.";
+
+/* Pro trial · %lld days remaining */
+"Pro trial · %lld days remaining" = "Пробни период за Pro · преостало дана: %lld";
+
+/* Pro trial · 1 day remaining */
+"Pro trial · 1 day remaining" = "Пробни период за Pro · преостао још 1 дан";
+
+/* Pro trial · ends %@ */
+"Pro trial · ends %@" = "Пробни период за Pro · завршава се %@";
+
+/* Pro trial · first payment %@ */
+"Pro trial · first payment %@" = "Пробни период за Pro · прва уплата %@";
+
+/* Pro trial · until %@ */
+"Pro trial · until %@" = "Пробни период за Pro · до %@";
+
+/* Public key */
+"Public key" = "Јавни кључ";
+
+/* Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file. */
+"Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file." = "Јавни кључеви за које шифрујете. Свака .pub датотека у фасцикли је један прималац, назван по датотеци.";
+
+/* Purchase */
+"Purchase" = "Куповина";
+
+/* Quit Anyway */
+"Quit Anyway" = "Ипак изађите";
+
+/* Quitting now cancels it and removes the partial output. */
+"Quitting now cancels it and removes the partial output." = "Ако сада изађете, поступак се отказује и делимични излаз се уклања.";
+
+/* Read the folder again */
+"Read the folder again" = "Поново прочитајте фасциклу";
+
+/* Recipients */
+"Recipients" = "Примаоци";
+
+/* Refresh Keys */
+"Refresh Keys" = "Освежите кључеве";
+
+/* Remove from the list */
+"Remove from the list" = "Уклоните са списка";
+
+/* Renews %@ */
+"Renews %@" = "Обнавља се %@";
+
+/* Restore Purchases */
+"Restore Purchases" = "Враћање куповине";
+
+/* Restoring… */
+"Restoring…" = "Обнављање…";
+
+/* Reveal */
+"Reveal" = "Прикажите";
+
+/* Reveal in Finder */
+"Reveal in Finder" = "Прикажите у Finder-у";
+
+/* Save */
+"Save" = "Сачувајте";
+
+/* Save Key */
+"Save Key" = "Сачувајте кључ";
+
+/* Save Recipient */
+"Save Recipient" = "Сачувајте примаоца";
+
+/* Save the new identity file somewhere private because it holds the secret key */
+"Save the new identity file somewhere private because it holds the secret key" = "Сачувајте нову датотеку идентитета на приватном месту; она садржи тајни кључ";
+
+/* Saved as */
+"Saved as" = "Сачувано као";
+
+/* Saved as <name>.pub in the recipients folder. */
+"Saved as <name>.pub in the recipients folder." = "Сачувано као <име>.pub у фасцикли прималаца.";
+
+/* Select at least one recipient. */
+"Select at least one recipient." = "Изаберите бар једног примаоца.";
+
+/* SHA-256 */
+"SHA-256" = "SHA-256";
+
+/* Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it. */
+"Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it." = "Поделите јавни кључ са особама које треба да шифрују за вас. Датотеку идентитета чувајте приватно; може да је чита само ваш налог.";
+
+/* Shared with your family */
+"Shared with your family" = "Дељено са породицом";
+
+/* Size */
+"Size" = "Величина";
+
+/* SSH key (Ed25519) */
+"SSH key (Ed25519)" = "SSH кључ (Ed25519)";
+
+/* SSH key (RSA) */
+"SSH key (RSA)" = "SSH кључ (RSA)";
+
+/* Terms of Use (EULA) */
+"Terms of Use (EULA)" = "Услови коришћења (EULA)";
+
+/* That file is not an image Agemin can read. */
+"That file is not an image Agemin can read." = "Та датотека није слика коју Agemin може да прочита.";
+
+/* The App Store could not verify this purchase. */
+"The App Store could not verify this purchase." = "App Store није могао да потврди ову куповину.";
+
+/* The armor header is missing. */
+"The armor header is missing." = "Недостаје заглавље ASCII armor-а.";
+
+/* The armored file could not be read. %@ */
+"The armored file could not be read. %@" = "Није могуће прочитати датотеку у ASCII armor-у. %@";
+
+/* The armored file ends before its footer. */
+"The armored file ends before its footer." = "Датотека у ASCII armor-у завршава се пре свог подножја.";
+
+/* The armored text is incomplete. */
+"The armored text is incomplete." = "Текст у ASCII armor-у није потпун.";
+
+/* The armored text is not valid base64. */
+"The armored text is not valid base64." = "Текст у ASCII armor-у није исправан base64.";
+
+/* The decrypted file cannot replace the encrypted file. Choose a different name. */
+"The decrypted file cannot replace the encrypted file. Choose a different name." = "Дешифрована датотека не може да замени шифровану датотеку. Изаберите друго име.";
+
+/* The decrypted file does not hold an age secret key. */
+"The decrypted file does not hold an age secret key." = "Дешифрована датотека не садржи age тајни кључ.";
+
+/* The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one. */
+"The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one." = "Дешифровану датотеку може да чита само ваш кориснички налог. Упоредите контролни збир са пошиљаочевим ако вам га је дао.";
+
+/* The encrypted data is corrupt or was modified. */
+"The encrypted data is corrupt or was modified." = "Шифровани подаци су оштећени или измењени.";
+
+/* The encrypted file cannot replace the original. Choose a different name. */
+"The encrypted file cannot replace the original. Choose a different name." = "Шифрована датотека не може да замени оригинал. Изаберите друго име.";
+
+/* The file could not be read. */
+"The file could not be read." = "Није могуће прочитати датотеку.";
+
+/* The file ends early. It may be incomplete. */
+"The file ends early. It may be incomplete." = "Датотека се прерано завршава. Можда није потпуна.";
+
+/* The file header was modified or the key is wrong. */
+"The file header was modified or the key is wrong." = "Заглавље датотеке је измењено или је кључ погрешан.";
+
+/* The file holds no age secret key. */
+"The file holds no age secret key." = "Датотека не садржи age тајни кључ.";
+
+/* The file is being read. */
+"The file is being read." = "Датотека се чита.";
+
+/* The file is not text. */
+"The file is not text." = "Датотека није текст.";
+
+/* The file is too large to be a key. */
+"The file is too large to be a key." = "Датотека је превелика да би била кључ.";
+
+/* The first line is not the age version marker. */
+"The first line is not the age version marker." = "Први ред није ознака age верзије.";
+
+/* The header authentication line is malformed. */
+"The header authentication line is malformed." = "Ред за проверу аутентичности заглавља је неисправно обликован.";
+
+/* The header is not valid text. */
+"The header is not valid text." = "Заглавље није исправан текст.";
+
+/* The header is too large to be an age file. */
+"The header is too large to be an age file." = "Заглавље је превелико да би ово била age датотека.";
+
+/* The header lists too many recipients. */
+"The header lists too many recipients." = "Заглавље наводи превише прималаца.";
+
+/* The identity could not be read. %@ */
+"The identity could not be read. %@" = "Није могуће прочитати идентитет. %@";
+
+/* The identity file could not be saved. */
+"The identity file could not be saved." = "Није могуће сачувати датотеку идентитета.";
+
+/* The image could not be used */
+"The image could not be used" = "Слику није могуће користити";
+
+/* The image is larger than %lld pixels on a side. Choose a smaller one. */
+"The image is larger than %lld pixels on a side. Choose a smaller one." = "Слика је по страници већа од %lld пиксела. Изаберите мању.";
+
+/* The input is larger than expected. */
+"The input is larger than expected." = "Улаз је већи од очекиваног.";
+
+/* The key file ends early. */
+"The key file ends early." = "Датотека кључа се прерано завршава.";
+
+/* The key file is malformed. */
+"The key file is malformed." = "Датотека кључа је неисправно обликована.";
+
+/* The key file's passphrase settings are invalid. */
+"The key file's passphrase settings are invalid." = "Подешавања лозинке датотеке кључа нису исправна.";
+
+/* The key is empty. */
+"The key is empty." = "Кључ је празан.";
+
+/* The key is protected with the %@ cipher, which is not supported. */
+"The key is protected with the %@ cipher, which is not supported." = "Кључ је заштићен шифром %@, која није подржана.";
+
+/* The key is saved as <name>.pub in the recipients folder. */
+"The key is saved as <name>.pub in the recipients folder." = "Кључ се чува као <име>.pub у фасцикли прималаца.";
+
+/* The key uses %lld key derivation rounds. Agemin supports up to %lld. */
+"The key uses %lld key derivation rounds. Agemin supports up to %lld." = "Број кругова извођења кључа је %lld; Agemin подржава највише %lld.";
+
+/* The key uses the %@ key derivation, which is not supported. */
+"The key uses the %@ key derivation, which is not supported." = "Кључ користи извођење кључа %@, које није подржано.";
+
+/* The operation was canceled. */
+"The operation was canceled." = "Поступак је отказан.";
+
+/* The passphrase entry is malformed. */
+"The passphrase entry is malformed." = "Унос лозинке је неисправно обликован.";
+
+/* The passphrase for %@ is incorrect. Try again. */
+"The passphrase for %@ is incorrect. Try again." = "Лозинка за %@ није тачна. Покушајте поново.";
+
+/* The passphrase is incorrect. */
+"The passphrase is incorrect." = "Лозинка није тачна.";
+
+/* The passphrase work factor %lld is too high to try safely. */
+"The passphrase work factor %lld is too high to try safely." = "Фактор рада лозинке %lld је превисок за безбедан покушај.";
+
+/* The passphrase work factor is malformed. */
+"The passphrase work factor is malformed." = "Фактор рада лозинке је неисправно обликован.";
+
+/* The passphrases do not match. */
+"The passphrases do not match." = "Лозинке се не подударају.";
+
+/* The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them. */
+"The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them." = "Приватни кључеви који отварају датотеке шифроване за вас: SSH кључеви из ~/.ssh и age датотеке идентитета. Agemin их чита и никада их не мења.";
+
+/* The purchase is awaiting approval. */
+"The purchase is awaiting approval." = "Куповина чека одобрење.";
+
+/* The recipient could not be deleted. */
+"The recipient could not be deleted." = "Није могуће избрисати примаоца.";
+
+/* The recipient could not be saved. */
+"The recipient could not be saved." = "Није могуће сачувати примаоца.";
+
+/* The recipient key could not be read. %@ */
+"The recipient key could not be read. %@" = "Није могуће прочитати кључ примаоца. %@";
+
+/* The recipients folder */
+"The recipients folder" = "Фасцикла прималаца";
+
+/* The recipients folder holds no .pub files yet. */
+"The recipients folder holds no .pub files yet." = "Фасцикла прималаца још не садржи .pub датотеке.";
+
+/* The RSA key is malformed. */
+"The RSA key is malformed." = "RSA кључ је неисправно обликован.";
+
+/* The RSA key is too small or malformed. */
+"The RSA key is too small or malformed." = "RSA кључ је премали или неисправно обликован.";
+
+/* The SSH key is not a valid Ed25519 key. */
+"The SSH key is not a valid Ed25519 key." = "SSH кључ није исправан Ed25519 кључ.";
+
+/* The SSH key is not a valid RSA key. */
+"The SSH key is not a valid RSA key." = "SSH кључ није исправан RSA кључ.";
+
+/* The SSH public key is malformed. */
+"The SSH public key is malformed." = "SSH јавни кључ је неисправно обликован.";
+
+/* There is text after the armor footer. */
+"There is text after the armor footer." = "Иза подножја ASCII armor-а има текста.";
+
+/* This deletes the file from the recipients folder. Files already encrypted for this key are not affected. */
+"This deletes the file from the recipients folder. Files already encrypted for this key are not affected." = "Датотека се брише из фасцикле прималаца. То не утиче на датотеке које су већ шифроване за овај кључ.";
+
+/* This file cannot be read as an age file */
+"This file cannot be read as an age file" = "Ову датотеку није могуће прочитати као age датотеку";
+
+/* This file is not a key. */
+"This file is not a key." = "Ова датотека није кључ.";
+
+/* This file needs a passphrase. */
+"This file needs a passphrase." = "Ова датотека захтева лозинку.";
+
+/* This is a secret key. Use the matching public key, which starts with age1. */
+"This is a secret key. Use the matching public key, which starts with age1." = "Ово је тајни кључ. Користите одговарајући јавни кључ, који почиње са age1.";
+
+/* This is not a valid age public key. */
+"This is not a valid age public key." = "Ово није исправан age јавни кључ.";
+
+/* This is not a valid age secret key. */
+"This is not a valid age secret key." = "Ово није исправан age тајни кључ.";
+
+/* This is not an age file. %@ */
+"This is not an age file. %@" = "Ово није age датотека. %@";
+
+/* This key format is not supported. Use an OpenSSH private key or an age identity file. */
+"This key format is not supported. Use an OpenSSH private key or an age identity file." = "Овај формат кључа није подржан. Користите OpenSSH приватни кључ или age датотеку идентитета.";
+
+/* This key produces a weak shared secret and cannot be used. */
+"This key produces a weak shared secret and cannot be used." = "Овај кључ даје слабу дељену тајну и не може се користити.";
+
+/* This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy. */
+"This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy." = "Овај кључ заштићен лозинком користи застарели PEM формат. Конвертујте га командом ssh-keygen -p -o или користите незаштићену копију.";
+
+/* Trial ended */
+"Trial ended" = "Пробни период је завршен";
+
+/* Try Again */
+"Try Again" = "Покушајте поново";
+
+/* Try every usable key */
+"Try every usable key" = "Испробајте сваки употребљиви кључ";
+
+/* Unknown recipient type “%@” */
+"Unknown recipient type “%@”" = "Непозната врста примаоца „%@“";
+
+/* Unlock */
+"Unlock" = "Откључајте";
+
+/* Unlock %@ */
+"Unlock %@" = "Откључајте %@";
+
+/* Unlock %@ with Agemin Pro. */
+"Unlock %@ with Agemin Pro." = "Откључајте %@ уз Agemin Pro.";
+
+/* Until %@ */
+"Until %@" = "До %@";
+
+/* Use Image */
+"Use Image" = "Користите слику";
+
+/* Use Initials */
+"Use Initials" = "Користите иницијале";
+
+/* Valid %@ key */
+"Valid %@ key" = "Исправан %@ кључ";
+
+/* Wait for the current operation to finish. */
+"Wait for the current operation to finish." = "Сачекајте да се заврши тренутни поступак.";
+
+/* Write it down or store it in a password manager. Agemin does not keep it. */
+"Write it down or store it in a password manager. Agemin does not keep it." = "Запишите је или је сачувајте у менаџеру лозинки. Agemin је не чува.";
+
+/* Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both. */
+"Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both." = "Запишите шифровану датотеку као текст уместо бинарно, за имејл, ћаскање и конфигурационе датотеке. age чита обоје.";
+
+/* you */
+"you" = "ви";
+
+/* You can still encrypt or decrypt one file per day. Available today: %lld. */
+"You can still encrypt or decrypt one file per day. Available today: %lld." = "И даље можете да шифрујете или дешифрујете једну датотеку дневно. Данас доступно: %lld.";
+
+/* You have Agemin Pro. */
+"You have Agemin Pro." = "Имате Agemin Pro.";
+
+/* Your Pro trial is active. */
+"Your Pro trial is active." = "Ваш пробни период за Pro је активан.";
+
+/* · you choose the folder when you encrypt */
+"· you choose the folder when you encrypt" = "· фасциклу бирате при шифровању";
