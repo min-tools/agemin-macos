@@ -1,0 +1,904 @@
+/* Agemin — ru localization. Each comment shows the English source text. */
+
+/*  and armor */
+" and armor" = " и ASCII armor";
+
+/* %@ %@ of %@ */
+"%@ %@ of %@" = "%@ %@ из %@";
+
+/* %@ could not be read. */
+"%@ could not be read." = "Не удалось прочитать %@.";
+
+/* %@ could not be written. */
+"%@ could not be written." = "Не удалось записать %@.";
+
+/* %@ is protected with a passphrase. */
+"%@ is protected with a passphrase." = "Ключ %@ защищён парольной фразой.";
+
+/* %@ keys are not supported by age. */
+"%@ keys are not supported by age." = "Ключи %@ не поддерживаются age.";
+
+/* %@ per year */
+"%@ per year" = "%@ в год";
+
+/* %@ · %@ more than the original for the header%@ */
+"%@ · %@ more than the original for the header%@" = "%@ · на %@ больше оригинала из-за заголовка%@";
+
+/* %@.pub already exists in the recipients folder. */
+"%@.pub already exists in the recipients folder." = "Файл %@.pub уже есть в папке получателей.";
+
+/* %lld identities */
+"%lld identities" = "Идентификаторов: %lld";
+
+/* %lld identities · %lld usable */
+"%lld identities · %lld usable" = "Идентификаторов: %lld · пригодных: %lld";
+
+/* %lld keys */
+"%lld keys" = "Ключей: %lld";
+
+/* %lld keys tried */
+"%lld keys tried" = "Проверено ключей: %lld";
+
+/* %lld of %lld recipients selected */
+"%lld of %lld recipients selected" = "Выбрано получателей: %lld из %lld";
+
+/* %lld recipients */
+"%lld recipients" = "Получателей: %lld";
+
+/* %lld recipients · %lld usable */
+"%lld recipients · %lld usable" = "Получателей: %lld · пригодных: %lld";
+
+/* 1 identity */
+"1 identity" = "1 идентификатор";
+
+/* 1 recipient */
+"1 recipient" = "1 получатель";
+
+/* 30 days of full access */
+"30 days of full access" = "30 дней полного доступа";
+
+/* A file is still being processed. */
+"A file is still being processed." = "Файл ещё обрабатывается.";
+
+/* A header line is neither a recipient nor the closing marker. */
+"A header line is neither a recipient nor the closing marker." = "Строка заголовка не является ни получателем, ни завершающим маркером.";
+
+/* A header line is too long. */
+"A header line is too long." = "Строка заголовка слишком длинная.";
+
+/* A passphrase cannot be combined with other recipients. */
+"A passphrase cannot be combined with other recipients." = "Парольную фразу нельзя сочетать с другими получателями.";
+
+/* A passphrase entry must be the only recipient. */
+"A passphrase entry must be the only recipient." = "Запись парольной фразы должна быть единственным получателем.";
+
+/* A recipient body is not valid base64. */
+"A recipient body is not valid base64." = "Тело получателя не является корректным base64.";
+
+/* A recipient body line is malformed. */
+"A recipient body line is malformed." = "Строка тела получателя имеет неверный формат.";
+
+/* A recipient line is malformed. */
+"A recipient line is malformed." = "Строка получателя имеет неверный формат.";
+
+/* About Agemin */
+"About Agemin" = "О программе Agemin";
+
+/* Action */
+"Action" = "Действие";
+
+/* Add */
+"Add" = "Добавить";
+
+/* Add a public key on the Recipients page */
+"Add a public key on the Recipients page" = "Добавьте открытый ключ на странице «Получатели»";
+
+/* Add an identity that can decrypt this file. */
+"Add an identity that can decrypt this file." = "Добавьте идентификатор, который может расшифровать этот файл.";
+
+/* Add Key File */
+"Add Key File" = "Добавить файл ключа";
+
+/* Add Key File… */
+"Add Key File…" = "Добавить файл ключа…";
+
+/* Add Recipient */
+"Add Recipient" = "Добавить получателя";
+
+/* Add Recipient… */
+"Add Recipient…" = "Добавить получателя…";
+
+/* Add to Recipients */
+"Add to Recipients" = "Добавить в получатели";
+
+/* added */
+"added" = "добавлен";
+
+/* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
+"After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "После пробного периода вы по-прежнему можете шифровать или расшифровывать один файл в день. Чтение ключей, проверка файлов и создание ключей остаются без ограничений.";
+
+/* age encryption, without the terminal. */
+"age encryption, without the terminal." = "Шифрование age, без терминала.";
+
+/* age key */
+"age key" = "ключ age";
+
+/* age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA… */
+"age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA…" = "age1… или ssh-ed25519 AAAA… или ssh-rsa AAAA…";
+
+/* Agemin could not use that folder */
+"Agemin could not use that folder" = "Agemin не удалось использовать эту папку";
+
+/* Agemin encrypts files, not folders. */
+"Agemin encrypts files, not folders." = "Agemin шифрует файлы, а не папки.";
+
+/* Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged. */
+"Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged." = "Первые 30 дней Agemin полностью разблокирован. Подписка не оформляется, и плата не взимается.";
+
+/* Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice. */
+"Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice." = "Agemin показывает находящиеся там файлы .pub и позволяет добавлять новые. Подойдёт любая папка; обычно используют ~/.age.";
+
+/* Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually. */
+"Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually." = "Agemin показывает найденные там закрытые ключи, обычно в ~/.ssh, и расшифровывает ими файлы. Ключи из других мест можно добавить по одному.";
+
+/* Agemin Pro */
+"Agemin Pro" = "Agemin Pro";
+
+/* Agemin Pro Lifetime · %@ */
+"Agemin Pro Lifetime · %@" = "Agemin Pro навсегда · %@";
+
+/* Agemin Pro Yearly */
+"Agemin Pro Yearly" = "Agemin Pro ежегодно";
+
+/* Agemin Pro… */
+"Agemin Pro…" = "Agemin Pro…";
+
+/* Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them. */
+"Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them." = "Agemin удалит сохранённые разрешения на доступ к папке получателей, папке идентификаторов и отдельно добавленным файлам ключей. Ничего не удаляется. Чтобы продолжить ими пользоваться, выберите их снова.";
+
+/* Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed. */
+"Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed." = "Agemin хранит аватар под отпечатком этого ключа. Папки ключей не изменяются.";
+
+/* alice */
+"alice" = "alice";
+
+/* All */
+"All" = "Все";
+
+/* An age public key has 32 bytes. */
+"An age public key has 32 bytes." = "Открытый ключ age содержит 32 байта.";
+
+/* An age secret key has 32 bytes. */
+"An age secret key has 32 bytes." = "Секретный ключ age содержит 32 байта.";
+
+/* An ssh-ed25519 recipient entry is malformed. */
+"An ssh-ed25519 recipient entry is malformed." = "Запись получателя ssh-ed25519 имеет неверный формат.";
+
+/* An ssh-rsa recipient entry is malformed. */
+"An ssh-rsa recipient entry is malformed." = "Запись получателя ssh-rsa имеет неверный формат.";
+
+/* An X25519 recipient entry has the wrong size. */
+"An X25519 recipient entry has the wrong size." = "Запись получателя X25519 имеет неверный размер.";
+
+/* An X25519 recipient entry is malformed. */
+"An X25519 recipient entry is malformed." = "Запись получателя X25519 имеет неверный формат.";
+
+/* Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one. */
+"Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one." = "Открыть файл сможет любой, кто знает парольную фразу. age пропускает её через scrypt, поэтому длина фразы важнее её сложности.";
+
+/* ASCII armor */
+"ASCII armor" = "ASCII armor";
+
+/* Avatar for %@ */
+"Avatar for %@" = "Аватар для %@";
+
+/* Cancel */
+"Cancel" = "Отмена";
+
+/* Change */
+"Change" = "Изменить";
+
+/* Choose */
+"Choose" = "Выбрать";
+
+/* Choose a file to encrypt. */
+"Choose a file to encrypt." = "Выберите файл для шифрования.";
+
+/* Choose a yearly subscription or lifetime purchase at any time to remove the daily limit. */
+"Choose a yearly subscription or lifetime purchase at any time to remove the daily limit." = "Чтобы снять дневной лимит, в любой момент оформите годовую подписку или сделайте бессрочную покупку.";
+
+/* Choose an age identity file or an SSH private key */
+"Choose an age identity file or an SSH private key" = "Выберите файл идентификатора age или закрытый ключ SSH";
+
+/* Choose an encrypted file. */
+"Choose an encrypted file." = "Выберите зашифрованный файл.";
+
+/* Choose an image for this key's avatar */
+"Choose an image for this key's avatar" = "Выберите изображение для аватара этого ключа";
+
+/* Choose File */
+"Choose File" = "Выбрать файл";
+
+/* Choose File to Decrypt… */
+"Choose File to Decrypt…" = "Выбрать файл для расшифровки…";
+
+/* Choose File to Encrypt… */
+"Choose File to Encrypt…" = "Выбрать файл для шифрования…";
+
+/* Choose Folder */
+"Choose Folder" = "Выбрать папку";
+
+/* Choose Identities Folder… */
+"Choose Identities Folder…" = "Выбрать папку идентификаторов…";
+
+/* Choose Image */
+"Choose Image" = "Выбрать изображение";
+
+/* Choose Recipients Folder… */
+"Choose Recipients Folder…" = "Выбрать папку получателей…";
+
+/* Choose the encrypted file, usually ending in .age */
+"Choose the encrypted file, usually ending in .age" = "Выберите зашифрованный файл, обычно с расширением .age";
+
+/* Choose the file to encrypt */
+"Choose the file to encrypt" = "Выберите файл для шифрования";
+
+/* Choose the folder with the .pub files of the people you encrypt for, usually ~/.age. */
+"Choose the folder with the .pub files of the people you encrypt for, usually ~/.age." = "Выберите папку с файлами .pub людей, для которых вы шифруете, обычно ~/.age.";
+
+/* Choose the folder with the .pub files you encrypt for, usually ~/.age */
+"Choose the folder with the .pub files you encrypt for, usually ~/.age" = "Выберите папку с файлами .pub, для которых вы шифруете, обычно ~/.age";
+
+/* Choose the folder with your private keys, usually ~/.ssh */
+"Choose the folder with your private keys, usually ~/.ssh" = "Выберите папку с вашими закрытыми ключами, обычно ~/.ssh";
+
+/* Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page. */
+"Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page." = "Выберите папку с вашими ключами SSH, обычно ~/.ssh, или добавьте файл идентификатора age на странице «Идентификаторы».";
+
+/* Choose where to save the decrypted file */
+"Choose where to save the decrypted file" = "Выберите, куда сохранить расшифрованный файл";
+
+/* Choose where to save the encrypted file */
+"Choose where to save the encrypted file" = "Выберите, куда сохранить зашифрованный файл";
+
+/* Choose your recipients folder */
+"Choose your recipients folder" = "Выберите папку получателей";
+
+/* Choose your SSH folder */
+"Choose your SSH folder" = "Выберите папку SSH";
+
+/* Clear search */
+"Clear search" = "Очистить поиск";
+
+/* Clear the file */
+"Clear the file" = "Убрать файл";
+
+/* Click an avatar to change it, or drop an image onto it. */
+"Click an avatar to change it, or drop an image onto it." = "Нажмите на аватар, чтобы изменить его, или перетащите на него изображение.";
+
+/* Click to change the avatar, or drop an image on it */
+"Click to change the avatar, or drop an image on it" = "Нажмите, чтобы изменить аватар, или перетащите на него изображение";
+
+/* Compress the folder into an archive first, then open the archive. */
+"Compress the folder into an archive first, then open the archive." = "Сначала сожмите папку в архив, затем откройте архив.";
+
+/* Confirm passphrase */
+"Confirm passphrase" = "Подтвердите парольную фразу";
+
+/* Contacting the App Store… */
+"Contacting the App Store…" = "Связываемся с App Store…";
+
+/* Continue */
+"Continue" = "Продолжить";
+
+/* Copy */
+"Copy" = "Скопировать";
+
+/* Copy Key */
+"Copy Key" = "Скопировать ключ";
+
+/* Copy Path */
+"Copy Path" = "Скопировать путь";
+
+/* Copy Public Key */
+"Copy Public Key" = "Скопировать открытый ключ";
+
+/* Decrypt */
+"Decrypt" = "Расшифровать";
+
+/* Decrypt This File */
+"Decrypt This File" = "Расшифровать этот файл";
+
+/* Decrypt with */
+"Decrypt with" = "Расшифровать с помощью";
+
+/* Decrypted */
+"Decrypted" = "Расшифровано";
+
+/* Decrypting */
+"Decrypting" = "Расшифровка";
+
+/* Decryption failed */
+"Decryption failed" = "Не удалось расшифровать";
+
+/* Decrypt… */
+"Decrypt…" = "Расшифровать…";
+
+/* Delete */
+"Delete" = "Удалить";
+
+/* Delete %@? */
+"Delete %@?" = "Удалить %@?";
+
+/* Delete the .pub file */
+"Delete the .pub file" = "Удалить файл .pub";
+
+/* Drop a file here to encrypt it */
+"Drop a file here to encrypt it" = "Перетащите сюда файл, чтобы зашифровать его";
+
+/* Drop a file, not a folder. Compress the folder first, then drop the archive. */
+"Drop a file, not a folder. Compress the folder first, then drop the archive." = "Перетащите файл, а не папку. Сначала сожмите папку в архив, затем перетащите архив.";
+
+/* Drop an age file here to decrypt it */
+"Drop an age file here to decrypt it" = "Перетащите сюда файл age, чтобы расшифровать его";
+
+/* Encrypt */
+"Encrypt" = "Зашифровать";
+
+/* Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file. */
+"Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file." = "Зашифруйте файл для открытых ключей людей, которые должны его открыть, или с помощью парольной фразы. Результат — стандартный файл age.";
+
+/* Encrypt for */
+"Encrypt for" = "Зашифровать для";
+
+/* Encrypted */
+"Encrypted" = "Зашифровано";
+
+/* Encrypted for */
+"Encrypted for" = "Зашифровано для";
+
+/* Encrypting */
+"Encrypting" = "Шифрование";
+
+/* Encryption failed */
+"Encryption failed" = "Не удалось зашифровать";
+
+/* Encrypt… */
+"Encrypt…" = "Зашифровать…";
+
+/* Enter a passphrase. */
+"Enter a passphrase." = "Введите парольную фразу.";
+
+/* Enter the file's passphrase. */
+"Enter the file's passphrase." = "Введите парольную фразу файла.";
+
+/* Enter the passphrase below */
+"Enter the passphrase below" = "Введите парольную фразу ниже";
+
+/* Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa). */
+"Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa)." = "Ожидался открытый ключ age (age1…) или открытый ключ SSH (ssh-ed25519 или ssh-rsa).";
+
+/* Expires %@ */
+"Expires %@" = "До %@";
+
+/* Files */
+"Files" = "Файлы";
+
+/* Fill both fields with a random passphrase and show it once */
+"Fill both fields with a random passphrase and show it once" = "Заполнить оба поля случайной парольной фразой и показать её один раз";
+
+/* Filter identities */
+"Filter identities" = "Фильтр идентификаторов";
+
+/* Filter recipients */
+"Filter recipients" = "Фильтр получателей";
+
+/* Find… */
+"Find…" = "Найти…";
+
+/* Forget Access */
+"Forget Access" = "Забыть доступ";
+
+/* Forget access to the key folders? */
+"Forget access to the key folders?" = "Забыть доступ к папкам ключей?";
+
+/* Forget Folder Access… */
+"Forget Folder Access…" = "Забыть доступ к папкам…";
+
+/* Free · Available today: %lld */
+"Free · Available today: %lld" = "Бесплатно · Доступно сегодня: %lld";
+
+/* Generate */
+"Generate" = "Сгенерировать";
+
+/* Give the recipient a name. */
+"Give the recipient a name." = "Укажите имя получателя.";
+
+/* Hide this card */
+"Hide this card" = "Скрыть эту карточку";
+
+/* Identities */
+"Identities" = "Идентификаторы";
+
+/* Identity file */
+"Identity file" = "Файл идентификатора";
+
+/* Initials */
+"Initials" = "Инициалы";
+
+/* Initials color %lld */
+"Initials color %lld" = "Цвет инициалов %lld";
+
+/* Keep Working */
+"Keep Working" = "Продолжить работу";
+
+/* Key */
+"Key" = "Ключ";
+
+/* Keys */
+"Keys" = "Ключи";
+
+/* Lifetime */
+"Lifetime" = "Навсегда";
+
+/* Loading App Store products… */
+"Loading App Store products…" = "Загрузка продуктов App Store…";
+
+/* Loading keys… */
+"Loading keys…" = "Загрузка ключей…";
+
+/* macOS did not grant lasting access to that folder. Choose it again, or choose another folder. */
+"macOS did not grant lasting access to that folder. Choose it again, or choose another folder." = "macOS не предоставила постоянный доступ к этой папке. Выберите её снова или выберите другую папку.";
+
+/* Manage Subscription */
+"Manage Subscription" = "Управление подпиской";
+
+/* matches */
+"matches" = "подходит";
+
+/* Matches %@ */
+"Matches %@" = "Подходит: %@";
+
+/* Matching keys first. Protected keys ask for their passphrase. */
+"Matching keys first. Protected keys ask for their passphrase." = "Сначала подходящие ключи. Защищённые ключи запросят парольную фразу.";
+
+/* Name */
+"Name" = "Имя";
+
+/* New age Key */
+"New age Key" = "Новый ключ age";
+
+/* New age key saved */
+"New age key saved" = "Новый ключ age сохранён";
+
+/* New age Key… */
+"New age Key…" = "Новый ключ age…";
+
+/* New recipient */
+"New recipient" = "Новый получатель";
+
+/* No active purchase was found. */
+"No active purchase was found." = "Активной покупки Agemin не обнаружено.";
+
+/* No Agemin Pro purchase was found for this Apple Account. */
+"No Agemin Pro purchase was found for this Apple Account." = "Для этой учетной записи Apple не обнаружено покупок Agemin Pro.";
+
+/* No identities yet */
+"No identities yet" = "Идентификаторов пока нет";
+
+/* No matching key */
+"No matching key" = "Нет подходящего ключа";
+
+/* No recipients folder yet */
+"No recipients folder yet" = "Папка получателей ещё не выбрана";
+
+/* None */
+"None" = "Ни одного";
+
+/* None of the identities can decrypt this file. */
+"None of the identities can decrypt this file." = "Ни один из идентификаторов не может расшифровать этот файл.";
+
+/* None of your identities matches this file. Add the key it was encrypted for on the Identities page. */
+"None of your identities matches this file. Add the key it was encrypted for on the Identities page." = "Ни один из ваших идентификаторов не подходит к этому файлу. Добавьте ключ, для которого он был зашифрован, на странице «Идентификаторы».";
+
+/* not a key */
+"not a key" = "не ключ";
+
+/* OK */
+"OK" = "OK";
+
+/* Open an age file with one of your keys, or with the passphrase it was encrypted with. */
+"Open an age file with one of your keys, or with the passphrase it was encrypted with." = "Откройте файл age одним из ваших ключей или парольной фразой, которой он был зашифрован.";
+
+/* Options */
+"Options" = "Опции";
+
+/* Output */
+"Output" = "Результат";
+
+/* Pages */
+"Pages" = "Страницы";
+
+/* Passphrase */
+"Passphrase" = "Парольная фраза";
+
+/* passphrase */
+"passphrase" = "парольная фраза";
+
+/* Passphrase · work factor %lld */
+"Passphrase · work factor %lld" = "Парольная фраза · параметр сложности %lld";
+
+/* Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends. */
+"Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends." = "Оплата списывается с вашей учетной записи Apple. Годовая подписка продлевается автоматически, если не отменить её в настройках App Store минимум за день до окончания текущего периода.";
+
+/* Privacy Policy */
+"Privacy Policy" = "Политика конфиденциальности";
+
+/* Privacy Policy… */
+"Privacy Policy…" = "Политика конфиденциальности…";
+
+/* Pro */
+"Pro" = "Pro";
+
+/* Pro purchases are unavailable right now. Try again later. */
+"Pro purchases are unavailable right now. Try again later." = "Покупки Pro сейчас недоступны. Повторите попытку позже.";
+
+/* Pro trial · %lld days remaining */
+"Pro trial · %lld days remaining" = "Пробный период Pro · дней осталось: %lld";
+
+/* Pro trial · 1 day remaining */
+"Pro trial · 1 day remaining" = "Пробный период Pro · остался 1 день";
+
+/* Pro trial · ends %@ */
+"Pro trial · ends %@" = "Пробный период Pro · заканчивается %@";
+
+/* Pro trial · first payment %@ */
+"Pro trial · first payment %@" = "Пробный период Pro · первый платёж %@";
+
+/* Pro trial · until %@ */
+"Pro trial · until %@" = "Пробный период Pro · до %@";
+
+/* Public key */
+"Public key" = "Открытый ключ";
+
+/* Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file. */
+"Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file." = "Открытые ключи, для которых вы шифруете. Каждый файл .pub в папке — один получатель с именем файла.";
+
+/* Purchase */
+"Purchase" = "Покупка";
+
+/* Quit Anyway */
+"Quit Anyway" = "Всё равно завершить";
+
+/* Quitting now cancels it and removes the partial output. */
+"Quitting now cancels it and removes the partial output." = "Если завершить сейчас, операция будет отменена, а неполный результат удалён.";
+
+/* Read the folder again */
+"Read the folder again" = "Прочитать папку заново";
+
+/* Recipients */
+"Recipients" = "Получатели";
+
+/* Refresh Keys */
+"Refresh Keys" = "Обновить ключи";
+
+/* Remove from the list */
+"Remove from the list" = "Убрать из списка";
+
+/* Renews %@ */
+"Renews %@" = "Продлится %@";
+
+/* Restore Purchases */
+"Restore Purchases" = "Восстановить покупки";
+
+/* Restoring… */
+"Restoring…" = "Восстановление…";
+
+/* Reveal */
+"Reveal" = "Показать";
+
+/* Reveal in Finder */
+"Reveal in Finder" = "Показать в Finder";
+
+/* Save */
+"Save" = "Сохранить";
+
+/* Save Key */
+"Save Key" = "Сохранить ключ";
+
+/* Save Recipient */
+"Save Recipient" = "Сохранить получателя";
+
+/* Save the new identity file somewhere private because it holds the secret key */
+"Save the new identity file somewhere private because it holds the secret key" = "Сохраните новый файл идентификатора в надёжном месте: он содержит секретный ключ";
+
+/* Saved as */
+"Saved as" = "Сохранено как";
+
+/* Saved as <name>.pub in the recipients folder. */
+"Saved as <name>.pub in the recipients folder." = "Сохраняется как <имя>.pub в папке получателей.";
+
+/* Select at least one recipient. */
+"Select at least one recipient." = "Выберите хотя бы одного получателя.";
+
+/* SHA-256 */
+"SHA-256" = "SHA-256";
+
+/* Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it. */
+"Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it." = "Поделитесь открытым ключом с теми, кто должен шифровать для вас. Файл идентификатора держите в тайне: он доступен для чтения только вашей учетной записи.";
+
+/* Shared with your family */
+"Shared with your family" = "Семейный доступ";
+
+/* Size */
+"Size" = "Размер";
+
+/* SSH key (Ed25519) */
+"SSH key (Ed25519)" = "Ключ SSH (Ed25519)";
+
+/* SSH key (RSA) */
+"SSH key (RSA)" = "Ключ SSH (RSA)";
+
+/* Terms of Use (EULA) */
+"Terms of Use (EULA)" = "Условия использования (EULA)";
+
+/* That file is not an image Agemin can read. */
+"That file is not an image Agemin can read." = "Этот файл не является изображением, которое Agemin может прочитать.";
+
+/* The App Store could not verify this purchase. */
+"The App Store could not verify this purchase." = "App Store не удалось подтвердить эту покупку.";
+
+/* The armor header is missing. */
+"The armor header is missing." = "Отсутствует заголовок ASCII armor.";
+
+/* The armored file could not be read. %@ */
+"The armored file could not be read. %@" = "Не удалось прочитать файл ASCII armor. %@";
+
+/* The armored file ends before its footer. */
+"The armored file ends before its footer." = "Файл ASCII armor заканчивается до завершающей строки.";
+
+/* The armored text is incomplete. */
+"The armored text is incomplete." = "Текст ASCII armor неполный.";
+
+/* The armored text is not valid base64. */
+"The armored text is not valid base64." = "Текст ASCII armor не является корректным base64.";
+
+/* The decrypted file cannot replace the encrypted file. Choose a different name. */
+"The decrypted file cannot replace the encrypted file. Choose a different name." = "Расшифрованный файл не может заменить зашифрованный. Выберите другое имя.";
+
+/* The decrypted file does not hold an age secret key. */
+"The decrypted file does not hold an age secret key." = "Расшифрованный файл не содержит секретный ключ age.";
+
+/* The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one. */
+"The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one." = "Расшифрованный файл доступен для чтения только вашей учетной записи. Сравните контрольную сумму с суммой отправителя, если он её сообщил.";
+
+/* The encrypted data is corrupt or was modified. */
+"The encrypted data is corrupt or was modified." = "Зашифрованные данные повреждены или были изменены.";
+
+/* The encrypted file cannot replace the original. Choose a different name. */
+"The encrypted file cannot replace the original. Choose a different name." = "Зашифрованный файл не может заменить оригинал. Выберите другое имя.";
+
+/* The file could not be read. */
+"The file could not be read." = "Не удалось прочитать файл.";
+
+/* The file ends early. It may be incomplete. */
+"The file ends early. It may be incomplete." = "Файл обрывается раньше времени. Возможно, он неполный.";
+
+/* The file header was modified or the key is wrong. */
+"The file header was modified or the key is wrong." = "Заголовок файла был изменён, или ключ не подходит.";
+
+/* The file holds no age secret key. */
+"The file holds no age secret key." = "Файл не содержит секретный ключ age.";
+
+/* The file is being read. */
+"The file is being read." = "Файл читается.";
+
+/* The file is not text. */
+"The file is not text." = "Файл не является текстом.";
+
+/* The file is too large to be a key. */
+"The file is too large to be a key." = "Файл слишком большой для ключа.";
+
+/* The first line is not the age version marker. */
+"The first line is not the age version marker." = "Первая строка не является маркером версии age.";
+
+/* The header authentication line is malformed. */
+"The header authentication line is malformed." = "Строка аутентификации заголовка имеет неверный формат.";
+
+/* The header is not valid text. */
+"The header is not valid text." = "Заголовок не является корректным текстом.";
+
+/* The header is too large to be an age file. */
+"The header is too large to be an age file." = "Заголовок слишком велик для файла age.";
+
+/* The header lists too many recipients. */
+"The header lists too many recipients." = "В заголовке слишком много получателей.";
+
+/* The identity could not be read. %@ */
+"The identity could not be read. %@" = "Не удалось прочитать идентификатор. %@";
+
+/* The identity file could not be saved. */
+"The identity file could not be saved." = "Не удалось сохранить файл идентификатора.";
+
+/* The image could not be used */
+"The image could not be used" = "Не удалось использовать изображение";
+
+/* The image is larger than %lld pixels on a side. Choose a smaller one. */
+"The image is larger than %lld pixels on a side. Choose a smaller one." = "Сторона изображения больше %lld пикселей. Выберите изображение меньшего размера.";
+
+/* The input is larger than expected. */
+"The input is larger than expected." = "Входные данные больше, чем ожидалось.";
+
+/* The key file ends early. */
+"The key file ends early." = "Файл ключа обрывается раньше времени.";
+
+/* The key file is malformed. */
+"The key file is malformed." = "Файл ключа имеет неверный формат.";
+
+/* The key file's passphrase settings are invalid. */
+"The key file's passphrase settings are invalid." = "Параметры парольной фразы файла ключа недействительны.";
+
+/* The key is empty. */
+"The key is empty." = "Ключ пуст.";
+
+/* The key is protected with the %@ cipher, which is not supported. */
+"The key is protected with the %@ cipher, which is not supported." = "Ключ защищён шифром %@, который не поддерживается.";
+
+/* The key is saved as <name>.pub in the recipients folder. */
+"The key is saved as <name>.pub in the recipients folder." = "Ключ сохраняется как <имя>.pub в папке получателей.";
+
+/* The key uses %lld key derivation rounds. Agemin supports up to %lld. */
+"The key uses %lld key derivation rounds. Agemin supports up to %lld." = "Число раундов формирования ключа: %lld; Agemin поддерживает не более %lld.";
+
+/* The key uses the %@ key derivation, which is not supported. */
+"The key uses the %@ key derivation, which is not supported." = "Ключ использует функцию формирования ключа %@, которая не поддерживается.";
+
+/* The operation was canceled. */
+"The operation was canceled." = "Операция отменена.";
+
+/* The passphrase entry is malformed. */
+"The passphrase entry is malformed." = "Запись парольной фразы имеет неверный формат.";
+
+/* The passphrase for %@ is incorrect. Try again. */
+"The passphrase for %@ is incorrect. Try again." = "Неверная парольная фраза для %@. Попробуйте ещё раз.";
+
+/* The passphrase is incorrect. */
+"The passphrase is incorrect." = "Неверная парольная фраза.";
+
+/* The passphrase work factor %lld is too high to try safely. */
+"The passphrase work factor %lld is too high to try safely." = "Параметр сложности парольной фразы %lld слишком велик, чтобы безопасно его проверить.";
+
+/* The passphrase work factor is malformed. */
+"The passphrase work factor is malformed." = "Параметр сложности парольной фразы имеет неверный формат.";
+
+/* The passphrases do not match. */
+"The passphrases do not match." = "Парольные фразы не совпадают.";
+
+/* The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them. */
+"The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them." = "Закрытые ключи, которые открывают зашифрованные для вас файлы: ключи SSH из ~/.ssh и файлы идентификаторов age. Agemin только читает их и никогда не изменяет.";
+
+/* The purchase is awaiting approval. */
+"The purchase is awaiting approval." = "Покупка ожидает одобрения.";
+
+/* The recipient could not be deleted. */
+"The recipient could not be deleted." = "Не удалось удалить получателя.";
+
+/* The recipient could not be saved. */
+"The recipient could not be saved." = "Не удалось сохранить получателя.";
+
+/* The recipient key could not be read. %@ */
+"The recipient key could not be read. %@" = "Не удалось прочитать ключ получателя. %@";
+
+/* The recipients folder */
+"The recipients folder" = "Папка получателей";
+
+/* The recipients folder holds no .pub files yet. */
+"The recipients folder holds no .pub files yet." = "В папке получателей пока нет файлов .pub.";
+
+/* The RSA key is malformed. */
+"The RSA key is malformed." = "Ключ RSA имеет неверный формат.";
+
+/* The RSA key is too small or malformed. */
+"The RSA key is too small or malformed." = "Ключ RSA слишком короткий или имеет неверный формат.";
+
+/* The SSH key is not a valid Ed25519 key. */
+"The SSH key is not a valid Ed25519 key." = "Ключ SSH не является корректным ключом Ed25519.";
+
+/* The SSH key is not a valid RSA key. */
+"The SSH key is not a valid RSA key." = "Ключ SSH не является корректным ключом RSA.";
+
+/* The SSH public key is malformed. */
+"The SSH public key is malformed." = "Открытый ключ SSH имеет неверный формат.";
+
+/* There is text after the armor footer. */
+"There is text after the armor footer." = "После завершающей строки ASCII armor есть текст.";
+
+/* This deletes the file from the recipients folder. Files already encrypted for this key are not affected. */
+"This deletes the file from the recipients folder. Files already encrypted for this key are not affected." = "Файл будет удалён из папки получателей. Файлы, уже зашифрованные для этого ключа, не затрагиваются.";
+
+/* This file cannot be read as an age file */
+"This file cannot be read as an age file" = "Этот файл не удаётся прочитать как файл age";
+
+/* This file is not a key. */
+"This file is not a key." = "Этот файл не является ключом.";
+
+/* This file needs a passphrase. */
+"This file needs a passphrase." = "Для этого файла нужна парольная фраза.";
+
+/* This is a secret key. Use the matching public key, which starts with age1. */
+"This is a secret key. Use the matching public key, which starts with age1." = "Это секретный ключ. Используйте соответствующий открытый ключ, который начинается с age1.";
+
+/* This is not a valid age public key. */
+"This is not a valid age public key." = "Это некорректный открытый ключ age.";
+
+/* This is not a valid age secret key. */
+"This is not a valid age secret key." = "Это некорректный секретный ключ age.";
+
+/* This is not an age file. %@ */
+"This is not an age file. %@" = "Это не файл age. %@";
+
+/* This key format is not supported. Use an OpenSSH private key or an age identity file. */
+"This key format is not supported. Use an OpenSSH private key or an age identity file." = "Этот формат ключа не поддерживается. Используйте закрытый ключ OpenSSH или файл идентификатора age.";
+
+/* This key produces a weak shared secret and cannot be used. */
+"This key produces a weak shared secret and cannot be used." = "Этот ключ даёт слабый общий секрет и не может быть использован.";
+
+/* This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy. */
+"This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy." = "Этот защищённый парольной фразой ключ использует устаревший формат PEM. Преобразуйте его командой ssh-keygen -p -o или используйте незащищённую копию.";
+
+/* Trial ended */
+"Trial ended" = "Пробный период завершён";
+
+/* Try Again */
+"Try Again" = "Попробуйте еще раз";
+
+/* Try every usable key */
+"Try every usable key" = "Перебрать все пригодные ключи";
+
+/* Unknown recipient type “%@” */
+"Unknown recipient type “%@”" = "Неизвестный тип получателя «%@»";
+
+/* Unlock */
+"Unlock" = "Разблокировать";
+
+/* Unlock %@ */
+"Unlock %@" = "Разблокировать %@";
+
+/* Unlock %@ with Agemin Pro. */
+"Unlock %@ with Agemin Pro." = "Разблокируйте %@ с помощью Agemin Pro.";
+
+/* Until %@ */
+"Until %@" = "Действует до %@";
+
+/* Use Image */
+"Use Image" = "Использовать изображение";
+
+/* Use Initials */
+"Use Initials" = "Использовать инициалы";
+
+/* Valid %@ key */
+"Valid %@ key" = "Действительный ключ %@";
+
+/* Wait for the current operation to finish. */
+"Wait for the current operation to finish." = "Дождитесь завершения текущей операции.";
+
+/* Write it down or store it in a password manager. Agemin does not keep it. */
+"Write it down or store it in a password manager. Agemin does not keep it." = "Запишите её или сохраните в менеджере паролей. Agemin её не хранит.";
+
+/* Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both. */
+"Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both." = "Записывать зашифрованный файл как текст, а не двоичные данные: для электронной почты, чатов и файлов конфигурации. age читает оба варианта.";
+
+/* you */
+"you" = "вы";
+
+/* You can still encrypt or decrypt one file per day. Available today: %lld. */
+"You can still encrypt or decrypt one file per day. Available today: %lld." = "Вы по-прежнему можете шифровать или расшифровывать один файл в день. Доступно сегодня: %lld.";
+
+/* You have Agemin Pro. */
+"You have Agemin Pro." = "У вас есть Agemin Pro.";
+
+/* Your Pro trial is active. */
+"Your Pro trial is active." = "Ваш пробный период Pro активен.";
+
+/* · you choose the folder when you encrypt */
+"· you choose the folder when you encrypt" = "· папку вы выбираете при шифровании";
