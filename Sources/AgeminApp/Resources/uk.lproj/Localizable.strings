@@ -1,0 +1,904 @@
+/* Agemin — uk localization. Each comment shows the English source text. */
+
+/*  and armor */
+" and armor" = " і ASCII armor";
+
+/* %@ %@ of %@ */
+"%@ %@ of %@" = "%@ %@ з %@";
+
+/* %@ could not be read. */
+"%@ could not be read." = "Не вдалося прочитати %@.";
+
+/* %@ could not be written. */
+"%@ could not be written." = "Не вдалося записати %@.";
+
+/* %@ is protected with a passphrase. */
+"%@ is protected with a passphrase." = "Ключ %@ захищено парольною фразою.";
+
+/* %@ keys are not supported by age. */
+"%@ keys are not supported by age." = "Ключі %@ не підтримуються age.";
+
+/* %@ per year */
+"%@ per year" = "%@ на рік";
+
+/* %@ · %@ more than the original for the header%@ */
+"%@ · %@ more than the original for the header%@" = "%@ · на %@ більше за оригінал через заголовок%@";
+
+/* %@.pub already exists in the recipients folder. */
+"%@.pub already exists in the recipients folder." = "Файл %@.pub уже є в папці отримувачів.";
+
+/* %lld identities */
+"%lld identities" = "Ідентифікаторів: %lld";
+
+/* %lld identities · %lld usable */
+"%lld identities · %lld usable" = "Ідентифікаторів: %lld · придатних: %lld";
+
+/* %lld keys */
+"%lld keys" = "Ключів: %lld";
+
+/* %lld keys tried */
+"%lld keys tried" = "Перевірено ключів: %lld";
+
+/* %lld of %lld recipients selected */
+"%lld of %lld recipients selected" = "Вибрано отримувачів: %lld з %lld";
+
+/* %lld recipients */
+"%lld recipients" = "Отримувачів: %lld";
+
+/* %lld recipients · %lld usable */
+"%lld recipients · %lld usable" = "Отримувачів: %lld · придатних: %lld";
+
+/* 1 identity */
+"1 identity" = "1 ідентифікатор";
+
+/* 1 recipient */
+"1 recipient" = "1 отримувач";
+
+/* 30 days of full access */
+"30 days of full access" = "30 днів повного доступу";
+
+/* A file is still being processed. */
+"A file is still being processed." = "Файл ще обробляється.";
+
+/* A header line is neither a recipient nor the closing marker. */
+"A header line is neither a recipient nor the closing marker." = "Рядок заголовка не є ні отримувачем, ні завершальним маркером.";
+
+/* A header line is too long. */
+"A header line is too long." = "Рядок заголовка надто довгий.";
+
+/* A passphrase cannot be combined with other recipients. */
+"A passphrase cannot be combined with other recipients." = "Парольну фразу не можна поєднувати з іншими отримувачами.";
+
+/* A passphrase entry must be the only recipient. */
+"A passphrase entry must be the only recipient." = "Запис парольної фрази має бути єдиним отримувачем.";
+
+/* A recipient body is not valid base64. */
+"A recipient body is not valid base64." = "Тіло отримувача не є коректним base64.";
+
+/* A recipient body line is malformed. */
+"A recipient body line is malformed." = "Рядок тіла отримувача має неправильний формат.";
+
+/* A recipient line is malformed. */
+"A recipient line is malformed." = "Рядок отримувача має неправильний формат.";
+
+/* About Agemin */
+"About Agemin" = "Про Agemin";
+
+/* Action */
+"Action" = "Дія";
+
+/* Add */
+"Add" = "Додати";
+
+/* Add a public key on the Recipients page */
+"Add a public key on the Recipients page" = "Додайте відкритий ключ на сторінці «Отримувачі»";
+
+/* Add an identity that can decrypt this file. */
+"Add an identity that can decrypt this file." = "Додайте ідентифікатор, який може розшифрувати цей файл.";
+
+/* Add Key File */
+"Add Key File" = "Додати файл ключа";
+
+/* Add Key File… */
+"Add Key File…" = "Додати файл ключа…";
+
+/* Add Recipient */
+"Add Recipient" = "Додати отримувача";
+
+/* Add Recipient… */
+"Add Recipient…" = "Додати отримувача…";
+
+/* Add to Recipients */
+"Add to Recipients" = "Додати до отримувачів";
+
+/* added */
+"added" = "додано";
+
+/* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
+"After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "Після пробного періоду ви й далі можете шифрувати або розшифровувати один файл на день. Читання ключів, перегляд файлів і створення ключів залишаються без обмежень.";
+
+/* age encryption, without the terminal. */
+"age encryption, without the terminal." = "Шифрування age, без термінала.";
+
+/* age key */
+"age key" = "ключ age";
+
+/* age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA… */
+"age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA…" = "age1… або ssh-ed25519 AAAA… або ssh-rsa AAAA…";
+
+/* Agemin could not use that folder */
+"Agemin could not use that folder" = "Agemin не вдалося використати цю папку";
+
+/* Agemin encrypts files, not folders. */
+"Agemin encrypts files, not folders." = "Agemin шифрує файли, а не папки.";
+
+/* Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged. */
+"Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged." = "Перші 30 днів Agemin повністю розблоковано. Підписка не оформлюється, і плата не стягується.";
+
+/* Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice. */
+"Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice." = "Agemin показує наявні там файли .pub і дає змогу додавати нові. Підійде будь-яка папка; зазвичай використовують ~/.age.";
+
+/* Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually. */
+"Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually." = "Agemin показує знайдені там закриті ключі, зазвичай у ~/.ssh, і розшифровує ними файли. Ключі з інших місць можна додати по одному.";
+
+/* Agemin Pro */
+"Agemin Pro" = "Agemin Pro";
+
+/* Agemin Pro Lifetime · %@ */
+"Agemin Pro Lifetime · %@" = "Agemin Pro назавжди · %@";
+
+/* Agemin Pro Yearly */
+"Agemin Pro Yearly" = "Agemin Pro щорічно";
+
+/* Agemin Pro… */
+"Agemin Pro…" = "Agemin Pro…";
+
+/* Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them. */
+"Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them." = "Agemin видалить збережені дозволи на доступ до папки отримувачів, папки ідентифікаторів та окремо доданих файлів ключів. Нічого не видаляється. Щоб і далі ними користуватися, виберіть їх знову.";
+
+/* Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed. */
+"Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed." = "Agemin зберігає аватар під відбитком цього ключа. Папки ключів не змінюються.";
+
+/* alice */
+"alice" = "alice";
+
+/* All */
+"All" = "Усі";
+
+/* An age public key has 32 bytes. */
+"An age public key has 32 bytes." = "Відкритий ключ age містить 32 байти.";
+
+/* An age secret key has 32 bytes. */
+"An age secret key has 32 bytes." = "Секретний ключ age містить 32 байти.";
+
+/* An ssh-ed25519 recipient entry is malformed. */
+"An ssh-ed25519 recipient entry is malformed." = "Запис отримувача ssh-ed25519 має неправильний формат.";
+
+/* An ssh-rsa recipient entry is malformed. */
+"An ssh-rsa recipient entry is malformed." = "Запис отримувача ssh-rsa має неправильний формат.";
+
+/* An X25519 recipient entry has the wrong size. */
+"An X25519 recipient entry has the wrong size." = "Запис отримувача X25519 має неправильний розмір.";
+
+/* An X25519 recipient entry is malformed. */
+"An X25519 recipient entry is malformed." = "Запис отримувача X25519 має неправильний формат.";
+
+/* Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one. */
+"Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one." = "Відкрити файл зможе будь-хто, хто знає парольну фразу. age пропускає її через scrypt, тому довжина фрази важливіша за її складність.";
+
+/* ASCII armor */
+"ASCII armor" = "ASCII armor";
+
+/* Avatar for %@ */
+"Avatar for %@" = "Аватар для %@";
+
+/* Cancel */
+"Cancel" = "Скасувати";
+
+/* Change */
+"Change" = "Змінити";
+
+/* Choose */
+"Choose" = "Вибрати";
+
+/* Choose a file to encrypt. */
+"Choose a file to encrypt." = "Виберіть файл для шифрування.";
+
+/* Choose a yearly subscription or lifetime purchase at any time to remove the daily limit. */
+"Choose a yearly subscription or lifetime purchase at any time to remove the daily limit." = "Щоб зняти денний ліміт, будь-коли оформіть річну підписку або зробіть довічну покупку.";
+
+/* Choose an age identity file or an SSH private key */
+"Choose an age identity file or an SSH private key" = "Виберіть файл ідентифікатора age або закритий ключ SSH";
+
+/* Choose an encrypted file. */
+"Choose an encrypted file." = "Виберіть зашифрований файл.";
+
+/* Choose an image for this key's avatar */
+"Choose an image for this key's avatar" = "Виберіть зображення для аватара цього ключа";
+
+/* Choose File */
+"Choose File" = "Вибрати файл";
+
+/* Choose File to Decrypt… */
+"Choose File to Decrypt…" = "Вибрати файл для розшифрування…";
+
+/* Choose File to Encrypt… */
+"Choose File to Encrypt…" = "Вибрати файл для шифрування…";
+
+/* Choose Folder */
+"Choose Folder" = "Вибрати папку";
+
+/* Choose Identities Folder… */
+"Choose Identities Folder…" = "Вибрати папку ідентифікаторів…";
+
+/* Choose Image */
+"Choose Image" = "Вибрати зображення";
+
+/* Choose Recipients Folder… */
+"Choose Recipients Folder…" = "Вибрати папку отримувачів…";
+
+/* Choose the encrypted file, usually ending in .age */
+"Choose the encrypted file, usually ending in .age" = "Виберіть зашифрований файл, зазвичай із розширенням .age";
+
+/* Choose the file to encrypt */
+"Choose the file to encrypt" = "Виберіть файл для шифрування";
+
+/* Choose the folder with the .pub files of the people you encrypt for, usually ~/.age. */
+"Choose the folder with the .pub files of the people you encrypt for, usually ~/.age." = "Виберіть папку з файлами .pub людей, для яких ви шифруєте, зазвичай ~/.age.";
+
+/* Choose the folder with the .pub files you encrypt for, usually ~/.age */
+"Choose the folder with the .pub files you encrypt for, usually ~/.age" = "Виберіть папку з файлами .pub, для яких ви шифруєте, зазвичай ~/.age";
+
+/* Choose the folder with your private keys, usually ~/.ssh */
+"Choose the folder with your private keys, usually ~/.ssh" = "Виберіть папку з вашими закритими ключами, зазвичай ~/.ssh";
+
+/* Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page. */
+"Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page." = "Виберіть папку з вашими ключами SSH, зазвичай ~/.ssh, або додайте файл ідентифікатора age на сторінці «Ідентифікатори».";
+
+/* Choose where to save the decrypted file */
+"Choose where to save the decrypted file" = "Виберіть, куди зберегти розшифрований файл";
+
+/* Choose where to save the encrypted file */
+"Choose where to save the encrypted file" = "Виберіть, куди зберегти зашифрований файл";
+
+/* Choose your recipients folder */
+"Choose your recipients folder" = "Виберіть папку отримувачів";
+
+/* Choose your SSH folder */
+"Choose your SSH folder" = "Виберіть папку SSH";
+
+/* Clear search */
+"Clear search" = "Очистити пошук";
+
+/* Clear the file */
+"Clear the file" = "Прибрати файл";
+
+/* Click an avatar to change it, or drop an image onto it. */
+"Click an avatar to change it, or drop an image onto it." = "Клацніть аватар, щоб змінити його, або перетягніть на нього зображення.";
+
+/* Click to change the avatar, or drop an image on it */
+"Click to change the avatar, or drop an image on it" = "Клацніть, щоб змінити аватар, або перетягніть на нього зображення";
+
+/* Compress the folder into an archive first, then open the archive. */
+"Compress the folder into an archive first, then open the archive." = "Спочатку стисніть папку в архів, а потім відкрийте архів.";
+
+/* Confirm passphrase */
+"Confirm passphrase" = "Підтвердьте парольну фразу";
+
+/* Contacting the App Store… */
+"Contacting the App Store…" = "Зв'язуємося з App Store…";
+
+/* Continue */
+"Continue" = "Продовжити";
+
+/* Copy */
+"Copy" = "Скопіювати";
+
+/* Copy Key */
+"Copy Key" = "Скопіювати ключ";
+
+/* Copy Path */
+"Copy Path" = "Скопіювати шлях";
+
+/* Copy Public Key */
+"Copy Public Key" = "Скопіювати відкритий ключ";
+
+/* Decrypt */
+"Decrypt" = "Розшифрувати";
+
+/* Decrypt This File */
+"Decrypt This File" = "Розшифрувати цей файл";
+
+/* Decrypt with */
+"Decrypt with" = "Розшифрувати за допомогою";
+
+/* Decrypted */
+"Decrypted" = "Розшифровано";
+
+/* Decrypting */
+"Decrypting" = "Розшифрування";
+
+/* Decryption failed */
+"Decryption failed" = "Не вдалося розшифрувати";
+
+/* Decrypt… */
+"Decrypt…" = "Розшифрувати…";
+
+/* Delete */
+"Delete" = "Видалити";
+
+/* Delete %@? */
+"Delete %@?" = "Видалити %@?";
+
+/* Delete the .pub file */
+"Delete the .pub file" = "Видалити файл .pub";
+
+/* Drop a file here to encrypt it */
+"Drop a file here to encrypt it" = "Перетягніть сюди файл, щоб зашифрувати його";
+
+/* Drop a file, not a folder. Compress the folder first, then drop the archive. */
+"Drop a file, not a folder. Compress the folder first, then drop the archive." = "Перетягніть файл, а не папку. Спочатку стисніть папку в архів, а потім перетягніть архів.";
+
+/* Drop an age file here to decrypt it */
+"Drop an age file here to decrypt it" = "Перетягніть сюди файл age, щоб розшифрувати його";
+
+/* Encrypt */
+"Encrypt" = "Зашифрувати";
+
+/* Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file. */
+"Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file." = "Зашифруйте файл для відкритих ключів людей, які мають його відкрити, або за допомогою парольної фрази. Результат — стандартний файл age.";
+
+/* Encrypt for */
+"Encrypt for" = "Зашифрувати для";
+
+/* Encrypted */
+"Encrypted" = "Зашифровано";
+
+/* Encrypted for */
+"Encrypted for" = "Зашифровано для";
+
+/* Encrypting */
+"Encrypting" = "Шифрування";
+
+/* Encryption failed */
+"Encryption failed" = "Не вдалося зашифрувати";
+
+/* Encrypt… */
+"Encrypt…" = "Зашифрувати…";
+
+/* Enter a passphrase. */
+"Enter a passphrase." = "Введіть парольну фразу.";
+
+/* Enter the file's passphrase. */
+"Enter the file's passphrase." = "Введіть парольну фразу файлу.";
+
+/* Enter the passphrase below */
+"Enter the passphrase below" = "Введіть парольну фразу нижче";
+
+/* Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa). */
+"Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa)." = "Очікувався відкритий ключ age (age1…) або відкритий ключ SSH (ssh-ed25519 чи ssh-rsa).";
+
+/* Expires %@ */
+"Expires %@" = "До %@";
+
+/* Files */
+"Files" = "Файли";
+
+/* Fill both fields with a random passphrase and show it once */
+"Fill both fields with a random passphrase and show it once" = "Заповнити обидва поля випадковою парольною фразою та показати її один раз";
+
+/* Filter identities */
+"Filter identities" = "Фільтр ідентифікаторів";
+
+/* Filter recipients */
+"Filter recipients" = "Фільтр отримувачів";
+
+/* Find… */
+"Find…" = "Знайти…";
+
+/* Forget Access */
+"Forget Access" = "Забути доступ";
+
+/* Forget access to the key folders? */
+"Forget access to the key folders?" = "Забути доступ до папок ключів?";
+
+/* Forget Folder Access… */
+"Forget Folder Access…" = "Забути доступ до папок…";
+
+/* Free · Available today: %lld */
+"Free · Available today: %lld" = "Безкоштовно · Доступно сьогодні: %lld";
+
+/* Generate */
+"Generate" = "Згенерувати";
+
+/* Give the recipient a name. */
+"Give the recipient a name." = "Вкажіть ім'я отримувача.";
+
+/* Hide this card */
+"Hide this card" = "Сховати цю картку";
+
+/* Identities */
+"Identities" = "Ідентифікатори";
+
+/* Identity file */
+"Identity file" = "Файл ідентифікатора";
+
+/* Initials */
+"Initials" = "Ініціали";
+
+/* Initials color %lld */
+"Initials color %lld" = "Колір ініціалів %lld";
+
+/* Keep Working */
+"Keep Working" = "Продовжити роботу";
+
+/* Key */
+"Key" = "Ключ";
+
+/* Keys */
+"Keys" = "Ключі";
+
+/* Lifetime */
+"Lifetime" = "Назавжди";
+
+/* Loading App Store products… */
+"Loading App Store products…" = "Завантаження продуктів App Store…";
+
+/* Loading keys… */
+"Loading keys…" = "Завантаження ключів…";
+
+/* macOS did not grant lasting access to that folder. Choose it again, or choose another folder. */
+"macOS did not grant lasting access to that folder. Choose it again, or choose another folder." = "macOS не надала постійного доступу до цієї папки. Виберіть її знову або виберіть іншу папку.";
+
+/* Manage Subscription */
+"Manage Subscription" = "Керувати підпискою";
+
+/* matches */
+"matches" = "відповідає";
+
+/* Matches %@ */
+"Matches %@" = "Відповідає: %@";
+
+/* Matching keys first. Protected keys ask for their passphrase. */
+"Matching keys first. Protected keys ask for their passphrase." = "Спочатку відповідні ключі. Захищені ключі запитають парольну фразу.";
+
+/* Name */
+"Name" = "Ім'я";
+
+/* New age Key */
+"New age Key" = "Новий ключ age";
+
+/* New age key saved */
+"New age key saved" = "Новий ключ age збережено";
+
+/* New age Key… */
+"New age Key…" = "Новий ключ age…";
+
+/* New recipient */
+"New recipient" = "Новий отримувач";
+
+/* No active purchase was found. */
+"No active purchase was found." = "Не знайдено жодної активної покупки Agemin.";
+
+/* No Agemin Pro purchase was found for this Apple Account. */
+"No Agemin Pro purchase was found for this Apple Account." = "Жодної покупки Agemin Pro для цього облікового запису Apple не було знайдено.";
+
+/* No identities yet */
+"No identities yet" = "Ідентифікаторів поки немає";
+
+/* No matching key */
+"No matching key" = "Немає відповідного ключа";
+
+/* No recipients folder yet */
+"No recipients folder yet" = "Папку отримувачів ще не вибрано";
+
+/* None */
+"None" = "Жодного";
+
+/* None of the identities can decrypt this file. */
+"None of the identities can decrypt this file." = "Жоден з ідентифікаторів не може розшифрувати цей файл.";
+
+/* None of your identities matches this file. Add the key it was encrypted for on the Identities page. */
+"None of your identities matches this file. Add the key it was encrypted for on the Identities page." = "Жоден з ваших ідентифікаторів не відповідає цьому файлу. Додайте ключ, для якого його зашифровано, на сторінці «Ідентифікатори».";
+
+/* not a key */
+"not a key" = "не ключ";
+
+/* OK */
+"OK" = "OK";
+
+/* Open an age file with one of your keys, or with the passphrase it was encrypted with. */
+"Open an age file with one of your keys, or with the passphrase it was encrypted with." = "Відкрийте файл age одним зі своїх ключів або парольною фразою, якою його зашифровано.";
+
+/* Options */
+"Options" = "Опції";
+
+/* Output */
+"Output" = "Результат";
+
+/* Pages */
+"Pages" = "Сторінки";
+
+/* Passphrase */
+"Passphrase" = "Парольна фраза";
+
+/* passphrase */
+"passphrase" = "парольна фраза";
+
+/* Passphrase · work factor %lld */
+"Passphrase · work factor %lld" = "Парольна фраза · параметр складності %lld";
+
+/* Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends. */
+"Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends." = "Оплата стягується з вашого облікового запису Apple. Річна підписка поновлюється автоматично, якщо не скасувати її в налаштуваннях App Store щонайменше за день до завершення поточного періоду.";
+
+/* Privacy Policy */
+"Privacy Policy" = "Політика конфіденційності";
+
+/* Privacy Policy… */
+"Privacy Policy…" = "Політика конфіденційності…";
+
+/* Pro */
+"Pro" = "Pro";
+
+/* Pro purchases are unavailable right now. Try again later. */
+"Pro purchases are unavailable right now. Try again later." = "Покупки Pro зараз недоступні. Спробуйте пізніше.";
+
+/* Pro trial · %lld days remaining */
+"Pro trial · %lld days remaining" = "Пробний період Pro · днів залишилося: %lld";
+
+/* Pro trial · 1 day remaining */
+"Pro trial · 1 day remaining" = "Пробний період Pro · залишився 1 день";
+
+/* Pro trial · ends %@ */
+"Pro trial · ends %@" = "Пробний період Pro · завершується %@";
+
+/* Pro trial · first payment %@ */
+"Pro trial · first payment %@" = "Пробний період Pro · перший платіж %@";
+
+/* Pro trial · until %@ */
+"Pro trial · until %@" = "Пробний період Pro · до %@";
+
+/* Public key */
+"Public key" = "Відкритий ключ";
+
+/* Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file. */
+"Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file." = "Відкриті ключі, для яких ви шифруєте. Кожен файл .pub у папці — один отримувач з іменем файлу.";
+
+/* Purchase */
+"Purchase" = "Придбання";
+
+/* Quit Anyway */
+"Quit Anyway" = "Все одно завершити";
+
+/* Quitting now cancels it and removes the partial output. */
+"Quitting now cancels it and removes the partial output." = "Якщо завершити зараз, операцію буде скасовано, а неповний результат видалено.";
+
+/* Read the folder again */
+"Read the folder again" = "Прочитати папку знову";
+
+/* Recipients */
+"Recipients" = "Отримувачі";
+
+/* Refresh Keys */
+"Refresh Keys" = "Оновити ключі";
+
+/* Remove from the list */
+"Remove from the list" = "Прибрати зі списку";
+
+/* Renews %@ */
+"Renews %@" = "Продовжиться %@";
+
+/* Restore Purchases */
+"Restore Purchases" = "Відновлення покупок";
+
+/* Restoring… */
+"Restoring…" = "Відновлення…";
+
+/* Reveal */
+"Reveal" = "Показати";
+
+/* Reveal in Finder */
+"Reveal in Finder" = "Показати у Finder";
+
+/* Save */
+"Save" = "Зберегти";
+
+/* Save Key */
+"Save Key" = "Зберегти ключ";
+
+/* Save Recipient */
+"Save Recipient" = "Зберегти отримувача";
+
+/* Save the new identity file somewhere private because it holds the secret key */
+"Save the new identity file somewhere private because it holds the secret key" = "Збережіть новий файл ідентифікатора в надійному місці: він містить секретний ключ";
+
+/* Saved as */
+"Saved as" = "Збережено як";
+
+/* Saved as <name>.pub in the recipients folder. */
+"Saved as <name>.pub in the recipients folder." = "Зберігається як <ім'я>.pub у папці отримувачів.";
+
+/* Select at least one recipient. */
+"Select at least one recipient." = "Виберіть принаймні одного отримувача.";
+
+/* SHA-256 */
+"SHA-256" = "SHA-256";
+
+/* Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it. */
+"Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it." = "Поділіться відкритим ключем із тими, хто має шифрувати для вас. Файл ідентифікатора тримайте в таємниці: його може читати лише ваш обліковий запис.";
+
+/* Shared with your family */
+"Shared with your family" = "Сімейний доступ";
+
+/* Size */
+"Size" = "Розмір";
+
+/* SSH key (Ed25519) */
+"SSH key (Ed25519)" = "Ключ SSH (Ed25519)";
+
+/* SSH key (RSA) */
+"SSH key (RSA)" = "Ключ SSH (RSA)";
+
+/* Terms of Use (EULA) */
+"Terms of Use (EULA)" = "Умови використання (EULA)";
+
+/* That file is not an image Agemin can read. */
+"That file is not an image Agemin can read." = "Цей файл не є зображенням, яке Agemin може прочитати.";
+
+/* The App Store could not verify this purchase. */
+"The App Store could not verify this purchase." = "App Store не зміг підтвердити цю покупку.";
+
+/* The armor header is missing. */
+"The armor header is missing." = "Відсутній заголовок ASCII armor.";
+
+/* The armored file could not be read. %@ */
+"The armored file could not be read. %@" = "Не вдалося прочитати файл ASCII armor. %@";
+
+/* The armored file ends before its footer. */
+"The armored file ends before its footer." = "Файл ASCII armor закінчується до завершального рядка.";
+
+/* The armored text is incomplete. */
+"The armored text is incomplete." = "Текст ASCII armor неповний.";
+
+/* The armored text is not valid base64. */
+"The armored text is not valid base64." = "Текст ASCII armor не є коректним base64.";
+
+/* The decrypted file cannot replace the encrypted file. Choose a different name. */
+"The decrypted file cannot replace the encrypted file. Choose a different name." = "Розшифрований файл не може замінити зашифрований. Виберіть інше ім'я.";
+
+/* The decrypted file does not hold an age secret key. */
+"The decrypted file does not hold an age secret key." = "Розшифрований файл не містить секретного ключа age.";
+
+/* The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one. */
+"The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one." = "Розшифрований файл може читати лише ваш обліковий запис. Порівняйте контрольну суму із сумою відправника, якщо він її надав.";
+
+/* The encrypted data is corrupt or was modified. */
+"The encrypted data is corrupt or was modified." = "Зашифровані дані пошкоджено або змінено.";
+
+/* The encrypted file cannot replace the original. Choose a different name. */
+"The encrypted file cannot replace the original. Choose a different name." = "Зашифрований файл не може замінити оригінал. Виберіть інше ім'я.";
+
+/* The file could not be read. */
+"The file could not be read." = "Не вдалося прочитати файл.";
+
+/* The file ends early. It may be incomplete. */
+"The file ends early. It may be incomplete." = "Файл обривається передчасно. Можливо, він неповний.";
+
+/* The file header was modified or the key is wrong. */
+"The file header was modified or the key is wrong." = "Заголовок файлу змінено, або ключ не підходить.";
+
+/* The file holds no age secret key. */
+"The file holds no age secret key." = "Файл не містить секретного ключа age.";
+
+/* The file is being read. */
+"The file is being read." = "Файл читається.";
+
+/* The file is not text. */
+"The file is not text." = "Файл не є текстом.";
+
+/* The file is too large to be a key. */
+"The file is too large to be a key." = "Файл завеликий для ключа.";
+
+/* The first line is not the age version marker. */
+"The first line is not the age version marker." = "Перший рядок не є маркером версії age.";
+
+/* The header authentication line is malformed. */
+"The header authentication line is malformed." = "Рядок автентифікації заголовка має неправильний формат.";
+
+/* The header is not valid text. */
+"The header is not valid text." = "Заголовок не є коректним текстом.";
+
+/* The header is too large to be an age file. */
+"The header is too large to be an age file." = "Заголовок завеликий для файлу age.";
+
+/* The header lists too many recipients. */
+"The header lists too many recipients." = "У заголовку забагато отримувачів.";
+
+/* The identity could not be read. %@ */
+"The identity could not be read. %@" = "Не вдалося прочитати ідентифікатор. %@";
+
+/* The identity file could not be saved. */
+"The identity file could not be saved." = "Не вдалося зберегти файл ідентифікатора.";
+
+/* The image could not be used */
+"The image could not be used" = "Не вдалося використати зображення";
+
+/* The image is larger than %lld pixels on a side. Choose a smaller one. */
+"The image is larger than %lld pixels on a side. Choose a smaller one." = "Сторона зображення перевищує %lld пікселів. Виберіть менше зображення.";
+
+/* The input is larger than expected. */
+"The input is larger than expected." = "Вхідні дані більші, ніж очікувалося.";
+
+/* The key file ends early. */
+"The key file ends early." = "Файл ключа обривається передчасно.";
+
+/* The key file is malformed. */
+"The key file is malformed." = "Файл ключа має неправильний формат.";
+
+/* The key file's passphrase settings are invalid. */
+"The key file's passphrase settings are invalid." = "Параметри парольної фрази файлу ключа недійсні.";
+
+/* The key is empty. */
+"The key is empty." = "Ключ порожній.";
+
+/* The key is protected with the %@ cipher, which is not supported. */
+"The key is protected with the %@ cipher, which is not supported." = "Ключ захищено шифром %@, який не підтримується.";
+
+/* The key is saved as <name>.pub in the recipients folder. */
+"The key is saved as <name>.pub in the recipients folder." = "Ключ зберігається як <ім'я>.pub у папці отримувачів.";
+
+/* The key uses %lld key derivation rounds. Agemin supports up to %lld. */
+"The key uses %lld key derivation rounds. Agemin supports up to %lld." = "Кількість раундів формування ключа: %lld; Agemin підтримує не більше %lld.";
+
+/* The key uses the %@ key derivation, which is not supported. */
+"The key uses the %@ key derivation, which is not supported." = "Ключ використовує функцію формування ключа %@, яка не підтримується.";
+
+/* The operation was canceled. */
+"The operation was canceled." = "Операцію скасовано.";
+
+/* The passphrase entry is malformed. */
+"The passphrase entry is malformed." = "Запис парольної фрази має неправильний формат.";
+
+/* The passphrase for %@ is incorrect. Try again. */
+"The passphrase for %@ is incorrect. Try again." = "Неправильна парольна фраза для %@. Спробуйте ще раз.";
+
+/* The passphrase is incorrect. */
+"The passphrase is incorrect." = "Неправильна парольна фраза.";
+
+/* The passphrase work factor %lld is too high to try safely. */
+"The passphrase work factor %lld is too high to try safely." = "Параметр складності парольної фрази %lld завеликий, щоб безпечно його перевірити.";
+
+/* The passphrase work factor is malformed. */
+"The passphrase work factor is malformed." = "Параметр складності парольної фрази має неправильний формат.";
+
+/* The passphrases do not match. */
+"The passphrases do not match." = "Парольні фрази не збігаються.";
+
+/* The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them. */
+"The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them." = "Закриті ключі, які відкривають зашифровані для вас файли: ключі SSH з ~/.ssh і файли ідентифікаторів age. Agemin лише читає їх і ніколи не змінює.";
+
+/* The purchase is awaiting approval. */
+"The purchase is awaiting approval." = "Покупка очікує на затвердження.";
+
+/* The recipient could not be deleted. */
+"The recipient could not be deleted." = "Не вдалося видалити отримувача.";
+
+/* The recipient could not be saved. */
+"The recipient could not be saved." = "Не вдалося зберегти отримувача.";
+
+/* The recipient key could not be read. %@ */
+"The recipient key could not be read. %@" = "Не вдалося прочитати ключ отримувача. %@";
+
+/* The recipients folder */
+"The recipients folder" = "Папка отримувачів";
+
+/* The recipients folder holds no .pub files yet. */
+"The recipients folder holds no .pub files yet." = "У папці отримувачів поки немає файлів .pub.";
+
+/* The RSA key is malformed. */
+"The RSA key is malformed." = "Ключ RSA має неправильний формат.";
+
+/* The RSA key is too small or malformed. */
+"The RSA key is too small or malformed." = "Ключ RSA закороткий або має неправильний формат.";
+
+/* The SSH key is not a valid Ed25519 key. */
+"The SSH key is not a valid Ed25519 key." = "Ключ SSH не є коректним ключем Ed25519.";
+
+/* The SSH key is not a valid RSA key. */
+"The SSH key is not a valid RSA key." = "Ключ SSH не є коректним ключем RSA.";
+
+/* The SSH public key is malformed. */
+"The SSH public key is malformed." = "Відкритий ключ SSH має неправильний формат.";
+
+/* There is text after the armor footer. */
+"There is text after the armor footer." = "Після завершального рядка ASCII armor є текст.";
+
+/* This deletes the file from the recipients folder. Files already encrypted for this key are not affected. */
+"This deletes the file from the recipients folder. Files already encrypted for this key are not affected." = "Файл буде видалено з папки отримувачів. Файли, уже зашифровані для цього ключа, не постраждають.";
+
+/* This file cannot be read as an age file */
+"This file cannot be read as an age file" = "Цей файл не вдається прочитати як файл age";
+
+/* This file is not a key. */
+"This file is not a key." = "Цей файл не є ключем.";
+
+/* This file needs a passphrase. */
+"This file needs a passphrase." = "Для цього файлу потрібна парольна фраза.";
+
+/* This is a secret key. Use the matching public key, which starts with age1. */
+"This is a secret key. Use the matching public key, which starts with age1." = "Це секретний ключ. Використайте відповідний відкритий ключ, який починається з age1.";
+
+/* This is not a valid age public key. */
+"This is not a valid age public key." = "Це некоректний відкритий ключ age.";
+
+/* This is not a valid age secret key. */
+"This is not a valid age secret key." = "Це некоректний секретний ключ age.";
+
+/* This is not an age file. %@ */
+"This is not an age file. %@" = "Це не файл age. %@";
+
+/* This key format is not supported. Use an OpenSSH private key or an age identity file. */
+"This key format is not supported. Use an OpenSSH private key or an age identity file." = "Цей формат ключа не підтримується. Використайте закритий ключ OpenSSH або файл ідентифікатора age.";
+
+/* This key produces a weak shared secret and cannot be used. */
+"This key produces a weak shared secret and cannot be used." = "Цей ключ дає слабкий спільний секрет, і його не можна використати.";
+
+/* This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy. */
+"This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy." = "Цей захищений парольною фразою ключ використовує застарілий формат PEM. Перетворіть його командою ssh-keygen -p -o або використайте незахищену копію.";
+
+/* Trial ended */
+"Trial ended" = "Пробний період завершено";
+
+/* Try Again */
+"Try Again" = "Спробуйте ще раз";
+
+/* Try every usable key */
+"Try every usable key" = "Перебрати всі придатні ключі";
+
+/* Unknown recipient type “%@” */
+"Unknown recipient type “%@”" = "Невідомий тип отримувача «%@»";
+
+/* Unlock */
+"Unlock" = "Розблокувати";
+
+/* Unlock %@ */
+"Unlock %@" = "Розблокувати %@";
+
+/* Unlock %@ with Agemin Pro. */
+"Unlock %@ with Agemin Pro." = "Розблокуйте %@ за допомогою Agemin Pro.";
+
+/* Until %@ */
+"Until %@" = "Діє до %@";
+
+/* Use Image */
+"Use Image" = "Використати зображення";
+
+/* Use Initials */
+"Use Initials" = "Використати ініціали";
+
+/* Valid %@ key */
+"Valid %@ key" = "Дійсний ключ %@";
+
+/* Wait for the current operation to finish. */
+"Wait for the current operation to finish." = "Дочекайтеся завершення поточної операції.";
+
+/* Write it down or store it in a password manager. Agemin does not keep it. */
+"Write it down or store it in a password manager. Agemin does not keep it." = "Запишіть її або збережіть у менеджері паролів. Agemin її не зберігає.";
+
+/* Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both. */
+"Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both." = "Записувати зашифрований файл як текст, а не двійкові дані: для електронної пошти, чатів і файлів конфігурації. age читає обидва варіанти.";
+
+/* you */
+"you" = "ви";
+
+/* You can still encrypt or decrypt one file per day. Available today: %lld. */
+"You can still encrypt or decrypt one file per day. Available today: %lld." = "Ви й далі можете шифрувати або розшифровувати один файл на день. Доступно сьогодні: %lld.";
+
+/* You have Agemin Pro. */
+"You have Agemin Pro." = "У вас є Agemin Pro.";
+
+/* Your Pro trial is active. */
+"Your Pro trial is active." = "Ваш пробний період Pro активний.";
+
+/* · you choose the folder when you encrypt */
+"· you choose the folder when you encrypt" = "· папку ви вибираєте під час шифрування";
