@@ -1,0 +1,904 @@
+/* Agemin — sv localization. Each comment shows the English source text. */
+
+/*  and armor */
+" and armor" = " och ASCII armor";
+
+/* %@ %@ of %@ */
+"%@ %@ of %@" = "%@ %@ av %@";
+
+/* %@ could not be read. */
+"%@ could not be read." = "%@ kunde inte läsas.";
+
+/* %@ could not be written. */
+"%@ could not be written." = "%@ kunde inte skrivas.";
+
+/* %@ is protected with a passphrase. */
+"%@ is protected with a passphrase." = "%@ är skyddad med en lösenfras.";
+
+/* %@ keys are not supported by age. */
+"%@ keys are not supported by age." = "%@-nycklar stöds inte av age.";
+
+/* %@ per year */
+"%@ per year" = "%@ per år";
+
+/* %@ · %@ more than the original for the header%@ */
+"%@ · %@ more than the original for the header%@" = "%@ · %@ mer än originalet för huvudet%@";
+
+/* %@.pub already exists in the recipients folder. */
+"%@.pub already exists in the recipients folder." = "%@.pub finns redan i mottagarmappen.";
+
+/* %lld identities */
+"%lld identities" = "%lld identiteter";
+
+/* %lld identities · %lld usable */
+"%lld identities · %lld usable" = "%lld identiteter · %lld användbara";
+
+/* %lld keys */
+"%lld keys" = "%lld nycklar";
+
+/* %lld keys tried */
+"%lld keys tried" = "%lld nycklar provade";
+
+/* %lld of %lld recipients selected */
+"%lld of %lld recipients selected" = "%lld av %lld mottagare valda";
+
+/* %lld recipients */
+"%lld recipients" = "%lld mottagare";
+
+/* %lld recipients · %lld usable */
+"%lld recipients · %lld usable" = "%lld mottagare · %lld användbara";
+
+/* 1 identity */
+"1 identity" = "1 identitet";
+
+/* 1 recipient */
+"1 recipient" = "1 mottagare";
+
+/* 30 days of full access */
+"30 days of full access" = "30 dagar med full åtkomst";
+
+/* A file is still being processed. */
+"A file is still being processed." = "En fil bearbetas fortfarande.";
+
+/* A header line is neither a recipient nor the closing marker. */
+"A header line is neither a recipient nor the closing marker." = "En rad i huvudet är varken en mottagare eller slutmarkeringen.";
+
+/* A header line is too long. */
+"A header line is too long." = "En rad i huvudet är för lång.";
+
+/* A passphrase cannot be combined with other recipients. */
+"A passphrase cannot be combined with other recipients." = "En lösenfras kan inte kombineras med andra mottagare.";
+
+/* A passphrase entry must be the only recipient. */
+"A passphrase entry must be the only recipient." = "En lösenfraspost måste vara den enda mottagaren.";
+
+/* A recipient body is not valid base64. */
+"A recipient body is not valid base64." = "Innehållet i en mottagarpost är inte giltig base64.";
+
+/* A recipient body line is malformed. */
+"A recipient body line is malformed." = "En innehållsrad i en mottagarpost är felaktig.";
+
+/* A recipient line is malformed. */
+"A recipient line is malformed." = "En mottagarrad är felaktig.";
+
+/* About Agemin */
+"About Agemin" = "Om Agemin";
+
+/* Action */
+"Action" = "Åtgärd";
+
+/* Add */
+"Add" = "Lägg till";
+
+/* Add a public key on the Recipients page */
+"Add a public key on the Recipients page" = "Lägg till en publik nyckel på sidan Mottagare";
+
+/* Add an identity that can decrypt this file. */
+"Add an identity that can decrypt this file." = "Lägg till en identitet som kan dekryptera den här filen.";
+
+/* Add Key File */
+"Add Key File" = "Lägg till nyckelfil";
+
+/* Add Key File… */
+"Add Key File…" = "Lägg till nyckelfil…";
+
+/* Add Recipient */
+"Add Recipient" = "Lägg till mottagare";
+
+/* Add Recipient… */
+"Add Recipient…" = "Lägg till mottagare…";
+
+/* Add to Recipients */
+"Add to Recipients" = "Lägg till som mottagare";
+
+/* added */
+"added" = "tillagd";
+
+/* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
+"After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "Efter provperioden kan du fortfarande kryptera eller dekryptera en fil per dag. Att läsa nycklar, granska filer och skapa nycklar förblir obegränsat.";
+
+/* age encryption, without the terminal. */
+"age encryption, without the terminal." = "age-kryptering, utan terminalen.";
+
+/* age key */
+"age key" = "age-nyckel";
+
+/* age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA… */
+"age1… or ssh-ed25519 AAAA… or ssh-rsa AAAA…" = "age1… eller ssh-ed25519 AAAA… eller ssh-rsa AAAA…";
+
+/* Agemin could not use that folder */
+"Agemin could not use that folder" = "Agemin kunde inte använda den mappen";
+
+/* Agemin encrypts files, not folders. */
+"Agemin encrypts files, not folders." = "Agemin krypterar filer, inte mappar.";
+
+/* Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged. */
+"Agemin is fully unlocked for your first 30 days. No subscription starts, and you will not be charged." = "Agemin är helt upplåst under dina första 30 dagar. Ingen prenumeration startar och du debiteras inte.";
+
+/* Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice. */
+"Agemin lists the .pub files there and lets you add new ones. Any folder works. ~/.age is a common choice." = "Agemin visar .pub-filerna där och låter dig lägga till nya. Vilken mapp som helst fungerar; ~/.age är ett vanligt val.";
+
+/* Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually. */
+"Agemin lists the private keys in that folder and uses them to decrypt files. This folder is usually ~/.ssh. You can add keys stored elsewhere individually." = "Agemin visar de privata nycklar som finns där, vanligtvis ~/.ssh, och dekrypterar med dem. Nycklar som förvaras på andra platser kan läggas till en i taget.";
+
+/* Agemin Pro */
+"Agemin Pro" = "Agemin Pro";
+
+/* Agemin Pro Lifetime · %@ */
+"Agemin Pro Lifetime · %@" = "Agemin Pro Livstid · %@";
+
+/* Agemin Pro Yearly */
+"Agemin Pro Yearly" = "Agemin Pro Årligen";
+
+/* Agemin Pro… */
+"Agemin Pro…" = "Agemin Pro…";
+
+/* Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them. */
+"Agemin removes its saved permissions for the recipients folder, the identities folder, and any key files added individually. Nothing is deleted. Choose them again to keep using them." = "Agemin tar bort sina sparade behörigheter för mottagarmappen, identitetsmappen och alla nyckelfiler som lagts till separat. Inget raderas. Välj dem igen för att fortsätta använda dem.";
+
+/* Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed. */
+"Agemin stores the avatar under this key's fingerprint. Nothing in your key folders is changed." = "Agemin sparar avataren under den här nyckelns fingeravtryck. Inget i dina nyckelmappar ändras.";
+
+/* alice */
+"alice" = "alice";
+
+/* All */
+"All" = "Alla";
+
+/* An age public key has 32 bytes. */
+"An age public key has 32 bytes." = "En publik age-nyckel har 32 byte.";
+
+/* An age secret key has 32 bytes. */
+"An age secret key has 32 bytes." = "En hemlig age-nyckel har 32 byte.";
+
+/* An ssh-ed25519 recipient entry is malformed. */
+"An ssh-ed25519 recipient entry is malformed." = "En ssh-ed25519-mottagarpost är felaktig.";
+
+/* An ssh-rsa recipient entry is malformed. */
+"An ssh-rsa recipient entry is malformed." = "En ssh-rsa-mottagarpost är felaktig.";
+
+/* An X25519 recipient entry has the wrong size. */
+"An X25519 recipient entry has the wrong size." = "En X25519-mottagarpost har fel storlek.";
+
+/* An X25519 recipient entry is malformed. */
+"An X25519 recipient entry is malformed." = "En X25519-mottagarpost är felaktig.";
+
+/* Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one. */
+"Anyone with the passphrase can open the file. age runs it through scrypt, so a long passphrase matters more than a complex one." = "Alla som har lösenfrasen kan öppna filen. age kör den genom scrypt, så en lång lösenfras betyder mer än en komplex.";
+
+/* ASCII armor */
+"ASCII armor" = "ASCII armor";
+
+/* Avatar for %@ */
+"Avatar for %@" = "Avatar för %@";
+
+/* Cancel */
+"Cancel" = "Avbryt";
+
+/* Change */
+"Change" = "Ändra";
+
+/* Choose */
+"Choose" = "Välj";
+
+/* Choose a file to encrypt. */
+"Choose a file to encrypt." = "Välj en fil att kryptera.";
+
+/* Choose a yearly subscription or lifetime purchase at any time to remove the daily limit. */
+"Choose a yearly subscription or lifetime purchase at any time to remove the daily limit." = "Välj när som helst en årsprenumeration eller ett livstidsköp för att ta bort dagsgränsen.";
+
+/* Choose an age identity file or an SSH private key */
+"Choose an age identity file or an SSH private key" = "Välj en age-identitetsfil eller en privat SSH-nyckel";
+
+/* Choose an encrypted file. */
+"Choose an encrypted file." = "Välj en krypterad fil.";
+
+/* Choose an image for this key's avatar */
+"Choose an image for this key's avatar" = "Välj en bild för den här nyckelns avatar";
+
+/* Choose File */
+"Choose File" = "Välj fil";
+
+/* Choose File to Decrypt… */
+"Choose File to Decrypt…" = "Välj fil att dekryptera…";
+
+/* Choose File to Encrypt… */
+"Choose File to Encrypt…" = "Välj fil att kryptera…";
+
+/* Choose Folder */
+"Choose Folder" = "Välj mapp";
+
+/* Choose Identities Folder… */
+"Choose Identities Folder…" = "Välj identitetsmapp…";
+
+/* Choose Image */
+"Choose Image" = "Välj bild";
+
+/* Choose Recipients Folder… */
+"Choose Recipients Folder…" = "Välj mottagarmapp…";
+
+/* Choose the encrypted file, usually ending in .age */
+"Choose the encrypted file, usually ending in .age" = "Välj den krypterade filen, som vanligtvis slutar på .age";
+
+/* Choose the file to encrypt */
+"Choose the file to encrypt" = "Välj filen att kryptera";
+
+/* Choose the folder with the .pub files of the people you encrypt for, usually ~/.age. */
+"Choose the folder with the .pub files of the people you encrypt for, usually ~/.age." = "Välj mappen med .pub-filerna för personerna du krypterar för, vanligtvis ~/.age.";
+
+/* Choose the folder with the .pub files you encrypt for, usually ~/.age */
+"Choose the folder with the .pub files you encrypt for, usually ~/.age" = "Välj mappen med .pub-filerna du krypterar för, vanligtvis ~/.age";
+
+/* Choose the folder with your private keys, usually ~/.ssh */
+"Choose the folder with your private keys, usually ~/.ssh" = "Välj mappen med dina privata nycklar, vanligtvis ~/.ssh";
+
+/* Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page. */
+"Choose the folder with your SSH keys, usually ~/.ssh, or add an age identity file on the Identities page." = "Välj mappen med dina SSH-nycklar, vanligtvis ~/.ssh, eller lägg till en age-identitetsfil på sidan Identiteter.";
+
+/* Choose where to save the decrypted file */
+"Choose where to save the decrypted file" = "Välj var den dekrypterade filen ska sparas";
+
+/* Choose where to save the encrypted file */
+"Choose where to save the encrypted file" = "Välj var den krypterade filen ska sparas";
+
+/* Choose your recipients folder */
+"Choose your recipients folder" = "Välj din mottagarmapp";
+
+/* Choose your SSH folder */
+"Choose your SSH folder" = "Välj din SSH-mapp";
+
+/* Clear search */
+"Clear search" = "Rensa sökning";
+
+/* Clear the file */
+"Clear the file" = "Ta bort filen";
+
+/* Click an avatar to change it, or drop an image onto it. */
+"Click an avatar to change it, or drop an image onto it." = "Klicka på en avatar för att ändra den, eller släpp en bild på den.";
+
+/* Click to change the avatar, or drop an image on it */
+"Click to change the avatar, or drop an image on it" = "Klicka för att ändra avataren, eller släpp en bild på den";
+
+/* Compress the folder into an archive first, then open the archive. */
+"Compress the folder into an archive first, then open the archive." = "Komprimera mappen till ett arkiv först och öppna sedan arkivet.";
+
+/* Confirm passphrase */
+"Confirm passphrase" = "Bekräfta lösenfras";
+
+/* Contacting the App Store… */
+"Contacting the App Store…" = "Kontaktar App Store…";
+
+/* Continue */
+"Continue" = "Fortsätt";
+
+/* Copy */
+"Copy" = "Kopiera";
+
+/* Copy Key */
+"Copy Key" = "Kopiera nyckel";
+
+/* Copy Path */
+"Copy Path" = "Kopiera sökväg";
+
+/* Copy Public Key */
+"Copy Public Key" = "Kopiera publik nyckel";
+
+/* Decrypt */
+"Decrypt" = "Dekryptera";
+
+/* Decrypt This File */
+"Decrypt This File" = "Dekryptera den här filen";
+
+/* Decrypt with */
+"Decrypt with" = "Dekryptera med";
+
+/* Decrypted */
+"Decrypted" = "Dekrypterad";
+
+/* Decrypting */
+"Decrypting" = "Dekrypterar";
+
+/* Decryption failed */
+"Decryption failed" = "Dekrypteringen misslyckades";
+
+/* Decrypt… */
+"Decrypt…" = "Dekryptera…";
+
+/* Delete */
+"Delete" = "Radera";
+
+/* Delete %@? */
+"Delete %@?" = "Radera %@?";
+
+/* Delete the .pub file */
+"Delete the .pub file" = "Radera .pub-filen";
+
+/* Drop a file here to encrypt it */
+"Drop a file here to encrypt it" = "Släpp en fil här för att kryptera den";
+
+/* Drop a file, not a folder. Compress the folder first, then drop the archive. */
+"Drop a file, not a folder. Compress the folder first, then drop the archive." = "Släpp en fil, inte en mapp. Komprimera mappen först och släpp sedan arkivet.";
+
+/* Drop an age file here to decrypt it */
+"Drop an age file here to decrypt it" = "Släpp en age-fil här för att dekryptera den";
+
+/* Encrypt */
+"Encrypt" = "Kryptera";
+
+/* Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file. */
+"Encrypt a file for people using their public keys, or protect it with a passphrase. The result is a standard age file." = "Kryptera en fil för de publika nycklarna hos personerna som ska öppna den, eller med en lösenfras. Resultatet är en age-fil i standardformat.";
+
+/* Encrypt for */
+"Encrypt for" = "Kryptera för";
+
+/* Encrypted */
+"Encrypted" = "Krypterad";
+
+/* Encrypted for */
+"Encrypted for" = "Krypterad för";
+
+/* Encrypting */
+"Encrypting" = "Krypterar";
+
+/* Encryption failed */
+"Encryption failed" = "Krypteringen misslyckades";
+
+/* Encrypt… */
+"Encrypt…" = "Kryptera…";
+
+/* Enter a passphrase. */
+"Enter a passphrase." = "Ange en lösenfras.";
+
+/* Enter the file's passphrase. */
+"Enter the file's passphrase." = "Ange filens lösenfras.";
+
+/* Enter the passphrase below */
+"Enter the passphrase below" = "Ange lösenfrasen nedan";
+
+/* Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa). */
+"Expected an age public key (age1…) or an SSH public key (ssh-ed25519 or ssh-rsa)." = "Förväntade en publik age-nyckel (age1…) eller en publik SSH-nyckel (ssh-ed25519 eller ssh-rsa).";
+
+/* Expires %@ */
+"Expires %@" = "Upphör %@";
+
+/* Files */
+"Files" = "Filer";
+
+/* Fill both fields with a random passphrase and show it once */
+"Fill both fields with a random passphrase and show it once" = "Fyll båda fälten med en slumpmässig lösenfras och visa den en gång";
+
+/* Filter identities */
+"Filter identities" = "Filtrera identiteter";
+
+/* Filter recipients */
+"Filter recipients" = "Filtrera mottagare";
+
+/* Find… */
+"Find…" = "Sök…";
+
+/* Forget Access */
+"Forget Access" = "Glöm åtkomst";
+
+/* Forget access to the key folders? */
+"Forget access to the key folders?" = "Glöm åtkomsten till nyckelmapparna?";
+
+/* Forget Folder Access… */
+"Forget Folder Access…" = "Glöm mappåtkomst…";
+
+/* Free · Available today: %lld */
+"Free · Available today: %lld" = "Gratis · Tillgängligt idag: %lld";
+
+/* Generate */
+"Generate" = "Generera";
+
+/* Give the recipient a name. */
+"Give the recipient a name." = "Ge mottagaren ett namn.";
+
+/* Hide this card */
+"Hide this card" = "Dölj det här kortet";
+
+/* Identities */
+"Identities" = "Identiteter";
+
+/* Identity file */
+"Identity file" = "Identitetsfil";
+
+/* Initials */
+"Initials" = "Initialer";
+
+/* Initials color %lld */
+"Initials color %lld" = "Initialfärg %lld";
+
+/* Keep Working */
+"Keep Working" = "Fortsätt arbeta";
+
+/* Key */
+"Key" = "Nyckel";
+
+/* Keys */
+"Keys" = "Nycklar";
+
+/* Lifetime */
+"Lifetime" = "Livstid";
+
+/* Loading App Store products… */
+"Loading App Store products…" = "Laddar App Store-produkter…";
+
+/* Loading keys… */
+"Loading keys…" = "Läser in nycklar…";
+
+/* macOS did not grant lasting access to that folder. Choose it again, or choose another folder. */
+"macOS did not grant lasting access to that folder. Choose it again, or choose another folder." = "macOS gav inte varaktig åtkomst till den mappen. Välj den igen eller välj en annan mapp.";
+
+/* Manage Subscription */
+"Manage Subscription" = "Hantera prenumeration";
+
+/* matches */
+"matches" = "matchar";
+
+/* Matches %@ */
+"Matches %@" = "Matchar %@";
+
+/* Matching keys first. Protected keys ask for their passphrase. */
+"Matching keys first. Protected keys ask for their passphrase." = "Matchande nycklar först. Skyddade nycklar frågar efter sin lösenfras.";
+
+/* Name */
+"Name" = "Namn";
+
+/* New age Key */
+"New age Key" = "Ny age-nyckel";
+
+/* New age key saved */
+"New age key saved" = "Ny age-nyckel sparad";
+
+/* New age Key… */
+"New age Key…" = "Ny age-nyckel…";
+
+/* New recipient */
+"New recipient" = "Ny mottagare";
+
+/* No active purchase was found. */
+"No active purchase was found." = "Inget aktivt Agemin-köp hittades.";
+
+/* No Agemin Pro purchase was found for this Apple Account. */
+"No Agemin Pro purchase was found for this Apple Account." = "Inget Agemin Pro-köp hittades för detta Apple-konto.";
+
+/* No identities yet */
+"No identities yet" = "Inga identiteter ännu";
+
+/* No matching key */
+"No matching key" = "Ingen matchande nyckel";
+
+/* No recipients folder yet */
+"No recipients folder yet" = "Ingen mottagarmapp ännu";
+
+/* None */
+"None" = "Ingen";
+
+/* None of the identities can decrypt this file. */
+"None of the identities can decrypt this file." = "Ingen av identiteterna kan dekryptera den här filen.";
+
+/* None of your identities matches this file. Add the key it was encrypted for on the Identities page. */
+"None of your identities matches this file. Add the key it was encrypted for on the Identities page." = "Ingen av dina identiteter matchar den här filen. Lägg till nyckeln den krypterades för på sidan Identiteter.";
+
+/* not a key */
+"not a key" = "inte en nyckel";
+
+/* OK */
+"OK" = "OK";
+
+/* Open an age file with one of your keys, or with the passphrase it was encrypted with. */
+"Open an age file with one of your keys, or with the passphrase it was encrypted with." = "Öppna en age-fil med en av dina nycklar, eller med lösenfrasen den krypterades med.";
+
+/* Options */
+"Options" = "Alternativ";
+
+/* Output */
+"Output" = "Utdata";
+
+/* Pages */
+"Pages" = "Sidor";
+
+/* Passphrase */
+"Passphrase" = "Lösenfras";
+
+/* passphrase */
+"passphrase" = "lösenfras";
+
+/* Passphrase · work factor %lld */
+"Passphrase · work factor %lld" = "Lösenfras · arbetsfaktor %lld";
+
+/* Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends. */
+"Payment is charged to your Apple Account. The yearly subscription renews automatically unless you cancel it in App Store settings at least a day before the current period ends." = "Betalningen debiteras ditt Apple-konto. Årsprenumerationen förnyas automatiskt om du inte säger upp den i App Store-inställningarna minst en dag innan den aktuella perioden tar slut.";
+
+/* Privacy Policy */
+"Privacy Policy" = "Integritetspolicy";
+
+/* Privacy Policy… */
+"Privacy Policy…" = "Integritetspolicy…";
+
+/* Pro */
+"Pro" = "Pro";
+
+/* Pro purchases are unavailable right now. Try again later. */
+"Pro purchases are unavailable right now. Try again later." = "Pro-köp är inte tillgängliga just nu. Försök igen senare.";
+
+/* Pro trial · %lld days remaining */
+"Pro trial · %lld days remaining" = "Pro-provperiod · %lld dagar kvar";
+
+/* Pro trial · 1 day remaining */
+"Pro trial · 1 day remaining" = "Pro-provperiod · 1 dag kvar";
+
+/* Pro trial · ends %@ */
+"Pro trial · ends %@" = "Pro-provperiod · slutar %@";
+
+/* Pro trial · first payment %@ */
+"Pro trial · first payment %@" = "Pro-provperiod · första betalningen %@";
+
+/* Pro trial · until %@ */
+"Pro trial · until %@" = "Pro-provperiod · till %@";
+
+/* Public key */
+"Public key" = "Publik nyckel";
+
+/* Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file. */
+"Public keys for the people who can open your encrypted files. Each .pub file in the folder is one recipient, named after the file." = "De publika nycklarna du krypterar för. Varje .pub-fil i mappen är en mottagare, namngiven efter filen.";
+
+/* Purchase */
+"Purchase" = "Köp";
+
+/* Quit Anyway */
+"Quit Anyway" = "Avsluta ändå";
+
+/* Quitting now cancels it and removes the partial output. */
+"Quitting now cancels it and removes the partial output." = "Om du avslutar nu avbryts åtgärden och den ofullständiga utdatan tas bort.";
+
+/* Read the folder again */
+"Read the folder again" = "Läs mappen igen";
+
+/* Recipients */
+"Recipients" = "Mottagare";
+
+/* Refresh Keys */
+"Refresh Keys" = "Uppdatera nycklar";
+
+/* Remove from the list */
+"Remove from the list" = "Ta bort från listan";
+
+/* Renews %@ */
+"Renews %@" = "Förnyas %@";
+
+/* Restore Purchases */
+"Restore Purchases" = "Återställ köp";
+
+/* Restoring… */
+"Restoring…" = "Återställer…";
+
+/* Reveal */
+"Reveal" = "Visa";
+
+/* Reveal in Finder */
+"Reveal in Finder" = "Visa i Finder";
+
+/* Save */
+"Save" = "Spara";
+
+/* Save Key */
+"Save Key" = "Spara nyckel";
+
+/* Save Recipient */
+"Save Recipient" = "Spara mottagare";
+
+/* Save the new identity file somewhere private because it holds the secret key */
+"Save the new identity file somewhere private because it holds the secret key" = "Spara den nya identitetsfilen på en privat plats; den innehåller den hemliga nyckeln";
+
+/* Saved as */
+"Saved as" = "Sparad som";
+
+/* Saved as <name>.pub in the recipients folder. */
+"Saved as <name>.pub in the recipients folder." = "Sparad som <name>.pub i mottagarmappen.";
+
+/* Select at least one recipient. */
+"Select at least one recipient." = "Välj minst en mottagare.";
+
+/* SHA-256 */
+"SHA-256" = "SHA-256";
+
+/* Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it. */
+"Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it." = "Dela den publika nyckeln med personer som ska kryptera för dig. Håll identitetsfilen privat; den kan bara läsas av ditt konto.";
+
+/* Shared with your family */
+"Shared with your family" = "Delas med din familj";
+
+/* Size */
+"Size" = "Storlek";
+
+/* SSH key (Ed25519) */
+"SSH key (Ed25519)" = "SSH-nyckel (Ed25519)";
+
+/* SSH key (RSA) */
+"SSH key (RSA)" = "SSH-nyckel (RSA)";
+
+/* Terms of Use (EULA) */
+"Terms of Use (EULA)" = "Användarvillkor (EULA)";
+
+/* That file is not an image Agemin can read. */
+"That file is not an image Agemin can read." = "Den filen är inte en bild som Agemin kan läsa.";
+
+/* The App Store could not verify this purchase. */
+"The App Store could not verify this purchase." = "App Store kunde inte verifiera detta köp.";
+
+/* The armor header is missing. */
+"The armor header is missing." = "ASCII armor-huvudet saknas.";
+
+/* The armored file could not be read. %@ */
+"The armored file could not be read. %@" = "Filen med ASCII armor kunde inte läsas. %@";
+
+/* The armored file ends before its footer. */
+"The armored file ends before its footer." = "Filen med ASCII armor slutar före sin avslutning.";
+
+/* The armored text is incomplete. */
+"The armored text is incomplete." = "ASCII armor-texten är ofullständig.";
+
+/* The armored text is not valid base64. */
+"The armored text is not valid base64." = "ASCII armor-texten är inte giltig base64.";
+
+/* The decrypted file cannot replace the encrypted file. Choose a different name. */
+"The decrypted file cannot replace the encrypted file. Choose a different name." = "Den dekrypterade filen kan inte ersätta den krypterade filen. Välj ett annat namn.";
+
+/* The decrypted file does not hold an age secret key. */
+"The decrypted file does not hold an age secret key." = "Den dekrypterade filen innehåller ingen hemlig age-nyckel.";
+
+/* The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one. */
+"The decrypted file is readable only by your user account. Compare the checksum with the sender's if they gave you one." = "Den dekrypterade filen kan bara läsas av ditt användarkonto. Jämför kontrollsumman med avsändarens om du har fått en.";
+
+/* The encrypted data is corrupt or was modified. */
+"The encrypted data is corrupt or was modified." = "Den krypterade datan är skadad eller har ändrats.";
+
+/* The encrypted file cannot replace the original. Choose a different name. */
+"The encrypted file cannot replace the original. Choose a different name." = "Den krypterade filen kan inte ersätta originalet. Välj ett annat namn.";
+
+/* The file could not be read. */
+"The file could not be read." = "Filen kunde inte läsas.";
+
+/* The file ends early. It may be incomplete. */
+"The file ends early. It may be incomplete." = "Filen slutar för tidigt. Den kan vara ofullständig.";
+
+/* The file header was modified or the key is wrong. */
+"The file header was modified or the key is wrong." = "Filhuvudet har ändrats eller så är nyckeln fel.";
+
+/* The file holds no age secret key. */
+"The file holds no age secret key." = "Filen innehåller ingen hemlig age-nyckel.";
+
+/* The file is being read. */
+"The file is being read." = "Filen läses.";
+
+/* The file is not text. */
+"The file is not text." = "Filen är inte text.";
+
+/* The file is too large to be a key. */
+"The file is too large to be a key." = "Filen är för stor för att vara en nyckel.";
+
+/* The first line is not the age version marker. */
+"The first line is not the age version marker." = "Den första raden är inte age-versionsmarkeringen.";
+
+/* The header authentication line is malformed. */
+"The header authentication line is malformed." = "Huvudets autentiseringsrad är felaktig.";
+
+/* The header is not valid text. */
+"The header is not valid text." = "Huvudet är inte giltig text.";
+
+/* The header is too large to be an age file. */
+"The header is too large to be an age file." = "Huvudet är för stort för att vara en age-fil.";
+
+/* The header lists too many recipients. */
+"The header lists too many recipients." = "Huvudet anger för många mottagare.";
+
+/* The identity could not be read. %@ */
+"The identity could not be read. %@" = "Identiteten kunde inte läsas. %@";
+
+/* The identity file could not be saved. */
+"The identity file could not be saved." = "Identitetsfilen kunde inte sparas.";
+
+/* The image could not be used */
+"The image could not be used" = "Bilden kunde inte användas";
+
+/* The image is larger than %lld pixels on a side. Choose a smaller one. */
+"The image is larger than %lld pixels on a side. Choose a smaller one." = "Bilden är större än %lld pixlar på en sida. Välj en mindre.";
+
+/* The input is larger than expected. */
+"The input is larger than expected." = "Indatan är större än väntat.";
+
+/* The key file ends early. */
+"The key file ends early." = "Nyckelfilen slutar för tidigt.";
+
+/* The key file is malformed. */
+"The key file is malformed." = "Nyckelfilen är felaktig.";
+
+/* The key file's passphrase settings are invalid. */
+"The key file's passphrase settings are invalid." = "Nyckelfilens lösenfrasinställningar är ogiltiga.";
+
+/* The key is empty. */
+"The key is empty." = "Nyckeln är tom.";
+
+/* The key is protected with the %@ cipher, which is not supported. */
+"The key is protected with the %@ cipher, which is not supported." = "Nyckeln är skyddad med chiffret %@, som inte stöds.";
+
+/* The key is saved as <name>.pub in the recipients folder. */
+"The key is saved as <name>.pub in the recipients folder." = "Nyckeln sparas som <name>.pub i mottagarmappen.";
+
+/* The key uses %lld key derivation rounds. Agemin supports up to %lld. */
+"The key uses %lld key derivation rounds. Agemin supports up to %lld." = "Nyckeln använder %lld nyckelhärledningsrundor; Agemin stöder upp till %lld.";
+
+/* The key uses the %@ key derivation, which is not supported. */
+"The key uses the %@ key derivation, which is not supported." = "Nyckeln använder nyckelhärledningen %@, som inte stöds.";
+
+/* The operation was canceled. */
+"The operation was canceled." = "Åtgärden avbröts.";
+
+/* The passphrase entry is malformed. */
+"The passphrase entry is malformed." = "Lösenfrasposten är felaktig.";
+
+/* The passphrase for %@ is incorrect. Try again. */
+"The passphrase for %@ is incorrect. Try again." = "Lösenfrasen för %@ är fel. Försök igen.";
+
+/* The passphrase is incorrect. */
+"The passphrase is incorrect." = "Lösenfrasen är fel.";
+
+/* The passphrase work factor %lld is too high to try safely. */
+"The passphrase work factor %lld is too high to try safely." = "Lösenfrasens arbetsfaktor %lld är för hög för att prova säkert.";
+
+/* The passphrase work factor is malformed. */
+"The passphrase work factor is malformed." = "Lösenfrasens arbetsfaktor är felaktig.";
+
+/* The passphrases do not match. */
+"The passphrases do not match." = "Lösenfraserna stämmer inte överens.";
+
+/* The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them. */
+"The private keys that open files encrypted for you: SSH keys from ~/.ssh and age identity files. Agemin reads them and never changes them." = "De privata nycklarna som öppnar filer krypterade för dig: SSH-nycklar från ~/.ssh och age-identitetsfiler. Agemin läser dem och ändrar dem aldrig.";
+
+/* The purchase is awaiting approval. */
+"The purchase is awaiting approval." = "Köpet väntar på godkännande.";
+
+/* The recipient could not be deleted. */
+"The recipient could not be deleted." = "Mottagaren kunde inte raderas.";
+
+/* The recipient could not be saved. */
+"The recipient could not be saved." = "Mottagaren kunde inte sparas.";
+
+/* The recipient key could not be read. %@ */
+"The recipient key could not be read. %@" = "Mottagarnyckeln kunde inte läsas. %@";
+
+/* The recipients folder */
+"The recipients folder" = "Mottagarmappen";
+
+/* The recipients folder holds no .pub files yet. */
+"The recipients folder holds no .pub files yet." = "Mottagarmappen innehåller inga .pub-filer ännu.";
+
+/* The RSA key is malformed. */
+"The RSA key is malformed." = "RSA-nyckeln är felaktig.";
+
+/* The RSA key is too small or malformed. */
+"The RSA key is too small or malformed." = "RSA-nyckeln är för liten eller felaktig.";
+
+/* The SSH key is not a valid Ed25519 key. */
+"The SSH key is not a valid Ed25519 key." = "SSH-nyckeln är inte en giltig Ed25519-nyckel.";
+
+/* The SSH key is not a valid RSA key. */
+"The SSH key is not a valid RSA key." = "SSH-nyckeln är inte en giltig RSA-nyckel.";
+
+/* The SSH public key is malformed. */
+"The SSH public key is malformed." = "Den publika SSH-nyckeln är felaktig.";
+
+/* There is text after the armor footer. */
+"There is text after the armor footer." = "Det finns text efter ASCII armor-avslutningen.";
+
+/* This deletes the file from the recipients folder. Files already encrypted for this key are not affected. */
+"This deletes the file from the recipients folder. Files already encrypted for this key are not affected." = "Filen raderas från mottagarmappen. Filer som redan krypterats för den här nyckeln påverkas inte.";
+
+/* This file cannot be read as an age file */
+"This file cannot be read as an age file" = "Den här filen kan inte läsas som en age-fil";
+
+/* This file is not a key. */
+"This file is not a key." = "Den här filen är inte en nyckel.";
+
+/* This file needs a passphrase. */
+"This file needs a passphrase." = "Den här filen kräver en lösenfras.";
+
+/* This is a secret key. Use the matching public key, which starts with age1. */
+"This is a secret key. Use the matching public key, which starts with age1." = "Det här är en hemlig nyckel. Använd den matchande publika nyckeln, som börjar med age1.";
+
+/* This is not a valid age public key. */
+"This is not a valid age public key." = "Det här är inte en giltig publik age-nyckel.";
+
+/* This is not a valid age secret key. */
+"This is not a valid age secret key." = "Det här är inte en giltig hemlig age-nyckel.";
+
+/* This is not an age file. %@ */
+"This is not an age file. %@" = "Det här är inte en age-fil. %@";
+
+/* This key format is not supported. Use an OpenSSH private key or an age identity file. */
+"This key format is not supported. Use an OpenSSH private key or an age identity file." = "Det här nyckelformatet stöds inte. Använd en privat OpenSSH-nyckel eller en age-identitetsfil.";
+
+/* This key produces a weak shared secret and cannot be used. */
+"This key produces a weak shared secret and cannot be used." = "Den här nyckeln ger en svag delad hemlighet och kan inte användas.";
+
+/* This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy. */
+"This passphrase-protected key uses the legacy PEM format. Convert it with ssh-keygen -p -o, or use an unprotected copy." = "Den här lösenfrasskyddade nyckeln använder det äldre PEM-formatet. Konvertera den med ssh-keygen -p -o eller använd en oskyddad kopia.";
+
+/* Trial ended */
+"Trial ended" = "Provperioden är slut";
+
+/* Try Again */
+"Try Again" = "Försök igen";
+
+/* Try every usable key */
+"Try every usable key" = "Prova alla användbara nycklar";
+
+/* Unknown recipient type “%@” */
+"Unknown recipient type “%@”" = "Okänd mottagartyp ”%@”";
+
+/* Unlock */
+"Unlock" = "Lås upp";
+
+/* Unlock %@ */
+"Unlock %@" = "Lås upp %@";
+
+/* Unlock %@ with Agemin Pro. */
+"Unlock %@ with Agemin Pro." = "Lås upp %@ med Agemin Pro.";
+
+/* Until %@ */
+"Until %@" = "Till %@";
+
+/* Use Image */
+"Use Image" = "Använd bild";
+
+/* Use Initials */
+"Use Initials" = "Använd initialer";
+
+/* Valid %@ key */
+"Valid %@ key" = "Giltig %@-nyckel";
+
+/* Wait for the current operation to finish. */
+"Wait for the current operation to finish." = "Vänta tills den pågående åtgärden är klar.";
+
+/* Write it down or store it in a password manager. Agemin does not keep it. */
+"Write it down or store it in a password manager. Agemin does not keep it." = "Skriv ner den eller spara den i en lösenordshanterare. Agemin behåller den inte.";
+
+/* Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both. */
+"Write the encrypted file as text instead of binary, for email, chat, and configuration files. age reads both." = "Skriv den krypterade filen som text i stället för binärt, för e-post, chatt och konfigurationsfiler. age läser båda.";
+
+/* you */
+"you" = "du";
+
+/* You can still encrypt or decrypt one file per day. Available today: %lld. */
+"You can still encrypt or decrypt one file per day. Available today: %lld." = "Du kan fortfarande kryptera eller dekryptera en fil per dag. Tillgängligt idag: %lld.";
+
+/* You have Agemin Pro. */
+"You have Agemin Pro." = "Du har Agemin Pro.";
+
+/* Your Pro trial is active. */
+"Your Pro trial is active." = "Din Pro-provperiod är aktiv.";
+
+/* · you choose the folder when you encrypt */
+"· you choose the folder when you encrypt" = "· du väljer mappen när du krypterar";
