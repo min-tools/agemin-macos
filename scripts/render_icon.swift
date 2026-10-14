@@ -121,3 +121,18 @@ func render(size: Int) -> CGImage {
 
     return context.makeImage()!
 }
+
+// png(image): Encode an image as PNG data.
+func png(_ image: CGImage) -> Data {
+    let data = NSMutableData()
+    let destination = CGImageDestinationCreateWithData(data, UTType.png.identifier as CFString, 1, nil)!
+    CGImageDestinationAddImage(destination, image, nil)
+    guard CGImageDestinationFinalize(destination) else { fatalError("Could not encode PNG") }
+    return data as Data
+}
+
+// bigEndian(value): The four-byte big-endian encoding ICNS uses for lengths.
+func bigEndian(_ value: UInt32) -> Data {
+    var bytes = value.bigEndian
+    return Data(bytes: &bytes, count: 4)
+}
