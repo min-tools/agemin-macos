@@ -136,3 +136,45 @@ func bigEndian(_ value: UInt32) -> Data {
     var bytes = value.bigEndian
     return Data(bytes: &bytes, count: 4)
 }
+
+// icns(entries): Build an ICNS file from PNG entries, each a type code and its data. The container
+// is a header followed by the entries, every one length-prefixed; the type codes must be the
+// modern PNG-capable ones.
+func icns(_ entries: [(type: String, data: Data)]) -> Data {
+    var body = Data()
+    for entry in entries {
+        body.append(contentsOf: Array(entry.type.utf8))
+        body.append(bigEndian(UInt32(8 + entry.data.count)))
+        body.append(entry.data)
+    }
+    var file = Data("icns".utf8)
+    file.append(bigEndian(UInt32(8 + body.count)))
+    file.append(body)
+    return file
+}
+
+// Positional arguments: the ICNS file to write and a 1024 px PNG preview.
+let arguments = CommandLine.arguments
+guard arguments.count == 3 else {
+    fatalError("usage: render_icon <output.icns> <preview.png>")
+}
+let output = URL(fileURLWithPath: arguments[1])
+let preview = URL(fileURLWithPath: arguments[2])
+
+// Each pixel size is rendered once and shared by the 1x and 2x slots that use it.
+let rendered: [Int: Data] = Dictionary(uniqueKeysWithValues: [16, 32, 64, 128, 256, 512, 1024].map { ($0, png(render(size: $0))) })
+// icp4 to icp6 are 16 to 64 px at 1x, ic07 to ic10 are 128 to 1024 px, ic11 to ic14 are the 2x
+// slots for 16 to 256 pt.
+let slots: [(type: String, size: Int)] = [
+    ("icp4", 16), ("ic11", 32), ("icp5", 32), ("ic12", 64), ("icp6", 64),
+    ("ic07", 128), ("ic13", 256), ("ic08", 256), ("ic14", 512), ("ic09", 512), ("ic10", 1024),
+]
+try icns(slots.map { (type: $0.type, data: rendered[$0.size]!) }).write(to: output)
+try rendered[1024]!.write(to: preview)
+
+// Read the container back the way macOS does, so a malformed file fails here and not in Finder.
+guard let source = CGImageSourceCreateWithURL(output as CFURL, nil), CGImageSourceGetCount(source) >= slots.count,
+      let largest = CGImageSourceCreateImageAtIndex(source, 0, nil), largest.width > 0 else {
+    fatalError("The ICNS file could not be read back")
+}
+print("Wrote \(output.path) with \(CGImageSourceGetCount(source)) representations")
