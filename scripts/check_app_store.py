@@ -98,7 +98,7 @@ def blockers(check_online=False):
         issues.append('StoreKit product identifiers are incomplete.')
     # The trial length and Free limit are what the listing and privacy policy describe.
     if 'static let trialLengthDays = 30' not in products or 'static let dailyOperationLimit = 1' not in products:
-        issues.append('The 30-day trial or five-operation daily Free allowance is missing.')
+        issues.append('The 30-day trial or one-operation daily Free allowance is missing.')
     # Public builds show the banner only once the entitlement is known and access is limited.
     if 'struct AgeminAccessBanner' not in banner or 'if store.hasResolvedEntitlement && store.hasPreparedFreeAccess && !store.hasFullAccess' not in banner:
         issues.append('The shared access banner is missing from public builds.')
