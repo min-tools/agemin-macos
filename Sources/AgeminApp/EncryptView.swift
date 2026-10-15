@@ -87,25 +87,20 @@ struct EncryptView: View {
             ) { store.chooseRecipientsFolder(in: NSApp.keyWindow) }
         } else {
             // With a folder, a status line comes first: a hint when it is empty, otherwise the
-            // selection count with All and None.
+            // selection count with its compact selection actions.
             if store.recipients.isEmpty {
                 Text(localized("The recipients folder holds no .pub files yet."))
                     .font(.system(size: 12.5))
                     .foregroundStyle(Theme.textSecondary)
                     .fixedSize(horizontal: false, vertical: true)
             } else {
-                // The selection count, with All and None for quick changes.
-                HStack {
+                // Keep the actions beside the count so they read as controls for this selection.
+                HStack(spacing: 10) {
                     Text(selectionSummary)
                         .font(.system(size: 12.5))
                         .foregroundStyle(Theme.textSecondary)
-                    Spacer()
-                    Button(localized("All")) { model.selectAllUsableRecipients() }
-                        .buttonStyle(.agemin(.ghost, size: .small))
-                        .keyboardFocusable()
-                    Button(localized("None")) { model.deselectAllRecipients() }
-                        .buttonStyle(.agemin(.ghost, size: .small))
-                        .keyboardFocusable()
+                    recipientSelectionActions
+                    Spacer(minLength: 0)
                 }
             }
             // One chip per recipient, then the chip that opens the Recipients page to add one.
@@ -128,6 +123,29 @@ struct EncryptView: View {
         let usable = store.recipients.filter(\.isUsable).count
         let selected = model.selectedRecipients.count
         return localizedFormat("%lld of %lld recipients selected", Int64(selected), Int64(usable))
+    }
+
+    /// A quiet, grouped pair of selection actions that disables work already done.
+    private var recipientSelectionActions: some View {
+        let usable = store.recipients.filter(\.isUsable).count
+        let selected = model.selectedRecipients.count
+        return HStack(spacing: 0) {
+            Button(localized("All")) { model.selectAllUsableRecipients() }
+                .buttonStyle(.agemin(.ghost, size: .small))
+                .keyboardFocusable()
+                .disabled(selected == usable)
+            Divider()
+                .frame(height: 16)
+            Button(localized("None")) { model.deselectAllRecipients() }
+                .buttonStyle(.agemin(.ghost, size: .small))
+                .keyboardFocusable()
+                .disabled(selected == 0)
+        }
+        .fixedSize(horizontal: true, vertical: true)
+        .background(Theme.surfaceRaised,
+                    in: RoundedRectangle(cornerRadius: 8, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 8, style: .continuous)
+            .stroke(Theme.borderStrong, lineWidth: 1))
     }
 
     // MARK: Passphrase
