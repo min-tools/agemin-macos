@@ -73,18 +73,18 @@ struct IdentitiesView: View {
             // The file and its public half, each with its action.
             DetailRow(label: "Identity file", value: KeyStore.abbreviate(url.path), mono: true) {
                 Button(localized("Reveal")) { store.revealInFinder(url) }
-                    .buttonStyle(.agemin(.ghost, size: .small))
+                    .buttonStyle(.agemin(.success, size: .small))
                     .keyboardFocusable()
             }
             DetailRow(label: "Public key", value: publicKey, mono: true) {
                 Button(localized("Copy")) { model.copy(publicKey) }
-                    .buttonStyle(.agemin(.ghost, size: .small))
+                    .buttonStyle(.agemin(.success, size: .small))
                     .keyboardFocusable()
             }
             // Saving the public half as a recipient lets the user encrypt for themselves.
             HStack(spacing: 10) {
                 Button(localized("Add to Recipients")) { addAsRecipient(publicKey) }
-                    .buttonStyle(.agemin(.secondary, size: .small))
+                    .buttonStyle(.agemin(.success, size: .small))
                     .keyboardFocusable()
                 Text(localized("Share the public key with people who should encrypt files for you. Keep the identity file private because only your account can read it."))
                     .font(.system(size: 12))
