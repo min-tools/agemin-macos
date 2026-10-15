@@ -220,13 +220,16 @@ struct ActionBar: View {
             // The running state shows progress and lets the user stop between chunks.
             if runner.isRunning {
                 VStack(alignment: .leading, spacing: 5) {
+                    // Give the bar a control-height row so its center matches the Cancel button.
                     ProgressView(value: runner.fraction ?? 0)
                         .progressViewStyle(.linear)
+                        .frame(height: Theme.controlHeight)
                     Text(progressText)
                         .font(.system(size: 12))
                         .foregroundStyle(Theme.textSecondary)
                         .monospacedDigit()
                 }
+                .alignmentGuide(VerticalAlignment.center) { _ in Theme.controlHeight / 2 }
                 Button(localized("Cancel")) { runner.cancel() }
                     .buttonStyle(.agemin(.secondary, shortcut: "esc"))
                     .keyboardFocusable()
