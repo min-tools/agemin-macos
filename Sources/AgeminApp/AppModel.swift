@@ -375,6 +375,13 @@ final class AppModel: ObservableObject {
         encryptError = nil
     }
 
+    // showDecryptResult(result): Show a finished decryption. The screenshot renderer uses this
+    // with a result it produced itself; the app sets results through decrypt(in:).
+    func showDecryptResult(_ result: DecryptResult) {
+        decryptResult = result
+        decryptError = nil
+    }
+
     // clearEncryptInput(): Forget the chosen file on the Encrypt page.
     func clearEncryptInput() {
         guard !isBusy else { return }

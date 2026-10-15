@@ -94,6 +94,8 @@ The README screenshots, `docs/images/hero-light.png` and `hero-dark.png`, are re
 python3 scripts/render_hero.py
 ```
 
+The same run writes the Mac App Store screenshot set, four 2880x1800 scenes over a wallpaper with English headlines, to `private/app-store/screenshots`. Pass `--no-app-store` to skip it.
+
 ## Export source
 
 ```bash
