@@ -10,7 +10,7 @@ import SwiftUI
 @main
 enum RenderHero {
     // Window size in points, output scale, canvas margin that holds the shadow, and corner radius.
-    static let windowSize = NSSize(width: 1080, height: 960)
+    static let windowSize = NSSize(width: 1080, height: 780)
     static let scale: CGFloat = 2
     static let margin: CGFloat = 56
     static let cornerRadius: CGFloat = 10
