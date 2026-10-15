@@ -71,7 +71,7 @@ struct DecryptView: View {
             // One row per header entry, with the keys that fit it.
             VStack(spacing: 2) {
                 ForEach(info.recipients) { summary in
-                    StanzaRow(summary: summary, matches: matches(for: summary))
+                    StanzaRow(summary: summary, matches: model.matchingIdentityNames(for: summary))
                 }
             }
             // No key is even a candidate: nothing matches, and no usable age key meets an age
@@ -86,19 +86,6 @@ struct DecryptView: View {
         .padding(18)
         .frame(maxWidth: .infinity, alignment: .leading)
         .card()
-    }
-
-    // matches(for summary): The names of the identities whose tag fits the stanza; age stanzas
-    // carry no tag, so every age identity is a candidate for them.
-    private func matches(for summary: AgeStanzaSummary) -> [String] {
-        store.identities.filter { entry in
-            guard entry.isUsable else { return false }
-            switch summary.kind {
-            case .x25519: return entry.kind == .x25519
-            case .sshEd25519(let tag), .sshRSA(let tag): return entry.tag == tag
-            case .scrypt, .other: return false
-            }
-        }.map(\.name)
     }
 
     // MARK: Identity
@@ -300,7 +287,7 @@ private struct IdentityChoiceRow: View {
                         if protected {
                             Chip(text: localized("passphrase"), mono: false, tone: .warning, compact: true)
                         }
-                        // Keys whose tag or kind fits the file's header.
+                        // Keys whose SSH tag or private-key check fits the file's header.
                         if matches {
                             Chip(text: localized("matches"), mono: false, tone: .positive, compact: true)
                         }

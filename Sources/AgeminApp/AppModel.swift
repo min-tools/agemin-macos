@@ -79,6 +79,8 @@ final class AppModel: ObservableObject {
     @Published private(set) var decryptError: String?
     /// Whether identity files are being parsed or unlocked away from the main thread.
     @Published private(set) var isPreparingDecryption = false
+    /// Header entry indexes each identity has actually matched.
+    @Published private(set) var matchingIdentityStanzas: [String: Set<Int>] = [:]
 
     // Key pages.
     @Published var recipientFilter = ""
@@ -87,6 +89,8 @@ final class AppModel: ObservableObject {
     @Published private(set) var generatedKey: (publicKey: String, savedTo: URL)?
 
     private var entitlementObserver: NSObjectProtocol?
+    private var identityMatchTask: Task<Void, Never>?
+    private var identityMatchGeneration = UUID()
 
     /// Whether key preparation or a file operation is in flight.
     var isBusy: Bool { isPreparingDecryption || runner.isRunning }
@@ -109,6 +113,7 @@ final class AppModel: ObservableObject {
     deinit {
         // The observer exists from init onward.
         if let entitlementObserver { NotificationCenter.default.removeObserver(entitlementObserver) }
+        identityMatchTask?.cancel()
     }
 
     // MARK: Access
@@ -164,10 +169,16 @@ final class AppModel: ObservableObject {
         }
     }
 
-    /// The identities that could decrypt the chosen file, by tag and kind.
+    /// The identities that match at least one recipient entry by SSH tag or verified unwrap.
     var matchingIdentities: [IdentityEntry] {
-        guard let decryptInfo else { return [] }
-        return store.matchingIdentities(for: decryptInfo)
+        store.identities.filter { !(matchingIdentityStanzas[$0.id] ?? []).isEmpty }
+    }
+
+    // matchingIdentityNames(for summary): The identity files verified for this recipient entry.
+    func matchingIdentityNames(for summary: AgeStanzaSummary) -> [String] {
+        store.identities.compactMap { entry in
+            matchingIdentityStanzas[entry.id]?.contains(summary.id) == true ? entry.name : nil
+        }
     }
 
     // keysDidChange(): Drop selected recipients and the chosen identity whose keys disappeared,
@@ -179,6 +190,7 @@ final class AppModel: ObservableObject {
         if let selectedIdentityID, !store.identities.contains(where: { $0.id == selectedIdentityID }) {
             self.selectedIdentityID = nil
         }
+        resolveIdentityMatches()
         objectWillChange.send()
     }
 
@@ -341,12 +353,15 @@ final class AppModel: ObservableObject {
         decryptInfo = nil
         decryptInspectionError = nil
         decryptPassphrase = ""
+        resetIdentityMatches()
         page = .decrypt
         do {
             let info = try AgeEngine.inspect(url: file.url)
             decryptInfo = info
-            // Prefer the first identity whose tag or kind matches the file.
-            selectedIdentityID = store.matchingIdentities(for: info).first?.id
+            resolveIdentityMatches()
+            // SSH tags identify a key immediately. Native age keys stay on "try every key"
+            // until their private-key checks finish.
+            selectedIdentityID = matchingIdentities.first?.id
         } catch {
             // A file that is not a valid age file keeps its error for the blocker text.
             decryptInspectionError = error.localizedDescription
@@ -378,6 +393,64 @@ final class AppModel: ObservableObject {
         decryptInspectionError = nil
         decryptResult = nil
         decryptError = nil
+        resetIdentityMatches()
+    }
+
+    // resetIdentityMatches(): Cancel an obsolete scan and clear every verified badge.
+    private func resetIdentityMatches() {
+        identityMatchTask?.cancel()
+        identityMatchTask = nil
+        identityMatchGeneration = UUID()
+        matchingIdentityStanzas = [:]
+    }
+
+    // resolveIdentityMatches(): Seed exact SSH tag matches, then verify unprotected native age
+    // identities against the selected file's header away from the main thread.
+    private func resolveIdentityMatches() {
+        identityMatchTask?.cancel()
+        identityMatchGeneration = UUID()
+        let generation = identityMatchGeneration
+        guard let input = decryptInput, let info = decryptInfo else {
+            matchingIdentityStanzas = [:]
+            return
+        }
+
+        // SSH recipient entries expose a tag, so their matches need no private-key operation.
+        var known: [String: Set<Int>] = [:]
+        for entry in store.matchingIdentities(for: info) {
+            let indexes = Set(info.recipients.compactMap { summary -> Int? in
+                guard let tag = summary.sshTag, tag == entry.tag else { return nil }
+                return summary.id
+            })
+            if !indexes.isEmpty { known[entry.id] = indexes }
+        }
+        matchingIdentityStanzas = known
+
+        // Protected age identity files cannot be checked without prompting. Plain files can be
+        // loaded and discarded in the worker, leaving only their matching indexes in view state.
+        let candidates = store.identities.filter { $0.isUsable && !$0.isProtected && $0.kind == .x25519 }
+        guard !candidates.isEmpty, info.recipients.contains(where: { $0.keyKind == .x25519 }) else { return }
+        let inputURL = input.url
+        identityMatchTask = Task.detached(priority: .utility) { [candidates, info] in
+            var verified: [String: Set<Int>] = [:]
+            for entry in candidates {
+                if Task.isCancelled { return }
+                do {
+                    let identities = try KeyStore.loadIdentities(at: entry.url, named: entry.name, passphrase: nil)
+                    let indexes = try AgeEngine.matchingStanzaIndexes(in: info, identities: identities, isCancelled: { Task.isCancelled })
+                    if !indexes.isEmpty { verified[entry.id] = indexes }
+                } catch {
+                    // A key that changed or became unreadable during the scan gets no match badge.
+                    continue
+                }
+            }
+            if Task.isCancelled { return }
+            let verifiedMatches = verified
+            await MainActor.run { [weak self] in
+                guard let self, self.identityMatchGeneration == generation, self.decryptInput?.url == inputURL else { return }
+                for (id, indexes) in verifiedMatches { self.matchingIdentityStanzas[id] = indexes }
+            }
+        }
     }
 
     // release(file): Close the security scope a drop opened.
@@ -533,7 +606,7 @@ final class AppModel: ObservableObject {
         // Loading a protected OpenSSH key can spend seconds in its KDF, so keep it off the main
         // actor. The chosen key alone, or every candidate in preference order, is captured now.
         let chosenIdentity = selectedIdentity
-        let candidates = chosenIdentity.map { [$0] } ?? preferredIdentities(for: info)
+        let candidates = chosenIdentity.map { [$0] } ?? preferredIdentities()
         isPreparingDecryption = true
         decryptError = nil
         Task { @MainActor [weak self] in
@@ -626,10 +699,10 @@ final class AppModel: ObservableObject {
         }
     }
 
-    // preferredIdentities(for info): The keys to try when none is chosen: matching ones first,
-    // then every other usable key, so a file for an untagged age key still decrypts.
-    private func preferredIdentities(for info: AgeFileInfo) -> [IdentityEntry] {
-        let matching = store.matchingIdentities(for: info)
+    // preferredIdentities(): The keys to try when none is chosen: verified matches first, then
+    // every other usable key.
+    private func preferredIdentities() -> [IdentityEntry] {
+        let matching = matchingIdentities
         let others = store.identities.filter { entry in entry.isUsable && !matching.contains(where: { $0.id == entry.id }) }
         return matching + others
     }

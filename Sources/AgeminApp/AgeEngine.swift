@@ -52,6 +52,10 @@ struct AgeFileInfo: Equatable {
     let size: Int64
     let isArmored: Bool
     let stanzas: [AgeStanza]
+    /// The serialized recipient section and its MAC, retained so identities can be checked
+    /// without reading or decrypting the payload.
+    let authenticated: Data
+    let mac: Data
 
     /// One summary per stanza, in header order.
     var recipients: [AgeStanzaSummary] {
@@ -114,7 +118,32 @@ enum AgeEngine {
         let size = fileSize(url)
         let (reader, armored) = try openInput(url)
         let header = try AgeHeaderCodec.parse(from: reader)
-        return AgeFileInfo(url: url, size: size, isArmored: armored, stanzas: header.stanzas)
+        return AgeFileInfo(
+            url: url,
+            size: size,
+            isArmored: armored,
+            stanzas: header.stanzas,
+            authenticated: header.authenticated,
+            mac: header.mac
+        )
+    }
+
+    // matchingStanzaIndexes(in info, identities, [isCancelled = nil]): The recipient entries
+    // whose file key the identities can recover and authenticate.
+    static func matchingStanzaIndexes(in info: AgeFileInfo, identities: [any AgeIdentity], isCancelled: Cancellation? = nil) throws -> Set<Int> {
+        var matches: Set<Int> = []
+        // Native age entries have no public identifier, so prove a match by opening each entry
+        // and checking the recovered file key against the complete header MAC.
+        for (index, stanza) in info.stanzas.enumerated() {
+            if isCancelled?() == true { throw AgeError.cancelled }
+            for identity in identities {
+                if let fileKey = try identity.unwrap([stanza]), headerMACMatches(fileKey: fileKey, authenticated: info.authenticated, mac: info.mac) {
+                    matches.insert(index)
+                    break
+                }
+            }
+        }
+        return matches
     }
 
     // MARK: Encryption
@@ -260,11 +289,21 @@ enum AgeEngine {
             throw AgeError.noMatchingIdentity
         }
         // The MAC check runs in constant time and proves the recovered file key is the right one.
-        let expected = AgeHeaderCodec.mac(fileKey: fileKey, over: header.authenticated)
-        guard HMAC<SHA256>.isValidAuthenticationCode(header.mac, authenticating: header.authenticated, using: SymmetricKey(data: AgeKDF.derive(ikm: fileKey, salt: Data(), info: "header"))), expected.count == header.mac.count else {
+        guard headerMACMatches(fileKey: fileKey, authenticated: header.authenticated, mac: header.mac) else {
             throw AgeError.headerMACMismatch
         }
         return (header.stanzas, fileKey)
+    }
+
+    // headerMACMatches(fileKey, authenticated, mac): Whether a recovered file key authenticates
+    // the complete recipient section.
+    private static func headerMACMatches(fileKey: Data, authenticated: Data, mac: Data) -> Bool {
+        let expected = AgeHeaderCodec.mac(fileKey: fileKey, over: authenticated)
+        return expected.count == mac.count && HMAC<SHA256>.isValidAuthenticationCode(
+            mac,
+            authenticating: authenticated,
+            using: SymmetricKey(data: AgeKDF.derive(ikm: fileKey, salt: Data(), info: "header"))
+        )
     }
 
     // decryptPayload(from reader, to writer, fileKey, total, progress,

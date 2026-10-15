@@ -588,16 +588,16 @@ final class KeyStore: ObservableObject {
         NSWorkspace.shared.activateFileViewerSelecting([url])
     }
 
-    // matchingIdentities(for info): The identities that can decrypt a file, judged by SSH tags and
-    // key kinds; age identities are listed for any X25519 stanza, since those carry no tag.
+    // matchingIdentities(for info): The identities whose public SSH tag names an entry. Native age
+    // entries have no tag and need the private-key check performed by AppModel.
     func matchingIdentities(for info: AgeFileInfo) -> [IdentityEntry] {
         let summaries = info.recipients
-        // A usable identity matches when any stanza in the file is addressed to it.
+        // A usable SSH identity matches when any stanza carries its tag.
         return identities.filter { entry in
             guard entry.isUsable else { return false }
             return summaries.contains { summary in
                 switch summary.kind {
-                case .x25519: return entry.kind == .x25519
+                case .x25519: return false
                 case .sshEd25519(let tag), .sshRSA(let tag): return entry.tag == tag
                 case .scrypt, .other: return false
                 }

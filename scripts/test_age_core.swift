@@ -285,6 +285,14 @@ enum AgeCoreTests {
         let second = X25519Identity.generate()
         let stranger = X25519Identity.generate()
         let shared = try AgeEngine.encryptToMemory(Data("shared".utf8), recipients: [recipient, second.recipient!])
+        let sharedHeader = try AgeHeaderCodec.parse(from: BufferedReader(DataByteReader(shared)))
+        let sharedInfo = AgeFileInfo(
+            url: URL(fileURLWithPath: "shared.age"), size: Int64(shared.count), isArmored: false,
+            stanzas: sharedHeader.stanzas, authenticated: sharedHeader.authenticated, mac: sharedHeader.mac
+        )
+        try check(AgeEngine.matchingStanzaIndexes(in: sharedInfo, identities: [identity]) == Set([0]), "the first native identity matches only its own entry")
+        try check(AgeEngine.matchingStanzaIndexes(in: sharedInfo, identities: [second]) == Set([1]), "the second native identity matches only its own entry")
+        try check(AgeEngine.matchingStanzaIndexes(in: sharedInfo, identities: [stranger]).isEmpty, "a native identity of the right kind is not a match")
         try check(try AgeEngine.decryptToMemory(shared, identities: [second]) == Data("shared".utf8), "second recipient decrypts")
         try check(try AgeEngine.decryptToMemory(shared, identities: [stranger, identity]) == Data("shared".utf8), "the matching identity is found among others")
         do {
