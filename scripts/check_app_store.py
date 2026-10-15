@@ -51,6 +51,8 @@ def blockers(check_online=False):
     sources = '\n'.join(path.read_text() for path in (ROOT / 'Sources/AgeminApp').glob('*.swift'))
     policy = (ROOT / 'PRIVACY.md').read_text()
     bundled_policy = (ROOT / 'Sources/AgeminApp/Resources/PRIVACY.md').read_text()
+    notices = (ROOT / 'THIRD_PARTY_NOTICES.md').read_text()
+    bundled_notices = (ROOT / 'Sources/AgeminApp/Resources/THIRD_PARTY_NOTICES.md').read_text()
 
     # The store edition is selected by a compile flag at both the project and the target level.
     if project.count('SWIFT_ACTIVE_COMPILATION_CONDITIONS = AGEMIN_APP_STORE;') < 2:
@@ -149,6 +151,13 @@ def blockers(check_online=False):
     # The in-app policy window shows the bundled copy, so it must match the published one.
     if not policy.strip() or policy != bundled_policy:
         issues.append('The repository and bundled privacy policies are missing or inconsistent.')
+    # The OpenBSD and OpenSSH notices must ship unchanged in every binary distribution.
+    if not notices.strip() or notices != bundled_notices:
+        issues.append('The repository and bundled third-party notices are missing or inconsistent.')
+    if 'Copyright (c) 2013 Ted Unangst' not in notices or 'Copyright 1997 Niels Provos' not in notices:
+        issues.append('The required bcrypt_pbkdf or Blowfish attribution is missing.')
+    if 'THIRD_PARTY_NOTICES.md in Resources' not in project:
+        issues.append('The Xcode target does not bundle the third-party notices.')
     # Info.plist and the Xcode project must both reference the production icon.
     if info.get('CFBundleIconFile') != 'AgeminIcon' or 'AgeminIcon.icns' not in project:
         issues.append('The production Agemin icon is not configured.')

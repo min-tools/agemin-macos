@@ -111,7 +111,7 @@ struct Blowfish {
 }
 
 /// bcrypt_pbkdf from OpenBSD, which OpenSSH uses to turn a passphrase into the key and IV that
-/// protect a private key file.
+/// protect a private key file. See THIRD_PARTY_NOTICES.md for the applicable notices.
 enum BcryptPBKDF {
     private static let hashSize = 32
     private static let magic = Array("OxychromaticBlowfishSwatDynamite".utf8)

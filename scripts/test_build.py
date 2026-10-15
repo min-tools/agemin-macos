@@ -30,6 +30,7 @@ class BuildTests(unittest.TestCase):
             self.root / 'Sources/AgeminApp/ProStore.swift': '// fixture',
             self.root / 'Sources/AgeminApp/AccessBanner.swift': '// fixture',
             self.root / 'Sources/AgeminApp/Resources/PRIVACY.md': '# fixture\n',
+            self.root / 'Sources/AgeminApp/Resources/THIRD_PARTY_NOTICES.md': '# fixture\n',
             self.root / 'AgeminInfo.plist': (builder.ROOT / 'AgeminInfo.plist').read_text(),
             self.root / 'AgeminApp.entitlements': (builder.ROOT / 'AgeminApp.entitlements').read_text(),
             self.root / 'Agemin.xcodeproj/project.pbxproj':
@@ -68,6 +69,7 @@ class BuildTests(unittest.TestCase):
         self.assertNotIn('AGEMIN_APP_STORE', self.commands[0])
         self.assertNotIn('AGEMIN_LOCAL_BUILD', self.commands[0])
         self.assertTrue((self.output / 'Contents/Resources/PRIVACY.md').is_file())
+        self.assertTrue((self.output / 'Contents/Resources/THIRD_PARTY_NOTICES.md').is_file())
 
     # test_unsupported_architecture_fails_before_compile(self): An Intel request is rejected
     # before swiftc runs.

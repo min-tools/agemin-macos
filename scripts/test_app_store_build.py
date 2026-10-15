@@ -24,6 +24,7 @@ class AppStoreBuildTests(unittest.TestCase):
             self.root / 'Sources/AgeminApp/ProStore.swift': '// fixture',
             self.root / 'Sources/AgeminApp/AccessBanner.swift': '// fixture',
             self.root / 'Sources/AgeminApp/Resources/PRIVACY.md': '# fixture\n',
+            self.root / 'Sources/AgeminApp/Resources/THIRD_PARTY_NOTICES.md': '# fixture\n',
             self.root / 'AgeminInfo.plist': (builder.ROOT / 'AgeminInfo.plist').read_text(),
             self.root / 'AgeminApp.entitlements': (builder.ROOT / 'AgeminApp.entitlements').read_text(),
             self.root / 'Agemin.xcodeproj/project.pbxproj':
@@ -49,6 +50,7 @@ class AppStoreBuildTests(unittest.TestCase):
         self.assertIn('AGEMIN_APP_STORE', self.command)
         self.assertNotIn('AGEMIN_LOCAL_BUILD', self.command)
         self.assertTrue(self.output.is_dir())
+        self.assertTrue((self.output / 'Contents/Resources/THIRD_PARTY_NOTICES.md').is_file())
 
 
 # Run the tests as a command.

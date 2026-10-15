@@ -10,6 +10,8 @@ entitlements = plistlib.loads((ROOT / 'AgeminApp.entitlements').read_bytes())
 manifest = plistlib.loads((ROOT / 'Sources/AgeminApp/Resources/PrivacyInfo.xcprivacy').read_bytes())
 policy = (ROOT / 'PRIVACY.md').read_text()
 bundled_policy = (ROOT / 'Sources/AgeminApp/Resources/PRIVACY.md').read_text()
+notices = (ROOT / 'THIRD_PARTY_NOTICES.md').read_text()
+bundled_notices = (ROOT / 'Sources/AgeminApp/Resources/THIRD_PARTY_NOTICES.md').read_text()
 project = (ROOT / 'Agemin.xcodeproj/project.pbxproj').read_text()
 readme = (ROOT / 'README.md').read_text()
 license_text = (ROOT / 'LICENSE').read_text()
@@ -45,6 +47,12 @@ assert 'Additional Permission for Personal Modification' in license_text
 assert 'Additional Permission for Contributions' in license_text
 assert 'Agemin' in license_text
 assert 'PolyForm Strict License 1.0.0' in readme and 'Elastic License' not in readme
+# Third-party code keeps its original attribution in the repository and in every app bundle.
+assert notices == bundled_notices, 'Bundled and repository third-party notices differ'
+assert 'Copyright (c) 2013 Ted Unangst' in notices
+assert 'Copyright 1997 Niels Provos' in notices
+assert 'THIRD_PARTY_NOTICES.md in Resources' in project
+assert '[Third-party notices](THIRD_PARTY_NOTICES.md)' in readme
 # Info.plist, the entitlements, and the privacy manifest must describe an offline sandboxed
 # utility that implements its own file encryption.
 assert info['ITSAppUsesNonExemptEncryption'] is True

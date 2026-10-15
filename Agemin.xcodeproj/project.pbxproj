@@ -44,6 +44,7 @@
 		100000000000000000000180 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000280 /* PrivacyInfo.xcprivacy */; };
 		100000000000000000000181 /* PRIVACY.md in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000281 /* PRIVACY.md */; };
 		100000000000000000000182 /* AgeminIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000282 /* AgeminIcon.icns */; };
+		100000000000000000000183 /* THIRD_PARTY_NOTICES.md in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000283 /* THIRD_PARTY_NOTICES.md */; };
 		100000000000000000000130 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000900 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		100000000000000000000280 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Sources/AgeminApp/Resources/PrivacyInfo.xcprivacy; sourceTree = SOURCE_ROOT; };
 		100000000000000000000281 /* PRIVACY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Sources/AgeminApp/Resources/PRIVACY.md; sourceTree = SOURCE_ROOT; };
 		100000000000000000000282 /* AgeminIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Sources/AgeminApp/Resources/AgeminIcon.icns; sourceTree = SOURCE_ROOT; };
+		100000000000000000000283 /* THIRD_PARTY_NOTICES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Sources/AgeminApp/Resources/THIRD_PARTY_NOTICES.md; sourceTree = SOURCE_ROOT; };
 		100000000000000000000200 /* Agemin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agemin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		100000000000000000000290 /* AgeminInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AgeminInfo.plist; sourceTree = SOURCE_ROOT; };
 		100000000000000000000291 /* AgeminApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AgeminApp.entitlements; sourceTree = SOURCE_ROOT; };
@@ -159,7 +161,7 @@
 		};
 		100000000000000000000402 /* Resources */ = {
 			isa = PBXGroup;
-			children = (100000000000000000000280, 100000000000000000000281, 100000000000000000000282, 100000000000000000000900);
+			children = (100000000000000000000280, 100000000000000000000281, 100000000000000000000282, 100000000000000000000283, 100000000000000000000900);
 			name = Resources;
 			sourceTree = "<group>";
 		};
@@ -239,7 +241,7 @@
 		100000000000000000000303 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
-			files = (100000000000000000000180, 100000000000000000000181, 100000000000000000000182, 100000000000000000000130);
+			files = (100000000000000000000180, 100000000000000000000181, 100000000000000000000182, 100000000000000000000183, 100000000000000000000130);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
@@ -313,21 +315,21 @@
 		100000000000000000000806 /* AppStore */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 14.0; SDKROOT = macosx; SWIFT_ACTIVE_COMPILATION_CONDITIONS = AGEMIN_APP_STORE; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_VERSION = 5.0;}; name = AppStore;};
 		100000000000000000000804 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {
 			ARCHS = arm64; CODE_SIGN_ENTITLEMENTS = AgeminApp.entitlements; CODE_SIGN_STYLE = Automatic;
-			CURRENT_PROJECT_VERSION = 2026101506; ENABLE_HARDENED_RUNTIME = YES; EXECUTABLE_NAME = AgeminApp; GENERATE_INFOPLIST_FILE = NO;
+			CURRENT_PROJECT_VERSION = 2026101507; ENABLE_HARDENED_RUNTIME = YES; EXECUTABLE_NAME = AgeminApp; GENERATE_INFOPLIST_FILE = NO;
 			INFOPLIST_FILE = AgeminInfo.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 			MACOSX_DEPLOYMENT_TARGET = 14.0; MARKETING_VERSION = "26.10"; AGEMIN_DISPLAY_NAME = Agemin; PRODUCT_BUNDLE_IDENTIFIER = tools.min.agemin;
 			PRODUCT_NAME = Agemin; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG";
 		}; name = Debug;};
 		100000000000000000000805 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {
 			ARCHS = arm64; CODE_SIGN_ENTITLEMENTS = AgeminApp.entitlements; CODE_SIGN_STYLE = Automatic;
-			CURRENT_PROJECT_VERSION = 2026101506; ENABLE_HARDENED_RUNTIME = YES; EXECUTABLE_NAME = AgeminApp; GENERATE_INFOPLIST_FILE = NO;
+			CURRENT_PROJECT_VERSION = 2026101507; ENABLE_HARDENED_RUNTIME = YES; EXECUTABLE_NAME = AgeminApp; GENERATE_INFOPLIST_FILE = NO;
 			INFOPLIST_FILE = AgeminInfo.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 			MACOSX_DEPLOYMENT_TARGET = 14.0; MARKETING_VERSION = "26.10"; AGEMIN_DISPLAY_NAME = Agemin; PRODUCT_BUNDLE_IDENTIFIER = tools.min.agemin;
 			PRODUCT_NAME = Agemin;
 		}; name = Release;};
 		100000000000000000000807 /* AppStore */ = {isa = XCBuildConfiguration; buildSettings = {
 			ARCHS = arm64; CODE_SIGN_ENTITLEMENTS = AgeminApp.entitlements; CODE_SIGN_STYLE = Automatic;
-			CURRENT_PROJECT_VERSION = 2026101506; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_HARDENED_RUNTIME = YES; EXECUTABLE_NAME = AgeminApp; GENERATE_INFOPLIST_FILE = NO;
+			CURRENT_PROJECT_VERSION = 2026101507; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_HARDENED_RUNTIME = YES; EXECUTABLE_NAME = AgeminApp; GENERATE_INFOPLIST_FILE = NO;
 			INFOPLIST_FILE = AgeminInfo.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 			MACOSX_DEPLOYMENT_TARGET = 14.0; MARKETING_VERSION = "26.10"; AGEMIN_DISPLAY_NAME = Agemin; PRODUCT_BUNDLE_IDENTIFIER = tools.min.agemin;
 			PRODUCT_NAME = Agemin; SWIFT_ACTIVE_COMPILATION_CONDITIONS = AGEMIN_APP_STORE;
