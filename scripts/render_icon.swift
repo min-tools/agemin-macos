@@ -104,17 +104,18 @@ func render(size: Int) -> CGImage {
     context.drawLinearGradient(face, start: CGPoint(x: 512, y: body.maxY), end: CGPoint(x: 512, y: body.minY), options: [])
     context.restoreGState()
 
-    // The keyhole: a circle and a tapered slot, in the tile's deep green.
-    let keyhole = CGMutablePath()
+    // The keyhole: draw the head and overlapping tapered slot separately so their shared area
+    // stays filled instead of cancelling under the path winding rule.
     let holeCenter = CGPoint(x: 512, y: body.midY + 36)
-    keyhole.addEllipse(in: CGRect(x: holeCenter.x - 44, y: holeCenter.y - 44, width: 88, height: 88))
-    keyhole.move(to: CGPoint(x: holeCenter.x - 26, y: holeCenter.y - 24))
-    keyhole.addLine(to: CGPoint(x: holeCenter.x + 26, y: holeCenter.y - 24))
-    keyhole.addLine(to: CGPoint(x: holeCenter.x + 40, y: body.minY + 54))
-    keyhole.addLine(to: CGPoint(x: holeCenter.x - 40, y: body.minY + 54))
-    keyhole.closeSubpath()
-    context.addPath(keyhole)
     context.setFillColor(color(0x0E9A57))
+    context.fillEllipse(in: CGRect(x: holeCenter.x - 44, y: holeCenter.y - 44, width: 88, height: 88))
+    let slot = CGMutablePath()
+    slot.move(to: CGPoint(x: holeCenter.x - 26, y: holeCenter.y - 24))
+    slot.addLine(to: CGPoint(x: holeCenter.x + 26, y: holeCenter.y - 24))
+    slot.addLine(to: CGPoint(x: holeCenter.x + 40, y: body.minY + 54))
+    slot.addLine(to: CGPoint(x: holeCenter.x - 40, y: body.minY + 54))
+    slot.closeSubpath()
+    context.addPath(slot)
     context.fillPath()
     // Undo the padlock's translation and scale before the image is taken.
     context.restoreGState()
