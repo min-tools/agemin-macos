@@ -36,8 +36,7 @@ struct PageScroll<Content: View>: View {
             }
             .padding(.horizontal, 28)
             .padding(.vertical, 24)
-            // The content column is capped and stays left-aligned in wider windows.
-            .frame(maxWidth: 820, alignment: .leading)
+            // Fill the window while keeping each page's content left-aligned.
             .frame(maxWidth: .infinity, alignment: .leading)
         }
     }
