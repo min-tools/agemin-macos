@@ -117,8 +117,8 @@
 /* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
 "After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "Po okresie próbnym nadal możesz zaszyfrować lub odszyfrować jeden plik dziennie. Odczytywanie kluczy, sprawdzanie plików i tworzenie kluczy pozostają bez ograniczeń.";
 
-/* age encryption, without the terminal. */
-"age encryption, without the terminal." = "Szyfrowanie age bez terminala.";
+/* Encrypt with age, without the terminal. */
+"Encrypt with age, without the terminal." = "Szyfrowanie age bez terminala.";
 
 /* age key */
 "age key" = "klucz age";

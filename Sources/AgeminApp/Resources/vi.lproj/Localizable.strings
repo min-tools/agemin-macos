@@ -117,8 +117,8 @@
 /* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
 "After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "Sau thời gian dùng thử, bạn vẫn có thể mã hóa hoặc giải mã một tệp mỗi ngày. Việc đọc khóa, kiểm tra tệp và tạo khóa vẫn không bị giới hạn.";
 
-/* age encryption, without the terminal. */
-"age encryption, without the terminal." = "Mã hóa age, không cần terminal.";
+/* Encrypt with age, without the terminal. */
+"Encrypt with age, without the terminal." = "Mã hóa age, không cần terminal.";
 
 /* age key */
 "age key" = "khóa age";

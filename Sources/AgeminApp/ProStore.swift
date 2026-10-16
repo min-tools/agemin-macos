@@ -631,7 +631,7 @@ private struct AgeminProView: View {
                 Text(localized("Agemin Pro"))
                     .font(.system(size: 22, weight: .bold))
                 Text(feature.map { localizedFormat("Unlock %@ with Agemin Pro.", localized($0.rawValue)) }
-                     ?? localized("age encryption, without the terminal."))
+                     ?? localized("Encrypt with age, without the terminal."))
                     .font(.system(size: 13))
                     .foregroundStyle(.secondary)
             }

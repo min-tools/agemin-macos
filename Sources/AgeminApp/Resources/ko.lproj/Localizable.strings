@@ -117,8 +117,8 @@
 /* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
 "After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "체험 기간이 끝난 후에도 하루에 파일 한 개를 암호화하거나 복호화할 수 있습니다. 키 읽기, 파일 검사, 키 생성은 계속 무제한입니다.";
 
-/* age encryption, without the terminal. */
-"age encryption, without the terminal." = "터미널 없이 age 암호화.";
+/* Encrypt with age, without the terminal. */
+"Encrypt with age, without the terminal." = "터미널 없이 age 암호화.";
 
 /* age key */
 "age key" = "age 키";

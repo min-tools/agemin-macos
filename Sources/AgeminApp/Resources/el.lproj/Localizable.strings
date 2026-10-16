@@ -117,8 +117,8 @@
 /* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
 "After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "Μετά τη δοκιμαστική περίοδο, μπορείτε ακόμη να κρυπτογραφείτε ή να αποκρυπτογραφείτε ένα αρχείο την ημέρα. Η ανάγνωση κλειδιών, η επιθεώρηση αρχείων και η δημιουργία κλειδιών παραμένουν απεριόριστες.";
 
-/* age encryption, without the terminal. */
-"age encryption, without the terminal." = "Κρυπτογράφηση age, χωρίς το τερματικό.";
+/* Encrypt with age, without the terminal. */
+"Encrypt with age, without the terminal." = "Κρυπτογράφηση age, χωρίς το τερματικό.";
 
 /* age key */
 "age key" = "κλειδί age";

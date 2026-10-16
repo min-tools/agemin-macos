@@ -4,7 +4,7 @@
 
 <h1 align="center">Agemin</h1>
 
-<p align="center"><strong>age encryption, without the terminal.</strong></p>
+<p align="center"><strong>Encrypt with <tt>age</tt>, without the terminal.</strong></p>
 
 <p align="center">
   Encrypt files for people using their SSH or age public keys, or protect them with a passphrase. Decrypt files sent to you with your own keys. Agemin reads and writes the standard <a href="https://age-encryption.org/">age</a> format in a native Mac app, with nothing else to install.

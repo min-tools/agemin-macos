@@ -117,8 +117,8 @@
 /* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
 "After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "परीक्षण अवधि के बाद भी आप प्रतिदिन एक फ़ाइल एन्क्रिप्ट या डिक्रिप्ट कर सकते हैं। कुंजियां पढ़ना, फ़ाइलें जांचना और कुंजियां बनाना असीमित रहता है।";
 
-/* age encryption, without the terminal. */
-"age encryption, without the terminal." = "age एन्क्रिप्शन, बिना टर्मिनल के।";
+/* Encrypt with age, without the terminal. */
+"Encrypt with age, without the terminal." = "age एन्क्रिप्शन, बिना टर्मिनल के।";
 
 /* age key */
 "age key" = "age कुंजी";

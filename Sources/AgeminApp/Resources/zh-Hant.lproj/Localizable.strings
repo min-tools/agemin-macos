@@ -117,8 +117,8 @@
 /* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
 "After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "試用期結束後，你每天仍可加密或解密一個檔案。讀取金鑰、檢視檔案和製作金鑰仍不受限制。";
 
-/* age encryption, without the terminal. */
-"age encryption, without the terminal." = "age 加密，不必使用終端機。";
+/* Encrypt with age, without the terminal. */
+"Encrypt with age, without the terminal." = "age 加密，不必使用終端機。";
 
 /* age key */
 "age key" = "age 金鑰";

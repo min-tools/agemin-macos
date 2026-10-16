@@ -117,8 +117,8 @@
 /* After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited. */
 "After the trial, you can still encrypt or decrypt one file per day. Reading keys, inspecting files, and creating keys stay unlimited." = "Kokeilujakson jälkeen voit edelleen salata tai purkaa yhden tiedoston päivässä. Avainten lukeminen, tiedostojen tarkastaminen ja avainten luominen ovat edelleen rajoittamattomia.";
 
-/* age encryption, without the terminal. */
-"age encryption, without the terminal." = "age-salaus ilman päätettä.";
+/* Encrypt with age, without the terminal. */
+"Encrypt with age, without the terminal." = "age-salaus ilman päätettä.";
 
 /* age key */
 "age key" = "age-avain";
