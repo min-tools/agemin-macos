@@ -54,8 +54,8 @@ assert 'Copyright 1997 Niels Provos' in notices
 assert 'THIRD_PARTY_NOTICES.md in Resources' in project
 assert '[Third-party notices](THIRD_PARTY_NOTICES.md)' in readme
 # Info.plist, the entitlements, and the privacy manifest must describe an offline sandboxed
-# utility that implements its own file encryption.
-assert info['ITSAppUsesNonExemptEncryption'] is True
+# utility. France stays excluded while its standard encryption is documentation-exempt.
+assert info['ITSAppUsesNonExemptEncryption'] is False
 assert info['LSApplicationCategoryType'] == 'public.app-category.utilities'
 assert entitlements['com.apple.security.app-sandbox'] is True
 assert entitlements['com.apple.security.files.user-selected.read-write'] is True

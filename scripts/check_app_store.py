@@ -114,10 +114,10 @@ def blockers(check_online=False):
     # The purchase panel's terms link must be Apple's standard EULA, not a page of the app's own.
     if 'static let termsOfUse = URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!' not in edition:
         issues.append("Apple's standard EULA link is missing.")
-    # Agemin implements file encryption itself, which is not an exempt use. The declaration must
-    # say so, and every upload answers App Store Connect's export compliance questions.
-    if info.get('ITSAppUsesNonExemptEncryption') is not True:
-        issues.append('Agemin uses non-exempt encryption; ITSAppUsesNonExemptEncryption must be true.')
+    # The first release excludes France. Apple's documentation table requires a French declaration
+    # for these published standard algorithms only when the app is available there.
+    if info.get('ITSAppUsesNonExemptEncryption') is not False:
+        issues.append('Agemin must stay documentation-exempt while France is excluded from availability.')
     # The About panel shows this notice.
     if info.get('NSHumanReadableCopyright') != '© 2026 Ilia Ross':
         issues.append('The About-panel copyright notice is missing.')
