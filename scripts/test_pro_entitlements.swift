@@ -42,6 +42,40 @@ struct EntitlementTests {
         check(AgeminFreeAccessPolicy.trialDaysRemaining(startedAt: trialStart, now: trialStart) == 30,
               "A new trial reports 30 days remaining")
 
+        // TestFlight's receipt or Apple's fixed sandbox purchase date overrides an app
+        // transaction that reports production.
+        let sandboxPurchaseDate = Date(timeIntervalSince1970: 1_375_340_400)
+        check(AgeminFreeAccessPolicy.usesLocalTrialClock(
+            transactionIsProduction: true,
+            hasSandboxReceipt: true,
+            originalPurchaseDate: now
+        ), "TestFlight uses a local trial clock")
+        check(AgeminFreeAccessPolicy.usesLocalTrialClock(
+            transactionIsProduction: true,
+            hasSandboxReceipt: false,
+            originalPurchaseDate: sandboxPurchaseDate
+        ), "The fixed sandbox purchase date identifies TestFlight on macOS")
+        check(!AgeminFreeAccessPolicy.usesLocalTrialClock(
+            transactionIsProduction: true,
+            hasSandboxReceipt: false,
+            originalPurchaseDate: now
+        ), "The production App Store uses Apple's signed acquisition date")
+        check(AgeminFreeAccessPolicy.usesLocalTrialClock(
+            transactionIsProduction: false,
+            hasSandboxReceipt: false,
+            originalPurchaseDate: now
+        ), "StoreKit sandbox and Xcode environments use a local trial clock")
+        check(AgeminFreeAccessPolicy.shouldRestartLocalTrial(
+            firstAcceptance: false,
+            isTestEnvironment: true,
+            didMigrateTestClock: false
+        ), "An existing TestFlight install receives the corrected trial clock once")
+        check(!AgeminFreeAccessPolicy.shouldRestartLocalTrial(
+            firstAcceptance: false,
+            isTestEnvironment: true,
+            didMigrateTestClock: true
+        ), "A migrated TestFlight install keeps its existing local clock")
+
         // Only usesAppStoreDate selects Apple's signed date; it never falls back to local state.
         let localStart = now.addingTimeInterval(24 * 60 * 60)
         check(AgeminFreeAccessPolicy.authoritativeTrialStartDate(

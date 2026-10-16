@@ -84,6 +84,8 @@ final class TrialPreferences {
         let old = now.addingTimeInterval(-31 * 24 * 60 * 60)
         let startKey = "AgeminAppTrialStartedAt"
         let acceptedKey = "AgeminAppTrialDisclosureAccepted"
+        let previousTestClockMigrationKey = "AgeminTestTrialClockV2"
+        let testClockMigrationKey = "AgeminTestTrialClockV3"
         // A launch-time operation is allowed without spending a Free slot while StoreKit still
         // has not answered whether the customer already owns Pro.
         let unresolved = AgeminProStore()
@@ -140,8 +142,40 @@ final class TrialPreferences {
         precondition(store.appTrialStartedAt == now,
                      "Sandbox uses the accepted local clock, not Apple's fixed test date")
 
+        // A stale local date without an accepted disclosure can remain after development builds.
+        // Accepting the first-launch notice must start the promised trial now.
+        TrialFixture.defaults.values = [startKey: old]
+        let firstSandboxLaunch = AgeminProStore()
+        firstSandboxLaunch.hasResolvedEntitlement = true
+        firstSandboxLaunch.beginAppTrial(now: now)
+        try await waitFor { !firstSandboxLaunch.isTrialWelcomePending }
+        precondition(firstSandboxLaunch.appTrialStartedAt == now)
+        precondition(firstSandboxLaunch.hasFullAccess)
+
+        // Reproduce build 1604: macOS TestFlight reported production, exposed no sandbox-named
+        // receipt, and supplied Apple's fixed sandbox date after the prior migration had run.
+        TrialFixture.defaults.values = [
+            startKey: old,
+            acceptedKey: true,
+            previousTestClockMigrationKey: true,
+        ]
+        TrialFixture.transaction.environment = .production
+        TrialFixture.transaction.originalPurchaseDate = Date(timeIntervalSince1970: 1_375_340_400)
+        let migratedSandboxLaunch = AgeminProStore()
+        migratedSandboxLaunch.hasResolvedEntitlement = true
+        migratedSandboxLaunch.beginAppTrial(now: now)
+        try await waitFor { !migratedSandboxLaunch.isTrialWelcomePending }
+        precondition(migratedSandboxLaunch.appTrialStartedAt == now)
+        precondition(TrialFixture.defaults.bool(forKey: testClockMigrationKey))
+
         // A returning sandbox user keeps the original clock and receives Free limits after expiry.
-        TrialFixture.defaults.values = [startKey: old, acceptedKey: true]
+        TrialFixture.defaults.values = [
+            startKey: old,
+            acceptedKey: true,
+            testClockMigrationKey: true,
+        ]
+        TrialFixture.transaction.environment = .sandbox
+        TrialFixture.transaction.originalPurchaseDate = Date(timeIntervalSince1970: 0)
         let expired = AgeminProStore()
         expired.hasResolvedEntitlement = true
         expired.beginAppTrial(now: now)

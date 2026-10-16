@@ -17,6 +17,38 @@ enum AgeminFreeAccessPolicy {
     static let dailyOperationLimit = 1
     static let trialDuration: TimeInterval = TimeInterval(trialLengthDays * 24 * 60 * 60)
 
+    /// Apple's fixed `AppTransaction.originalPurchaseDate` in the sandbox, in seconds since 1970.
+    private static let sandboxOriginalPurchaseTime: TimeInterval = 1_375_340_400
+
+    // isSandboxOriginalPurchaseDate(date): Detect Apple's documented fixed sandbox acquisition
+    // date. A one-second tolerance avoids depending on subsecond serialization details.
+    static func isSandboxOriginalPurchaseDate(_ date: Date) -> Bool {
+        abs(date.timeIntervalSince1970 - sandboxOriginalPurchaseTime) < 1
+    }
+
+    // usesLocalTrialClock(transactionIsProduction, hasSandboxReceipt, originalPurchaseDate): True
+    // for StoreKit test environments. The fixed sandbox date is authoritative when macOS
+    // TestFlight stores its receipt under a production-style filename.
+    static func usesLocalTrialClock(
+        transactionIsProduction: Bool,
+        hasSandboxReceipt: Bool,
+        originalPurchaseDate: Date
+    ) -> Bool {
+        !transactionIsProduction || hasSandboxReceipt
+            || isSandboxOriginalPurchaseDate(originalPurchaseDate)
+    }
+
+    // shouldRestartLocalTrial(firstAcceptance, isTestEnvironment, didMigrateTestClock): Start at
+    // the current time after first consent, and migrate existing test installs once so a fixed
+    // sandbox acquisition date cannot leave them expired.
+    static func shouldRestartLocalTrial(
+        firstAcceptance: Bool,
+        isTestEnvironment: Bool,
+        didMigrateTestClock: Bool
+    ) -> Bool {
+        firstAcceptance || (isTestEnvironment && !didMigrateTestClock)
+    }
+
     // authoritativeTrialStartDate(appStoreOriginalPurchaseDate, localStartedAt, usesAppStoreDate):
     // Pick the trial start: Apple's signed date when usesAppStoreDate, otherwise the local clock.
     // A missing signed date never falls back to resettable local state.

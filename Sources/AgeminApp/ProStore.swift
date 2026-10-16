@@ -45,10 +45,17 @@ final class AgeminProStore: ObservableObject {
     /// The day the stored allowance count belongs to.
     private var freeUsageDay: Date?
     private let defaults = UserDefaults.standard
+    /// True when the app bundle contains StoreKit's sandbox-named receipt.
+    private var hasSandboxReceipt: Bool {
+        let receipt = Bundle.main.bundleURL
+            .appendingPathComponent("Contents/_MASReceipt/sandboxReceipt")
+        return FileManager.default.fileExists(atPath: receipt.path)
+    }
 
     // Preferences keys for the local trial clock, the accepted disclosure, and the daily count.
     private static let appTrialStartedAtKey = "AgeminAppTrialStartedAt"
     private static let appTrialDisclosureAcceptedKey = "AgeminAppTrialDisclosureAccepted"
+    private static let testTrialClockMigrationKey = "AgeminTestTrialClockV3"
     private static let freeUsageDayKey = "AgeminFreeUsageDay"
     private static let freeUsageCountKey = "AgeminFreeUsageCount"
 
@@ -316,25 +323,37 @@ final class AgeminProStore: ObservableObject {
     // beginAppTrial([now = Date()]): Record that the user accepted the trial disclosure and resolve
     // the trial start date.
     func beginAppTrial(now: Date = Date()) {
+        let isFirstAcceptance = !defaults.bool(forKey: Self.appTrialDisclosureAcceptedKey)
         defaults.set(true, forKey: Self.appTrialDisclosureAcceptedKey)
         // App Store builds must verify the transaction environment before choosing a clock.
         if AgeminEdition.isAppStoreBuild {
             Task { @MainActor [weak self] in
                 guard let self else { return }
-                await self.refreshAppTrial(now: now)
+                await self.refreshAppTrial(
+                    now: now,
+                    restartLocalTrial: isFirstAcceptance
+                )
                 self.isTrialWelcomePending = false
             }
         } else {
-            // Source builds start or restore the local clock right away.
-            prepareLocalFreeAccess(startTrialIfNeeded: true, now: now)
+            // Source builds start or restore the local clock right away. A newly accepted notice
+            // replaces inconsistent trial state left by an earlier development build.
+            prepareLocalFreeAccess(
+                startTrialIfNeeded: true,
+                restartTrial: isFirstAcceptance,
+                now: now
+            )
             isTrialWelcomePending = false
         }
     }
 
-    // refreshAppTrial([now = Date()]): In App Store builds, resolve the trial from the signed app
-    // transaction: Apple's acquisition date in production, the disclosed local clock in a verified
-    // sandbox. Other builds return at once and leave hasResolvedAppTrial false.
-    private func refreshAppTrial(now: Date = Date()) async {
+    // refreshAppTrial([now = Date()], [restartLocalTrial = false]): In App Store builds, resolve the
+    // trial from Apple's acquisition date in production or the disclosed local clock in a verified
+    // test environment. Other builds return at once and leave hasResolvedAppTrial false.
+    private func refreshAppTrial(
+        now: Date = Date(),
+        restartLocalTrial: Bool = false
+    ) async {
         guard AgeminEdition.isAppStoreBuild else { return }
         defer {
             // Finish startup even on failure. A failed first lookup grants no trial;
@@ -347,8 +366,15 @@ final class AgeminProStore: ObservableObject {
             // A production build must never replace a failed signed lookup with local state.
             return
         }
-        // Production counts from Apple's signed acquisition date, which the user cannot reset.
-        if transaction.environment == .production {
+        // TestFlight uses a sandbox receipt. Treat it as a test environment even if its signed app
+        // transaction reports production, because the sandbox acquisition date is fixed in 2013.
+        let usesLocalClock = AgeminFreeAccessPolicy.usesLocalTrialClock(
+            transactionIsProduction: transaction.environment == .production,
+            hasSandboxReceipt: hasSandboxReceipt,
+            originalPurchaseDate: transaction.originalPurchaseDate
+        )
+        if !usesLocalClock {
+            // Production counts from Apple's signed acquisition date, which the user cannot reset.
             let authoritative = AgeminFreeAccessPolicy.authoritativeTrialStartDate(
                 appStoreOriginalPurchaseDate: transaction.originalPurchaseDate,
                 localStartedAt: nil,
@@ -359,22 +385,37 @@ final class AgeminProStore: ObservableObject {
                 applyAppTrialStartDate(authoritative, now: now)
             }
         } else {
-            // Sandbox and Xcode environments use the local clock, started once the disclosure
-            // was accepted.
+            // Sandbox, TestFlight, and Xcode use the local clock, started once the disclosure was
+            // accepted.
             let accepted = defaults.bool(forKey: Self.appTrialDisclosureAcceptedKey)
+            let didMigrateTestClock = defaults.bool(
+                forKey: Self.testTrialClockMigrationKey
+            )
+            let shouldRestart = accepted && AgeminFreeAccessPolicy.shouldRestartLocalTrial(
+                firstAcceptance: restartLocalTrial,
+                isTestEnvironment: usesLocalClock,
+                didMigrateTestClock: didMigrateTestClock
+            )
             prepareLocalFreeAccess(
                 startTrialIfNeeded: accepted,
+                restartTrial: shouldRestart,
                 now: now,
                 allowAppStoreSandbox: true
             )
+            // Existing test installs need this one-time correction. A new install records it after
+            // the welcome starts the local clock.
+            if accepted {
+                defaults.set(true, forKey: Self.testTrialClockMigrationKey)
+            }
         }
     }
 
-    // prepareLocalFreeAccess([startTrialIfNeeded = false], [now = Date()],
-    // [allowAppStoreSandbox = false]): Restore the local trial clock from preferences, start it
-    // when asked and not yet started, refresh today's allowance, and schedule the expiry.
+    // prepareLocalFreeAccess([startTrialIfNeeded = false], [restartTrial = false], [now = Date()],
+    // [allowAppStoreSandbox = false]): Restore the local trial clock from preferences, start or
+    // replace it when asked, refresh today's allowance, and schedule the expiry.
     private func prepareLocalFreeAccess(
         startTrialIfNeeded: Bool = false,
+        restartTrial: Bool = false,
         now: Date = Date(),
         allowAppStoreSandbox: Bool = false
     ) {
@@ -383,6 +424,11 @@ final class AgeminProStore: ObservableObject {
         // Private previews force a start date and must not change the real one in preferences.
         if let forced = AgeminEdition.forcedTrialStartedAt {
             appTrialStartedAt = forced
+        } else if restartTrial {
+            // A first disclosure acceptance owns the local start time. Replace any orphaned date
+            // that an earlier development or beta build left without an accepted disclosure.
+            appTrialStartedAt = now
+            defaults.set(now, forKey: Self.appTrialStartedAtKey)
         } else if appTrialStartedAt == nil {
             // A running clock is left alone; otherwise preferences decide.
             // A stored date means the trial already began on this Mac.
