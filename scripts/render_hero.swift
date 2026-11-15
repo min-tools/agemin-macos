@@ -53,7 +53,7 @@ enum RenderHero {
         Screenshot(
             file: "agemin-4-identities-dark.png", dark: true, page: .identities, scrollsToEnd: false,
             caption: HeroCanvas.Caption(
-                headline: "Your private keys never leave this Mac.",
+                headline: "Your private keys never leave your Mac.",
                 subtitle: "Agemin works offline, with no account and no server."
             )
         ),
